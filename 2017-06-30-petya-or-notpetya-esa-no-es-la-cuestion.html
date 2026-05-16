@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Petya or NotPetya, esa NO es la cuestión</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">30 jun 2017</div><h1 class="post-title"><a href="https://godest.vivencias.net/2017-06-30-petya-or-notpetya-esa-no-es-la-cuestion.html">Petya or NotPetya, esa NO es la cuestión</a></h1>
+<p>
+Estimado lector, si hace casi dos meses en España (y en otros países) golpeó e hizo mucho ruido mediático el malware-&gt;rasomware (virus-gusano-cifrador-recompensa) “WannaCry”, de nuevo, hace unos días hubo una nueva infección masiva de otro rasomware llamado para algunos #Petya y para otros #NotPetya (la diferencia en los nombres es fruto de la pelea que hay en la industria a la hora de analizar “el bicho”: la mayoría lo llama #Petya, pero <a href="https://blog.kaspersky.com/new-ransomware-epidemics/17314/">Kaspersky dice que #Petya ya existía y este “bicho” tiene suficiente código diferente, exploits, más formas de explotar los sistemas, que lo hacen suficientemente específico y, por eso, debería ser llamado de otra forma: #NotPetya</a>). En fin.
+</p>
+
+<p>
+Aunque según el servicio de alertas del <a href="https://www.ccn-cert.cni.es/">CCN-CERT</a> (Centro de respuesta a incidentes de seguridad del Centro Criptológico Nacional), <a href="https://twitter.com/CCNCERT/status/880067911901212673">España no se ha hallado entre los objetivos “más afectados” por este malware</a>, descartando infecciones importantes en organismos estatales y en grandes compañías “estratégicas”, por si te llega, he creído conveniente que conozcas este par de cositas que te pueden ayudar mucho a evitar un <b>CIFRADO DE TODA LA INFORMACIÓN DE TU DISCO DURO</b>.
+</p>
+
+<ol class="org-ol">
+<li>SI EJECUTAS CUALQUIER COSA (ABRES UN PDF, UN DOCUMENTO DE WORD, EXCEL… UN EJECUTABLE) Y OBSERVAS QUE NO OCURRE LO ESPERADO (o se abre algo extraño, sospechoso…), ECHA UN VISTAZO AL PROGRAMADOR DE TAREAS. Lo primero que hace #Petya es añadir una tarea de “reinicio” en el programador de tareas, que rearrancará nuestro PC una hora y pocos minutos más tarde. Mi “casi compañero ;-)” (nos separan diferentes jurídicas del mismo grupo de empresas) Sergio de los Santos, de ElevenPath, <a href="https://twitter.com/ssantosv/status/879782334987415552">lo recogía en un tweet</a>.</li>
+
+<li>Si el PC se reinicia, estás delante (cosa importante porque si no lo que voy a decir no sirve de nada), y ves una pantalla como esta (no eches cuenta a las zonas grises del pantallazo porque es una máquina virtual corriendo dentro de VirtualBox, LO IMPORTANTE ES EL TEXTO BLANCO SOBRE FONDO NEGRO QUE IMITA A ALGUNAS PANTALLAS DE REINICIO DE WINDOWS CUANDO HAY ERRORES EN EL DISCO DURO E INTENTA SUBSANARLOS).</li>
+</ol>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="650" height="443" border="0" align="center" hspace="10" vspace="10" src="/static/2017/Arranque_de_Petya_NotPetya.png"
+ alt="Arranque de Petya o NotPetya" />
+</figure>
+
+<p>
+<b>¡¡¡TIENES QUE ”APAGAR DE BOTÓN” LO ANTES POSIBLE Y NO VOLVER A ENCENDER EL PC!!!</b>
+</p>
+
+<p>
+Lo que se está ejecutando es el proceso de cifrado… (lo siguiente sería arrancar el PC con un “LiveCD o Disco Externo” libre de virus e intentar recuperar los ficheros no cifrados).
+</p>
+
+<p>
+Espero haberme explicado y que, en caso de mala suerte, te sea útil tanto en la empresa como en casa. Creo que es conveniente saber estas cosas como regla de actuación general, no sólo para #Petya sino para cualquier espécimen que surja en un futuro y actúe de forma parecida… (una llamada al sentido común, quizá).
+</p>
+
+<p>
+Por último, a modo de prevención (ya lo decía ese slogan: “más vale prevenir que curar”), me gustaría compartir con vosotros esta otra imagen que consideré valiosa cuando la vi en Twitter (no soy el autor, si el autor así lo considera tendré que dejar de compartirla):
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="650" height="325" border="0" align="center" hspace="10" vspace="10" src="/static/2017/Medidas_evitar_rasomware.jpg"
+ alt="Medidas para evitar rasomware" />
+</figure>
+
+<p>
+Y si más arriba decíamos que "más vale prevenir que curar", cuando la prevención no ha sido suficiente, SIEMPRE debemos tener una copia de seguridad a mano. De verdad, tómatelo en serio, cada vez es más imprescindible, hazla. Yo la suelo hacer en dispositivos externos y en la nube (Dropbox, OneDrive, etc.), ¿y tú?
+</p>
+
+<p>
+P.D.: recuerda que <a href="https://godest.vivencias.net/rss.xml">puedes suscribirte a este blog</a> haciendo uso del servicio RSS. Puedes encontrar el enlace en el símbolo "cuadrado naranja con ondas blancas" que hay en el pie de página, abajo del todo, sobre fondo negro.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Petya_o_NotPetya-esa_no_es_la_cuestion">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+#+title: Envío de email cuando hay un login por ssh
+#+date: <2020-01-12 09:32>
+#+description: 
+#+filetags: Configuraciones Seguridad
+
+En máquinas conectadas directamente a Internet (y esto incluye el acceso a ellas vía un puerto abierto del Firewall), es recomendable estar atento a los "logins de usuario" que se producen. En entornos profesionales, además del aviso de correo que programamos aquí, es conveniente hacer uso de otras herramientas tipo SIEM o HostIDS. En mi servidor, que es pequeñito y con pocos recursos, yo utilizo lo que sigue.
+
+He agregado esto al fichero "/etc/pam.d/sshd".
+#+begin_src sh :results output
+# Envío de correo cuando login
+session optional pam_exec.so /root/bin/send-mail-on-ssh-login.sh
+#+end_src
+
+El fichero completo (/etc/pam.d/sshd), como referencia y copia de seguridad, está adjunto [[https://godest.vivencias.net/static/2020/sshd.txt][aquí]] (le he agregado la extensión .txt para que sea "leible" desde el blog).
+
+Y he creado el script correspondiente en "/root/bin/" con este contenido:
+
+#+begin_src sh :results output
+#!/bin/sh
+if [ "$PAM_TYPE" != "open_session" ]
+then
+  exit 0
+else
+  {
+    echo "User: $PAM_USER"
+    echo "Remote Host: $PAM_RHOST"
+    echo "Service: $PAM_SERVICE"
+    echo "TTY: $PAM_TTY"
+    echo "Date: `date`"
+    echo "Server: `uname -a`"
+  } | mail -s "$PAM_SERVICE login on `hostname -s` for account $PAM_USER" example@example.com
+fi
+
+exit 0
+#+end_src
+
+*¡OJO!: has de modificar la dirección de mail "example@example.com" por la tuya propia donde quieres recibirlos*.
+
+Referencias: 
+
+1.- http://blog.th-neumeier.de/2011/02/send-email-on-ssh-login-using-pam/ 
+
+2.- http://serverfault.com/questions/400613/send-notification-email-when-the-ubuntu-server-is-remoted-via-ssh 
+
+3.- http://www.tiger-computing.co.uk/get-notified-with-every-ssh-login/ 
+
+4.- http://www.farinspace.com/secure-login-linux-server/ 
+
+5.- http://www.mydigitallife.info/how-to-get-linux-server-sends-email-alert-on-root-login/ 
+
+
+Para avisar cuando alguien hace login como root (no permitido por ssh, sólo como "promoción interna" ;-)), añadimos al .bashrc de root lo siguiente (*¡¡OJO!! No hagas copy/paste de esta línea. Es mejor que la teclees pues debe de haber -introducidos por el "parser" de coloreado de sintaxis- códigos de control extraños en algunos caracteres que no funcionan si la copias*): 
+
+#+begin_src sh :results output
+echo 'ALERT - Root Shell Access () on:' `date` `who` | mail -s "Alert: Root Access from `who | cut -d"(" -f2 | cut -d")" -f1`" example@example.com
+#+end_src
+
+Espero que te sea útil.
+
+Si consideras alguna parte mejorable, por favor, indícamelo con un comentario. Como siempre, te estaré muy agradecido.
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Envio_de_email_cuadno_hay_un_login_por_ssh][Dejar comentario]].

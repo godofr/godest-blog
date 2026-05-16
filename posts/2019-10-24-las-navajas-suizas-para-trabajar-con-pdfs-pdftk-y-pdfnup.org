@@ -1,0 +1,50 @@
+#+title: Las navajas suizas para trabajar con PDFs: pdftk y pdfnup
+#+date: <2019-10-24 15:43>
+#+description: 
+#+filetags: Software Utilidades
+
+Hace tiempo que descubrí [[https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/][pdftk]] como herramienta en línea de comandos para trabajar con documentos pdf. Básicamente la he venido utilizando para extraer partes concretas de dichos documentos (algunas páginas seleccionadas ya sean consecutivas o salteadas), y para fusionar dos documentos (por ejemplo, una oferta y un anexo que te llegan o "fabricas" por separado pero luego quieres distribuir juntos, como un único documento).
+
+Lo que más me gusta es que, como he dicho, es una herramienta que puede utilizarse en línea de comandos, y esto, aunque el común de los mortales no está muy preparado para entenderlo, suele ser una fuente de potencia inimaginable a la hora de hacer tareas de preprocesamiento como las que he descrito en el párrafo anterior, y, por tanto, obtenemos un gran ahorro de tiempo.
+
+Yo llegué a esta herramienta desde mi [[https://www.debian.org/][Debian]] (pues venía en su sistema de paquetes), pero luego busqué una versión para Windows y la encontré. Además, es gratuita. Podéis descargarla directamente de la página de los autores, aunque yo por mi comodidad, sólo por la mía ;-), he subido un .zip de los dos ficheros que son necesarios a este mismo post (lo tenéis al final). Basta con descargarlo, descomprimirlo en la carpeta donde queráis trabajar, es decir, donde tengáis también los documentos objeto del trabajo, y utilizarlo (modo usuario básico). Si sois usuarios avanzados, lo mejor es meter ambos ficheros en una carpeta que esté en el PATH de vuestra máquina.
+
+La potencia de esta herramienta permite cosas como:
+
+a) Extraer las páginas impares de un documento pdf, resultando un documento nuevo:
+#+begin_src sh :results output
+$ pdftk Finanzas.pdf cat 1-endodd output newFinanzas.pdf
+#+end_src
+
+b) Lo mismo, pero con las páginas pares:
+#+begin_src sh :results output
+$ pdftk Finanzas.pdf cat 1-endeven output newFinanzas.pdf
+#+end_src
+
+c) Reconstruir el documento original a partir de dos documentos separados en pares e impares:
+#+begin_src sh :results output
+$ pdftk A=doc1.pdf B=doc2.pdf shuffle A B output complete.pdf
+#+end_src
+
+e) Fusionar dos documentos, como decía al principio, uno detrás de otro:
+#+begin_src sh :results output
+$ pdftk oferta.pdf anexo.pdf cat output oferta-anexo.pdf
+#+end_src
+
+Además, viene con una ayuda muy completa a la que se accede con:
+
+#+begin_src sh :results output
+$ pdftk --help
+#+end_src
+
+Recientemente he descubierto otra utilidad que permite muy fácilmente pasar un documento original a otro que tenga dos páginas del original, o más, en una sola hoja. Algo muy útil para imprimir "borradores" o versiones no definitivas. Esta herramienta también la he conseguido compilada para Windows y, tras revisar "su malware" con Virustotal, la he utilizado satisfactoriamente. También te dejo un .zip al final de este artículo.
+
+#+begin_src sh :results output
+$ pdfnup --help
+#+end_src
+
+Puedes descargar estas utilidades para Windows aquí: [[https://godest.vivencias.net/static/2019/pdftk-para-windows.zip][pdftk]] y [[https://godest.vivencias.net/static/2019/pdfnup-para-windows.zip][pdfnup]]. 
+
+Pues nada más, espero que te ayude.
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=las_navajas_suizas_para_trabajar_con_pdfs-pdftk-y-pdfnup][Dejar comentario]].

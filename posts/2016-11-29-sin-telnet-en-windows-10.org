@@ -1,0 +1,57 @@
+#+title: Sin telnet en Windows 10
+#+date: <2016-11-29 16:00>
+#+description: 
+#+filetags: Configuraciones Software Redes
+
+Quizá a alguno de vosotros le haya pasado lo que a mí: voy a conectarme hoy a un viejo dispositivo que sólo permite conexiones utilizando "[[https://en.wikipedia.org/wiki/Telnet][Telnet]]", y no puedo. Desde el interfaz de comandos de mi Windows 10 obtengo este error:
+
+#+begin_src sh :results output
+"telnet" no se reconoce como un comando interno o externo, programa o archivo por lotes ejecutable.
+#+end_src
+
+Me ha extrañado por dos motivos:
+
+1. ¿Windows 10 no trae telnet instalado por defecto? La respuesta es no. Más información [[https://www.rootusers.com/how-to-enable-the-telnet-client-in-windows-10/][aquí]] (con solución autóctona Windows 10 incluida).
+
+2. ¿Y mi instalación de [[https://www.cygwin.com/][Cygwin]] tampoco? Pues la respuesta, obviamente, también era negativa.
+
+Así que arranco mi "setup-x86.exe" para instalar "telnet" desde los repositorios de Cygwin, y me encuentro que no existe ningún paquete llamado "telnet". Buscando por la red descubro dos cosas:
+
+1. Para instalar "telnet" hay que seleccionar el paquete "*inetutils*".
+
+2. En el sitio donde encuentro lo anterior, [[http://kennyroh.blogspot.com.es/2016/04/cygwin-install-telnet.html][aquí]], descubro que su autor utiliza un comando muy parecido a "apt-get" (maravilloso gestor de paquetes del mundo [[http://www.debian.org/][Debian]] que por mi histórico, como sabéis los lectores de este blog, controlo bastante bien), en concreto: "apt-cyg", que tiene toda la pinta de funcionar de forma muy parecida a la "suite apt" original... ¡A investigar!
+
+En los primeros resultados de [[https://www.google.es/search?q=apt-cyg&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=BZQ9WMKeOdKp8wfSxpegDw][esta búsqueda]] creo que hay material suficiente para profundizar en el uso de "apt-cyg".
+
+Conclusión: si quieres utilizar "telnet" en Windows 10 y eres usuario habitual del "port" del mundo GNU/Linux vía "Cygwin", instala el paquete "inetutils":
+
+#+begin_src sh :results output
+[15:39:35(godo@surco)~]> telnet --version
+telnet (GNU inetutils) 1.9.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later .
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by many authors.
+#+end_src
+
+Obviamente, creo que no tiene sentido instalar Cygwin sólo para esto, pero si ya lo utilizas para hacer otras muchas cosas, sí que lo tiene. Sin embargo, si sólo necesitas "telnet", instálalo desde el propio Windows como comentan [[https://www.rootusers.com/how-to-enable-the-telnet-client-in-windows-10/][aquí]].
+
+¡Salud, amigos!
+
+P.D.: ni que decir tiene que el uso de "telnet" está tremendamente desaconsejado (toda la información viaja en claro entre tu extremo y el otro) y que, siempre que se pueda, es mejor utilizar "[[https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-in-ubuntu][ssh]]".
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Sin_Telnet_en_Windows_10][Dejar comentario]].
+
+** Comentarios
+*** Guillermo (no verificado Lun, 05/12/2016 - 09:46)
+Después del ultimo intento con telnets, sshs y demas encontre mobaxterm (http://mobaxterm.mobatek.net/) y me sorprendió.
+Lo primero es portable, con lo que te olvidas de instalar cosas (sabras por lo que te lo comento) y después emulaba un entorno X en le PC que es muy útil en algunos momentos.
+Pruebalo un día que estes aburrido, a mi me gustó.
+*** Godofredo Fdez. (Mié, 07/12/2016 - 20:27)
+Muchas gracias por dejarme esta referencia, Guillermo. Le he echado un vistazo y tiene buena pinta (aunque no he llegado a instalarlo). La verdad es que desde que instalé Cygwin en mis Windows he automatizado muchas cosas que venía automatizando ya en mis GNU/Linux, reaprovecho scripts y conocimientos. Además tengo todo lo que necesito: ssh, telnet, x-windows, etc. Como ya he dicho en el artículo, instalar Cygwin sólo para el telnet o incluso el ssh me parece un desperdicio, pero si lo utilizas para muchas más cosas del mundo Unix/Linux creo que es una inmejorable alternativa.
+
+Seguimos compartiendo.
+
+Gracias de nuevo por el comentario.

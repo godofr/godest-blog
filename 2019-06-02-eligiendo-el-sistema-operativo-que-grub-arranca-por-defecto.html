@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Eligiendo el sistema operativo que Grub arranca por defecto</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">02 jun 2019</div><h1 class="post-title"><a href="https://godest.vivencias.net/2019-06-02-eligiendo-el-sistema-operativo-que-grub-arranca-por-defecto.html">Eligiendo el sistema operativo que Grub arranca por defecto</a></h1>
+<p>
+Hola.
+</p>
+
+<p>
+Este artículo es un resumen de las indicaciones "que funcionan" (lo he probado) recogidas en este hilo de la comunidad de Ubuntu: 
+<a href="https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader">https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader</a>
+</p>
+
+<p>
+Así, procedemos de esta forma:
+</p>
+
+<p>
+#1# Listamos el número y detalle de los sistemas que ha detectado Grub en nuestro equipo:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">godo@TuChi:~$ fgrep menuentry /boot/grub/grub.cfg
+<span style="color: #0000FF;">if</span> [ x<span style="color: #008000;">"${feature_menuentry_id}"</span> = xy ]; <span style="color: #0000FF;">then</span>
+  <span style="color: #BA36A5;">menuentry_id_option</span>=<span style="color: #008000;">"--id"</span>
+  <span style="color: #BA36A5;">menuentry_id_option</span>=<span style="color: #008000;">""</span>
+<span style="color: #006FE0;">export</span> menuentry_id_option
+menuentry <span style="color: #008000;">'Debian GNU/Linux'</span> --class debian --class gnu-linux --class gnu --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'gnulinux-simple-bb5b1d8f-283e-4ea2-905f-630da5f13971'</span> {
+submenu <span style="color: #008000;">'Opciones avanzadas para Debian GNU/Linux'</span> $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'gnulinux-advanced-bb5b1d8f-283e-4ea2-905f-630da5f13971'</span> {
+        menuentry <span style="color: #008000;">'Debian GNU/Linux, con Linux 4.9.0-9-amd64'</span> --class debian --class gnu-linux --class gnu --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'gnulinux-4.9.0-9-amd64-advanced-bb5b1d8f-283e-4ea2-905f-630da5f13971'</span> {
+        menuentry <span style="color: #008000;">'Debian GNU/Linux, with Linux 4.9.0-9-amd64 (recovery mode)'</span> --class debian --class gnu-linux --class gnu --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'gnulinux-4.9.0-9-amd64-recovery-bb5b1d8f-283e-4ea2-905f-630da5f13971'</span> {
+menuentry <span style="color: #008000;">'Windows 10 (en /dev/sda1)'</span> --class windows --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'osprober-chain-01D317734DAEB710'</span> {
+menuentry <span style="color: #008000;">'Windows 10 (en /dev/sdc1)'</span> --class windows --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'osprober-chain-01D163EEA0DA4380'</span> {
+godo@TuChi:~$ 
+</pre>
+</div>
+
+<p>
+#2# Podemos observar, después de la palabra clave "menuentry", el nombre de las "entradas del menú de arranque que muestra Grub" entre comillas simples, por ejemplo: 'Windows 10 (en /dev/sdc1)'.
+</p>
+
+<p>
+#3# Editamos el fichero: /etc/default/grub, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">root@TuChi:/etc/default# nano grub 
+</pre>
+</div>
+
+<p>
+Podemos ver cómo queda:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">root@TuChi:/etc/default# more grub 
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">If you change this file, run 'update-grub' afterwards to update</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">/boot/grub/grub.cfg.</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">For full documentation of the options in this file, see:</span>
+<span style="color: #8D8D84;">#   </span><span style="color: #8D8D84; font-style: italic;">info -f grub -n 'Simple configuration'</span>
+<span style="color: #BA36A5;">GRUB_DEFAULT</span>=0
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">GRUB_DEFAULT="Windows 10 (en /dev/sdc1)"</span>
+</pre>
+</div>
+
+<p>
+#4# La opción 
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #008000;">"GRUB_DEFAULT=0"</span> 
+</pre>
+</div>
+<p>
+controla la entrada por defecto que va a ser arrancada. Aquí, donde lo vemos igualado a "cero", significa que arrancará la primera entrada que haya en el menú de arranque, en mi caso, 'Debian GNU/Linux, con Linux 4.9.0-9-amd64'. Si queremos que arranque otra, podemos indicarle el nombre de la entrada deseada, según lo hemos visto antes aparecer tras la palabra "menuentry", <b>pero utilizando comillas dobles</b>. Por ejemplo, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #BA36A5;">GRUB_DEFAULT</span>=<span style="color: #008000;">"Windows 10 (en /dev/sdc1)"</span>
+</pre>
+</div>
+
+<p>
+#5# <b>No olvidar nunca esto para actualizar el "verdadero" cargador de arranque de nuestra máquina</b>:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">root@TuChi:/etc/default# update-grub
+Generando un fichero de configuraci&#243;n de grub...
+Found background image: /usr/share/images/desktop-base/desktop-grub.png
+Encontrada imagen de linux: /boot/vmlinuz-4.9.0-9-amd64
+Encontrada imagen de memoria inicial: /boot/initrd.img-4.9.0-9-amd64
+Encontrado Windows 10 en /dev/sda1
+Encontrado Windows 10 en /dev/sdc1
+hecho
+root@TuChi:/etc/default#
+</pre>
+</div>
+
+<p>
+Y eso es todo.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Eligiendo_el_sistema_operativo_que_grub_arranca_por_defecto">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

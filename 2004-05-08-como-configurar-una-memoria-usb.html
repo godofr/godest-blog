@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Como configurar una memoria USB</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">08 may 2004</div><h1 class="post-title"><a href="https://godest.vivencias.net/2004-05-08-como-configurar-una-memoria-usb.html">Como configurar una memoria USB</a></h1>
+<p>
+Has de dar soporte en el kernel a los siguientes módulos:
+</p>
+<ul class="org-ul">
+<li><code>sd_mod</code></li>
+<li>usb-storage</li>
+</ul>
+
+<p>
+Has de añadir a "/etc/fstab" la siguiente línea:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">/dev/sda1 /mnt/usbflash vfat user,noauto,<span style="color: #BA36A5;">umask</span>=0 0 0
+</pre>
+</div>
+
+<p>
+Para usar el dispositivo el superusuario <b>root</b> ha de cargar el módulo que lo gestiona: 
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">modprobe usb-storage
+</pre>
+</div>
+
+<p>
+Cualquier usuario lo puede montar con: 
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">mount /mnt/usbflash
+</pre>
+</div>
+
+<p>
+Una vez montado se utiliza como si de un disquete se tratara.
+</p>
+
+<p>
+<b>¡OJO! Para evitar daños antes de desconectarlo has de hacer:</b> 
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">umount /mnt/usbflash 
+</pre>
+</div>
+
+<p>
+Al finalizar con este comando te aseguras que el dispositivo no está en uso, pudiéndolo desconectar de forma segura.
+</p>
+
+<div id="outline-container-org11cfb58" class="outline-2">
+<h2 id="org11cfb58">Comentarios</h2>
+<div class="outline-text-2" id="text-org11cfb58">
+</div>
+<div id="outline-container-orgea6b877" class="outline-3">
+<h3 id="orgea6b877">Anonymous (no verificado Mar, 07/12/2004 - 15:10)</h3>
+<div class="outline-text-3" id="text-orgea6b877">
+<p>
+Hola, pues muy bueno tu blog, en especial este tutor, porfin pude bajar mis fotos de la camara :)
+</p>
+
+<p>
+Muchas gracias y felicidades.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf5e7c6d" class="outline-3">
+<h3 id="orgf5e7c6d">Godofredo Fdez. (Jue, 23/12/2004 - 15:17)</h3>
+<div class="outline-text-3" id="text-orgf5e7c6d">
+<p>
+&#x2026;de nada.
+</p>
+
+<p>
+Bueno, lo tengo algo abandonado por la "exigida" dedicación a otros quehaceres. Pero este tipo de comentarios me sirven de aliento para seguir con él y me hacen plantearme el dedicar unos 15min. al día para ir modelando nuevos contenidos.
+</p>
+
+<p>
+Gracias a ti.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1009e69" class="outline-3">
+<h3 id="org1009e69">drimakus (Lun, 07/02/2005 - 15:28)</h3>
+<div class="outline-text-3" id="text-org1009e69">
+<p>
+Sincronización en la grabación de datos
+Yo utilizo la opción "sync" de mount para montar mi memoria USB:
+</p>
+
+<p>
+user,sync,noauto&#x2026;
+</p>
+
+<p>
+Sin esta opción, las transferencias de datos hacia la memoria pasan por algún "buffer" intermedio, encargándose el sistema operativo del trasbase de datos entre este "buffer" y la memoria como en segundo plano. De este modo, si el movimiento de datos lo hacemos, por ejemplo, con "konqueror" veremos que el diálogo de progreso de la copia/movimiento de ficheros finaliza muy rápidamente. Y sin embargo la luz que pueda tener la memoria seguirá indicando actividad.
+</p>
+
+<p>
+Con esta opción habilitada, por otro lado, uno va viendo, al hacer la transferencia de datos hacia la memoria, la velocidad real de grabación de la misma en el mismo diálogo de progreso.
+</p>
+
+<p>
+Se consigue que no sea tan crítico extraer la memoria USB sin haberla desmontado, por lo menos en cuanto a la integridad de la información almacenada. Aunque también aconsejo realizar el desmontado siempre antes de extraer la memoria.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd68462" class="outline-3">
+<h3 id="orgcd68462">Godofredo Fdez. (Mar, 08/02/2005 - 12:38)</h3>
+<div class="outline-text-3" id="text-orgcd68462">
+<p>
+Muchas gracias
+</p>
+
+<p>
+&#x2026;por compartir este detalle CON importancia ;-) &#x2026; y por animarte a ser uno de nosotros.
+</p>
+
+<p>
+Bienvenido.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgba9da96" class="outline-3">
+<h3 id="orgba9da96">Anonymous (no verificado Mar, 02/10/2007 - 20:21)</h3>
+<div class="outline-text-3" id="text-orgba9da96">
+<p>
+duda
+HOLA QUE TAL A TODOS.
+TENGO UN PROBLEMA Y NO SE COMO RESOLVERLO, BUENO SE TRATA DE LA COMPU, LO QUE PASA QUE TENGO LA MEMORIA USB, Y LA COMPU TIENE LA ENTRADA PERO NO LA RECONOCE COMO CONFIGURO LA COMPU PARA QUE LEA LA MEMORIA?
+ESTA ES LANIXY TENIA WINDOWS MILLENIUM Y LE CAMBIE A WINDOWS XP, NO SE SI ESO AFECTA.
+BUENO GRACIAS Y ESPERO SU PRONTA RESPUESTA.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0dbac8a" class="outline-3">
+<h3 id="org0dbac8a">Godofredo Fdez. (Vie, 05/10/2007 - 18:51)</h3>
+<div class="outline-text-3" id="text-org0dbac8a">
+<p>
+USB en Windows XP
+Hola. Es muy extraño lo que te está pasando. El Windows XP es uno de los sistemas operativos mejores de Microsoft (para mi gusto incluso mejor que Windows Vista, incluso), y suele traer ya implementados los controladores de los puertos USB. Si tienes Internet te aconsejo que hagas lo siguiente:
+</p>
+
+<ul class="org-ul">
+<li>Conéctate a Internet.</li>
+<li>Conecta la memoria USB al puerto.</li>
+<li>Espera un ratito y, si el ordenador no detecta dicha memoria sigue con el siguiente paso.</li>
+<li>Abre windows &#x2014;&gt; panel de control &#x2014;&gt; agregar nuevo hardware.</li>
+<li>Realiza cada uno de los pasos que te vaya mostrando el asistente.</li>
+<li>Si no encuentra los drivers te preguntará si quieres que los busque en "localizaciones específicos", entre ellos Internet. Selecciona esta opción y prosigue</li>
+</ul>
+
+<p>
+Tras realizar estos pasos estoy casi seguro de que Windows XP detectará la memoria. Si aún así sigue sin detectarla intenta esto otro:
+</p>
+
+<ul class="org-ul">
+<li>Abre el Internet Explorer.</li>
+<li>Menú herramientas &#x2014;&gt; WindowsUpdate.</li>
+<li>Instala todas las actualizaciones disponibles.</li>
+</ul>
+
+<p>
+Y como última opción, ¡Pásate a GNU/Linux!
+</p>
+
+<p>
+¡Suerte!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org979ef61" class="outline-3">
+<h3 id="org979ef61">Anonymous (no verificado Mié, 11/03/2009 - 14:20)</h3>
+<div class="outline-text-3" id="text-org979ef61">
+<p>
+pregunta
+hola lo que pasa es que tengo una usb y cuando le meto los archivos quedan defectuosos
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbd90eca" class="outline-3">
+<h3 id="orgbd90eca">Godofredo Fdez. (Mié, 11/03/2009 - 17:50)</h3>
+<div class="outline-text-3" id="text-orgbd90eca">
+<p>
+Desconectar hardware con seguridad
+Me da la impresión de que utilizas Windows y no estás "desconectando el hardware con seguridad" y no dejas tiempo para que se copien tus archivos. Has de buscar en la barra de inicio del windows, al lado derecho, cerca del reloj, un icono con una flechita verde, pulsar con el ratón y elegir "desconectar hardware con seguridad".
+</p>
+
+<p>
+Si utilizas GNU/Linux puedes ver que aparece un icono en el escritorio (depende de la distribución que uses), pulsas sobre él con el botón derecho del ratón y le das a la opción de desmontar.
+</p>
+
+<p>
+Cuanto terminen las acciones descritas en los párrafos anteriores te aparecerá un mensaje indicándote que "ahora puedes desconectar tu usb". Si lo desconectas antes de realizar las acciones que te indico puede que no le de tiempo a copiar los archivos al usb y te aparezcan defectuosos. Si estás haciendo este proceso, y aún así te aparecen defectuosos o tienes un virus o se te ha estropeado el usb: un servicio técnico te ayudará.
+</p>
+
+<p>
+Gracias.
+</p>
+
+<p>
+Salud.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1f3d283" class="outline-3">
+<h3 id="org1f3d283">carlos fernando (no verificado Jue, 26/03/2009 - 20:25)</h3>
+<div class="outline-text-3" id="text-org1f3d283">
+<p>
+sobre desconectar USB forma segura
+hola en mi laptop tuve un problema en el lado derecho de mi pantalla y no puedo ver la parte donde se ubica el icono con una flechita verde, se que se puede colocar en el escritorio como un icono u otro programa, quisiera saber si alguien sabe como hacerlo o donde ubicarlo para ponerlo en mi escritorio, y poder desconectar mi memoria USB, gracias.
+escribanme aqui
+</p>
+
+<p>
+calin<sub>sc</sub>@hotmail.com
+carlos fernando
+</p>
+
+<p>
+avisenme por fa para poder ingresar de nuevo aqui
+si encuentro la solucion para ponerla tambien, gracias
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6fe799b" class="outline-3">
+<h3 id="org6fe799b">Anonymous (no verificado Mié, 11/03/2009 - 14:30)</h3>
+<div class="outline-text-3" id="text-org6fe799b">
+<p>
+S.O.S
+porfa alguien que me ayude con mi usb
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga3fd6a9" class="outline-3">
+<h3 id="orga3fd6a9">Marriola (no verificado Lun, 27/07/2009 - 04:28)</h3>
+<div class="outline-text-3" id="text-orga3fd6a9">
+<p>
+Memorias USB desinstaladas
+Los moscas IT de mi trabajo desinstalaron en masa el acceso a las memorias USB, quiero volver a utilizarlos, como lo hago por favor?. Uso Windows XP. Gracias anticipadas
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/LINUX</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

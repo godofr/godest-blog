@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Utilizando "sudo" en Debian o como jugar a ser Dios</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">27 jun 2018</div><h1 class="post-title"><a href="https://godest.vivencias.net/2018-06-27-utilizando-sudo-en-debian-o-como-jugar-a-ser-dios.html">Utilizando "sudo" en Debian o como jugar a ser Dios</a></h1>
+<p>
+De todos es sabido, y espero que aún más entre los lectores de esta pequeña gota de agua, insignificante, en el océano de Internet, que <b>trabajar con privilegios de administrador (terminología Windows) o superusuario (terminología Unix) en nuestro sistema durante el día a día está totalmente desaconsejado</b>. Como otras muchas veces, Unix se adelantó a Windows (hoy en día esta ventaja ya no es tal, Windows también lo resuelve perfectamente) en esta separación de roles y, de hecho, desde el mismo momento de la instalación de un sistema Unix se obligaba al usuario que lo estaba instalando a:
+</p>
+
+<ol class="org-ol">
+<li>Elegir la contraseña de root. "root" siempre es el usuario con máximos privilegios: puede instalar y desinstalar aplicaciones, puede modificar/borrar ficheros del sistema&#x2026; puede ver los buzones de correo de otros usuarios, e incluso puede borrar archivos y "cuentas" completas de otros usuarios (de hecho, es él quien las crea). Por eso, en el argot de los que trasteamos con los sistemas, cuando adoptamos el rol de root solemos describirlo como "me voy a convertir en Dios", porque es omnipoderoso.</li>
+
+<li>A elegir una cuenta de usuario "normal", sin privilegios, que sólo puede utilizar las aplicaciones instaladas por root, no puede ni instalar ni desinstalar, ni modificar partes críticas, clave, del sistema, ni ver los ficheros "confidenciales" de otros usuarios (siempre que los permisos estén bien puestos), etc.</li>
+</ol>
+
+<p>
+Pero es más, y este es el verdadero <b>quid de la cuestión: desde el inicio, desde el primer "login" a la máquina, el usuario con el que se trabaja (esto es flexible según la distribución, pero hay algunas que lo obligan) es el usuario normal. Y todo el mundo que utilizamos Unix o GNU/Linux en nuestro día a día así lo hacemos</b>.
+</p>
+
+<p>
+Pero, ¿qué pasa si en un determinado momento necesitas hacer algo como root? Pues Unix también resolvió esto hace mucho tiempo. Cuando aún no había entornos gráficos los sistemas Unix ya eran multiusuario y multitarea. Habrías otra consola, como si tuvieras varias pantallas para trabajar sobre la misma pantalla física, y entrabas como root. Pero ni siquiera eso era/es necesario: puedes cambiar tu personalidad y pasar a ser root haciendo uso del comando "su", que te pide la contraseña de root y, si la sabes, te convierte en root:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[23:07:39(godo@surco)~]&gt; su
+Contrase&#241;a:
+[23:21:41(root@surco)/home/godo]#
+</pre>
+</div>
+
+<p>
+Y ya puedes estar trabajando un rato (no sólo un comando, sino muchos) como root. Y esto es importante para entender la principal diferencia con sudo. ¿Qué permite sudo? sudo permite ser root "sólo" para ejecutar un comando, cuando ese comando termina sigues siendo tú, ese usuario normal sin privilegios. <b>¿Y qué comando es el que te permite ejecutar sudo? Esta es la segunda clave del tema: sólo aquellos para los que te haya autorizado root a "echarle una mano"</b>. Imagínate que quieres montar una determinada partición de una máquina que suele estar desmontada porque en ella se albergan las copias de seguridad. El administrador de esa máquina, root, puede delegarte sólo esa tarea. Para ello en el fichero /etc/sudoers (que nunca se edita de forma directa sino haciendo uso de la utilidad "visudo") root puede escribir estas líneas:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">godo <span style="color: #BA36A5;">ALL</span>=(ALL) NOPASSWD: /bin/mount
+</pre>
+</div>
+
+<p>
+(NOPASSWD es para que no te solicite password. Si no se pone, te la solicitaría).
+</p>
+
+<p>
+Así, el usuario "godo" puede utilizar sudo "sólo" para ejecutar el comando "mount" como superusuario.
+</p>
+
+<p>
+Si el usuario "godo" no estuviera "capacitado" para ejecutar un comando vía "sudo", y aún así lo intentara, "root" sería notificado vía mail, siendo este que sigue el "cuerpo" del correo:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">surco : Jun 27 20:33:40 : godo : user NOT<span style="color: #0000FF;"> in</span> sudoers ; <span style="color: #BA36A5;">TTY</span>=pts/0 ; <span style="color: #BA36A5;">PWD</span>=/home/godo ; <span style="color: #BA36A5;">USER</span>=root ; <span style="color: #BA36A5;">COMMAND</span>=/usr/bin/apt-get update
+</pre>
+</div>
+
+<p>
+¿Qué hacen distribuciones como Ubuntu, y yo suelo configurar en mi Debian? Pues Ubuntu directamente impide que root haga "login" en la máquina, es decir, siempre has de entrar en el sistema con el usuario sin privilegios, y si necesitas utilizar "cualquier comando" (sin límites) en modo "privilegiado" recurres a "sudo". De hecho, "root" en Ubuntu no tiene contraseña y nunca puedes acceder a ser "root" de forma "total" (no funciona "su" hasta que no le pones contraseña a "root" utilizando "sudo" ¡Curioso!). Para que un usuario normal tenga acceso a todos los comandos de "root" sin llegar a "serlo", es decir, vía "sudo", basta que siendo "root" se agregue al usuario "godo", en mi caso, al grupo de usuarios de "sudo" (recuerda que Unix hay grupos de usuarios que comparten "permisos"). Así es como yo lo hago en Debian, supongo que en Ubuntu se hace algo parecido durante la instalación del sistema.
+</p>
+
+<p>
+Yo, para recordar esto cuando hago una instalación nueva, conservo unas líneas explicativas en el fichero "sudoers" de mi máquina habitual, que agregué con "visudo", claro. Y desde ahora las conservo aquí también y las comparto con vosotros. Son estas:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[23:30:49(godo@surco)~]&gt; more /etc/sudoers
+more: no se puede abrir /etc/sudoers: Permiso denegado
+[23:30:57(godo@surco)~]&gt; sudo more /etc/sudoers
+[sudo] password for godo:
+<span style="color: #8D8D84;">#</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">This file MUST be edited with the 'visudo' command as root.</span>
+<span style="color: #8D8D84;">#</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Please consider adding local content in /etc/sudoers.d/ instead of</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">directly modifying this file.</span>
+<span style="color: #8D8D84;">#</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">See the man page for details on how to write a sudoers file.</span>
+<span style="color: #8D8D84;">#</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">&#161;&#161;OJO!! MIRA UN POCO MAS ABAJO. BASTA CON:</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">1. A&#209;ADIR EL USUARIO godo AL GRUPO sudo.</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">2. CERRAR LA SESI&#211;N Y VOLVER A ENTRAR.</span>
+
+<span style="color: #8D8D84;">#</span>
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        <span style="color: #BA36A5;">secure_path</span>=<span style="color: #008000;">"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"</span>
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Host alias specification</span>
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">User alias specification</span>
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Cmnd alias specification</span>
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">User privilege specification</span>
+root    <span style="color: #BA36A5;">ALL</span>=(ALL:ALL) ALL
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Allow members of group sudo to execute any command</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Agregamos a Godo al grupo sudo con:</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">[20:32:31(root@surco)/var/log]&gt; adduser godo sudo</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">A&#241;adiendo al usuario `godo' al grupo `sudo' ...</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">A&#241;adiendo al usuario godo al grupo sudo</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Hecho.</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Otra forma de hacerlo es:</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">[20:37:04(root@surco)/home/godo]&gt; gpasswd -a godo sudo</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">A&#241;adiendo al usuario godo al grupo sudo</span>
+
+%sudo   <span style="color: #BA36A5;">ALL</span>=(ALL:ALL) ALL
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">See sudoers(5) for more information on "#include" directives:</span>
+
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">includedir /etc/sudoers.d</span>
+[23:31:12(godo@surco)~]&gt;
+</pre>
+</div>
+
+<p>
+Observad al principio, cuando ejecuto el comando "more", como con mi usuario no tengo permisos para ver el fichero, pero sí utilizando "sudo".
+</p>
+
+<p>
+Una última cosa, antes hablé de "su", y de que la contraseña que te solicita es la de "root", es decir, te tienes que saber la contraseña de "root", por tanto, cuando utilizas "su" te conviertes en root de "manera ancha". Sin embargo "sudo" no nace para hacer lo mismo que "su", aunque puede "casi llegar a hacerlo", sino que lo que quiere conseguir es un acceso a "hacer uso de privilegios" de forma más granular. Lo que te solicita por tanto no es la contraseña de "root", esta puede seguir siendo totalmente privada para "root" (¡root/Dios sólo hay uno!), sino la tuya, con el único fin de dejar "huella" en el sistema y que "root" sepa quién ha hecho qué. ¡Una verdadera maravilla del ingenio humano!
+</p>
+
+<p>
+Espero que os haya gustado y que os acostumbréis a usarlo. Pero sobre todo, que os ayude a pensar.
+</p>
+
+<p>
+Y el séptimo día descansó.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Utilizando_sudo_en_Debian_o_como_jugar_a_ser_Dios">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

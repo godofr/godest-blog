@@ -1,0 +1,72 @@
+#+title: Cómo hacer que un pdf editado (en ordenador) se vea como un pdf escaneado
+#+date: <2023-03-04 10:48>
+#+description: 
+#+filetags: Software
+
+Esto es muy útil cuando te envían un pdf que has de cumplimentar, firmar y escanear. 
+
+Es una pérdida de tiempo imprimir dicho documento, rellenarlo y firmarlo a mano, y volver a escanearlo. Lo más lógico es rellenar el documento utilizando un software de pdf que lo permita, pegar tu firma que previamente tienes escaneada, y guardarlo directamente en el ordenador.
+
+Sin embargo, si hacemos lo segundo -la edición directa en el ordenador-, el receptor de ese pdf puede comprobar que ha sido así, y alegarte (como yo he sufrido en mis propias carnes) que dicha firma no es de tu "puño y letra" sino que ha sido copiada/pegada, y eso no vale. 
+
+Así que, es necesario llevar a cabo un paso intermedio: hay que hacer que "el pdf editado" se vea en el destino como "un pdf generado por un escáner", es decir, como una única imagen completa. Para esto, disponemos de herramientas software que convierten un pdf en una imagen, por ejemplo: pdftoppm – convert a PDF page to a bitmap (del [[https://en.wikipedia.org/wiki/Poppler_(software)][Proyecto Poppler]]).
+
+Hay que instalar en tu sistema el "paquete poppler". Dicho paquete existe para sistemas opertaivos tipo GNU/Linux, MAC y Windows.
+
+Yo suelo utilizar en mis ordenadores tanto GNU/Linux como Windows. Se instala así:
+En GNU/Linux Debian: 
+#+begin_src sh :results output
+apt-get update && apt-get install -y poppler-utils
+#+end_src
+
+En Windows, vía [[https://chocolatey.org/][chocolatey]], así:
+#+begin_src sh :results output
+choco install poppler
+...
+Extracting C:\ProgramData\chocolatey\lib\poppler\tools\poppler-0.89.0-win32.zip to C:\ProgramData\chocolatey\lib\poppler\tools...
+C:\ProgramData\chocolatey\lib\poppler\tools
+ ShimGen has successfully created a shim for pdfattach.exe
+ ShimGen has successfully created a shim for pdfdetach.exe
+ ShimGen has successfully created a shim for pdffonts.exe
+ ShimGen has successfully created a shim for pdfimages.exe
+ ShimGen has successfully created a shim for pdfinfo.exe
+ ShimGen has successfully created a shim for pdfseparate.exe
+ ShimGen has successfully created a shim for pdftocairo.exe
+ ShimGen has successfully created a shim for pdftohtml.exe
+ ShimGen has successfully created a shim for pdftoppm.exe
+ ShimGen has successfully created a shim for pdftops.exe
+ ShimGen has successfully created a shim for pdftotext.exe
+ ShimGen has successfully created a shim for pdfunite.exe
+ The install of poppler was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\poppler\tools'
+...
+#+end_src
+
+Una vez instalado, podemos convertir un pdf en mapa de bits, es decir, en una imagen única igual que si resultara de un escaneo, así:
+#+begin_src sh :results output
+PS D:\Descargas> pdftoppm -jpeg -r 300 '.\documento.pdf' output
+#+end_src
+
+Siendo "output" el prefijo de salida de cada una de las páginas del documento pdf, pero ya en formato jpg.
+
+Luego abres ese jpg, lo imprimes a pdf utilizando "Microsoft Print to PDF", ¡y listo! Tienes un pdf que parece haber sido el resultado de un escaneo.
+
+Saludos.
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Como_hacer_que_un_pdf_editado_se_vea_como_un_pdf_escaneado][Dejar comentario]].
+
+** Comentarios
+*** Buen truco y bueno saberlo (Felix Prado -- 01/05/2023 - 14:45)
+Buen truco y bueno saberlo, ¡gracias por compartir! El otro día un banco me pidió que firmara un documento y firmé el pdf con un certificado digital, que obviamente es mucho más seguro y verificable que cualquier firma analógica, insertada como imagen o no. Bueno pues como has comentado, me lo echaron atrás por no estar firmado de forma manuscrita... Para llorar.
+
+Así que mientras llegamos a ese punto, está bien tener estas herramientas para combatir la incompetencia digital ;)
+
+Un saludo.
+*** Así es, nos falta aún cultura digital... (Godofredo Fdez. -- Lun, 15/05/2023 - 09:37)
+...lo que sorprende es que siga pasando en sectores que están totalmente volcados al "online", y desde hace tiempo. ¿Habrá un servicio más utilizado por Internet que el Bancario (sin contar con la diversión: streaming, videojuegos y tal)?
+
+Como tú mismo dices, mejor tener estos truquitos que nos permitan ahorrar tiempo y papel.
+
+Muchas gracias, Félix, por tu comentario. Llevaba tiempo sin saber de ti. Espero que estés bien.
+
+Un abrazo.

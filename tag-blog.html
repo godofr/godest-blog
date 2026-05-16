@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>GodEst.vivencias.net</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<h1 class="title">Posts tagged "blog":</h1>
+<div class="post-date">26 ene 2025</div><h1 class="post-title"><a href="https://godest.vivencias.net/2025-01-26-para-republicar-todo-el-blog.html">Para republicar todo el blog</a></h1>
+<p>
+Entrar en el directorio de post:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[14:48:25(godo@surcopi:~/projects/blog/posts]
+$ pwd
+/home/godo/projects/blog/posts
+</pre>
+</div>
+
+<p>
+Y ejecutar esto:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name <span style="color: #008000;">"2025-01-26-buscar-en-godest.org"</span> -exec touch {} <span style="color: #008000;">\;</span>
+</pre>
+</div>
+
+<p>
+Mira como se aprecia el resultado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[14:45:27(godo@surcopi:~/projects/blog/posts]
+$ ll
+total 288
+-rwxrwx--- 1 godo www-data 4455 ene 26 14:41  2005-12-11-soy-un-hacker.org
+-rwxrwx--- 1 godo www-data  239 sep 29  2023  2022-05-17-hoy-es-mi-cumpleanos.org
+-rwxrwx--- 1 godo www-data 4380 oct  2  2023 <span style="color: #008000;">'2023-03-04-como-hacer-que-un-pdf-editado-(en-ordenador)-se-vea-como-un-pdf-escaneado.org'</span>
+-rwxrwx--- 1 godo www-data  415 sep 30  2023  2023-09-28-how-to-write-a-blog-post.org
+-rwxrwx--- 1 godo www-data  205 ene 25 21:36  2025-01-25-prueba-retomando-org-static-blog.org
+-rwxrwx--- 1 godo www-data 1851 ene 26 13:57  2025-01-26-buscar-en-godest.org
+-rwxrwx--- 1 godo www-data 1604 ene 26 14:25  2025-01-26-colaboracion-en-charla-ponencia-mesa-redonda.org
+-rwxrwx--- 1 godo www-data  590 ene 26 14:42  2025-01-26-contactar.org
+-rwxrwx--- 1 godo www-data  578 ene 26 14:18  2025-01-26-prueba-3.org
+[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name <span style="color: #008000;">"2025-01-26-buscar-en-godest.org"</span> -exec touch {} <span style="color: #008000;">\;</span>
+[14:46:12(godo@surcopi:~/projects/blog/posts]
+$ ll
+total 288
+-rwxrwx--- 1 godo www-data 4455 ene 26 14:46  2005-12-11-soy-un-hacker.org
+-rwxrwx--- 1 godo www-data  239 ene 26 14:46  2022-05-17-hoy-es-mi-cumpleanos.org
+-rwxrwx--- 1 godo www-data 4380 ene 26 14:46 <span style="color: #008000;">'2023-03-04-como-hacer-que-un-pdf-editado-(en-ordenador)-se-vea-como-un-pdf-escaneado.org'</span>
+-rwxrwx--- 1 godo www-data  415 ene 26 14:46  2023-09-28-how-to-write-a-blog-post.org
+-rwxrwx--- 1 godo www-data  205 ene 26 14:46  2025-01-25-prueba-retomando-org-static-blog.org
+-rwxrwx--- 1 godo www-data 1851 ene 26 13:57  2025-01-26-buscar-en-godest.org
+-rwxrwx--- 1 godo www-data 1604 ene 26 14:46  2025-01-26-colaboracion-en-charla-ponencia-mesa-redonda.org
+-rwxrwx--- 1 godo www-data  590 ene 26 14:46  2025-01-26-contactar.org
+-rwxrwx--- 1 godo www-data  578 ene 26 14:46  2025-01-26-prueba-3.org
+[14:46:15(godo@surcopi:~/projects/blog/posts]
+$ 
+</pre>
+</div>
+
+<p>
+Seguimos aprendiendo.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-blog.html">blog</a> <a href="https://godest.vivencias.net/tag-org.html">org</a> <a href="https://godest.vivencias.net/tag-org-static-blog.html">org-static-blog</a> </div>
+<div class="post-date">28 sep 2023</div><h1 class="post-title"><a href="https://godest.vivencias.net/2023-09-28-how-to-write-a-blog-post.html">How to write a blog post</a></h1>
+<p>
+Step cero: lee esto &#x2013;&gt; <a href="https://github.com/bastibe/org-static-blog">https://github.com/bastibe/org-static-blog</a>
+</p>
+
+<p>
+Step one: Install <code>org-static-blog</code>. <br>
+Step Two: Execute <code>M-x org-static-blog-create-new-post</code> and write the content. <br>
+Step Three: Execute <code>M-x org-static-blog-publish</code> and upload to your webhost. <br>
+</p>
+
+<p>
+<b>Step Four: trucos:</b>
+</p>
+
+<p>
+<b>¡¡OJO!!</b> Para que "htmlize" de Emacs resalte la sintaxis siendo consciente de que estás trabajando sobre un fondo blanco, has de cargar un tema de Emacs que utilice dicho color de fondo para trabajar. El mejor que has encontrado, el que más te gusta, es este (añade estas líneas al <i>init.el</i>):
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">;; Para asegurar un tema claro en emacs, y que, segun la IA, htmlize genere buen coloreado sobre fondo blanco
+(load-theme <span style="color: #008000;">'leuven t)  ; Reemplaza '</span>leuven<span style="color: #008000;">' con el nombre de tu tema</span>
+</pre>
+</div>
+
+<p>
+Para utilizar <b>estilos de letra</b> haz esto:
+</p>
+<ul class="org-ul">
+<li>negrita: rodea lo que quieres resaltar con *</li>
+<li>cursiva: rodear con /</li>
+<li>subrayado: rodear con _</li>
+<li>código: rodear con ~</li>
+<li>verbatim (texto sin formato): rodear con = (lo suelo utilizar para código y va bien)</li>
+<li>tachado: rodear con +</li>
+</ul>
+
+<p>
+<b>Listas</b>: comienza los elementos de la lista con guiones (signo menos) e identa los subniveles con TAB.
+</p>
+<ul class="org-ul">
+<li>Elemento 1 de la lista</li>
+<li>Elemento 2 de la lista
+<ul class="org-ul">
+<li>Subelemento 2.1</li>
+<li>Subelemento 2.2</li>
+</ul></li>
+<li>Elemento 3 de la lista</li>
+</ul>
+
+<p>
+<b>Listas numeradas</b>: comienza cada uno de los elementos con <code>1.</code> o <code>1)</code>. Y trabaja con la identación con TAB para crear sublistas. Ejemplo:
+</p>
+<ol class="org-ol">
+<li>Este es el primer elemento de la lista numerada.</li>
+<li>Este es el segundo elemento de la lista numerada.
+<ol class="org-ol">
+<li>esta es una sublista dentro del punto 2.</li>
+<li>esta es una sublista dentro del punto 2.</li>
+</ol></li>
+<li>Este es el tercer elemento de la lista numerada.</li>
+</ol>
+
+<p>
+Para <b>citar texto</b> en recuadro con fondo gris:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_quote</span>
+No le llamamos Godo porque tenga unos kilos de m&#225;s o una <span style="color: #008000;">'r'</span> de menos, no...
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_quote</span>
+</pre>
+</div>
+
+<p>
+Para <b>insertar código</b> lo vienes haciendo así:
+</p>
+<pre>
+#+begin_src sh :results output
+[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name "2025-01-26-buscar-en-godest.org" -exec touch {} \;
+#+end_src
+</pre>
+
+<p>
+Para <b>insertar código de forma genérica</b> (sustituir LENGUAJE por el lenguaje apropiado, por ejemplo, para bash poner sh):
+</p>
+<pre>
+#+begin_src LENGUAJE
+[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name "2025-01-26-buscar-en-godest.org" -exec touch {} \;
+#+end_src
+</pre>
+
+<p>
+Para <b>insertar una imagen al lado derecho del texto</b> lo haces así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_export html</span>
+&lt;figure <span style="color: #BA36A5;">style</span>=<span style="color: #008000;">"float:right"</span>&gt;
+&lt;img <span style="color: #BA36A5;">width</span>=<span style="color: #008000;">"55"</span> <span style="color: #BA36A5;">height</span>=<span style="color: #008000;">"55"</span> <span style="color: #BA36A5;">border</span>=<span style="color: #008000;">"0"</span> <span style="color: #BA36A5;">align</span>=<span style="color: #008000;">"right"</span> <span style="color: #BA36A5;">hspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">vspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">src</span>=<span style="color: #008000;">"/static/2005/glider.png"</span> <span style="color: #BA36A5;">alt</span>=<span style="color: #008000;">"glider"</span> /&gt;
+&lt;/figure&gt;
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_export</span>
+</pre>
+</div>
+
+<p>
+Para <b>insertar una imagen centrada en el texto</b> lo haces así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_export html</span>
+&lt;figure <span style="color: #BA36A5;">style</span>=<span style="color: #008000;">"display: block; margin: 0 auto; text-align: center;"</span>&gt;
+&lt;img <span style="color: #BA36A5;">width</span>=<span style="color: #008000;">"640"</span> <span style="color: #BA36A5;">height</span>=<span style="color: #008000;">"480"</span> <span style="color: #BA36A5;">border</span>=<span style="color: #008000;">"0"</span> <span style="color: #BA36A5;">align</span>=<span style="color: #008000;">"center"</span> <span style="color: #BA36A5;">hspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">vspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">src</span>=<span style="color: #008000;">"/static/2015/la-seguridad-total-no-existe.jpg"</span>
+ <span style="color: #BA36A5;">alt</span>=<span style="color: #008000;">"La seguridad total NO EXISTE"</span> /&gt;
+&lt;/figure&gt;
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_export</span>
+</pre>
+</div>
+
+<p>
+Done.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-blog.html">blog</a> <a href="https://godest.vivencias.net/tag-org-static-blog.html">org-static-blog</a> <a href="https://godest.vivencias.net/tag-org.html">org</a> <a href="https://godest.vivencias.net/tag-emacs.html">emacs</a> </div>
+<div class="post-date">17 mar 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-03-17-suscripcion-por-correo-a-nuevos-articulos.html">Suscripción por correo a nuevos artículos</a></h1>
+<p>
+Hasta ahora, en este blog veníamos utilizando para dicho fin el servicio de <a href="https://en.wikipedia.org/wiki/FeedBurner">FeedBurner</a>, muy prometedor al principio y me atrevería a decir que aún hoy conserva parte de esas virtudes. Pensad que es un servicio anterior a 2007, fecha en la que fue adquirido por Google, pero en clara decadencia desde que Google dejó de evolucionarlo. Tanto es así que una <a href="https://www.google.es/search?q=feedburner+migrate&amp;ie=utf-8&amp;oe=utf-8&amp;gws_rd=cr&amp;ei=rh_rVrPEMIq7ar2om_gB">simple búsqueda</a> muestra las muchas alternativas y razones que hay para “migrar”.
+</p>
+
+<p>
+Yo he decidido apostar por <a href="http://mailchimp.com/">MailChimp</a>, un servicio claramente orientado al marketing online que, utilizando el correo electrónico como principal medio de envío, permite el diseño de campañas, seguimiento de las mismas y una gran particularización tanto de los fondos (contenidos) como de las formas (plantillas).
+</p>
+
+<p>
+En <b>GodEst</b> nos hemos abierto una cuenta del tipo “Forever Free Plan” que permite disponer de hasta 2.000 suscriptores (público al que envías las campañas) y realizar hasta 12.000 envíos mensuales. Más que de sobra para nosotros si tenemos en cuenta que actualmente sois unos 20 los suscritos y que yo realizo, en media, un artículo nuevo mensual, resultando así unos 20 ó 40 (si fueran dos artículos nuevos) envíos al mes.
+</p>
+
+<p>
+MailChimp se integra perfectamente con <a href="https://www.drupal.org/">Drupal</a> al existir un módulo activamente mantenido, como podéis ver <a href="https://www.drupal.org/project/mailchimp">aquí</a>. De esta forma permite que las suscripciones se gestionen desde el propio blog, a través de un formulario creado para tal efecto, el seguimiento de las altas y bajas también, siendo las primeras confirmadas mediante mail directo al nuevo suscriptor, lo que permite evitar el “spam de suscripción”; y, como no, el diseño de campañas.
+</p>
+
+<p>
+Hay varios tipos de campañas. Nosotros estamos utilizando la denominada “RSS campaign”, la cual nos permite suscribir “el motor de MailChimp” al servicio de RSS que suele ser generado por cualquier sistema “serio” de publicación web, en nuestro caso: <a href="http://godest.vivencias.net/recent-post.xml">http://godest.vivencias.net/recent-post.xml</a> y generar, a partir de éste, un mail destinado a una lista de correo con los nuevos “posts” que se van publicando. Se puede programar la hora de envío, en nuestro caso: 4:00 AM para que lo encontréis fresquito por la mañana ;-)
+</p>
+
+<p>
+Los que ya estabais suscritos a través del anterior servicio (FeedBurner) habéis sido exportados e importados a este nuevo (MailChimp), y recibiréis este artículo por duplicado (<b>sólo éste pues desactivaré el antiguo servicio en unos días</b>), es decir, enviado desde uno y desde el otro. <b>Lo he hecho así para que podáis gestionar bien la nueva suscripción frente al spam</b>.
+</p>
+
+<p>
+Me explico: es muy probable que el mail enviado desde MailChimp haya acabado en vuestra carpeta de spam. Si estáis leyendo esto en vuestro correo, al final del mismo, como si fuese a pie de página, podéis ver si el mail que leéis es el que se ha “enviado vía MailChimp” (lo he especificado así) o sigue siendo el que se enviaba por FeeBurner. <b>Lo importante es que localicéis el enviado vía MailChimp si este ha acabado en la carpeta de spam y, utilizando la opción disponible en vuestro software cliente (Outlook, Thunderbird, etc.) procedáis a indicarle que el remitente es de confianza</b>. A continuación inserto una captura de pantalla con la forma de hacerlo en Outlook: pulsando botón derecho sobre el mensaje que encontré en la carpeta de spam.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="616" border="0" align="center" hspace="10" vspace="10" src="/static/2016/confiando-en-remitente.jpg"
+ alt="No Spam en Outlook" />
+</figure>
+
+<p>
+Si estáis utilizando un correo corporativo y no sois capaces de encontrar el correo enviado por MailChimp es porque vuestro administrador ha definido una política de “lucha agresiva” contra el spam y lo está tirando antes de que os llegue (esto es tan políticamente incorrecto que no conozco a nadie que lo haga así, pero no es imposible). En este caso os recomiendo que <a href="http://godest.vivencias.net/listadecorreo/suscripcion">os suscribáis</a> haciendo uso de una cuenta personal en <a href="https://mail.google.com/">Gmail</a>, <a href="https://www.microsoft.com/es-es/outlook-com/">Outlook web</a> o cualquier otro que ya tengáis, pues siempre podréis gestionar el spam, decidiendo lo que es y lo que no, por vosotros mismos.
+</p>
+
+<p>
+Espero que este cambio nos permita seguir en estrecho contacto, evite que os perdáis algún contenido interesante y genere feedback y participación ;-)
+</p>
+
+<p>
+<b>Gracias por estar ahí</b>.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Suscripcion_por_correo_a_nuevos_articulos">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-blog.html">Blog</a> </div>
+<div class="post-date">02 mar 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-03-02-aniversario-de-godest-con-drupal-v7.html">Aniversario de GodEst con Drupal v7</a></h1>
+<p>
+Hace hoy 12 años y cuatro días que este pequeño rincón de Internet vio la luz.
+</p>
+
+<p>
+Aquel año, 2004, también fue bisiesto, naciendo GodEst el día 29 de febrero. Obligado un poco por la necesidad de conmemorar el aniversario y un mucho por la necesidad de mantener actualizado el “motor software” que hace que todo esto funcione, este minipuente provocado por el día de Andalucía he sacado dos o tres ratos y he podido acometer los cambios que ahora podéis ver.
+</p>
+
+<p>
+<b>Hemos mudado la piel (la forma)</b>.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="480" border="0" align="center" hspace="10" vspace="10" src="/static/2016/GodEstv7.jpg"
+ alt="Piel de GodEst v7" />
+</figure>
+
+<p>
+Es el cambio que muchos de vosotros podréis apreciar de forma rápida si estáis visitando nuestro sitio web (si habéis recibido este post por correo os animo a pasaros). El nuevo tema, ligeramente retocado por mí a través de las hojas de estilos, es Bartik, en honor a uno de los primeros programadores de ENIAC, como podéis leer <a href="https://www.drupal.org/project/bartik">aquí</a>.
+</p>
+
+<p>
+Volvemos a un tema donde las secciones de la página están, de nuevo, bien delimitadas: encontramos la cabecera en letras blancas con fondo azul, las diferentes secciones importantes (a mi juicio) en forma de pestaña de navegación y el contenido dividido en dos zonas: la principal, donde se muestran los artículos; y la barra lateral derecha, donde mostramos los diferentes bloques de información/navegación. Cerramos con un pie de página que da acceso a “todos los posts” antiguos, al más puro estilo blog: primero el más reciente y envejeciendo conforme vas bajando, que me sigue gustando mantener pues facilita echar un vistazo rápido a las últimas entradas publicadas.
+</p>
+
+<p>
+La página principal siempre nos recibirá con la última entrada disponible, de forma única, acaparando todo el protagonismo y mostrándose totalmente completa, desde principio a fin. Es fácil lograr este "efecto" haciendo uso del módulo "views".
+</p>
+
+<p>
+Espero que os guste y me encantaría, como siempre, ver vuestros comentarios. Que, por cierto, también muestran un renovado estilo visual… ¡Animaros a dejar alguno para verlo! :-D
+</p>
+
+<p>
+<b>Y hemos actualizado “el motor” (el fondo)</b>.
+</p>
+
+<p>
+Ya he hablado muchas veces de la potencia de Drupal, que la viene desplegando en toda su magnitud desde sus versiones 4.x (que fueron las que yo utilicé por primera vez y de las que me acuerdo). Aquí veníamos utilizando la rama 6.x que fue lanzada el 13 de febrero de 2008 (la verdad es que la hemos exprimido bien). La rama 7.x, a la que acabamos de subirnos, se lanzó el 5 de enero de 2011. Y la última versión estable, rama 8.x, se lanzó el 19 de noviembre de 2015. Anunciándose también en esa fecha el final del soporte para la rama 6.x el 24 de febrero de 2016.
+</p>
+
+<p>
+A ninguno de mis lectores le pasará desapercibido el riesgo que suponía mantenerse en la rama 6.x en estos días donde la caza de bugs y la exploración de vulnerabilidades asociadas a estos es el deporte al uso, más cotidiano aún que el correr. Así que he tenido que acelerar el paso y saltar a la rama 7.x que será soportada, a priori, durante 4 años más según se indica <a href="https://www.drupal.org/core/release-cycle-overview">aquí</a>. Y es probable, incluso, que acabe alargándose. Ya sabéis cómo son estas cosas. <b>Aprovecho para dejar constancia de una de mis máximas: aprendí en mis primeros años de técnico ir siempre en los vagones más rezagados del tren en movimiento</b>, es decir, quedarme en las últimas revisiones de la penúltima versión estable. Lo hago ahora quedándome en la versión 7.43 (43 refinamientos posteriores al lanzamiento, ni más ni menos), antes que subirme a la versión 8.0 (a mitad del próximo mes se espera la 8.1). Y lo recomiendo siempre para conmutadores, routers, firewalls y demás hardware+software en producción. Nunca salto a la última a no ser que necesite sí o sí alguna nueva funcionalidad.
+</p>
+
+<p>
+La actualización, siguiendo el procedimiento indicado, ha sido muy limpia y nada traumática. Más allá de unos cuantos ajustes en las “css”. El proceso recomendado se puede leer en muchos sitios (basta una búsqueda en Google para encontrarlos, incluso con vídeos a través de youtube). Yo me he inspirado en <a href="http://gerardmcgarry.com/2011/my-drupal-6-to-7-upgrade-process/">este</a>. Y, muy resumido, he realizado esto:
+</p>
+<ul class="org-ul">
+<li>Backup de base de datos <b>¡Muy importante!</b></li>
+<li>Backup del directorio de archivos.</li>
+<li>Inventario de módulos en uso, sobre todo los “contribuidos por la comunidad”, es decir, los no “core” y “optional core”.</li>
+</ul>
+<p>
+-Deshabilitar los módulos “contribuidos por la comunidad” y los “temas gráficos” no core (yo fallé en esto último pero pude recuperarlo sin mucho esfuerzo).
+</p>
+<ul class="org-ul">
+<li>Migrar…</li>
+<li>…Ajustar ;-)</li>
+</ul>
+
+<p>
+Y, como comentaba antes, ahora ya estamos en la versión 7.43, lanzada como reacción a un “<a href="https://www.drupal.org/SA-CORE-2016-001">aviso de seguridad</a>” que fue difundido el mismo 24 de febrero de 2016. Y disfrutamos de sus notificaciones de seguridad, fácil y rápida actualización, estabilidad, ciclo de vida en vigor, etc.
+</p>
+
+<p>
+Para terminar también os diré que estuve viendo la posibilidad de dar “dos pasos en uno”, lo que nos habría llevado a disfrutar de la versión 8.x. Pero el proceso de migración no está aún muy maduro. La próxima 8.1 lo madurará un poco más, pero no lo suficiente. Y esto por no hablar de muchos de los módulos de funcionalidad adicional que aún están en versiones alpha o beta. Demasiado riesgo. Demasiados ajustes pendientes. Demasiado tiempo a invertir para el poco del que dispongo. Lo que subraya mi máxima expresada más arriba&#x2026; Así que la dejaré reposar unos cuantos otoños.
+</p>
+
+<p>
+En fin, espero que todo esto nos ayude a permanecer juntos muchos años más.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Aniversario_de_GodEst_con_Drupal_v7">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-blog.html">Blog</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div>
+<div class="post-date">22 mar 2004</div><h1 class="post-title"><a href="https://godest.vivencias.net/2004-03-22-drupal-tu-ordenado-baul-de-conocimientos.html">Drupal: tu ordenado baúl de conocimientos</a></h1>
+<p>
+Quiero dedicar esta historia a describir las dos grandes piedras en las que se fundamenta esta bitácora.
+</p>
+
+<p>
+La primera de estas piedras es la que ha puesto a mi disposición <a href="http://bitacoras.com/">bitácoras.com</a>. Gracias al espacio de disco prestado en su servidor de forma desinteresada, a las herramientas tecnológicas de las que está dotado el mismo (<a href="http://www.php.net/">php</a> y servidor <a href="http://www.mysql.com/">mysql</a>), a las herramientas administrativas que han puesto a mi disposición y, sobre todo, a su amable atención y dedicación, esta pequeña isla en Internet ofrecía un hábitat propicio para mi alojamiento.
+</p>
+
+<p>
+La segunda de las piedras en la que se fundamenta esta bitácora es el "gestor de conocimiento" llamado: <a href="http://drupal.org/">Drupal</a>.
+</p>
+
+<p>
+A modo de resumen traduciré la breve presentación que de Drupal podéis encontrar en su página web:
+</p>
+
+<p>
+"Drupal, un proyecto de código abierto, es un sistema de gestión de contenidos utilizado para construir "sitios" web dinámicos. Ofrece un gran rango de prestaciones y servicios, incluyendo: administración de usuarios, flujo de publicación, foros de discusión, adición de noticias, funcionalidades de clasificación de contenidos utilizando vocabularios "controlados" y compartición de contenidos utilizando el estándar XML para su difusión. Equipado con una poderosa mezcla de prestaciones y capacidad de adaptación, Drupal puede soportar un rango diverso de proyectos web: desde weblogs personales hasta grandes sitios comunitarios".
+</p>
+
+<p>
+Pensaba entrar en detalle en la descripción de cada una de estas funcionalidades con las que cuenta este maravilloso gestor de contenidos, pero creo que es mejor indicaros a los interesados algunos de los sitios disponibles en Internet que hacen uso de ella para que, visitándolos, os hagáis una idea de lo hasta ahora comentado. En breve iré añadiendo historias a esta bitácora donde iré describiendo con mayor detalle cada uno de los elementos de esta útil herramienta.
+</p>
+
+<p>
+Sitios web basados en Drupal son:
+</p>
+
+<ul class="org-ul">
+<li><a href="http://www.badopi.org/">Badopi</a></li>
+<li><a href="http://www.debianplanet.org/">Debian Planet</a></li>
+<li><a href="http://www.jabberes.org/">JabberES</a></li>
+<li><a href="http://www.linuxjournal.com/">Linux Gazette</a></li>
+<li><a href="http://tkabber.jabber.ru/">TKabber</a></li>
+</ul>
+
+<p>
+En un futuro cercano intentaré publicar: "Como instalar una bitácora en Linux (Debian)", "Como instalar una bitácora en Windows (2000 ó XP)", "Drupal: entrando en detalle".
+</p>
+
+<p>
+Esperando que este apunte os haya sido útil&#x2026;
+</p>
+
+<p>
+Salud.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Drupal__tu_ordenado_baul_de_conocimientos">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-blog.html">blog</a> </div><div id="archive">
+<a href="https://godest.vivencias.net/archive.html">Other posts</a>
+</div>
+</div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

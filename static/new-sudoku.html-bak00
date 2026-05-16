@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sudoku Alineado Arriba</title>
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <style>
+        /* CSS Base */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            /* NO USAMOS MIN-HEIGHT: 100VH para permitir que el contenido fluya desde arriba */
+        }
+
+        body {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; /* Mantiene el centrado horizontal */
+            /* Eliminamos justify-content: center para alinear arriba */
+            overflow: auto; 
+            background-color: #f0f0f0;
+        }
+        
+        pre {
+            max-width: 98vw; 
+            /* ¡CAMBIO CLAVE 1: Margen superior fijo para alejarlo del borde! */
+            margin-top: 20px; 
+            /* Eliminamos margin-top: auto y ajustamos el margen inferior */
+            margin-bottom: 0; 
+            padding: 5px; 
+            text-align: center;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: white;
+            line-height: 1.2; 
+        }
+
+        .inner-pre {
+            display: block; 
+            font-family: 'Courier New', Courier, monospace; 
+            line-height: 1.2;
+            font-size: 24px !important; 
+            white-space: pre; 
+        }
+        
+        /* Estilos del Enlace Centrado y Espaciado */
+        .enlace-sudoku {
+            text-align: center; 
+            width: 100%;
+            margin-top: 8px; 
+            /* Espacio de separación garantizado del borde inferior */
+            margin-bottom: 30px; 
+        }
+
+        .enlace-sudoku a {
+            font-size: 1.2em; 
+            color: #28a745; 
+            text-decoration: none; 
+            padding: 8px 15px;
+            border: 2px solid #28a745;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<pre>
+<span class="inner-pre">
+. . 1 | . . . | . 5 .
+. 3 . | . 4 . | . . .
+8 . . | . 9 . | . . .
+-------|-------|-------
+. . . | 8 . . | 1 4 .
+. 7 . | 6 . 3 | . . 8
+6 . . | . 1 . | . . .
+-------|-------|-------
+5 . 7 | . 8 . | . 9 .
+4 8 . | 9 . . | . . 5
+. . 9 | . . . | . 3 .
+</span>
+</pre>
+
+<div class="enlace-sudoku">
+    <a href="acciones/index.html">Generar sudoku</a>
+</div>
+
+</body>
+</html>

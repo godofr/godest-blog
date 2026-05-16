@@ -1,0 +1,115 @@
+#+title: Trabajando con GNU Emacs en sistemas Windows
+#+date: <2016-10-31 19:08>
+#+description: 
+#+filetags: GNU/Linux Software Windows
+
+*Actualizado el 08-12-2016: se incorpora al final del artículo la sección de corrector ortográfico*.
+
+Hace mucho tiempo, diría que desde que comencé a trabajar con entornos GNU/Linux allá por 1992 (recuerdo estar estudiando los primeros años de mi carrera e intercambiar el sistema en alrededor de 10 disquetes de 3,5”), pero con mucha más intensidad a partir del 2005 ([[https://www.google.es/search?q=site%3Agodest.vivencias.net+emacs&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=Cp8VWI6mN-uJ8QfklrTQCA#q=site:godest.vivencias.net+emacs&start=0][aquí]] podéis encontrar algunas entradas en este mismo blog que referencian esas fechas), el editor [[https://www.gnu.org/software/emacs/][GNU Emacs]] se convirtió en uno de los pilares básicos de mi productividad. En él he realizado desde programas en C hasta scripts con Perl y Python, he organizado mis tareas con su “modo org” y he comparado configuraciones con su potente integración con diff. Todo esto y ¡mucho más!
+
+Aunque al comienzo de mi vida profesional podía trabajar con GNU/Linux instalado en mi ordenador como sistema operativo base y habitual, la organización en la que trabajo se fue “complicando” y cada vez iban surgiendo más desarrollos propietarios que sólo se ejecutaban sobre sistemas Windows. Hasta ese entonces mi ordenador siempre arrancaba con [[http://debian.org/][Debian]] y sobre ella emulaba la Office de Microsoft; pero llegó un momento en el que trabajaba más, y me complicaba la vida, emulando software de Windows que lo que me aportaba mi “gran compañera” en eficiencia (estoy hablando del entorno Desktop, mis servidores siguen ejecutando GNU/Linux al 100%). En fin, que acabé instalando Windows como sistema operativo base y virtualizando mi Debian sobre “VMware Player”.
+
+No obstante, *con la ayuda de [[https://www.cygwin.com/][Cygwin]] mi sistema operativo actual es un Windows hibridado con muchas de las mejores herramientas del mundo GNU/Linux*: gcc, gdb, ssh, diff, awk, bash, etc.
+
+Y con el editor Emacs, que si bien no lo instalo directamente de la versión contenida en Cygwin (da errores en funcionalidades básicas un poco inexplicables, como, por ejemplo: [[https://www.google.es/search?q=cygwin+emacs+associate+txt+double+click&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=E6EVWI70K8mp8weL-oaIBw][tras ser asociado a ficheros .txt no los carga directamente al hacer doble click sobre ellos]]), [[https://sourceforge.net/projects/emacsbinw64/][sí que instalo este "port" que obtiene un Emacs nativo sobre Windows]] (actualmente lo vengo utilizando con mucha estabilidad en mis Windows 10).
+
+Bien, pues no sólo escribo esta entrada para contaros que existe este “port nativo sobre Windows”, que ya me parece muy valioso ;-), sino que a continuación capturo varios ajustes “muy necesarios” para que el sistema se comporte como queremos.
+
+*Primero*: descargamos la versión de Emacs para Windows desde [[https://sourceforge.net/projects/emacsbinw64/][aquí]]. Simplemente hemos de descomprimir el “.zip” que bajamos, situar la carpeta en cualquier lugar de nuestro disco duro y añadir esa carpeta a la variable “path” de Windows.
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="531" height="69" border="0" align="center" hspace="10" vspace="10" src="/static/2016/01-emacs-windows-path.png"
+ alt="01 Emacs Windows PATH" />
+</figure>
+#+end_export
+
+Como ya hemos comentado, y veremos más adelante con un ejemplo de comparación de ficheros, es muy aconsejable instalar un entorno “Cygwin” mínimo, con utilidades que aportan valor a Emacs. También hemos de añadirlo al “path”, para que podamos encontrar sus programas llamándolos desde cualquier sitio.
+
+*Segundo*: hay dos formas de enseñarle a Emacs dónde está nuestro directorio de trabajo, o HOME, en Windows 10 me funcionó la segunda, la b), que es la más compleja pero fue la primera que se me ocurrió. Sin embargo, en Windows 7 no funciona bien, y ha sido lo que ha provocado que investigue un poco más y haya acabado encontrando la primera, la a), que es incluso más fácil.
+
+a) Tal y como se describe [[https://stackoverflow.com/questions/189490/where-can-i-find-my-emacs-file-for-emacs-running-on-windows][aquí]], lo mejor es definir una variable de entorno para tu usuario de Windows, como se muestra en la siguiente figura (aprovechamos también y definimos la variable ="LANG = es_ES.UTF8"=, ver figura, para que luego funcione también el diccionario "aspell"):
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="595" height="417" border="0" align="center" hspace="10" vspace="10" src="/static/2016/Variables-HOME_y_LANG-para-Emacs.png"
+ alt="Variables HOME y LANG para Emacs" />
+</figure>
+#+end_export
+
+b) Creamos enlaces simbólicos, *con [[https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/][mklink]] de Windows*, del fichero configuración por defecto de emacs, “.emacs” y su “directorio de trabajo en segundo plano” (copias de seguridad, etc.) “.emacs.d”.
+
+El port de Emacs para Windows considera como “directorio home” este: “C:\Users\Godo\AppData\Roaming” (sustituid Godo por vuestro usuario Windows), y en él guarda el fichero “.emacs” y el directorio “.emacs.d”. Yo los borro y los vuelvo a crear como enlaces simbólicos que apuntan a otros destinos, de igual nombre, pero ubicados en carpetas diferentes. Como podéis ver en la siguiente captura los mantengo dentro de mi Dropbox, conservando y sincronizando así todos los cambios que hago en ellos ya sea en mi ordenador fijo o en mi portátil.
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="595" height="178" border="0" align="center" hspace="10" vspace="10" src="/static/2016/02-emacs-mklink.png"
+ alt="02 Enlace con MKLINK para Emacs" />
+</figure>
+#+end_export
+
+*Tercero*: lo anclamos a la barra de tareas para poder ejecutarlo de forma rápida. La mejor forma para hacerlo es abrir un documento cualquiera con él, y cuando vemos el icono en la barra de tareas, lo pulsamos con el botón derecho y seleccionamos “anclar a la barra de tareas”. Luego editamos dicho anclaje (click con el botón derecho sobre el icono, de nuevo click con botón derecho sobre “emacs” y seleccionamos “propiedades”):
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="315" height="292" border="0" align="center" hspace="10" vspace="10" src="/static/2016/03-emacs-barradetareas.png"
+ alt="03 Emacs Barra de Tareas" />
+</figure>
+#+end_export
+
+Y lo adaptamos para correr “runemacs.exe” en lugar de “emacs.exe” (este último deja en segundo plano una ventana msdos de fondo negro que resulta poco atractiva).
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="450" height="588" border="0" align="center" hspace="10" vspace="10" src="/static/2016/04-emacs-propiedades.png"
+ alt="04 Emacs propiedades" />
+</figure>
+#+end_export
+
+Por último, y como prueba del buen trabajo de Emacs integrado con la herramienta “diff” proporcionada por el entorno Cygwin, os dejo una captura donde podéis ver cómo me ayuda a detectar cambios en un fichero de configuración de un router Cisco:
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="596" height="525" border="0" align="center" hspace="10" vspace="10" src="/static/2016/05-emacs-diff.png"
+ alt="05 Emacs diff" />
+</figure>
+#+end_export
+
+Cuando limpie y de esplendor a mi fichero “.emacs” os lo compartiré por aquí por si os da ideas interesantes (a la vez que me sirve para fijar una copia de seguridad). Por ahora, os dejo sólo una brizna del mismo que activa la posibilidad de tener rápido acceso a “archivos recientes” (bajo el menú “File” o con “C-x C-r”):
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="452" height="212" border="0" align="center" hspace="10" vspace="10" src="/static/2016/06-emacs-recent-files.png"
+ alt="06 Emacs recent files" />
+</figure>
+#+end_export
+
+Y otro día escribiré sobre el *[[https://www.google.es/search?q=mode+org+emacs&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=cqQVWKiyOcWp8wfX_YCwBA][modo .org de Emacs]]*, que es verdaderamente alucinante para llevar todo un “[[http://orgmode.org/][Sistema de planificación]]” personal, de proyectos, etc., con “ToDo”, “Tags”, “deadlines”… Si lo quieres ver en funcionamiento, echa un vistazo a [[https://www.google.es/search?q=org-mode+emacs+youtube&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=B5AXWOXWF-as8wfwgIGgDg][estos vídeos de Youtube]].
+
+Y tú, ¿qué me cuentas sobre Emacs? De verdad, si realizas tareas de administración de sistemas, de programación, de gestión… que requieran control de versiones… *¡dale una oportunidad y no lo abandonarás jamás!* [[https://www.youtube.com/watch?v=FtieBc3KptU][Incluso si eres un escritor...]]
+
+Gracias por estar ahí. Y muchas más si decides enriquecerme con tus comentarios.
+
+*Actualizado el 08-12-2016 - Corrector ortográfico*
+
+[[https://www.emacswiki.org/emacs/AspellWindows][Esta página]] de [[https://www.emacswiki.org/][Emacs Wiki]] contine toda la información y ajustes de configuración necesarios.
+Básicamente hay que instalar [[http://ftp.gnu.org/gnu/aspell/w32/Aspell-0-50-3-3-Setup.exe][este ejecutable]] y este [[http://ftp.gnu.org/gnu/aspell/w32/Aspell-es-0.50-2-3.exe][diccionario]]. Después añadimos las siguientes líneas a nuestro fichero de configuración ".emacs":
+
+#+begin_src bash
+;; ===== Para utilizar aspell como corrector ortográfico ===
+;; C:\Program Files (x86)\Aspell\bin
+(add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+(setq ispell-program-name "aspell")
+(setq ispell-personal-dictionary "D:/Db/01-Personal/home/.aspell")
+(require 'ispell)
+;; La forma de invocarlo por defecto es "M-$"
+;; Esto que sigue sólo chequea la palabra sobre el cursor
+;; (global-set-key (kbd "<f8>") 'ispell-word)
+;; Para chequear todo el buffer
+(global-set-key (kbd "<f8>") 'ispell-buffer)
+;; Para activar detección al vuelo
+(global-set-key (kbd "C-<f8>") 'flyspell-mode)
+#+end_src
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Trabajando_con_GNU_Emacs_en_sistemas_Windows][Dejar comentario]].
+

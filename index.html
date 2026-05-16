@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>GodEst.vivencias.net</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+
+<div class="post-date">26 ene 2025</div><h1 class="post-title"><a href="https://godest.vivencias.net/2025-01-26-para-republicar-todo-el-blog.html">Para republicar todo el blog</a></h1>
+<p>
+Entrar en el directorio de post:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[14:48:25(godo@surcopi:~/projects/blog/posts]
+$ pwd
+/home/godo/projects/blog/posts
+</pre>
+</div>
+
+<p>
+Y ejecutar esto:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name <span style="color: #008000;">"2025-01-26-buscar-en-godest.org"</span> -exec touch {} <span style="color: #008000;">\;</span>
+</pre>
+</div>
+
+<p>
+Mira como se aprecia el resultado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[14:45:27(godo@surcopi:~/projects/blog/posts]
+$ ll
+total 288
+-rwxrwx--- 1 godo www-data 4455 ene 26 14:41  2005-12-11-soy-un-hacker.org
+-rwxrwx--- 1 godo www-data  239 sep 29  2023  2022-05-17-hoy-es-mi-cumpleanos.org
+-rwxrwx--- 1 godo www-data 4380 oct  2  2023 <span style="color: #008000;">'2023-03-04-como-hacer-que-un-pdf-editado-(en-ordenador)-se-vea-como-un-pdf-escaneado.org'</span>
+-rwxrwx--- 1 godo www-data  415 sep 30  2023  2023-09-28-how-to-write-a-blog-post.org
+-rwxrwx--- 1 godo www-data  205 ene 25 21:36  2025-01-25-prueba-retomando-org-static-blog.org
+-rwxrwx--- 1 godo www-data 1851 ene 26 13:57  2025-01-26-buscar-en-godest.org
+-rwxrwx--- 1 godo www-data 1604 ene 26 14:25  2025-01-26-colaboracion-en-charla-ponencia-mesa-redonda.org
+-rwxrwx--- 1 godo www-data  590 ene 26 14:42  2025-01-26-contactar.org
+-rwxrwx--- 1 godo www-data  578 ene 26 14:18  2025-01-26-prueba-3.org
+[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name <span style="color: #008000;">"2025-01-26-buscar-en-godest.org"</span> -exec touch {} <span style="color: #008000;">\;</span>
+[14:46:12(godo@surcopi:~/projects/blog/posts]
+$ ll
+total 288
+-rwxrwx--- 1 godo www-data 4455 ene 26 14:46  2005-12-11-soy-un-hacker.org
+-rwxrwx--- 1 godo www-data  239 ene 26 14:46  2022-05-17-hoy-es-mi-cumpleanos.org
+-rwxrwx--- 1 godo www-data 4380 ene 26 14:46 <span style="color: #008000;">'2023-03-04-como-hacer-que-un-pdf-editado-(en-ordenador)-se-vea-como-un-pdf-escaneado.org'</span>
+-rwxrwx--- 1 godo www-data  415 ene 26 14:46  2023-09-28-how-to-write-a-blog-post.org
+-rwxrwx--- 1 godo www-data  205 ene 26 14:46  2025-01-25-prueba-retomando-org-static-blog.org
+-rwxrwx--- 1 godo www-data 1851 ene 26 13:57  2025-01-26-buscar-en-godest.org
+-rwxrwx--- 1 godo www-data 1604 ene 26 14:46  2025-01-26-colaboracion-en-charla-ponencia-mesa-redonda.org
+-rwxrwx--- 1 godo www-data  590 ene 26 14:46  2025-01-26-contactar.org
+-rwxrwx--- 1 godo www-data  578 ene 26 14:46  2025-01-26-prueba-3.org
+[14:46:15(godo@surcopi:~/projects/blog/posts]
+$ 
+</pre>
+</div>
+
+<p>
+Seguimos aprendiendo.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-blog.html">blog</a> <a href="https://godest.vivencias.net/tag-org.html">org</a> <a href="https://godest.vivencias.net/tag-org-static-blog.html">org-static-blog</a> </div>
+<div class="post-date">26 ene 2025</div><h1 class="post-title"><a href="https://godest.vivencias.net/2025-01-26-contactar.html">Contactar</a></h1>
+<p>
+Puede enviar un mensaje usando el siguiente formulario.
+</p>
+
+<p>
+¡Importante! El dato suministrado en el campo "Su dirección de email" es para hacerle llegar la confirmación de que he recibido su comentario, y nunca se hará pública en ningún campo del blog. Si desea que pueda ponerme en contacto con usted, por favor, asegúrese que añade su dirección de email correctamente. Muchas gracias.
+</p>
+
+<p>
+Todos los campos son obligatorios.
+</p>
+
+<p>
+<a href="https://forms.gle/r4m7eKReCSZuk4cz7">Haga clic aquí para comenzar a rellenar el formulario</a>.
+</p>
+<div class="taglist"></div>
+<div class="post-date">26 ene 2025</div><h1 class="post-title"><a href="https://godests.vivencias.net/2025-01-26-buscar-en-godest.html">Buscar en GodEst</a></h1>
+
+<p>
+Puedes buscar contenido en este sitio (por defecto) o en toda la web (seleccionar "web"). El motor utilizado es el de Google.
+</p>
+
+<!-- SiteSearch Google -->
+            <form method="get" action="http://www.google.es/custom" target="google_window">
+	      
+              <!--
+		  <a href="http://www.google.com/">
+		    <img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
+		  --> 
+	      
+              <input type="radio" name="sitesearch" value=""></input>
+              <font size="-1" color="#333"><b>Web</b></font>
+	      
+              <input type="radio" name="sitesearch" value="godest.vivencias.net" checked="checked"></input>
+              <font size="-1" color="#333"><b>GodEst</b></font>
+	      
+              <input type="hidden" name="domains" value="godest.vivencias.net"></input>
+              <input type="text" name="q" size="40" maxlength="255" value="" style="background-color:#EEE;"></input>
+              <input type="submit" name="sa" value="Buscar"></input>
+	      
+              <input type="hidden" name="client" value="pub-2656644998558722"></input>
+              <input type="hidden" name="forid" value="1"></input>
+              <input type="hidden" name="ie" value="ISO-8859-1"></input>
+              <input type="hidden" name="oe" value="ISO-8859-1"></input>
+              <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"></input>
+	      <input type="hidden" name="hl" value="es"></input>
+            </form>
+<!-- SiteSearch Google -->
+
+<p>
+Cuando presiones buscar se abrirá en tu navegador una nueva pestaña con los resultados encontrados.
+</p>
+
+<div class="taglist"></div>
+<div class="post-date">28 sep 2023</div><h1 class="post-title"><a href="https://godest.vivencias.net/2023-09-28-how-to-write-a-blog-post.html">How to write a blog post</a></h1>
+<p>
+Step cero: lee esto &#x2013;&gt; <a href="https://github.com/bastibe/org-static-blog">https://github.com/bastibe/org-static-blog</a>
+</p>
+
+<p>
+Step one: Install <code>org-static-blog</code>. <br>
+Step Two: Execute <code>M-x org-static-blog-create-new-post</code> and write the content. <br>
+Step Three: Execute <code>M-x org-static-blog-publish</code> and upload to your webhost. <br>
+</p>
+
+<p>
+<b>Step Four: trucos:</b>
+</p>
+
+<p>
+<b>¡¡OJO!!</b> Para que "htmlize" de Emacs resalte la sintaxis siendo consciente de que estás trabajando sobre un fondo blanco, has de cargar un tema de Emacs que utilice dicho color de fondo para trabajar. El mejor que has encontrado, el que más te gusta, es este (añade estas líneas al <i>init.el</i>):
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">;; Para asegurar un tema claro en emacs, y que, segun la IA, htmlize genere buen coloreado sobre fondo blanco
+(load-theme <span style="color: #008000;">'leuven t)  ; Reemplaza '</span>leuven<span style="color: #008000;">' con el nombre de tu tema</span>
+</pre>
+</div>
+
+<p>
+Para utilizar <b>estilos de letra</b> haz esto:
+</p>
+<ul class="org-ul">
+<li>negrita: rodea lo que quieres resaltar con *</li>
+<li>cursiva: rodear con /</li>
+<li>subrayado: rodear con _</li>
+<li>código: rodear con ~</li>
+<li>verbatim (texto sin formato): rodear con = (lo suelo utilizar para código y va bien)</li>
+<li>tachado: rodear con +</li>
+</ul>
+
+<p>
+<b>Listas</b>: comienza los elementos de la lista con guiones (signo menos) e identa los subniveles con TAB.
+</p>
+<ul class="org-ul">
+<li>Elemento 1 de la lista</li>
+<li>Elemento 2 de la lista
+<ul class="org-ul">
+<li>Subelemento 2.1</li>
+<li>Subelemento 2.2</li>
+</ul></li>
+<li>Elemento 3 de la lista</li>
+</ul>
+
+<p>
+<b>Listas numeradas</b>: comienza cada uno de los elementos con <code>1.</code> o <code>1)</code>. Y trabaja con la identación con TAB para crear sublistas. Ejemplo:
+</p>
+<ol class="org-ol">
+<li>Este es el primer elemento de la lista numerada.</li>
+<li>Este es el segundo elemento de la lista numerada.
+<ol class="org-ol">
+<li>esta es una sublista dentro del punto 2.</li>
+<li>esta es una sublista dentro del punto 2.</li>
+</ol></li>
+<li>Este es el tercer elemento de la lista numerada.</li>
+</ol>
+
+<p>
+Para <b>citar texto</b> en recuadro con fondo gris:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_quote</span>
+No le llamamos Godo porque tenga unos kilos de m&#225;s o una <span style="color: #008000;">'r'</span> de menos, no...
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_quote</span>
+</pre>
+</div>
+
+<p>
+Para <b>insertar código</b> lo vienes haciendo así:
+</p>
+<pre>
+#+begin_src sh :results output
+[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name "2025-01-26-buscar-en-godest.org" -exec touch {} \;
+#+end_src
+</pre>
+
+<p>
+Para <b>insertar código de forma genérica</b> (sustituir LENGUAJE por el lenguaje apropiado, por ejemplo, para bash poner sh):
+</p>
+<pre>
+#+begin_src LENGUAJE
+[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name "2025-01-26-buscar-en-godest.org" -exec touch {} \;
+#+end_src
+</pre>
+
+<p>
+Para <b>insertar una imagen al lado derecho del texto</b> lo haces así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_export html</span>
+&lt;figure <span style="color: #BA36A5;">style</span>=<span style="color: #008000;">"float:right"</span>&gt;
+&lt;img <span style="color: #BA36A5;">width</span>=<span style="color: #008000;">"55"</span> <span style="color: #BA36A5;">height</span>=<span style="color: #008000;">"55"</span> <span style="color: #BA36A5;">border</span>=<span style="color: #008000;">"0"</span> <span style="color: #BA36A5;">align</span>=<span style="color: #008000;">"right"</span> <span style="color: #BA36A5;">hspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">vspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">src</span>=<span style="color: #008000;">"/static/2005/glider.png"</span> <span style="color: #BA36A5;">alt</span>=<span style="color: #008000;">"glider"</span> /&gt;
+&lt;/figure&gt;
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_export</span>
+</pre>
+</div>
+
+<p>
+Para <b>insertar una imagen centrada en el texto</b> lo haces así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_export html</span>
+&lt;figure <span style="color: #BA36A5;">style</span>=<span style="color: #008000;">"display: block; margin: 0 auto; text-align: center;"</span>&gt;
+&lt;img <span style="color: #BA36A5;">width</span>=<span style="color: #008000;">"640"</span> <span style="color: #BA36A5;">height</span>=<span style="color: #008000;">"480"</span> <span style="color: #BA36A5;">border</span>=<span style="color: #008000;">"0"</span> <span style="color: #BA36A5;">align</span>=<span style="color: #008000;">"center"</span> <span style="color: #BA36A5;">hspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">vspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">src</span>=<span style="color: #008000;">"/static/2015/la-seguridad-total-no-existe.jpg"</span>
+ <span style="color: #BA36A5;">alt</span>=<span style="color: #008000;">"La seguridad total NO EXISTE"</span> /&gt;
+&lt;/figure&gt;
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_export</span>
+</pre>
+</div>
+
+<p>
+Done.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-blog.html">blog</a> <a href="https://godest.vivencias.net/tag-org-static-blog.html">org-static-blog</a> <a href="https://godest.vivencias.net/tag-org.html">org</a> <a href="https://godest.vivencias.net/tag-emacs.html">emacs</a> </div>
+<div class="post-date">04 mar 2023</div><h1 class="post-title"><a href="https://godest.vivencias.net/2023-03-04-como-hacer-que-un-pdf-editado-(en-ordenador)-se-vea-como-un-pdf-escaneado.html">Cómo hacer que un pdf editado (en ordenador) se vea como un pdf escaneado</a></h1>
+<p>
+Esto es muy útil cuando te envían un pdf que has de cumplimentar, firmar y escanear. 
+</p>
+
+<p>
+Es una pérdida de tiempo imprimir dicho documento, rellenarlo y firmarlo a mano, y volver a escanearlo. Lo más lógico es rellenar el documento utilizando un software de pdf que lo permita, pegar tu firma que previamente tienes escaneada, y guardarlo directamente en el ordenador.
+</p>
+
+<p>
+Sin embargo, si hacemos lo segundo -la edición directa en el ordenador-, el receptor de ese pdf puede comprobar que ha sido así, y alegarte (como yo he sufrido en mis propias carnes) que dicha firma no es de tu "puño y letra" sino que ha sido copiada/pegada, y eso no vale. 
+</p>
+
+<p>
+Así que, es necesario llevar a cabo un paso intermedio: hay que hacer que "el pdf editado" se vea en el destino como "un pdf generado por un escáner", es decir, como una única imagen completa. Para esto, disponemos de herramientas software que convierten un pdf en una imagen, por ejemplo: pdftoppm – convert a PDF page to a bitmap (del <a href="https://en.wikipedia.org/wiki/Poppler_(software)">Proyecto Poppler</a>).
+</p>
+
+<p>
+Hay que instalar en tu sistema el "paquete poppler". Dicho paquete existe para sistemas opertaivos tipo GNU/Linux, MAC y Windows.
+</p>
+
+<p>
+Yo suelo utilizar en mis ordenadores tanto GNU/Linux como Windows. Se instala así:
+En GNU/Linux Debian: 
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">apt-get update &amp;&amp; apt-get install -y poppler-utils
+</pre>
+</div>
+
+<p>
+En Windows, vía <a href="https://chocolatey.org/">chocolatey</a>, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">choco install poppler
+...
+Extracting C:\ProgramData\chocolatey\lib\poppler\tools\poppler-0.89.0-win32.zip to C:\ProgramData\chocolatey\lib\poppler\tools...
+C:\ProgramData\chocolatey\lib\poppler\tools
+ ShimGen has successfully created a shim for pdfattach.exe
+ ShimGen has successfully created a shim for pdfdetach.exe
+ ShimGen has successfully created a shim for pdffonts.exe
+ ShimGen has successfully created a shim for pdfimages.exe
+ ShimGen has successfully created a shim for pdfinfo.exe
+ ShimGen has successfully created a shim for pdfseparate.exe
+ ShimGen has successfully created a shim for pdftocairo.exe
+ ShimGen has successfully created a shim for pdftohtml.exe
+ ShimGen has successfully created a shim for pdftoppm.exe
+ ShimGen has successfully created a shim for pdftops.exe
+ ShimGen has successfully created a shim for pdftotext.exe
+ ShimGen has successfully created a shim for pdfunite.exe
+ The install of poppler was successful.
+  Software installed to <span style="color: #008000;">'C:\ProgramData\chocolatey\lib\poppler\tools'</span>
+...
+</pre>
+</div>
+
+<p>
+Una vez instalado, podemos convertir un pdf en mapa de bits, es decir, en una imagen única igual que si resultara de un escaneo, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">PS D:\Descargas&gt; pdftoppm -jpeg -r 300 <span style="color: #008000;">'.\documento.pdf'</span> output
+</pre>
+</div>
+
+<p>
+Siendo "output" el prefijo de salida de cada una de las páginas del documento pdf, pero ya en formato jpg.
+</p>
+
+<p>
+Luego abres ese jpg, lo imprimes a pdf utilizando "Microsoft Print to PDF", ¡y listo! Tienes un pdf que parece haber sido el resultado de un escaneo.
+</p>
+
+<p>
+Saludos.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Como_hacer_que_un_pdf_editado_se_vea_como_un_pdf_escaneado">Dejar comentario</a>.
+</p>
+
+<div id="outline-container-orga59f9d3" class="outline-2">
+<h2 id="orga59f9d3">Comentarios</h2>
+<div class="outline-text-2" id="text-orga59f9d3">
+</div>
+<div id="outline-container-orgc044f09" class="outline-3">
+<h3 id="orgc044f09">Buen truco y bueno saberlo (Felix Prado &#x2013; 01/05/2023 - 14:45)</h3>
+<div class="outline-text-3" id="text-orgc044f09">
+<p>
+Buen truco y bueno saberlo, ¡gracias por compartir! El otro día un banco me pidió que firmara un documento y firmé el pdf con un certificado digital, que obviamente es mucho más seguro y verificable que cualquier firma analógica, insertada como imagen o no. Bueno pues como has comentado, me lo echaron atrás por no estar firmado de forma manuscrita&#x2026; Para llorar.
+</p>
+
+<p>
+Así que mientras llegamos a ese punto, está bien tener estas herramientas para combatir la incompetencia digital ;)
+</p>
+
+<p>
+Un saludo.
+</p>
+</div>
+</div>
+<div id="outline-container-org90be0fc" class="outline-3">
+<h3 id="org90be0fc">Así es, nos falta aún cultura digital&#x2026; (Godofredo Fdez. &#x2013; Lun, 15/05/2023 - 09:37)</h3>
+<div class="outline-text-3" id="text-org90be0fc">
+<p>
+&#x2026;lo que sorprende es que siga pasando en sectores que están totalmente volcados al "online", y desde hace tiempo. ¿Habrá un servicio más utilizado por Internet que el Bancario (sin contar con la diversión: streaming, videojuegos y tal)?
+</p>
+
+<p>
+Como tú mismo dices, mejor tener estos truquitos que nos permitan ahorrar tiempo y papel.
+</p>
+
+<p>
+Muchas gracias, Félix, por tu comentario. Llevaba tiempo sin saber de ti. Espero que estés bien.
+</p>
+
+<p>
+Un abrazo.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div><div id="archive">
+<a href="https://godest.vivencias.net/archive.html">Other posts</a>
+</div>
+</div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

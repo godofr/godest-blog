@@ -1,0 +1,33 @@
+#+title: Suscripción por correo a nuevos artículos
+#+date: <2016-03-17 20:54>
+#+description: 
+#+filetags: Blog
+
+Hasta ahora, en este blog veníamos utilizando para dicho fin el servicio de [[https://en.wikipedia.org/wiki/FeedBurner][FeedBurner]], muy prometedor al principio y me atrevería a decir que aún hoy conserva parte de esas virtudes. Pensad que es un servicio anterior a 2007, fecha en la que fue adquirido por Google, pero en clara decadencia desde que Google dejó de evolucionarlo. Tanto es así que una [[https://www.google.es/search?q=feedburner+migrate&ie=utf-8&oe=utf-8&gws_rd=cr&ei=rh_rVrPEMIq7ar2om_gB][simple búsqueda]] muestra las muchas alternativas y razones que hay para “migrar”.
+
+Yo he decidido apostar por [[http://mailchimp.com/][MailChimp]], un servicio claramente orientado al marketing online que, utilizando el correo electrónico como principal medio de envío, permite el diseño de campañas, seguimiento de las mismas y una gran particularización tanto de los fondos (contenidos) como de las formas (plantillas).
+
+En *GodEst* nos hemos abierto una cuenta del tipo “Forever Free Plan” que permite disponer de hasta 2.000 suscriptores (público al que envías las campañas) y realizar hasta 12.000 envíos mensuales. Más que de sobra para nosotros si tenemos en cuenta que actualmente sois unos 20 los suscritos y que yo realizo, en media, un artículo nuevo mensual, resultando así unos 20 ó 40 (si fueran dos artículos nuevos) envíos al mes.
+
+MailChimp se integra perfectamente con [[https://www.drupal.org/][Drupal]] al existir un módulo activamente mantenido, como podéis ver [[https://www.drupal.org/project/mailchimp][aquí]]. De esta forma permite que las suscripciones se gestionen desde el propio blog, a través de un formulario creado para tal efecto, el seguimiento de las altas y bajas también, siendo las primeras confirmadas mediante mail directo al nuevo suscriptor, lo que permite evitar el “spam de suscripción”; y, como no, el diseño de campañas.
+
+Hay varios tipos de campañas. Nosotros estamos utilizando la denominada “RSS campaign”, la cual nos permite suscribir “el motor de MailChimp” al servicio de RSS que suele ser generado por cualquier sistema “serio” de publicación web, en nuestro caso: http://godest.vivencias.net/recent-post.xml y generar, a partir de éste, un mail destinado a una lista de correo con los nuevos “posts” que se van publicando. Se puede programar la hora de envío, en nuestro caso: 4:00 AM para que lo encontréis fresquito por la mañana ;-)
+
+Los que ya estabais suscritos a través del anterior servicio (FeedBurner) habéis sido exportados e importados a este nuevo (MailChimp), y recibiréis este artículo por duplicado (*sólo éste pues desactivaré el antiguo servicio en unos días*), es decir, enviado desde uno y desde el otro. *Lo he hecho así para que podáis gestionar bien la nueva suscripción frente al spam*.
+
+Me explico: es muy probable que el mail enviado desde MailChimp haya acabado en vuestra carpeta de spam. Si estáis leyendo esto en vuestro correo, al final del mismo, como si fuese a pie de página, podéis ver si el mail que leéis es el que se ha “enviado vía MailChimp” (lo he especificado así) o sigue siendo el que se enviaba por FeeBurner. *Lo importante es que localicéis el enviado vía MailChimp si este ha acabado en la carpeta de spam y, utilizando la opción disponible en vuestro software cliente (Outlook, Thunderbird, etc.) procedáis a indicarle que el remitente es de confianza*. A continuación inserto una captura de pantalla con la forma de hacerlo en Outlook: pulsando botón derecho sobre el mensaje que encontré en la carpeta de spam.
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="616" border="0" align="center" hspace="10" vspace="10" src="/static/2016/confiando-en-remitente.jpg"
+ alt="No Spam en Outlook" />
+</figure>
+#+end_export
+
+Si estáis utilizando un correo corporativo y no sois capaces de encontrar el correo enviado por MailChimp es porque vuestro administrador ha definido una política de “lucha agresiva” contra el spam y lo está tirando antes de que os llegue (esto es tan políticamente incorrecto que no conozco a nadie que lo haga así, pero no es imposible). En este caso os recomiendo que [[http://godest.vivencias.net/listadecorreo/suscripcion][os suscribáis]] haciendo uso de una cuenta personal en [[https://mail.google.com/][Gmail]], [[https://www.microsoft.com/es-es/outlook-com/][Outlook web]] o cualquier otro que ya tengáis, pues siempre podréis gestionar el spam, decidiendo lo que es y lo que no, por vosotros mismos.
+
+Espero que este cambio nos permita seguir en estrecho contacto, evite que os perdáis algún contenido interesante y genere feedback y participación ;-)
+
+*Gracias por estar ahí*.
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Suscripcion_por_correo_a_nuevos_articulos][Dejar comentario]].

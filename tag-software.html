@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>GodEst.vivencias.net</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<h1 class="title">Posts tagged "Software":</h1>
+<div class="post-date">04 mar 2023</div><h1 class="post-title"><a href="https://godest.vivencias.net/2023-03-04-como-hacer-que-un-pdf-editado-(en-ordenador)-se-vea-como-un-pdf-escaneado.html">Cómo hacer que un pdf editado (en ordenador) se vea como un pdf escaneado</a></h1>
+<p>
+Esto es muy útil cuando te envían un pdf que has de cumplimentar, firmar y escanear. 
+</p>
+
+<p>
+Es una pérdida de tiempo imprimir dicho documento, rellenarlo y firmarlo a mano, y volver a escanearlo. Lo más lógico es rellenar el documento utilizando un software de pdf que lo permita, pegar tu firma que previamente tienes escaneada, y guardarlo directamente en el ordenador.
+</p>
+
+<p>
+Sin embargo, si hacemos lo segundo -la edición directa en el ordenador-, el receptor de ese pdf puede comprobar que ha sido así, y alegarte (como yo he sufrido en mis propias carnes) que dicha firma no es de tu "puño y letra" sino que ha sido copiada/pegada, y eso no vale. 
+</p>
+
+<p>
+Así que, es necesario llevar a cabo un paso intermedio: hay que hacer que "el pdf editado" se vea en el destino como "un pdf generado por un escáner", es decir, como una única imagen completa. Para esto, disponemos de herramientas software que convierten un pdf en una imagen, por ejemplo: pdftoppm – convert a PDF page to a bitmap (del <a href="https://en.wikipedia.org/wiki/Poppler_(software)">Proyecto Poppler</a>).
+</p>
+
+<p>
+Hay que instalar en tu sistema el "paquete poppler". Dicho paquete existe para sistemas opertaivos tipo GNU/Linux, MAC y Windows.
+</p>
+
+<p>
+Yo suelo utilizar en mis ordenadores tanto GNU/Linux como Windows. Se instala así:
+En GNU/Linux Debian: 
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">apt-get update &amp;&amp; apt-get install -y poppler-utils
+</pre>
+</div>
+
+<p>
+En Windows, vía <a href="https://chocolatey.org/">chocolatey</a>, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">choco install poppler
+...
+Extracting C:\ProgramData\chocolatey\lib\poppler\tools\poppler-0.89.0-win32.zip to C:\ProgramData\chocolatey\lib\poppler\tools...
+C:\ProgramData\chocolatey\lib\poppler\tools
+ ShimGen has successfully created a shim for pdfattach.exe
+ ShimGen has successfully created a shim for pdfdetach.exe
+ ShimGen has successfully created a shim for pdffonts.exe
+ ShimGen has successfully created a shim for pdfimages.exe
+ ShimGen has successfully created a shim for pdfinfo.exe
+ ShimGen has successfully created a shim for pdfseparate.exe
+ ShimGen has successfully created a shim for pdftocairo.exe
+ ShimGen has successfully created a shim for pdftohtml.exe
+ ShimGen has successfully created a shim for pdftoppm.exe
+ ShimGen has successfully created a shim for pdftops.exe
+ ShimGen has successfully created a shim for pdftotext.exe
+ ShimGen has successfully created a shim for pdfunite.exe
+ The install of poppler was successful.
+  Software installed to <span style="color: #008000;">'C:\ProgramData\chocolatey\lib\poppler\tools'</span>
+...
+</pre>
+</div>
+
+<p>
+Una vez instalado, podemos convertir un pdf en mapa de bits, es decir, en una imagen única igual que si resultara de un escaneo, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">PS D:\Descargas&gt; pdftoppm -jpeg -r 300 <span style="color: #008000;">'.\documento.pdf'</span> output
+</pre>
+</div>
+
+<p>
+Siendo "output" el prefijo de salida de cada una de las páginas del documento pdf, pero ya en formato jpg.
+</p>
+
+<p>
+Luego abres ese jpg, lo imprimes a pdf utilizando "Microsoft Print to PDF", ¡y listo! Tienes un pdf que parece haber sido el resultado de un escaneo.
+</p>
+
+<p>
+Saludos.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Como_hacer_que_un_pdf_editado_se_vea_como_un_pdf_escaneado">Dejar comentario</a>.
+</p>
+
+<div id="outline-container-orga59f9d3" class="outline-2">
+<h2 id="orga59f9d3">Comentarios</h2>
+<div class="outline-text-2" id="text-orga59f9d3">
+</div>
+<div id="outline-container-orgc044f09" class="outline-3">
+<h3 id="orgc044f09">Buen truco y bueno saberlo (Felix Prado &#x2013; 01/05/2023 - 14:45)</h3>
+<div class="outline-text-3" id="text-orgc044f09">
+<p>
+Buen truco y bueno saberlo, ¡gracias por compartir! El otro día un banco me pidió que firmara un documento y firmé el pdf con un certificado digital, que obviamente es mucho más seguro y verificable que cualquier firma analógica, insertada como imagen o no. Bueno pues como has comentado, me lo echaron atrás por no estar firmado de forma manuscrita&#x2026; Para llorar.
+</p>
+
+<p>
+Así que mientras llegamos a ese punto, está bien tener estas herramientas para combatir la incompetencia digital ;)
+</p>
+
+<p>
+Un saludo.
+</p>
+</div>
+</div>
+<div id="outline-container-org90be0fc" class="outline-3">
+<h3 id="org90be0fc">Así es, nos falta aún cultura digital&#x2026; (Godofredo Fdez. &#x2013; Lun, 15/05/2023 - 09:37)</h3>
+<div class="outline-text-3" id="text-org90be0fc">
+<p>
+&#x2026;lo que sorprende es que siga pasando en sectores que están totalmente volcados al "online", y desde hace tiempo. ¿Habrá un servicio más utilizado por Internet que el Bancario (sin contar con la diversión: streaming, videojuegos y tal)?
+</p>
+
+<p>
+Como tú mismo dices, mejor tener estos truquitos que nos permitan ahorrar tiempo y papel.
+</p>
+
+<p>
+Muchas gracias, Félix, por tu comentario. Llevaba tiempo sin saber de ti. Espero que estés bien.
+</p>
+
+<p>
+Un abrazo.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div>
+<div class="post-date">24 oct 2019</div><h1 class="post-title"><a href="https://godest.vivencias.net/2019-10-24-las-navajas-suizas-para-trabajar-con-pdfs-pdftk-y-pdfnup.html">Las navajas suizas para trabajar con PDFs: pdftk y pdfnup</a></h1>
+<p>
+Hace tiempo que descubrí <a href="https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/">pdftk</a> como herramienta en línea de comandos para trabajar con documentos pdf. Básicamente la he venido utilizando para extraer partes concretas de dichos documentos (algunas páginas seleccionadas ya sean consecutivas o salteadas), y para fusionar dos documentos (por ejemplo, una oferta y un anexo que te llegan o "fabricas" por separado pero luego quieres distribuir juntos, como un único documento).
+</p>
+
+<p>
+Lo que más me gusta es que, como he dicho, es una herramienta que puede utilizarse en línea de comandos, y esto, aunque el común de los mortales no está muy preparado para entenderlo, suele ser una fuente de potencia inimaginable a la hora de hacer tareas de preprocesamiento como las que he descrito en el párrafo anterior, y, por tanto, obtenemos un gran ahorro de tiempo.
+</p>
+
+<p>
+Yo llegué a esta herramienta desde mi <a href="https://www.debian.org/">Debian</a> (pues venía en su sistema de paquetes), pero luego busqué una versión para Windows y la encontré. Además, es gratuita. Podéis descargarla directamente de la página de los autores, aunque yo por mi comodidad, sólo por la mía ;-), he subido un .zip de los dos ficheros que son necesarios a este mismo post (lo tenéis al final). Basta con descargarlo, descomprimirlo en la carpeta donde queráis trabajar, es decir, donde tengáis también los documentos objeto del trabajo, y utilizarlo (modo usuario básico). Si sois usuarios avanzados, lo mejor es meter ambos ficheros en una carpeta que esté en el PATH de vuestra máquina.
+</p>
+
+<p>
+La potencia de esta herramienta permite cosas como:
+</p>
+
+<p>
+a) Extraer las páginas impares de un documento pdf, resultando un documento nuevo:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ pdftk Finanzas.pdf cat 1-endodd output newFinanzas.pdf
+</pre>
+</div>
+
+<p>
+b) Lo mismo, pero con las páginas pares:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ pdftk Finanzas.pdf cat 1-endeven output newFinanzas.pdf
+</pre>
+</div>
+
+<p>
+c) Reconstruir el documento original a partir de dos documentos separados en pares e impares:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ pdftk <span style="color: #BA36A5;">A</span>=doc1.pdf <span style="color: #BA36A5;">B</span>=doc2.pdf shuffle A B output complete.pdf
+</pre>
+</div>
+
+<p>
+e) Fusionar dos documentos, como decía al principio, uno detrás de otro:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ pdftk oferta.pdf anexo.pdf cat output oferta-anexo.pdf
+</pre>
+</div>
+
+<p>
+Además, viene con una ayuda muy completa a la que se accede con:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ pdftk --help
+</pre>
+</div>
+
+<p>
+Recientemente he descubierto otra utilidad que permite muy fácilmente pasar un documento original a otro que tenga dos páginas del original, o más, en una sola hoja. Algo muy útil para imprimir "borradores" o versiones no definitivas. Esta herramienta también la he conseguido compilada para Windows y, tras revisar "su malware" con Virustotal, la he utilizado satisfactoriamente. También te dejo un .zip al final de este artículo.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ pdfnup --help
+</pre>
+</div>
+
+<p>
+Puedes descargar estas utilidades para Windows aquí: <a href="https://godest.vivencias.net/static/2019/pdftk-para-windows.zip">pdftk</a> y <a href="https://godest.vivencias.net/static/2019/pdfnup-para-windows.zip">pdfnup</a>. 
+</p>
+
+<p>
+Pues nada más, espero que te ayude.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=las_navajas_suizas_para_trabajar_con_pdfs-pdftk-y-pdfnup">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-software.html">Software</a> <a href="https://godest.vivencias.net/tag-utilidades.html">Utilidades</a> </div>
+<div class="post-date">15 jul 2019</div><h1 class="post-title"><a href="https://godest.vivencias.net/2019-07-15-como-convertir-un-mkv-a-avi.html">Cómo convertir un .mkv a .avi</a></h1>
+<p>
+Últimamente encuentro muchos archivos de vídeo codificados en el formato <b>.mkv</b>, sin embargo, el reproductor que tengo en casa conectado a mi TV no es capaz de reproducirlos, por lo que me obliga a pasar de ese formato al sí soportado <b>.avi</b>. <a href="https://www.xatakahome.com/curiosidades/al-descargar-video-en-internet-a-veces-usas-avi-o-mkv-pero-conoces-las-diferencias-entre-ambos">Aquí</a> puedes encontrar un pequeño artículo que te cuenta las diferencias existentes entre ambos.
+</p>
+
+<p>
+He apostado por una solución que está disponible en todos los sistemas operativos que suelo utilizar, desde GNU/Linux hasta Mac OS, pasando por Windows: <a href="https://ffmpeg.org/">ffmpeg</a>.
+</p>
+
+<p>
+En GNU/Linux seguro que está en el sistema de paquetes de tu distribución, y puedes instalarlo de la forma habitual. Por ejemplo, en mi <b>Debian</b>, ejecutando como root:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">apt update</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">apt install ffmpeg</span>
+</pre>
+</div>
+
+<p>
+En MAC te aconsejo utilizar el "gestor de paquetes": <a href="https://brew.sh">Homebrew</a>, pues se instala muy fácilmente y nos servirá para utilizar diferentes herramientas tanto del proyecto GNU como de otros de código abierto, además de la que nos interesa ahora. Echa un vistazo a su página que te he dejado enlazada. <b>Instalamos Homebrew</b> así:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">/usr/bin/ruby -e "$(</span><span style="color: #FF1493;">curl</span><span style="color: #8D8D84; font-style: italic;"> -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span>
+</pre>
+</div>
+
+<p>
+Y con Homebrew ya instalado, instalamos ffmpeg así:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">brew install ffmpeg</span>
+</pre>
+</div>
+
+<p>
+En Windows aún no he tenido la necesidad de instalarlo, pero como puedes observar en la sección "Download" del <a href="https://ffmpeg.org/">proyecto ffmpeg</a>, también existe un paquete de instalación para este sistema operativo.
+</p>
+
+<p>
+Una vez instalado puedes comprobar que funciona bien con este comando:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">ffmpeg -version</span>
+</pre>
+</div>
+
+<p>
+Obteniendo algo como:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">ffmpeg version 4.1.4 Copyright (c) 2000-2019 the FFmpeg developers
+...
+</pre>
+</div>
+
+<p>
+Después de investigar un poco con diferentes opciones, <b>la línea de comandos que mejor relación calidad/"precio" (siendo el "precio" el tiempo necesario para llevar a cabo el proceso) ha arrojado es esta</b>:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">ffmpeg -i "video.mkv" -f avi -c:v mpeg4 -b:v 4000k -c:a libmp3lame -b:a 320k "video.avi"</span>
+</pre>
+</div>
+
+<p>
+Los resultados son muy buenos, aunque observo que cuando hay cambios de imagen muy rápidos se pixela un poco, casi imperceptible, pero si estás atento lo notas.
+</p>
+
+<p>
+Los codecs utilizados en el formato <b>mkv</b> (tamaño: 2,2G) son más eficientes (mejores) que los utilizados en el formato <b>avi</b> (tamaño: 3,2G) que soporta mi reproductor, con su consecuente impacto en tamaño. Es decir, obtenemos algo de más tamaño y de peor calidad :-(.
+</p>
+
+<p>
+Otra combinación de opciones que arrojan un buen resultado, <b>creo que incluso mejor que el anterior en relación calidad/esfuerzo, es esta</b>:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">ffmpeg -i "video.mkv" -vcodec mpeg4 -acodec libmp3lame -qscale:v 2 -qscale:a 5 "video.avi"</span>
+</pre>
+</div>
+
+<p>
+Y tú, ¿has tenido esta necesidad? ¿Has llegado a encontrar la combinación de opciones "optima" según la relación calidad/"precio"? Si es así, te agradezco que las compartas en los comentarios. También puedes comentarme cualquier otra información que consideres que contribuye a aumentar el conocimiento en esta temática.
+</p>
+
+<p>
+Espero que ayude.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=como_convertir_un_mkv_a_avi">Dejar comentario</a>.
+</p>
+
+<div id="outline-container-org1dc2475" class="outline-2">
+<h2 id="org1dc2475">Comentarios</h2>
+<div class="outline-text-2" id="text-org1dc2475">
+</div>
+<div id="outline-container-org1513506" class="outline-3">
+<h3 id="org1513506">Agradecimiento (Mario Jue, 27/06/2024 - 13:48)</h3>
+<div class="outline-text-3" id="text-org1513506">
+<p>
+Hola Godofredo,
+Gracias por compartir estos comandos de ffmpeg.
+</p>
+</div>
+</div>
+<div id="outline-container-org6e38f76" class="outline-3">
+<h3 id="org6e38f76">Gracias a ti por dejar tu comentario (Godofredo Fdez. Lun, 01/07/2024 - 09:15)</h3>
+<div class="outline-text-3" id="text-org6e38f76">
+<p>
+Supongo que te han sido útiles. Muchas gracias por el feedback.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-software.html">Software</a> <a href="https://godest.vivencias.net/tag-utilidades.html">Utilidades</a> </div>
+<div class="post-date">22 ago 2017</div><h1 class="post-title"><a href="https://godest.vivencias.net/2017-08-22-usb-multiarranque-copias-de-seguridad-y-particionado-de-disco.html">USB multiarranque, copias de seguridad y particionado de disco</a></h1>
+<p>
+Editado el 11-08-2021:
+</p>
+
+<p>
+El proyecto del que se habla aquí <b>Easy2Boot</b> ha cambiado su home en Internet:
+<a href="https://easy2boot.xyz/">https://easy2boot.xyz/</a>
+</p>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+Pues veíamos al final del anterior artículo publicado (<a href="https://godest.vivencias.net/2017-06-30-petya-or-notpetya-esa-no-es-la-cuestion.html">Petya or NotPetya, esa NO es la cuestión</a>), la necesidad de hacer copias de seguridad, y que estas tengan ciertas características:
+</p>
+
+<p>
+#1# Que se lleven a cabo con una “cierta" periodicidad: de nada sirve un backup desactualizado, o si pasa mucho tiempo entre la realización de uno y el siguiente, porque en ese intervalo puede ser que aparezca y desaparezca – por error – información que nos hubiese gustado conservar. En los entornos profesionales esto está ligado a las “políticas de backups", que se definen según la criticidad de la información, la rapidez con la que cambia y el tiempo que queremos retener la copia de seguridad, el dato. En el entorno personal has de pensar un poco sobre esto y crearte una “disciplina".
+</p>
+
+<p>
+#2# Que se almacenen en distintos soportes y que estos se guarden en distintos lugares. ¿Qué pasa si sólo tenemos un disco externo y cuando vamos a recuperar un backup que “vive en él" no funciona? ¿Y si tenemos un disco externo y un PEN USB en un determinado cajón que, por error, se ha caído, nos vemos afectados por un incendio, etc.? Las organizaciones suelen tener una segunda copia disponible (cerca de la principal) y, cada vez más pero aún son pocas, una tercera copia alojada en instalaciones “alejadas", ya sean alquiladas (físicas o en la nube) o propias (también físicas o en la “nube privada").
+</p>
+
+<p>
+#3# Y mantenerlas seguras (cifradas): sobre todo si la información que contiene, que cada vez suele ser más habitual, es crítica desde el punto de vista de la confidencialidad: estados de cuentas, contraseñas, correos, fotos …no sé, que cada cual piense aquello que considera “superprivado".
+</p>
+
+<p>
+Y todos los puntos anteriores se resumen en este: <b>siempre que hagas una copia de seguridad comprueba, cuando la haces y cada cierto tiempo, que esa copia es recuperable</b>.
+</p>
+
+<p>
+Pues esto que escribo en el párrafo anterior, y que parece obvio, es lo que menos suele hacerse. He vivido de cerca, tanto a nivel personal como a nivel profesional, auténticos dramas porque “nunca pasa nada hasta que pasa"… se va a por la copia de seguridad y ¡tachán! ¡ésta no funciona! Por el soporte, por el software o por lo que sea). Y ya os digo que es más habitual de lo que creéis. Así que siempre, siempre, preocúpate no sólo de realizar la copia de seguridad, sino de conservarla y de comprobar cada cierto tiempo que es recuperable.
+</p>
+
+<p>
+Para mí es una exigencia que la herramienta considerada para hacer copias de seguridad de la información, de las carpetas y ficheros que tenemos en nuestro disco, genere “backups navegables": se suelen montar, con los drivers apropiados, como unidades de disco adicionales, o verse como “carpetas comprimidas", y no es necesario recuperar la copia completa para hacer uso de un determinado fichero o carpeta: simplemente se navega hasta él/ella y se hace un copy/paste (desde la copia de seguridad hasta el lugar donde queremos recuperarlo). <b>Esto facilita muchísimo la comprobación de que un backup es realmente válido</b> (aunque todas las herramientas que se precien suelen tener un “software u opción" que “valida" la copia generada).
+</p>
+
+<p>
+En un entorno personal, en muchas ocasiones, recuperar una copia de seguridad implica tener que arrancar con una herramienta externa, pues el disco duro ha sufrido una incidencia (rotura, ataque de virus, cifrado por rasomware, etc.) y el sistema instalado en él ha quedado indisponible. Hasta ahora era habitual el uso de CD de arranque, pero desde hace ya unos años lo más práctico no es el CD sino un USB de arranque. Tanto Windows como GNU/Linux son capaces de generar USB de arranque para llevar a cabo operaciones de recuperación y/o nuevas instalaciones haciendo uso de las herramientas apropiadas. Así conseguimos tener un USB con el que arrancar e instalar Windows, y lo mismo con GNU/Linux. <b>Pero yo llevaba tiempo buscando (y utilizando con ciertos problemillas, es decir, de forma subóptima) herramientas que me permitieran fabricar un USB “multiarranque" (o multiboot USB), es decir, un USB que al arrancar muestra un menú con todas las herramientas que has incorporado en él y tú decides cuál necesitas utilizar. ¡Y lo he encontrado: <a href="http://www.easy2boot.com/introduction/">Easy2Boot (E2B)</a>!</b> (<a href="https://www.google.es/search?q=creating+Multiboot+USB%2FISO&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=VWKcWZatFM-D4gTI9JGoCw">que extrañamente no sale en las primeras posiciones de Google</a>).
+</p>
+
+<p>
+Con esta herramienta generar un USB multiarranque es tan fácil como seguir los pasos que aparecen en la página que os he enlazado, y que resumidos son:
+</p>
+
+<p>
+#1# Descargar y descomprimir el archivo “autodescomprimible" (de ahí que venga en formato .exe).
+</p>
+
+<p>
+#2# Ejecutar el archivo <code>Make_E2B.exe</code> y:
+</p>
+
+<p>
+#2.1# Elegir la unidad que referencia a nuestro USB ya conectado (<b>¡mucho cuidado porque va a ser formateada y perderéis todo lo que tenga!</b>).
+</p>
+
+<p>
+#2.2# El idioma en el que queremos llevar a cabo la instalación (en el que aparecerán las diferentes descripciones de los menús de arranque y los mensajes).
+</p>
+
+<p>
+#2.3# Y pulsar el botón “Make E2B Drive" (siguiendo los pasos que vaya solicitando el proceso de “fabricación del USB multiarranque").
+</p>
+
+<p>
+#3# Una vez finalizado dicho proceso de fabricación, copiar en los lugares oportunos las “imágenes .iso" de aquellos sistemas operativos (soporta todos los Windows y todos los GNU/Linux), herramientas de backup, de particionado, etc. (<a href="http://www.easy2boot.com/add-payload-files/list-of-tested-payload-files/">aquí tenéis un listado de más de 300 isos soportados</a>), que queramos utilizar. La mayoría de las veces basta con copiar, otras hay que hacer “manipulaciones adicionales", a este respecto consultar la abundante documentación del proyecto. <b>Y lo mejor de todo</b>: no hace falta tener todos los .isos que iras necesitando a lo largo de tu vida hoy, en el momento de la fabricación del USB, si el día de mañana necesitas añadir uno nuevo, copias el “.iso" al USB y listo, no hay que repetir todo el proceso. <b>¡Una auténtica genialidad!</b> ¡Con la de tiempo que he perdido tostando distribuciones GNU/Linux cada vez que quería echar un vistazo a alguna: Mint, Kali, etc.!
+</p>
+
+<p>
+Así que, obviamente, para poder hablaros de él con fundamento, yo lo he probado y me he fabricado un USB de 1GB (que tenía por ahí sin utilizar y ahora le he visto la utilidad) con una herramienta de backups (“<a href="https://www.acronis.com/es-es/">Acronis True Image</a>" – versión de prueba) y una herramienta de particionado (“<a href="https://www.partitionwizard.com/partition-wizard-bootable-cd.html">Minitool Partition Wizard Bootable</a>"). Las dos mejores herramientas para estos propósitos que conozco.
+</p>
+
+<p>
+Y aquí está el resultado:
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="650" height="512" border="0" align="right" hspace="10" vspace="10" src="/static/2017/E2B-en-QEMU.jpg" alt="Captura de E2B en QEMU" />
+</figure>
+
+<p>
+En la imagen vemos, ejecutándose en el emulador de PC basado en QEMU que viene con el E2B, el menú principal de utilidades tras arrancar con el USB que acabamos de crear, comprobando así que todo funciona sin necesidad de apagar y encender nuestra máquina real. Aunque esto no es realmente así: en QEMU me funcionó el arranque de Acronis pero no el arranque de Minitool; sin embargo, arrancando físicamente tanto mi PC de escritorio como mi portátil todo funcionó bien. No obstante, esto ya lo indica un mensaje durante el proceso de arranque de la máquina virtual: al no haberse configurado disco duro para dicha máquina, algunas herramientas pueden fallar.
+</p>
+
+<p>
+En fin, a mí me ha gustado muchísimo el proyecto “<a href="http://easy2boot.com/">easy2boot.com</a>", que además sigue estando en continuo desarrollo.
+</p>
+
+<p>
+Espero, como siempre, que os sirva. Y si queréis hacerme algún comentario al respecto, recomendarme algunas de vuestras utilidades favoritas, etc., deseo escucharos.
+</p>
+
+<p>
+<b>Gracias por estar ahí</b>.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=USB-multiarranque-copias-de-seguridad-y-particionado-de-disco">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div>
+<div class="post-date">09 abr 2017</div><h1 class="post-title"><a href="https://godest.vivencias.net/2017-04-09-utilizando-teamviewer-en-debian.html">Utilizando Teamviewer en Debian</a></h1>
+<p>
+En este artículo vamos a ver como instalar Teamviewer en una máquina con arquitectura de 64 bits, corriendo la última versión estable de Debian para dicha arquitectura.
+</p>
+
+<p>
+Se descarga el paquete .deb desde aquí:
+<a href="https://www.teamviewer.com/es/download/linux/">https://www.teamviewer.com/es/download/linux/</a>
+</p>
+
+<p>
+Una vez descargado, como el paquete es único para ambas arquitecturas: 32 y 64 bits, lo que equivale a decir que está compilado contra librerías de 32 bits; si tenemos un Debian de 64 bits instalado en nuestra máquina, como es mi caso, hemos de añadir la arquitectura de 32 bits para que el gestor de paquetes sea consciente de que es necesario instalar dependencias de dicha arquitectura. Lo hacemos, una vez convertidos en root, así:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:38:07(godo@debian)~]&gt; sudo su
+[sudo] password for godo:
+[11:38:25(root@debian)/home/godo]#
+[11:38:26(root@debian)/home/godo]#
+[11:38:26(root@debian)/home/godo]# dpkg --add-architecture i386
+</pre>
+</div>
+
+<p>
+Ahora, actualizamos nuestro árbol de dependencias (observad como en las líneas de acceso a los repositorios aparece ya la arquitectura i386 -32 bits- además de la amd64 -64 bits-):
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">[11:38:40(root@debian)/home/godo]# apt-get update
+Ign http://dl.google.com stable InRelease
+Obj http://security.debian.org jessie/updates InRelease
+Obj http://dl.google.com stable Release.gpg
+Ign http://ftp.debian.org jessie InRelease
+Obj http://dl.google.com stable Release
+Obj http://ftp.debian.org jessie Release.gpg
+Obj http://security.debian.org jessie/updates/main Sources
+Obj http://ftp.debian.org jessie Release
+...
+Obj http://httpredir.debian.org jessie/main Translation-es
+Obj http://httpredir.debian.org jessie/main Translation-en
+Obj http://httpredir.debian.org jessie/non-free Translation-en
+Descargados 14,1 MB en 30s (460 kB/s)
+Leyendo lista de paquetes... Hecho
+</pre>
+</div>
+
+<p>
+Y procedemos a instalar "manualmente" el paquete descargado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:40:57(root@debian)/home/godo]# cd Descargas/
+[11:41:25(root@debian)/home/godo/Descargas]# dpkg -i teamviewer_12.0.71510_i386.deb
+
+Seleccionando el paquete teamviewer previamente no seleccionado.
+(Leyendo la base de datos ... 122791 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar teamviewer_12.0.71510_i386.deb ...
+Desempaquetando teamviewer (12.0.71510) ...
+dpkg: problemas de dependencias impiden la configuraci&#243;n de teamviewer:
+teamviewer depende de libc6 (&gt;= 2.11)<span style="color: #006FE0;">.</span>
+teamviewer depende de libgcc1.
+teamviewer depende de libasound2.
+teamviewer depende de libdbus-1-3.
+teamviewer depende de libexpat1.
+teamviewer depende de libfontconfig1.
+teamviewer depende de libfreetype6.
+teamviewer depende de libjpeg62.
+teamviewer depende de libsm6.
+teamviewer depende de libxdamage1.
+teamviewer depende de libxext6.
+teamviewer depende de libxfixes3.
+teamviewer depende de libxinerama1.
+teamviewer depende de libxrandr2.
+teamviewer depende de libxrender1.
+teamviewer depende de libxtst6.
+teamviewer depende de zlib1g.
+
+dpkg: error al procesar el paquete teamviewer (--install):
+problemas de dependencias - se deja sin configurar
+Procesando disparadores para mime-support (3.58) ...
+Procesando disparadores para desktop-file-utils (0.22-1) ...
+Procesando disparadores para hicolor-icon-theme (0.13-1) ...
+Se encontraron errores al procesar:
+teamviewer
+</pre>
+</div>
+
+
+<p>
+Como podemos observar, la supuesta instalación de teamviewer termina arrojando una serie de errores de dependencias. Esto es porque hemos utilizado "dpkg" en crudo para instalarlo y, así, no se resuelven dichas dependencias durante la instalación. Basta con ejecutar el siguiente comando para que se instalen y todo quede configurado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:41:54(root@debian)/home/godo/Descargas]# apt-get -f install
+Leyendo lista de paquetes... Hecho
+Creando &#225;rbol de dependencias
+Leyendo la informaci&#243;n de estado... Hecho
+Corrigiendo dependencias... Listo
+Se instalar&#225;n los siguientes paquetes extras:
+gcc-4.9-base:i386 libasound2:i386 libc6:i386 libc6-i686:i386 libdbus-1-3:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386
+libgcc1:i386 libice6:i386 libjpeg62-turbo:i386 libpng12-0:i386 libsm6:i386 libuuid1:i386 libx11-6:i386 libxau6:i386 libxcb1:i386
+libxdamage1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386
+libxtst6:i386 uuid-runtime zlib1g:i386
+Paquetes sugeridos:
+libasound2-plugins:i386 glibc-doc:i386 locales:i386
+Paquetes recomendados:
+uuid-runtime:i386
+Se instalar&#225;n los siguientes paquetes NUEVOS:
+gcc-4.9-base:i386 libasound2:i386 libc6:i386 libc6-i686:i386 libdbus-1-3:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386
+libgcc1:i386 libice6:i386 libjpeg62-turbo:i386 libpng12-0:i386 libsm6:i386 libuuid1:i386 libx11-6:i386 libxau6:i386 libxcb1:i386
+libxdamage1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386
+libxtst6:i386 uuid-runtime zlib1g:i386
+0 actualizados, 28 nuevos se instalar&#225;n, 0 para eliminar y 0 no actualizados.
+1 no instalados del todo o eliminados.
+Se necesita descargar 8.592 kB de archivos.
+Se utilizar&#225;n 19,9 MB de espacio de disco adicional despu&#233;s de esta operaci&#243;n.
+&#191;Desea continuar? [S/n]
+Des:1 http://httpredir.debian.org/debian/ jessie/main gcc-4.9-base i386 4.9.2-10 [160 kB]
+Des:2 http://httpredir.debian.org/debian/ jessie/main libgcc1 i386 1:4.9.2-10 [48,1 kB]
+Des:3 http://httpredir.debian.org/debian/ jessie/main libc6 i386 2.19-18+deb8u7 [3.982 kB]
+Des:4 http://httpredir.debian.org/debian/ jessie/main libasound2 i386 1.0.28-1 [390 kB]
+Des:5 http://httpredir.debian.org/debian/ jessie/main libdbus-1-3 i386 1.8.22-0+deb8u1 [182 kB]
+Des:6 http://httpredir.debian.org/debian/ jessie/main libexpat1 i386 2.1.0-6+deb8u3 [84,1 kB]
+Des:7 http://httpredir.debian.org/debian/ jessie/main zlib1g i386 1:1.2.8.dfsg-2+b1 [89,4 kB]
+Des:8 http://httpredir.debian.org/debian/ jessie/main libpng12-0 i386 1.2.50-2+deb8u3 [179 kB]
+Des:9 http://httpredir.debian.org/debian/ jessie/main libfreetype6 i386 2.5.2-3+deb8u1 [480 kB]
+Des:10 http://httpredir.debian.org/debian/ jessie/main libfontconfig1 i386 2.11.0-6.3+deb8u1 [338 kB]
+Des:11 http://httpredir.debian.org/debian/ jessie/main libjpeg62-turbo i386 1:1.3.1-12 [123 kB]
+Des:12 http://httpredir.debian.org/debian/ jessie/main libice6 i386 2:1.0.9-1+b1 [61,1 kB]
+Des:13 http://httpredir.debian.org/debian/ jessie/main libuuid1 i386 2.25.2-6 [65,9 kB]
+Des:14 http://httpredir.debian.org/debian/ jessie/main libsm6 i386 2:1.2.2-1+b1 [33,7 kB]
+Des:15 http://httpredir.debian.org/debian/ jessie/main libxau6 i386 1:1.0.8-1 [20,9 kB]
+Des:16 http://httpredir.debian.org/debian/ jessie/main libxdmcp6 i386 1:1.1.1-1+b1 [25,1 kB]
+Des:17 http://httpredir.debian.org/debian/ jessie/main libxcb1 i386 1.10-3+b1 [48,2 kB]
+Des:18 http://httpredir.debian.org/debian/ jessie/main libx11-6 i386 2:1.6.2-3 [750 kB]
+Des:19 http://httpredir.debian.org/debian/ jessie/main libxfixes3 i386 1:5.0.1-2+b2 [21,6 kB]
+Des:20 http://httpredir.debian.org/debian/ jessie/main libxdamage1 i386 1:1.1.4-2+b1 [14,8 kB]
+Des:21 http://httpredir.debian.org/debian/ jessie/main libxext6 i386 2:1.3.3-1 [54,9 kB]
+Des:22 http://httpredir.debian.org/debian/ jessie/main libxinerama1 i386 2:1.1.3-1+b1 [17,1 kB]
+Des:23 http://httpredir.debian.org/debian/ jessie/main libxrender1 i386 1:0.9.8-1+b1 [32,1 kB]
+Des:24 http://httpredir.debian.org/debian/ jessie/main libxrandr2 i386 2:1.4.2-1+b1 [36,8 kB]
+Des:25 http://httpredir.debian.org/debian/ jessie/main libxi6 i386 2:1.7.4-1+b2 [81,8 kB]
+Des:26 http://httpredir.debian.org/debian/ jessie/main libxtst6 i386 2:1.2.2-1+b1 [27,7 kB]
+Des:27 http://httpredir.debian.org/debian/ jessie/main uuid-runtime amd64 2.25.2-6 [74,3 kB]
+Des:28 http://httpredir.debian.org/debian/ jessie/main libc6-i686 i386 2.19-18+deb8u7 [1.172 kB]
+Descargados 8.592 kB en 9s (940 kB/s)
+Preconfigurando paquetes ...
+Seleccionando el paquete gcc-4.9-base:i386 previamente no seleccionado.
+(Leyendo la base de datos ... 123088 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar .../gcc-4.9-base_4.9.2-10_i386.deb ...
+Desempaquetando gcc-4.9-base:i386 (4.9.2-10) ...
+Seleccionando el paquete libgcc1:i386 previamente no seleccionado.
+Preparando para desempaquetar .../libgcc1_1%3a4.9.2-10_i386.deb ...
+Desempaquetando libgcc1:i386 (1:4.9.2-10) ...
+...
+Configurando libuuid1:i386 (2.25.2-6) ...
+Configurando libsm6:i386 (2:1.2.2-1+b1) ...
+Configurando libxau6:i386 (1:1.0.8-1) ...
+Configurando libxdmcp6:i386 (1:1.1.1-1+b1) ...
+Configurando libxcb1:i386 (1.10-3+b1) ...
+Configurando libx11-6:i386 (2:1.6.2-3) ...
+Configurando libxfixes3:i386 (1:5.0.1-2+b2) ...
+Configurando libxdamage1:i386 (1:1.1.4-2+b1) ...
+Configurando libxext6:i386 (2:1.3.3-1) ...
+Configurando libxinerama1:i386 (2:1.1.3-1+b1) ...
+Configurando libxrender1:i386 (1:0.9.8-1+b1) ...
+Configurando libxrandr2:i386 (2:1.4.2-1+b1) ...
+Configurando libxi6:i386 (2:1.7.4-1+b2) ...
+Configurando libxtst6:i386 (2:1.2.2-1+b1) ...
+Configurando teamviewer (12.0.71510) ...
+Configurando uuid-runtime (2.25.2-6) ...
+Configurando libc6-i686:i386 (2.19-18+deb8u7) ...
+Procesando disparadores para libc-bin (2.19-18+deb8u7) ...
+Procesando disparadores para systemd (215-17+deb8u6) ...
+[11:42:57(root@debian)/home/godo/Descargas]#
+</pre>
+</div>
+
+
+<p>
+Observar como en una de las últimas líneas aparece "Configurando teamviewer (12.0.71510) &#x2026;". Ahora sí, nuestro teamviewer está listo para usarse.
+</p>
+
+<p>
+A mí me gusta siempre terminar todas las instalaciones haciendo una comprobación y limpiando lo descargado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:43:00(root@debian)/home/godo/Descargas]#
+[11:43:00(root@debian)/home/godo/Descargas]# apt-get check
+Leyendo lista de paquetes... Hecho
+Creando &#225;rbol de dependencias
+Leyendo la informaci&#243;n de estado... Hecho
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:43:22(root@debian)/home/godo/Descargas]# apt-get update
+Ign http://dl.google.com stable InRelease
+Obj http://dl.google.com stable Release.gpg
+Obj http://security.debian.org jessie/updates InRelease
+Ign http://ftp.debian.org jessie InRelease
+Obj http://dl.google.com stable Release
+Obj http://ftp.debian.org jessie Release.gpg
+Ign http://httpredir.debian.org jessie InRelease
+Obj http://ftp.debian.org jessie Release
+Obj http://httpredir.debian.org jessie-updates InRelease
+Obj http://security.debian.org jessie/updates/main Sources
+Obj http://httpredir.debian.org jessie Release.gpg
+Obj http://dl.google.com stable/main amd64 Packages
+Obj http://security.debian.org jessie/updates/contrib Sources
+Obj http://security.debian.org jessie/updates/non-free Sources
+Obj http://security.debian.org jessie/updates/main amd64 Packages
+Obj http://ftp.debian.org jessie/main amd64 Packages
+Obj http://security.debian.org jessie/updates/contrib amd64 Packages
+Obj http://httpredir.debian.org jessie Release
+Obj http://ftp.debian.org jessie/contrib amd64 Packages
+Obj http://security.debian.org jessie/updates/non-free amd64 Packages
+Obj http://security.debian.org jessie/updates/main i386 Packages
+Obj http://ftp.debian.org jessie/main i386 Packages
+Obj http://security.debian.org jessie/updates/contrib i386 Packages
+Obj http://ftp.debian.org jessie/contrib i386 Packages
+Obj http://security.debian.org jessie/updates/non-free i386 Packages
+Obj http://ftp.debian.org jessie/contrib Translation-en
+Obj http://security.debian.org jessie/updates/contrib Translation-en
+Obj http://ftp.debian.org jessie/main Translation-es
+Obj http://security.debian.org jessie/updates/main Translation-en
+Obj http://ftp.debian.org jessie/main Translation-en
+Obj http://security.debian.org jessie/updates/non-free Translation-en
+Ign http://dl.google.com stable/main Translation-es_ES
+Obj http://httpredir.debian.org jessie-updates/main Sources
+Ign http://dl.google.com stable/main Translation-es
+Ign http://dl.google.com stable/main Translation-en
+Obj http://httpredir.debian.org jessie-updates/contrib Sources
+Obj http://httpredir.debian.org jessie-updates/non-free Sources
+Des:1 http://httpredir.debian.org jessie-updates/main amd64 Packages/DiffIndex [7.408 B]
+Obj http://httpredir.debian.org jessie-updates/contrib amd64 Packages
+Des:2 http://httpredir.debian.org jessie-updates/non-free amd64 Packages/DiffIndex [736 B]
+Des:3 http://httpredir.debian.org jessie-updates/main i386 Packages/DiffIndex [7.408 B]
+Obj http://httpredir.debian.org jessie-updates/contrib i386 Packages
+Des:4 http://httpredir.debian.org jessie-updates/non-free i386 Packages/DiffIndex [736 B]
+Obj http://httpredir.debian.org jessie-updates/contrib Translation-en
+Des:5 http://httpredir.debian.org jessie-updates/main Translation-en/DiffIndex [2.704 B]
+Des:6 http://httpredir.debian.org jessie-updates/non-free Translation-en/DiffIndex [736 B]
+Obj http://httpredir.debian.org jessie/main Sources
+Obj http://httpredir.debian.org jessie/contrib Sources
+Obj http://httpredir.debian.org jessie/non-free Sources
+Obj http://httpredir.debian.org jessie/main amd64 Packages
+Obj http://httpredir.debian.org jessie/contrib amd64 Packages
+Obj http://httpredir.debian.org jessie/non-free amd64 Packages
+Obj http://httpredir.debian.org jessie/main i386 Packages
+Obj http://httpredir.debian.org jessie/contrib i386 Packages
+Obj http://httpredir.debian.org jessie/non-free i386 Packages
+Obj http://httpredir.debian.org jessie/contrib Translation-en
+Obj http://httpredir.debian.org jessie/main Translation-es
+Obj http://httpredir.debian.org jessie/main Translation-en
+Obj http://httpredir.debian.org jessie/non-free Translation-en
+Descargados 19,7 kB en 13s (1.503 B/s)
+Leyendo lista de paquetes... Hecho
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:43:51(root@debian)/home/godo/Descargas]# apt-get upgrade
+Leyendo lista de paquetes... Hecho
+Creando &#225;rbol de dependencias
+Leyendo la informaci&#243;n de estado... Hecho
+Calculando la actualizaci&#243;n... Listo
+0 actualizados, 0 nuevos se instalar&#225;n, 0 para eliminar y 0 no actualizados.
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:43:57(root@debian)/home/godo/Descargas]# apt-get clean
+</pre>
+</div>
+
+<p>
+A continuación, os dejo una captura de mi escritorio mostrando a Teamviewer justo después de arrancarlo.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="471" border="0" align="center" hspace="10" vspace="10" src="/static/2017/teamviewer-en-debian.jpg"
+ alt="Teamviewer en Debian" />
+</figure>
+
+<p>
+¡Espero que os sea útil!
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Utilizando_Teamviewer_en_Debian">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div>
+<div class="post-date">29 nov 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-11-29-sin-telnet-en-windows-10.html">Sin telnet en Windows 10</a></h1>
+<p>
+Quizá a alguno de vosotros le haya pasado lo que a mí: voy a conectarme hoy a un viejo dispositivo que sólo permite conexiones utilizando "<a href="https://en.wikipedia.org/wiki/Telnet">Telnet</a>", y no puedo. Desde el interfaz de comandos de mi Windows 10 obtengo este error:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #008000;">"telnet"</span> no se reconoce como un comando interno o externo, programa o archivo por lotes ejecutable.
+</pre>
+</div>
+
+<p>
+Me ha extrañado por dos motivos:
+</p>
+
+<ol class="org-ol">
+<li>¿Windows 10 no trae telnet instalado por defecto? La respuesta es no. Más información <a href="https://www.rootusers.com/how-to-enable-the-telnet-client-in-windows-10/">aquí</a> (con solución autóctona Windows 10 incluida).</li>
+
+<li>¿Y mi instalación de <a href="https://www.cygwin.com/">Cygwin</a> tampoco? Pues la respuesta, obviamente, también era negativa.</li>
+</ol>
+
+<p>
+Así que arranco mi "setup-x86.exe" para instalar "telnet" desde los repositorios de Cygwin, y me encuentro que no existe ningún paquete llamado "telnet". Buscando por la red descubro dos cosas:
+</p>
+
+<ol class="org-ol">
+<li>Para instalar "telnet" hay que seleccionar el paquete "<b>inetutils</b>".</li>
+
+<li>En el sitio donde encuentro lo anterior, <a href="http://kennyroh.blogspot.com.es/2016/04/cygwin-install-telnet.html">aquí</a>, descubro que su autor utiliza un comando muy parecido a "apt-get" (maravilloso gestor de paquetes del mundo <a href="http://www.debian.org/">Debian</a> que por mi histórico, como sabéis los lectores de este blog, controlo bastante bien), en concreto: "apt-cyg", que tiene toda la pinta de funcionar de forma muy parecida a la "suite apt" original&#x2026; ¡A investigar!</li>
+</ol>
+
+<p>
+En los primeros resultados de <a href="https://www.google.es/search?q=apt-cyg&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=BZQ9WMKeOdKp8wfSxpegDw">esta búsqueda</a> creo que hay material suficiente para profundizar en el uso de "apt-cyg".
+</p>
+
+<p>
+Conclusión: si quieres utilizar "telnet" en Windows 10 y eres usuario habitual del "port" del mundo GNU/Linux vía "Cygwin", instala el paquete "inetutils":
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[15:39:35(godo@surco)~]&gt; telnet --version
+<span style="color: #006699;">telnet</span> (GNU inetutils) 1.9.1
+<span style="color: #006699;">Copyright</span> (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later .
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by many authors.
+</pre>
+</div>
+
+<p>
+Obviamente, creo que no tiene sentido instalar Cygwin sólo para esto, pero si ya lo utilizas para hacer otras muchas cosas, sí que lo tiene. Sin embargo, si sólo necesitas "telnet", instálalo desde el propio Windows como comentan <a href="https://www.rootusers.com/how-to-enable-the-telnet-client-in-windows-10/">aquí</a>.
+</p>
+
+<p>
+¡Salud, amigos!
+</p>
+
+<p>
+P.D.: ni que decir tiene que el uso de "telnet" está tremendamente desaconsejado (toda la información viaja en claro entre tu extremo y el otro) y que, siempre que se pueda, es mejor utilizar "<a href="https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-in-ubuntu">ssh</a>".
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Sin_Telnet_en_Windows_10">Dejar comentario</a>.
+</p>
+
+<div id="outline-container-orgd3cd760" class="outline-2">
+<h2 id="orgd3cd760">Comentarios</h2>
+<div class="outline-text-2" id="text-orgd3cd760">
+</div>
+<div id="outline-container-orgec8ce18" class="outline-3">
+<h3 id="orgec8ce18">Guillermo (no verificado Lun, 05/12/2016 - 09:46)</h3>
+<div class="outline-text-3" id="text-orgec8ce18">
+<p>
+Después del ultimo intento con telnets, sshs y demas encontre mobaxterm (<a href="http://mobaxterm.mobatek.net/">http://mobaxterm.mobatek.net/</a>) y me sorprendió.
+Lo primero es portable, con lo que te olvidas de instalar cosas (sabras por lo que te lo comento) y después emulaba un entorno X en le PC que es muy útil en algunos momentos.
+Pruebalo un día que estes aburrido, a mi me gustó.
+</p>
+</div>
+</div>
+<div id="outline-container-orgac1682d" class="outline-3">
+<h3 id="orgac1682d">Godofredo Fdez. (Mié, 07/12/2016 - 20:27)</h3>
+<div class="outline-text-3" id="text-orgac1682d">
+<p>
+Muchas gracias por dejarme esta referencia, Guillermo. Le he echado un vistazo y tiene buena pinta (aunque no he llegado a instalarlo). La verdad es que desde que instalé Cygwin en mis Windows he automatizado muchas cosas que venía automatizando ya en mis GNU/Linux, reaprovecho scripts y conocimientos. Además tengo todo lo que necesito: ssh, telnet, x-windows, etc. Como ya he dicho en el artículo, instalar Cygwin sólo para el telnet o incluso el ssh me parece un desperdicio, pero si lo utilizas para muchas más cosas del mundo Unix/Linux creo que es una inmejorable alternativa.
+</p>
+
+<p>
+Seguimos compartiendo.
+</p>
+
+<p>
+Gracias de nuevo por el comentario.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> <a href="https://godest.vivencias.net/tag-redes.html">Redes</a> </div>
+<div class="post-date">31 oct 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-10-31-trabajando-con-gnu-emacs-en-sistemas-windows.html">Trabajando con GNU Emacs en sistemas Windows</a></h1>
+<p>
+<b>Actualizado el 08-12-2016: se incorpora al final del artículo la sección de corrector ortográfico</b>.
+</p>
+
+<p>
+Hace mucho tiempo, diría que desde que comencé a trabajar con entornos GNU/Linux allá por 1992 (recuerdo estar estudiando los primeros años de mi carrera e intercambiar el sistema en alrededor de 10 disquetes de 3,5”), pero con mucha más intensidad a partir del 2005 (<a href="https://www.google.es/search?q=site%3Agodest.vivencias.net+emacs&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=Cp8VWI6mN-uJ8QfklrTQCA#q=site:godest.vivencias.net+emacs&amp;start=0">aquí</a> podéis encontrar algunas entradas en este mismo blog que referencian esas fechas), el editor <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> se convirtió en uno de los pilares básicos de mi productividad. En él he realizado desde programas en C hasta scripts con Perl y Python, he organizado mis tareas con su “modo org” y he comparado configuraciones con su potente integración con diff. Todo esto y ¡mucho más!
+</p>
+
+<p>
+Aunque al comienzo de mi vida profesional podía trabajar con GNU/Linux instalado en mi ordenador como sistema operativo base y habitual, la organización en la que trabajo se fue “complicando” y cada vez iban surgiendo más desarrollos propietarios que sólo se ejecutaban sobre sistemas Windows. Hasta ese entonces mi ordenador siempre arrancaba con <a href="http://debian.org/">Debian</a> y sobre ella emulaba la Office de Microsoft; pero llegó un momento en el que trabajaba más, y me complicaba la vida, emulando software de Windows que lo que me aportaba mi “gran compañera” en eficiencia (estoy hablando del entorno Desktop, mis servidores siguen ejecutando GNU/Linux al 100%). En fin, que acabé instalando Windows como sistema operativo base y virtualizando mi Debian sobre “VMware Player”.
+</p>
+
+<p>
+No obstante, <b>con la ayuda de <a href="https://www.cygwin.com/">Cygwin</a> mi sistema operativo actual es un Windows hibridado con muchas de las mejores herramientas del mundo GNU/Linux</b>: gcc, gdb, ssh, diff, awk, bash, etc.
+</p>
+
+<p>
+Y con el editor Emacs, que si bien no lo instalo directamente de la versión contenida en Cygwin (da errores en funcionalidades básicas un poco inexplicables, como, por ejemplo: <a href="https://www.google.es/search?q=cygwin+emacs+associate+txt+double+click&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=E6EVWI70K8mp8weL-oaIBw">tras ser asociado a ficheros .txt no los carga directamente al hacer doble click sobre ellos</a>), <a href="https://sourceforge.net/projects/emacsbinw64/">sí que instalo este "port" que obtiene un Emacs nativo sobre Windows</a> (actualmente lo vengo utilizando con mucha estabilidad en mis Windows 10).
+</p>
+
+<p>
+Bien, pues no sólo escribo esta entrada para contaros que existe este “port nativo sobre Windows”, que ya me parece muy valioso ;-), sino que a continuación capturo varios ajustes “muy necesarios” para que el sistema se comporte como queremos.
+</p>
+
+<p>
+<b>Primero</b>: descargamos la versión de Emacs para Windows desde <a href="https://sourceforge.net/projects/emacsbinw64/">aquí</a>. Simplemente hemos de descomprimir el “.zip” que bajamos, situar la carpeta en cualquier lugar de nuestro disco duro y añadir esa carpeta a la variable “path” de Windows.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="531" height="69" border="0" align="center" hspace="10" vspace="10" src="/static/2016/01-emacs-windows-path.png"
+ alt="01 Emacs Windows PATH" />
+</figure>
+
+<p>
+Como ya hemos comentado, y veremos más adelante con un ejemplo de comparación de ficheros, es muy aconsejable instalar un entorno “Cygwin” mínimo, con utilidades que aportan valor a Emacs. También hemos de añadirlo al “path”, para que podamos encontrar sus programas llamándolos desde cualquier sitio.
+</p>
+
+<p>
+<b>Segundo</b>: hay dos formas de enseñarle a Emacs dónde está nuestro directorio de trabajo, o HOME, en Windows 10 me funcionó la segunda, la b), que es la más compleja pero fue la primera que se me ocurrió. Sin embargo, en Windows 7 no funciona bien, y ha sido lo que ha provocado que investigue un poco más y haya acabado encontrando la primera, la a), que es incluso más fácil.
+</p>
+
+<p>
+a) Tal y como se describe <a href="https://stackoverflow.com/questions/189490/where-can-i-find-my-emacs-file-for-emacs-running-on-windows">aquí</a>, lo mejor es definir una variable de entorno para tu usuario de Windows, como se muestra en la siguiente figura (aprovechamos también y definimos la variable <code>"LANG = es_ES.UTF8"</code>, ver figura, para que luego funcione también el diccionario "aspell"):
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="595" height="417" border="0" align="center" hspace="10" vspace="10" src="/static/2016/Variables-HOME_y_LANG-para-Emacs.png"
+ alt="Variables HOME y LANG para Emacs" />
+</figure>
+
+<p>
+b) Creamos enlaces simbólicos, <b>con <a href="https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/">mklink</a> de Windows</b>, del fichero configuración por defecto de emacs, “.emacs” y su “directorio de trabajo en segundo plano” (copias de seguridad, etc.) “.emacs.d”.
+</p>
+
+<p>
+El port de Emacs para Windows considera como “directorio home” este: “C:\Users\Godo\AppData\Roaming” (sustituid Godo por vuestro usuario Windows), y en él guarda el fichero “.emacs” y el directorio “.emacs.d”. Yo los borro y los vuelvo a crear como enlaces simbólicos que apuntan a otros destinos, de igual nombre, pero ubicados en carpetas diferentes. Como podéis ver en la siguiente captura los mantengo dentro de mi Dropbox, conservando y sincronizando así todos los cambios que hago en ellos ya sea en mi ordenador fijo o en mi portátil.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="595" height="178" border="0" align="center" hspace="10" vspace="10" src="/static/2016/02-emacs-mklink.png"
+ alt="02 Enlace con MKLINK para Emacs" />
+</figure>
+
+<p>
+<b>Tercero</b>: lo anclamos a la barra de tareas para poder ejecutarlo de forma rápida. La mejor forma para hacerlo es abrir un documento cualquiera con él, y cuando vemos el icono en la barra de tareas, lo pulsamos con el botón derecho y seleccionamos “anclar a la barra de tareas”. Luego editamos dicho anclaje (click con el botón derecho sobre el icono, de nuevo click con botón derecho sobre “emacs” y seleccionamos “propiedades”):
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="315" height="292" border="0" align="center" hspace="10" vspace="10" src="/static/2016/03-emacs-barradetareas.png"
+ alt="03 Emacs Barra de Tareas" />
+</figure>
+
+<p>
+Y lo adaptamos para correr “runemacs.exe” en lugar de “emacs.exe” (este último deja en segundo plano una ventana msdos de fondo negro que resulta poco atractiva).
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="450" height="588" border="0" align="center" hspace="10" vspace="10" src="/static/2016/04-emacs-propiedades.png"
+ alt="04 Emacs propiedades" />
+</figure>
+
+<p>
+Por último, y como prueba del buen trabajo de Emacs integrado con la herramienta “diff” proporcionada por el entorno Cygwin, os dejo una captura donde podéis ver cómo me ayuda a detectar cambios en un fichero de configuración de un router Cisco:
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="596" height="525" border="0" align="center" hspace="10" vspace="10" src="/static/2016/05-emacs-diff.png"
+ alt="05 Emacs diff" />
+</figure>
+
+<p>
+Cuando limpie y de esplendor a mi fichero “.emacs” os lo compartiré por aquí por si os da ideas interesantes (a la vez que me sirve para fijar una copia de seguridad). Por ahora, os dejo sólo una brizna del mismo que activa la posibilidad de tener rápido acceso a “archivos recientes” (bajo el menú “File” o con “C-x C-r”):
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="452" height="212" border="0" align="center" hspace="10" vspace="10" src="/static/2016/06-emacs-recent-files.png"
+ alt="06 Emacs recent files" />
+</figure>
+
+<p>
+Y otro día escribiré sobre el <b><a href="https://www.google.es/search?q=mode+org+emacs&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=cqQVWKiyOcWp8wfX_YCwBA">modo .org de Emacs</a></b>, que es verdaderamente alucinante para llevar todo un “<a href="http://orgmode.org/">Sistema de planificación</a>” personal, de proyectos, etc., con “ToDo”, “Tags”, “deadlines”… Si lo quieres ver en funcionamiento, echa un vistazo a <a href="https://www.google.es/search?q=org-mode+emacs+youtube&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=B5AXWOXWF-as8wfwgIGgDg">estos vídeos de Youtube</a>.
+</p>
+
+<p>
+Y tú, ¿qué me cuentas sobre Emacs? De verdad, si realizas tareas de administración de sistemas, de programación, de gestión… que requieran control de versiones… <b>¡dale una oportunidad y no lo abandonarás jamás!</b> <a href="https://www.youtube.com/watch?v=FtieBc3KptU">Incluso si eres un escritor&#x2026;</a>
+</p>
+
+<p>
+Gracias por estar ahí. Y muchas más si decides enriquecerme con tus comentarios.
+</p>
+
+<p>
+<b>Actualizado el 08-12-2016 - Corrector ortográfico</b>
+</p>
+
+<p>
+<a href="https://www.emacswiki.org/emacs/AspellWindows">Esta página</a> de <a href="https://www.emacswiki.org/">Emacs Wiki</a> contine toda la información y ajustes de configuración necesarios.
+Básicamente hay que instalar <a href="http://ftp.gnu.org/gnu/aspell/w32/Aspell-0-50-3-3-Setup.exe">este ejecutable</a> y este <a href="http://ftp.gnu.org/gnu/aspell/w32/Aspell-es-0.50-2-3.exe">diccionario</a>. Después añadimos las siguientes líneas a nuestro fichero de configuración ".emacs":
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">;; ===== Para utilizar aspell como corrector ortogr&#225;fico ===
+;; C:\Program Files (x86)\Aspell\bin
+(add-to-list <span style="color: #008000;">'exec-path "C:/Program Files (x86)/Aspell/bin/")</span>
+<span style="color: #008000;">(setq ispell-program-name "aspell")</span>
+<span style="color: #008000;">(setq ispell-personal-dictionary "D:/Db/01-Personal/home/.aspell")</span>
+<span style="color: #008000;">(require '</span>ispell)
+;; La forma de invocarlo por defecto es <span style="color: #008000;">"M-$"</span>
+;; Esto que sigue s&#243;lo chequea la palabra sobre el cursor
+;; (global-set-key (kbd <span style="color: #008000;">"&lt;f8&gt;"</span>) <span style="color: #008000;">'ispell-word)</span>
+<span style="color: #008000;">;; Para chequear todo el buffer</span>
+<span style="color: #008000;">(global-set-key (kbd "&lt;f8&gt;") '</span>ispell-buffer)
+;; Para activar detecci&#243;n al vuelo
+(global-set-key (kbd <span style="color: #008000;">"C-&lt;f8&gt;"</span>) <span style="color: #008000;">'flyspell-mode)</span>
+</pre>
+</div>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Trabajando_con_GNU_Emacs_en_sistemas_Windows">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> <a href="https://godest.vivencias.net/tag-windows.html">Windows</a> </div>
+<div class="post-date">02 mar 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-03-02-aniversario-de-godest-con-drupal-v7.html">Aniversario de GodEst con Drupal v7</a></h1>
+<p>
+Hace hoy 12 años y cuatro días que este pequeño rincón de Internet vio la luz.
+</p>
+
+<p>
+Aquel año, 2004, también fue bisiesto, naciendo GodEst el día 29 de febrero. Obligado un poco por la necesidad de conmemorar el aniversario y un mucho por la necesidad de mantener actualizado el “motor software” que hace que todo esto funcione, este minipuente provocado por el día de Andalucía he sacado dos o tres ratos y he podido acometer los cambios que ahora podéis ver.
+</p>
+
+<p>
+<b>Hemos mudado la piel (la forma)</b>.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="480" border="0" align="center" hspace="10" vspace="10" src="/static/2016/GodEstv7.jpg"
+ alt="Piel de GodEst v7" />
+</figure>
+
+<p>
+Es el cambio que muchos de vosotros podréis apreciar de forma rápida si estáis visitando nuestro sitio web (si habéis recibido este post por correo os animo a pasaros). El nuevo tema, ligeramente retocado por mí a través de las hojas de estilos, es Bartik, en honor a uno de los primeros programadores de ENIAC, como podéis leer <a href="https://www.drupal.org/project/bartik">aquí</a>.
+</p>
+
+<p>
+Volvemos a un tema donde las secciones de la página están, de nuevo, bien delimitadas: encontramos la cabecera en letras blancas con fondo azul, las diferentes secciones importantes (a mi juicio) en forma de pestaña de navegación y el contenido dividido en dos zonas: la principal, donde se muestran los artículos; y la barra lateral derecha, donde mostramos los diferentes bloques de información/navegación. Cerramos con un pie de página que da acceso a “todos los posts” antiguos, al más puro estilo blog: primero el más reciente y envejeciendo conforme vas bajando, que me sigue gustando mantener pues facilita echar un vistazo rápido a las últimas entradas publicadas.
+</p>
+
+<p>
+La página principal siempre nos recibirá con la última entrada disponible, de forma única, acaparando todo el protagonismo y mostrándose totalmente completa, desde principio a fin. Es fácil lograr este "efecto" haciendo uso del módulo "views".
+</p>
+
+<p>
+Espero que os guste y me encantaría, como siempre, ver vuestros comentarios. Que, por cierto, también muestran un renovado estilo visual… ¡Animaros a dejar alguno para verlo! :-D
+</p>
+
+<p>
+<b>Y hemos actualizado “el motor” (el fondo)</b>.
+</p>
+
+<p>
+Ya he hablado muchas veces de la potencia de Drupal, que la viene desplegando en toda su magnitud desde sus versiones 4.x (que fueron las que yo utilicé por primera vez y de las que me acuerdo). Aquí veníamos utilizando la rama 6.x que fue lanzada el 13 de febrero de 2008 (la verdad es que la hemos exprimido bien). La rama 7.x, a la que acabamos de subirnos, se lanzó el 5 de enero de 2011. Y la última versión estable, rama 8.x, se lanzó el 19 de noviembre de 2015. Anunciándose también en esa fecha el final del soporte para la rama 6.x el 24 de febrero de 2016.
+</p>
+
+<p>
+A ninguno de mis lectores le pasará desapercibido el riesgo que suponía mantenerse en la rama 6.x en estos días donde la caza de bugs y la exploración de vulnerabilidades asociadas a estos es el deporte al uso, más cotidiano aún que el correr. Así que he tenido que acelerar el paso y saltar a la rama 7.x que será soportada, a priori, durante 4 años más según se indica <a href="https://www.drupal.org/core/release-cycle-overview">aquí</a>. Y es probable, incluso, que acabe alargándose. Ya sabéis cómo son estas cosas. <b>Aprovecho para dejar constancia de una de mis máximas: aprendí en mis primeros años de técnico ir siempre en los vagones más rezagados del tren en movimiento</b>, es decir, quedarme en las últimas revisiones de la penúltima versión estable. Lo hago ahora quedándome en la versión 7.43 (43 refinamientos posteriores al lanzamiento, ni más ni menos), antes que subirme a la versión 8.0 (a mitad del próximo mes se espera la 8.1). Y lo recomiendo siempre para conmutadores, routers, firewalls y demás hardware+software en producción. Nunca salto a la última a no ser que necesite sí o sí alguna nueva funcionalidad.
+</p>
+
+<p>
+La actualización, siguiendo el procedimiento indicado, ha sido muy limpia y nada traumática. Más allá de unos cuantos ajustes en las “css”. El proceso recomendado se puede leer en muchos sitios (basta una búsqueda en Google para encontrarlos, incluso con vídeos a través de youtube). Yo me he inspirado en <a href="http://gerardmcgarry.com/2011/my-drupal-6-to-7-upgrade-process/">este</a>. Y, muy resumido, he realizado esto:
+</p>
+<ul class="org-ul">
+<li>Backup de base de datos <b>¡Muy importante!</b></li>
+<li>Backup del directorio de archivos.</li>
+<li>Inventario de módulos en uso, sobre todo los “contribuidos por la comunidad”, es decir, los no “core” y “optional core”.</li>
+</ul>
+<p>
+-Deshabilitar los módulos “contribuidos por la comunidad” y los “temas gráficos” no core (yo fallé en esto último pero pude recuperarlo sin mucho esfuerzo).
+</p>
+<ul class="org-ul">
+<li>Migrar…</li>
+<li>…Ajustar ;-)</li>
+</ul>
+
+<p>
+Y, como comentaba antes, ahora ya estamos en la versión 7.43, lanzada como reacción a un “<a href="https://www.drupal.org/SA-CORE-2016-001">aviso de seguridad</a>” que fue difundido el mismo 24 de febrero de 2016. Y disfrutamos de sus notificaciones de seguridad, fácil y rápida actualización, estabilidad, ciclo de vida en vigor, etc.
+</p>
+
+<p>
+Para terminar también os diré que estuve viendo la posibilidad de dar “dos pasos en uno”, lo que nos habría llevado a disfrutar de la versión 8.x. Pero el proceso de migración no está aún muy maduro. La próxima 8.1 lo madurará un poco más, pero no lo suficiente. Y esto por no hablar de muchos de los módulos de funcionalidad adicional que aún están en versiones alpha o beta. Demasiado riesgo. Demasiados ajustes pendientes. Demasiado tiempo a invertir para el poco del que dispongo. Lo que subraya mi máxima expresada más arriba&#x2026; Así que la dejaré reposar unos cuantos otoños.
+</p>
+
+<p>
+En fin, espero que todo esto nos ayude a permanecer juntos muchos años más.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Aniversario_de_GodEst_con_Drupal_v7">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-blog.html">Blog</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div>
+<div class="post-date">27 oct 2015</div><h1 class="post-title"><a href="https://godest.vivencias.net/2015-10-27-lista-de-deseos.html">Lista de deseos</a></h1>
+<p>
+Pongo a continuación una pequeña lista de deseos que, como todo buen deseo que se precie, pretendo conseguir :-)
+</p>
+
+<p>
+El orden no indica preferencia, más bien antigüedad en la lista (el último es el más antiguo, voy agregando al principio).
+</p>
+
+<blockquote>
+<ul class="org-ul">
+<li>Cartera: en concreto <a href="http://bellroy.com/wallets/coin-fold-wallet?color=tamarillo">esta</a>.</li>
+
+<li>Libro: ¡DESPERTAD AL DIPLODOCUS!: UNA CONSPIRACION EDUCATIVA PARA TRANSFORMAR LA ESCUELA Y TODO LO DEMAS (En papel). JOSE ANTONIO MARINA , ARIEL, 2015. ISBN: 9788434422773. Conseguido el 15 de enero de 2016 . ¡Muchas gracias, Kader!</li>
+
+<li>Libro: EL INVERSOR INTELIGENTE (En papel). BENJAMIN GRAHAM DEUSTO S.A. EDICIONES, 2007. ISBN: 9788423425174.</li>
+
+<li>Libro: LA EDUCACION DEL TALENTO (En papel). JOSE ANTONIO MARINA, ARIEL, 2010. ISBN: 9788434469334.</li>
+
+<li>Libro: AUDAZ, PRODUCTIVO Y FELIZ: UNA GUIA PARA CONSEGUIR OBJETIVOS INCREIBLES Y DOMINAR TU VIDA PERSONAL Y PROFESIONAL (En papel). ROBIN SHARMA, CONECTA, 2015. ISBN: 9788416029563.</li>
+
+<li>Libro: DOS AÑOS, OCHO MESES Y VEINTIOCHO NOCHES (En papel). SALMAN RUSHDIE, SEIX BARRAL, 2015. ISBN: 9788432225215</li>
+</ul>
+</blockquote>
+
+<p>
+¡Gracias!
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-juegos-deportes.html">Juegos-Deportes</a> <a href="https://godest.vivencias.net/tag-libros.html">Libros</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div><div id="archive">
+<a href="https://godest.vivencias.net/archive.html">Other posts</a>
+</div>
+</div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

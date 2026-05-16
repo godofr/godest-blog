@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Cómo hacer que un pdf editado (en ordenador) se vea como un pdf escaneado</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">04 mar 2023</div><h1 class="post-title"><a href="https://godest.vivencias.net/2023-03-04-como-hacer-que-un-pdf-editado-(en-ordenador)-se-vea-como-un-pdf-escaneado.html">Cómo hacer que un pdf editado (en ordenador) se vea como un pdf escaneado</a></h1>
+<p>
+Esto es muy útil cuando te envían un pdf que has de cumplimentar, firmar y escanear. 
+</p>
+
+<p>
+Es una pérdida de tiempo imprimir dicho documento, rellenarlo y firmarlo a mano, y volver a escanearlo. Lo más lógico es rellenar el documento utilizando un software de pdf que lo permita, pegar tu firma que previamente tienes escaneada, y guardarlo directamente en el ordenador.
+</p>
+
+<p>
+Sin embargo, si hacemos lo segundo -la edición directa en el ordenador-, el receptor de ese pdf puede comprobar que ha sido así, y alegarte (como yo he sufrido en mis propias carnes) que dicha firma no es de tu "puño y letra" sino que ha sido copiada/pegada, y eso no vale. 
+</p>
+
+<p>
+Así que, es necesario llevar a cabo un paso intermedio: hay que hacer que "el pdf editado" se vea en el destino como "un pdf generado por un escáner", es decir, como una única imagen completa. Para esto, disponemos de herramientas software que convierten un pdf en una imagen, por ejemplo: pdftoppm – convert a PDF page to a bitmap (del <a href="https://en.wikipedia.org/wiki/Poppler_(software)">Proyecto Poppler</a>).
+</p>
+
+<p>
+Hay que instalar en tu sistema el "paquete poppler". Dicho paquete existe para sistemas opertaivos tipo GNU/Linux, MAC y Windows.
+</p>
+
+<p>
+Yo suelo utilizar en mis ordenadores tanto GNU/Linux como Windows. Se instala así:
+En GNU/Linux Debian: 
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">apt-get update &amp;&amp; apt-get install -y poppler-utils
+</pre>
+</div>
+
+<p>
+En Windows, vía <a href="https://chocolatey.org/">chocolatey</a>, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">choco install poppler
+...
+Extracting C:\ProgramData\chocolatey\lib\poppler\tools\poppler-0.89.0-win32.zip to C:\ProgramData\chocolatey\lib\poppler\tools...
+C:\ProgramData\chocolatey\lib\poppler\tools
+ ShimGen has successfully created a shim for pdfattach.exe
+ ShimGen has successfully created a shim for pdfdetach.exe
+ ShimGen has successfully created a shim for pdffonts.exe
+ ShimGen has successfully created a shim for pdfimages.exe
+ ShimGen has successfully created a shim for pdfinfo.exe
+ ShimGen has successfully created a shim for pdfseparate.exe
+ ShimGen has successfully created a shim for pdftocairo.exe
+ ShimGen has successfully created a shim for pdftohtml.exe
+ ShimGen has successfully created a shim for pdftoppm.exe
+ ShimGen has successfully created a shim for pdftops.exe
+ ShimGen has successfully created a shim for pdftotext.exe
+ ShimGen has successfully created a shim for pdfunite.exe
+ The install of poppler was successful.
+  Software installed to <span style="color: #008000;">'C:\ProgramData\chocolatey\lib\poppler\tools'</span>
+...
+</pre>
+</div>
+
+<p>
+Una vez instalado, podemos convertir un pdf en mapa de bits, es decir, en una imagen única igual que si resultara de un escaneo, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">PS D:\Descargas&gt; pdftoppm -jpeg -r 300 <span style="color: #008000;">'.\documento.pdf'</span> output
+</pre>
+</div>
+
+<p>
+Siendo "output" el prefijo de salida de cada una de las páginas del documento pdf, pero ya en formato jpg.
+</p>
+
+<p>
+Luego abres ese jpg, lo imprimes a pdf utilizando "Microsoft Print to PDF", ¡y listo! Tienes un pdf que parece haber sido el resultado de un escaneo.
+</p>
+
+<p>
+Saludos.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Como_hacer_que_un_pdf_editado_se_vea_como_un_pdf_escaneado">Dejar comentario</a>.
+</p>
+
+<div id="outline-container-orga59f9d3" class="outline-2">
+<h2 id="orga59f9d3">Comentarios</h2>
+<div class="outline-text-2" id="text-orga59f9d3">
+</div>
+<div id="outline-container-orgc044f09" class="outline-3">
+<h3 id="orgc044f09">Buen truco y bueno saberlo (Felix Prado &#x2013; 01/05/2023 - 14:45)</h3>
+<div class="outline-text-3" id="text-orgc044f09">
+<p>
+Buen truco y bueno saberlo, ¡gracias por compartir! El otro día un banco me pidió que firmara un documento y firmé el pdf con un certificado digital, que obviamente es mucho más seguro y verificable que cualquier firma analógica, insertada como imagen o no. Bueno pues como has comentado, me lo echaron atrás por no estar firmado de forma manuscrita&#x2026; Para llorar.
+</p>
+
+<p>
+Así que mientras llegamos a ese punto, está bien tener estas herramientas para combatir la incompetencia digital ;)
+</p>
+
+<p>
+Un saludo.
+</p>
+</div>
+</div>
+<div id="outline-container-org90be0fc" class="outline-3">
+<h3 id="org90be0fc">Así es, nos falta aún cultura digital&#x2026; (Godofredo Fdez. &#x2013; Lun, 15/05/2023 - 09:37)</h3>
+<div class="outline-text-3" id="text-org90be0fc">
+<p>
+&#x2026;lo que sorprende es que siga pasando en sectores que están totalmente volcados al "online", y desde hace tiempo. ¿Habrá un servicio más utilizado por Internet que el Bancario (sin contar con la diversión: streaming, videojuegos y tal)?
+</p>
+
+<p>
+Como tú mismo dices, mejor tener estos truquitos que nos permitan ahorrar tiempo y papel.
+</p>
+
+<p>
+Muchas gracias, Félix, por tu comentario. Llevaba tiempo sin saber de ti. Espero que estés bien.
+</p>
+
+<p>
+Un abrazo.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Envío de email cuando hay un login por ssh</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">12 ene 2020</div><h1 class="post-title"><a href="https://godest.vivencias.net/2020-01-12-envio-de-email-cuando-hay-un-login-por-ssh.html">Envío de email cuando hay un login por ssh</a></h1>
+<p>
+En máquinas conectadas directamente a Internet (y esto incluye el acceso a ellas vía un puerto abierto del Firewall), es recomendable estar atento a los "logins de usuario" que se producen. En entornos profesionales, además del aviso de correo que programamos aquí, es conveniente hacer uso de otras herramientas tipo SIEM o HostIDS. En mi servidor, que es pequeñito y con pocos recursos, yo utilizo lo que sigue.
+</p>
+
+<p>
+He agregado esto al fichero "/etc/pam.d/sshd".
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Env&#237;o de correo cuando login</span>
+session optional pam_exec.so /root/bin/send-mail-on-ssh-login.sh
+</pre>
+</div>
+
+<p>
+El fichero completo (/etc/pam.d/sshd), como referencia y copia de seguridad, está adjunto <a href="https://godest.vivencias.net/static/2020/sshd.txt">aquí</a> (le he agregado la extensión .txt para que sea "leible" desde el blog).
+</p>
+
+<p>
+Y he creado el script correspondiente en "<i>root/bin</i>" con este contenido:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">!/bin/</span><span style="color: #0000FF;">sh</span>
+<span style="color: #0000FF;">if</span> [ <span style="color: #008000;">"$PAM_TYPE"</span> != <span style="color: #008000;">"open_session"</span> ]
+<span style="color: #0000FF;">then</span>
+  <span style="color: #0000FF;">exit</span> 0
+<span style="color: #0000FF;">else</span>
+  {
+    <span style="color: #006FE0;">echo</span> <span style="color: #008000;">"User: $PAM_USER"</span>
+    <span style="color: #006FE0;">echo</span> <span style="color: #008000;">"Remote Host: $PAM_RHOST"</span>
+    <span style="color: #006FE0;">echo</span> <span style="color: #008000;">"Service: $PAM_SERVICE"</span>
+    <span style="color: #006FE0;">echo</span> <span style="color: #008000;">"TTY: $PAM_TTY"</span>
+    <span style="color: #006FE0;">echo</span> <span style="color: #008000;">"Date: `date`"</span>
+    <span style="color: #006FE0;">echo</span> <span style="color: #008000;">"Server: `uname -a`"</span>
+  } | mail -s <span style="color: #008000;">"$PAM_SERVICE login on `hostname -s` for account $PAM_USER"</span> example@example.com
+<span style="color: #0000FF;">fi</span>
+
+<span style="color: #0000FF;">exit</span> 0
+</pre>
+</div>
+
+<p>
+<b>¡OJO!: has de modificar la dirección de mail "example@example.com" por la tuya propia donde quieres recibirlos</b>.
+</p>
+
+<p>
+Referencias: 
+</p>
+
+<p>
+1.- <a href="http://blog.th-neumeier.de/2011/02/send-email-on-ssh-login-using-pam/">http://blog.th-neumeier.de/2011/02/send-email-on-ssh-login-using-pam/</a> 
+</p>
+
+<p>
+2.- <a href="http://serverfault.com/questions/400613/send-notification-email-when-the-ubuntu-server-is-remoted-via-ssh">http://serverfault.com/questions/400613/send-notification-email-when-the-ubuntu-server-is-remoted-via-ssh</a> 
+</p>
+
+<p>
+3.- <a href="http://www.tiger-computing.co.uk/get-notified-with-every-ssh-login/">http://www.tiger-computing.co.uk/get-notified-with-every-ssh-login/</a> 
+</p>
+
+<p>
+4.- <a href="http://www.farinspace.com/secure-login-linux-server/">http://www.farinspace.com/secure-login-linux-server/</a> 
+</p>
+
+<p>
+5.- <a href="http://www.mydigitallife.info/how-to-get-linux-server-sends-email-alert-on-root-login/">http://www.mydigitallife.info/how-to-get-linux-server-sends-email-alert-on-root-login/</a> 
+</p>
+
+
+<p>
+Para avisar cuando alguien hace login como root (no permitido por ssh, sólo como "promoción interna" ;-)), añadimos al .bashrc de root lo siguiente (<b>¡¡OJO!! No hagas copy/paste de esta línea. Es mejor que la teclees pues debe de haber -introducidos por el "parser" de coloreado de sintaxis- códigos de control extraños en algunos caracteres que no funcionan si la copias</b>): 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #006FE0;">echo</span> <span style="color: #008000;">'ALERT - Root Shell Access () on:'</span> <span style="color: #FF1493;">`date`</span> <span style="color: #FF1493;">`who`</span> | mail -s <span style="color: #008000;">"Alert: Root Access from `who | cut -d"(" -f2 | cut -d")" -f1`"</span> example@example.com
+</pre>
+</div>
+
+<p>
+Espero que te sea útil.
+</p>
+
+<p>
+Si consideras alguna parte mejorable, por favor, indícamelo con un comentario. Como siempre, te estaré muy agradecido.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Envio_de_email_cuadno_hay_un_login_por_ssh">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+#+title: Cómo activar "tap to click" en GNU/Linux (Debian)
+#+date: <2020-02-07 17:39>
+#+description: 
+#+filetags: Configuraciones GNU/Linux
+
+Obtenido de aquí (Activate tap to click on touchpad?):
+https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on...
+
+¿Qué es "tap to click"? Es el efecto de dar un golpecito en el "touchpad" (panel que hace de ratón en muchos portátiles, sobre todo modernos) para hacer click, pero sin llegar a hundirlo (si lo hundes sería simplemente "hacer click") ;-). Y la verdad es que cuando te acostumbras es más cómodo y más rápido.
+
+Lee el artículo completo, hasta el final, antes de hacer nada.
+
+Funciona si llevas a cabo los siguientes pasos (comprobado en Debian Buster):
+
+#1# Elimina el paquete "xserver-xorg-input-synaptics". (importante)
+#+begin_src sh :results output
+apt remove xserver-xorg-input-synaptics
+#+end_src
+
+#2# Instala este otro "xserver-xorg-input-libinput":
+#+begin_src sh :results output
+apt install xserver-xorg-input-libinput
+#+end_src
+
+En muchos casos es suficiente con comprobar que tenemos instalado el paquete "xserver-xorg-input-libinput", y no este otro "xserver-xorg-input-synaptics package".
+
+#3# Como root:
+
+#3.1# Si no existe, crea este directorio "/etc/X11/xorg.conf.d/"
+#+begin_src sh :results output
+mkdir /etc/X11/xorg.conf.d
+#+end_src
+
+#3.2# Si no existe, crea este fichero "40-libinput.conf" (basta con hacer copy/paste de lo que sigue en una línea de comandos):
+#+begin_src sh :results output
+echo 'Section "InputClass"
+Identifier "libinput touchpad catchall"
+MatchIsTouchpad "on"
+MatchDevicePath "/dev/input/event*"
+Driver "libinput"
+Option "Tapping" "on"
+EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
+#+end_src
+
+#3.3# Rearranca con "Desktop Manager" (o apaga y enciende), por ejemplo:
+#+begin_src sh :results output
+systemctl restart lightdm
+#+end_src
+
+o
+
+#+begin_src sh :results output
+systemctl restart gdm3
+#+end_src
+
+Para más información, puedes consultar esto:
+Debian wiki : Enable tapping on touchpad ( https://wiki.debian.org/SynapticsTouchpad#Enable_tapping_on_touchpad ).
+
+Salud!
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Como_activar_tap_to_click_en_gnulinux_debian][Dejar comentario]].

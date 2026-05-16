@@ -1,0 +1,36 @@
+#+title: ¿Por qué gestionamos la seguridad?
+#+date: <2015-11-26 20:53>
+#+description: 
+#+filetags: Pensamiento Seguridad Refinar
+
+Desde que comencé a *impartir clases relacionadas con la seguridad de la información*, y en casi todas las *charlas y ponencias* a las que *soy invitado*, pongo especial énfasis en transmitir la que considero que es la pregunta base, cuyas respuestas sustentan todo el edificio que podemos construir después.
+
+Recorro despacio cada uno de los tres motivos que he encontrado (quizá con un poco de truco, por ser algunos de ellos conjuntos donde caben otros más concretos), y pongo ejemplos con los que voy intentando que surjan muchas dudas/situaciones en las cabezas de mis escuchantes.
+
+A mi entender, los tres motivos son estos:
+
+#1# *Por cumplimiento legal* (“Regulatory Compliance”). Existe, como en todos los ámbitos de la vida en sociedad, una serie de normativa (leyes, decretos, etc.) que estamos obligados a cumplir. Un ejemplo claro de este “capítulo” en España sería la [[http://www.agpd.es/portalwebAGPD/canaldocumentacion/legislacion/estatal/index-ides-idphp.php][LOPD]]. El fin último de ésta es proteger los datos de carácter personal, intentar controlar que se usen para el fin que se recabaron y respetar la voluntad de su propietario. ¿Qué pasa cuando las medidas de protección no han sido las correctas? Cosas y multas como [[http://www.audea.com/11811-sancionado-por-incumplir-la-lopd/][estas]].
+
+#2# *Alineamiento con el negocio*. Para mí esta es la más grande y bonita razón, la que más me gusta destacar, la que me permite ver y transmitir la seguridad como una característica de las organizaciones que les acaba aportando valor. Gestionamos la seguridad lo mismo que gestionamos los RRHH o las compras, porque nos ayuda a controlar el gasto y la inversión, porque nos evita afrontar situaciones que pueden dañar nuestra imagen de marca, porque protege los esfuerzos realizados para avanzar en I+D+i, por ejemplo, y porque, al fin y al cabo, haciendo las cosas bien prestamos un servicio de mayor calidad, generamos más confianza y retenemos/ganamos clientes. Este párrafo está muy enfocado al negocio “privado”, pero es totalmente extrapolable a cualquier organización pública e incluso sin ánimo de lucro: sólo hay que adaptar apropiadamente el lenguaje para incidir en los mismos conceptos.
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="478" border="0" align="center" hspace="10" vspace="10" src="/static/2015/alineamiento-con-el-negocio.png"
+ alt="Alineamiento con el negocio" />
+</figure>
+#+end_export
+
+#3# Por último, y quizá este sea el eje más difundido, gestionamos la seguridad por el simple *principio de acción/reacción, aliñado con unas cuantas toneladas de miedo*, efectos paranormales y luces de psicodelia: la amenaza creciente. A ningún adulto se nos escapa que en el mundo existe mucho bien y mucho mal. Y, siendo el miedo una de las principales palancas que permiten controlar la voluntad de las personas, basta con largar todos los días unas cuantas decenas de noticias malas, con enfoque de sobreactuación, con muchas pantallas de fósforo verde en las que se descuelgan letras, manos con guante negro que emergen de ellas y virus que acaban contagiándose a los seres humanos (ah ¿no? Perdón, me he excedido en la retórica). Cosas que llevan haciendo la industria de la seguridad, los gobiernos y los serviles medios de comunicación ni se sabe el tiempo. 
+Sois libres de poner más o menos hincapié, o ponderar con mayor o menor peso, cada una de las razones expuestas. Y supongo que todos lo haremos según nuestra naturaleza, la presión que tengamos en nuestra organización, lo que nos haga sentirnos más cómodos en el discurso, etc., pero advertidos quedáis: según he comprobado y, lo que es más importante, han comprobado muchos de los buenos amigos que me rodean en el día a día, la tercera razón está tan manida/ajada/abusada que ya sólo provoca: hastío, inmovilismo y desinterés. Que hay que tenerla en cuenta, sí; pero que nos sirva como palanca para mover nuestro pequeño mundo (educación familiar), nuestra organización o la de nuestros clientes (educación profesional) o crear tendencias positivas en general, que permitan ir creciendo en el nivel de madurez con el que afrontamos el reto de la seguridad, está bastante en entredicho.
+
+De momento paramos aquí. Aprovecho para dejaros un enlace a un comic de “[[http://elpais.com/elpais/2015/07/31/album/1438350775_884419.html][El País Semanal: Amenaza en la red]]” que cayó fortuitamente en mis manos este verano. Lo he ojeado varias veces y os pido que vosotros, interesados en la seguridad, también lo hagáis; pero con el sentido crítico, con el filtro, que podrían tejer nuestras tres anteriores razones. Seguro que podéis encontrar ejemplos de cada una de ellas, aunque no os niego que… en fin, os dejo trabajar ;-).
+
+Aunque… no me dejes tú con mi silencio. Me encanta escucharte y aprender. Coméntame algo cuando mejor te venga: ahora con el subidón de la lectura, después cuando medites… o incluso esta noche mientras sueñas.
+
+*Adjunto*
+
+Aquí [[https://godest.vivencias.net/static/2015/amenaza_en_la_red_-_el_pais_semanal.pdf][podéis descargar]] el artículo citado: "El País semanal: Amenaza en la red".
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Por_que_gestionamos_la_seguridad][Dejar comentario]].
+

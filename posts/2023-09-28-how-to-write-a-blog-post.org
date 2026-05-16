@@ -1,0 +1,88 @@
+#+title: How to write a blog post
+#+date: <2023-09-28 18:06>
+#+description: Esta es la descripción del primer post
+#+filetags: blog org-static-blog org emacs
+
+Step cero: lee esto --> https://github.com/bastibe/org-static-blog
+
+Step one: Install ~org-static-blog~. \\
+Step Two: Execute ~M-x org-static-blog-create-new-post~ and write the content. \\
+Step Three: Execute ~M-x org-static-blog-publish~ and upload to your webhost. \\
+
+*Step Four: trucos:*
+
+*¡¡OJO!!* Para que "htmlize" de Emacs resalte la sintaxis siendo consciente de que estás trabajando sobre un fondo blanco, has de cargar un tema de Emacs que utilice dicho color de fondo para trabajar. El mejor que has encontrado, el que más te gusta, es este (añade estas líneas al /init.el/):
+#+begin_src sh :results output
+;; Para asegurar un tema claro en emacs, y que, segun la IA, htmlize genere buen coloreado sobre fondo blanco
+(load-theme 'leuven t)  ; Reemplaza 'leuven' con el nombre de tu tema
+#+end_src
+
+Para utilizar *estilos de letra* haz esto:
+- negrita: rodea lo que quieres resaltar con *
+- cursiva: rodear con /
+- subrayado: rodear con _
+- código: rodear con ~
+- verbatim (texto sin formato): rodear con = (lo suelo utilizar para código y va bien)
+- tachado: rodear con +
+
+*Listas*: comienza los elementos de la lista con guiones (signo menos) e identa los subniveles con TAB.
+- Elemento 1 de la lista 
+- Elemento 2 de la lista
+  - Subelemento 2.1
+  - Subelemento 2.2
+- Elemento 3 de la lista
+
+*Listas numeradas*: comienza cada uno de los elementos con =1.= o =1)=. Y trabaja con la identación con TAB para crear sublistas. Ejemplo:
+1. Este es el primer elemento de la lista numerada.
+2. Este es el segundo elemento de la lista numerada.
+   1) esta es una sublista dentro del punto 2.
+   2) esta es una sublista dentro del punto 2.
+3. Este es el tercer elemento de la lista numerada.
+
+Para *citar texto* en recuadro con fondo gris:
+#+begin_src sh :results output
+#+begin_quote
+No le llamamos Godo porque tenga unos kilos de más o una 'r' de menos, no...
+#+end_quote
+#+end_src
+
+Para *insertar código* lo vienes haciendo así:
+#+begin_export html
+<pre>
+#+begin_src sh :results output
+[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name "2025-01-26-buscar-en-godest.org" -exec touch {} \;
+#+end_src
+</pre>
+#+end_export
+
+Para *insertar código de forma genérica* (sustituir LENGUAJE por el lenguaje apropiado, por ejemplo, para bash poner sh):
+#+begin_export html
+<pre>
+#+begin_src LENGUAJE
+[14:45:28(godo@surcopi:~/projects/blog/posts]
+$ find . -type f ! -name "2025-01-26-buscar-en-godest.org" -exec touch {} \;
+#+end_src
+</pre>
+#+end_export
+
+Para *insertar una imagen al lado derecho del texto* lo haces así:
+#+begin_src sh :results output
+#+begin_export html
+<figure style="float:right">
+<img width="55" height="55" border="0" align="right" hspace="10" vspace="10" src="/static/2005/glider.png" alt="glider" />
+</figure>
+#+end_export
+#+end_src
+
+Para *insertar una imagen centrada en el texto* lo haces así:
+#+begin_src sh :results output
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="480" border="0" align="center" hspace="10" vspace="10" src="/static/2015/la-seguridad-total-no-existe.jpg"
+ alt="La seguridad total NO EXISTE" />
+</figure>
+#+end_export
+#+end_src
+
+Done.

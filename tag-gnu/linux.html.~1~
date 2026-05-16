@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>GodEst.vivencias.net</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<h1 class="title">Posts tagged "GNU/Linux":</h1>
+<div class="post-date">07 feb 2020</div><h1 class="post-title"><a href="https://godest.vivencias.net/2020-02-07-como-activar-tap-to-click-en-gnulinux-debian.html">Cómo activar "tap to click" en GNU/Linux (Debian)</a></h1>
+<p>
+Obtenido de aquí (Activate tap to click on touchpad?):
+<a href="https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on">https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on</a>&#x2026;
+</p>
+
+<p>
+¿Qué es "tap to click"? Es el efecto de dar un golpecito en el "touchpad" (panel que hace de ratón en muchos portátiles, sobre todo modernos) para hacer click, pero sin llegar a hundirlo (si lo hundes sería simplemente "hacer click") ;-). Y la verdad es que cuando te acostumbras es más cómodo y más rápido.
+</p>
+
+<p>
+Lee el artículo completo, hasta el final, antes de hacer nada.
+</p>
+
+<p>
+Funciona si llevas a cabo los siguientes pasos (comprobado en Debian Buster):
+</p>
+
+<p>
+#1# Elimina el paquete "xserver-xorg-input-synaptics". (importante)
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">apt remove xserver-xorg-input-synaptics
+</pre>
+</div>
+
+<p>
+#2# Instala este otro "xserver-xorg-input-libinput":
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">apt install xserver-xorg-input-libinput
+</pre>
+</div>
+
+<p>
+En muchos casos es suficiente con comprobar que tenemos instalado el paquete "xserver-xorg-input-libinput", y no este otro "xserver-xorg-input-synaptics package".
+</p>
+
+<p>
+#3# Como root:
+</p>
+
+<p>
+#3.1# Si no existe, crea este directorio "<i>etc/X11/xorg.conf.d</i>"
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">mkdir /etc/X11/xorg.conf.d
+</pre>
+</div>
+
+<p>
+#3.2# Si no existe, crea este fichero "40-libinput.conf" (basta con hacer copy/paste de lo que sigue en una línea de comandos):
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #006FE0;">echo</span> <span style="color: #008000;">'Section "InputClass"</span>
+<span style="color: #008000;">Identifier "libinput touchpad catchall"</span>
+<span style="color: #008000;">MatchIsTouchpad "on"</span>
+<span style="color: #008000;">MatchDevicePath "/dev/input/event*"</span>
+<span style="color: #008000;">Driver "libinput"</span>
+<span style="color: #008000;">Option "Tapping" "on"</span>
+<span style="color: #008000;">EndSection'</span> &gt; /etc/X11/xorg.conf.d/40-libinput.conf
+</pre>
+</div>
+
+<p>
+#3.3# Rearranca con "Desktop Manager" (o apaga y enciende), por ejemplo:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">systemctl restart lightdm
+</pre>
+</div>
+
+<p>
+o
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">systemctl restart gdm3
+</pre>
+</div>
+
+<p>
+Para más información, puedes consultar esto:
+Debian wiki : Enable tapping on touchpad ( <a href="https://wiki.debian.org/SynapticsTouchpad#Enable_tapping_on_touchpad">https://wiki.debian.org/SynapticsTouchpad#Enable_tapping_on_touchpad</a> ).
+</p>
+
+<p>
+Salud!
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Como_activar_tap_to_click_en_gnulinux_debian">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div>
+<div class="post-date">02 jun 2019</div><h1 class="post-title"><a href="https://godest.vivencias.net/2019-06-02-eligiendo-el-sistema-operativo-que-grub-arranca-por-defecto.html">Eligiendo el sistema operativo que Grub arranca por defecto</a></h1>
+<p>
+Hola.
+</p>
+
+<p>
+Este artículo es un resumen de las indicaciones "que funcionan" (lo he probado) recogidas en este hilo de la comunidad de Ubuntu: 
+<a href="https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader">https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader</a>
+</p>
+
+<p>
+Así, procedemos de esta forma:
+</p>
+
+<p>
+#1# Listamos el número y detalle de los sistemas que ha detectado Grub en nuestro equipo:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">godo@TuChi:~$ fgrep menuentry /boot/grub/grub.cfg
+<span style="color: #0000FF;">if</span> [ x<span style="color: #008000;">"${feature_menuentry_id}"</span> = xy ]; <span style="color: #0000FF;">then</span>
+  <span style="color: #BA36A5;">menuentry_id_option</span>=<span style="color: #008000;">"--id"</span>
+  <span style="color: #BA36A5;">menuentry_id_option</span>=<span style="color: #008000;">""</span>
+<span style="color: #006FE0;">export</span> menuentry_id_option
+menuentry <span style="color: #008000;">'Debian GNU/Linux'</span> --class debian --class gnu-linux --class gnu --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'gnulinux-simple-bb5b1d8f-283e-4ea2-905f-630da5f13971'</span> {
+submenu <span style="color: #008000;">'Opciones avanzadas para Debian GNU/Linux'</span> $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'gnulinux-advanced-bb5b1d8f-283e-4ea2-905f-630da5f13971'</span> {
+        menuentry <span style="color: #008000;">'Debian GNU/Linux, con Linux 4.9.0-9-amd64'</span> --class debian --class gnu-linux --class gnu --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'gnulinux-4.9.0-9-amd64-advanced-bb5b1d8f-283e-4ea2-905f-630da5f13971'</span> {
+        menuentry <span style="color: #008000;">'Debian GNU/Linux, with Linux 4.9.0-9-amd64 (recovery mode)'</span> --class debian --class gnu-linux --class gnu --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'gnulinux-4.9.0-9-amd64-recovery-bb5b1d8f-283e-4ea2-905f-630da5f13971'</span> {
+menuentry <span style="color: #008000;">'Windows 10 (en /dev/sda1)'</span> --class windows --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'osprober-chain-01D317734DAEB710'</span> {
+menuentry <span style="color: #008000;">'Windows 10 (en /dev/sdc1)'</span> --class windows --class os $<span style="color: #BA36A5;">menuentry_id_option</span> <span style="color: #008000;">'osprober-chain-01D163EEA0DA4380'</span> {
+godo@TuChi:~$ 
+</pre>
+</div>
+
+<p>
+#2# Podemos observar, después de la palabra clave "menuentry", el nombre de las "entradas del menú de arranque que muestra Grub" entre comillas simples, por ejemplo: 'Windows 10 (en /dev/sdc1)'.
+</p>
+
+<p>
+#3# Editamos el fichero: /etc/default/grub, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">root@TuChi:/etc/default# nano grub 
+</pre>
+</div>
+
+<p>
+Podemos ver cómo queda:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">root@TuChi:/etc/default# more grub 
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">If you change this file, run 'update-grub' afterwards to update</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">/boot/grub/grub.cfg.</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">For full documentation of the options in this file, see:</span>
+<span style="color: #8D8D84;">#   </span><span style="color: #8D8D84; font-style: italic;">info -f grub -n 'Simple configuration'</span>
+<span style="color: #BA36A5;">GRUB_DEFAULT</span>=0
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">GRUB_DEFAULT="Windows 10 (en /dev/sdc1)"</span>
+</pre>
+</div>
+
+<p>
+#4# La opción 
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #008000;">"GRUB_DEFAULT=0"</span> 
+</pre>
+</div>
+<p>
+controla la entrada por defecto que va a ser arrancada. Aquí, donde lo vemos igualado a "cero", significa que arrancará la primera entrada que haya en el menú de arranque, en mi caso, 'Debian GNU/Linux, con Linux 4.9.0-9-amd64'. Si queremos que arranque otra, podemos indicarle el nombre de la entrada deseada, según lo hemos visto antes aparecer tras la palabra "menuentry", <b>pero utilizando comillas dobles</b>. Por ejemplo, así:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #BA36A5;">GRUB_DEFAULT</span>=<span style="color: #008000;">"Windows 10 (en /dev/sdc1)"</span>
+</pre>
+</div>
+
+<p>
+#5# <b>No olvidar nunca esto para actualizar el "verdadero" cargador de arranque de nuestra máquina</b>:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">root@TuChi:/etc/default# update-grub
+Generando un fichero de configuraci&#243;n de grub...
+Found background image: /usr/share/images/desktop-base/desktop-grub.png
+Encontrada imagen de linux: /boot/vmlinuz-4.9.0-9-amd64
+Encontrada imagen de memoria inicial: /boot/initrd.img-4.9.0-9-amd64
+Encontrado Windows 10 en /dev/sda1
+Encontrado Windows 10 en /dev/sdc1
+hecho
+root@TuChi:/etc/default#
+</pre>
+</div>
+
+<p>
+Y eso es todo.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Eligiendo_el_sistema_operativo_que_grub_arranca_por_defecto">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div>
+<div class="post-date">27 jun 2018</div><h1 class="post-title"><a href="https://godest.vivencias.net/2018-06-27-utilizando-sudo-en-debian-o-como-jugar-a-ser-dios.html">Utilizando "sudo" en Debian o como jugar a ser Dios</a></h1>
+<p>
+De todos es sabido, y espero que aún más entre los lectores de esta pequeña gota de agua, insignificante, en el océano de Internet, que <b>trabajar con privilegios de administrador (terminología Windows) o superusuario (terminología Unix) en nuestro sistema durante el día a día está totalmente desaconsejado</b>. Como otras muchas veces, Unix se adelantó a Windows (hoy en día esta ventaja ya no es tal, Windows también lo resuelve perfectamente) en esta separación de roles y, de hecho, desde el mismo momento de la instalación de un sistema Unix se obligaba al usuario que lo estaba instalando a:
+</p>
+
+<ol class="org-ol">
+<li>Elegir la contraseña de root. "root" siempre es el usuario con máximos privilegios: puede instalar y desinstalar aplicaciones, puede modificar/borrar ficheros del sistema&#x2026; puede ver los buzones de correo de otros usuarios, e incluso puede borrar archivos y "cuentas" completas de otros usuarios (de hecho, es él quien las crea). Por eso, en el argot de los que trasteamos con los sistemas, cuando adoptamos el rol de root solemos describirlo como "me voy a convertir en Dios", porque es omnipoderoso.</li>
+
+<li>A elegir una cuenta de usuario "normal", sin privilegios, que sólo puede utilizar las aplicaciones instaladas por root, no puede ni instalar ni desinstalar, ni modificar partes críticas, clave, del sistema, ni ver los ficheros "confidenciales" de otros usuarios (siempre que los permisos estén bien puestos), etc.</li>
+</ol>
+
+<p>
+Pero es más, y este es el verdadero <b>quid de la cuestión: desde el inicio, desde el primer "login" a la máquina, el usuario con el que se trabaja (esto es flexible según la distribución, pero hay algunas que lo obligan) es el usuario normal. Y todo el mundo que utilizamos Unix o GNU/Linux en nuestro día a día así lo hacemos</b>.
+</p>
+
+<p>
+Pero, ¿qué pasa si en un determinado momento necesitas hacer algo como root? Pues Unix también resolvió esto hace mucho tiempo. Cuando aún no había entornos gráficos los sistemas Unix ya eran multiusuario y multitarea. Habrías otra consola, como si tuvieras varias pantallas para trabajar sobre la misma pantalla física, y entrabas como root. Pero ni siquiera eso era/es necesario: puedes cambiar tu personalidad y pasar a ser root haciendo uso del comando "su", que te pide la contraseña de root y, si la sabes, te convierte en root:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[23:07:39(godo@surco)~]&gt; su
+Contrase&#241;a:
+[23:21:41(root@surco)/home/godo]#
+</pre>
+</div>
+
+<p>
+Y ya puedes estar trabajando un rato (no sólo un comando, sino muchos) como root. Y esto es importante para entender la principal diferencia con sudo. ¿Qué permite sudo? sudo permite ser root "sólo" para ejecutar un comando, cuando ese comando termina sigues siendo tú, ese usuario normal sin privilegios. <b>¿Y qué comando es el que te permite ejecutar sudo? Esta es la segunda clave del tema: sólo aquellos para los que te haya autorizado root a "echarle una mano"</b>. Imagínate que quieres montar una determinada partición de una máquina que suele estar desmontada porque en ella se albergan las copias de seguridad. El administrador de esa máquina, root, puede delegarte sólo esa tarea. Para ello en el fichero /etc/sudoers (que nunca se edita de forma directa sino haciendo uso de la utilidad "visudo") root puede escribir estas líneas:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">godo <span style="color: #BA36A5;">ALL</span>=(ALL) NOPASSWD: /bin/mount
+</pre>
+</div>
+
+<p>
+(NOPASSWD es para que no te solicite password. Si no se pone, te la solicitaría).
+</p>
+
+<p>
+Así, el usuario "godo" puede utilizar sudo "sólo" para ejecutar el comando "mount" como superusuario.
+</p>
+
+<p>
+Si el usuario "godo" no estuviera "capacitado" para ejecutar un comando vía "sudo", y aún así lo intentara, "root" sería notificado vía mail, siendo este que sigue el "cuerpo" del correo:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">surco : Jun 27 20:33:40 : godo : user NOT<span style="color: #0000FF;"> in</span> sudoers ; <span style="color: #BA36A5;">TTY</span>=pts/0 ; <span style="color: #BA36A5;">PWD</span>=/home/godo ; <span style="color: #BA36A5;">USER</span>=root ; <span style="color: #BA36A5;">COMMAND</span>=/usr/bin/apt-get update
+</pre>
+</div>
+
+<p>
+¿Qué hacen distribuciones como Ubuntu, y yo suelo configurar en mi Debian? Pues Ubuntu directamente impide que root haga "login" en la máquina, es decir, siempre has de entrar en el sistema con el usuario sin privilegios, y si necesitas utilizar "cualquier comando" (sin límites) en modo "privilegiado" recurres a "sudo". De hecho, "root" en Ubuntu no tiene contraseña y nunca puedes acceder a ser "root" de forma "total" (no funciona "su" hasta que no le pones contraseña a "root" utilizando "sudo" ¡Curioso!). Para que un usuario normal tenga acceso a todos los comandos de "root" sin llegar a "serlo", es decir, vía "sudo", basta que siendo "root" se agregue al usuario "godo", en mi caso, al grupo de usuarios de "sudo" (recuerda que Unix hay grupos de usuarios que comparten "permisos"). Así es como yo lo hago en Debian, supongo que en Ubuntu se hace algo parecido durante la instalación del sistema.
+</p>
+
+<p>
+Yo, para recordar esto cuando hago una instalación nueva, conservo unas líneas explicativas en el fichero "sudoers" de mi máquina habitual, que agregué con "visudo", claro. Y desde ahora las conservo aquí también y las comparto con vosotros. Son estas:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[23:30:49(godo@surco)~]&gt; more /etc/sudoers
+more: no se puede abrir /etc/sudoers: Permiso denegado
+[23:30:57(godo@surco)~]&gt; sudo more /etc/sudoers
+[sudo] password for godo:
+<span style="color: #8D8D84;">#</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">This file MUST be edited with the 'visudo' command as root.</span>
+<span style="color: #8D8D84;">#</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Please consider adding local content in /etc/sudoers.d/ instead of</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">directly modifying this file.</span>
+<span style="color: #8D8D84;">#</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">See the man page for details on how to write a sudoers file.</span>
+<span style="color: #8D8D84;">#</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">&#161;&#161;OJO!! MIRA UN POCO MAS ABAJO. BASTA CON:</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">1. A&#209;ADIR EL USUARIO godo AL GRUPO sudo.</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">2. CERRAR LA SESI&#211;N Y VOLVER A ENTRAR.</span>
+
+<span style="color: #8D8D84;">#</span>
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        <span style="color: #BA36A5;">secure_path</span>=<span style="color: #008000;">"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"</span>
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Host alias specification</span>
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">User alias specification</span>
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Cmnd alias specification</span>
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">User privilege specification</span>
+root    <span style="color: #BA36A5;">ALL</span>=(ALL:ALL) ALL
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Allow members of group sudo to execute any command</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Agregamos a Godo al grupo sudo con:</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">[20:32:31(root@surco)/var/log]&gt; adduser godo sudo</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">A&#241;adiendo al usuario `godo' al grupo `sudo' ...</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">A&#241;adiendo al usuario godo al grupo sudo</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Hecho.</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">Otra forma de hacerlo es:</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">[20:37:04(root@surco)/home/godo]&gt; gpasswd -a godo sudo</span>
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">A&#241;adiendo al usuario godo al grupo sudo</span>
+
+%sudo   <span style="color: #BA36A5;">ALL</span>=(ALL:ALL) ALL
+
+<span style="color: #8D8D84;"># </span><span style="color: #8D8D84; font-style: italic;">See sudoers(5) for more information on "#include" directives:</span>
+
+<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">includedir /etc/sudoers.d</span>
+[23:31:12(godo@surco)~]&gt;
+</pre>
+</div>
+
+<p>
+Observad al principio, cuando ejecuto el comando "more", como con mi usuario no tengo permisos para ver el fichero, pero sí utilizando "sudo".
+</p>
+
+<p>
+Una última cosa, antes hablé de "su", y de que la contraseña que te solicita es la de "root", es decir, te tienes que saber la contraseña de "root", por tanto, cuando utilizas "su" te conviertes en root de "manera ancha". Sin embargo "sudo" no nace para hacer lo mismo que "su", aunque puede "casi llegar a hacerlo", sino que lo que quiere conseguir es un acceso a "hacer uso de privilegios" de forma más granular. Lo que te solicita por tanto no es la contraseña de "root", esta puede seguir siendo totalmente privada para "root" (¡root/Dios sólo hay uno!), sino la tuya, con el único fin de dejar "huella" en el sistema y que "root" sepa quién ha hecho qué. ¡Una verdadera maravilla del ingenio humano!
+</p>
+
+<p>
+Espero que os haya gustado y que os acostumbréis a usarlo. Pero sobre todo, que os ayude a pensar.
+</p>
+
+<p>
+Y el séptimo día descansó.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Utilizando_sudo_en_Debian_o_como_jugar_a_ser_Dios">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">09 abr 2017</div><h1 class="post-title"><a href="https://godest.vivencias.net/2017-04-09-utilizando-teamviewer-en-debian.html">Utilizando Teamviewer en Debian</a></h1>
+<p>
+En este artículo vamos a ver como instalar Teamviewer en una máquina con arquitectura de 64 bits, corriendo la última versión estable de Debian para dicha arquitectura.
+</p>
+
+<p>
+Se descarga el paquete .deb desde aquí:
+<a href="https://www.teamviewer.com/es/download/linux/">https://www.teamviewer.com/es/download/linux/</a>
+</p>
+
+<p>
+Una vez descargado, como el paquete es único para ambas arquitecturas: 32 y 64 bits, lo que equivale a decir que está compilado contra librerías de 32 bits; si tenemos un Debian de 64 bits instalado en nuestra máquina, como es mi caso, hemos de añadir la arquitectura de 32 bits para que el gestor de paquetes sea consciente de que es necesario instalar dependencias de dicha arquitectura. Lo hacemos, una vez convertidos en root, así:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:38:07(godo@debian)~]&gt; sudo su
+[sudo] password for godo:
+[11:38:25(root@debian)/home/godo]#
+[11:38:26(root@debian)/home/godo]#
+[11:38:26(root@debian)/home/godo]# dpkg --add-architecture i386
+</pre>
+</div>
+
+<p>
+Ahora, actualizamos nuestro árbol de dependencias (observad como en las líneas de acceso a los repositorios aparece ya la arquitectura i386 -32 bits- además de la amd64 -64 bits-):
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">[11:38:40(root@debian)/home/godo]# apt-get update
+Ign http://dl.google.com stable InRelease
+Obj http://security.debian.org jessie/updates InRelease
+Obj http://dl.google.com stable Release.gpg
+Ign http://ftp.debian.org jessie InRelease
+Obj http://dl.google.com stable Release
+Obj http://ftp.debian.org jessie Release.gpg
+Obj http://security.debian.org jessie/updates/main Sources
+Obj http://ftp.debian.org jessie Release
+...
+Obj http://httpredir.debian.org jessie/main Translation-es
+Obj http://httpredir.debian.org jessie/main Translation-en
+Obj http://httpredir.debian.org jessie/non-free Translation-en
+Descargados 14,1 MB en 30s (460 kB/s)
+Leyendo lista de paquetes... Hecho
+</pre>
+</div>
+
+<p>
+Y procedemos a instalar "manualmente" el paquete descargado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:40:57(root@debian)/home/godo]# cd Descargas/
+[11:41:25(root@debian)/home/godo/Descargas]# dpkg -i teamviewer_12.0.71510_i386.deb
+
+Seleccionando el paquete teamviewer previamente no seleccionado.
+(Leyendo la base de datos ... 122791 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar teamviewer_12.0.71510_i386.deb ...
+Desempaquetando teamviewer (12.0.71510) ...
+dpkg: problemas de dependencias impiden la configuraci&#243;n de teamviewer:
+teamviewer depende de libc6 (&gt;= 2.11)<span style="color: #006FE0;">.</span>
+teamviewer depende de libgcc1.
+teamviewer depende de libasound2.
+teamviewer depende de libdbus-1-3.
+teamviewer depende de libexpat1.
+teamviewer depende de libfontconfig1.
+teamviewer depende de libfreetype6.
+teamviewer depende de libjpeg62.
+teamviewer depende de libsm6.
+teamviewer depende de libxdamage1.
+teamviewer depende de libxext6.
+teamviewer depende de libxfixes3.
+teamviewer depende de libxinerama1.
+teamviewer depende de libxrandr2.
+teamviewer depende de libxrender1.
+teamviewer depende de libxtst6.
+teamviewer depende de zlib1g.
+
+dpkg: error al procesar el paquete teamviewer (--install):
+problemas de dependencias - se deja sin configurar
+Procesando disparadores para mime-support (3.58) ...
+Procesando disparadores para desktop-file-utils (0.22-1) ...
+Procesando disparadores para hicolor-icon-theme (0.13-1) ...
+Se encontraron errores al procesar:
+teamviewer
+</pre>
+</div>
+
+
+<p>
+Como podemos observar, la supuesta instalación de teamviewer termina arrojando una serie de errores de dependencias. Esto es porque hemos utilizado "dpkg" en crudo para instalarlo y, así, no se resuelven dichas dependencias durante la instalación. Basta con ejecutar el siguiente comando para que se instalen y todo quede configurado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:41:54(root@debian)/home/godo/Descargas]# apt-get -f install
+Leyendo lista de paquetes... Hecho
+Creando &#225;rbol de dependencias
+Leyendo la informaci&#243;n de estado... Hecho
+Corrigiendo dependencias... Listo
+Se instalar&#225;n los siguientes paquetes extras:
+gcc-4.9-base:i386 libasound2:i386 libc6:i386 libc6-i686:i386 libdbus-1-3:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386
+libgcc1:i386 libice6:i386 libjpeg62-turbo:i386 libpng12-0:i386 libsm6:i386 libuuid1:i386 libx11-6:i386 libxau6:i386 libxcb1:i386
+libxdamage1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386
+libxtst6:i386 uuid-runtime zlib1g:i386
+Paquetes sugeridos:
+libasound2-plugins:i386 glibc-doc:i386 locales:i386
+Paquetes recomendados:
+uuid-runtime:i386
+Se instalar&#225;n los siguientes paquetes NUEVOS:
+gcc-4.9-base:i386 libasound2:i386 libc6:i386 libc6-i686:i386 libdbus-1-3:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386
+libgcc1:i386 libice6:i386 libjpeg62-turbo:i386 libpng12-0:i386 libsm6:i386 libuuid1:i386 libx11-6:i386 libxau6:i386 libxcb1:i386
+libxdamage1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386
+libxtst6:i386 uuid-runtime zlib1g:i386
+0 actualizados, 28 nuevos se instalar&#225;n, 0 para eliminar y 0 no actualizados.
+1 no instalados del todo o eliminados.
+Se necesita descargar 8.592 kB de archivos.
+Se utilizar&#225;n 19,9 MB de espacio de disco adicional despu&#233;s de esta operaci&#243;n.
+&#191;Desea continuar? [S/n]
+Des:1 http://httpredir.debian.org/debian/ jessie/main gcc-4.9-base i386 4.9.2-10 [160 kB]
+Des:2 http://httpredir.debian.org/debian/ jessie/main libgcc1 i386 1:4.9.2-10 [48,1 kB]
+Des:3 http://httpredir.debian.org/debian/ jessie/main libc6 i386 2.19-18+deb8u7 [3.982 kB]
+Des:4 http://httpredir.debian.org/debian/ jessie/main libasound2 i386 1.0.28-1 [390 kB]
+Des:5 http://httpredir.debian.org/debian/ jessie/main libdbus-1-3 i386 1.8.22-0+deb8u1 [182 kB]
+Des:6 http://httpredir.debian.org/debian/ jessie/main libexpat1 i386 2.1.0-6+deb8u3 [84,1 kB]
+Des:7 http://httpredir.debian.org/debian/ jessie/main zlib1g i386 1:1.2.8.dfsg-2+b1 [89,4 kB]
+Des:8 http://httpredir.debian.org/debian/ jessie/main libpng12-0 i386 1.2.50-2+deb8u3 [179 kB]
+Des:9 http://httpredir.debian.org/debian/ jessie/main libfreetype6 i386 2.5.2-3+deb8u1 [480 kB]
+Des:10 http://httpredir.debian.org/debian/ jessie/main libfontconfig1 i386 2.11.0-6.3+deb8u1 [338 kB]
+Des:11 http://httpredir.debian.org/debian/ jessie/main libjpeg62-turbo i386 1:1.3.1-12 [123 kB]
+Des:12 http://httpredir.debian.org/debian/ jessie/main libice6 i386 2:1.0.9-1+b1 [61,1 kB]
+Des:13 http://httpredir.debian.org/debian/ jessie/main libuuid1 i386 2.25.2-6 [65,9 kB]
+Des:14 http://httpredir.debian.org/debian/ jessie/main libsm6 i386 2:1.2.2-1+b1 [33,7 kB]
+Des:15 http://httpredir.debian.org/debian/ jessie/main libxau6 i386 1:1.0.8-1 [20,9 kB]
+Des:16 http://httpredir.debian.org/debian/ jessie/main libxdmcp6 i386 1:1.1.1-1+b1 [25,1 kB]
+Des:17 http://httpredir.debian.org/debian/ jessie/main libxcb1 i386 1.10-3+b1 [48,2 kB]
+Des:18 http://httpredir.debian.org/debian/ jessie/main libx11-6 i386 2:1.6.2-3 [750 kB]
+Des:19 http://httpredir.debian.org/debian/ jessie/main libxfixes3 i386 1:5.0.1-2+b2 [21,6 kB]
+Des:20 http://httpredir.debian.org/debian/ jessie/main libxdamage1 i386 1:1.1.4-2+b1 [14,8 kB]
+Des:21 http://httpredir.debian.org/debian/ jessie/main libxext6 i386 2:1.3.3-1 [54,9 kB]
+Des:22 http://httpredir.debian.org/debian/ jessie/main libxinerama1 i386 2:1.1.3-1+b1 [17,1 kB]
+Des:23 http://httpredir.debian.org/debian/ jessie/main libxrender1 i386 1:0.9.8-1+b1 [32,1 kB]
+Des:24 http://httpredir.debian.org/debian/ jessie/main libxrandr2 i386 2:1.4.2-1+b1 [36,8 kB]
+Des:25 http://httpredir.debian.org/debian/ jessie/main libxi6 i386 2:1.7.4-1+b2 [81,8 kB]
+Des:26 http://httpredir.debian.org/debian/ jessie/main libxtst6 i386 2:1.2.2-1+b1 [27,7 kB]
+Des:27 http://httpredir.debian.org/debian/ jessie/main uuid-runtime amd64 2.25.2-6 [74,3 kB]
+Des:28 http://httpredir.debian.org/debian/ jessie/main libc6-i686 i386 2.19-18+deb8u7 [1.172 kB]
+Descargados 8.592 kB en 9s (940 kB/s)
+Preconfigurando paquetes ...
+Seleccionando el paquete gcc-4.9-base:i386 previamente no seleccionado.
+(Leyendo la base de datos ... 123088 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar .../gcc-4.9-base_4.9.2-10_i386.deb ...
+Desempaquetando gcc-4.9-base:i386 (4.9.2-10) ...
+Seleccionando el paquete libgcc1:i386 previamente no seleccionado.
+Preparando para desempaquetar .../libgcc1_1%3a4.9.2-10_i386.deb ...
+Desempaquetando libgcc1:i386 (1:4.9.2-10) ...
+...
+Configurando libuuid1:i386 (2.25.2-6) ...
+Configurando libsm6:i386 (2:1.2.2-1+b1) ...
+Configurando libxau6:i386 (1:1.0.8-1) ...
+Configurando libxdmcp6:i386 (1:1.1.1-1+b1) ...
+Configurando libxcb1:i386 (1.10-3+b1) ...
+Configurando libx11-6:i386 (2:1.6.2-3) ...
+Configurando libxfixes3:i386 (1:5.0.1-2+b2) ...
+Configurando libxdamage1:i386 (1:1.1.4-2+b1) ...
+Configurando libxext6:i386 (2:1.3.3-1) ...
+Configurando libxinerama1:i386 (2:1.1.3-1+b1) ...
+Configurando libxrender1:i386 (1:0.9.8-1+b1) ...
+Configurando libxrandr2:i386 (2:1.4.2-1+b1) ...
+Configurando libxi6:i386 (2:1.7.4-1+b2) ...
+Configurando libxtst6:i386 (2:1.2.2-1+b1) ...
+Configurando teamviewer (12.0.71510) ...
+Configurando uuid-runtime (2.25.2-6) ...
+Configurando libc6-i686:i386 (2.19-18+deb8u7) ...
+Procesando disparadores para libc-bin (2.19-18+deb8u7) ...
+Procesando disparadores para systemd (215-17+deb8u6) ...
+[11:42:57(root@debian)/home/godo/Descargas]#
+</pre>
+</div>
+
+
+<p>
+Observar como en una de las últimas líneas aparece "Configurando teamviewer (12.0.71510) &#x2026;". Ahora sí, nuestro teamviewer está listo para usarse.
+</p>
+
+<p>
+A mí me gusta siempre terminar todas las instalaciones haciendo una comprobación y limpiando lo descargado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:43:00(root@debian)/home/godo/Descargas]#
+[11:43:00(root@debian)/home/godo/Descargas]# apt-get check
+Leyendo lista de paquetes... Hecho
+Creando &#225;rbol de dependencias
+Leyendo la informaci&#243;n de estado... Hecho
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:43:22(root@debian)/home/godo/Descargas]# apt-get update
+Ign http://dl.google.com stable InRelease
+Obj http://dl.google.com stable Release.gpg
+Obj http://security.debian.org jessie/updates InRelease
+Ign http://ftp.debian.org jessie InRelease
+Obj http://dl.google.com stable Release
+Obj http://ftp.debian.org jessie Release.gpg
+Ign http://httpredir.debian.org jessie InRelease
+Obj http://ftp.debian.org jessie Release
+Obj http://httpredir.debian.org jessie-updates InRelease
+Obj http://security.debian.org jessie/updates/main Sources
+Obj http://httpredir.debian.org jessie Release.gpg
+Obj http://dl.google.com stable/main amd64 Packages
+Obj http://security.debian.org jessie/updates/contrib Sources
+Obj http://security.debian.org jessie/updates/non-free Sources
+Obj http://security.debian.org jessie/updates/main amd64 Packages
+Obj http://ftp.debian.org jessie/main amd64 Packages
+Obj http://security.debian.org jessie/updates/contrib amd64 Packages
+Obj http://httpredir.debian.org jessie Release
+Obj http://ftp.debian.org jessie/contrib amd64 Packages
+Obj http://security.debian.org jessie/updates/non-free amd64 Packages
+Obj http://security.debian.org jessie/updates/main i386 Packages
+Obj http://ftp.debian.org jessie/main i386 Packages
+Obj http://security.debian.org jessie/updates/contrib i386 Packages
+Obj http://ftp.debian.org jessie/contrib i386 Packages
+Obj http://security.debian.org jessie/updates/non-free i386 Packages
+Obj http://ftp.debian.org jessie/contrib Translation-en
+Obj http://security.debian.org jessie/updates/contrib Translation-en
+Obj http://ftp.debian.org jessie/main Translation-es
+Obj http://security.debian.org jessie/updates/main Translation-en
+Obj http://ftp.debian.org jessie/main Translation-en
+Obj http://security.debian.org jessie/updates/non-free Translation-en
+Ign http://dl.google.com stable/main Translation-es_ES
+Obj http://httpredir.debian.org jessie-updates/main Sources
+Ign http://dl.google.com stable/main Translation-es
+Ign http://dl.google.com stable/main Translation-en
+Obj http://httpredir.debian.org jessie-updates/contrib Sources
+Obj http://httpredir.debian.org jessie-updates/non-free Sources
+Des:1 http://httpredir.debian.org jessie-updates/main amd64 Packages/DiffIndex [7.408 B]
+Obj http://httpredir.debian.org jessie-updates/contrib amd64 Packages
+Des:2 http://httpredir.debian.org jessie-updates/non-free amd64 Packages/DiffIndex [736 B]
+Des:3 http://httpredir.debian.org jessie-updates/main i386 Packages/DiffIndex [7.408 B]
+Obj http://httpredir.debian.org jessie-updates/contrib i386 Packages
+Des:4 http://httpredir.debian.org jessie-updates/non-free i386 Packages/DiffIndex [736 B]
+Obj http://httpredir.debian.org jessie-updates/contrib Translation-en
+Des:5 http://httpredir.debian.org jessie-updates/main Translation-en/DiffIndex [2.704 B]
+Des:6 http://httpredir.debian.org jessie-updates/non-free Translation-en/DiffIndex [736 B]
+Obj http://httpredir.debian.org jessie/main Sources
+Obj http://httpredir.debian.org jessie/contrib Sources
+Obj http://httpredir.debian.org jessie/non-free Sources
+Obj http://httpredir.debian.org jessie/main amd64 Packages
+Obj http://httpredir.debian.org jessie/contrib amd64 Packages
+Obj http://httpredir.debian.org jessie/non-free amd64 Packages
+Obj http://httpredir.debian.org jessie/main i386 Packages
+Obj http://httpredir.debian.org jessie/contrib i386 Packages
+Obj http://httpredir.debian.org jessie/non-free i386 Packages
+Obj http://httpredir.debian.org jessie/contrib Translation-en
+Obj http://httpredir.debian.org jessie/main Translation-es
+Obj http://httpredir.debian.org jessie/main Translation-en
+Obj http://httpredir.debian.org jessie/non-free Translation-en
+Descargados 19,7 kB en 13s (1.503 B/s)
+Leyendo lista de paquetes... Hecho
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:43:51(root@debian)/home/godo/Descargas]# apt-get upgrade
+Leyendo lista de paquetes... Hecho
+Creando &#225;rbol de dependencias
+Leyendo la informaci&#243;n de estado... Hecho
+Calculando la actualizaci&#243;n... Listo
+0 actualizados, 0 nuevos se instalar&#225;n, 0 para eliminar y 0 no actualizados.
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh">[11:43:57(root@debian)/home/godo/Descargas]# apt-get clean
+</pre>
+</div>
+
+<p>
+A continuación, os dejo una captura de mi escritorio mostrando a Teamviewer justo después de arrancarlo.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="471" border="0" align="center" hspace="10" vspace="10" src="/static/2017/teamviewer-en-debian.jpg"
+ alt="Teamviewer en Debian" />
+</figure>
+
+<p>
+¡Espero que os sea útil!
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Utilizando_Teamviewer_en_Debian">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div>
+<div class="post-date">31 oct 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-10-31-trabajando-con-gnu-emacs-en-sistemas-windows.html">Trabajando con GNU Emacs en sistemas Windows</a></h1>
+<p>
+<b>Actualizado el 08-12-2016: se incorpora al final del artículo la sección de corrector ortográfico</b>.
+</p>
+
+<p>
+Hace mucho tiempo, diría que desde que comencé a trabajar con entornos GNU/Linux allá por 1992 (recuerdo estar estudiando los primeros años de mi carrera e intercambiar el sistema en alrededor de 10 disquetes de 3,5”), pero con mucha más intensidad a partir del 2005 (<a href="https://www.google.es/search?q=site%3Agodest.vivencias.net+emacs&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=Cp8VWI6mN-uJ8QfklrTQCA#q=site:godest.vivencias.net+emacs&amp;start=0">aquí</a> podéis encontrar algunas entradas en este mismo blog que referencian esas fechas), el editor <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> se convirtió en uno de los pilares básicos de mi productividad. En él he realizado desde programas en C hasta scripts con Perl y Python, he organizado mis tareas con su “modo org” y he comparado configuraciones con su potente integración con diff. Todo esto y ¡mucho más!
+</p>
+
+<p>
+Aunque al comienzo de mi vida profesional podía trabajar con GNU/Linux instalado en mi ordenador como sistema operativo base y habitual, la organización en la que trabajo se fue “complicando” y cada vez iban surgiendo más desarrollos propietarios que sólo se ejecutaban sobre sistemas Windows. Hasta ese entonces mi ordenador siempre arrancaba con <a href="http://debian.org/">Debian</a> y sobre ella emulaba la Office de Microsoft; pero llegó un momento en el que trabajaba más, y me complicaba la vida, emulando software de Windows que lo que me aportaba mi “gran compañera” en eficiencia (estoy hablando del entorno Desktop, mis servidores siguen ejecutando GNU/Linux al 100%). En fin, que acabé instalando Windows como sistema operativo base y virtualizando mi Debian sobre “VMware Player”.
+</p>
+
+<p>
+No obstante, <b>con la ayuda de <a href="https://www.cygwin.com/">Cygwin</a> mi sistema operativo actual es un Windows hibridado con muchas de las mejores herramientas del mundo GNU/Linux</b>: gcc, gdb, ssh, diff, awk, bash, etc.
+</p>
+
+<p>
+Y con el editor Emacs, que si bien no lo instalo directamente de la versión contenida en Cygwin (da errores en funcionalidades básicas un poco inexplicables, como, por ejemplo: <a href="https://www.google.es/search?q=cygwin+emacs+associate+txt+double+click&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=E6EVWI70K8mp8weL-oaIBw">tras ser asociado a ficheros .txt no los carga directamente al hacer doble click sobre ellos</a>), <a href="https://sourceforge.net/projects/emacsbinw64/">sí que instalo este "port" que obtiene un Emacs nativo sobre Windows</a> (actualmente lo vengo utilizando con mucha estabilidad en mis Windows 10).
+</p>
+
+<p>
+Bien, pues no sólo escribo esta entrada para contaros que existe este “port nativo sobre Windows”, que ya me parece muy valioso ;-), sino que a continuación capturo varios ajustes “muy necesarios” para que el sistema se comporte como queremos.
+</p>
+
+<p>
+<b>Primero</b>: descargamos la versión de Emacs para Windows desde <a href="https://sourceforge.net/projects/emacsbinw64/">aquí</a>. Simplemente hemos de descomprimir el “.zip” que bajamos, situar la carpeta en cualquier lugar de nuestro disco duro y añadir esa carpeta a la variable “path” de Windows.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="531" height="69" border="0" align="center" hspace="10" vspace="10" src="/static/2016/01-emacs-windows-path.png"
+ alt="01 Emacs Windows PATH" />
+</figure>
+
+<p>
+Como ya hemos comentado, y veremos más adelante con un ejemplo de comparación de ficheros, es muy aconsejable instalar un entorno “Cygwin” mínimo, con utilidades que aportan valor a Emacs. También hemos de añadirlo al “path”, para que podamos encontrar sus programas llamándolos desde cualquier sitio.
+</p>
+
+<p>
+<b>Segundo</b>: hay dos formas de enseñarle a Emacs dónde está nuestro directorio de trabajo, o HOME, en Windows 10 me funcionó la segunda, la b), que es la más compleja pero fue la primera que se me ocurrió. Sin embargo, en Windows 7 no funciona bien, y ha sido lo que ha provocado que investigue un poco más y haya acabado encontrando la primera, la a), que es incluso más fácil.
+</p>
+
+<p>
+a) Tal y como se describe <a href="https://stackoverflow.com/questions/189490/where-can-i-find-my-emacs-file-for-emacs-running-on-windows">aquí</a>, lo mejor es definir una variable de entorno para tu usuario de Windows, como se muestra en la siguiente figura (aprovechamos también y definimos la variable <code>"LANG = es_ES.UTF8"</code>, ver figura, para que luego funcione también el diccionario "aspell"):
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="595" height="417" border="0" align="center" hspace="10" vspace="10" src="/static/2016/Variables-HOME_y_LANG-para-Emacs.png"
+ alt="Variables HOME y LANG para Emacs" />
+</figure>
+
+<p>
+b) Creamos enlaces simbólicos, <b>con <a href="https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/">mklink</a> de Windows</b>, del fichero configuración por defecto de emacs, “.emacs” y su “directorio de trabajo en segundo plano” (copias de seguridad, etc.) “.emacs.d”.
+</p>
+
+<p>
+El port de Emacs para Windows considera como “directorio home” este: “C:\Users\Godo\AppData\Roaming” (sustituid Godo por vuestro usuario Windows), y en él guarda el fichero “.emacs” y el directorio “.emacs.d”. Yo los borro y los vuelvo a crear como enlaces simbólicos que apuntan a otros destinos, de igual nombre, pero ubicados en carpetas diferentes. Como podéis ver en la siguiente captura los mantengo dentro de mi Dropbox, conservando y sincronizando así todos los cambios que hago en ellos ya sea en mi ordenador fijo o en mi portátil.
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="595" height="178" border="0" align="center" hspace="10" vspace="10" src="/static/2016/02-emacs-mklink.png"
+ alt="02 Enlace con MKLINK para Emacs" />
+</figure>
+
+<p>
+<b>Tercero</b>: lo anclamos a la barra de tareas para poder ejecutarlo de forma rápida. La mejor forma para hacerlo es abrir un documento cualquiera con él, y cuando vemos el icono en la barra de tareas, lo pulsamos con el botón derecho y seleccionamos “anclar a la barra de tareas”. Luego editamos dicho anclaje (click con el botón derecho sobre el icono, de nuevo click con botón derecho sobre “emacs” y seleccionamos “propiedades”):
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="315" height="292" border="0" align="center" hspace="10" vspace="10" src="/static/2016/03-emacs-barradetareas.png"
+ alt="03 Emacs Barra de Tareas" />
+</figure>
+
+<p>
+Y lo adaptamos para correr “runemacs.exe” en lugar de “emacs.exe” (este último deja en segundo plano una ventana msdos de fondo negro que resulta poco atractiva).
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="450" height="588" border="0" align="center" hspace="10" vspace="10" src="/static/2016/04-emacs-propiedades.png"
+ alt="04 Emacs propiedades" />
+</figure>
+
+<p>
+Por último, y como prueba del buen trabajo de Emacs integrado con la herramienta “diff” proporcionada por el entorno Cygwin, os dejo una captura donde podéis ver cómo me ayuda a detectar cambios en un fichero de configuración de un router Cisco:
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="596" height="525" border="0" align="center" hspace="10" vspace="10" src="/static/2016/05-emacs-diff.png"
+ alt="05 Emacs diff" />
+</figure>
+
+<p>
+Cuando limpie y de esplendor a mi fichero “.emacs” os lo compartiré por aquí por si os da ideas interesantes (a la vez que me sirve para fijar una copia de seguridad). Por ahora, os dejo sólo una brizna del mismo que activa la posibilidad de tener rápido acceso a “archivos recientes” (bajo el menú “File” o con “C-x C-r”):
+</p>
+
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="452" height="212" border="0" align="center" hspace="10" vspace="10" src="/static/2016/06-emacs-recent-files.png"
+ alt="06 Emacs recent files" />
+</figure>
+
+<p>
+Y otro día escribiré sobre el <b><a href="https://www.google.es/search?q=mode+org+emacs&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=cqQVWKiyOcWp8wfX_YCwBA">modo .org de Emacs</a></b>, que es verdaderamente alucinante para llevar todo un “<a href="http://orgmode.org/">Sistema de planificación</a>” personal, de proyectos, etc., con “ToDo”, “Tags”, “deadlines”… Si lo quieres ver en funcionamiento, echa un vistazo a <a href="https://www.google.es/search?q=org-mode+emacs+youtube&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=B5AXWOXWF-as8wfwgIGgDg">estos vídeos de Youtube</a>.
+</p>
+
+<p>
+Y tú, ¿qué me cuentas sobre Emacs? De verdad, si realizas tareas de administración de sistemas, de programación, de gestión… que requieran control de versiones… <b>¡dale una oportunidad y no lo abandonarás jamás!</b> <a href="https://www.youtube.com/watch?v=FtieBc3KptU">Incluso si eres un escritor&#x2026;</a>
+</p>
+
+<p>
+Gracias por estar ahí. Y muchas más si decides enriquecerme con tus comentarios.
+</p>
+
+<p>
+<b>Actualizado el 08-12-2016 - Corrector ortográfico</b>
+</p>
+
+<p>
+<a href="https://www.emacswiki.org/emacs/AspellWindows">Esta página</a> de <a href="https://www.emacswiki.org/">Emacs Wiki</a> contine toda la información y ajustes de configuración necesarios.
+Básicamente hay que instalar <a href="http://ftp.gnu.org/gnu/aspell/w32/Aspell-0-50-3-3-Setup.exe">este ejecutable</a> y este <a href="http://ftp.gnu.org/gnu/aspell/w32/Aspell-es-0.50-2-3.exe">diccionario</a>. Después añadimos las siguientes líneas a nuestro fichero de configuración ".emacs":
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">;; ===== Para utilizar aspell como corrector ortogr&#225;fico ===
+;; C:\Program Files (x86)\Aspell\bin
+(add-to-list <span style="color: #008000;">'exec-path "C:/Program Files (x86)/Aspell/bin/")</span>
+<span style="color: #008000;">(setq ispell-program-name "aspell")</span>
+<span style="color: #008000;">(setq ispell-personal-dictionary "D:/Db/01-Personal/home/.aspell")</span>
+<span style="color: #008000;">(require '</span>ispell)
+;; La forma de invocarlo por defecto es <span style="color: #008000;">"M-$"</span>
+;; Esto que sigue s&#243;lo chequea la palabra sobre el cursor
+;; (global-set-key (kbd <span style="color: #008000;">"&lt;f8&gt;"</span>) <span style="color: #008000;">'ispell-word)</span>
+<span style="color: #008000;">;; Para chequear todo el buffer</span>
+<span style="color: #008000;">(global-set-key (kbd "&lt;f8&gt;") '</span>ispell-buffer)
+;; Para activar detecci&#243;n al vuelo
+(global-set-key (kbd <span style="color: #008000;">"C-&lt;f8&gt;"</span>) <span style="color: #008000;">'flyspell-mode)</span>
+</pre>
+</div>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Trabajando_con_GNU_Emacs_en_sistemas_Windows">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> <a href="https://godest.vivencias.net/tag-windows.html">Windows</a> </div>
+<div class="post-date">11 dic 2005</div><h1 class="post-title"><a href="https://godest.vivencias.net/2005-12-11-soy-un-hacker.html">¿Soy un hacker?</a></h1>
+<figure style="float:right">
+<img width="55" height="55" border="0" align="right" hspace="10" vspace="10" src="/static/2005/glider.png" alt="glider" />
+</figure>
+
+<p>
+Uno tiene la costumbre, y el entrenamiento, de intentar perderse los menos detalles posibles. <b>El emblema</b> que preside esta página: <a href="https://www.hermann-uwe.de/">Uwe Hermann</a>, la cual visito desde hace mucho tiempo, me intrigaba. Cuanto más tiempo transcurría sin saber su verdadero significado mayor era la intriga. Hoy he podido leer a placer&#x2026;
+</p>
+
+<p>
+Este emblema es el elegido por la comunidad <a href="http://es.wikipedia.org/wiki/Hacker">hacker</a> para, entre otras cosas, fortalecer las señas de identidad de la misma. Es curioso el uso, y la <a href="http://www.catb.org/hacker-emblem/faqs.html">justificación de este</a>, propuesto por su creador, <a href="http://www.catb.org/~esr/">Eric Steven Raymond</a>.
+</p>
+
+<p>
+¿Quién puede usarlo? Según el autor del mismo, aquel que se sienta identificado por la cultura hacker, aunque no sea uno de ellos.
+</p>
+
+<p>
+¿Y cuál es la cultura hacker? Para responder a esta pregunta tenía que leerme el pequeño documento en el que este mismo autor intenta explicar: "<a href="http://www.catb.org/~esr/faqs/hacker-howto.html">Cómo llegar a ser un hacker</a>".
+</p>
+
+<p>
+La conclusión que he obtenido es la siguiente: ser un hacker es la unión de dos cosas, la primera es mantener una determinada actitud ante la vida, la segunda consiste en desarrollar una serie de habilidades. Tanto más hacker se es cuanto más avancemos en cada una de ellas, y cuanto mejor sea la mezcla de ambas en nosotros.
+</p>
+
+<p>
+¿En qué consiste el desarrollo de la "actitud vital"?
+</p>
+
+<p>
+1.- <b>Los hackers creen en la libertad y en la ayuda mutua</b>. Los hacker resuelven problemas y crean soluciones útiles para la humanidad (entre ellas lo que hoy todo el mundo conoce como Internet).
+</p>
+
+<p>
+2.- Los hackers piensan que <b>ninguno de estos problemas a los que se enfrentan debería resolverse dos veces partiendo desde cero</b>, para lo cual es imprescindible la comunicación y el compartir la "sabiduría". Esto no quiere decir que no existan mejores soluciones que otras, precisamente para utilizar esta palabra es necesario poder conocer y comparar.
+</p>
+
+<p>
+3.- El aburrimiento y el trabajo <a href="http://buscon.rae.es/draeI/SrvltGUIBusUsual?TIPO_HTML=2&amp;LEMA=tedio">tedioso</a> (repetitivo) son malos. Luchar contra esto, automatizando todo lo que se pueda esas "tediosas" tareas, es una de las principales metas del hacker.
+</p>
+
+<p>
+4.- El hacker AMA LA LIBERTAD, por ello <b>lucha contra las actitudes autoritarias</b>. Esto no significa que esté contra toda autoridad y contra todo sistema.
+</p>
+
+<p>
+5.- El hacker cree en el <b>desarrollo de habilidades</b> (en el documento les llaman "competences"==competencias), en el aprendizaje, fundamentándose éste en la inteligencia, práctica, dedicación y trabajo duro.
+</p>
+
+
+<p>
+¿Cuáles son las habilidades a desarrollar?
+</p>
+
+<p>
+1.- Aprender a programar en <b>varios lenguajes</b> ("It's best, actually, to learn all five of Python, C/C++, Java, Perl, and LISP").
+</p>
+
+<p>
+2.- Conseguir un <b>sistema operativo "tipo" UNIX</b> y aprender a usarlo (evidentemente, en el amplio sentido de la palabra usarlo: ser capaz de utilizar toda su funcionalidad).
+</p>
+
+<p>
+3.- Comprender los fundamentos de la WEB y saber crearla. Propone el <b>conocimiento de las especificaciones actuales de <a href="http://www.w3.org/TR/html401/">HTML</a> y, más concretamente, <a href="http://www.w3.org/TR/xhtml1/">XHTML</a></b>. Incluso apunta que el inicio del "no programador" a través de uno de estos lenguajes podría ser conveniente: son más fáciles de aprender y ayudan a "ir creándose" una forma de pensar.
+</p>
+
+<p>
+4.- <b>Conseguir un buen nivel de inglés</b>. No por ser el idioma del imperio (que lo es) sino porque los mayores desarrollos técnicos, y por tanto la mayor cantidad de literatura, se han venido produciendo en ese idioma (una curiosidad que apunta para respaldar este punto es el caso de Linus, parece ser que comentó el código fuente del kernel que creó en su día ya en inglés&#x2026; así podría compartirlo con más gente).
+</p>
+
+
+<p>
+Bien, pues todo este conjunto de actitud y habilidad es condición necesaria pero no suficiente: <b>sólo se es hacker cuando los demás te atribuyen esa condición</b>.
+</p>
+
+<p>
+Uno, a esta edad, se conoce lo suficientemente bien para saber que no es un hacker y que, muy probablemente, nunca llegará a serlo. Pero igualmente, uno reconoce encontrar en ese pequeño cachito que ha ido descubriendo de sí mismo ciertas coincidencias con, al menos, la "actitud vital" del hacker.
+</p>
+
+<p>
+Por todo esto, a partir de hoy, habrá un "guiño" a esa "manera de vivir" en la cabecera de este sitio web.
+</p>
+
+<p>
+Para profundizar en esta historia os recomiendo seguir los enlaces existentes en toda la página, leer y pensar. Yo me quedo pendiente de seguir investigando si todo esto tiene algo que ver con el <a href="http://es.wikipedia.org/wiki/Humanismo">humanismo</a>. A priori se me antoja una evolución del mismo.
+</p>
+
+<p>
+Salud, y disfrutad de vuestros sueños.
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Soy_un_hacker">Dejar comentario</a>.
+</p>
+
+<div id="outline-container-orged548a9" class="outline-2">
+<h2 id="orged548a9">Comentarios</h2>
+<div class="outline-text-2" id="text-orged548a9">
+</div>
+<div id="outline-container-orgd033c21" class="outline-3">
+<h3 id="orgd033c21">Humanismo (Enviado por Juan Fernando (no verificado) el Dom, 01/01/2006 - 20:01)</h3>
+<div class="outline-text-3" id="text-orgd033c21">
+<p>
+Mucho habría que decir sobre lo que es humanismo. Además del movimiento humanista renacentista (sentido, podemos decir, restringido), podemos hablar del humanismo en nuestros días (sentido amplio de humanismo), para lo cual se me ocurren tres ineludibles referencias: un texto de Heidegger sobre el asunto (Carta sobre el humanismo), otro de Sartre (El existencialismo es un humanismo)y, recientemente, la réplica a Heidegger de un polémico filósofo alemán llamado Sloterdijk con su conferencia titulada Normas para un parque humano. Prometo pensar un poco sobre el asunto y su relación con los hackers, aunque no me comprometo a plazo temporal alguno. Saludos.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd247d2d" class="outline-3">
+<h3 id="orgd247d2d">Con ansias espero (Enviado por Godo el Lun, 02/01/2006 - 20:29)</h3>
+<div class="outline-text-3" id="text-orgd247d2d">
+<p>
+&#x2026;"Prometo pensar un poco sobre el asunto y su relación con los hackers, aunque no me comprometo a plazo temporal alguno".
+</p>
+
+<p>
+Sabes que, como he indicado en el título, con ansias espero dicha respuesta. Y, evidentemente, espero sin límite alguno. ;-)
+</p>
+
+<p>
+Muchas gracias por tus palabras. Espero que, cuando vaya madurando todos esos temas que mantengo abiertos, podamos seguir compartiendo interminables conversaciones. Las nuestras.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-pensamiento.html">Pensamiento</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> <a href="https://godest.vivencias.net/tag-programar.html">Programar</a> </div><div id="archive">
+<a href="https://godest.vivencias.net/archive.html">Other posts</a>
+</div>
+</div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

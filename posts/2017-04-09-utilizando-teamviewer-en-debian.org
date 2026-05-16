@@ -1,0 +1,268 @@
+#+title: Utilizando Teamviewer en Debian
+#+date: <2017-04-09 11:56>
+#+description: 
+#+filetags: GNU/Linux Software
+
+En este artículo vamos a ver como instalar Teamviewer en una máquina con arquitectura de 64 bits, corriendo la última versión estable de Debian para dicha arquitectura.
+
+Se descarga el paquete .deb desde aquí:
+https://www.teamviewer.com/es/download/linux/
+
+Una vez descargado, como el paquete es único para ambas arquitecturas: 32 y 64 bits, lo que equivale a decir que está compilado contra librerías de 32 bits; si tenemos un Debian de 64 bits instalado en nuestra máquina, como es mi caso, hemos de añadir la arquitectura de 32 bits para que el gestor de paquetes sea consciente de que es necesario instalar dependencias de dicha arquitectura. Lo hacemos, una vez convertidos en root, así:
+
+#+begin_src sh 
+[11:38:07(godo@debian)~]> sudo su
+[sudo] password for godo:
+[11:38:25(root@debian)/home/godo]#
+[11:38:26(root@debian)/home/godo]#
+[11:38:26(root@debian)/home/godo]# dpkg --add-architecture i386
+#+end_src
+
+Ahora, actualizamos nuestro árbol de dependencias (observad como en las líneas de acceso a los repositorios aparece ya la arquitectura i386 -32 bits- además de la amd64 -64 bits-):
+#+begin_src sh
+[11:38:40(root@debian)/home/godo]# apt-get update
+Ign http://dl.google.com stable InRelease
+Obj http://security.debian.org jessie/updates InRelease
+Obj http://dl.google.com stable Release.gpg
+Ign http://ftp.debian.org jessie InRelease
+Obj http://dl.google.com stable Release
+Obj http://ftp.debian.org jessie Release.gpg
+Obj http://security.debian.org jessie/updates/main Sources
+Obj http://ftp.debian.org jessie Release
+...
+Obj http://httpredir.debian.org jessie/main Translation-es
+Obj http://httpredir.debian.org jessie/main Translation-en
+Obj http://httpredir.debian.org jessie/non-free Translation-en
+Descargados 14,1 MB en 30s (460 kB/s)
+Leyendo lista de paquetes... Hecho
+#+end_src
+
+Y procedemos a instalar "manualmente" el paquete descargado:
+
+#+begin_src sh
+[11:40:57(root@debian)/home/godo]# cd Descargas/
+[11:41:25(root@debian)/home/godo/Descargas]# dpkg -i teamviewer_12.0.71510_i386.deb
+
+Seleccionando el paquete teamviewer previamente no seleccionado.
+(Leyendo la base de datos ... 122791 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar teamviewer_12.0.71510_i386.deb ...
+Desempaquetando teamviewer (12.0.71510) ...
+dpkg: problemas de dependencias impiden la configuración de teamviewer:
+teamviewer depende de libc6 (>= 2.11).
+teamviewer depende de libgcc1.
+teamviewer depende de libasound2.
+teamviewer depende de libdbus-1-3.
+teamviewer depende de libexpat1.
+teamviewer depende de libfontconfig1.
+teamviewer depende de libfreetype6.
+teamviewer depende de libjpeg62.
+teamviewer depende de libsm6.
+teamviewer depende de libxdamage1.
+teamviewer depende de libxext6.
+teamviewer depende de libxfixes3.
+teamviewer depende de libxinerama1.
+teamviewer depende de libxrandr2.
+teamviewer depende de libxrender1.
+teamviewer depende de libxtst6.
+teamviewer depende de zlib1g.
+
+dpkg: error al procesar el paquete teamviewer (--install):
+problemas de dependencias - se deja sin configurar
+Procesando disparadores para mime-support (3.58) ...
+Procesando disparadores para desktop-file-utils (0.22-1) ...
+Procesando disparadores para hicolor-icon-theme (0.13-1) ...
+Se encontraron errores al procesar:
+teamviewer
+#+end_src
+
+
+Como podemos observar, la supuesta instalación de teamviewer termina arrojando una serie de errores de dependencias. Esto es porque hemos utilizado "dpkg" en crudo para instalarlo y, así, no se resuelven dichas dependencias durante la instalación. Basta con ejecutar el siguiente comando para que se instalen y todo quede configurado:
+
+#+begin_src sh
+[11:41:54(root@debian)/home/godo/Descargas]# apt-get -f install
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias
+Leyendo la información de estado... Hecho
+Corrigiendo dependencias... Listo
+Se instalarán los siguientes paquetes extras:
+gcc-4.9-base:i386 libasound2:i386 libc6:i386 libc6-i686:i386 libdbus-1-3:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386
+libgcc1:i386 libice6:i386 libjpeg62-turbo:i386 libpng12-0:i386 libsm6:i386 libuuid1:i386 libx11-6:i386 libxau6:i386 libxcb1:i386
+libxdamage1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386
+libxtst6:i386 uuid-runtime zlib1g:i386
+Paquetes sugeridos:
+libasound2-plugins:i386 glibc-doc:i386 locales:i386
+Paquetes recomendados:
+uuid-runtime:i386
+Se instalarán los siguientes paquetes NUEVOS:
+gcc-4.9-base:i386 libasound2:i386 libc6:i386 libc6-i686:i386 libdbus-1-3:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386
+libgcc1:i386 libice6:i386 libjpeg62-turbo:i386 libpng12-0:i386 libsm6:i386 libuuid1:i386 libx11-6:i386 libxau6:i386 libxcb1:i386
+libxdamage1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386
+libxtst6:i386 uuid-runtime zlib1g:i386
+0 actualizados, 28 nuevos se instalarán, 0 para eliminar y 0 no actualizados.
+1 no instalados del todo o eliminados.
+Se necesita descargar 8.592 kB de archivos.
+Se utilizarán 19,9 MB de espacio de disco adicional después de esta operación.
+¿Desea continuar? [S/n]
+Des:1 http://httpredir.debian.org/debian/ jessie/main gcc-4.9-base i386 4.9.2-10 [160 kB]
+Des:2 http://httpredir.debian.org/debian/ jessie/main libgcc1 i386 1:4.9.2-10 [48,1 kB]
+Des:3 http://httpredir.debian.org/debian/ jessie/main libc6 i386 2.19-18+deb8u7 [3.982 kB]
+Des:4 http://httpredir.debian.org/debian/ jessie/main libasound2 i386 1.0.28-1 [390 kB]
+Des:5 http://httpredir.debian.org/debian/ jessie/main libdbus-1-3 i386 1.8.22-0+deb8u1 [182 kB]
+Des:6 http://httpredir.debian.org/debian/ jessie/main libexpat1 i386 2.1.0-6+deb8u3 [84,1 kB]
+Des:7 http://httpredir.debian.org/debian/ jessie/main zlib1g i386 1:1.2.8.dfsg-2+b1 [89,4 kB]
+Des:8 http://httpredir.debian.org/debian/ jessie/main libpng12-0 i386 1.2.50-2+deb8u3 [179 kB]
+Des:9 http://httpredir.debian.org/debian/ jessie/main libfreetype6 i386 2.5.2-3+deb8u1 [480 kB]
+Des:10 http://httpredir.debian.org/debian/ jessie/main libfontconfig1 i386 2.11.0-6.3+deb8u1 [338 kB]
+Des:11 http://httpredir.debian.org/debian/ jessie/main libjpeg62-turbo i386 1:1.3.1-12 [123 kB]
+Des:12 http://httpredir.debian.org/debian/ jessie/main libice6 i386 2:1.0.9-1+b1 [61,1 kB]
+Des:13 http://httpredir.debian.org/debian/ jessie/main libuuid1 i386 2.25.2-6 [65,9 kB]
+Des:14 http://httpredir.debian.org/debian/ jessie/main libsm6 i386 2:1.2.2-1+b1 [33,7 kB]
+Des:15 http://httpredir.debian.org/debian/ jessie/main libxau6 i386 1:1.0.8-1 [20,9 kB]
+Des:16 http://httpredir.debian.org/debian/ jessie/main libxdmcp6 i386 1:1.1.1-1+b1 [25,1 kB]
+Des:17 http://httpredir.debian.org/debian/ jessie/main libxcb1 i386 1.10-3+b1 [48,2 kB]
+Des:18 http://httpredir.debian.org/debian/ jessie/main libx11-6 i386 2:1.6.2-3 [750 kB]
+Des:19 http://httpredir.debian.org/debian/ jessie/main libxfixes3 i386 1:5.0.1-2+b2 [21,6 kB]
+Des:20 http://httpredir.debian.org/debian/ jessie/main libxdamage1 i386 1:1.1.4-2+b1 [14,8 kB]
+Des:21 http://httpredir.debian.org/debian/ jessie/main libxext6 i386 2:1.3.3-1 [54,9 kB]
+Des:22 http://httpredir.debian.org/debian/ jessie/main libxinerama1 i386 2:1.1.3-1+b1 [17,1 kB]
+Des:23 http://httpredir.debian.org/debian/ jessie/main libxrender1 i386 1:0.9.8-1+b1 [32,1 kB]
+Des:24 http://httpredir.debian.org/debian/ jessie/main libxrandr2 i386 2:1.4.2-1+b1 [36,8 kB]
+Des:25 http://httpredir.debian.org/debian/ jessie/main libxi6 i386 2:1.7.4-1+b2 [81,8 kB]
+Des:26 http://httpredir.debian.org/debian/ jessie/main libxtst6 i386 2:1.2.2-1+b1 [27,7 kB]
+Des:27 http://httpredir.debian.org/debian/ jessie/main uuid-runtime amd64 2.25.2-6 [74,3 kB]
+Des:28 http://httpredir.debian.org/debian/ jessie/main libc6-i686 i386 2.19-18+deb8u7 [1.172 kB]
+Descargados 8.592 kB en 9s (940 kB/s)
+Preconfigurando paquetes ...
+Seleccionando el paquete gcc-4.9-base:i386 previamente no seleccionado.
+(Leyendo la base de datos ... 123088 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar .../gcc-4.9-base_4.9.2-10_i386.deb ...
+Desempaquetando gcc-4.9-base:i386 (4.9.2-10) ...
+Seleccionando el paquete libgcc1:i386 previamente no seleccionado.
+Preparando para desempaquetar .../libgcc1_1%3a4.9.2-10_i386.deb ...
+Desempaquetando libgcc1:i386 (1:4.9.2-10) ...
+...
+Configurando libuuid1:i386 (2.25.2-6) ...
+Configurando libsm6:i386 (2:1.2.2-1+b1) ...
+Configurando libxau6:i386 (1:1.0.8-1) ...
+Configurando libxdmcp6:i386 (1:1.1.1-1+b1) ...
+Configurando libxcb1:i386 (1.10-3+b1) ...
+Configurando libx11-6:i386 (2:1.6.2-3) ...
+Configurando libxfixes3:i386 (1:5.0.1-2+b2) ...
+Configurando libxdamage1:i386 (1:1.1.4-2+b1) ...
+Configurando libxext6:i386 (2:1.3.3-1) ...
+Configurando libxinerama1:i386 (2:1.1.3-1+b1) ...
+Configurando libxrender1:i386 (1:0.9.8-1+b1) ...
+Configurando libxrandr2:i386 (2:1.4.2-1+b1) ...
+Configurando libxi6:i386 (2:1.7.4-1+b2) ...
+Configurando libxtst6:i386 (2:1.2.2-1+b1) ...
+Configurando teamviewer (12.0.71510) ...
+Configurando uuid-runtime (2.25.2-6) ...
+Configurando libc6-i686:i386 (2.19-18+deb8u7) ...
+Procesando disparadores para libc-bin (2.19-18+deb8u7) ...
+Procesando disparadores para systemd (215-17+deb8u6) ...
+[11:42:57(root@debian)/home/godo/Descargas]#
+#+end_src
+
+
+Observar como en una de las últimas líneas aparece "Configurando teamviewer (12.0.71510) ...". Ahora sí, nuestro teamviewer está listo para usarse.
+
+A mí me gusta siempre terminar todas las instalaciones haciendo una comprobación y limpiando lo descargado:
+
+#+begin_src sh
+[11:43:00(root@debian)/home/godo/Descargas]#
+[11:43:00(root@debian)/home/godo/Descargas]# apt-get check
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias
+Leyendo la información de estado... Hecho
+#+end_src
+
+#+begin_src sh
+[11:43:22(root@debian)/home/godo/Descargas]# apt-get update
+Ign http://dl.google.com stable InRelease
+Obj http://dl.google.com stable Release.gpg
+Obj http://security.debian.org jessie/updates InRelease
+Ign http://ftp.debian.org jessie InRelease
+Obj http://dl.google.com stable Release
+Obj http://ftp.debian.org jessie Release.gpg
+Ign http://httpredir.debian.org jessie InRelease
+Obj http://ftp.debian.org jessie Release
+Obj http://httpredir.debian.org jessie-updates InRelease
+Obj http://security.debian.org jessie/updates/main Sources
+Obj http://httpredir.debian.org jessie Release.gpg
+Obj http://dl.google.com stable/main amd64 Packages
+Obj http://security.debian.org jessie/updates/contrib Sources
+Obj http://security.debian.org jessie/updates/non-free Sources
+Obj http://security.debian.org jessie/updates/main amd64 Packages
+Obj http://ftp.debian.org jessie/main amd64 Packages
+Obj http://security.debian.org jessie/updates/contrib amd64 Packages
+Obj http://httpredir.debian.org jessie Release
+Obj http://ftp.debian.org jessie/contrib amd64 Packages
+Obj http://security.debian.org jessie/updates/non-free amd64 Packages
+Obj http://security.debian.org jessie/updates/main i386 Packages
+Obj http://ftp.debian.org jessie/main i386 Packages
+Obj http://security.debian.org jessie/updates/contrib i386 Packages
+Obj http://ftp.debian.org jessie/contrib i386 Packages
+Obj http://security.debian.org jessie/updates/non-free i386 Packages
+Obj http://ftp.debian.org jessie/contrib Translation-en
+Obj http://security.debian.org jessie/updates/contrib Translation-en
+Obj http://ftp.debian.org jessie/main Translation-es
+Obj http://security.debian.org jessie/updates/main Translation-en
+Obj http://ftp.debian.org jessie/main Translation-en
+Obj http://security.debian.org jessie/updates/non-free Translation-en
+Ign http://dl.google.com stable/main Translation-es_ES
+Obj http://httpredir.debian.org jessie-updates/main Sources
+Ign http://dl.google.com stable/main Translation-es
+Ign http://dl.google.com stable/main Translation-en
+Obj http://httpredir.debian.org jessie-updates/contrib Sources
+Obj http://httpredir.debian.org jessie-updates/non-free Sources
+Des:1 http://httpredir.debian.org jessie-updates/main amd64 Packages/DiffIndex [7.408 B]
+Obj http://httpredir.debian.org jessie-updates/contrib amd64 Packages
+Des:2 http://httpredir.debian.org jessie-updates/non-free amd64 Packages/DiffIndex [736 B]
+Des:3 http://httpredir.debian.org jessie-updates/main i386 Packages/DiffIndex [7.408 B]
+Obj http://httpredir.debian.org jessie-updates/contrib i386 Packages
+Des:4 http://httpredir.debian.org jessie-updates/non-free i386 Packages/DiffIndex [736 B]
+Obj http://httpredir.debian.org jessie-updates/contrib Translation-en
+Des:5 http://httpredir.debian.org jessie-updates/main Translation-en/DiffIndex [2.704 B]
+Des:6 http://httpredir.debian.org jessie-updates/non-free Translation-en/DiffIndex [736 B]
+Obj http://httpredir.debian.org jessie/main Sources
+Obj http://httpredir.debian.org jessie/contrib Sources
+Obj http://httpredir.debian.org jessie/non-free Sources
+Obj http://httpredir.debian.org jessie/main amd64 Packages
+Obj http://httpredir.debian.org jessie/contrib amd64 Packages
+Obj http://httpredir.debian.org jessie/non-free amd64 Packages
+Obj http://httpredir.debian.org jessie/main i386 Packages
+Obj http://httpredir.debian.org jessie/contrib i386 Packages
+Obj http://httpredir.debian.org jessie/non-free i386 Packages
+Obj http://httpredir.debian.org jessie/contrib Translation-en
+Obj http://httpredir.debian.org jessie/main Translation-es
+Obj http://httpredir.debian.org jessie/main Translation-en
+Obj http://httpredir.debian.org jessie/non-free Translation-en
+Descargados 19,7 kB en 13s (1.503 B/s)
+Leyendo lista de paquetes... Hecho
+#+end_src
+
+#+begin_src sh 
+[11:43:51(root@debian)/home/godo/Descargas]# apt-get upgrade
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias
+Leyendo la información de estado... Hecho
+Calculando la actualización... Listo
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 0 no actualizados.
+#+end_src
+
+#+begin_src sh
+[11:43:57(root@debian)/home/godo/Descargas]# apt-get clean
+#+end_src
+
+A continuación, os dejo una captura de mi escritorio mostrando a Teamviewer justo después de arrancarlo.
+
+#+begin_export html
+<figure style="display: block; margin: 0 auto; text-align: center;">
+<img width="640" height="471" border="0" align="center" hspace="10" vspace="10" src="/static/2017/teamviewer-en-debian.jpg"
+ alt="Teamviewer en Debian" />
+</figure>
+#+end_export
+
+¡Espero que os sea útil!
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Utilizando_Teamviewer_en_Debian][Dejar comentario]].

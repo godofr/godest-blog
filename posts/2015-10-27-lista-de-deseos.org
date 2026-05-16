@@ -1,0 +1,24 @@
+#+title: Lista de deseos
+#+date: <2015-10-27 23:12>
+#+description: 
+#+filetags: Juegos-Deportes Libros Software
+
+Pongo a continuación una pequeña lista de deseos que, como todo buen deseo que se precie, pretendo conseguir :-)
+
+El orden no indica preferencia, más bien antigüedad en la lista (el último es el más antiguo, voy agregando al principio).
+
+#+begin_quote
+- Cartera: en concreto [[http://bellroy.com/wallets/coin-fold-wallet?color=tamarillo][esta]].
+
+- Libro: ¡DESPERTAD AL DIPLODOCUS!: UNA CONSPIRACION EDUCATIVA PARA TRANSFORMAR LA ESCUELA Y TODO LO DEMAS (En papel). JOSE ANTONIO MARINA , ARIEL, 2015. ISBN: 9788434422773. Conseguido el 15 de enero de 2016 . ¡Muchas gracias, Kader!
+
+- Libro: EL INVERSOR INTELIGENTE (En papel). BENJAMIN GRAHAM DEUSTO S.A. EDICIONES, 2007. ISBN: 9788423425174.
+
+- Libro: LA EDUCACION DEL TALENTO (En papel). JOSE ANTONIO MARINA, ARIEL, 2010. ISBN: 9788434469334.
+
+- Libro: AUDAZ, PRODUCTIVO Y FELIZ: UNA GUIA PARA CONSEGUIR OBJETIVOS INCREIBLES Y DOMINAR TU VIDA PERSONAL Y PROFESIONAL (En papel). ROBIN SHARMA, CONECTA, 2015. ISBN: 9788416029563.
+
+- Libro: DOS AÑOS, OCHO MESES Y VEINTIOCHO NOCHES (En papel). SALMAN RUSHDIE, SEIX BARRAL, 2015. ISBN: 9788432225215
+#+end_quote
+
+¡Gracias!

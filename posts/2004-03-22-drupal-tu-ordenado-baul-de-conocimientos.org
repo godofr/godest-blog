@@ -1,0 +1,32 @@
+#+title: Drupal: tu ordenado baúl de conocimientos
+#+date: <2004-03-22 23:20>
+#+description: 
+#+filetags: blog
+
+Quiero dedicar esta historia a describir las dos grandes piedras en las que se fundamenta esta bitácora.
+
+La primera de estas piedras es la que ha puesto a mi disposición [[http://bitacoras.com/][bitácoras.com]]. Gracias al espacio de disco prestado en su servidor de forma desinteresada, a las herramientas tecnológicas de las que está dotado el mismo ([[http://www.php.net/][php]] y servidor [[http://www.mysql.com/][mysql]]), a las herramientas administrativas que han puesto a mi disposición y, sobre todo, a su amable atención y dedicación, esta pequeña isla en Internet ofrecía un hábitat propicio para mi alojamiento.
+
+La segunda de las piedras en la que se fundamenta esta bitácora es el "gestor de conocimiento" llamado: [[http://drupal.org/][Drupal]].
+
+A modo de resumen traduciré la breve presentación que de Drupal podéis encontrar en su página web:
+
+"Drupal, un proyecto de código abierto, es un sistema de gestión de contenidos utilizado para construir "sitios" web dinámicos. Ofrece un gran rango de prestaciones y servicios, incluyendo: administración de usuarios, flujo de publicación, foros de discusión, adición de noticias, funcionalidades de clasificación de contenidos utilizando vocabularios "controlados" y compartición de contenidos utilizando el estándar XML para su difusión. Equipado con una poderosa mezcla de prestaciones y capacidad de adaptación, Drupal puede soportar un rango diverso de proyectos web: desde weblogs personales hasta grandes sitios comunitarios".
+
+Pensaba entrar en detalle en la descripción de cada una de estas funcionalidades con las que cuenta este maravilloso gestor de contenidos, pero creo que es mejor indicaros a los interesados algunos de los sitios disponibles en Internet que hacen uso de ella para que, visitándolos, os hagáis una idea de lo hasta ahora comentado. En breve iré añadiendo historias a esta bitácora donde iré describiendo con mayor detalle cada uno de los elementos de esta útil herramienta.
+
+Sitios web basados en Drupal son:
+
+ - [[http://www.badopi.org/][Badopi]]
+ - [[http://www.debianplanet.org/][Debian Planet]]
+ - [[http://www.jabberes.org/][JabberES]]
+ - [[http://www.linuxjournal.com/][Linux Gazette]]
+ - [[http://tkabber.jabber.ru/][TKabber]]
+
+En un futuro cercano intentaré publicar: "Como instalar una bitácora en Linux (Debian)", "Como instalar una bitácora en Windows (2000 ó XP)", "Drupal: entrando en detalle".
+
+Esperando que este apunte os haya sido útil...
+
+Salud.
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Drupal__tu_ordenado_baul_de_conocimientos][Dejar comentario]].
