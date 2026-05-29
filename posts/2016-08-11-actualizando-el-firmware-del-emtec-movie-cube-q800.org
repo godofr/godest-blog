@@ -18,14 +18,21 @@ Hace ya unos cuantos años, probablemente rondando los 10, compramos un “disco
    #+end_export
 *Problema* Sin embargo, hace unos meses comenzó a tener este problema: al arrancar, la luz azul del panel frontal parpadea incesantemente y es imposible ver en el televisor la pantalla del menú, o bien porque se muestra una en negro todo el rato o bien, como nos ha pasado a nosotros, porque aparece la pantalla del menú dos segundos y desaparece mostrándose una en negro... al tiempo vuelve a repetirse ese aparecer/desaparecer... y así.
 
-*Solución* Tras echar un rato esta tarde de [[https://www.google.es/search?q=emtec+movie+cube+no+muestra+men%C3%BA&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=cJ6rV533EIPY8gfH9ofgAw#q=emtec+movie+cube+no+muestra+men%C3%BA+luz+azul+parpadea][búsqueda en Google]] y lectura de foros, he encontrado la solución leyendo [[http://www.mundodvd.com/emtec-movie-cube-q800-55009/54/#post2514752][éste]] hilo bastante extenso. Y aunque distintos usuarios daban diferentes respuestas, a mí la que me ha servido es la que consistía en actualizar el firmware. Sin embargo, el fabricante ya ha descatalogado estos productos y los ha retirado de su página web, por lo que no era capaz de conseguirlo. Aunque le he escrito un [[https://twitter.com/godofdez/status/763437745519853568][tweet]], de momento no he recibido respuesta. Pero, ¡oh casualidades de la vida!, justo cuando iba a desistir, me voy a la última página del citado foro y [[http://www.mundodvd.com/emtec-movie-cube-q800-55009/56/#post3843378][encuentro un post]] de otro sufridor que acababa de recorrer, hace tan solo unos días, el camino que yo intentaba, y en este caso ya había recibido el firmware del servicio técnico, dejando un enlace para su descarga. He descargado los archivos. He comprobado que tenían buena pinta, parecían ser los correctos (comparándolos con algunas capturas que había visto antes y lo que decían muchos usuarios que contenían), y me he arriesgado a actualizar siguiendo el procedimiento: Con el dispositivo conectado al televisor y seleccionando “su canal” para ver lo que va saliendo (barra de progreso), y con el pendrive insertado (con sus archivos correspondientes -- yo he utilizado la versión *Firmware release 924 for model V6.1.1262 (only)* porque mi dispositivo es muy antiguo y sospechaba que la V6.1, ¡y no la V6.2!, era la que le venía bien. No obstante, por lo que he leído si no hubiera sido así se hubiera quejado y no habría permitido la actualización. Así que todo es probar):
+*Solución* Tras echar un rato esta tarde de [[https://www.google.es/search?q=emtec+movie+cube+no+muestra+men%C3%BA&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=cJ6rV533EIPY8gfH9ofgAw#q=emtec+movie+cube+no+muestra+men%C3%BA+luz+azul+parpadea][búsqueda en Google]] y lectura de foros, he encontrado la solución leyendo [[http://www.mundodvd.com/emtec-movie-cube-q800-55009/54/#post2514752][éste]] hilo bastante extenso. Y aunque distintos usuarios daban diferentes respuestas, a mí la que me ha servido es la que consistía en actualizar el firmware.
+Sin embargo, el fabricante ya ha descatalogado estos productos y los ha retirado de su página web, por lo que no era capaz de conseguirlo. Aunque le he escrito un [[https://twitter.com/godofdez/status/763437745519853568][tweet]], de momento no he recibido respuesta. Pero, ¡oh casualidades de la vida!, justo cuando iba a desistir, me voy a la última página del citado foro y [[http://www.mundodvd.com/emtec-movie-cube-q800-55009/56/#post3843378][encuentro un post]] de otro sufridor que acababa de recorrer, hace tan solo unos días, el camino que yo intentaba, y en este caso ya había recibido el firmware del servicio técnico, dejando un enlace para su descarga.
+He descargado los archivos. He comprobado que tenían buena pinta, parecían ser los correctos (comparándolos con algunas capturas que había visto antes y lo que decían muchos usuarios que contenían), y me he arriesgado a actualizar siguiendo el procedimiento: Con el dispositivo conectado al televisor y seleccionando “su canal” para ver lo que va saliendo (barra de progreso), y con el pendrive insertado (con sus archivos correspondientes -- yo he utilizado la versión *Firmware release 924 for model V6.1.1262 (only)* porque mi dispositivo es muy antiguo y sospechaba que la V6.1, ¡y no la V6.2!, era la que le venía bien. No obstante, por lo que he leído si no hubiera sido así se hubiera quejado y no habría permitido la actualización. Así que todo es probar):
 
 #+BEGIN_QUOTE
   1º Desconectas la corriente separando la toma del aparato.
+
   2º Mantienes sin soltar el botón frontal de encendido (el negro que hay en el panel donde se enciende la luz azul y la roja).
+
   3º Sin soltar, cuentas hasta diez y le conectas la clavija de la alimentación.
+
   4º Sin soltar, cuentas hasta diez y aprietas el interruptor rojo de la parte trasera.
+
   5º Sin soltar, esperas que se encienda la luz roja (la que normalmente se pone cuando grababas) o, si estás mirando la pantalla del televisor verás que aparece una barra verde de progreso de la actualización sobre un fondo azul... *ahora ya puedes soltar*.
+
   6º Esperas entre unos cinco y diez minutos y... ¡listo! El mismo se apaga y se enciende, llegando a mostrar el menú de configuración inicial si todo ha ido bien.
 #+END_QUOTE
 
@@ -38,7 +45,11 @@ Esta es la pinta que tiene el nuevo interfaz:
   Y aquí debajo podéis encontrar el .7z con el firmware.
 #+END_QUOTE
 
-Espero que os sea útil. Y agradezco comentarios contándome vuestra experiencia. P.D.: el firmware que yo he utilizado es el que aparece en el primer archivo adjunto a continuciaón (Q800 Firmwares.7z), un lector - ver comentarios - ha utilizado otro firmware que le ha funcionado y amablemente lo ha compartido, lo añado también como fichero adjunto directamente descargable (firmware_release_751_for_model_V6.2.1262_only.zip), pero ¡OJO! yo aún no he llegado a probarlo.
+Espero que os sea útil.
+
+Y agradezco comentarios contándome vuestra experiencia.
+
+P.D.: el firmware que yo he utilizado es el que aparece en el primer archivo adjunto a continuciaón (Q800 Firmwares.7z), un lector - ver comentarios - ha utilizado otro firmware que le ha funcionado y amablemente lo ha compartido, lo añado también como fichero adjunto directamente descargable (firmware_release_751_for_model_V6.2.1262_only.zip), pero ¡OJO! yo aún no he llegado a probarlo.
 
 ** Archivos adjuntos
 - [[https://godest.vivencias.net/static/files/Q800 Firmwares.7z][Q800 Firmwares.7z]]
