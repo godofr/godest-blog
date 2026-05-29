@@ -1,0 +1,20 @@
+#+title: Conjunto Barroco de San Sebastián
+#+date: <2007-01-22 12:37>
+#+author: el radioplanner
+#+description: Descripción: Concierto del Conjunto Barroco de San Sebastián dentro de las actividades de la Universidad de Sevilla por la festividad de Santo Tomás. Dirige Gotzon Arrizabalaga y actuará con el Conjunto el contratenor David Azurza. El concierto incluye obras de Vivaldi, tanto instrumentales (Concierto en Re Mayor RV204 y Concierto para 2 violines, laúd y bajo continuo RV93) como vocales (Stabat Mater y el magnífico Salmo "Nisi Dominus"). Será en la Iglesia de la Anunciación (Plaza de la Encarnación, Sevilla), y la entrada es LIBRE HASTA COMPLETAR AFORO, así que hay que estar tempranito allí!!!!
+#+filetags: 
+#+options: _:nil
+#+nid: 195
+
+Descripción:
+Concierto del Conjunto Barroco de San Sebastián dentro de las actividades de la Universidad de Sevilla por la festividad de Santo Tomás.
+Dirige Gotzon Arrizabalaga y actuará con el Conjunto el contratenor David Azurza.
+El concierto incluye obras de Vivaldi, tanto instrumentales (Concierto en Re Mayor RV204 y Concierto para 2 violines, laúd y bajo continuo RV93) como vocales (Stabat Mater y el magnífico Salmo "Nisi Dominus").
+Será en la Iglesia de la Anunciación (Plaza de la Encarnación, Sevilla), y la entrada es LIBRE HASTA COMPLETAR AFORO, así que hay que estar tempranito allí!!!!
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Conjunto%20Barroco%20de%20San%20Sebasti%C3%A1n][Dejar comentario]].
+

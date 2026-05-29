@@ -1,0 +1,101 @@
+#+title: De Windows 10 a los “Proactive Firewalls”
+#+date: <2015-09-30 18:18>
+#+author: Godofredo Fdez.
+#+description: En el anterior artículo dejábamos el tema preocupados por la información que, algunos queriendo y casi todos sin querer, acabamos cediendo a terceros. Y si a…
+#+filetags: LinkedIn Seguridad Software
+#+options: _:nil
+#+nid: 539
+
+En el [[http://godest.vivencias.net/content/windows-10-%C2%BFqui%C3%A9n-es-el-producto][anterior artículo]] dejábamos el tema preocupados por la información que, algunos queriendo y casi todos sin querer, acabamos cediendo a terceros. Y si a muchos ya os sorprendía la cantidad y tipo de información que “compartimos” alegremente: “/historial de búsqueda en los navegadores, lugares físicos y lógicos que visitamos, análisis de nuestros correos, historial de llamadas... ¡”nuestra propia voz”!/”, cuando de verdad vais a alucinar es cuando os preocupéis de todos aquellos programas que, una vez instalados en vuestras máquinas, abren conexiones salientes (desde vuestra máquina hacia Internet) buscando algún servidor donde “obtener/verter información”. Y actúan “en blanco” (como podría ser aquella necesaria para tener accesos a actualizaciones de seguridad) o “en negro” (como podría ser aquella que nos roba un “malware” que escanea nuestros documentos o pulsaciones de teclas o “pantallazos” cuando accedemos a nuestra banca por Internet).
+
+*¿Qué podemos hacer para intentar detectar la información que escapa, que sale, de nuestra máquina?*
+
+Pues no es nada fácil. Son tantas las rendijas que cerrar y técnicas para evitarlas que resolver el problema de forma total es imposible.
+
+Si me leéis habitualmente estaréis acostumbrados a vivir con el riesgo. Y a gestionarlo. Si de verdad lo has interiorizado estarás relajado y disfrutando del viaje ;-). Significa esto que no hemos de hacer nada... hombre no, tampoco es eso.
+
+[[http://godest.vivencias.net/content/%C2%BFhay-alguien-ah%C3%AD][Decíamos aquí que todo comienza con la monitorización]]. Monitorizar es como ir encendiendo luces en un gran edificio donde habita el miedo aliado con la oscuridad.
+
+Pero también hay que actuar. Hoy os presentaré a nuestros amigos: los “*proactive firewalls*”.
+
+El concepto de firewall/cortafuegos surgió para aislar la “conectividad total” entre dos mundos: el interno (que supuestamente nos pertenece y queremos controlar) y el externo (Internet en toda su anchura).
+
+Así, los firewalls corporativos se sitúan justo en la puerta (o puertas) de conexión de la organización a Internet, emanando de aquí el concepto de perímetro (delimitan lo interno de lo externo) que acaba refinando su nombre: *firewalls perimetrales*. Su objetivo, grosso modo, era limitar las conexiones que desde el exterior se podían realizar hacia el interior: qué máquinas y qué “servicios” dentro de estas eran alcanzables; y así evitar el descubrimiento de la topología, del mapa de red/servicios, que facilitaría mucho el ataque definitivo y mortal.
+
+En el mundo personal recuerdo cuando los sistemas operativos de Microsoft venían sin firewall y cualquier PC conectado a Internet era pasto de las llamas: esos fatídicos días en los que un PC recién instalado, todo limpito él, se conectaba a Internet con un modem, recibía una IP pública y... ¡Tachán! En menos de 30 segundos te habían escaneado, descubierto una vulnerabilidad y estabas infectado... ¡Tiempo perdido! ¡A reinstalar! No recuerdo ahora mismo si fue el blaster, el sasser o gusanos similares los que sufrí en mis propias carnes, personal y profesionalmente (redes corporativas enteras “tumbadas” porque no podían resistir el volumen de tráfico ocasionado por la “replicación incesante”).
+
+*Hoy en día la necesidad de un firewall en todo tipo de topologías y sistemas es irrenunciable*. Lo flipo cuando aún escucho a “Tarzanes desnudos” clamando contra esto. En fin, me tranquilizo cuando lo comparo con los que claman contra las vacunas, pero este es otro tema. Doctores tiene la iglesia.
+
+*Entonces, ¿vale cualquier firewall? ¿Basta con parar las conexiones entrantes?*
+
+Uuuummm, si habéis estado atentos, si leéis a conciencia, ya tenéis la respuesta...
+
+Piensa...
+
+Piensa...
+
+Sigue pensando...
+
+¡NO! ¡NO! ¡NO! ...Un NO como un PIANO ;-).
+
+Un firewall debe vigilar tanto lo que entra (¡por supuesto!) como lo que sale: lo que nos roban, lo que compartimos sin querer...
+
+*Y los firewalls que hacen esto, ¿cómo se llaman?* Pues se llaman de muchas formas, o más bien va implícito en muchos nombres, pero a mí la que más me gusta es: “*proactive firewalls*”. Proactivo implica anticipación. Y veréis a continuación por qué este concepto está justificadísimo en el nombre.
+
+Las tripas de estos “proactive firewalls” no son muy diferentes a las tripas de los tradicionales, de hecho, la tecnología básica es la misma: monitorizan e interceptan. Es decir, un firewall tradicional también serviría para filtrar conexiones salientes, pero tendrías que ir haciéndolo a mano, cosa que no es ni abordable ni escalable. El refinamiento, la disrupción que aportan los “proactive firewall” es esta: están vigilando todas las conexiones, entrantes y salientes, y cuando detectan una saliente “te preguntan” (esto es configurable, a mí me gusta que me pregunten) si quieres permitirla o no. Así, un sólo click configura una regla: permite o deniega.
+
+Ejemplos:
+
+1.- El Windows Update quiere actualizar el sistema. Se detecta la conexión saliente. Me avisa. Estoy trabajando en algo que he de entregar dentro de una hora y no quiero ni siquiera que se descargue la actualización. Bloqueo.
+
+2.- La aplicación Mozilla Firefox quiere conectarse a Internet para... Acepto.
+
+3.- El Internet Explorer quiere conectarse a Internet para... Bloqueo (nunca uso Internet Explorer, así que lo bloqueo para evitar que sea utilizado por “un proceso” oculto que pueda sacar información, o si en un despiste mío lo abro e intento conectarme a Internet con tan mala suerte que el servidor al que me conecto está comprometido y explota una vulnerabilidad conocida de Internet Explorer para infectarme). Podéis cambiar “Internet Explorer” por cualquier otra aplicación. No os quedéis con el dato concreto sino con la idea general.
+
+4.- La aplicación X quiere conectarse a Internet y... ¿la aplicación X? ¿Y esto? ¿Yo instalé esta aplicación? Busco en Google... ¡jolín, ya me han infectado! ;-). Bloqueo y muy probablemente “acabe reinstalando” :-(.
+
+OK, Ok, me has convencido pero, *¿cómo lo hago?*
+
+He probado muchos productos y el que más me gusta es este “[[http://www.eset.es/particulares/productos/smart-security/][Eset Smart Security]]” (recuerda que todo lo que escribo aquí es a [[http://godest.vivencias.net/en/node/479][título personal]], no tengo comisión ni presión ni decoro...:sick:) por lo visual y, sobre todo, por lo poco que carga al sistema base.
+
+Cuando detecta algo nos informa. Por ejemplo, si actualizo el [[https://www.piriform.com/ccleaner][CCleaner]] hay una conexión a Internet y una modificación del ejecutable:
+
+Intento de conexión:
+
+#+begin_export html
+<a href="/static/img/eset-01.png" rel="lightbox"><img align="middle" alt="Eset Smart Security mostrando intento de conexión" border="0" class="image image-preview " height="409" width="452"  src="/static/img/eset-01.png" title="Eset Smart Security mostrando intento de conexión" hspace="10" vspace="10"  /></a>
+#+end_export
+
+Aplicación modificada (por una actualización en este caso, lo sabemos porque lo hemos provocado nosotros o una autoactualización -previamente hemos autorizado que se conecte a Internet para descargarla-, pero pensad que podría haber sido modificada por un virus, lo que nos alertaría, ¿no?):
+
+#+begin_export html
+<a href="/static/img/eset-02.png" rel="lightbox"><img align="middle" alt="Eset Smart Security mostrando aplicación modificada" border="0" class="image image-preview " height="347" width="452"  src="/static/img/eset-02.png" title="Eset Smart Security mostrando aplicación modificada" hspace="10" vspace="10"  /></a>
+#+end_export
+
+Y además permite monitorizar todo el tráfico saliente en tiempo real, conociendo qué aplicación lo provoca (zoom sobre lo que ya vimos [[http://godest.vivencias.net/content/%C2%BFhay-alguien-ah%C3%AD][aquí]]):
+
+#+begin_export html
+<a href="/static/img/eset-03.png" rel="lightbox"><img align="middle" alt="Eset Smart Security mostrando tráfico en tiempo real" border="0" class="image image-preview " height="441" width="567"  src="/static/img/eset-03.png" title="Eset Smart Security mostrando tráfico en tiempo real" hspace="10" vspace="10"  /></a>
+#+end_export
+
+También he visto esta otra aplicación, WFN (Windows Firewall Notifier), que “se integra con el firewall de Windows tradicional” y lo convierte en un “proactive firewall”. No la he probado pero tiene muy buena pinta: [[http://wfn.codeplex.com/]]
+
+Sobre los “proactive firewalls” se construyen conceptos más avanzados: next generation firewalls, applications firewalls, etc., que ya iremos abordando desde un punto de vista “más profesional”.
+
+Y para ir terminando, *recuerda que no existe la seguridad 100%*. Que todo lo dicho aquí puede ser “bypassed”/puenteado con una programación suficientemente profunda y hábil. Que si van a por ti estás muerto. Pero mientras sigamos siendo “hombres-masa” tomar estas precauciones nos ayudará a estar ligeramente más seguros o, lo que es lo mismo, disminuir el riesgo.
+
+¿De verdad que vas a seguir sin tener un “proactive firewall”? ¿Ya lo tienes? ¿Tienes dudas? ¿Crees que he olvidado algo? ¿Me ayudas a aprender más? Déjame tu comentario, por favor.
+
+¡Gracias!
+
+*23-08-2021 NOTA:* últimamente el software de firewall proactivo que estoy utilizando en mi ordenador con Windows 10 es la versión free de este: http://www.sphinx-soft.com/Vista/order.html. Junto con el antivirus del propio Windows 10, también gratis, forman una pareja "suficientemente perfecta" para asegurar el sistema.
+
+#+begin_example
+
+P.D.: ahora puedes suscribirte a mi blog para que te lleguen los artículos puntualmente a tu correo: pulsa en la palabra "email" que está en el apartado "Suscribir" de la columna derecha y sigue el proceso: 1) introduce tu correo y resuelve el captcha, 2) pulsa sobre el enlace de validación/activación que vas a recibir en la dirección de email introducida.
+
+#+end_example
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=De%20Windows%2010%20a%20los%20%E2%80%9CProactive%20Firewalls%E2%80%9D][Dejar comentario]].
+

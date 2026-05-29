@@ -1,0 +1,69 @@
+#+title: Actividad docente, tutorías y datos de contacto
+#+date: <2011-09-24 14:17>
+#+author: Godofredo Fdez.
+#+description: ENLACE INTERESANTE : ofertas de trabajo y becas . Profesor asociado a tiempo parcial, adscrito al Departamento de Ingeniería Telemática ( Escuela Superior de…
+#+filetags: Presentación
+#+options: _:nil
+#+nid: 430
+
+*ENLACE INTERESANTE*: [[http://trajano.us.es/~jvt/ofertas.html][ofertas de trabajo y becas]].
+
+Profesor asociado a tiempo parcial, adscrito al [[http://trajano.us.es][Departamento de Ingeniería Telemática]] ([[http://www.esi.us.es][Escuela Superior de Ingenieros]]) de la [[http://www.us.es][Universidad de Sevilla]].
+
+*Durante el curso actual estoy en situación de excedencia*, aunque impartiré el módulo de "Seguridad en Redes de Datos" del "[[http://trajano.us.es/seguridadtic/][Máster en Seguridad TIC]]" los días: 7, 13 y 14 de noviembre.
+
+La información que sigue corresponde a mi último curso impartido.
+
+*Próxima tutoría online: 24-01-2012 a las 20:30 horas.
+Duración: 45 minutos.
+Instrucciones para asistir: [[http://bit.ly/vmfuNc][pulsar aquí]]*
+
+Aquí puedes encontrar el código de ejemplo visto en la última clase de teoría de Fundamentos de Programación I:
+http://godest.vivencias.net/content/descomposici%C3%B3n-de-un-fichero-c-en-varios-ficheros
+
+*Diponible material de la última tutoría online: 24-01-2012*.
+Para descargarlo: [[http://godest.vivencias.net/20120124-tutoria.7z][pulsar aquí]].
+
+** Aún no está programada la siguiente tutoría online **
+Hazme llegar tus dudas para dotarla de contenido interesante. Puedes utilizar la dirección de correo electrónico que aparece en la columna de la derecha o el [[/contact][formulario de contacto]] de este sitio web.
+Permanece atento a esta página o al [[http://twitter.com/godofdez][twitter]].
+
+Asignaturas que imparto durante el curso /2013-2014/:
+Primer cuatrimestre: *Fundamentos de Programación I* Horario: miércoles y viernes de 17:10 a 19:00.
+Teoría: Aula 208.
+Prácticas y evaluaciones: Centro de Cálculo.
+
+Segundo cuatrimestre: *Seguridad* Horario: lunes y martes de 16:40 a 17:40.
+Lugar: aún por determinar.
+
+** TUTORÍAS* durante el primer cuatrimestre ***
+
+*Preferiblemente*, puedes escribirme a la dirección de correo electrónico: *godo en trajano.us.es* para aclarar tantas dudas como tengas. Creo que utilizando esta vía evitamos pérdidas de tiempo (y quizá malentendidos: el escribir obliga a reflexionar, o debería).
+
+No obstante, el horario y lugar de las tutorías es:
+
+*Horario: miércoles y viernes, desde las 19:00 hasta las 21:00 horas*.
+Lugar: entreplanta 2 - esquina noroeste - despacho 13.
+
+** TUTORÍAS* durante el segundo cuatrimestre ***
+
+La dinámica es la misma que la descrita en el primer cuatrimestre.
+
+*Horario: lunes y martes, desde las 18:00 hasta las 20:00 horas*.
+Lugar: entreplanta 2 - esquina noroeste - despacho 13.
+
+*Por favor*, concierta conmigo la cita ya sea a la entrada o a la salida de clase, o a través del correo electrónico anteriormente mencionado.
+
+* Los datos de contacto los puedes encontrar en la columna derecha.
+* Los apuntes de "Fundamentos de la Programación I" están [[http://godest.vivencias.net/sites/godest.vivencias.net/files/Temario.pdf][aquí]].
+
+* Puedes practicar con una máquina virtual siguiendo [[http://ait01.us.es/virtual/MaqVirtualexterno.htm][estas intrucciones]].
+
+* [[/taxonomy/term/16][Aquí]] puedes ver un listado de mis artículos en este blog sobre programación.
+* Y [[/category/artículos/seguridad][aquí]] puedes ver un listado de mis artículos sobre seguridad de la información.
+
+* Para el "Laboratorio de Comunicación de Datos" os recomiendo [[http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html][esta guía]] para la parte que se realiza basándose en lenguaje C.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Actividad%20docente%2C%20tutor%C3%ADas%20y%20datos%20de%20contacto][Dejar comentario]].
+

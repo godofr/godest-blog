@@ -1,0 +1,13 @@
+#+title: Tuxi
+#+date: <2005-07-17 23:11>
+#+author: Godofredo Fdez.
+#+description: Este es tuxi, gatito que vive, cuando nos dejamos hacerlo mutuamente, conmigo. Aunque en la foto parece serio es un cariñoso juguetón.
+#+filetags: Mascotas
+#+options: _:nil
+#+nid: 24
+
+Este es tuxi, gatito que vive, cuando nos dejamos hacerlo mutuamente, conmigo. Aunque en la foto parece serio es un cariñoso juguetón.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Tuxi][Dejar comentario]].
+

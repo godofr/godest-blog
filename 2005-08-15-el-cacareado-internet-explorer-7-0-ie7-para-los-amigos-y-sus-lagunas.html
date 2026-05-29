@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Antes que nada he de decir que este artículo está inspirado en este otro: diez razones para no confiar en internet explorer 7 , y sobre todo en estos: La verdadera razón por la que Internet Explorer 7 no soportará CSS2 -- Update on Standards and CSS in IE7 . El porqué de escribir este artículo: quiero transmitir el poco respeto que por los estándares muestra Microsoft , a mi entender: el abuso de la posición dominante. Por ejemplo, esta página usa hojas de estilo (css) para modelar su presentación. ¿Qué son estas hojas de estilo ? Son documentos, plantillas, que le dicen a los navegadores como mostrar cada uno de los elementos que aparecen en la página. Aplicadas a lo que estáis viendo: se construye el diseño de la página repartida en tres columnas, dos laterales (donde aparece información secundaria: enlaces, datos, etc.) y una central más ancha (donde aparece la información principal), además se definen cada uno de esos pequeños bloques de información, los colores, los tipos de letra, etc. Por eso esta página se ve mejor con navegadores que respetan estos estándares (como el aconsejado en la columna izquierda: firefox ) que con Internet Explorer.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>El cacareado Internet Explorer 7.0 (IE7 para los amigos)... y sus lagunas.</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">15 ago. 2005</div><h1 class="post-title"><a href="https://godest.vivencias.net/2005-08-15-el-cacareado-internet-explorer-7-0-ie7-para-los-amigos-y-sus-lagunas.html">El cacareado Internet Explorer 7.0 (IE7 para los amigos)... y sus lagunas.</a></h1>
+<p>
+Antes que nada he de decir que este artículo está inspirado en este otro: <a href="http://www.sahw.com/wp/archivos/2005/08/12/diez-razones-para-no-confiar-en-internet-explorer-7/">diez razones para no confiar en internet explorer 7</a>, y sobre todo en estos: <a href="http://barrapunto.com/article.pl?sid=05/08/11/1010242">La verdadera razón por la que Internet Explorer 7 no soportará CSS2</a> &#x2013; <a href="http://developers.slashdot.org/article.pl?sid=05/08/01/1147212&amp;tid=113&amp;tid=8">Update on Standards and CSS in IE7</a>. El porqué de escribir este artículo: quiero transmitir <b>el poco respeto que por los estándares muestra Microsoft</b>, a mi entender: el abuso de la posición dominante. Por ejemplo, esta página usa <a href="http://www.w3.org/Style/CSS/">hojas de estilo (css)</a> para modelar su presentación. ¿Qué son estas <i>hojas de estilo</i>? Son documentos, plantillas, que le dicen a los navegadores como mostrar cada uno de los elementos que aparecen en la página. Aplicadas a lo que estáis viendo: se construye el diseño de la página repartida en tres columnas, dos laterales (donde aparece información secundaria: enlaces, datos, etc.) y una central más ancha (donde aparece la información principal), además se definen cada uno de esos pequeños bloques de información, los colores, los tipos de letra, etc. Por eso esta página se ve mejor con navegadores que respetan estos estándares (como el aconsejado en la columna izquierda: <a href="http://www.mozilla.org/en-US/">firefox</a>) que con Internet Explorer. Pues como decía, la siguiente versión del navegador de Microsoft no soportará el estándar definido en CSS2, por lo que muchos creadores de páginas web se verán abocados a la siguiente disyuntiva: creo páginas para internet explorer o creo páginas para el resto del mundo (siguiendo los estándares). Probablemente opten por crearlas para internet explorer ya que este navegador viene de serie en todos los windows (otro abuso de posición dominante, bajo mi punto de vista), y la mayoría de personas que se sientan ante un ordenador utilizan este sistema operativo. ¿<a href="http://buscon.rae.es/draeI/SrvltGUIBusUsual?TIPO_HTML=2&amp;LEMA=paradoja">Paradojas</a> de la vida? Los que utilizamos <a href="http://www.debian.org">GNU/Linux</a> desde hace tiempo nos hemos visto más de una vez en este tipo de problemas: encontramos páginas que no podemos ver porque están diseñadas para IE. Si algo ha hecho avanzar a la humanidad son los acuerdos y el respeto de estos. Algunos ejemplos van desde la normalización del diámetro de las roscas de los tornillos hasta la de la forma en que se comunican los ordenadores a través de un cable. La única arma posible para hacer seguir este camino está en las manos de todos: hagamos uso de productos que respeten los estándares y, desde ahí, que cada cual se quede con el que más le aporte (con el tan traído y llevado valor añadido). Así que&#x2026; ¡bienvenidos a <a href="http://www.mozilla.org/en-US/">firefox</a>!
+</p>
+
+<hr>
+
+<p>
+Algunos enlaces para aprender más:
+</p>
+
+<blockquote>
+<ul class="org-ul">
+<li>Organismo de estandarización de la tecnología web:<a href="http://www.w3.org/">w3c</a>.</li>
+<li>Diseño web básico: <a href="http://www.w3.org/MarkUp/#tutorials">tutoriales de html</a> (para conocer el lenguaje en el que se basa la "creación" web).</li>
+<li>Hojas de estilo: <a href="http://www.w3.org/Style/CSS/">css</a>.</li>
+<li>Problemas de IE 7 con las "CSS 2" en el weblog del propio IE: <a href="http://blogs.msdn.com/b/ie/archive/2005/07/29/445242.aspx">Standards and CSS in IE</a>.</li>
+</ul>
+</blockquote>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=El%20cacareado%20Internet%20Explorer%207.0%20%28IE7%20para%20los%20amigos%29...%20y%20sus%20lagunas.">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

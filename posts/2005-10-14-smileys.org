@@ -1,0 +1,13 @@
+#+title: Smileys
+#+date: <2005-10-14 20:34>
+#+author: Godofredo Fdez.
+#+description: Estos son los "smileys" disponibles cuando se dota a drupal del módulo correspondiente: Smileys .
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 63
+
+Estos son los "smileys" disponibles cuando se dota a [[http://www.drupal.org][drupal]] del módulo correspondiente: [[http://drupal.org/project/smileys][Smileys]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Smileys][Dejar comentario]].
+

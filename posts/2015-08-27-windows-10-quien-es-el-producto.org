@@ -1,0 +1,97 @@
+#+title: Windows 10 ¿Quién es el producto?
+#+date: <2015-08-27 18:18>
+#+author: Godofredo Fdez.
+#+description: Llevo desde el 26 de junio probando Windows 10, desde sus versiones “preview” como usuario del “Windows Insider Program”, como ya os comentaba tanto en Twitter…
+#+filetags: Pensamiento Seguridad Software
+#+options: _:nil
+#+nid: 535
+
+Llevo desde el 26 de junio probando Windows 10, desde sus versiones “preview” como usuario del “Windows Insider Program”, como ya os comentaba tanto [[https://twitter.com/godofdez/status/614327646986596353][en Twitter]] como [[https://www.facebook.com/godofredo.fernandez/posts/10205549559911418][en Facebook]], hasta su versión definitiva: 10240 (“Thank you to our Windows Insiders for helping us build Windows 10. If you're a Windows Insider and running build 10240 -- you already have the Windows 10 we are making available today. All you need to do is check Windows Update and make sure you have all the final updates”).
+
+#+begin_export html
+<a href="/static/img/windows10-activado.preview.jpg" rel="lightbox"><img align="middle" alt="Windows10 Activado" border="0" class="image image-preview " height="476" width="595"  src="/static/img/windows10-activado.preview.jpg" title="Windows10 Activado" hspace="10" vspace="10"  /></a>
+#+end_export
+
+He de decir que esta nueva versión de Windows me parece realmente buena, y sigue confirmándose el que para mí es un ciclo de aciertos y errores alternados, que probablemente insinúe el tiempo verdaderamente necesario para “cocinar un buen producto”: Windows XP (bueno), Windows Vista (horrible), Windows 7 (el mejor hasta ahora), Windows 8 (buen intento), Windows 10 (en la tónica de Windows 7 pero con muchas mejoras).
+
+Las mejoras de Windows 10: intuyo que mantiene la estabilidad de Windows 7 (es pronto para asegurarlo del todo), el interfaz gráfico está realmente empotrado en el sistema y, aunque esto no sea una mejora en sí misma creo que ayuda a esta otra: el rendimiento en máquinas “tradicionales”, de las que tiraban bien con un Windows XP, es fantástico. Yo lo he probado en un [[https://www.rrze.fau.de/dienste/hardware/beschaffung/dell_latitude_d430_datasheet.pdf][portátil con 2GB de RAM y procesador Core 2 Duo a 1,2GHz]] y os puedo asegurar que va como iba el XP y mejor que el intento que hice con Windows 7.
+
+Respecto al software, las mejoras que más me han llamado la atención son estas tres:
+
+- El administrador de tareas, que comienza a parecerse al “process explorer” de “Sysinternals”. [[https://www.google.es/search?q=administrador+de+tareas+windows+10&source=lnms&tbm=isch&sa=X&ved=0CAgQ_AUoAmoVChMIiNDnjIzHxwIVAasaCh3m7Qpo&biw=1024&bih=633][Mostrando más información y mejor detallada/ubicada]].
+- La renovación total del “Internet Explorer”, ahora conocido como “Microsoft Edge”, que consigue volar literalmente sobre la web. Muy rápido y con [[http://www.howtogeek.com/222214/11-tips-and-tricks-for-microsoft-edge-on-windows-10/][interesantes herramientas]].
+- La tendencia a hacer del PC del escritorio un móvil, integrando las mismas apps que suelen poseer estos, permitiendo que sigan ejecutándose de forma minimizada, como lo hacen en los móviles, mostrándote noticias, el tiempo, fotos, etc. Pero esto no son más que detalles concretos, lo verdaderamente importante es la tendencia de fondo, la confluencia de entornos -- datos -- comportamientos.
+
+Y este tercer punto me lleva directamente a comentar [[http://www.forospyware.com/t512007.html][la gran crítica que está recibiendo: el respeto a la privacidad]] (espero que no la reciba de los mismos que alaban a otros que también lo hacen ;-)).
+
+¿Qué se esconde detrás del “regalo de Windows”? Parece que cada vez hay más voces clamando lo que ya leí en su día no recuerdo dónde: en la actual época el precio de un producto no es el dinero que has de pagar por él sino tú mismo. Como en toda gran celada, Microsoft sacrifica una fuente de ingresos monetarios, contantes y sonantes, para ganar en información que tiene sobre nosotros, y todo el mundo de posibilidades que “ésta parece abrir”.
+
+Nos hemos convertido en un producto básico pero con un gran potencial. Su misión es descubrir todo lo que necesitamos, ponérnoslo delante con un bonito envoltorio y empujarnos a comprar: desde un viaje a unos calzoncillos, desde un pendiente a una entrada de cine...
+
+...Y a ser posible en su propia tienda, que dotarán de productos exclusivos [[http://www.enriquedans.com/2015/04/la-proxima-guerra-de-la-musica.html][como ya hacen otros]].
+
+Ejemplo integrado en el sistema: cuando te envían un archivo cuyo programa para abrirlo no tienes instalado, y haces click sobre él, ¿dónde crees que vas? ¿A la web en busca de un programa sugerido como hacíamos hasta ahora...? ¡No no no! ...A su magnífica “Store de Apps”.
+
+Así que, un último consejo antes de despedirme: vender tu información abre [[http://www.enriquedans.com/2015/08/asistentes-virtuales-inteligentes-la-proxima-frontera.html][un mundo de posibilidades y sugerencias]] (tanto es así que Cortana, el asistente personal “inteligente”, no funcionará si no lo haces). La configuración por defecto del sistema cuando se está instalando pone todos los cebos posibles tanto visuales como en lenguaje de persuasión para que así sea. Está en ti decidir si quieres “venderte” o no. Si estás en este último caso "no instales a lo loco (siguiente... siguiente... siguiente...)". Piensa cada paso, entra en las opciones avanzadas, lee y selecciona.
+
+No obstante, un servidor cree que esta tendencia es imparable. Ya ocurre en los Smartphone: los Androids nos vendemos a Google, los iPhones a Apple... Microsoft, que hoy por hoy no tiene chance en esta guerra pues [[http://www.gartner.com/newsroom/id/3115517][“le han robado” el mercado de los móviles]] (Android: 83.8%; iOS: 12.2%; Windows: 2.8%), ¿cómo podía obtener esa información tan ansiada (historial de búsqueda en los navegadores, lugares físicos y lógicos que visitamos, análisis de nuestros correos, historial de llamadas... ¡”nuestra propia voz”!)? La respuesta la tenían sobre la mesa: explotar los desktops, donde aún tienen un “99% de cuota”.
+
+¡Y nuestros gobernantes protegiéndonos de las cookies con ese maldito banner! ...Ay señor, señor...
+
+¡Trepidante batalla!
+
+(...to be continued)
+
+P.D.: yo también ansío escuchar tu voz ;-) ¿Qué piensas? ¿Tienes una reflexión, una recomendación técnica, un...? Déjame tu mejor comentario.
+
+#+begin_example
+
+P.D.: ahora puedes suscribirte a mi blog para que te lleguen los artículos puntualmente a tu correo: pulsa en la palabra "email" que está en el apartado "Suscribir" de la columna derecha y sigue el proceso: 1) introduce tu correo y resuelve el captcha, 2) pulsa sobre el enlace de validación/activación que vas a recibir en la dirección de email introducida.
+
+#+end_example
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Windows%2010%20%C2%BFQui%C3%A9n%20es%20el%20producto%3F][Dejar comentario]].
+
+** Comentarios
+
+*** Muy interesante (Juan Fernando 28/08/2015 - 10:47)
+Excelente unión de información de calidad, cercana amenidad y carácter reflexivo. Un abrazo.
+
+*** analisis (Fatima 03/09/2015 - 08:46)
+Gracias, Godo, por la información. Compré un portátil este verano con actualización gratuita a W10, que, de momento, no he realizado...y me lo voy a pensar! (o al menos, lo haré con más 'conocimiento')
+
+*** En youtube hay una (Btc 03/09/2015 - 17:34)
+En youtube hay una conferencia de Chema Alonso sobre w8 (no w10) (Enlace a la conferencia aquí: https://youtu.be/CWlFVypVHFU), unos meses antes de que saliese al mercado, en la que explicaba que el core de windows pasó de 40MB a 30MB (25% off) y de ahí el excepcional rendimiento que mostró w8 y parece que se mantiene en w10.
+
+Además, en windows 7 por el tema Aero se decidió que la aceleración de gráficos convendría que fuese por hardware, lo que hizo que los equipos necesitasen un poco más de potencia, mientras que desde w8 se volvió a la aceleración por software, haciendo que equipos menos potentes pudiesen ejecutar de nuevo el SO con "fluidez".
+
+Personalmente, diría que de desaparición del tema aero influyó también, pero las transparencias se han mantenido levemente tras el tema Aero, por lo que tampoco es un punto realmente importante!
+
+*** Amigo JuanFer, dos cosas:
+1.- (Godofredo Fdez. 03/09/2015 - 21:00)
+Amigo JuanFer, dos cosas:
+1.- Sería conveniente que comentaras tanto el problema como la solución (si la encuentras) que me has hecho llegar por Facebook. Sobre el problema porque aquí hay lectores muy preparados que quizá te ayuden. Sobre la solución... para hacer justo lo anterior con algún otro.
+2.- A mí si que me ha encantado que te encante ;-) Eso significa que he logrado un "bonito" equilibrio entre lo técnico y lo reflexivo, como ya me has apuntado alguna que otra vez, y como pretendo que sea mi línea editorial... ya lo dice el maestro, Fernando Savater: “La vida no es como las medicinas, que todas vienen con su prospecto en el que se explican las contraindicaciones del producto y se detalla la dosis en que debe ser consumido. Nos la dan sin receta, la vida, y sin prospecto. La ética no puede suplir del todo esa deficiencia porque no es más que la crónica de los esfuerzos hechos por los humanos para remediarla". Y yo siempre intento aprender de y aportar a ese "crónica". Un abrazo.
+
+*** Hola Fátima.
+No sabía que (Godofredo Fdez. 03/09/2015 - 21:04)
+Hola Fátima.
+
+No sabía que frecuentabas este "mi rincón del ciberespacio" :-) Así que me ha hecho mucha ilusión encontrar tus palabras.
+
+Que conste que mi balance final sobre W10 es positivo. Te animo a que actualices porque creo que los puntos de mejora que aporta lo merecen. Eso sí, como bien comentas, con mucho cuidado y revisando muy bien las "opciones sobre privacidad". Tengo como objetivo hablar más de esto: "intentar" proteger nuestra privacidad, en la siguiente entrada de este blog. Intentaré que sea a lo largo de este mes de septiembre.
+
+Nos leemos.
+
+¡Y muchas gracias por compartir aquí!
+
+*** Magnífico aporte, Btc. 
+Creo (Godofredo Fdez. 03/09/2015 - 21:09)
+Magnífico aporte, Btc.
+
+Creo que has puesto cifras a la intuición/sensación que describía en el artículo sobre la "mejora de rendimiento". Todo lo que comentas tiene bastante sentido y yo también creo que todo contribuye: el menor core y la mayor ligereza de los gráficos. Respecto a esto último, de hecho, en W7 yo siempre acababa yendo a "opciones de rendimiento" y deshabilitaba todo: animaciones, sombras, deslizamientos suaves... y con eso se conseguía mucho mejor rendimiento.
+
+Un placer tenerte por aquí y recibir estas "comparticiones de conocimiento" que tanto nos enriquecen.
+
+Muchas gracias.

@@ -1,0 +1,32 @@
+#+title: Empaquetamiento básico en Debian.
+#+date: <2007-01-11 11:25>
+#+author: Godofredo Fdez.
+#+description: Descripción: Debian Hispanoamerica comienza un ciclo de charlas sobre el proceso de mantener paquetes y las políticas de empaquetado, envío de reportes de bugs y proceso de verificación de errores de los paquetes. Las charlas se llevarán a cabo en #debian-devel-es, las preguntas se harán paralelamente en #debian-qna y serán respondidas por el conferencias en #debian-devel-es cuando lo considere apropiado. El servidor es irc.debian.org. La primera charla la dará Margarita Manterola de Argentina `Empaquetamiento básico en Debian'. Fecha: 14/01/2007 a las 1800 UTC, así que vayan preparando sus palomitas .
+#+filetags: 
+#+options: _:nil
+#+nid: 189
+
+Descripción:
+Debian Hispanoamerica comienza un ciclo de charlas sobre el proceso de
+mantener paquetes y las políticas de empaquetado, envío de reportes de
+bugs y proceso de verificación de errores de los paquetes.
+
+Las charlas se llevarán a cabo en #debian-devel-es, las preguntas se
+harán paralelamente en #debian-qna y serán respondidas por el
+conferencias en #debian-devel-es cuando lo considere apropiado. El
+servidor es irc.debian.org.
+
+La primera charla la dará Margarita Manterola de Argentina
+`Empaquetamiento básico en Debian'. Fecha: 14/01/2007 a las 1800 UTC,
+así que vayan preparando sus palomitas
+#+begin_export html
+<img src="/static/img/smileys/smile.png" title="Smiling" alt="Smiling" />
+#+end_export
+.
+
+Si quieres dar alguna charla o deseas obtener más información estas
+dirígete a http://wiki.debian.org/DebianSpanish/Devel/IRCTalks .
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Empaquetamiento%20b%C3%A1sico%20en%20Debian.][Dejar comentario]].
+

@@ -1,0 +1,13 @@
+#+title: bluekey
+#+date: <2006-04-15 21:26>
+#+author: Godofredo Fdez.
+#+description: bluekey es una banda de rithm&blue formada por grandes amigos. A los instrumentos: Miguel, Elias, Armando y Raúl. A lo demás :-), Moi. Podéis escuchar algunas…
+#+filetags: Personajes
+#+options: _:nil
+#+nid: 125
+
+[[http://www.bluekeyweb.com/][bluekey]] es una banda de rithm&blue formada por grandes amigos. A los instrumentos: Miguel, Elias, Armando y Raúl. A lo demás :-), Moi. Podéis escuchar algunas de sus canciones [[http://www.bluekeyweb.com/canciones/canciones.htm][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=bluekey][Dejar comentario]].
+

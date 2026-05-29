@@ -1,0 +1,31 @@
+#+title: Gracias por suscribirte...
+#+date: <2016-03-17 21:46>
+#+author: Godofredo Fdez.
+#+description: ...a la lista de correo de GodEst. Aún te falta un último paso Para evitar que nadie pueda suscribir a otro sin su consentimiento, se te ha enviado un mail de…
+#+filetags: 
+#+options: _:nil
+#+nid: 547
+
+...a la lista de correo de GodEst.
+
+*Aún te falta un último paso*
+
+Para evitar que nadie pueda suscribir a otro sin su consentimiento, se te ha enviado un mail de confirmación. Es muy probable que ese mail haya acabado en tu carpeta de "spam", o similar. Búscalo y haz click en el enlace que incorpora para confirmar tu suscripción.
+
+*Y algo más*
+
+Dile a tu servidor de correo que los mails enviados desde @vivencias.net no son spam. Así evitarás que el resto de envíos posteriores, en los que ya se te harán llegar los contenidos nuevos publicados en este blog, acaben en dicha carpeta sin que tú te des cuenta.
+
+Para hacerlo en un cliente Outlook mira la siguiente figura (botón derecho del ratón sobre el mail y selecciona la opción resaltada):
+#+begin_export html
+<img src="/static/img/confiando-en-remitente_0.jpg" width="640" height="616" alt="no spam en Outlook" />
+#+end_export
+Si tu cliente es de otro tipo y puedes capturar un pantallazo de cómo llevar a cabo dicha acción te agradecería que me la enviaras para incorporarla aquí al estilo "how-to" ;-)
+
+Espero que esto nos ayude a mantener el contacto.
+
+Gracias de nuevo.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Gracias%20por%20suscribirte...][Dejar comentario]].
+

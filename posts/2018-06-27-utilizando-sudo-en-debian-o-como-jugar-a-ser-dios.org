@@ -1,29 +1,34 @@
 #+title: Utilizando "sudo" en Debian o como jugar a ser Dios
 #+date: <2018-06-27 23:40>
-#+description: 
+#+author: Godofredo Fdez.
+#+description: De todos es sabido, y espero que aún más entre los lectores de esta pequeña gota de agua, insignificante, en el océano de Internet, que trabajar con…
 #+filetags: Configuraciones GNU/Linux Seguridad
+#+options: _:nil
+#+nid: 565
 
 De todos es sabido, y espero que aún más entre los lectores de esta pequeña gota de agua, insignificante, en el océano de Internet, que *trabajar con privilegios de administrador (terminología Windows) o superusuario (terminología Unix) en nuestro sistema durante el día a día está totalmente desaconsejado*. Como otras muchas veces, Unix se adelantó a Windows (hoy en día esta ventaja ya no es tal, Windows también lo resuelve perfectamente) en esta separación de roles y, de hecho, desde el mismo momento de la instalación de un sistema Unix se obligaba al usuario que lo estaba instalando a:
-
-1. Elegir la contraseña de root. "root" siempre es el usuario con máximos privilegios: puede instalar y desinstalar aplicaciones, puede modificar/borrar ficheros del sistema... puede ver los buzones de correo de otros usuarios, e incluso puede borrar archivos y "cuentas" completas de otros usuarios (de hecho, es él quien las crea). Por eso, en el argot de los que trasteamos con los sistemas, cuando adoptamos el rol de root solemos describirlo como "me voy a convertir en Dios", porque es omnipoderoso.
-
+1.- Elegir la contraseña de root. "root" siempre es el usuario con máximos privilegios: puede instalar y desinstalar aplicaciones, puede modificar/borrar ficheros del sistema... puede ver los buzones de correo de otros usuarios, e incluso puede borrar archivos y "cuentas" completas de otros usuarios (de hecho, es él quien las crea). Por eso, en el argot de los que trasteamos con los sistemas, cuando adoptamos el rol de root solemos describirlo como "me voy a convertir en Dios", porque es omnipoderoso.
 2. A elegir una cuenta de usuario "normal", sin privilegios, que sólo puede utilizar las aplicaciones instaladas por root, no puede ni instalar ni desinstalar, ni modificar partes críticas, clave, del sistema, ni ver los ficheros "confidenciales" de otros usuarios (siempre que los permisos estén bien puestos), etc.
 
 Pero es más, y este es el verdadero *quid de la cuestión: desde el inicio, desde el primer "login" a la máquina, el usuario con el que se trabaja (esto es flexible según la distribución, pero hay algunas que lo obligan) es el usuario normal. Y todo el mundo que utilizamos Unix o GNU/Linux en nuestro día a día así lo hacemos*.
 
 Pero, ¿qué pasa si en un determinado momento necesitas hacer algo como root? Pues Unix también resolvió esto hace mucho tiempo. Cuando aún no había entornos gráficos los sistemas Unix ya eran multiusuario y multitarea. Habrías otra consola, como si tuvieras varias pantallas para trabajar sobre la misma pantalla física, y entrabas como root. Pero ni siquiera eso era/es necesario: puedes cambiar tu personalidad y pasar a ser root haciendo uso del comando "su", que te pide la contraseña de root y, si la sabes, te convierte en root:
 
-#+begin_src sh :results output
+#+begin_example
+
 [23:07:39(godo@surco)~]> su
 Contraseña:
 [23:21:41(root@surco)/home/godo]#
-#+end_src
+
+#+end_example
 
 Y ya puedes estar trabajando un rato (no sólo un comando, sino muchos) como root. Y esto es importante para entender la principal diferencia con sudo. ¿Qué permite sudo? sudo permite ser root "sólo" para ejecutar un comando, cuando ese comando termina sigues siendo tú, ese usuario normal sin privilegios. *¿Y qué comando es el que te permite ejecutar sudo? Esta es la segunda clave del tema: sólo aquellos para los que te haya autorizado root a "echarle una mano"*. Imagínate que quieres montar una determinada partición de una máquina que suele estar desmontada porque en ella se albergan las copias de seguridad. El administrador de esa máquina, root, puede delegarte sólo esa tarea. Para ello en el fichero /etc/sudoers (que nunca se edita de forma directa sino haciendo uso de la utilidad "visudo") root puede escribir estas líneas:
 
-#+begin_src sh :results output
+#+begin_example
+
 godo ALL=(ALL) NOPASSWD: /bin/mount
-#+end_src
+
+#+end_example
 
 (NOPASSWD es para que no te solicite password. Si no se pone, te la solicitaría).
 
@@ -31,15 +36,18 @@ Así, el usuario "godo" puede utilizar sudo "sólo" para ejecutar el comando "mo
 
 Si el usuario "godo" no estuviera "capacitado" para ejecutar un comando vía "sudo", y aún así lo intentara, "root" sería notificado vía mail, siendo este que sigue el "cuerpo" del correo:
 
-#+begin_src sh :results output
+#+begin_example
+
 surco : Jun 27 20:33:40 : godo : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/godo ; USER=root ; COMMAND=/usr/bin/apt-get update
-#+end_src
+
+#+end_example
 
 ¿Qué hacen distribuciones como Ubuntu, y yo suelo configurar en mi Debian? Pues Ubuntu directamente impide que root haga "login" en la máquina, es decir, siempre has de entrar en el sistema con el usuario sin privilegios, y si necesitas utilizar "cualquier comando" (sin límites) en modo "privilegiado" recurres a "sudo". De hecho, "root" en Ubuntu no tiene contraseña y nunca puedes acceder a ser "root" de forma "total" (no funciona "su" hasta que no le pones contraseña a "root" utilizando "sudo" ¡Curioso!). Para que un usuario normal tenga acceso a todos los comandos de "root" sin llegar a "serlo", es decir, vía "sudo", basta que siendo "root" se agregue al usuario "godo", en mi caso, al grupo de usuarios de "sudo" (recuerda que Unix hay grupos de usuarios que comparten "permisos"). Así es como yo lo hago en Debian, supongo que en Ubuntu se hace algo parecido durante la instalación del sistema.
 
 Yo, para recordar esto cuando hago una instalación nueva, conservo unas líneas explicativas en el fichero "sudoers" de mi máquina habitual, que agregué con "visudo", claro. Y desde ahora las conservo aquí también y las comparto con vosotros. Son estas:
 
-#+begin_src sh :results output
+#+begin_example
+
 [23:30:49(godo@surco)~]> more /etc/sudoers
 more: no se puede abrir /etc/sudoers: Permiso denegado
 [23:30:57(godo@surco)~]> sudo more /etc/sudoers
@@ -52,6 +60,7 @@ more: no se puede abrir /etc/sudoers: Permiso denegado
 #
 # See the man page for details on how to write a sudoers file.
 #
+
 # ¡¡OJO!! MIRA UN POCO MAS ABAJO. BASTA CON:
 # 1. AÑADIR EL USUARIO godo AL GRUPO sudo.
 # 2. CERRAR LA SESIÓN Y VOLVER A ENTRAR.
@@ -86,7 +95,8 @@ root    ALL=(ALL:ALL) ALL
 
 #includedir /etc/sudoers.d
 [23:31:12(godo@surco)~]>
-#+end_src
+
+#+end_example
 
 Observad al principio, cuando ejecuto el comando "more", como con mi usuario no tengo permisos para ver el fichero, pero sí utilizando "sudo".
 
@@ -94,6 +104,8 @@ Una última cosa, antes hablé de "su", y de que la contraseña que te solicita 
 
 Espero que os haya gustado y que os acostumbréis a usarlo. Pero sobre todo, que os ayude a pensar.
 
-Y el séptimo día descansó.
+Y el séptimo día descansó.\\
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Utilizando_sudo_en_Debian_o_como_jugar_a_ser_Dios][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Utilizando%20%22sudo%22%20en%20Debian%20o%20como%20jugar%20a%20ser%20Dios][Dejar comentario]].
+

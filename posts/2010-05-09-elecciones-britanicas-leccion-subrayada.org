@@ -1,0 +1,43 @@
+#+title: Elecciones británicas: lección subrayada…
+#+date: <2010-05-09 12:55>
+#+author: Godofredo Fdez.
+#+description: …y digo subraya porque aprendida ya la tenía. Hace tiempo decidí emprender una lucha que considero lo suficientemente noble para dejarle mi tiempo, mi voz y mi…
+#+filetags: Activismo Pensamiento
+#+options: _:nil
+#+nid: 353
+
+...y digo subraya porque aprendida ya la tenía.
+
+Hace tiempo decidí emprender una lucha que considero lo suficientemente noble para dejarle mi tiempo, mi voz y mi energía: el cambio del sistema electoral. Y lo hice porque consideraba, y aún considero, que una democracia que se precie ha de estar fundamentada en estos tres principios: el sistema representativo de la voluntad popular ha de ser lo más proporcional posible (para que mi voto no valga cuatro veces menos que el de mi vecino, como ya expliqué [[/node/240][aquí]]), la separación de poderes ha de ser real y no sólo una pantomima como viene ocurriendo, y la igualdad jurídica... en fin, me morderé la lengua con este tema porque me deprimo cada vez que lo pienso.
+
+Así que, como puedes observar no todo está conseguido, ni funciona todo lo bien que debería, y merece la pena empujar para cambiar la actitud de cada uno de los que nos rodean ante tamañas barbaridades. Pero, vamos a lo que íbamos.
+
+Los resultados de las elecciones británicas son “impresionantes” analizándolos como los deberíamos analizar todos aquellos que nos levantamos, la mañana electoral, con la intención de “pronunciarnos” para influir en un cambio (o no) de gobierno. Los que nos preocupamos de ir a votar. Observa:
+
+Votos que un escaño ha costado a cada partido:
+
+#+begin_example
+
+Conservadores: 35.029
+Laboristas: 33.350
+Liberal-Demócratas: 119.788 ¡ 4 veces más !
+
+#+end_example
+
+O lo que es lo mismo: *un voto* a los "Liberal-Demócratas" valió 4 veces menos que *un voto* a uno de los otros dos. O lo que es lo mismo: tu voto pudo valer 4 veces menos que el voto de tu vecino, y claro, ¿qué has hecho tú para merecerte esto? ;-) Y tu vecino, ¿qué ha hecho para resultar así de premiado? ¿Ha pagado más impuestos que tú? ¿tiene un comportamiento más cívico e implicado con la sociedad? ¿es un superheroe? ¿Batman, quizás?
+
+Puedes sacar tus propias conclusiones observando los resultados en [[http://en.wikipedia.org/wiki/United_Kingdom_general_election,_2010][este magnífico artículo de la wikipedia]]. Y puedes observar en las gráficas extraídas del mismo, y que pongo a continuación, la “impactante” desproporcionalidad. Fíjate en lo que le ocurre al tercer partido: mientras que el segundo se ve favorecido por el sistema electoral, el tercero se hunde.
+
+#+begin_export html
+<img width="480" height="375" border="0" hspace="10" vspace="10" src="/static/img/elecciones-britanicas-2010.png">
+#+end_export
+
+Claro, esta mañana escuchando “Radio 5”, una de sus noticias decía algo sobre una encuesta realizada a la población británica el día de ayer, y un 62% (punto arriba/punto abajo) piensa que hay que cambiar el sistema electoral.
+
+No sé qué pensará la población española del suyo, pero si tienen alguna duda, o ganas de formarse una opinión al respecto, por favor, lean [[/node/240][este otro artículo]] que ya publiqué aquí en su día. No podemos seguir así.
+
+Disfruten de la ilusión de creerse iguales (ante el Estado o en el Estado) sin serlo.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Elecciones%20brit%C3%A1nicas%3A%20lecci%C3%B3n%20subrayada%E2%80%A6][Dejar comentario]].
+

@@ -1,0 +1,29 @@
+#+title: GNU/Linux y los virus
+#+date: <2008-07-18 19:51>
+#+author: Godofredo Fdez.
+#+description: Ah, pero en GNU/Linux... ¿hay virus ? Pues yo no conozco a nadie que utilice GNU/Linux y se haya visto envuelto en un ataque de virus (sí en algún otro tipo de…
+#+filetags: GNU/Linux Seguridad Software
+#+options: _:nil
+#+nid: 287
+
+Ah, pero en GNU/Linux... ¿hay [[http://es.wikipedia.org/wiki/Virus_inform%C3%A1tico][virus]]? Pues yo no conozco a nadie que utilice GNU/Linux y se haya visto envuelto en un ataque de virus (sí en algún otro tipo de [[http://es.wikipedia.org/wiki/Malware][ataque]]). Sin embargo, las opiniones que circulan por la red son variadas, basta una búsqueda en google con las dos palabras que nos ocupan ([[file:”http://www.google.es/search?q=virus+y+linux&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:es-ES:official&client=firefox-a”][linux virus]]) para encontrar opiniones que rotundamente piensan que *en GNU/Linux no hay virus*, y otras que dicen todo lo contrario, y sobre todo, que será cuestión de tiempo y de cantidad de uso. Pero esto es un blog, y se supone que he de dar mi opinión personal. Bien, yo creo que en GNU/Linux no hay virus, hoy por hoy, lo suficientemente extendidos/malignos que puedan ser considerados como tales, quizá exista por ahí alguna prueba de concepto que no ha llegado a "triunfar". Sin embargo, creo que es posible que el día de mañana existan virus para GNU/Linux. Será muy difícil, y seguro que es más complicado que desarrollarlos para Windows. ¿Por qué? Sin ánimo de entrar en profundidades, por un par de razones:
+
+a) Windows tuvo que "relajar" mucho los sistemas de seguridad del sistema operativo para convertirse en el sistema que usa todo el mundo, el precio que hemos tenido que pagar a cambio de su fácil uso para su tremenda expansión. Los costes de la alfabetización digital: no seré yo quien deje de reconocerle la difícil tarea. El porqué lo consiguió Windows y no otro tipo de S.O. da para otro extenso debate.
+
+b) en GNU/Linux existen más mecanismos de control implantados en el propio S.O., y en el conjunto de software englobado por las "diferentes distribuciones", para evitar el acceso a recursos críticos del sistema y modificarlos (gestión de memoria, permisos de los archivos en disco, etc.).
+
+Y como consecuencia de lo anterior, en GNU/Linux no existe, además, la cultura de trabajar como “administrador del sistema” durante todo el tiempo en el que lo estamos usando: navegar por internet, leer el correo, abrir archivos de "tonterías" que nos envían, etc., todas estas tareas se suelen realizar como usuario sin "privilegios" para "dañar" al sistema, así que, si alguna de esas acciones terminara ejecutando un "programa" que alberga un virus, este se ejecutaría con los privilegios de un usuario normal (frente a hacerlo como administrador de la máquina) y no sería capaz de modificar componentes fundamentales/críticas de nuestro S.O.
+
+Esta, a mi juicio, es la verdadera barrera de protección. Pero, ¿los últimos sistemas Windows: 2000, XP, Vista, etc., también permiten distinguir entre usuario administrador y "resto"? Sí, es cierto, pero, ¿quién no trabaja como usuario administrador, o privilegios de administrador, en su máquina? Cuando se va a instalar un programa: ¿quién parte de la situación en la que se está trabajando como usuario "raso" (sin privilegios para realizar esa acción), se convierte en administrador para hacerla y, justo después, vuelve a ser usuario "raso"? Muy pocos, ¿verdad? Pues así, el camino que ha de recorrer un virus resulta ser demasiado fácil. Respecto a GNU/Linux, comienzan a darme miedo algunas distribuciones que están "facilitando en exceso" la vida al usuario, a algunas de ellas las veo venir, y están a un punto de permitir que un usuario "raso" haga de todo, incluso sin solicitar la apropiada contraseña. Estoy seguro de que, cuando esto ocurra, los virus camparán a sus anchas también en GNU/Linux. Aunque aún nos quedará otra barrera de protección: un virus podrá extenderse por una determinada distribución GNU/Linux, y no por otras. Esta heterogeneidad en el ecosistema (recordad los problemas de los monocultivos frente a los multicultivos) seguirá jugando a nuestro favor.
+
+Y tú, ¿qué piensas? ¿alguna vez te ha preocupado esta cuestión? ¿has buscado información/documentación sobre el tema? ¿cuáles han sido tus conclusiones?
+
+A cuidarse toca :-)\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=GNU%2FLinux%20y%20los%20virus][Dejar comentario]].
+
+** Comentarios
+
+*** Sí... he estado buscando (Cristian Vivas 31/01/2009 - 18:21)
+Sí... he estado buscando información, ya que hace unos ocho meses utilizo Ubuntu y me ha inquietado el hecho de que no tengo un antivirus. Sin embargo todo apunta a que no debo preucuparme porque tenemos a nuestros amigos hacker que han hecho y seguiran haciendo bien su trabajo. Y aún si en un futuro saliera un virus seguiré usando software libre por su filosofía.

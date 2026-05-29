@@ -1,0 +1,25 @@
+#+title: Leyendo particiones GNU/Linux desde Windows
+#+date: <2006-03-16 22:23>
+#+author: Godofredo Fdez.
+#+description: Como bien dice el autor de esta pequeña pero útil herramienta en su página web, ¿a quién no le ha ocurrido que trabajando en Windows (por las desagradables ;-) circunstancias que sean) ha necesitado un par de ficheros que tenía en una partición de GNU/Linux ? Todos aquellos que trabajamos casi el 100% del tiempo en GNU/Linux, y rara vez en Windows, es más probable que lleguemos a necesitarla, pues todo nuestro trabajo suele estar en las particiones controladas por el primero. Quizá el mejor truco para compartir información entre Windows y GNU/Linux es hacerse una partición " fat " (os aconsejo "fat32" pues es la más evolucionada de la familia) cuyo soporte de lectura/escritura es perfecto en ambos sistemas operativos, e ir dejando ahí aquellos datos que nos interesan. ¡OJO! No estoy diciendo que instaléis en ella ninguno de los Sistemas Operativos, simplemente es un trozo de disco vacío donde estarán únicamente nuestros datos que queremos tener disponibles siempre.
+#+filetags: GNU/Linux Software
+#+options: _:nil
+#+nid: 112
+
+Como bien dice el autor de esta pequeña pero útil herramienta en su página web, ¿a quién no le ha ocurrido que trabajando en Windows (por las desagradables ;-) circunstancias que sean) ha necesitado un par de ficheros que tenía en una [[http://es.wikipedia.org/wiki/Partici%C3%B3n_de_disco][partición]] de [[/node/33][GNU/Linux]]?
+
+Todos aquellos que trabajamos casi el 100% del tiempo en GNU/Linux, y rara vez en Windows, es más probable que lleguemos a necesitarla, pues todo nuestro trabajo suele estar en las particiones controladas por el primero.
+
+Quizá el mejor truco para compartir información entre Windows y GNU/Linux es hacerse una partición "[[http://es.wikipedia.org/wiki/FAT][fat]]" (os aconsejo "fat32" pues es la más evolucionada de la familia) cuyo soporte de lectura/escritura es perfecto en ambos sistemas operativos, e ir dejando ahí aquellos datos que nos interesan. ¡OJO! No estoy diciendo que instaléis en ella ninguno de los Sistemas Operativos, simplemente es un trozo de disco vacío donde estarán únicamente nuestros datos que queremos tener disponibles siempre.
+
+Aprovecho para avisar de que es arriesgado desde Windows escribir en particiones GNU/Linux, y desde GNU/Linux escribir en particiones [[http://es.wikipedia.org/wiki/NTFS][NTFS]] de Windows (las que por defecto crean los NT, 2000 y XP). Si buscáis en google encontraréis herramientas para esto, pero yo aún no me fío y no he asumido el riesgo de utilizarlas. ¿Alguien se anima a comentar sus experiencias? :-)
+
+En fin, echad un vistazo a esta herramienta que *sólo permite leer ficheros desde particiones ext2 y ext3*: [[http://uranus.chrysocome.net/linux/explore2fs.htm][Explore2fs]]. Yo la acabo de utilizar para "exportar" (así es como llama a la opción que incluye) un pequeño fichero de casi 800MB y ha ido de maravilla.
+
+Por cierto, si utilizáis "[[http://es.wikipedia.org/wiki/ReiserFS][ReiserFS]]" como tipo de partición en vuestro GNU/Linux, en lugar del tipo "[[http://es.wikipedia.org/wiki/Ext3][ext]]" también existen herramientas que os permiten leerla: al final de la página anterior el autor de Explore2fs nos anuncia varias.
+
+Sobreviviendo.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Leyendo%20particiones%20GNU%2FLinux%20desde%20Windows][Dejar comentario]].
+

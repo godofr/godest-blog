@@ -1,0 +1,49 @@
+#+title: firefox + del.icio.us + ... = flock
+#+date: <2005-10-27 22:27>
+#+author: Godofredo Fdez.
+#+description: ¿Sabes lo que es del.icio.us ? ¿Conoces a flock ? Si tus respuestas han sido: "no", intentaré cambiarlas en este artículo. Hace escasamente una semana conocí a del.icio.us . Y digo conocí porque hasta ahora no me había decidido a probarlo, aunque sí había oído hablar de él. La experiencia es la madre de la ciencia, dicen. Bien, este servicio que nos ofrecen por internet no es más que un "bookmark" global, unos "favoritos" compartidos por toda la comunidad que quiere compartir, obviamente. Cuando uno decide abrirse una cuenta, consigue disponer de un espacio web donde va guardando sus favoritos: los enlaces a páginas web que desea conservar por su interés, por su frecuencia de visita, etc. Lo más importante es que están abiertos al resto del mundo: todo aquel que quiera saber por donde van tus tiros puede hacerlo, simplemente visitando tu página ( aquí está la mía ). Esto me planteó ciertos problemas de seguridad e intimidad... por eso fui reticente a abrirme una cuenta en un principio (otro día hablaré sobre esto). La gran ventaja de este enfoque es que, independientemente de donde te encuentres, de que ordenador estés utilizando, siempre tienes tus favoritos a mano . Mi experiencia de uso (ya digo que es una semana escasa) ha sido bastante buena. Uno no se da cuenta de lo que pierde hasta que no empieza a echarlo de menos. El ahorro de tiempo (no tener que buscar en varios sitios la dichosa página que deseas consultar), y la seguridad de disponer de ellos en cualquier parte compensan los riesgos (anterior inconveniente) de pérdida de privacidad.
+#+filetags: Bitácoras I+D+i Software
+#+options: _:nil
+#+nid: 71
+
+¿Sabes lo que es [[http://delicious.com/][del.icio.us]]?
+¿Conoces a [[http://flock.com/][flock]]?
+
+Si tus respuestas han sido: "no", intentaré cambiarlas en este artículo.
+
+#+begin_export html
+<a href="/node/73" target="_self"><img width="300" height="300" border="0" align="right" src="/static/img/delicious.png"></a>
+#+end_export
+Hace escasamente una semana conocí a [[http://delicious.com/doc/about][del.icio.us]]. Y digo conocí porque hasta ahora no me había decidido a probarlo, aunque sí había oído hablar de él. La experiencia es la madre de la ciencia, dicen. Bien, este servicio que nos ofrecen por internet no es más que un "bookmark" global, unos "favoritos" compartidos por toda la comunidad que quiere compartir, obviamente. Cuando uno decide abrirse una cuenta, consigue disponer de un espacio web donde va guardando sus favoritos: los enlaces a páginas web que desea conservar por su interés, por su frecuencia de visita, etc. Lo más importante es que están abiertos al resto del mundo: todo aquel que quiera saber por donde van tus tiros puede hacerlo, simplemente visitando tu página ([[http://delicious.com/godo][aquí está la mía]]). Esto me planteó ciertos problemas de seguridad e intimidad... por eso fui reticente a abrirme una cuenta en un principio (otro día hablaré sobre esto). La gran ventaja de este enfoque es que, independientemente de donde te encuentres, de que ordenador estés utilizando, siempre tienes tus favoritos a mano. Mi experiencia de uso (ya digo que es una semana escasa) ha sido bastante buena. Uno no se da cuenta de lo que pierde hasta que no empieza a echarlo de menos. El ahorro de tiempo (no tener que buscar en varios sitios la dichosa página que deseas consultar), y la seguridad de disponer de ellos en cualquier parte compensan los riesgos (anterior inconveniente) de pérdida de privacidad.
+
+El servicio viene "aliñado" con unas *etiquetas clasificatorias* (tags) que son verdaderamente potentes. Cada vez que introduces un enlace lo clasificas asociándole este tipo de etiquetas. Esto favorece su posterior búsqueda a través de un indice formado por las mismas que aparece, por defecto, a la derecha de la página. Se pueden ir asociando, al estilo de un "y" lógico, para ir filtrando contenidos (pulsando en el simbolo +). También se le puede asociar al enlace que se guarda una descripción y un breve comentario (notas), que pueden ser utilizados posteriormente para encontrar al mismo a través de un formulario de búsqueda (search) que aparece en tu página principal, al estilo de cualquier buscador a los que estamos acostumbrados.
+
+¿Qué se gana con este "social bookmarks manager"? Bueno, uno puede seguir a las personas con interese afines, puede detectar qué está siendo popular en la red, qué enlaces son más valiosos-guardados, etc. Por ejemplo, si alguien busca en mis extensiones para firefox podrá conocer cuales de ellas tengo guardadas, podrá probarlas...
+
+Hay muchas extensiones para nuestro navegador favorito (firefox):
+
+1.- [[http://delicious.com/toolbar/][del.icio.us toolbar]]: barra de herramientas que permite consultar tus favoritos, guardar en tu espacio una página, etc. Fíjate en la figura como puedes quitarla, para evitar que te robe espacio: si "configuras las barras del firefox" puedes arrastar los iconos de "del.icio.us" al final de la barra del menú.
+2.- [[http://www.blackperl.com/javascript/greasemonkey/ft/][Familiar Taste]]. Este script que ejecuta la extensión [[http://greasemonkey.mozdev.org/][greasemonkey]] dentro del firefox detecta si la página que estás visitando ya está guardada en tu espacio "del.icio.us", y muestra un cartelito amarillo-transparente informándote de ello. Podéis apreciarlo en la esquina superior derecha.
+3.- Hay más extensiones, a mi no me han resultado tan útiles. Todas ellas están recopiladas en [[http://pchere.blogspot.com/2005/02/absolutely-delicious-complete-tool.html][esta página]] (en inglés).
+
+Bien, y para terminar, ¿qué es [[http://flock.com/][flock]]?
+
+Una "familia" de desarrolladores, ligeramente descontentos con la evolución del navegador "firefox", han creado un "hijo" de este. Basándose en los cimientos del firefox (de mozilla) están desarrollando un navegador que incorpora, de serie, muchos servicios como, por ejemplo, del.icio.us. Sin extensiones uno dispone de una manera fácil de guardar sus enlaces en el servicio comentado (pulsando un icono con una estrellita), de detectar si la página ya está guardada (la estrellita cambia de color, de azul pasa a amarillo), etc. Además, estos amigos también han añadido facilidades de publicación en bitácoras, integración con [[http://www.flickr.com/][flickr]] (un servicio de album de fotos en internet, una bitácora gráfica), etc. El inconveniente actual, en vía de solución, es que si uno decide hacer público su bookmark, sus favoritos, todo él pasa a del.icio.us. Esto no ocurre así con firefox... y uno todavía ;-) puede decidir qué hace público y qué no.
+
+Este tipo de segmentaciones, muy habituales en el mundo del "software libre" al disponerse del código fuente de la aplicación, también dan mucho que hablar: ¿se pierde sinergia? ¿se avanza más rápido? ¿se innova más?...
+
+En fin, chicos, la rueda que sigue y sigue...
+
+Ah! se me olvidaba, nuestro querido [[http://drupal.org/][drupal]] (ya he hablado [[http://godest.bitacoras.com/taxonomy/term/2][aquí]] de él) también está integrado con este "delicioso" servicio: desde hoy tenéis mis favoritos de del.icio.us accesibles en el último bloque de la franja derecha de esta bitácora.
+
+¡Cuántas cosas!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=firefox%20%2B%20del.icio.us%20%2B%20...%20%3D%20flock][Dejar comentario]].
+
+** Comentarios
+
+*** Flock, muy interesante (Epaminondas Pantulis 12/02/2006 - 10:36)
+(Enviado por Epaminondas Pantulis (no verificado) el Vie, 28/10/2005 - 06:38)
+
+Las sensaciones al usar Flock un rato son agradables, es muy parecido a Firefox. Pero lo que marca la diferencia, sin duda, son las diferencias (sobre todo los bookmarks basados en del.icio.us). Un navegador muy interesante, sin duda: trae integrada mucha funcionalidad que sólo puedes tener en Firefox instalando unos cuantos plugins.

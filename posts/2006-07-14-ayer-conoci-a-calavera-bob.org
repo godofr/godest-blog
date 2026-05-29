@@ -1,0 +1,227 @@
+#+title: Ayer conocí a Calavera Bob
+#+date: <2006-07-14 22:12>
+#+author: Godofredo Fdez.
+#+description: Llevaba tiempo preguntándome por el extraño seudónimo que utiliza nuestro amigo, Javi Osorio, en este rincón. Ayer, en el vibrante concierto que ofreció en la…
+#+filetags: Música
+#+options: _:nil
+#+nid: 153
+
+Llevaba tiempo preguntándome por el extraño seudónimo que utiliza nuestro amigo, Javi Osorio, en este rincón. Ayer, en el vibrante concierto que ofreció en la sala [[http://malandar.net/][Malandar]], nos descubrió la verdadera historia:
+
+#+begin_example
+
+* CALAVERA BOB *
+
+Kilómetro 43,
+bajo la lluvia traicionera, dime si me puedes ver,
+por la cuneta hacia ningún lugar,
+parece interminable esta solitaria carretera comarcal.
+Como un violento enjambre de lobos esquimales
+la luna llena me persigue a todas partes.
+Como un ataúd que abre la puerta,
+¿puedes ver la noche en los ojos del fiambre?
+
+Dos faros en la oscuridad,
+tendrías que haber visto mi cara al ver a aquel camión parar.
+- Vas a subir o qué, chaval,
+  es peligroso andar tan solo, puedo llevarte hasta el siguiente hostal.
+
+Me contó sus batallitas, yo le conté las mías
+mientras me fumaba todos sus cigarros,
+y en mitad de un chiste guarro
+las luces del hostal nos sorprendieron.
+Bueno, amigo, aquí me bajo.
+
+Arrojando una moneda me gritó:
+- Tómate un café caliente y dí
+  que te ha invitado Calavera Bob.
+
+Entré en el bar de aquel hostal,
+calado hasta los huesos, dejando un rastro de pisadas al pasar.
+- Ponme un café que invita Calavera Bob.
+De un golpe puse la moneda sobre el mostrador.
+- Puedes guardarte la moneda, te contaré la historia
+  de Calavera Bob en esta carretera.
+  La casa invita a este café. Me dijo el camarero,
+  poniendo agua a aquella vieja cafetera.
+
+- Ocurrió sobre el kilómetro 43,
+  tras los árboles desnudos luna llena, dime si lo puedes ver,
+  Calavera Bob conduce su camión,
+  el conductor dormido al volante de la línea 0042
+  en dirección contraria, veloz como una bala,
+  apretó el gatillo el dedo de la madrugada.
+  El camión de Bob volcaba, para no chocar de frente.
+  Lo encontraron muerto con la luz del alba.
+
+  Cuentan que en las noches en que hay luna llena
+  se ha visto a Calavera Bob en su camión 
+  por esta carretera.
+
+#+end_example
+
+#+begin_export html
+<a href="http://www.javiosorio.net" target="_self"><img width="141" height="200" border="0" align="right" hspace="10" vspace="10" src="/static/img/javi_osorio.jpg"></a>
+#+end_export
+Esta fue una de las canciones que más me gustaron junto a: "Caballo loco", "Nadie me busca cuando estoy deprimido" y "Tiempo" (que interrumpió a la mitad, aún no entiendo bien por qué, y que tuvo que continuar a petición del público).
+
+En general, para ser la primera vez que lo escuchaba, he de decir que la impresión fue muy buena (y no sólo la tuve yo, también la tuvieron el resto de compañeros de este rincón que allí se encontraban). La música es fresca, y te llega desde los primeros acordes. No es de extrañar pues, aunque no entiendo mucho de esto, creo que se debe a los pilares sobre los que se apoya: una mezcla de blues, reggae y rock. Las letras cuentan historias que no sólo hablan de amor (menos mal), y en ellas intuí influencias de: J. Sabina, Gabinete Caligari, quizá de “El último de la fila”... recogen buenas imágenes y tienden a desgranar detalles que suelen pasar desapercibidos, lo cual da muestra de la sensibilidad del autor (supongo que esto aún lo cultiva, desde sus tiempos de cantautor -en el sentido más clásico del término).
+
+Ojalá siga cultivándose así, tanto en la música como en las letras. Y siga exigiéndose cada vez más, sin llegar a caer en la monotonía: que cada canción suene diferente, que cada letra recoja algo distinto.
+
+Aquí nos tienes, Javi, vigilantes.
+
+/Nota: me dirijo a Javi personalmente porque es quien frecuenta este rincón. Todo lo comentado arriba es aplicable al grupo en su totalidad: [[http://www.javiosorio.net][Javi Osorio y Los Santos Perversos]]. No pretendo herir sensibilidades ;-)/
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Ayer%20conoc%C3%AD%20a%20Calavera%20Bob][Dejar comentario]].
+
+** Comentarios
+
+*** ATRAVESANDO LA LADERA (Anonymous 19/07/2006 - 15:08)
+A MENUDO SUELO ESTAR DONDE NO DEBO
+Y CASI NUNCA OCURRE
+QUE LAS COSAS PASEN
+TAL Y COMO DEBERÍAN,
+ME ENCONTRABA EN CUALQUIER TREN,
+CAMINO DE CUALQUIER LUGAR
+BUSCANDO ALGUNA COMPAÑÍA
+EN EL VAGÓN DE FUMADORES...
+FUE EN LA OSCURIDAD DE UN TÚNEL
+CUANDO ELLA ME BESÓ,
+CREYÓ QUE UN TONTO COMO YO
+AL BAJAR DEL TREN LA SEGUIRÍA...
+
+A VECES PIENSO QUE EL DESTINO
+ES UN TRISTE VIEJO VERDE,
+PORQUE ME BAJÉ TRAS ELLA
+Y LA SEGUÍ ENTRE LA GENTE,
+A TRAVÉS DE LA ESTACIÓN
+IBAN GUIÁNDOME SUS PASOS
+A UNA HABITACIÓN BARATA
+EN LA PENSIÓN FERROVIARIA.
+ME GASTÉ MIS ULTIMOS DIEZ EUROS
+EN UN VINO PELEÓN
+QUE ME OFRECIÓ AQUEL VIEJO
+CON PELUCA DE LA RECEPCIÓN.
+
+COMO PORCELANA ROTA
+DESPERTÉ EN AQUEL COLCHÓN MUGRIENTO,
+ELLA JUNTO A MI
+Y JUNTO A ELLA UN TIPO EXTRAÑO
+ME PIDIÓ QUE LE PAGARA
+CON UNA PIPA EN LA MANO,
+YO LE DIJE QUE TENÍA
+LA CARTERA EN LA CHAQUETA.
+EN UN DESCUIDO ME ESCAPÉ
+POR LA VENTANA EN CALZONCILLOS,
+ME IBA GOLPEANDO EL VIENTO
+CON EL FRÍO DE SUS MARTILLOS.
+
+ATRAVESANDO LA LADERA,
+EN UNA MAÑANA GRIS,
+LA LLUVIA COMENZÓ A CAER
+COMO PUNZONES SOBRE MI...
+LLEGUÉ CORRIENDO A UN PUEBLO BLANCO,
+SITUADO ENTRE MONTAÑAS,
+Y EN SUS SOLITARIAS CALLES
+ME DETUVO UN PICOLETO,
+ME ENCERRÓ EN UN CALABOZO
+Y ARROJÁNDOME DOS MANTAS
+ME MIRÓ COMO DICIENDO
+"ESTE TÍO ALGO HABRÁ HECHO"...
+
+AGARRADO A LOS BARROTES,
+MALDICIENDO ME ENCONTRARON,
+-CLARO.DIJO UNO DE ELLOS,
+-ESOS DOS TE LA JUGARON...
+-ESTA DEBE SER TU ROPA.
+-AQUÍ TIENES UN BILLETE
+DE AUTOBÚS PARA QUE VUELVAS
+Y NO NOS CAUSES PROBLEMAS...
+ME SENTÍ LIBRE DE NUEVO,
+ME PARÉ A SENTIR EL VIENTO... < DE LAS CÁRCELES DEL CIELO>>.
+
+ME ENCONTRABA EN CUALQUIER AUTOBÚS,
+CAMINO DE CUALQUIER LUGAR,
+PENSANDO EN QUE LAS COSAS PASAN
+Y SE VAN QUEDANDO ATRÁS...
+CUANDO UNA CHICA INTERRUMPIÓ
+MI PENSAMIENTO Y PREGUNTÓ
+SI AQUEL ASIENTO ESTABA LIBRE
+Y ME PODÍA ACOMPAÑAR...
+TODO OCURRIÓ COMO OTRAS VECES
+SIMPLEMENTE ME ENCONTRABA
+EN EL SITIO INOPORTUNO,
+A LA HORA INADECUADA.
+
+AQUÍ OS DEJO ESTA LETRA, FUÉ LA ÚLTIMA CANCIÓN DEL CONCIERTO EN LA SALA MALANDAR, SE LLAMA "ATRAVESANDO LA LADERA".
+
+GRACIAS GODO POR ACORDARTE DE LA "A"...ERA DE SUMA IMPORTANCIA...
+
+TU AMIGO CALAVERA BOB.
+
+*** Sobre Calavera Bob (Sofista 22/07/2006 - 21:53)
+Totalmente de acuerdo contigo.
+Por mi parte era la tercera vez que disfrutaba de la música de Javi Osorio y los Santos Perversos, y cada vez me sorprenden más.
+Desprenden una energía impresionante y sus letras son originales, frescas y cuentan historias diferentes que hacen abrir los sentidos a tantas cosas... que da gusto disfrutar de sus conciertos.
+
+No sólo cada una de sus canciones es algo diferente, sino que cada uno de sus conciertos, cada una de sus actuaciones son algo diferente a disfrutar del principio al final, y por supuesto, sin dejar de bailar.
+
+...somewhere over the rainbow...
+
+*** Dar las Gracias (CharlyCalderon 27/07/2006 - 00:38)
+Weno soy er Charly Calderon, er bajista, si, ese que no para de dar saltos, jeje.
+Nada solo dar las gracias a todo el mundo q estuvo por malandar y weno los q nos han seguido a otros conciertillos. Me alegro de que la sensacion de la gente del otro dia fuera wena, la verdad eske nos ayuda oir esas cosas para tener siempre ganas de ensayar y tokar.
+
+En fin solo eso, espero q nos veamos pronto en otra ocasion, larga vida al rock....\\
+
+*** Bienvenido, Charly (Godo 28/07/2006 - 20:14)
+¡Esto sí que es una sorpresa! ¡Ya tenemos por aquí al 50% de "Javi Osorio y los Santos Perversos"!
+
+Muy bueno el bajo (el ritmo y la "ambientación") y los coros ("uh uuuuh") ;-).
+
+Las gracias os las tenemos que dar nosotros a vosotros por el buen rollo que creasteis, por vuestra música y por vuestra dedicación. No lo dejéis, merece la pena seguir creando...
+
+Y divirtiéndonos (vosotros y nosotros).
+
+P.D.: respecto a la "saga Calderón" :-) ... ya hablaremos otro día si me das la oportunidad.
+
+*** Estamos en Interné (Charly Calderon 30/07/2006 - 12:17)
+Nada solo q sepais que en la pagina youtube.com hay algunos videos subidos aunke no tienen muxa calidad, en emule tb hay algunas sorpresillas,.
+Gracias Godo, por tus palabras,
+vemos pronto..............
+
+*** Volvemos de Asturias y ... (Pili Cantautora 30/07/2006 - 16:08)
+... nos encontramos la bitácora tela de animá!! qué alegría que nuestro rinconcinto siga recibiendo nuevas visitas, algunas bastante ilustres ;) Aprovecho para saludar a Charly, y comentar un poquito el concierto...
+
+Menos mal que os convencí! ya lo intenté con el concierto de Febrero en el Fan Club y no pudo ser, tampoco para el del Perro Andaluz en Mayo (nos cogió de vuelta de la presentación del Anfibiótico en Madrid, todo queda en familia :)), pero por fin este mes pudo ser! Disfruté muchísimo en el concierto, y parte de ello se debió a veros a vosotros disfrutar tanto, mira que si después de llevaros no os gusta?? aunque el éxito estaba prácticamente asegurado...
+
+Creo que Javi debería saber que se encuentra muy presente en nuestra oficina, jeje, ayudándonos a quitarle un poco de hierro al asunto... con ese poster de Javi Osorio y los Santos Perversos presidiendo la sala (sigue ahí, verdad?),y con "Nadie me busca cuando estoy deprimido" amenizando nuestros momentos más bajos...
+
+Gracias Calavera Bob...\\
+
+*** ¡Bienvenidos! (el radioplanner 02/08/2006 - 11:12)
+Ya me ha comentado un pajarito que se te ve tela tela de relajá después de la Asturias Experience... en fin, sigue disfrutando tus vacas, aunque nosotros sigamos echándote de menos (snif snif). ¡Todo es tan aburrido a la par que agobiante!
+
+El poster sigue ahí, sí señorita, y nadie nos sigue buscando cuando estamos deprimidos...
+
+¡¡Besitos para todos!!
+
+*** Seguimos de vacaciones :) (José Ignacio 03/08/2006 - 13:10)
+Hola Paco!
+
+Nuestra querida Pi está pasando unos días en Algeciras y seguirá un poco desconectada, pero mientras tanto yo sí que andaré por aquí. Lo de Asturias ha sido genial, si hubiéramos podido aún seguiríamos allí. Tendrías que ver el arte que tengo escanciando sidrina...
+
+La semana que viene me voy a Praga, espero que a la vuelta, cuando ya estemos todos (y antes de que nuestro webmaster se vaya de vacaciones) podamos hacer algo juntos.
+
+Por cierto, esto se anima cantautorilmente por días, qué lujo ;)
+
+Un abrazo,
+José Ignacio.
+
+--------------------------
+Dime cuánto tiempo queda,
+qué hago, aparte del vago,
+finjo estar de acuerdo,
+es un milagro que siga estando cuerdo

@@ -1,0 +1,15 @@
+#+title: Las tres leyes de la robótica
+#+date: <2010-12-11 09:28>
+#+author: Godofredo Fdez.
+#+description: 1. Un robot no puede hacer daño a un ser humano o, por su inacción, permitir que un ser humano sufra daño. 2. Un robot debe obedecer las órdenes dadas por los…
+#+filetags: 
+#+options: _:nil
+#+nid: 391
+
+1. Un robot no puede hacer daño a un ser humano o, por su inacción, permitir que un ser humano sufra daño.
+2. Un robot debe obedecer las órdenes dadas por los seres humanos, excepto si estas órdenes entran en conflicto con la Primera Ley.
+3. Un robot debe proteger su propia existencia en la medida en que esta protección no entre en conflicto con la Primera o la Segunda Ley.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Las%20tres%20leyes%20de%20la%20rob%C3%B3tica][Dejar comentario]].
+

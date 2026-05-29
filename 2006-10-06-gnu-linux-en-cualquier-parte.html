@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Hace una semana, más o menos, descubrí este proyecto: Damn Small Linux (dsl), el cual me ha parecido alucinante. Es un sistema GNU/Linux que cabe en cualquier…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>GNU/Linux en cualquier parte</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">06 oct. 2006</div><h1 class="post-title"><a href="https://godest.vivencias.net/2006-10-06-gnu-linux-en-cualquier-parte.html">GNU/Linux en cualquier parte</a></h1>
+<a href="http://www.damnsmalllinux.org/" target="_self"><img width="330" height="255" border="0" align="right" hspace="10" vspace="10" src="/static/img/dsl-01.jpg"></a>
+<p>
+Hace una semana, más o menos, descubrí este proyecto: <a href="http://www.damnsmalllinux.org/">Damn Small Linux</a> (dsl), el cual me ha parecido alucinante.
+</p>
+
+<p>
+Es un sistema GNU/Linux que cabe en cualquier <a href="http://es.wikipedia.org/wiki/Memorias_USB">Memoria USB</a> ya que tan solo ocupa 50MB. Existen varias posibilidades de uso: desde la instalación en disco duro hasta arrancar desde un <a href="http://es.wikipedia.org/wiki/Live_CD">Live CD</a> o, y aquí es donde comencé a alucinar, un "Live USB".
+</p>
+
+<p>
+¿Qué significa esto último? Pues que es posible llevarte un pequeño GNU/Linux instalado en un lápiz USB, y arrancar desde él cualquier ordenador moderno que lo permita (¡OJO! Esto ha de soportarlo la BIOS). Sin embargo, si aún nos parece difícil encontrar este tipo de BIOS, no pasa nada: podemos optar por instalar en el USB un sistema GNU/Linux embebido (dsl-3.0.1-embedded) que, haciendo uso del emulador de PC <a href="http://fabrice.bellard.free.fr/qemu/">qemu</a>, nos permitirá arrancar una máquina virtual GNU/Linux tanto en windows (se incluye qemu para windows en la <a href="http://distro.ibiblio.org/pub/linux/distributions/damnsmall/current/dsl-3.0.1-embedded.zip">imagen de dsl embebida</a> que descargamos) como en GNU/Linux (se incluye también, obviamente, qemu para GNU/Linux). Así, independientemente del ordenador que nos encontremos para trabajar, siempre tendremos nuestro GNU/Linux, con nuestra configuración, nuestras aplicaciones preferidas, nuestros ficheros, etc.
+</p>
+
+<p>
+Es justo lo que estaba buscando para mis clases en la universidad: necesitaba disponer de un editor lo más parecido al <a href="http://www.gnu.org/software/emacs/">emacs</a> posible, y del compilador <a href="http://gcc.gnu.org/">gcc</a>. Son las herramientas que utilizamos para intentar enseñar "Fundamentos de Programación" en lenguaje C.
+</p>
+
+<p>
+Para que el sistema base de la distribución sólo ocupe 50MB, los desarrolladores han creado un <a href="http://distro.ibiblio.org/pub/linux/distributions/damnsmall/mydsl/">repositorio de aplicaciones</a> que se instalan como si de "plugins" o "extensiones" se tratara. Es decir, una vez arrancado el sistema GNU/Linux base, uno puede acceder al repositorio (sí, detecta nuestra tarjeta de red y hace NAT) y descargar e instalar desde allí lo que necesite. Claro está: en el repositorio encontré tanto el gcc como un editor que emula a emacs: <a href="http://zile.sourceforge.net/">zile</a>.
+</p>
+
+<p>
+Pero el editor "zile" no me gustó demasiado: emulaba las asociaciones de teclas pero no <a href="http://en.wikipedia.org/wiki/Indent_style">sangraba</a> el código de forma automática (esto es fundamental para cumplir sin esfuerzo las "normas de estilo" y tender a elaborar un código fácil de seguir). Entonces me acordé de <a href="http://www.jedsoft.org/jed/">jed</a>, otro editor que en su día utilicé en la ESI, que emula al emacs y que soporta muchos modos (con el correspondiente coloreado de la sintaxis, sangrado, etc.).
+</p>
+
+<p>
+A continuación podéis ver la descripción que acompaña al paquete "jed" de <a href="http://www.debian.org">mi inseparable Debian</a> (Por cierto, Damn Small Linux está basada en Debian - otra razón por la que la escogí - y una vez instalada podría migrar a ésta).
+</p>
+
+<p>
+Descripción del <b>editor jed</b>:
+</p>
+
+<pre class="example" id="org872f768">
+Package: jed
+
+Priority: optional
+
+Section: editors
+
+Installed-Size: 292
+
+Maintainer: Debian JED Group 
+Architecture: i386
+
+Version: 0.99.18-6
+
+Provides: info-browser, mail-reader, editor
+
+Depends: libc6 (&gt;= 2.3.6-6), libgpmg1 (&gt;= 1.19.6-1), libslang2 (&gt;= 2.0.6-3), jed-common (&gt;= 0.99.18-6)
+
+Filename: pool/main/j/jed/jed_0.99.18-6_i386.deb
+
+Size: 116272
+
+MD5sum: 867a1d445d5e110df0326d48f88262cd
+
+SHA1: 77da91a7bfd006b41ca66bb1b1fdb4506d9c16f3
+
+SHA256: 6522b7fa42e995607c4cd738c0f8d239fb7da1cc1e7fe3f47613952487e531a8
+
+Description: editor for programmers (textmode version)
+
+ Jed is a small, fast (faster startup than bash) and powerful text editor.
+
+ .
+
+ Completely customizable with prepared emulation modes for Emacs, CUA
+
+ (similar to KDE/Gnome/Openoffice), Borland-IDE, Brief, and EDT. Extensible
+
+ in the S-Lang scripting language (with a syntax resembling C).
+
+ .
+
+ Editing functions: folding support; rectangular cut/paste; regular
+
+ expression search/replace; incremental searches; search/replace across
+
+ multiple files; multiple windows; multiple buffers; ...
+
+ .
+
+ Tools: directory editor (dired); info (browse GNU info files); mail;
+
+ rmail; ispell; shell mode; ...
+
+ .
+
+ Special modes (syntax highlight, indention, compile, ...) for
+
+ Basic, C, C++, DCL, FORTRAN, IDL, Java, NROFF, Pascal,
+
+ Perl, PHP, PostScript, Python, SH.
+
+ Modes for markup languages include HTML and (La)TeX (with AUC-TeX style
+
+ editing and BibTeX)
+
+ .
+
+ Additional tools and modes can be found in the jed-extra package.
+
+ .
+
+  Homepage: http://www.jedsoft.org/jed/
+
+Tag: devel::editor, interface::text-mode, role::sw:application, use::editing, works-with::text
+</pre>
+
+<p>
+Sin embargo, no existía una extensión de este editor para esta "microdistribución" :-(.
+</p>
+
+<p>
+En fin, me reté a mi mismo y&#x2026; ¡tachán! Mi primera "semicontribución" al software libre: <a href="file:///d:/files/config/jed-0.99-18.tar.gz">jed-0.99-18.tar.gz</a> (enviada a los desarrolladores de "dsl" para que la incorporen al "área testing" del repositorio).
+</p>
+
+<p>
+Ya podemos disponer de nuestro querido entorno de programación C en cualquier parte (anytime-anywhere). A falta del depurador: <a href="http://www.gnu.org/software/gdb/">gdb</a>. Todo se andará.
+</p>
+
+<p>
+Espero que le encontréis alguna utilidad.
+</p>
+
+<p>
+No dejo de sorprenderme. ¡Qué alegría! ;-)<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=GNU%2FLinux%20en%20cualquier%20parte">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-i+d+i.html">I+D+i</a> <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

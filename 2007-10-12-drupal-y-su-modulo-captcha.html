@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Varias veces hemos tratado aquí el tema del spam en los blogs. Ya lo anunciábamos en este breve artículo allá por el mes de diciembre del año 2004, e intentamos solucionarlo haciendo uso del módulo spam que nos ofrecía nuestro CMS . Lo instalé respetando la configuración por defecto, con las únicas modificaciones de "no publicar lo presuntamente spam" y "avisar al administrador de la detección del mismo".">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Drupal y su módulo "Captcha"</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">12 oct. 2007</div><h1 class="post-title"><a href="https://godest.vivencias.net/2007-10-12-drupal-y-su-modulo-captcha.html">Drupal y su módulo "Captcha"</a></h1>
+<p>
+Varias veces hemos tratado aquí el tema del spam en los blogs. Ya lo anunciábamos en <a href="../node/14">este breve artículo</a> allá por el mes de diciembre del año 2004, e intentamos solucionarlo haciendo uso del <a href="http://drupal.org/project/spam">módulo spam</a> que nos ofrecía nuestro <a href="http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenido">CMS</a>. Lo instalé respetando la configuración por defecto, con las únicas modificaciones de "no publicar lo presuntamente spam" y "avisar al administrador de la detección del mismo". Ésta última hizo que me dieran "un toque" desde mi <a href="../node/178">servicio de hosting</a> porque el volumen de spam provocaba un elevado consumo de procesamiento en el servidor, que se multiplicaba con el envío de los correos correspondientes. Así, tuve que desactivarla y regularmente entrar como administrador a las páginas del módulo, donde comprobaba falsos positivos y borraba manualmente todo lo demás (<a href="../node/18">aquí</a> podéis encontrar la entrada que en su día elaboré con más detalle). Jamás me ha dado un falso positivo y rara vez se ha colado algún comentario que fuera spam (esto lo conseguí reduciendo el número de URL que se permitían en el mismo para ser considerado "maligno").
+</p>
+
+<p>
+Posteriormente, el spam comenzó a atacar <a href="../node/51">vía "trackbacks"</a> (tecnología que incorporan casi todos los gestores de contenidos para informar desde ellos a otros "colegas" que has escrito algo relacionado/inspirado con el tema que ellos también tratan). Tanto fue así que llegó el día en el que este tipo de spam superó con creces, según los logs de "esta mi bitácora", a los intentos de spam vía comentarios. Además, nunca recibí un trackback de un blog "amigo" (he de tener pocos :?), así que, como dirían en mi pueblo, tiré por la calle del medio y desactivé dicha funcionalidad: me duele mucho el consumo de ancho de banda y procesamiento sin sentido.
+</p>
+
+<p>
+Y desde aquí, a mi pensamiento no le costó mucho saltar a lo siguiente: ¿porqué filtrar los comentarios una vez que se producen y ya han consumido recursos? ¿No será mejor no dejar que se introduzcan en la base de datos del blog? La respuesta a esta pregunta llegó hace mucho tiempo: <a href="http://drupal.org/project/captcha">captcha</a>. Consiste, básicamente, en hacerle un examen al que envía el formulario web para intentar detectar si es un humano o es una máquina (como en <a href="http://es.wikipedia.org/wiki/Blade_Runner">Blade Runner</a>). Una de las técnicas más utilizadas es la de mostrar una imagen con letras "distorsionadas", y solicitar la introducción de dichos símbolos en un campo más del formulario web para que éste sea validado, cosa que ocurre si, lógicamente, coincide lo tecleado con lo mostrado en la imagen.
+</p>
+
+<p>
+Nuestro módulo captcha está aún en versiones inmaduras: "5.x-3.0-rc3", es por ello, y por algunas pruebas que hice con versiones anteriores cuyo resultado no fue el esperado, por lo que no me había decidido a utilizarlo. Sin embargo, hace una semana probé esta Release Candidate 3. Aunque tiene la posibilidad de funcionar como hemos descrito arriba, utilizando imágenes, y realizando preguntas sobre palabras existentes en frases de texto (ambas opciones disponibles en el propio módulo), preferí quedarme con su funcionalidad básica: realiza una pregunta matemática del estilo, ¿cuál es el resultado de la siguiente suma: 3+4?, y comprueba si el resultado introducido es correcto, validando así el formulario.
+</p>
+
+<p>
+Por ahora está funcionando muy bien, ni un sólo comentario spam recibido desde entonces (ni un solo log en la base de datos). No obstante, creo que es fácil preparar un script que analice, y pase, este tipo de pruebas&#x2026;
+</p>
+
+<p>
+Ya veremos cuanto tardan. Entonces, evolucionaremos a <a href="http://drupal.org/project/captcha_pack">otras pruebas más complejas</a>(*).
+</p>
+
+<p>
+Como siempre, felices experiencias.
+</p>
+
+<p>
+(*) Ver también <a href="http://drupal.org/project/riddler">riddler</a> y <a href="http://drupal.org/project/recaptcha">reCaptcha</a>.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Drupal%20y%20su%20m%C3%B3dulo%20%22Captcha%22">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-bitácoras.html">Bitácoras</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

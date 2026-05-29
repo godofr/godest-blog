@@ -1,0 +1,33 @@
+#+title: Cloud Computing: mi reflexión
+#+date: <2011-09-22 07:27>
+#+author: Godofredo Fdez.
+#+description: Nota: la primera parte de este artículo la puede encontrar aquí . Y ahora sí, mi reflexión. Voy a intentar sorprenderos: ni una cosa ni la otra. Aquí cada uno…
+#+filetags: Pensamiento Seguridad Software
+#+options: _:nil
+#+nid: 428
+
+Nota: la primera parte de este artículo la puede encontrar *[[/node/429][aquí]]*.
+
+Y ahora sí, mi reflexión. Voy a intentar sorprenderos: ni una cosa ni la otra. Aquí cada uno intenta arrimar el ascua a su sardina. No todo es ni tan bueno ni tan malo. Veamos. ¿Qué haría yo si tuviera que analizar el subirme a la nube o no? Lo primero que me preguntaría es *qué tipo de información* es la que va a salir de mi empresa. Quizá sea aconsejable no comenzar por la información económico-financiera y sí por los catálogos comerciales, correo, etc. Lo segundo: *¿quién tiene que tener acceso a ella y cómo va a acceder (Red Privada "física", VPN, web, cliente de cualquier tipo...?* No es lo mismo que accedan tres personas muy formadas en tecnología y seguridad que acceda el grueso de empleados (en el primer caso podemos llegar a confiar en que establezcan una VPN, en el segundo quizá haya que dársela ya hecha). Y digo esto porque los principales riesgos siguen estando en el uso que hacemos de la información y no tanto en dónde está alojada, contando con la seriedad de la empresa elegida, y así llegamos a... ...La tercera pregunta: *¿está la información mejor cuidada en sus servidores o en los nuestros?* Este análisis comparativo debería llevarlo a cabo uno mismo sin hacerse trampas en el solitario o, si te lo hacen, debería ser juzgado con todo el sentido crítico y a la vez limpio que seamos capaces. En fin, es habitual encontrarse con quien sabe la respuesta antes de hacerlo, ignorando variables que perjudican o ayudan a una u otra opción según interese. Y algunas de las cosas que hay que tener en cuenta son:
+
+#+BEGIN_QUOTE
+  - ¿Contamos con el personal técnico necesario? ¿Cuánto tiempo dedica nuestro personal a tareas de "conservación"? ¿Están para esto o es mejor que se dedicaran a otras cosas?
+  - ¿Qué políticas de clasificación de la información y regulación de comportamiento tengo establecidas? ¿Qué formación tienen nuestros usuarios?
+  - ¿Están nuestros sistemas (servidores, almacenamiento, seguridad, etc.) bien operados/mantenidos: actualizaciones del software en general, protección física y lógica, monitorización, copias de seguridad, capacidad de restauración de información si fallo, detección de intrusiones...?
+  - ¿Qué inversión nos requieren? ¿Cada cuánto tiempo? ¿Qué gasto anual: conservación de la sala, luz, refrigeración, limpieza, extinción, soluciones de backups tanto eléctrico como de datos, control de accesos, comunicaciones LAN, mantenimientos...?
+  - ¿Contamos con el suficiente ancho de banda en nuestra red WAN para trabajar en la nube? ¿Cuánta información hay que mover (tipo, necesidad de trabajo en tiempo real, etc.)? ¿Cuánto más voy a gastar en comunicaciones?
+  - ¿Son lo mismo todas las cloud? ¿Es igual apostar por IaaS que apostar por SaaS? Dicho de otro modo, con un ejemplo: ¿es lo mismo utilizar gmail que alquilar un servidor y montar yo mi propia solución de correo?
+#+END_QUOTE
+
+Algunos ven como solución de compromiso a la cloud privada en grandes organizaciones (implementar la tecnología cloud en tus instalaciones para convertirte en proveedor multigrupo/multiempresa), y el uso de sistemas como eyeOS en servidores alquilados accesibles desde la red para PyMES y usuarios particulares... Yo pienso que todo esto son matices, aristas, del mismo problema. *Sólo un análisis como el expresado en los párrafos anteriores, alejado de modas y tendencias, puede aportarnos la suficiente luz para elegir el camino correcto*. Tus razones, tus prioridades, tu criticidad... sólo son válidas para ti. Y tú, ¿qué opinas? P.D.: estoy considerando hacer una hoja de cálculo en google-docs plasmando en ella todas las variables que hay que tener en cuenta para analizar un posible "caso de negocio" consistente en si es mejor o no ir a la nube. Si aportas tu granito de arena haciéndome llegar aspectos que creas importantes y he omitido, o pequeños refinamientos, matices, de lo que ya hay, la compartiré contigo. CREO TREMENDAMENTE EN LA INTELIGENCIA COLECTIVA/COLABORATIVA para llevar a cabo este tipo de tareas. ¿Te animas?
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Cloud%20Computing%3A%20mi%20reflexi%C3%B3n][Dejar comentario]].
+
+** Comentarios
+
+*** http://www.softcomputing.es/m (nacho 13/12/2011 - 17:06)
+http://www.softcomputing.es/metaspace/portal/3/96-noticias-y-eventos?one_article=1&mtsp_nocache=yes&pms=1,11,2007,view,normal,0&id_html_article=826&back_ipg=2
+
+*** Muchas gracias por el enlace. (Godo 20/12/2011 - 09:28)
+Muchas gracias por el enlace. Es un placer difundir oportunidades de empleo. Cuenta con este rinconcito en Internet para amplificarlas.

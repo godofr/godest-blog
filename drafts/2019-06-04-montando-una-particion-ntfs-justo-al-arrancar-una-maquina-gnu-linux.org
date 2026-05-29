@@ -1,0 +1,66 @@
+#+title: Montando una partición NTFS justo al arrancar una máquina GNU/Linux
+#+date: <2019-06-04 07:05>
+#+author: Godofredo Fdez.
+#+description: A mí siempre me ha gustado tener en mi máquina (simplificando y yendo al grano) tres particiones: 1. Windows 2. Datos (compartida tanto con Windows, 1., como…
+#+filetags: 
+#+options: _:nil
+#+nid: 569
+
+A mí siempre me ha gustado tener en mi máquina (simplificando y yendo al grano) tres particiones:
+1. Windows
+2. Datos (compartida tanto con Windows, 1., como con GNU/Linux, 3.)
+3. GNU/Linux - Debian - desde el infinito y más allá.
+
+Después de muchos años de pruebas, la conclusión (no inamovible siempre que se me demuestre lo contrario) a la que he llegado es que GNU/Linux maneja mejor el sistema de archivos NTFS que Windows cualquiera de los sistemas de archivos que utiliza GNU/Linux. Por tanto, la partición de "Datos" está en formato NTFS, y Windows la monta automáticamente cuando arranca.
+
+Para que Debian la monte automáticamente cuando arranca, hay que editar el archivo /etc/fstab (con sudo o como root). Yo lo he dejado así (observar última línea -¡OJO! por la anchura de este área de edición/lectura las líneas se ven cortadas y *no han de estarlo*, por tanto, recomiendo que selecciones todo el texto y hagas copy/paste a un editor, para verlo como es, sin cortes-):
+
+#+begin_example
+
+godo@TuChi:~$ more /etc/fstab
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sdc4 during installation
+UUID=bb5b1d8f-283e-4ea2-905f-630da5f13971 /               ext4    errors=remount-ro 0       1
+# swap was on /dev/sdc3 during installation
+UUID=dc4b3e82-8bbd-41b6-a216-018a53151b6d none            swap    sw              0       0
+/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
+
+# montamos el disco SSD de 500GB que hace de "datos" /dev/sdb1
+UUID=96082D80082D608B	/mnt/SSD_500G		ntfs	rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permis
+sions,allow_other,uhelper=udisks2,auto	0	0
+godo@TuChi:~$ 
+
+#+end_example
+
+Algunas veces, cuando arrancas Windows, trabajas con él y luego vuelves a arrancar Debian, la partición de datos se queda "cogida" por Windows, en un estado en el que Debian no permite su montaje en modo "lectura/escritura", y lo hace sólo en modo "lectura". Nos aparece el siguiente mensaje si intentamos montarla en modo "lectura/escritura" (rw):
+
+#+BEGIN_EXAMPLE
+  The NTFS partition is in an unsafe state. Please resume and shutdown
+
+  Windows fully (no hibernation or fast restarting), or mount the volume
+
+  read-only with the 'ro' mount option
+#+END_EXAMPLE
+
+Para solucionarlo, hacemos esto:
+
+#+begin_example
+
+godo@TuChi:~$ sudo ntfsfix /dev/sdXY
+godo@TuChi:~$ sudo mount -o rw /dev/sdXY
+
+#+end_example
+
+Más información aquí:
+https://www.binarytides.com/ubuntu-automatically-mount-partition-startup/
+https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Montando%20una%20partici%C3%B3n%20NTFS%20justo%20al%20arrancar%20una%20m%C3%A1quina%20GNU%2FLinux][Dejar comentario]].
+

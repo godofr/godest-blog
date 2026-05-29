@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="A mí siempre me ha gustado tener en mi máquina (simplificando y yendo al grano) tres particiones: 1. Windows 2. Datos (compartida tanto con Windows, 1., como…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Montando una partición NTFS justo al arrancar una máquina GNU/Linux</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">04 jun. 2019</div><h1 class="post-title"><a href="https://godest.vivencias.net/2019-06-04-montando-una-particion-ntfs-justo-al-arrancar-una-maquina-gnu-linux.html">Montando una partición NTFS justo al arrancar una máquina GNU/Linux</a></h1>
+<p>
+A mí siempre me ha gustado tener en mi máquina (simplificando y yendo al grano) tres particiones:
+</p>
+<ol class="org-ol">
+<li>Windows</li>
+<li>Datos (compartida tanto con Windows, 1., como con GNU/Linux, 3.)</li>
+<li>GNU/Linux - Debian - desde el infinito y más allá.</li>
+</ol>
+
+<p>
+Después de muchos años de pruebas, la conclusión (no inamovible siempre que se me demuestre lo contrario) a la que he llegado es que GNU/Linux maneja mejor el sistema de archivos NTFS que Windows cualquiera de los sistemas de archivos que utiliza GNU/Linux. Por tanto, la partición de "Datos" está en formato NTFS, y Windows la monta automáticamente cuando arranca.
+</p>
+
+<p>
+Para que Debian la monte automáticamente cuando arranca, hay que editar el archivo /etc/fstab (con sudo o como root). Yo lo he dejado así (observar última línea -¡OJO! por la anchura de este área de edición/lectura las líneas se ven cortadas y <b>no han de estarlo</b>, por tanto, recomiendo que selecciones todo el texto y hagas copy/paste a un editor, para verlo como es, sin cortes-):
+</p>
+
+<pre class="example" id="orgc5e9f7e">
+
+godo@TuChi:~$ more /etc/fstab
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt;  &lt;pass&gt;
+# / was on /dev/sdc4 during installation
+UUID=bb5b1d8f-283e-4ea2-905f-630da5f13971 /               ext4    errors=remount-ro 0       1
+# swap was on /dev/sdc3 during installation
+UUID=dc4b3e82-8bbd-41b6-a216-018a53151b6d none            swap    sw              0       0
+/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
+
+# montamos el disco SSD de 500GB que hace de "datos" /dev/sdb1
+UUID=96082D80082D608B	/mnt/SSD_500G		ntfs	rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permis
+sions,allow_other,uhelper=udisks2,auto	0	0
+godo@TuChi:~$ 
+
+</pre>
+
+<p>
+Algunas veces, cuando arrancas Windows, trabajas con él y luego vuelves a arrancar Debian, la partición de datos se queda "cogida" por Windows, en un estado en el que Debian no permite su montaje en modo "lectura/escritura", y lo hace sólo en modo "lectura". Nos aparece el siguiente mensaje si intentamos montarla en modo "lectura/escritura" (rw):
+</p>
+
+<pre class="example" id="orgab534ae">
+The NTFS partition is in an unsafe state. Please resume and shutdown
+
+Windows fully (no hibernation or fast restarting), or mount the volume
+
+read-only with the 'ro' mount option
+</pre>
+
+<p>
+Para solucionarlo, hacemos esto:
+</p>
+
+<pre class="example" id="org832b54a">
+
+godo@TuChi:~$ sudo ntfsfix /dev/sdXY
+godo@TuChi:~$ sudo mount -o rw /dev/sdXY
+
+</pre>
+
+<p>
+Más información aquí:
+<a href="https://www.binarytides.com/ubuntu-automatically-mount-partition-startup/">https://www.binarytides.com/ubuntu-automatically-mount-partition-startup/</a>
+<a href="https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system">https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system</a>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Montando%20una%20partici%C3%B3n%20NTFS%20justo%20al%20arrancar%20una%20m%C3%A1quina%20GNU%2FLinux">Dejar comentario</a>.
+</p>
+<div class="taglist"></div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

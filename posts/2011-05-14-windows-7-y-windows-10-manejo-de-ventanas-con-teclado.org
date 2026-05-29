@@ -1,0 +1,27 @@
+#+title: Windows 7 y Windows 10: manejo de ventanas con teclado
+#+date: <2011-05-14 19:53>
+#+author: Godofredo Fdez.
+#+description: Windows 7 fue un muy buen sistema operativo. Desde las primeras betas internas, no disponibles para el público, ya se le veía que no tenía nada que ver con…
+#+filetags: Software
+#+options: _:nil
+#+nid: 409
+
+Windows 7 fue un muy buen sistema operativo. Desde las primeras betas internas, no disponibles para el público, ya se le veía que no tenía nada que ver con versiones anteriores. Windows 7 incorporaba las funcionalidades de las que vamos a hablar a continuación. Obviamente, Windows 10 las sigue incorporando y no todo el mundo las conoce. Como para mí son muy útiles, he decidido retomar este artículo (que tenía a medio escribir desde 2011 :-( ), actualizarlo y compartirlo.
+
+Al grano. Una de las cosas que primero llama la atención, claro está, es la nueva interfaz de usuario. Lo que no todo el mundo sabe es que además de ser bonita también es muy útil. Y una de las características más útiles es la de la nueva gestión de ventanas.
+
+Si arrastras una ventana hacia la parte superior de la pantalla se maximiza. Si le haces doble click sobre el borde inferior o superior de la misma se maximiza pero en vertical sólo. Puedes conseguir lo mismo con las teclas Windows+Flecha arriba y Windows+ Flecha abajo para maximizar/restaurar y Windows+Mays+Flecha Arriba y Windows+Mays+Flecha Abajo, para maximizar/restaurar en vertical.
+
+Un efecto simpático es el que se consigue si agarras una ventana por su barra de título y la meneas de un lado a otro, entonces, todas las demás ventanas se minimizan y haciéndolo de nuevo se restauran a sus anteriores posiciones (puedes conseguir lo mismo pulsando Windows + Inicio)
+
+Algo mucho más útil es la posibilidad de acoplar ventanas a los laterales. Por ejemplo, si estás comparando dos documentos, o si necesitas trabajar con una documentación en una ventana mientras escribes en otra, o si programas con Visual Studio 2010 y tienes en una ventana flotante el código de una página y en la otra la vista previa :-) Para conseguirlo sólo tienes que arrastrar la ventana pegándola a uno de los bordes y se acoplará a él. Arrastra la otra al otro borde y se acoplará también. De esta forma, entre las dos se reparten la pantalla a medias para trabajar. Realmente útil sobre todo en los monitores panorámicos omnipresentes hoy en día. Puedes conseguir el mismo efecto en lugar de arrastrando las ventanas, usando las teclas rápidas: Windows+Flecha Derecha y Windows+Flecha Izquierda.
+
+Finalmente, si eres de los que como a mi le gusta trabajar con dos monitores, puedes pasar rápidamente una ventana de un monitor a otro con tan sólo pulsar las combinaciones de teclas Windows+Mays+Flecha izquierda y Windows+Mays+Flecha derecha.
+
+Lo que yo me pregunto es: ¿para cuando una gestión multiescritorio nativa como la que tienen las X en Linux sin tener que recurrir a [[https://virtuawin.sourceforge.io][programas de terceros]]? ¿Tan complicado es incluir el soporte en el S.O.? :-(
+
+Espero que te resulte útil.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Windows%207%20y%20Windows%2010%3A%20manejo%20de%20ventanas%20con%20teclado][Dejar comentario]].
+

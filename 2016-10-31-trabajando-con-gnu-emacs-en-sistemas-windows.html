@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Actualizado el 08-12-2016: se incorpora al final del artículo la sección de corrector ortográfico . Hace mucho tiempo, diría que desde que comencé a trabajar…">
 <link rel="alternate"
       type="application/rss+xml"
       href="https://godest.vivencias.net/rss.xml"
@@ -41,7 +42,7 @@
   </div>
 </div></div>
 <div id="content">
-<div class="post-date">31 oct 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-10-31-trabajando-con-gnu-emacs-en-sistemas-windows.html">Trabajando con GNU Emacs en sistemas Windows</a></h1>
+<div class="post-date">31 oct. 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-10-31-trabajando-con-gnu-emacs-en-sistemas-windows.html">Trabajando con GNU Emacs en sistemas Windows</a></h1>
 <p>
 <b>Actualizado el 08-12-2016: se incorpora al final del artículo la sección de corrector ortográfico</b>.
 </p>
@@ -51,7 +52,7 @@ Hace mucho tiempo, diría que desde que comencé a trabajar con entornos GNU/Lin
 </p>
 
 <p>
-Aunque al comienzo de mi vida profesional podía trabajar con GNU/Linux instalado en mi ordenador como sistema operativo base y habitual, la organización en la que trabajo se fue “complicando” y cada vez iban surgiendo más desarrollos propietarios que sólo se ejecutaban sobre sistemas Windows. Hasta ese entonces mi ordenador siempre arrancaba con <a href="http://debian.org/">Debian</a> y sobre ella emulaba la Office de Microsoft; pero llegó un momento en el que trabajaba más, y me complicaba la vida, emulando software de Windows que lo que me aportaba mi “gran compañera” en eficiencia (estoy hablando del entorno Desktop, mis servidores siguen ejecutando GNU/Linux al 100%). En fin, que acabé instalando Windows como sistema operativo base y virtualizando mi Debian sobre “VMware Player”.
+Aunque al comienzo de mi vida profesional podía trabajar con GNU/Linux instalado en mi ordenador como sistema operativo base y habitual, la organización en la que trabajo se fue “complicando” y cada vez iban surgiendo más desarrollos propietarios que sólo se ejecutaban sobre sistemas Windows. Hasta ese entonces mi ordenador siempre arrancaba con <a href="http://debian.org">Debian</a> y sobre ella emulaba la Office de Microsoft; pero llegó un momento en el que trabajaba más, y me complicaba la vida, emulando software de Windows que lo que me aportaba mi “gran compañera” en eficiencia (estoy hablando del entorno Desktop, mis servidores siguen ejecutando GNU/Linux al 100%). En fin, que acabé instalando Windows como sistema operativo base y virtualizando mi Debian sobre “VMware Player”.
 </p>
 
 <p>
@@ -59,7 +60,7 @@ No obstante, <b>con la ayuda de <a href="https://www.cygwin.com/">Cygwin</a> mi 
 </p>
 
 <p>
-Y con el editor Emacs, que si bien no lo instalo directamente de la versión contenida en Cygwin (da errores en funcionalidades básicas un poco inexplicables, como, por ejemplo: <a href="https://www.google.es/search?q=cygwin+emacs+associate+txt+double+click&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=E6EVWI70K8mp8weL-oaIBw">tras ser asociado a ficheros .txt no los carga directamente al hacer doble click sobre ellos</a>), <a href="https://sourceforge.net/projects/emacsbinw64/">sí que instalo este "port" que obtiene un Emacs nativo sobre Windows</a> (actualmente lo vengo utilizando con mucha estabilidad en mis Windows 10).
+Y con el editor Emacs, que si bien no lo instalo directamente de la versión contenida en Cygwin (da errores en funcionalidades básicas un poco inexplicables, como, por ejemplo: <a href="https://www.google.es/search?q=cygwin+emacs+associate+txt+double+click&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=E6EVWI70K8mp8weL-oaIBw">tras ser asociado a ficheros .txt no los carga directamente al hacer doble click sobre ellos</a>), <a href="https://sourceforge.net/projects/emacsbinw64/">sí que instalo este “port” que obtiene un Emacs nativo sobre Windows</a> (actualmente lo vengo utilizando con mucha estabilidad en mis Windows 10).
 </p>
 
 <p>
@@ -69,84 +70,46 @@ Bien, pues no sólo escribo esta entrada para contaros que existe este “port n
 <p>
 <b>Primero</b>: descargamos la versión de Emacs para Windows desde <a href="https://sourceforge.net/projects/emacsbinw64/">aquí</a>. Simplemente hemos de descomprimir el “.zip” que bajamos, situar la carpeta en cualquier lugar de nuestro disco duro y añadir esa carpeta a la variable “path” de Windows.
 </p>
-
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="531" height="69" border="0" align="center" hspace="10" vspace="10" src="/static/2016/01-emacs-windows-path.png"
- alt="01 Emacs Windows PATH" />
-</figure>
-
+<img src="/static/img/01-emacs-windows-path.png" width="531" height="69" alt="" />
 <p>
 Como ya hemos comentado, y veremos más adelante con un ejemplo de comparación de ficheros, es muy aconsejable instalar un entorno “Cygwin” mínimo, con utilidades que aportan valor a Emacs. También hemos de añadirlo al “path”, para que podamos encontrar sus programas llamándolos desde cualquier sitio.
 </p>
 
 <p>
 <b>Segundo</b>: hay dos formas de enseñarle a Emacs dónde está nuestro directorio de trabajo, o HOME, en Windows 10 me funcionó la segunda, la b), que es la más compleja pero fue la primera que se me ocurrió. Sin embargo, en Windows 7 no funciona bien, y ha sido lo que ha provocado que investigue un poco más y haya acabado encontrando la primera, la a), que es incluso más fácil.
+a) Tal y como se describe <a href="https://stackoverflow.com/questions/189490/where-can-i-find-my-emacs-file-for-emacs-running-on-windows">aquí</a>, lo mejor es definir una variable de entorno para tu usuario de Windows, como se muestra en la siguiente figura (aprovechamos también y definimos la variable "LANG = es<sub>ES.UTF8</sub>", ver figura, para que luego funcione también el diccionario "aspell"):
 </p>
-
+<img src="/static/img/Variables-HOME_y_LANG-para-Emacs.png" width="595" height="417" alt="" />
 <p>
-a) Tal y como se describe <a href="https://stackoverflow.com/questions/189490/where-can-i-find-my-emacs-file-for-emacs-running-on-windows">aquí</a>, lo mejor es definir una variable de entorno para tu usuario de Windows, como se muestra en la siguiente figura (aprovechamos también y definimos la variable <code>"LANG = es_ES.UTF8"</code>, ver figura, para que luego funcione también el diccionario "aspell"):
-</p>
-
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="595" height="417" border="0" align="center" hspace="10" vspace="10" src="/static/2016/Variables-HOME_y_LANG-para-Emacs.png"
- alt="Variables HOME y LANG para Emacs" />
-</figure>
-
-<p>
-b) Creamos enlaces simbólicos, <b>con <a href="https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/">mklink</a> de Windows</b>, del fichero configuración por defecto de emacs, “.emacs” y su “directorio de trabajo en segundo plano” (copias de seguridad, etc.) “.emacs.d”.
+b) Creamos enlaces simbólicos, <b>con <a href="http://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/">mklink</a> de Windows</b>, del fichero configuración por defecto de emacs, “.emacs” y su “directorio de trabajo en segundo plano” (copias de seguridad, etc.) “.emacs.d”.
 </p>
 
 <p>
 El port de Emacs para Windows considera como “directorio home” este: “C:\Users\Godo\AppData\Roaming” (sustituid Godo por vuestro usuario Windows), y en él guarda el fichero “.emacs” y el directorio “.emacs.d”. Yo los borro y los vuelvo a crear como enlaces simbólicos que apuntan a otros destinos, de igual nombre, pero ubicados en carpetas diferentes. Como podéis ver en la siguiente captura los mantengo dentro de mi Dropbox, conservando y sincronizando así todos los cambios que hago en ellos ya sea en mi ordenador fijo o en mi portátil.
 </p>
-
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="595" height="178" border="0" align="center" hspace="10" vspace="10" src="/static/2016/02-emacs-mklink.png"
- alt="02 Enlace con MKLINK para Emacs" />
-</figure>
-
+<img src="/static/img/02-emacs-mklink.png" width="595" height="178" alt="" />
 <p>
 <b>Tercero</b>: lo anclamos a la barra de tareas para poder ejecutarlo de forma rápida. La mejor forma para hacerlo es abrir un documento cualquiera con él, y cuando vemos el icono en la barra de tareas, lo pulsamos con el botón derecho y seleccionamos “anclar a la barra de tareas”. Luego editamos dicho anclaje (click con el botón derecho sobre el icono, de nuevo click con botón derecho sobre “emacs” y seleccionamos “propiedades”):
 </p>
-
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="315" height="292" border="0" align="center" hspace="10" vspace="10" src="/static/2016/03-emacs-barradetareas.png"
- alt="03 Emacs Barra de Tareas" />
-</figure>
-
+<img src="/static/img/03-emacs-barradetareas.png" width="315" height="292" alt="" />
 <p>
 Y lo adaptamos para correr “runemacs.exe” en lugar de “emacs.exe” (este último deja en segundo plano una ventana msdos de fondo negro que resulta poco atractiva).
 </p>
-
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="450" height="588" border="0" align="center" hspace="10" vspace="10" src="/static/2016/04-emacs-propiedades.png"
- alt="04 Emacs propiedades" />
-</figure>
-
+<img src="/static/img/04-emacs-propiedades.png" width="450" height="588" alt="" />
 <p>
 Por último, y como prueba del buen trabajo de Emacs integrado con la herramienta “diff” proporcionada por el entorno Cygwin, os dejo una captura donde podéis ver cómo me ayuda a detectar cambios en un fichero de configuración de un router Cisco:
 </p>
-
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="596" height="525" border="0" align="center" hspace="10" vspace="10" src="/static/2016/05-emacs-diff.png"
- alt="05 Emacs diff" />
-</figure>
-
+<img src="/static/img/05-emacs-diff.png" width="596" height="525" alt="" />
 <p>
 Cuando limpie y de esplendor a mi fichero “.emacs” os lo compartiré por aquí por si os da ideas interesantes (a la vez que me sirve para fijar una copia de seguridad). Por ahora, os dejo sólo una brizna del mismo que activa la posibilidad de tener rápido acceso a “archivos recientes” (bajo el menú “File” o con “C-x C-r”):
 </p>
-
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="452" height="212" border="0" align="center" hspace="10" vspace="10" src="/static/2016/06-emacs-recent-files.png"
- alt="06 Emacs recent files" />
-</figure>
-
+<img src="/static/img/06-emacs-recent-files.png" width="452" height="212" alt="" />
 <p>
-Y otro día escribiré sobre el <b><a href="https://www.google.es/search?q=mode+org+emacs&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=cqQVWKiyOcWp8wfX_YCwBA">modo .org de Emacs</a></b>, que es verdaderamente alucinante para llevar todo un “<a href="http://orgmode.org/">Sistema de planificación</a>” personal, de proyectos, etc., con “ToDo”, “Tags”, “deadlines”… Si lo quieres ver en funcionamiento, echa un vistazo a <a href="https://www.google.es/search?q=org-mode+emacs+youtube&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=B5AXWOXWF-as8wfwgIGgDg">estos vídeos de Youtube</a>.
+Y otro día escribiré sobre el <a href="https://www.google.es/search?q=mode+org+emacs&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=cqQVWKiyOcWp8wfX_YCwBA"><b>modo “.org”</b> de Emacs</a>, que es verdaderamente alucinante para llevar todo un “<a href="http://orgmode.org/">sistema de planificación</a>” personal, de proyectos, etc., con “ToDo”, “Tags”, “deadlines”&#x2026; Si lo quieres ver en funcionamiento, echa un vistazo a <a href="https://www.google.es/search?q=org-mode+emacs+youtube&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=B5AXWOXWF-as8wfwgIGgDg">estos vídeos de Youtube</a>.
 </p>
 
 <p>
-Y tú, ¿qué me cuentas sobre Emacs? De verdad, si realizas tareas de administración de sistemas, de programación, de gestión… que requieran control de versiones… <b>¡dale una oportunidad y no lo abandonarás jamás!</b> <a href="https://www.youtube.com/watch?v=FtieBc3KptU">Incluso si eres un escritor&#x2026;</a>
+Y tú, ¿qué me cuentas sobre Emacs? De verdad, si realizas tareas de administración de sistemas, de programación, de gestión&#x2026; que requieran control de versiones&#x2026; ¡*dale una oportunidad y no lo abandonarás jamás*! <a href="https://www.youtube.com/watch?v=FtieBc3KptU">Incluso si eres un escritor&#x2026;</a>
 </p>
 
 <p>
@@ -162,27 +125,29 @@ Gracias por estar ahí. Y muchas más si decides enriquecerme con tus comentario
 Básicamente hay que instalar <a href="http://ftp.gnu.org/gnu/aspell/w32/Aspell-0-50-3-3-Setup.exe">este ejecutable</a> y este <a href="http://ftp.gnu.org/gnu/aspell/w32/Aspell-es-0.50-2-3.exe">diccionario</a>. Después añadimos las siguientes líneas a nuestro fichero de configuración ".emacs":
 </p>
 
-<div class="org-src-container">
-<pre class="src src-bash">;; ===== Para utilizar aspell como corrector ortogr&#225;fico ===
-;; C:\Program Files (x86)\Aspell\bin
-(add-to-list <span style="color: #008000;">'exec-path "C:/Program Files (x86)/Aspell/bin/")</span>
-<span style="color: #008000;">(setq ispell-program-name "aspell")</span>
-<span style="color: #008000;">(setq ispell-personal-dictionary "D:/Db/01-Personal/home/.aspell")</span>
-<span style="color: #008000;">(require '</span>ispell)
-;; La forma de invocarlo por defecto es <span style="color: #008000;">"M-$"</span>
-;; Esto que sigue s&#243;lo chequea la palabra sobre el cursor
-;; (global-set-key (kbd <span style="color: #008000;">"&lt;f8&gt;"</span>) <span style="color: #008000;">'ispell-word)</span>
-<span style="color: #008000;">;; Para chequear todo el buffer</span>
-<span style="color: #008000;">(global-set-key (kbd "&lt;f8&gt;") '</span>ispell-buffer)
-;; Para activar detecci&#243;n al vuelo
-(global-set-key (kbd <span style="color: #008000;">"C-&lt;f8&gt;"</span>) <span style="color: #008000;">'flyspell-mode)</span>
+<pre class="example" id="orgefb436b">
+
+;; ===== Para utilizar aspell como corrector ortográfico ===
+;; C:\Program Files (x86)\Aspell\bin
+(add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+(setq ispell-program-name "aspell")
+(setq ispell-personal-dictionary "D:/Db/01-Personal/home/.aspell")
+(require 'ispell)
+;; La forma de invocarlo por defecto es "M-$"
+;; Esto que sigue sólo chequea la palabra sobre el cursor
+;; (global-set-key (kbd "&lt;f8&gt;") 'ispell-word)
+;; Para chequear todo el buffer
+(global-set-key (kbd "&lt;f8&gt;") 'ispell-buffer)
+;; Para activar detección al vuelo
+(global-set-key (kbd "C-&lt;f8&gt;") 'flyspell-mode)
+
 </pre>
-</div>
+
 
 <p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Trabajando_con_GNU_Emacs_en_sistemas_Windows">Dejar comentario</a>.
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Trabajando%20con%20GNU%20Emacs%20en%20sistemas%20Windows">Dejar comentario</a>.
 </p>
-<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> <a href="https://godest.vivencias.net/tag-windows.html">Windows</a> </div></div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
 <div id="postamble" class="status"><div id="pie-de-pagina">
 <div id="archive">
   <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>

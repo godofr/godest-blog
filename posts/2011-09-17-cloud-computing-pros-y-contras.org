@@ -1,0 +1,44 @@
+#+title: Cloud Computing: pros y contras
+#+date: <2011-09-17 15:30>
+#+author: Godofredo Fdez.
+#+description: El cloud computing está de moda. Todo es cloud. Es por eso por lo que quiero compartir con los lectores de este blog algunas reflexiones que he realizado sobre el tema. Primero veamos qué se entiende por cloud computing. El siguiente vídeo creo que lo explica bien (no soy autor del mismo):
+#+filetags: Pensamiento Seguridad Software
+#+options: _:nil
+#+nid: 429
+
+El cloud computing está de moda. Todo es cloud. Es por eso por lo que quiero compartir con los lectores de este blog algunas reflexiones que he realizado sobre el tema.
+
+Primero veamos qué se entiende por cloud computing. El siguiente vídeo creo que lo explica bien (no soy autor del mismo):
+
+El lector crítico habrá notado cierta tendencia hacia lo positivo. Para compensar, vemos el siguiente vídeo. La primera parte es básicamente igual que el de arriba y peor contada, pero merece la pena esperar al final: es corto.
+
+¡Cuanta inseguridad y falta de privacidad! ¡Cuidado con lo que hacéis! ¡Todo está perdido! ¿no?
+
+Como el artículo final me ha quedado un poco largo, lo he dividido en dos. En el próximo artículo (que publicaré en unos días) continuaré.
+
+Os dejo limpios, sin condicionar, y reflexionando ;-).
+
+Nota: la segunda parte de este artículo la puede encontrar *[[/node/428][aquí]]*.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Cloud%20Computing%3A%20pros%20y%20contras][Dejar comentario]].
+
+** Comentarios
+
+*** ¡Está claro! (elradioplanner 19/09/2011 - 13:33)
+En realidad no tanto ;-) Es una buena disyuntiva y una buena excusa para conspiranoicos...
+
+Creo que hay que hacer otra distinción entre "nube privada" y "nube pública". Es decir, ¿por qué una empresa no puede tener sus aplicaciones en una "nube" que controle ella misma y a la que sólo sus empleados puedan acceder? Claro que se pierden muchas de las ventajas que menciona el primer video, pero también se limitan los inconvenientes mencionados en el segundo. Así que debemos distinguir entre los conceptos de nube-tecnología y de nube-negocio.
+
+Para mí la principal desventaja de la nube es la dependencia de la conectividad. Hoy en día parece que se da por supuesto que la conexión a internet la tenemos 100% garantizada y a prueba de fallos, pero no me parecen despreciables los problemas de seguridad, congestión y falta de fiabilidad que con el esquema nube pueden afectar seriamente al negocio que utilice esta tecnología.
+
+Hay campos en el que el aprovechamiento de la nube me parece máximo: Almacenamiento centralizado (como backup y trabajo en equipo sobre documentos y demás), bases de datos (aunque esto existe desde hace mucho tiempo), aplicaciones que requieran gran potencia de cálculo... otros no tanto, no veo mucha ventaja en usar un procesador de textos en la nube, en lugar de tener instalado Word o Openoffice en mi PC...\\
+
+*** Cloud privada y más (Anonymous 21/09/2011 - 08:59)
+Cloud privada: solución de compromiso a la que no hay que ir corriendo como locos.
+
+La WAN es crítica y sus exigencias (más prestaciones -> más precio) no serán asumibles por todos los públicos, por ejemplo: un fotógrafo. Al menos mientras soluciones ofertadas de banda ancha sigan costando lo que cuestan al mes.
+
+Y, efectivamente, no todo ha de estar en la cloud. Cada uno ha de buscar sus propias razones.
+
+Por tanto, de acuerdo en todo.

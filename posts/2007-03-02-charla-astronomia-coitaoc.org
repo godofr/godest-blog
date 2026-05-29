@@ -1,0 +1,23 @@
+#+title: Charla Astronomía COITAOC
+#+date: <2007-03-02 13:30>
+#+author: Pili Cantautora
+#+description: Descripción: Colegio Oficial/Asociación de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta. Plaza Duque de la Victoria nº 1, 3ª planta. 41002 Sevilla. Necesaria confirmación de sitencia: secretaria@coitaoc.org. ---------------------------------------------------------------------------------------- José Ignacio dará una charla de iniciación a la astronomía, y no os la podéis perder (al menos los colegiados!!) Seguro que disfrutaremos mucho, y además, al final habrá vinito español Difundid la palabra! Para más información: http://www.coitaoc.org/index.php?op=noticias&amp;
+#+filetags: 
+#+options: _:nil
+#+nid: 208
+
+Descripción:
+Colegio Oficial/Asociación de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta. Plaza Duque de la Victoria nº 1, 3ª planta. 41002 Sevilla.
+Necesaria confirmación de sitencia: secretaria@coitaoc.org.
+----------------------------------------------------------------------------------------
+José Ignacio dará una charla de iniciación a la astronomía, y no os la podéis perder (al menos los colegiados!!) Seguro que disfrutaremos mucho, y además, al final habrá vinito español
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+Difundid la palabra!
+
+Para más información: http://www.coitaoc.org/index.php?op=noticias&content=73&op2=sinenlazar&content2=751
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Charla%20Astronom%C3%ADa%20COITAOC][Dejar comentario]].
+

@@ -1,0 +1,206 @@
+#+title: La inteligencia fracasada. Resumen del capítulo I. La inteligencia malograda.
+#+date: <2005-09-17 19:31>
+#+author: Godofredo Fdez.
+#+description: CAPITULO I. LA INTELIGENCIA MALOGRADA Sección 1 El autor, J.A. Marina, comienza este capítulo intentado captar nuestra atención. Nos plantea la siguiente pregunta: ¿Por qué una persona muy inteligente malogra su vida por un comportamiento muy estúpido? Y lo ilustra con varios ejemplos: el de un afamado y respetado juez americano que acaba acosando a su amante cuando esta le deja, y el de un alumno suyo con alto coeficiente de inteligencia que acaba en chirona tras crear una banda de maleantes. “¿Era tan inteligente este alumno como decían sus tests de inteligencia? Contestar esta pregunta me va a llevar el resto del libro”, dice Marina.
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 47
+
+*CAPITULO I. LA INTELIGENCIA MALOGRADA*
+
+*Sección 1*
+
+El autor, J.A. Marina, comienza este capítulo intentado captar nuestra atención. Nos plantea la siguiente pregunta: ¿Por qué una persona muy inteligente malogra su vida por un comportamiento muy estúpido? Y lo ilustra con varios ejemplos: el de un afamado y respetado juez americano que acaba acosando a su amante cuando esta le deja, y el de un alumno suyo con alto coeficiente de inteligencia que acaba en chirona tras crear una banda de maleantes. “¿Era tan inteligente este alumno como decían sus tests de inteligencia? Contestar esta pregunta me va a llevar el resto del libro”, dice Marina.
+
+Tras esta llamada de atención pasa a definir lo que el entiende por inteligencia: “Llamo inteligencia a la capacidad de un sujeto para dirigir su comportamiento, utilizando la información captada, aprendida, elaborada y producida por él mismo”.
+
+Y a partir de la definición es fácil entender los fracasos de la inteligencia, esta puede fracasar: “porque no dirija, no capte, no aprenda o no sepa utilizar lo que aprende”.
+
+Parece que es algo novedoso, y que “llama la atención”, decir que la inteligencia es una “*capacidad de dirección*”. Aquí el autor comienza a guiarnos hacia su “cartografía de la inteligencia” y a complementar lo que tradicionalmente se ha asociado, y por tanto evaluado, a la inteligencia: percibir, relacionar, aprender, argumentar (capacidades cognitivas básicas). Acaba reafirmándose en esto con afirmaciones tales como: “la culminación de la inteligencia, su éxito, está en dirigir bien la conducta”. Si la inteligencia no consigue realizar bien su función estamos ante inteligencias dañadas (el problema está al principio: patologías mentales, traumas, etc.) o inteligencias fracasadas (el problema está al final: sin deficiencias de origen equivocaron su camino).
+
+Este párrafo es una excelente conclusión para el final de la sección 1: “Si queremos ser fieles a la realidad, hemos de admitir que nuestra inteligencia tiene dos pisos, es una inteligencia dúplex. Una cosa es la capacidad intelectual -el piso bajo- y otra el uso que hacemos de esa capacidad -el piso de arriba-. Una persona muy inteligente puede usar su inteligencia estúpidamente. Esta es la esencia del fracaso, la gran paradoja de la inteligencia, que, como todas las paradojas, produce una especie de mareo. La discrepancia entre “ser” inteligente y “comportarse” inteligentemente nos revela que entre ambos niveles hay un hiato(nota: hiato=separación), donde actúa un campo de fuerzas mal descrito, y esto abre un interesante y urgente campo de investigación”.
+
+*Sección 2*
+
+La conclusión de la sección anterior abre las puertas a una cartografía de la inteligencia:
+
+#+BEGIN_QUOTE
+  * En el nivel inferior sitúa a la inteligencia estructural (capacidad básica medida por los test de inteligencia) y que “para subrayar su nivel operativo” también la denomina inteligencia computacional.
+  * En el nivel intermedio: un factor de distorsión, algunos deformadores epistemológicos (nota: epistemología: Doctrina de los fundamentos y métodos del conocimiento científico), afectivos u operativos.
+  * En el nivel superior: El *uso de la inteligencia*, es decir, “lo que un sujeto hace con sus capacidades”. Por ahora no existe un test para medirla, nos señala Marina.
+#+END_QUOTE
+
+¿Qué compone el nivel inferior: la inteligencia estructural o computacional? Este nivel está compuesto “por una serie de mecanismos, capacidades, modos de respuesta *que funcionan por debajo del nivel consciente*. No conocemos sus actividades sino sólo alguno de sus resultados. Aquí encontramos: el miedo, la capacidad de ver (el sentido, estricto, de la visión), la furia, los celos, los resentimientos, la envidia, la vergüenza, etc. A cada uno de estos mecanismos Marina les denomina módulo, y nos dice que “los módulos autónomos (dotados de cierta independencia) proporcionan soluciones muy concretas a problemas muy concretos”. Por ejemplo, ante un peligro el miedo nos hace enfrentarnos a él, o paralizarnos o huir. Este conjunto de módulos está programado “desde la noche de los tiempos”.
+
+¿Cuál es la misión del nivel superior, del uso de la inteligencia? “Es iniciar, dirigir y controlar, hasta donde pueda, las maquinaciones de la inteligencia computacional”.
+
+Se libra por tanto una encarnizada lucha entre ambos niveles y surgen conflictos entre los propios módulos afectivos que “entran en colisión” algunas veces. “El ser humano es egoísta y altruista, independiente y social, pasional y racional”.
+
+El autor cierra esta sección con la “siguiente conclusión provisional”: “La causa del fracaso de la inteligencia es la intervención de un módulo inadecuado, que ha adquirido una inmerecida preeminencia por un fallo de la inteligencia ejecutiva”. Y la ilustra con un caso “muy simple”, y muy desgarrador: “La furia es un módulo afectivo que lleva a la agresión. Acabo de leer en el periódico que en un ataque de ira un hombre ha abrasado a su mujer con una sartén de aceite hirviendo y, horrorizado, después se ha tirado por el balcón”. Y continúa reafirmándose: “En todos los fracasos que voy a analizar encuentro, con mayor o menor dramatismo, uno de esos elementos. La inadecuación del módulo -- por rigidez, por anacronismo, por blindarse contra la experiencia, por impedir la continuación de la vida- o una falta de eficacia del yo ejecutivo, que se entrega a los automatismos computacionales y a las marejadas de la emoción”.
+
+Nota: esta sección tiene mucho que ver con la teoría que descubrí (allá por el año 2000) en el famoso libro de Daniel Goleman “Inteligencia Emocional”, concretamente viene descrito en el capítulo 2: Anatomía de un secuestro emocional.
+
+*Sección 3*
+
+En esta sección Marina intenta ligar la inteligencia con una *correcta elección de metas*. Lo hace así: “Inventar fines es la característica más propia de la inteligencia humana. Y si se equivoca en los fines se equivoca en todo. La inteligencia no trata sólo de resolver problemas, sino de plantearlos...” “...Una meta equivocada o falsa o mala pervierte todos los razonamientos que conduzcan a ella”.
+
+Y desde aquí enuncia un “Principio de la jerarquía de los marcos”: “Los pensamientos o actividades que son en sí inteligentes, pueden resultar estúpidos si el marco en que se mueven es estúpido”.
+
+Como siempre, utiliza muchos ejemplos para ilustrarlo, yo me quedo con este por lo demoledor y por lo gráfico: “Los países avanzados tienen que reducir la producción de alimentos o destruir parte de las cosechas para no hundir el mercado. Se paga por no cultivar. Es una decisión correcta desde el punto de vista económico. Pero hay más de mil millones de personas muriéndose de hambre, lo que hace que esa racionalidad, adecuada a su marco, resulte a la vez criminal en un marco más amplio”.
+
+En otras palabras, dice Marina: “El Principio de la jerarquía de los marcos me parece imprescindible para comprender el comportamiento humano y evaluarlo con justicia. Nos obliga a una estratificación de los juicios. Lo que a un nivel es aceptable puede dejar de serlo si ese nivel entero es abominable”.
+
+Y en este devenir acaba anunciando otro principio: “Para evaluar la inteligencia de un comportamiento, tenemos que justificar previamente la jerarquía de marcos que establecemos, y evaluar desde el superior”.
+
+Que levante la mano aquel que tras este principio no haya exclamado: ¡mal vamos! ;-)
+
+Claro, en este punto todos nos estamos preguntando: ¿Cuál es el marco superior? y lo que es más difícil ¿Cuál es el camino, el orden en el que unos marcos van englobando a otros -al estilo del juego de las muñecas rusas-? Bueno, Marina esboza un tercer principio: “La inteligencia fracasa cuando se equivoca en la elección del marco. El marco de superior jerarquía para el individuo es su felicidad. Es un fracaso de la inteligencia aquello que le aparte o le impida conseguir la felicidad”.
+
+¡Acabáramos! }:-)
+Dicho así... la cosa parece fácil. Pero si uno se para a pensarlo se torna en ardua tarea, ¿o no?
+
+*Sección 4*
+
+Concluye Marina: “*Ya he descubierto tres posibles causas de la estupidez. La intromisión de módulos mentales inadecuados, la ineficacia de la inteligencia ejecutiva, una equivocada jerarquía de los marcos*”.
+
+Recordando que prefería no utilizar la palabra estupidez sino fracaso (“etimológicamente proviene del francés casser que significa romper”) de la inteligencia acaba inventariando las posibles destrucciones:
+
+#+BEGIN_QUOTE
+  Los fracasos cognitivos.
+  Los fracasos afectivos.
+  Los lenguajes fracasados.
+  Los fracasos de la voluntad.
+#+END_QUOTE
+
+En los que profundizará en los siguientes capítulos: II, III, IV y V.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=La%20inteligencia%20fracasada.%20Resumen%20del%20cap%C3%ADtulo%20I.%20La%20inteligencia%20malograda.][Dejar comentario]].
+
+** Comentarios
+
+*** para este pedazo de resumen (Anonymous 04/05/2006 - 11:42)
+para este pedazo de resumen vale mas leer el libro
+
+*** buscaba un resumen... (Anonymous 10/08/2006 - 18:05)
+pa un libro q tengo q resumir y me encuentro con la version extendida, gracias de todos modos anda
+
+*** la verdad que esto de (Anonymous 10/04/2007 - 22:18)
+la verdad que esto de resumen tiene poco,como pa querer hacer una lectura rapida...
+Lo cierto es que menuda mierda de libro pa resumirlo tambien...se las trae.
+
+*** A mi me parece un resumen (palomitA 23/04/2007 - 20:42)
+A mi me parece un resumen con todos los contenidos, ya que algo más resumido estaría falto de ideas. El libro no se puede resumir más ya que se perderian un monton de conceptos muy importantes para su asimilacion posterior.
+
+*** Gracias palomitA. (Godo 26/04/2007 - 20:55)
+Esa era la intención. Exactamente esa.
+
+Bueno, y dejar rastro en Internet para que la gente tropezara, leyera, y si era posible (perdón por mis vanidosas pretensiones) captar su atención para que siguiera leyéndolo.
+
+Por otra parte, soy consciente de que este libro es de "lectura obligatoria" en algunos institutos (creo que del Principado de Asturias). Obviamente, lo que no quería era hacerle el trabajo a nadie ;-)
+
+Espero que te haya sido de provecho.
+
+Salud.
+
+*** Me parece un estupendo (Cler 09/05/2007 - 19:27)
+Me parece un estupendo resumen y personalmente (yo ya me habia leido el libro y me encanto) entiendo q hacer un resumen del libro mas corto no sería resumen ni seria nada debido a q el libro es muy denso te felicito por el resumen y muchisimas gracias. Besos
+
+*** los 5fracasos de la voluntad? (Anonymous 21/05/2007 - 13:42)
+alguien sabe los 5 fracasos de la voluntad?en el libro la inteligencia fracasada porsupuesto
+esq tngo q hacer un trabajo....:S
+
+*** la inteligencia feliz? (fer 19/10/2009 - 00:36)
+no soy tan cartesiano como marina, de hecho dudo q el nivel computacional pueda ser digirido, controlado, desde una inteligencia ejecutiva sin antes no acceder a nuestros procesos inconscientes q escapan a la mirada "luminosa" de las "inteligencias creadoras".. domesticar, dirigir ese nivel inferior y atribuir ese fracaso de la inteligencia, a la intervención de un módulo inadecuado q ha adquirido una inmerecida preeminencia por un fallo de la inteligencia directiva o a una equivocada jerarquía de marcos, es obviar partes fundamentales de la estructura de nuestra mente.., para acceder a ese "campo" tan dificil de la inteligencia creadora, poética, de los fines correctos de las q habla marina, debemos considerar antes q nada mapas de nuestros estratos mas profundos.. es decir, nuestra instalacion en la vida, nuestro ser arrojado al mundo,(utilizando terminología mariana) nuestras operaciones cognitivas superiores, nuestros conceptos mas sublimes todo ello, depende de un desarrollo emocional y éste no se dará sino hacemos cambios profundos, no en nuestras formas de pensar sino en nuestras emociones mas profundas.. en hacer consciente lo olvidado, nuestro yo mas profundo.. hablar desde una perspectiva "luminosa" sin reconocer q debajo de esas estructuras existen procesos inconscientes q nos hacen ver las cosas, y no sólo sentir de una manera determinada, es actuar como el barón de munchhausen... una frase de ortega a la q recurre el autor en ocasiones "no hay maldad creadora" si bien puede ser cierta, nos habla desde un modelo ideal, elitista.. echo de menos en marina mas psicología, sobre todo profunda..
+
+*** la inteligencia humana (Joaquin Gorreta 07/03/2011 - 05:36)
+Aquí esta mi conocimiento para vuestra inteligencia
+
+La inteligencia del ser en su mano está
+
+Mano= inteligencia divina, automática, autónoma,
+Intuitiva y creativa.
+
+Con un cuerpo cuidado a la perfección,
+Automáticamente e intuitivamente, etc.
+
+Cada movimiento de mano es pura
+Matemática e inteligencia.
+
+Con tu pensamiento puedes coger lo que quieras, cuanto quieras, y el tiempo que quieras, pero acuérdate de cerrarla
+Eso es inteligencia.
+
+Cuando no piensas funciona sola
+
+Nacemos con manos inteligentes y un cuerpo perfecto, nosotros lo hacemos deteriorar por falta de conocimientos hacia nosotros mismos.
+
+Humanos adora tus manos, son todos tus sentidos, tu pasado, tu presente y tu destino
+
+Ten presente que:
+El humilde es sabio, y en inteligencia es superior al que no es humilde.
+Crea la dulzura en ti, y alcanzaras maravillas en el universo.
+
+COMO DESARROLLAR LA MÁXIMA INTELIGENCIA EN EL MÍNIMO TIEMPO
+
+SCOOTERS CONDUCCION INTELIGENTE
+
+Necesario:
+
+-Las tres primeras paradas hacer lo máximo para frenar lo mínimo y suave posible.
+
+-Ya estas en tu moto, tu eres el profesor y tu eres el alumno.
+
+-En la sensibilidad de tu mano esta tu inteligencia.
+
+Crea la dulzura en tu mano y conseguirás maravillas con tu scooters
+
+Hace 40 años la mano del hombre invento el vehiculo de su futuro, la primera scooters.
+
+Hoy la tenéis en vuestra mano, y lo mejor vuestra inteligencia.
+
+Atentamente
+Joaquín 53 años\\
+
+*** El porque la inteligecia fracasa (Antonio García López 17/04/2011 - 10:06)
+Muchas gracias a todos vosotros los que investigais esta complicada condición de la mente - inteligencia.
+
+Yo desde cierta temprana edad me di cuenta de que el modelo de vida en el que viviamos la humanidad habia demasiada trampa oscura, y desde ahí realice una larga y profunda investigación sobre el comportamiento de la mente humana.
+Entrando en este campo tan complicado, y tan escurridizo para tener unos medios aceptablemente capacitados para leer la mente, pero ¿quien los diseña y en base aque?, y en campos de lectura estaran capacitados.
+Un ordenador tal vez diseñado por mentes duales será un conocimiento bastante limitado, porque detrás de ese espectro de conocimiento es donde esta la verdadera base de todo saber, eso es alcancar el verdadero camino de la comprensión de las leyes del universo, y eso para mí es Dios.
+Para alcanzar la luz del universo hay demasiados obstáculos en este camino, porque hay mentes muy capacitadas en algunas condiciones, pero en otras de carece de esa dotaciónn, cuando para alcanzar el pleno camino debe de ser desde las inteligencias integradas, pero se nos dice solo desde el corazón, eso es incompleto, por favor ver esta condición condición mental en este pequeño comentario.
+Se habla tanto de pensar, parece que todo cuanto reproduce nuestro cerebro es pensado, pero está muy lejos de ello. Hay muchas trampas ocultas en este complicado y desconocido trabajo de un cerebro humano cargado de demasiada manipulación desde la más temprana edad.
+
+La Ciencia de la Mente (el Estudio del Cerebro).
+
+http://www.youtube.com/watch?v=RkmcoyDUVWY
+
+http://www.youtube.com/watch?v=eJzaBWyRzac&feature=related
+
+LAS TRAMPAS DEL PENSAMIENTO EN EL CAMINO DEL DESPERTAR.
+Pensar es razonar, mientras que no entre la trampa de ser pensados. Ser pensados básicamente corresponde, por un lado, a lo simplemente grabado y, por otro, a una sutil forma de falsas respuestas que a la parte consciente le pasan desapercibidas.Todo ello da como resultado que nuestra capacidad mental se va debilitando en la medida en que se va acercando a nuestra propia esencia humana. siendo así una inteligencia que trabaja en una escala proporcional, no en una escala lineal. Todo esto es el resultado de un conocimiento muy descompensado, lo de afuera se ha disparado, mientras el nuestro a nivel humano se quedó muy reducido.
+A modo de ejemplo: cualquier ser humano que tenga un coeficiente de inteligencia hacia fuera no muy aventajado y si este existiera la posibilidad de que trabajase en una escala lineal, su transformación humana sería uno de los niveles más elevados de la gran mayoría de la humanidad en la forma que estamos concebidos.
+Sería un ser humano capaz de conducir por el buen sendero de la transformación a la mayoría de la humanidad, porque esa gran mayoría tristemente no está dotada de esa elemental condición. Este supuesto ser humano estaría muy por encima a nivel humano de cualquier supuesto superdotado en la forma en la que estamos confirgurados la mayoría de la humanidad.
+Todo esto parece una auténtica fantasía, pero es la auténtica y cruda realidad. Los hechos, los cuales son demasiado abundantes en la actualidad, y sobre todo en el pasado, están ahí delante de los ojos para poder demostrarlo; otra cosa es que no seamos capaces de poder verlo.
+Antonio García López invetigador de la mente humana metodoexpansionmente@gmail.com
+
+*** Me gusta tu post, cuenta con (Ana | autómatas programables 09/05/2012 - 18:00)
+Me gusta tu post, cuenta con esta fans, enhorabuena
+
+*** ¿De verdad te lo has leído? (Godo 09/05/2012 - 22:20)
+¿De verdad te lo has leído? Me da que es un poco spam ;-)
+
+Por tanto no me lo creeré hasta que me demuestres lo contrario.
+
+Gracias.
+
+*** ummmm (Ana | automatas programables 11/05/2012 - 12:47)
+"Llamo inteligencia a la capacidad de un sujeto para dirigir su comportamiento" Desde mi punto de vista esto no es cierto,según los ejemplos que pone el autor, porque...
+
+¿Ser inteligente supone dirigir el comportamiento hacia actitudes consideras "buenas" por la razón?
+
+... y porque no, una persona inteligente puede dirigir sus actitudes hacia acciones consideradas "malas" para lucrarse u obtener sensaciones satisfactorias para su persona?
+
+Saludos.
+
+*** Gracias =) (Anonymous 28/04/2013 - 18:48)
+Gracias por resumirlo, he oído hablar de él y quería saber un poco más.. pero por ahora no tenía pensamiento de leerlo. Por ello tu post me ha venido muy bien =). (también agradezco que no te hayas saltado ninguna idea clave, como comentas más arriba)

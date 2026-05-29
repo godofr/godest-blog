@@ -1,0 +1,15 @@
+#+title: gnu logo
+#+date: <2005-07-18 20:54>
+#+author: Godofredo Fdez.
+#+description: Logo del proyecto GNU , creado en 1984 con el objetivo de desarrollar un sistema operativo completo, al estilo UNIX. Este fue el origen del software libre .
+#+filetags: Logos
+#+options: _:nil
+#+nid: 30
+
+Logo del [[http://www.gnu.org][proyecto GNU]], creado en 1984 con el objetivo de desarrollar un sistema operativo completo, al estilo UNIX.
+
+Este fue el origen del [[http://www.gnu.org/philosophy/free-sw.html][software libre]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=gnu%20logo][Dejar comentario]].
+

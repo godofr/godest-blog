@@ -1,0 +1,35 @@
+#+title: A conseguir
+#+date: <2010-09-08 07:52>
+#+author: Godofredo Fdez.
+#+description: Si alguno de los lectores de este blog desea hacerme un regalo, que apueste, preferiblemente, por alguno de los siguientes libros: - Trampas Mentales. Autor: Motterlini, Matteo. Editorial: Paidós. - 50 cosas que hay que saber sobre genética. Autor: Henderson, Mark. Editorial: Ariel. * * * Películas: - Yo, Robot. Director: Alex Proyas. 2004. DVD. - Cielo de octubre. Director: Joe Johnston. 1999. DVD. * * * Series: - That's Impossible. History Channel. 2009. DVD. - The Universe. Tony Long. 2007. DVD.
+#+filetags: Hardware Libros Música
+#+options: _:nil
+#+nid: 363
+
+Si alguno de los lectores de este blog desea hacerme un regalo, que apueste, preferiblemente, por alguno de los siguientes libros:
+
+#+BEGIN_QUOTE
+  - Trampas Mentales. Autor: Motterlini, Matteo. Editorial: Paidós.
+  - 50 cosas que hay que saber sobre genética. Autor: Henderson, Mark. Editorial: Ariel.
+#+END_QUOTE
+
+* * *
+Películas:
+
+#+BEGIN_QUOTE
+  - Yo, Robot. Director: Alex Proyas. 2004. DVD.
+  - Cielo de octubre. Director: Joe Johnston. 1999. DVD.
+#+END_QUOTE
+
+* * *
+Series:
+
+#+BEGIN_QUOTE
+  - That's Impossible. History Channel. 2009. DVD.
+  - The Universe. Tony Long. 2007. DVD.
+  - Popular Science the future of. The incubator. 2009. DVD.
+#+END_QUOTE
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=A%20conseguir][Dejar comentario]].
+

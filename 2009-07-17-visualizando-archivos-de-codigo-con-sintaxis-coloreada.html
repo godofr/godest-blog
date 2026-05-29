@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="ACTUALIZADO: 14-03-2022 . Ver actualización al final del artículo. ACTUALIZADO: 27-07-2009 . Ver actualización al final del artículo. Hoy, revisando mis feeds…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Visualizando archivos de código con sintaxis coloreada</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">17 jul. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-07-17-visualizando-archivos-de-codigo-con-sintaxis-coloreada.html">Visualizando archivos de código con sintaxis coloreada</a></h1>
+<p>
+<b>ACTUALIZADO: 14-03-2022</b>. Ver actualización al final del artículo.
+</p>
+
+<p>
+<b>ACTUALIZADO: 27-07-2009</b>. Ver actualización al final del artículo.
+</p>
+
+<p>
+Hoy, revisando mis <a href="http://es.wikipedia.org/wiki/Feed">feeds</a> sin leer, he encontrado en <a href="http://petereisentraut.blogspot.com/2009/07/adding-color-to-console-code-syntax.html">este post</a> como hacer algo que llevaba tiempo queriendo conseguir. Muchos de vosotros lo veréis como un punto de "frikismo" avanzado ;-), sin embargo, los que trabajamos mucho tiempo visualizando código hemos aprendido a "apoyarnos" en este tipo de cosas para ganar rapidez en el análisis, detección de errores, etc. <b>¡OJO!</b> Era necesario conseguir este efecto a la hora de <b>visualizar</b> un fichero, no confundir con editar (para esto ya está el fantástico <a href="http://www.gnu.org/software/emacs/">emacs</a>). En ocasiones es preferible simplemente visualizar para <b>no correr el riesgo de modificar algo</b>.
+</p>
+
+<p>
+Bien, lo primero que hemos de hacer es disponer de los paquetes apropiados:
+</p>
+
+<pre class="example" id="orgbe11180">
+
+[21:24:19(root@surco)/home/godo]&gt; apt-get install source-highlight less
+
+</pre>
+
+<p>
+<b>less</b> es un "paginador"/visualizador de ficheros (sustituto del más ampliamente conocido <b>more</b>), y <b>source-highlight</b> es la herramienta de coloreado de sintaxis que entiende los siguientes lenguajes: C/C++, C Sharp, Bison, Caml, Changelog, Diff, Flex, Fortran, Html, Java, Javascript, Latex, Logtalk, Log files, Lua, ML, Pascal, Perl, PHP, Postscript, Prolog, Python, Ruby, Shell and XML.
+</p>
+
+<p>
+Una vez instalado el software necesario, pasamos a crear el fichero <b>.lessfilter</b> en nuestro directorio home:
+</p>
+
+<pre class="example" id="org5e1fd72">
+
+[21:52:19(godo@surco)~]&gt; more .lessfilter
+#!/bin/sh
+
+source-highlight -fesc -oSTDOUT "$1" 2&gt;/dev/null
+
+</pre>
+
+<p>
+<b>Y le damos permisos de ejecución</b>:
+</p>
+
+<pre class="example" id="org404b247">
+
+[21:34:31(godo@surco)~]&gt; chmod 755 .lessfilter
+
+</pre>
+
+<p>
+Finalmente editamos nuestro fichero de configuración de la shell (.bashrc en mi caso) y agregamos lo siguiente:
+</p>
+
+<pre class="example" id="org745035d">
+
+# Para que less muestre colores
+export LESS="-R"
+# Para que evalúe el fichero ~/.lessfilter
+eval "$(lesspipe)"
+
+</pre>
+
+<p>
+Y listo, ya podemos visualizar código con sintaxis coloreada:
+</p>
+
+<pre class="example" id="orgbd47bdc">
+
+less somefile.c
+less somefile.py
+less somefile.patch
+
+</pre>
+
+<ul class="org-ul">
+<li>- -</li>
+</ul>
+
+<p>
+<b>ACTUALIZACIÓN: 27-07-2009</b>:
+</p>
+
+<p>
+A muchos de vosotros os ocurrirá lo que a mí: cuando intentáis ver un shell script que <b>no</b> termina con extensión .sh, es decir, que no tiene extensión (cosa habitual en el mundo GNU/Linux - Unix), source-highlight no lo detecta y, por tanto, no lo colorea. Bueno, un poco de hacking ;-) nos ayuda a resolver esto:
+</p>
+
+<pre class="example" id="orgdf25864">
+
+[21:52:19(godo@surco)~]&gt; more .lessfilter
+#!/bin/sh
+
+# ===== POST ORIGINAL =====
+# http://petereisentraut.blogspot.com/2009/07/adding-color-to-console-code-syntax.html
+
+# ===== PARA VERISONES 3.X ======
+# En Debian ahora, 27-07-2009, están las versiones 2.x
+# supongo que cuando entren las versiones 3.x ha de funcionar
+# lo que me ha comentado betto said...
+# If you use --infer-lang option, and the shell script starts with 
+# the #!/bin/sh then source-highlight will highlight it as a shell 
+# script no matter what its extension is (you may want to take a 
+# look at the file src-hilite-lesspipe.sh
+# distributed with source-highlight).
+#    Hope this helps :-)
+#    Lorenzo
+#    26 July, 2009 14:01
+
+
+# En este bloque detectamos la extensión del fichero
+FILE="$1"
+EXTENSION=${FILE##*.}
+NAME=${FILE%.*}
+
+# Si EXTENSION y NAME son iguales el fichero no tiene extension,
+# en este caso, por defecto, le decimos a source-highlight
+# que considere la entrada como un script de shell
+
+if [ "$NAME" = "$EXTENSION" ]; then
+    EXTENSION=""
+fi
+
+if [ "$EXTENSION" = "" ]; then
+   source-highlight --src-lang=shell -fesc -oSTDOUT "$1" 2&gt;/dev/null
+else
+   source-highlight -fesc -oSTDOUT "$1" 2&gt;/dev/null
+fi
+
+
+</pre>
+
+<ul class="org-ul">
+<li>- -</li>
+</ul>
+
+<p>
+<b>ACTUALIZACIÓN: 14-03-2022</b>:
+</p>
+
+<p>
+Mucho mejor, e inmediato, utilizar <a href="https://github.com/sharkdp/bat">bat</a>.
+</p>
+
+<pre class="example" id="org6192676">
+
+[09:49:32(godo@surcopi)~]
+$ bat --help
+bat 0.18.3
+A cat(1) clone with syntax highlighting and Git integration.
+
+</pre>
+
+<ul class="org-ul">
+<li>- - <b>Fuentes originales</b>:</li>
+<li><a href="http://petereisentraut.blogspot.com/2009/07/adding-color-to-console-code-syntax.html">Peter Eisentraut: Adding Color to the Console: Code Syntax Highlighting with less and source-highlight</a> 2) <a href="http://petereisentraut.blogspot.com/2009/07/adding-color-to-console-pygments-vs.html">Peter Eisentraut: Adding Color to the Console: Pygments vs. Source-highlight.</a></li>
+</ul>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Visualizando%20archivos%20de%20c%C3%B3digo%20con%20sintaxis%20coloreada">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

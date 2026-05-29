@@ -1,0 +1,62 @@
+#+title: Diferencias entre GNU/Linux y FreeBSD
+#+date: <2009-05-05 15:41>
+#+author: Godofredo Fdez.
+#+description: Actualizado: 2009-05-05 Inspirado en esta pregunta que se hizo en barrapunto, he decidido abrir este post para comentar las principales diferencias entre…
+#+filetags: FreeBSD GNU/Linux
+#+options: _:nil
+#+nid: 313
+
+*Actualizado: 2009-05-05*
+
+Inspirado en [[http://softlibre.barrapunto.com/comments.pl?sid=80860&cid=1143993][esta pregunta]] que se hizo en barrapunto, he decidido abrir este post para comentar las principales diferencias entre GNU/Linux y FreeBSD. Además, incorporaré tras estos primeros párrafos cuatro apartados: ventajas comunes, desventajas comunes, ventajas de GNU/Linux y ventajas de FreeBSD (las ventajas de uno son respecto al otro, por lo que no merece la pena añadir los apartados desventajas individuales: son las complementarias, ¿sí? :-)). Así, intentaré mantener este post vivo a lo largo del tiempo, indicando al comienzo del mismo la fecha de la última edición.
+
+Pasamos a continuación a describir las diferencias generales y los principales conceptos implicados.
+
+Básicamente las diferencias se encuentran en la capa del kernel, ese gran desconocido para la mayoría de los usuarios: todo el mundo ha oído hablar de él pero nadie lo ha visto, ¿será mentira? ;-).
+
+Sin ánimo de extenderme mucho, y sin querer entrar en batallas dialécticas de límites y funciones que nos lleven a una clase magistral, el kernel es el encargado de gestionar los recursos de la máquina: la memoria, la velocidad del procesador (véase la regulación que se hace en modo ahorro de energía de los portátiles ;-)), las comunicaciones con los periféricos, el espacio de disco, etc. Los "puristas" suelen llamar Sistema Operativo al kernel y poco más, al resto les llaman aplicaciones, que se ejecutan sobre el Kernel. También hay algunas diferencias en los niveles de seguridad implementados **de serie** tanto en la ejecución de procesos como en los accesos a ficheros, permisos de usuario, etc.
+
+Pues, así, podríamos decir que la diferencia entre FreeBSD y GNU/Linux está en el kernel, sobre éste ambos suelen correr el mismo conjunto de aplicaciones: encontramos servicios (apache, exim, etc.) y entornos de trabajo (gnome, kde, etc.), aplicaciones de grabación y reproducción multimedia, gráficas, etc. Puede ser que alguna aplicación no esté disponible para uno y sí para el otro, pero básicamente, un usuario final no "debería notar" grandes diferencias en esto. Sí que puede haberlas en temas de rendimiento, soporte de dispositivos, etc., pero creo que en temas de rendimiento, aún habiéndolas, son tan mínimamente apreciables para un usuario final que no deberían ser suficientes para basar una decisión. Sí que lo serán los dispositivos soportados: es triste gastarte la pasta en algo que luego no puedes utilizar.
+
+En fin, en esto del software libre lo bonito es precisamente eso: la libertad. Uno es libre de probar, aprender... y quedarse con lo que más le guste y cómodo se halle.
+
+En mi caso particular: no me iré de GNU/Debian nunca (mientras sigan manteniendo el nivel de calidad con la que vienen trabajando todos estos años) y he comenzado a explorar FreeBSD por motivos de trabajo y aprendizaje.
+
+*Ventajas comunes* - Son software libre.
+- Son gratuitos.
+- Están exentos de ser infectados por los virus más extendidos (hay quién piensa que por cualquier tipo de virus, a mi me parece excesivo y matizable. Para saber más lee [[/node/287][esto]]).
+
+*Desventajas comunes* - Suelen reconocer menos hardware que windows. Los fabricantes no suelen facilitar la labor de desarrollo de drivers. Hay que asegurarse de que nuestros dispositivos están soportados.
+- Tienen muchos menos juegos que windows }:).
+
+*Ventajas GNU/Linux* - El proceso de instalación se parece cada vez más al de windows. El usuario menos avanzado es capaz de llevarlo a cabo en las distribuciones más comunes: ubuntu, debian, etc.
+- Hoy por hoy soporta más software de virtualización, por ejemplo: Virtualbox (bueno, bonito, barato y fácil).
+
+*Ventajas FreeBSD* - "Las estoy investigando" :-?.
+
+*Y tú, ¿compartes alguna?* Si te animas deja un comentario para luego consolidarlo en el cuerpo del post.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Diferencias%20entre%20GNU%2FLinux%20y%20FreeBSD][Dejar comentario]].
+
+** Comentarios
+
+*** Pura presentación para (Ramiro 11/07/2010 - 18:29)
+Pura presentación para decir lo mismo que NADA.
+
+un -6 te pongo y mas vale que estudies para la próxima -__-
+
+*** Gracias, llevas razón... (Godofredo Fdez. 14/07/2010 - 00:46)
+...la verdad es que el proyecto donde iba a utilizar FreeBSD se frenó en seco, y finalmente todo acabó con una pequeña prueba de instalación... y un uso escaso.
+
+Sensaciones contradictorias: me gustó el reconocimiento de hardware y la documentación para que lo poco que no funcionó a la primera lo hiciera a la segunda, y sin mucho esfuerzo. No me gustó el "sistema de gestión de paquetes", lo vi muy cutre al lado de apt. También me gustó mucho la configuración de seguridad y el rendimiento.
+
+Si tuviera que concluir (aceptando la poca dedicación y por tanto la gran distancia a una opinión de valor): como sistema operativo de servidor de propósito específico (comunicaciones, relay de correo, vpn, etc.) me parece genial, como sistema operativo de batalla diaria (escritorio) me parece difícil, mejor dicho: tedioso, de mantener y escalar.
+
+Sin fanatismos, ¡eh!
+
+Por cierto, tú tampoco has demostrado haber estudiado mucho, ¿no? ;-)
+
+Salud y gracias nuevamente.

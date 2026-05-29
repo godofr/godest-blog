@@ -1,0 +1,77 @@
+#+title: Buscando software libre
+#+date: <2007-05-21 17:30>
+#+author: José Ignacio
+#+description: Hola a todos. Siento emplear esta herramienta de comunicación cantautoril para hablar de estos temas, pero creo que la bitácora tenía estos rumbos ya antes de conocer el maravilloso mundo de Alfonso del Valle y amigos.
+#+filetags: Desde_ti
+#+options: _:nil
+#+nid: 234
+
+Hola a todos.
+
+Siento emplear esta herramienta de comunicación cantautoril para hablar de estos temas, pero creo que la bitácora tenía estos rumbos ya antes de conocer el maravilloso mundo de Alfonso del Valle y amigos.
+
+En fin, que no me enrollo. Necesito encontrar una herramienta que me permita pintar líneas sobre otra capa que yo pueda cargar, y entre las líneas que yo pinte me permita incluir otros elementos con propiedades. Vamos, un programita que pueda hacer caminos de redes, mayormente (Fiti dixit): que pinte una línea, luego una cajita, luego otra línea... y todos esos elementos estén interconectados (tirando de una base de datos que andará bajo todo esto).
+
+Como ya todo está inventado, quizá alguno de vosotros conozca algo medianamente parecido a este programita de diseño que ando buscando.
+
+Muchas gracias y a ver si os veo a muchos en el concierto del Chicho!!!
+
+Un abrazo,
+José Ignacio.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Buscando%20software%20libre][Dejar comentario]].
+
+** Comentarios
+
+*** Más información. (Godo 21/05/2007 - 22:46)
+Hola José Ignacio.
+
+No me queda claro si lo que buscas es un programa de dibujo, esquemas o diseño gráfico, es decir, algo como el photoshop, visio o autocad... o si por el contrario estás buscando algo "más profesional" de diseño de circuitos, estilo al spice, orcad, etc. ¿Sólo necesitas pintar o también simular? Lo de tirar de una base de datos me ha "matao". Me temo que vas más a por lo segundo, algo que te permita modelar gráficamente y después simular... si es así, no tengo ni idea.
+
+A la espera quedo.
+
+*** Hola Godo!
+Pues mira, (José Ignacio 24/05/2007 - 17:21)
+Hola Godo!
+
+Pues mira, exactamente sería como una interfaz gráfica que tirara de base de datos, vamos como si fuera el DIA pero un poco más potente y que soportara una cartografía en una capa para hacer circuitos por las calles, conectando elementos y guardando sus propiedades. Nada de simulación, es más simple, como autocad pero no puede ser éste porque le falta el concepto de "conectorización" o "red": en él se pueden delinear los circuitos sobre una cartografía, pero luego no puedo obtener un diagrama de la ruta que haya creado en plan esquema de forma automática. No sé si me explico... Yo quiero pintar un cable que se conecte a otro cable y luego a otra cajita, todo sobre un plano real, e ir asignando propiedades a estos elementos (como un código, como mínimo), de tal forma que al final la propia aplicación me saque un esquema de lo que he hecho, un listado ordenado, etc. para lo que es necesario que los elementos puedan guardarse con sus conexiones entre ellos (de ahí lo de la base de datos).
+
+En fin, que va a estar difícil que exista, pero con que se parezca me conformo.
+
+Un saludo!!
+
+José Ignacio.
+
+--------------------------
+
+Dime cuánto tiempo queda,
+qué hago, aparte del vago,
+finjo estar de acuerdo,
+es un milagro que siga estando cuerdo
+
+*** Puede ser que... (Anonymous 24/05/2007 - 21:21)
+Hola Jose Ignacio
+
+Puede que ser que lo que estés buscando sea un sistema de información geográfica (GIS). Me suena que algunas empresas utilizan el Smallworld. En el siguiente enlace de la wikipeda puedes encontrar una relación de GIS, afortunadamente algunos de ellos son software libre.
+
+Enlace: [[http://es.wikipedia.org/wiki/GIS][GIS en Wikipedia]].
+
+Espero que te sirva de ayuda
+
+MCarmen
+
+*** Gracias (José Ignacio 28/05/2007 - 09:43)
+Muchas gracias, Mari Carmen.
+
+Los investigaré.
+
+Un saludo,
+José Ignacio.
+
+*** Reconozco mi desconocimiento (Godo 30/05/2007 - 12:10)
+Hola José Ignacio.
+
+Pues eso, que no sé como ayudarte en este tema. Si consigues algo, por favor, coméntalo por aquí, aunque sea brevemente, para tener una referencia a una posible solución en un futuro.
+
+¡Que lo consigas!

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Aunque en mi proveedor de hosting el servidor utilizado es el inestimable apache , en casa prefiero optar por un servidor web que sea algo más ligero, por eso…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Drupal. Clean-URL con lighttpd</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">12 may. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-05-12-drupal-clean-url-con-lighttpd.html">Drupal. Clean-URL con lighttpd</a></h1>
+<p>
+Aunque en mi proveedor de hosting el servidor utilizado es el inestimable <a href="http://www.apache.org/">apache</a>, en casa prefiero optar por un servidor web que sea algo más ligero, por eso trabajo con <a href="http://www.lighttpd.net/">lighttpd</a>.
+</p>
+
+<p>
+Para trabajar con la versión de pre-producción de mi <a href="http://drupal.org">Drupal</a> habilitando el "<i>formato limpio de URL</i>", conocido en el argot como <a href="http://drupal.org/node/15365">clean-url</a>, en el que desaparecen de las direcciones web símbolos y demás caracteres sobrantes utilizados, normalmente, en las consultas realizadas a las bases de datos, he retocado un par de ficheros de configuración que indico a continuación.
+</p>
+
+<p>
+1.- El fichero de configuración de lighttpd:
+</p>
+
+<pre class="example" id="orgbe06dec">
+alpechin:/etc/lighttpd# emacs lighttpd.conf
+</pre>
+
+<p>
+En el que añadimos al final la siguiente línea:
+</p>
+
+<pre class="example" id="org7c59d76">
+
+### Habilitamos cleanURL en drupal
+server.error-handler-404 = "/index.php"
+
+</pre>
+
+<p>
+2.- Y añadimos el siguiente código al final del fichero:
+</p>
+
+<pre class="example" id="org01a3828">
+/var/www/drupal.alpechin/sites/default]&gt; emacs settings.php
+</pre>
+
+<pre class="example" id="org1e7f440">
+
+if (strpos($_SERVER['SERVER_SOFTWARE'], 'lighttpd') !== false) {
+    $_lighty_url = $base_url.$_SERVER['REQUEST_URI'];
+    $_lighty_url = @parse_url($_lighty_url);
+
+    if ($_lighty_url['path'] != '/index.php' &amp;&amp; $_lighty_url['path'] != '/update.php' &amp;&amp; $_lighty_url['path'] != '/') {
+        $_SERVER['QUERY_STRING'] = $_lighty_url['query'];
+        parse_str($_lighty_url['query'], $_lighty_query);
+        foreach ($_lighty_query as $key =&gt; $val)
+            $_GET[$key] = $_REQUEST[$key] = urldecode($val);
+        $_GET['q'] = $_REQUEST['q'] = urldecode(substr($_lighty_url['path'], 1));
+    }
+}
+
+</pre>
+
+<p>
+3.- Rearrancamos lighttpd:
+</p>
+
+<pre class="example" id="org80f7fc3">
+
+alpechin:~# /etc/init.d/lighttpd restart
+
+</pre>
+
+<p>
+4.- Y habilitamos las clean-url aquí: /admin/settings/clean-urls
+</p>
+
+<p>
+Y a seguir disfrutando.
+</p>
+
+<p>
+P.D.: Este código ha sido construido tras buscar mucho en google. Incorpora todos los parches que he ido encontrando para evitar disfunciones, y por ahora ha funcionado siempre, con todos los módulos que suelo tener instalados y con los que voy probando. Si quieres dejarme alguna puntualización/sugerencia, por favor, deja un comentario. Gracias.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Drupal.%20Clean-URL%20con%20lighttpd">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-bitácoras.html">Bitácoras</a> <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-freebsd.html">FreeBSD</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+#+title: andLinux (I)
+#+date: <2011-03-20 21:18>
+#+author: Godofredo Fdez.
+#+description: Buscando la forma de poder gestionar mi contabilidad con kmymoney en windows, me preguntaba si existía un port o algo similar, he encontrado esta magnífica herramienta que comparto con vosotros.
+#+filetags: GNU/Linux Software
+#+options: _:nil
+#+nid: 404
+
+#+begin_export html
+<a href="http://andlinux.org/" target="_blank"><img src="/static/img/logo-andLinux.png" class="image image-preview " width="185" height="45" border="0" align="right" hspace="10" vspace="10" alt="Logo de andLinux"/></a>
+#+end_export
+Buscando la forma de poder gestionar mi contabilidad con [[http://kmymoney2.sourceforge.net/index-home.html][kmymoney]] en windows, me preguntaba si existía un port o algo similar, he encontrado esta magnífica herramienta que comparto con vosotros.
+
+andLinux es una "migración" del kernel de GNU/Linux para que pueda ejecutarse como si fuera un "driver" de windows. Así podemos lograr tener en la misma máquina corriendo en paralelo aplicaciones windows y aplicaciones GNU/Linux. ¡Genial! He visto por ahí comparativas (he perdido el enlace si lo encontráis, por favor, dejadme un comentario) de rendimiento y el alcanzado con esta solución es mayor que el que ofrecen soluciones basadas en virtualización con vmWare, Virtualbox, etc.. Además, evitamos tener que arrancar la máquina virtual cada vez que lo necesitamos: en este entorno las aplicaciones de GNU/Linux están tan accesibles como cualquier otra aplicación windows (menús, accesos directos, etc.), de forma transparente para el usuario habitual.
+
+Resumo el escenario: sobre nuestro windows (lo he probado en XP y en W7) instalamos andLinux como si se tratara de otra aplicación más, similar a las instalaciones que hacemos todos los días: sin tener que particionar el disco, sin pelearnos con la detección de hardware, etc. Yo he elegido el [[http://andlinux.org/downloads.php][sabor kde]] porque es el que venía usando en mi linuxera historia, ocupa más pero ofrece software útil y potente (ver archivo 7z al final de este artículo con las capturas de mi proceso de instalación). Al finalizar la instalación tendremos un lanzador de aplicaciones en la bandeja del sistema (una k en blanco sobre fondo azul) que nos permitirá ejecutar cosas como: una consola, un explorador de archivos, el propio navegador konqueror, etc.
+
+Además permite acceder al sistema de ficheros de vuestra máquina utilizando tanto samba como un driver particular, cofs. Yo he elegido esta última opción, y aunque no es la recomendada (puede dar problemas con caracteres extraños en los nombres de ficheros) sí es la más rápida. Me he estado peleando con *samba* y, de momento, no he sido capaz. Lo dejo pendiente para más adelante.
+
+¿No os parece maravilloso?
+
+Nada de esto sería posible sin [[http://www.colinux.org/][colinux]], el verdadero núcleo del sistema y nombre del esfuerzo realizado por migrar el kernel Linux al espacio de "drivers" de windows. Os dejo la presentación que hizo el fundador de colinux en el "Linux Symposium" que se celebró en el año 2004 en Ontario, Canada (ver archivo adjunto: Reprint-Aloni-OLS2004.pdf).
+
+Como andLinux está basado en una distribución Ubuntu, concretamente en [[http://old-releases.ubuntu.com/releases/9.04/][jaunty 9.04]], en próximos artículos veremos toda la potencia de configuración y de aplicaciones que nos ofrece. He probado varias y funcionan muy bien.
+
+¿Conocéis algo similar? ¿Lo habéis probado? ¿Cómo os va?
+
+Seguimos aprendiendo.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/andLinux.7z][andLinux.7z]]
+- [[https://godest.vivencias.net/static/files/Reprint-Aloni-OLS2004.pdf][Reprint-Aloni-OLS2004.pdf]]
+- [[https://godest.vivencias.net/static/files/andLinux.7z][andLinux.7z]]
+- [[https://godest.vivencias.net/static/files/Reprint-Aloni-OLS2004.pdf][Reprint-Aloni-OLS2004.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=andLinux%20%28I%29][Dejar comentario]].
+
+** Comentarios
+
+*** Me parece muy interesante (jfc 26/03/2011 - 23:42)
+No suelo usar windows, pero para cuando lo uso vendrá bien tener algo así que te hace sentir un poco "como en casa".
+
+Lo único parecido que conozco es Cywin, me ha sacado de más de un apuro y es útil para correr programas no muy complejos en windows. Digamos que importa un poco de la versatilidad de linux al tener una shell en windows. Desde el propio instalador creo que podías descargar programas como emacs, gcc...
+
+Voy a probar este tal andLinux que pinta muy bien.
+
+PD: aqui hay una "comparativa" entre cywin y andLinux:
+http://nonrational.org/b/?p=36
+
+Un saludo.\\
+
+*** Ya está instalado. (jfc 27/03/2011 - 13:35)
+Está funcionando sobre W7. También he elegido KDE.
+
+Me sorprende lo bien que va. Desde synaptic he instalado emacs y alguna que otra utilidad más. Todo funciona bien.
+
+Me gusta que puedas elegir la opción de que no se arranque el servicio automáticamente, sino que tu puedas elegir manualmente cuando arrancarlo y cuando detenerlo.
+
+Muy buen software.
+
+*** Sí, es sorprendente... (Godo 01/04/2011 - 16:15)
+...lo bien que va. Yo lo utilizo todos los días para distintas tareas. Por ejemplo, tenía ya construidos scripts que automatizaban copias de seguridad con rsync, y viene muy bien poder usarlos en "background". Por esto, yo sí que elegí arrancarlo como servicio.
+
+Respecto a Cygwin, he venido trabajando con él durante estos últimos años, ahora estoy migrando a andLinux... ya que apostamos por un entorno Unix este es un poco más de verdad ;-), por ejemplo: en el tema de los permisos de directorios, ficheros, etc., en la arquitectura del sistema de ficheros (arbol de directorios). Esto, que parece una tontería, cuando estás desarrollando webs que luego van a vivir en servidores GNU/Linux facilita el traspaso de tu máquina local a la red.
+
+Muchas gracias por tus comentarios. Seguimos leyéndonos.
+
+Saud.\\

@@ -1,0 +1,96 @@
+#+title: FreeBSD 7.1 - Activando el WiFI
+#+date: <2009-04-10 20:08>
+#+author: Godofredo Fdez.
+#+description: Mi tarjeta WiFI es la siguiente: Intel PRO/Wireless 2200BG . El driver utilizado soporta también los siguientes modelos: Intel PRO/Wireless 2200BG/2225BG/2915ABG IEEE 802.11 driver Ha sido tan fácil como mirar esta página, iwi , del manual (man man) de FreeBSD y seguir los pasos que indica, que son: 1) Editar el archivo: /boot/loader.conf y añadir las líneas que aparecen a continuación bajo #WiFI Config
+#+filetags: FreeBSD
+#+options: _:nil
+#+nid: 309
+
+Mi tarjeta WiFI es la siguiente: *Intel PRO/Wireless 2200BG*. El driver utilizado soporta también los siguientes modelos:
+
+#+BEGIN_EXAMPLE
+  Intel PRO/Wireless 2200BG/2225BG/2915ABG IEEE 802.11 driver
+#+END_EXAMPLE
+
+Ha sido tan fácil como mirar esta página, [[http://www.freebsd.org/cgi/man.cgi?query=iwi&apropos=0&sektion=4&manpath=FreeBSD+7.1-RELEASE&format=html][iwi]], del manual (man man) de FreeBSD y seguir los pasos que indica, que son:
+
+1) Editar el archivo: /boot/loader.conf y añadir las líneas que aparecen a continuación bajo /#WiFI Config/
+
+#+begin_example
+
+cueva# more /boot/loader.conf
+#sound driver
+snd_ich_load="YES"
+
+#WiFI Config
+legal.intel_iwi.license_ack=1
+if_iwi_load="YES"
+wlan_load="YES"
+firmware_load="YES"
+iwi_bss_load="YES"
+iwi_ibss_load="YES"
+iwi_monitor_load="YES"
+
+cueva#
+
+#+end_example
+
+2) Rearrancar. Este paso quizá no sea necesario, quiero imaginar que hay una forma de cargar dinámicamente módulos en el kernel, al igual que ocurre en GNU/Linux, pero como soy novato en este mundo FreeBSD no se aún como hacerlo. Si alguien que lea esto me lo quiere indicar en un comentario se lo agradezco de antemano.
+
+3) Configurar el WiFI para que se una al punto de acceso. Yo lo tengo protegido (por decir algo) con WEP (la clave que aparece es falsa ;-)). He creado un archivo, wireless.txt, donde he grabado las dos líneas necesarias, la primera es para configurar la red en el interfaz WiFI, la segunda para añadir la ruta por defecto:
+
+#+begin_example
+
+cueva# more wireless.txt
+
+ifconfig iwi0 inet 192.168.5.44 netmask 0xffffff00 ssid GodoNet wepmode on wepkey 0x52c262f52bd643de22d84f770f weptxkey 1
+
+route add default 192.168.5.1
+
+cueva#
+
+#+end_example
+
+4) Editar el archivo /etc/resolv.conf añadiendo los DNS de nuestro proveedor de la conexión a Internet. Yo de momento utilizo mi propio punto de acceso que a su vez recibe los DNS de forma dinámica cuando arranca:
+
+#+begin_example
+
+cueva# more /etc/resolv.conf
+domain  lynxecosystems.com
+nameserver      192.168.5.1
+cueva#
+
+#+end_example
+
+Y así...
+
+#+begin_example
+
+cueva# ping www.freebsd.org
+PING www.freebsd.org (69.147.83.33): 56 data bytes
+64 bytes from 69.147.83.33: icmp_seq=0 ttl=50 time=226.819 ms
+64 bytes from 69.147.83.33: icmp_seq=1 ttl=51 time=225.362 ms
+64 bytes from 69.147.83.33: icmp_seq=2 ttl=51 time=225.894 ms
+^C
+--- www.freebsd.org ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 225.362/226.025/226.819/0.602 ms
+cueva#                                                           
+
+#+end_example
+
+¡Maravilloso!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=FreeBSD%207.1%20-%20Activando%20el%20WiFI][Dejar comentario]].
+
+** Comentarios
+
+*** Gracias hermano, excelente (Nitrox 04/05/2009 - 00:35)
+Gracias hermano, excelente post.
+
+*** tu cargas kon:
+# kldload (mlnclc 18/01/2011 - 22:10)
+tu cargas kon:
+
+# kldload (mod,dev,opt)

@@ -1,0 +1,25 @@
+#+title: Amnistía Internacional inicia una campaña contra la censura en internet: irrepressible.info
+#+date: <2006-06-03 20:43>
+#+author: Godofredo Fdez.
+#+description: En nuestra lucha contra el pensamiento único hemos encontrado esta semana un poderoso aliado. Amnistía Internacional ha iniciado una campaña contra la censura en internet. Esta campaña, alojada bajo el dominio irrepressible.info , defiende la libertad de expresión y de información así como los derechos humanos. Merece la pena replicar aquí la introducción que la propia Amnistía Internacional hace en su página web: Irrepressible Adj. 1) Impossible to repress or control. Chat rooms monitored. Blogs deleted. Websites blocked. Search engines restricted. People imprisoned for simply posting and sharing information.
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 139
+
+En nuestra lucha contra el pensamiento único hemos encontrado esta semana un poderoso aliado. [[http://www.es.amnesty.org/][Amnistía Internacional]] ha iniciado una campaña contra la censura en internet. Esta campaña, alojada bajo el dominio [[http://irrepressible.info/][irrepressible.info]], defiende la libertad de expresión y de información así como los derechos humanos. Merece la pena replicar aquí la introducción que la propia Amnistía Internacional hace en su página web:
+
+#+BEGIN_QUOTE
+  Irrepressible Adj. 1) Impossible to repress or control.
+
+  Chat rooms monitored. Blogs deleted. Websites blocked. Search engines restricted. People imprisoned for simply posting and sharing information.
+
+  The Internet is a new frontier in the struggle for human rights. Governments -- with the help of some of the biggest IT companies in the world -- are cracking down on freedom of expression.
+
+  Amnesty International, with the support of The Observer, is launching a campaign to show that online or offline the human voice and human rights are impossible to repress.
+#+END_QUOTE
+
+Puedes participar en la campaña de varias formas: 1.- Firmando [[http://irrepressible.info/pledge][la petición]] que utilizarán para hacer un llamamiento a los gobiernos y organizaciones a favor de Internet como espacio de libertad política y no como un espacio donde triunfe la represión. Yo ya [[/node/142][lo he hecho]]. 2.- Si dispones de una página web puedes insertar en ella trocitos de textos que han sido censurados en ciertos lugares del planeta. Más información [[http://irrepressible.info/addcontent][aquí]]. El resultado lo podéis ver aquí, en la columna de la izquierda de /godest.vivencias.net/. Y visitando habitualmente la página para apoyar tantas iniciativas como emprendan y consideres que merecen la pena. Si empujamos todos un poquito, quizá acabemos moviendo el mundo.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Amnist%C3%ADa%20Internacional%20inicia%20una%20campa%C3%B1a%20contra%20la%20censura%20en%20internet%3A%20irrepressible.info][Dejar comentario]].
+

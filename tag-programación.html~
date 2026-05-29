@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>GodEst.vivencias.net</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<h1 class="title">Posts tagged "Programación":</h1>
+<div class="post-date">10 ene. 2013</div><h1 class="post-title"><a href="https://godest.vivencias.net/2013-01-10-descomposicion-de-un-fichero-c-en-varios-ficheros.html">Descomposición de un fichero .c en varios ficheros</a></h1>
+<p>
+En la última clase de teoría que ayer impartí de la asignatura "<b>Fundamentos de Programación I</b>" correspondiente al Grado en Ingeniería de las Tecnologías de Telecomunicación, mostré como descomponer en varios ficheros un código fuente en C, evitando los típicos errores de "doble inclusión" que se producen si no se hace uso de las directivas oportunas del preprocesador.
+</p>
+
+<p>
+Los errores que pretendemos solucionar son estos (o similares):
+</p>
+
+<p>
+$ gcc -W -Wall -o descompuesto-mal principal.c rellena.c imprime.c
+In file included from principal.c:4:
+imprime.h:15: error: redefinición de `struct articulo'
+imprime.h:18: error: redefinición de la definición de tipo 'ARTICULO'
+rellena.h:18: error: la declaración previa de 'ARTICULO' estaba aquí
+imprime.h:20: error: redefinición de la definición de tipo 'TABLA'
+rellena.h:20: error: la declaración previa de 'TABLA' estaba aquí
+</p>
+
+<p>
+Tras descomprimir el fichero adjunto a este post, encontrarás tres directorios:
+</p>
+
+<ul class="org-ul">
+<li>codigo-completo: contiene todo el código en un único fichero.</li>
+<li>descomposicion-bien: contiene el código anterior ya descompuesto en tres ficheros .c y dos ficheros .h. Como su nombre indica, esta descomposición es correcta y se hace uso de las directivas del preprocesador que evitan la doble inclusión de los typedef.</li>
+<li>descomposicion-mal: es igual que el anterior pero en este caso se ha comentado la línea que hay en los .h que evita la doble inclusión.</li>
+</ul>
+
+<p>
+Puedes comparar el código descompuesto con el código completo y observar cómo se ha llevado a cabo el proceso.
+</p>
+
+<p>
+Obviamente, también puedes detectar el error de "redefinición" que muestran los mensajes del compilador y cómo se soluciona.
+</p>
+
+<p>
+Si tienes alguna duda o comentario házmelos llegar por aquí.
+</p>
+
+<p>
+Espero que te resulte útil.
+</p>
+<div id="outline-container-org8e1d357" class="outline-2">
+<h2 id="org8e1d357">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-org8e1d357">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/descomposicion-en-varios-ficheros.7z">descomposicion-en-varios-ficheros.7z</a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Descomposici%C3%B3n%20de%20un%20fichero%20.c%20en%20varios%20ficheros">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> </div>
+<div class="post-date">21 may. 2012</div><h1 class="post-title"><a href="https://godest.vivencias.net/2012-05-21-comenzando-con-python.html">Comenzando con Python</a></h1>
+<a href="/static/img/python.png" rel="lightshow[roadpython]"><img src="/static/img/python.png" alt="Python" title="Python"  class="image image-preview " width="191" height="247" border="0" align="right" hspace="10" vspace="10" /></a>
+
+<a href="/static/img/Practical_Programming--Using_Python.png" rel="lightshow[roadpython]" class="lightbox_hide_image"><img src="/static/img/Practical_Programming--Using_Python.png" alt="Python" title="Python"  class="image image-preview " width="191" height="247" border="0" align="right" hspace="10" vspace="10" /></a>
+<p>
+<b>ACTUALIZADO el 24-11-2012. Ver final del artículo.</b>
+</p>
+
+<p>
+Algunos de mis alumnos más inquietos y, por tanto, más prometedores me han preguntado en las últimas semanas si conocía el lenguaje Python y si podía ayudarles a comenzar con su aprendizaje. Conozco la existencia de Python pero no he escrito ni una sola línea en ese lenguaje, por lo que las posibles referencias para el aprendizaje que puedo compartir son nulas.
+</p>
+
+<p>
+Quizá la ventaja más significativa respecto a ellos en este sentido sea mi edad, que me ha ido permitiendo tejer una red de contactos con la suficiente autoridad sobre diferentes materias a los que puedo recurrir en estas ocasiones. Así, mi buen "ciberamigo", <a href="http://hronia.blogalia.com/">Juan Lupión</a>, del que tanto he aprendido sobre estos mundos de tecnología, me escribió este interesante párrafo:
+</p>
+
+<p>
+De Python hay un par de recursos magníficos que yo conozca, el clásico "Dive Into Python" (<a href="http://www.diveintopython.net/">http://www.diveintopython.net/</a>) y el más moderno pero igualmente molón "Learn Python the Hard Way" (<a href="http://learnpythonthehardway.org/book/">http://learnpythonthehardway.org/book/</a>) Para tirar a partir de ahí, supongo que lo mejor es intentar hacer un proyectito en Python con Django o algo parecido y tirar de Stack Overflow y comunidad.
+</p>
+
+<p>
+Esta mañana en el desayuno, igualmente, he contrastado con mi buen amigo <a href="http://elradioplanner.wordpress.com/">Paco</a> si en <a href="http://www.udacity.com/">Udacity</a> estaban viendo Python en alguno de los cursos, y me ha confirmado que se utiliza en este: <a href="http://www.udacity.com/overview/Course/cs253">CS253: Web Application Engineering</a> y que muy probablemente en estos otros dos: <a href="http://www.udacity.com/overview/Course/cs101">CS101: Building a Search Engine</a> y <a href="http://www.udacity.com/overview/Course/cs262">CS262: Programming Languages</a>. Aunque todos están empezados ya, estad atentos a posibles reediciones. Si podéis, os recomiendo el CS253.
+</p>
+
+<p>
+Y por último, como tenía que aportar algo propio a esta historia :-) he acudido a mi indiscutible editorial para este tipo de contenidos: lenguajes de programación y administración de sistemas, y he encontrado <a href="http://oreilly.com/python/index.html">toda una página dedicada a Python</a>. Gracias, O'Reilly.
+</p>
+
+<p>
+Ahora sólo queda que estas referencias os sean útiles y que os animéis a compartir en los comentarios de esta entrada aquellas que vosotros mismos detectéis, exploréis y creáis que merecen la pena ser recomendadas. Me gustaría que esta entrada del blog fuera un punto de encuentro de personas interesadas en este lenguaje.
+</p>
+
+<p>
+Para mí es imposible sacar un gramo de tiempo ahora, pero este verano, cuando las tardes me sean liberadas, recorreré este post con ganas de devorar toda la comida que me ofrezcáis.
+</p>
+
+<p>
+<b>ACTUALIZACIÓN del 24-11-2012</b>
+</p>
+
+<p>
+Otro buen libro para aprender que estado siguiendo durante el curso ofrecido por Coursera (<a href="https://www.coursera.org/course/programming1">Learn to Program: The Fundamentals</a>) es este: <a href="http://pragprog.com/book/gwpy/practical-programming">Practical Programming: An Introduction to Computer Science Using Python</a>.
+</p>
+
+<p>
+Para serviros.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Comenzando%20con%20Python">Dejar comentario</a>.
+</p>
+<div id="outline-container-orga019e2b" class="outline-2">
+<h2 id="orga019e2b">Comentarios</h2>
+<div class="outline-text-2" id="text-orga019e2b">
+</div>
+<div id="outline-container-orga52a634" class="outline-3">
+<h3 id="orga52a634">Python (mortificador 21/05/2012 - 23:10)</h3>
+<div class="outline-text-3" id="text-orga52a634">
+<p>
+Python es, sin duda, el lenguaje de moda. A pesar de ser interpretado es bastante eficiente, tiene librerías prácticamente para cualquier cosa (no obstante, es Google quien está detrás de muchas de ellas) y es fácil de aprender.
+</p>
+
+<p>
+Si vienes de C, verás muchas similitudes en ciertas cosas (y es que Python está escrito en C) y hay una librería (que yo descubrí después de pasar horas sufriendo mientras migraba proyectos de C a python) llamada ctypes que te facilitará mucho la vida si quieres pasar algo de C a python. Y si quieres aprender programación orientada a objetos, Python es un buen lenguaje para empezar.
+</p>
+
+<p>
+Como ejemplo, hace un par de años escribí un pequeño sniffer en python (según vayáis cambiando los comentarios y el código hará una cosa u otra, tal y como lo pongo muestra el tráfico HTTP, o más bien, el tráfico de origen/destino el puerto 80). Podéis ejecutarlo para ver como es capaz de mostrar el tráfico en tiempo real sin problemas (y a todos los niveles, incluido el de enlace). Es necesario ejecutarlo como root.
+</p>
+
+<p>
+<a href="http://bit.ly/KEfXCf">http://bit.ly/KEfXCf</a>
+</p>
+
+<p>
+Saludos!
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> </div>
+<div class="post-date">28 nov. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-11-28-normas-de-asistencia-a-las-tutorias-online.html">Normas de asistencia a las tutorías online</a></h1>
+<div id="outline-container-orgf6fa8e9" class="outline-2">
+<h2 id="orgf6fa8e9">Aún no está programada la siguiente tutoría online **</h2>
+<div class="outline-text-2" id="text-orgf6fa8e9">
+<p>
+Hazme llegar tus dudas para dotarla de contenido interesante. Puedes utilizar la dirección de correo electrónico que aparece <a href="http://trajano.us.es/personal.html">aquí</a> o el <a href="file:///d:/contact">formulario de contacto</a> de este sitio web.
+Permanece atento a esta página o al <a href="http://twitter.com/godofdez">twitter</a>.
+</p>
+
+<p>
+PRÓXIMA TUTORÍA: 24 de enero de 2012 a las 20:30 horas.
+Duración: 45 minutos.
+TEMAS
+</p>
+<ul class="org-ul">
+<li>- - - - - - - - -</li>
+<li>Por qué se utiliza #ifndef #define y #undef</li>
+<li>Utilización de typedef sobre una estructura</li>
+<li>Lectura y escritura en ficheros</li>
+<li>Utilización de fscanf</li>
+<li>Compilación separada y make</li>
+<li>Reserva dinámica de memoria</li>
+<li>Trabajaremos con una tabla de estructuras reservada dinámicamente</li>
+<li>Conceptos básicos/fundamentales del gdb</li>
+</ul>
+
+<p>
+A continuación describo las normas de asistencia a las tutorías online que organizaré durante el curso.
+</p>
+
+<p>
+1.- <del>En un principio, y debido a los límites de capacidad de la plataforma, sólo podrán asistir a las tutorías online aquellos alumnos pertenecientes a mi grupo de teoría. En un futuro valoraré la oportunidad de abrirlas al resto de interesados</del>. <b>He valorado la posibilidad de que asista todo aquel que aparezca en las listas de la asignatura, ya esté en mi clase de teoría o no</b>. El límite lo impondrá la plataforma: se respetará el orden de inscripción a través del formulario de registro. Una vez se alcance el límite no se admitirán más inscripciones.
+</p>
+
+<p>
+2.- <b>El permiso de acceso a la plataforma será controlado contrastando los datos del proceso de registro con la lista de clase</b>. Es por eso muy importante que te registres con tu nombre y apellidos, así como con un <b>correo electrónico válido</b> donde se te irá informando, en inglés, de los pasos para completar el proceso hasta la asistencia a la tutoría online. A los alumnos que no se adapten a este requisito no les será permitida la asistencia.
+</p>
+
+<p>
+<b>3.- El proceso de registro puedes llevarlo a cabo pulsando <a href="http://www.anymeeting.com/PIID=EB56DD848546">aquí</a>. Este enlace sólo está disponible si hay una "tutoría online" anunciada. Si la hay, aparece en un bloque de fondo gris y letras azules al principio de esta página.</b>
+</p>
+
+<p>
+4.- Es importante que asistas a la tutoría utilizando el navegador <a href="http://www.mozilla.org/es-ES/firefox/fx/">Firefox</a> como herramienta: las pruebas que he realizado han sido mejores con él.
+</p>
+
+<p>
+5.- Si es la primera vez que asistes intenta ajustar la pantalla que yo comparto a la tuya. Para eso, durante los primeros instantes de la tutoría online, tendrás que situar el ratón en la parte inferior de la zona de "mi pantalla" (la que transmito hacia ti) en tu navegador, aparecerá un cuadrado con flechas interiores hacia los vértices, pulsándolo se ajustará "mi pantalla" a tu ventana. También aparecerá una lupa con la que puedes ampliar la zona visible o dejarla tal cual es emitida (siempre que tengáis una pantalla suficientemente grande os recomiendo esta última opción).
+</p>
+
+<p>
+6.- Al principio de la sesión explicaré todo esto de nuevo. Permanece atento y tras ajustar la pantalla intenta tocar lo menos posible tu software.
+</p>
+
+<p>
+7.- Si deseas intervenir hazlo por chat. El "chat" estará deshabilitado por defecto para evitar distracciones durante mi explicación. Tras cada explicación lo habilitaré y todo aquel que tenga una duda podrá lanzarla simplemente escribiendo en la ventana de chat.
+</p>
+
+<p>
+8.- Al final de la sesión, cuando yo me despida, <b>NO CIERRES EL NAVEGADOR, por favor</b>. Se presentará automáticamente una encuesta para intentar conocer tu opinión. La plataforma no permite realizar esta encuesta de forma anónima (¡lástima!). <b>Te ruego que participes en ella pues así me ayudas</b>.
+</p>
+
+<p>
+Si deseas hacerme algún comentario sobre este tema, ahora o en cualquier momento al margen de la tutoría, puedes hacerlo pulsando en el enlace que aparece a continuación. Valoro mucho todas las críticas constructivas, los ánimos, etc. Todo es mejorable y lucharé por conseguirlo.
+</p>
+
+<p>
+Espero que te sea útil.<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Normas%20de%20asistencia%20a%20las%20tutor%C3%ADas%20online">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org7b51ee6" class="outline-2">
+<h2 id="org7b51ee6">Comentarios</h2>
+<div class="outline-text-2" id="text-org7b51ee6">
+</div>
+<div id="outline-container-orgd8199a2" class="outline-3">
+<h3 id="orgd8199a2">Yo con mucha suerte a las (Jose Carlos 28/11/2011 - 21:29)</h3>
+<div class="outline-text-3" id="text-orgd8199a2">
+<p>
+Yo con mucha suerte a las 8.20 esoty en mi casa. Mi pre gunta es, una vez pasadas las 8 podemos entrar cuando queramos no?
+</p>
+</div>
+</div>
+<div id="outline-container-org13396d2" class="outline-3">
+<h3 id="org13396d2">Genial iniciativa, a ver qué (Julio 29/11/2011 - 00:24)</h3>
+<div class="outline-text-3" id="text-org13396d2">
+<p>
+Genial iniciativa, a ver qué tal sale!
+</p>
+</div>
+</div>
+<div id="outline-container-org4c4f37c" class="outline-3">
+<h3 id="org4c4f37c">Inténtalo&#x2026; (Godo 29/11/2011 - 10:54)</h3>
+<div class="outline-text-3" id="text-org4c4f37c">
+<p>
+&#x2026;y vemos qué pasa. Creo que mientras la sesión esté activa es posible entrar. Si tienes algún problema coméntamelo por aquí. Y si has podido entrar, también. Así vamos aprendiendo todos.
+</p>
+
+<p>
+La siguiente vez intentamos fijar mejor la hora de inicio para evitar problemas.
+</p>
+
+<p>
+Aprovecho también para dar las gracias a Julio, siguiente comentario que aparece, por su opinión.
+</p>
+
+<p>
+Salud.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> </div>
+<div class="post-date">23 ene. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-01-23-ultima-vulnerabilidad-de-internet-explorer-y-consecuencias.html">Última vulnerabilidad de Internet Explorer y consecuencias</a></h1>
+<p>
+La última vulnerabilidad conocida de Internet Explorer ha supuesto un gran revuelo en todo el ciberespacio, y en parte del espacio real terrestre. No ha sido por ser especialmente maligna (que lo es, pero ya antes ha habido varias de este tipo) sino porque:
+</p>
+
+<p>
+a) <a href="http://www.hispasec.com/unaaldia/4107/">Microsoft conocía el fallo desde hace cinco meses</a> (en algunas fuentes aparece "desde agosto" y en otras "desde septiembre") y no ha sacado hasta hace un par de días (21-01-2010) un parche que lo corrija.
+</p>
+
+<p>
+b) Ha sido utilizada para atacar a varios gigantes de la red (Google y Yahoo) y de la informática (adobe), provocando en el primero un <a href="http://googleblog.blogspot.com/2010/01/new-approach-to-china.html">cambio de política en China</a>.
+</p>
+
+<p>
+c) <a href="http://barrapunto.com/articles/10/01/18/0816215.shtml">Alemania y Francia</a>, y posteriormente Australia, recomiendan el uso de <a href="http://www.favbrowser.com/tracker/">navegadores alternativos a Internet Explorer</a>, con el consiguiente daño al producto de Microsoft frente al <a href="http://www.theregister.co.uk/2010/01/20/opera_and_mozilla_download_uptick_post_ie_warnings/">impresionante disparo de descargas de opera y firefox</a>.
+</p>
+
+<p>
+Y todo esto por un puntero "dislocado" ;-), según leo en <a href="http://www.genbeta.com/seguridad/analizamos-la-vulnerabilidad-de-internet-explorer-y-sus-consecuencias">esta notica de Genbeta</a>. Por eso insistimos tanto a <a href="http://trajano.us.es/~godo/">nuestros alumnos</a>, cuando estamos enseñando a programar en C, del especial cuidado que hay que tener con el uso de punteros: se han de hacer apuntar sólo a aquellos datos que queremos tratar y a NULL cuando ya no se utilicen. Soy consciente, claro está, de que todo es mucho más complejo, pero creo que sirve como ejemplo de concepto para aquellos que comienzan a conocer los "secretos de la programación" en una asignatura de primero de carrera.
+</p>
+
+<p>
+¡Ay de esta insegura ciencia!
+</p>
+
+<p>
+Y de los que trabajamos con ella }:-)
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=%C3%9Altima%20vulnerabilidad%20de%20Internet%20Explorer%20y%20consecuencias">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">06 oct. 2006</div><h1 class="post-title"><a href="https://godest.vivencias.net/2006-10-06-gnu-linux-en-cualquier-parte.html">GNU/Linux en cualquier parte</a></h1>
+<a href="http://www.damnsmalllinux.org/" target="_self"><img width="330" height="255" border="0" align="right" hspace="10" vspace="10" src="/static/img/dsl-01.jpg"></a>
+<p>
+Hace una semana, más o menos, descubrí este proyecto: <a href="http://www.damnsmalllinux.org/">Damn Small Linux</a> (dsl), el cual me ha parecido alucinante.
+</p>
+
+<p>
+Es un sistema GNU/Linux que cabe en cualquier <a href="http://es.wikipedia.org/wiki/Memorias_USB">Memoria USB</a> ya que tan solo ocupa 50MB. Existen varias posibilidades de uso: desde la instalación en disco duro hasta arrancar desde un <a href="http://es.wikipedia.org/wiki/Live_CD">Live CD</a> o, y aquí es donde comencé a alucinar, un "Live USB".
+</p>
+
+<p>
+¿Qué significa esto último? Pues que es posible llevarte un pequeño GNU/Linux instalado en un lápiz USB, y arrancar desde él cualquier ordenador moderno que lo permita (¡OJO! Esto ha de soportarlo la BIOS). Sin embargo, si aún nos parece difícil encontrar este tipo de BIOS, no pasa nada: podemos optar por instalar en el USB un sistema GNU/Linux embebido (dsl-3.0.1-embedded) que, haciendo uso del emulador de PC <a href="http://fabrice.bellard.free.fr/qemu/">qemu</a>, nos permitirá arrancar una máquina virtual GNU/Linux tanto en windows (se incluye qemu para windows en la <a href="http://distro.ibiblio.org/pub/linux/distributions/damnsmall/current/dsl-3.0.1-embedded.zip">imagen de dsl embebida</a> que descargamos) como en GNU/Linux (se incluye también, obviamente, qemu para GNU/Linux). Así, independientemente del ordenador que nos encontremos para trabajar, siempre tendremos nuestro GNU/Linux, con nuestra configuración, nuestras aplicaciones preferidas, nuestros ficheros, etc.
+</p>
+
+<p>
+Es justo lo que estaba buscando para mis clases en la universidad: necesitaba disponer de un editor lo más parecido al <a href="http://www.gnu.org/software/emacs/">emacs</a> posible, y del compilador <a href="http://gcc.gnu.org/">gcc</a>. Son las herramientas que utilizamos para intentar enseñar "Fundamentos de Programación" en lenguaje C.
+</p>
+
+<p>
+Para que el sistema base de la distribución sólo ocupe 50MB, los desarrolladores han creado un <a href="http://distro.ibiblio.org/pub/linux/distributions/damnsmall/mydsl/">repositorio de aplicaciones</a> que se instalan como si de "plugins" o "extensiones" se tratara. Es decir, una vez arrancado el sistema GNU/Linux base, uno puede acceder al repositorio (sí, detecta nuestra tarjeta de red y hace NAT) y descargar e instalar desde allí lo que necesite. Claro está: en el repositorio encontré tanto el gcc como un editor que emula a emacs: <a href="http://zile.sourceforge.net/">zile</a>.
+</p>
+
+<p>
+Pero el editor "zile" no me gustó demasiado: emulaba las asociaciones de teclas pero no <a href="http://en.wikipedia.org/wiki/Indent_style">sangraba</a> el código de forma automática (esto es fundamental para cumplir sin esfuerzo las "normas de estilo" y tender a elaborar un código fácil de seguir). Entonces me acordé de <a href="http://www.jedsoft.org/jed/">jed</a>, otro editor que en su día utilicé en la ESI, que emula al emacs y que soporta muchos modos (con el correspondiente coloreado de la sintaxis, sangrado, etc.).
+</p>
+
+<p>
+A continuación podéis ver la descripción que acompaña al paquete "jed" de <a href="http://www.debian.org">mi inseparable Debian</a> (Por cierto, Damn Small Linux está basada en Debian - otra razón por la que la escogí - y una vez instalada podría migrar a ésta).
+</p>
+
+<p>
+Descripción del <b>editor jed</b>:
+</p>
+
+<pre class="example" id="org872f768">
+Package: jed
+
+Priority: optional
+
+Section: editors
+
+Installed-Size: 292
+
+Maintainer: Debian JED Group 
+Architecture: i386
+
+Version: 0.99.18-6
+
+Provides: info-browser, mail-reader, editor
+
+Depends: libc6 (&gt;= 2.3.6-6), libgpmg1 (&gt;= 1.19.6-1), libslang2 (&gt;= 2.0.6-3), jed-common (&gt;= 0.99.18-6)
+
+Filename: pool/main/j/jed/jed_0.99.18-6_i386.deb
+
+Size: 116272
+
+MD5sum: 867a1d445d5e110df0326d48f88262cd
+
+SHA1: 77da91a7bfd006b41ca66bb1b1fdb4506d9c16f3
+
+SHA256: 6522b7fa42e995607c4cd738c0f8d239fb7da1cc1e7fe3f47613952487e531a8
+
+Description: editor for programmers (textmode version)
+
+ Jed is a small, fast (faster startup than bash) and powerful text editor.
+
+ .
+
+ Completely customizable with prepared emulation modes for Emacs, CUA
+
+ (similar to KDE/Gnome/Openoffice), Borland-IDE, Brief, and EDT. Extensible
+
+ in the S-Lang scripting language (with a syntax resembling C).
+
+ .
+
+ Editing functions: folding support; rectangular cut/paste; regular
+
+ expression search/replace; incremental searches; search/replace across
+
+ multiple files; multiple windows; multiple buffers; ...
+
+ .
+
+ Tools: directory editor (dired); info (browse GNU info files); mail;
+
+ rmail; ispell; shell mode; ...
+
+ .
+
+ Special modes (syntax highlight, indention, compile, ...) for
+
+ Basic, C, C++, DCL, FORTRAN, IDL, Java, NROFF, Pascal,
+
+ Perl, PHP, PostScript, Python, SH.
+
+ Modes for markup languages include HTML and (La)TeX (with AUC-TeX style
+
+ editing and BibTeX)
+
+ .
+
+ Additional tools and modes can be found in the jed-extra package.
+
+ .
+
+  Homepage: http://www.jedsoft.org/jed/
+
+Tag: devel::editor, interface::text-mode, role::sw:application, use::editing, works-with::text
+</pre>
+
+<p>
+Sin embargo, no existía una extensión de este editor para esta "microdistribución" :-(.
+</p>
+
+<p>
+En fin, me reté a mi mismo y&#x2026; ¡tachán! Mi primera "semicontribución" al software libre: <a href="file:///d:/files/config/jed-0.99-18.tar.gz">jed-0.99-18.tar.gz</a> (enviada a los desarrolladores de "dsl" para que la incorporen al "área testing" del repositorio).
+</p>
+
+<p>
+Ya podemos disponer de nuestro querido entorno de programación C en cualquier parte (anytime-anywhere). A falta del depurador: <a href="http://www.gnu.org/software/gdb/">gdb</a>. Todo se andará.
+</p>
+
+<p>
+Espero que le encontréis alguna utilidad.
+</p>
+
+<p>
+No dejo de sorprenderme. ¡Qué alegría! ;-)<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=GNU%2FLinux%20en%20cualquier%20parte">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-i+d+i.html">I+D+i</a> <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> </div>
+<div class="post-date">12 jul. 2006</div><h1 class="post-title"><a href="https://godest.vivencias.net/2006-07-12-mi-primer-articulo.html">Mi primer artículo</a></h1>
+<a href="http://digital.revistasprofesionales.com:8080/View_Ctrl/ml.jsp" target="_blank"><img src="/static/img/primera_publicacion.jpg" class="image image-preview " width="170" height="227" border="0" align="right" hspace="10" vspace="10" alt="Mundo Linux"/></a>
+<p>
+Después de tan largo periodo de silencio (diferentes tareas me han abrumado este último mes), me complace haceros partícipes de este nuevo hito conseguido: en el último número de <a href="http://digital.revistasprofesionales.com:8080/View_Ctrl/ml.jsp">Mundo Linux</a> han publicado mi primer artículo en prensa técnica.
+</p>
+
+<p>
+Hacía tiempo que quería participar en esta forma de divulgar el conocimiento. Siempre he sido un gran aficionado a las revistas de informática, programación, etc. Comencé hace muchos años, de niño, leyendo el "Microhobby". Aún recuerdo con gran cariño su curso de "Basic" que me ayudó a hacer mis primeros pinitos con mi <a href="http://retroinformatica.net/ordenadores/zxspectrum">ZX Spectrum</a> de 48K y teclitas azules de goma (gracias, Reyes Magos).
+</p>
+
+<p>
+Después recuerdo que leí "PC World" y "PC Actual", ambas siguen editándose hoy en día, aunque con fuerte contenido de publicidad y escasa prospección técnica (algunos análisis de productos con mucha mano del fabricante, a mi parecer). Quizá la prensa rosa del mundo de la informática.
+</p>
+
+<p>
+En mi busca de contenido técnico, y de saber aplicado, me suscribí durante un par de años (comenzando con el número 1 de ambas revistas) a "Programación Actual" y "Sólo Linux", ambas editadas por "Prensa Técnica" y creo que hoy desaparecidas&#x2026; De esta época, años 1998 y 1999 aproximadamente, recuerdo artículos de gran nivel técnico que atesoraban cierta profundidad y muchas ganas de querer hacer cosas nuevas.
+</p>
+
+<p>
+En la actualidad pienso que se escribe demasiado. Pocas veces se aporta algo nuevo, algo distinto a lo que te informa una página de manual de una determinada herramienta, poca integración, trucos o diferentes formas de acometer una determinada tarea comparando y sopesando cuál de ellas es más apropiada para conseguir un determinado fin. Ventajas e inconvenientes.
+</p>
+
+<p>
+Mi reto, pues, era conseguir ese <b>algo distinto</b> que he comentado en el párrafo anterior. Sólo los lectores podrán decidir si lo he conseguido.
+</p>
+
+<p>
+Es mi primer artículo.
+</p>
+
+<p>
+Y es mi primera portada, y mi primera editorial dedicada.
+</p>
+
+<p>
+Os dejo aquí la introducción del mismo:
+</p>
+
+<pre class="example" id="org972437e">
+La idea de elaborar este artículo se me ocurrió cuando mi portátil no 
+
+era capaz de conectar a Internet justo cuando arrancaba, 
+
+independientemente de la localización donde se encontrara, y así 
+
+comenzar a actualizar los paquetes de mi sistema operativo (Debian 
+
+GNU/Linux), ir descargando el correo electrónico, los feeds RSS, etc. 
+
+Uno tiene la costumbre de aprovechar el tiempo de arranque para, 
+
+alejado del ordenador, ir haciendo otras cosas... y al volver, 
+
+encontrárselo todo preparado para comenzar a trabajar.
+
+Para lograr dicho objetivo iremos recorriendo las siguientes materias:
+
+* Instalación de los drivers apropiados para nuestra tarjeta de red inalámbrica.
+
+* Estudio de las herramientas de configuración de red.
+
+* Breve presentación práctica de conceptos de programación en shell (scripting).
+
+Terminaremos juntándolo todo en nuestro programa de autoconfiguración y
+
+viendo algunas herramientas de monitorización del interfaz de red WiFI
+
+que nos ayuden a detectar si se ha apagado el punto de acceso, si nos 
+
+hemos alejado demasiado de él, en definitiva, si hay problemas en la 
+
+señal que recibimos, etc.
+</pre>
+
+<p>
+Muchas gracias a todos los que me habéis ayudado a desenvolverme en este mundo de las nuevas tecnologías: los que me habéis resuelto un "bug", los que me habéis enseñado una nueva herramienta, los que me ayudásteis con las X de GNU/Linux, con un nuevo lenguaje de programación&#x2026; Y, especialmente, muchas gracias a los que más cerca tengo, por padecerme, y aún así, seguir animándome.
+</p>
+
+<p>
+&#x2026;¡corred al quiosco que se agota! :-)
+</p>
+
+<p>
+Espero vuestras críticas para seguir aprendiendo.
+</p>
+
+<p>
+Actualización (28/07/06): Añado <a href="http://retroinformatica.net/ordenadores/zxspectrum">este enlace</a> a "Retroinformatica.net - ZX Spectrum", que nos permite ver aquella pequeña maravilla (vía <a href="http://hronia.blogalia.com/historias/41847">Yogur Griego</a>).
+</p>
+
+<p>
+<b>Actualizado el 10 de abril de 2011</b> A continuación os dejos el artículo en pdf.
+</p>
+<div id="outline-container-orgccc2497" class="outline-2">
+<h2 id="orgccc2497">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-orgccc2497">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/ML91-movilidad.pdf">ML91-movilidad.pdf</a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Mi%20primer%20art%C3%ADculo">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfc43614" class="outline-2">
+<h2 id="orgfc43614">Comentarios</h2>
+<div class="outline-text-2" id="text-orgfc43614">
+</div>
+<div id="outline-container-org1cf5e2f" class="outline-3">
+<h3 id="org1cf5e2f">Enhorabuena, genio! (José Ignacio 13/07/2006 - 17:43)</h3>
+<div class="outline-text-3" id="text-org1cf5e2f">
+<p>
+Enhorabuena, genio!
+</p>
+
+<p>
+No sólo por conseguir una portada de revista, sino porque el artículo me parece realmente útil. Una portada debe ser muy muy muy emocionante, ¿qué se siente al saber que miles de personas leen (incluso pagando por ello) algo que tú has escrito? La verdad es que te lo mereces. No tengo ni idea de lo que sentirás cada vez que pases por un kiosko y la veas, pero seguro que algo bueno. Y dentro de poco este blog será una herramienta tan práctica y consultada como el mismísimo google, ya verás&#x2026;
+</p>
+
+<p>
+Ahora que ya eres famoso, ¿seguirás juntándote con nosotros? ;)
+</p>
+
+<p>
+Un abrazo,
+José Ignacio.
+</p>
+
+<p>
+PD: Esta noche no llegues tarde :P
+</p>
+
+<hr>
+<p>
+Dime cuánto tiempo queda,
+qué hago, aparte del vago,
+finjo estar de acuerdo,
+es un milagro que siga estando cuerdo
+</p>
+</div>
+</div>
+<div id="outline-container-org4c82c97" class="outline-3">
+<h3 id="org4c82c97">Gracias, y sí (Godo 14/07/2006 - 22:29)</h3>
+<div class="outline-text-3" id="text-org4c82c97">
+<p>
+Hola José Ignacio.
+</p>
+
+<p>
+Siempre presto y veloz, muchas gracias por tus comentarios.
+</p>
+
+<p>
+Respecto a lo de genio: si lo fuera no trabajaría tanto, por lo que creo que no lo soy.
+</p>
+
+<p>
+Respecto a lo que siento cuando paso por un quiosco y veo la portada: sonrío, y pienso que un pequeño cachito de mi está siendo útil a alguien, en algún lugar&#x2026; es como si me expandiera. Es agradable.
+</p>
+
+<p>
+Respecto a lo de ser famoso :-o y al cambio de juntas ;-), a las pruebas me remito: no cambiaré mientras me sigáis invitando a buena música, noches de estrellas y johnniecola.
+</p>
+
+<p>
+Y sí, lo siento, volví a llegar tarde aunque lo suficientemente temprano para no perderme nada (ni el comienzo) de <a href="file:///d:/node/153">la función</a>.
+</p>
+
+<p>
+Lo dicho, muchas gracias y espero que lo disfrutes&#x2026;
+</p>
+</div>
+</div>
+<div id="outline-container-org6f18f58" class="outline-3">
+<h3 id="org6f18f58">Felicidades (vecinos 16/07/2006 - 20:21)</h3>
+<div class="outline-text-3" id="text-org6f18f58">
+<p>
+FELICIDADES POR ESTA GRAN SEMANA QUE HAS TENIDO. Aunque ya lo hemos hecho personalmente, también queremos que quede constancia en tu bitácora (para que veas que la utilizamos más que antes).
+</p>
+
+<p>
+Bueno, lo dicho, sigue así y llegaras lejos.
+</p>
+
+<p>
+Un fuerte abrazo de tu vecino y un gran beso de tu vecina.
+</p>
+</div>
+</div>
+<div id="outline-container-org406c319" class="outline-3">
+<h3 id="org406c319">Orgullosa :-) (Pili Cantautora 17/07/2006 - 08:26)</h3>
+<div class="outline-text-3" id="text-org406c319">
+<p>
+Enhorabuena Godito! tampoco quería yo dejar escapar la oportunidad de felicitarte por tu reciente publicación en éste nuestro rinconcito&#x2026; No sabes lo orgullosa que estoy de tí ;) me alegro muchísimo de que puedas ver los frutos de tu trabajo, del que te llena de verdad&#x2026; Como ya te he comentado recientemente, cada vez estoy más picada con el tema linux. En breve voy a tener portátil nuevo (al final me he lanzao :)) y voy a hacerme una partición con linux para así poder cacharrear. Ya te mantendré informado de mis avances y castañazos&#x2026; un beso muy fuerte!
+</p>
+</div>
+</div>
+<div id="outline-container-org7f7fc33" class="outline-3">
+<h3 id="org7f7fc33">Felicidades : ) (Adrián 17/07/2006 - 13:26)</h3>
+<div class="outline-text-3" id="text-org7f7fc33">
+<p>
+Gran artículo seguro.
+</p>
+
+<p>
+Yo estuve enganchado al tema del 'estudio' del WiFi antes de los exámenes y quise hacerme un script de estos. Lo dejé aparcado porque no conseguía automatizar la búsqueda del gateway para los AP abiertos pero sin servicio DHCP - ¿haces un artículo de ampliación? ; ) Ahora me he comprado un router FON por 5 euros, si me da por flashearlo podré hacer pruebas legales X) Así puedo depurar desde dos lados.
+</p>
+
+<p>
+Hablando de depurar, ahora me ha dado por el cracking&#x2026; Ya que el año que viene me toca aprender ensamblador (aunque sea de Motorola) pues aprovecho. He redescubierto GDB, ¡qué grande!
+</p>
+
+<p>
+Lo dicho, a comprarse la revista.
+</p>
+
+<p>
+Ánimo, espero ver pronto uno de tus artículos en SET o en el phrack (decían que iban a volver con nueva política).
+</p>
+</div>
+</div>
+<div id="outline-container-org5afd710" class="outline-3">
+<h3 id="org5afd710">Gracias por las felicitaciones (Godo 28/07/2006 - 19:59)</h3>
+<div class="outline-text-3" id="text-org5afd710">
+<p>
+Con esta respuesta quiero dar las gracias a todos los que me habéis felicitado por la publicación de mi primer artículo. Perdonad que no lo haya hecho de inmediato respondiendo a cada uno de vuestros comentarios&#x2026; intento así no resultar pesado con las respuestas.
+</p>
+
+<p>
+A mis vecinos: Muchas gracias por vuestra paciencia y dedicación. No sé si llegaré lejos pero, al menos, sigo caminando. Creo que esto es lo importante. Encantado de veros más frecuentemente por aquí, espero que os guste, saquéis algunas conclusiones útiles&#x2026; y os quedéis.
+</p>
+
+<p>
+A Pili Cantautora: Gracias por tus felicitaciones (por tus descubrimientos "concertiles", por estar por aquí&#x2026;) Y sí, nunca es tarde para comenzar con GNU/Linux (me ha costado&#x2026; pero al final no has podido resistirte ;-) ).
+</p>
+
+<p>
+A Adrian: ¿Cómo sabías que no he cubierto en mi artículo <i>"automatizar la búsqueda del gateway para los AP abiertos pero sin servicio DHCP - ¿haces un artículo de ampliación? ; )"</i>, si aún no habías comprado la revista? ;-) Espero que hayas podido conseguirla, me comentan algunos amigos que no la pueden encontrar&#x2026; Respecto a lo de publicar en SET (no la conozco, ¿nos dejas las URL?) o <a href="file:///d:/www.phrack.org/">phrack</a> creo que no lo conseguiré pues sus contenidos están más relacionados con "crackear" (<a href="http://www.microsiervos.com/archivo/internet/hacker-cracker.html">no "hackear"</a>) y nunca he sido muy devoto de esas técnicas. Sin embargo, sí que he seguido estas publicaciones algunas veces, buscando información de seguridad que me ha sido útil en mi trabajo&#x2026; Respecto a conseguir un script que haga lo que quieres, creo que la única forma sería haciendo capturas de tráfico, analizarlo y obtener una conclusión sobre el default gateway&#x2026; Tampoco entiendo que sentido tiene dejar un AP en estas condiciones: ni cerrado ni abierto ¿? Espero seguir contando contigo por aquí, Adrián. Por cierto ¿tú tienes blog?
+</p>
+
+<p>
+Lo dicho, muchas gracias a todos.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> <a href="https://godest.vivencias.net/tag-publicaciones.html">Publicaciones</a> </div>
+<div class="post-date">07 abr. 2006</div><h1 class="post-title"><a href="https://godest.vivencias.net/2006-04-07-programando-en-c-con-knoppix.html">Programando en C con KNOPPIX</a></h1>
+<a href="http://www.knopper.net/knoppix/index-en.html" target="_self"><img width="140" height="138" border="0" align="right" src="/static/img/knoppix-cd-button.gif"></a>
+<p>
+<a href="http://www.knopper.net/knoppix/index-en.html">Aquí</a> encontraréis un <a href="http://es.wikipedia.org/wiki/LiveCD">Live CD</a> basado en <a href="http://www.debian.org">Debian GNU/Linux</a> que os puede ayudar a dar vuestros primeros pasos en este sistema operativo (GNU/Linux) y en esta excelente distribución (Debian).
+</p>
+
+<p>
+Un Live CD es un sistema operativo instalado en un CD, desde el cual podemos arrancar nuestra máquina (seleccionando la opción apropiada en la BIOS, muchas veces viene por defecto) sin tener que realizar ninguna partición/instalación en nuestro disco duro. Así evitamos perder la información que este alberga si ocurre algún fallo, si somos inexpertos en materia de particiones/instalaciones, etc. La desventaja: el rendimiento es muy bajo, pero aún se puede trabajar.
+</p>
+
+<p>
+Conseguimos así una herramienta muy útil para reconocer nuestro hardware y estudiar la compatibilidad de éste con GNU/Linux, para realizar los primeros pasos en un entorno de programación y, si conseguimos dominarlo (¡cuidado!), podemos incluso hacer particiones (qtparted) y copias de seguridad de las mismas (partimage), instalarlo en el disco duro, etc.
+</p>
+
+<p>
+Podéis descargar el CD desde <a href="ftp://csociety-ftp.ecn.purdue.edu/pub/knoppix/KNOPPIX_V4.0.2CD-2005-09-23-EN.iso">aquí</a> (versión 4.0.2 disponible a fecha 07/04/06), y podéis encontrar una lista de mirrors <a href="http://www.knopper.net/knoppix-mirrors/index-en.html">aquí</a> desde donde descargar las últimas versiones del CD y del DVD. <b>¡OJO!</b> Este archivo ha de ser "tostado" en el CD (o DVD según el caso) utilizando la opción de "grabar imagen" de los programas de grabación. No sirve si lo copiamos tal y como está al CD (si no entendéis lo que estoy diciendo aquí, pedirle ayuda a algún amigo).
+</p>
+
+<p>
+En <a href="http://godest.vivencias.net/node/86">este otro</a> artículo, en la <b>primera alternativa comentada</b>, destacaba el uso de las siguientes herramientas para lograr un entorno de programación C en GNU/Linux: emacs, gcc, gdb y make. Todas ellas están incluidas en esta distribución, además incluye las páginas de manual de las distintas funciones de librería de C, por ejemplo: man fgets.
+</p>
+
+<p>
+En fin, espero que os ayude a descubrir un nuevo modo de diversión y aprendizaje.
+</p>
+
+<p>
+Libertad y conocimiento.
+</p>
+
+<p>
+Actualización [11-10-2006]: Hay una nueva versión del Live CD de Knoppix disponible. Es la <b>5.0.1</b>, y puede ser descargada desde <a href="http://ftp.uni-erlangen.de/pub/mirrors/knoppix/KNOPPIX_V5.0.1CD-2006-06-01-EN.iso">aquí</a>. ¡OJO! En esta versión <b>no han incluido al editor emacs</b>, si a <a href="http://en.wikipedia.org/wiki/Zile_(editor)">zile</a>, que lo emula (para mi gusto demasiado básico pues en la configuración estándar ni colorea ni "sangra" bien el código). ¿Por qué no habrán incluido a <a href="http://www.jedsoft.org/jed/">jed</a> que si lo hace? Os recomiendo que utilicéis la versión anterior (<b>4.0.2</b>) descrita más arriba, y sólo si os da problemas con vuestro hardware lo intentéis con esta última (<b>5.0.1</b>). Si tenemos un DVD en lugar de un CD podemos utilizar <a href="http://ftp.uni-kl.de/pub/linux/knoppix/DVD/KNOPPIX_V5.0.1DVD-2006-06-01-EN.iso">esta versión arrancable desde el DVD</a>, donde sí se incluye a nuestro querido editor <a href="http://es.wikipedia.org/wiki/Emacs">emacs</a>.<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Programando%20en%20C%20con%20KNOPPIX">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> </div>
+<div class="post-date">11 dic. 2005</div><h1 class="post-title"><a href="https://godest.vivencias.net/2005-12-11-soy-un-hacker.html">¿Soy un hacker?</a></h1>
+<a href="/node/88" target="_self"><img width="55" height="55" border="0" align="right" hspace="10" vspace="10" src="/static/img/glider.png"></a>
+<p>
+Uno tiene la costumbre, y el entrenamiento, de intentar perderse los menos detalles posibles. <b>El emblema</b> que preside esta página: <a href="http://www.hermann-uwe.de/">hermann-uwe</a>, la cual visito desde hace mucho tiempo, me intrigaba. Cuanto más tiempo transcurría sin saber su verdadero significado mayor era la intriga. Hoy he podido leer a placer&#x2026;
+</p>
+
+<p>
+Este emblema es el elegido por la comunidad <a href="http://es.wikipedia.org/wiki/Hacker">hacker</a> para, entre otras cosas, fortalecer las señas de identidad de la misma. Es curioso el uso, y la <a href="http://www.catb.org/hacker-emblem/faqs.html">justificación de éste</a>, propuesto por su creador, <a href="http://www.catb.org/~esr/">Eric Steven Raymond</a>.
+</p>
+
+<p>
+¿Quién puede usarlo? Según el autor del mismo, aquel que se sienta identificado por la cultura hacker, aunque no sea uno de ellos.
+</p>
+
+<p>
+¿Y cuál es la cultura hacker? Para responder a esta pregunta tenía que leerme el pequeño documento en el que este mismo autor intenta explicar: <a href="http://www.catb.org/~esr/faqs/hacker-howto.html">"Como llegar a ser un hacker"</a>.
+</p>
+
+<p>
+La conclusión que he obtenido es la siguiente: ser un hacker es la unión de dos cosas, la primera es mantener una determinada actitud ante la vida, la segunda consiste en desarrollar una serie de habilidades. Tanto más hacker se es cuanto más avancemos en cada una de ellas, y cuanto mejor sea la mezcla de ambas en nosotros.
+</p>
+
+<p>
+¿En qué consiste el desarrollo de la "actitud vital"? 1.- <b>Los hackers creen en la libertad y en la ayuda mutua</b>. Los hacker resuelven problemas y crean soluciones útiles para la humanidad (entre ellas lo que hoy todo el mundo conoce como Internet).
+2.- Los hackers piensan que <b>Ninguno de estos problemas a los que se enfrentan debería resolverse dos veces partiendo desde cero</b>, para lo cual es imprescindible la comunicación y el compartir la "sabiduría". Esto no quiere decir que no existan mejores soluciones que otras, precisamente para utilizar esta palabra es necesario poder conocer y comparar.
+3.- El aburrimiento y el trabajo <a href="http://buscon.rae.es/draeI/SrvltGUIBusUsual?TIPO_HTML=2&amp;LEMA=tedio">tedioso</a> (repetitivo) son malos. Luchar contra esto, automatizando todo lo que se pueda esas "tediosas" tareas, es una de las principales metas del hacker.
+4.- El hacker AMA LA LIBERTAD, por ello <b>lucha contra las actitudes <i>autoritarias</i></b>. Esto no significa que esté contra toda autoridad y contra todo sistema.
+5.- El hacker cree en el desarrollo de habilidades (en el documento les llaman "competences"==competencias), en el aprendizaje, fundamentándose éste en la inteligencia, práctica, dedicación y trabajo duro.
+</p>
+
+<p>
+¿Cuáles son las habilidades a desarrollar? 1.- Aprender a programar <b>en varios lenguajes</b> ("It's best, actually, to learn all five of Python, C/C++, Java, Perl, and LISP").
+2.- Conseguir un <b>sistema operativo "tipo" UNIX</b> y aprender a usarlo (evidentemente, en el amplio sentido de la palabra usarlo: ser capaz de utilizar toda su funcionalidad).
+3.- Comprender los fundamentos de la WEB y saber crearla. Propone <b>el conocimiento de las especificaciones actuales de <a href="http://www.w3.org/TR/html401/">HTML</a> y, más concretamente, <a href="http://www.w3.org/TR/xhtml1/">XHTML</a></b>. Incluso apunta que el inicio del "no programador" a través de uno de estos lenguajes podría ser conveniente: son más fáciles de aprender y ayudan a "ir creándose" una forma de pensar.
+4.- <b>Conseguir un buen nivel de inglés</b>. No por ser el idioma del imperio (que lo es) sino porque los mayores desarrollos técnicos, y por tanto la mayor cantidad de literatura, se han venido produciendo en ese idioma (una curiosidad que apunta para respaldar este punto es el caso de Linus, parece ser que comentó el código fuente del kernel que creó en su día ya en inglés&#x2026; así podría compartirlo con más gente).
+</p>
+
+<p>
+Bien, pues todo este conjunto de actitud y habilidad es condición necesaria pero no suficiente: <b>sólo se es hacker cuando los demás te atribuyen esa condición</b>.
+</p>
+
+<p>
+Uno, a esta edad, se conoce lo suficientemente bien para saber que no es un hacker y que, muy probablemente, nunca llegará a serlo. Pero igualmente, uno reconoce encontrar en ese pequeño cachito que ha ido descubriendo de sí mismo ciertas coincidencias con, al menos, la "actitud vital" del hacker.
+</p>
+
+<p>
+Por todo esto, a partir de hoy, habrá un "guiño" a esa "manera de vivir" en la cabecera de este sitio web.
+</p>
+
+<p>
+Para profundizar en esta historia os recomiendo seguir los enlaces existentes en toda la página, leer y pensar. Yo me quedo pendiente de seguir investigando si todo esto tiene algo que ver con el <a href="http://es.wikipedia.org/wiki/Humanismo">humanismo</a>. A priori se me antoja una evolución del mismo.
+</p>
+
+<p>
+Salud, y disfrutad de vuestros sueños.<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=%C2%BFSoy%20un%20hacker%3F">Dejar comentario</a>.
+</p>
+<div id="outline-container-org8598fc7" class="outline-2">
+<h2 id="org8598fc7">Comentarios</h2>
+<div class="outline-text-2" id="text-org8598fc7">
+</div>
+<div id="outline-container-orge1e6453" class="outline-3">
+<h3 id="orge1e6453">Humanismo (Juan Fernando 10/02/2006 - 22:31)</h3>
+<div class="outline-text-3" id="text-orge1e6453">
+<p>
+(Enviado por Juan Fernando (no verificado) el Dom, 01/01/2006 - 20:01)
+</p>
+
+<p>
+Mucho habría que decir sobre lo que es humanismo. Además del movimiento humanista renacentista (sentido, podemos decir, restringido), podemos hablar del humanismo en nuestros días (sentido amplio de humanismo), para lo cual se me ocurren tres ineludibles referencias: un texto de Heidegger sobre el asunto (Carta sobre el humanismo), otro de Sartre (El existencialismo es un humanismo)y, recientemente, la réplica a Heidegger de un polémico filósofo alemán llamado Sloterdijk con su conferencia titulada Normas para un parque humano. Prometo pensar un poco sobre el asunto y su relación con los hackers, aunque no me comprometo a plazo temporal alguno. Saludos.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc7dfa17" class="outline-3">
+<h3 id="orgc7dfa17">Con ansias espero (Godo 10/02/2006 - 22:35)</h3>
+<div class="outline-text-3" id="text-orgc7dfa17">
+<p>
+(Enviado por Godo el Lun, 02/01/2006 - 20:29)
+</p>
+
+<p>
+&#x2026;"Prometo pensar un poco sobre el asunto y su relación con los hackers, aunque no me comprometo a plazo temporal alguno".
+</p>
+
+<p>
+Sabes que, como he indicado en el título, con ansias espero dicha respuesta. Y, evidentemente, espero sin límite alguno. ;-)
+</p>
+
+<p>
+Muchas gracias por tus palabras. Espero que, cuando vaya madurando todos esos temas que mantengo abiertos, podamos seguir compartiendo interminables conversaciones. Las nuestras.
+</p>
+
+<p>
+Un abrazo.<br>
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-pensamiento.html">Pensamiento</a> <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">04 dic. 2005</div><h1 class="post-title"><a href="https://godest.vivencias.net/2005-12-04-entornos-de-programacion-en-c-con-licencia-gnu-gpl.html">Entornos de programación en C (con licencia GNU/GPL)</a></h1>
+<p>
+Se me ha ocurrido tratar este tema mientras pensaba en como ayudar a aquellas personas que no disponen de suficientes destrezas, ni de suficientes ganas de experimentar ;-) con un entorno GNU/Linux, y sin embargo se ven obligadas (por sus estudios, principalmente) a programar en lenguaje C. Como su título indica este artículo habla de los medios necesarios para crear un entorno de programación C. Voy a plantear dos alternativas, recomendándoos encarecidamente que os decidáis por la primera de ellas, aunque os suponga un mayor esfuerzo al comienzo y una mayor dedicación de tiempo. Si no disponéis de este tiempo necesario, no dejéis de leer, en la segunda alternativa encontraréis una posible vía rápida. Las alternativas se distinguen por el sistema operativo que utilizamos para trabajar con nuestra máquina: la primera de ellas se plantea en un sistema GNU/Linux (os sugiero <a href="http://www.debian.org">debian</a>, por supuesto }:-)), la segunda se plantea en un sistema Windows. AMBAS ALTERNATIVAS UTILIZAN <a href="http://es.wikipedia.org/wiki/Software_libre">SOFTWARE LIBRE</a>. <b>La primera alternativa</b> que os recomiendo (y antes he añadido "encarecidamente" porque se puede disponer de ella en español, se puede utilizar desde un sistema instalado en el disco duro o desde un <a href="http://es.wikipedia.org/wiki/Live_CD">live-cd</a>, es un entorno fiable y robusto, existen miles de tutoriales en internet, etc.), como ya se ha dicho para un entorno GNU/Linux, es la constituida por:
+</p>
+
+<blockquote>
+<p>
+1.- El editor <a href="http://es.wikipedia.org/wiki/Emacs">emacs</a> para crear nuestro código fuente. En su "mode-c" este editor nos ayudará a detectar errores coloreando la sintaxis de nuestro código e "identando" el mismo, de forma que nos resulte más fácil de seguir.
+2.- El compilador <a href="http://es.wikipedia.org/wiki/Gcc">gcc</a>, con las opciones "-Wall" para generar tantos avisos (warnings) como sea posible (sí, ya se que es posible generar muchos más, pero con estos creo que es suficiente para obtener un código bastante bueno) y con la opción "-g" para generar información de depuración (ver siguiente punto).
+3.- El depurador <a href="http://es.wikipedia.org/wiki/GNU_Debugger">gdb</a>, el cual nos ayudará a rastrear en nuestro "ejecutable" resultados, acciones, que no hemos previsto.
+4.- La herramienta <a href="http://es.wikipedia.org/wiki/Make">make</a>, que nos servirá para generar "archivos de compilación" de nuestros "proyectos". Útil para aquellos trabajos que están compuestos por más de un fichero de código fuente, ya que nos permite compilaciones "condicionadas" a los cambios producidos en dichos ficheros, compilando sólo los necesarios y ahorrándonos tiempo.
+</p>
+</blockquote>
+
+<p>
+En este artículo no pretendo enseñar el uso de cada una de estas herramientas, sólo darlas a conocer. Apuntarlas para que todos aquellos que estáis empezando en esto de la programación en C las conozcáis, y emprendáis el largo camino hacia su dominio. Para obtener más información sobre este entorno lee <a href="file:///d:/node/122">esto</a>. <b>La segunda alternativa</b> que existe, utilizando software libre pero esta vez en un sistema Windows, es instalar el entorno de desarrollo: <a href="http://www.bloodshed.net/devcpp.html">Dev-C++</a>. Este entorno incorpora ya un editor de código fuente (que colorea la sintaxis pero no la "identa" de forma inteligente como hace emacs), el compilador "gcc" en su versión para windows (evidentemente), el compilador "g++" por si queremos iniciarnos en C++, EL DEPURADOR "gdb", la herramienta "make"&#x2026; ¡bastante completo! La desventaja es que está en inglés (aunque supongo que es fácil entender los cuatro comandos necesarios para comenzar). Para disponer de él has de seguir los siguientes pasos: 1.- Descargar el .zip desde <a href="http://ftp1.sourceforge.net/dev-cpp/devcpp4.zip">aquí</a>. Para comprobar la última versión disponible, visitar <a href="http://www.bloodshed.net/devcpp.html">este enlace</a>. ¡OJO! no os recomiendo instalar versiones Beta, estas versiones están en desarrollo y pueden dar problemas.
+2.- Descomprimir el .zip descargado en una carpeta. Tras la instalación esta carpeta y el archivo .zip pueden ser eliminados de nuestro sistema.
+3.- En la carpeta donde hemos descomprimido el .zip hemos de encontrar el archivo "setup.exe" y ejecutarlo (doble click).
+4.- El primer cuadro de diálogo que nos aparece es el de la licencia. En él podremos comprobar que dicha licencia es la GNU GPL (versión 2 - junio 1991). ¡Es <a href="http://es.wikipedia.org/wiki/Software_libre">software libre</a>! De hecho el código fuente está disponible en su página web. Aceptamos el acuerdo pulsando "Yes".
+5.- A continuación nos aparecen las opciones de instalación. Podemos seguir aceptando las que nos propone por defecto: "tipical", y directorio (o carpeta) de instalación: "C:\Dev-C++". Pulsamos "Next".
+6.- Comienza el proceso de instalación. Observaremos una barra de progreso que se va completando hasta llegar al 100%.
+7.- El último cuadro de diálogo del proceso de instalación nos permite elegir si queremos leer el archivo "readme.txt" y si queremos "ejecutar el programa por primera vez"&#x2026; seleccionamos lo que nos apetezca y pulsamos "Finish".
+8.- Una vez que tenemos el programa instalado, para ejecutarlo basta con ir al menú "inicio/programas/Dev-C++/" y seleccionar el icono que muestra un escritorio con un flexo.
+9.- Cuando se ejecuta por primera vez nos muestra una ventanita con las asociaciones de archivos que va a realizar en el sistema (a partir de ese momento abriremos con él todos los archivos que terminen en: .dev, .c, .cpp, .h, .hpp. Y si nos atrevemos con la programación gráfica nos propone hacer uso de la librería gráfica "gnome". En fin, aceptamos todo esto pulsando la tecla "OK". Nos vuelve a avisar de que va a hacer cambios en el "registro de windows". De nuevo pulsamos "OK".
+10.- Si todo ha ido bien ya tenemos nuestro entorno de desarrollo "C" y "C++" funcionando.
+11.- Un ajuste necesario: para disponer de todos los mensajes de "aviso" (warnings) del compilador vamos a modificar la siguiente opción: menú "options/compiler options", y se nos abrirá una ventanita con opciones. En la primera pestaña, "Directories", seleccionamos el cuadrito: "add the following commands when calling compiler:", y agregamos en el rectángulo blanco de debajo (formulario) la siguiente opción "-Wall" (sin las comillas). En la última pestaña, "Linker", seleccionamos "Generate debugging information", para que podamos depurar nuestros programas con "gdb".
+12.- El entorno de desarrollo tiene 3 grandes zonas:
+</p>
+
+<blockquote>
+<p>
+  
+</p>
+<a href="/node/85" target="_self"><img width="300" height="300" border="0" align="right" src="/static/img/Dev-C++_4.jpg"></a>
+<p>
+a) El menú seguido por dos filas de iconos (accesos rápidos a algunas funciones, como por ejemplo: el aspa verde situada en el centro, aproximadamente, nos permite compilar, etc.)
+  b) La zona donde escribimos el código fuente (el editor), situada en la parte central de la pantalla.
+  c) La zona de mensajes, situada en la parte inferior de la pantalla, donde aparecen 4 pestañas. La más importante para los principiantes es la correspondiente al "compiler". En ella aparecerán los "errores" y los "warnings" del proceso de compilación. Situándonos sobre cada uno de ellos con el ratón, y haciendo doble click, se iluminará en el código fuente (editor, en parte central) la línea que ha provocado dicho error o "warning", conduciéndonos así hacia su solución.
+</p>
+</blockquote>
+
+<p>
+13.- Para iniciar la escritura de un fichero de código fuente ".c": menú "file/new source file" ó pulsando las teclas "Ctrl-U".
+14.- Eliminar los "#include" que no necesitamos: sobre todo el #include "iostream.h". Si programamos en lenguaje C, grabaremos nuestros ficheros con la extensión ".c". Esto hará que el compilador seleccionado a la hora de compilar sea el "gcc" y no el "g++" (este último se utiliza para ficheros guardados con extensión ".cpp"). Bien, si estamos programando en Lenguaje C y dejamos el #include "iostream.h" tendremos MUCHOS ERRORES DE COMPILACIÓN. CONSEJO: incluir siempre sólo los #include que necesitemos, y guardar los ficheros creados con extensión ".c" (sin las comillas). En fin, chicos, espero que esto os sea útil. Salud, y fuerzas para seguir mejorando.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Entornos%20de%20programaci%C3%B3n%20en%20C%20%28con%20licencia%20GNU%2FGPL%29">Dejar comentario</a>.
+</p>
+<div id="outline-container-org0521c94" class="outline-2">
+<h2 id="org0521c94">Comentarios</h2>
+<div class="outline-text-2" id="text-org0521c94">
+</div>
+<div id="outline-container-org91dab22" class="outline-3">
+<h3 id="org91dab22">Seamos más radicales (Adrián 10/02/2006 - 22:40)</h3>
+<div class="outline-text-3" id="text-org91dab22">
+<p>
+Enviado por Adrián (no verificado) el Vie, 30/12/2005 - 07:25
+</p>
+
+<p>
+Está muy bien que expliques eso para los profanos, ¡pero es contraproducente!
+</p>
+
+<p>
+Desde un punto de vista puramente tecnológico:
+</p>
+
+<p>
+Podrán hacer todos los exes que les de la gana con Dev-C++, pero de informática "general" (llamémosle así y espero que me entiendas) van a aprender más bien poco si siguen en Hasefroch. Y eso nos repercurte a nosotros: cuanto más idiota el usuario más idiota te lo hacen, un idiota no necesita saber qué coño es una tabla DSDT, así que nos pasamos los acuerdos de estándar ACPI por el forro, y también los W3C, y el otro, y el otro&#x2026; Ya me entiendes. Hoy día el Desktop GNU es bastante eye-candy y "usable" (es cachondísimo eso de la usabilidad, como si desde shell la máquina no funcionara&#x2026;), pero como esto es un circulo vicioso&#x2026; Dicen: "¿¡Que en Linux no puedo jugar a $ULTIMOJUEGODELMERCADOWINONLY?! Vaya mierda." Y así fundamentamos excusas en excusas y acabamos usando SL los frikis&#x2026;
+</p>
+
+<p>
+Desde el punto de vista de la libertad, y como anécdota, harto de que me llamaran con un problema made in M$, mi familia es 100% libre. A cada uno se le ha dado la excusa correspondiente, y aunque no sepan qué es el software libre, lo usan. Algo es algo, digamos que son usuarios "pasivos" que engordan la comunidad.
+</p>
+
+<p>
+Y bueno, después de soltar el discursito de siempre, mírate ReactOS si no lo conoces. Es un SO 100% libre clon de Ventanas. Está verde, y aunque a priori puede parecer un derroche de esfuerzo, al menos amplia la elección. De libertad hablamos al fin y al cabo&#x2026;
+</p>
+
+<p>
+Saludos.<br>
+</p>
+</div>
+</div>
+<div id="outline-container-org25e0ca0" class="outline-3">
+<h3 id="org25e0ca0">Es contraproducente&#x2026; pero menos (Godo 10/02/2006 - 22:46)</h3>
+<div class="outline-text-3" id="text-org25e0ca0">
+<p>
+(Enviado por Godo el Dom, 01/01/2006 - 18:39)
+</p>
+
+<p>
+Hola Adrián.
+</p>
+
+<p>
+Encantado de contar con tu colaboración por aquí. Y espero seguir escuchándote porque estoy seguro de que siempre aprenderé algo.
+</p>
+
+<p>
+Estoy de acuerdo contigo en que es contraproducente ofrecer alternativas sobre windows, pero creo que es bueno intentar que la gente se vaya acostumbrando a entornos "libres" aunque estos no sean lo mejor. Es decir, prefiero que utilicen Dev-C++ antes que una versión "pirata" de "turbo C" más vieja que Matusalén y que estaba prevista para MS-DOS, con lo que muestra ciertos problemas de integración con "ventanas" y "teclados"&#x2026; transformando el placer de programar en desagradable esfuerzo.
+</p>
+
+<p>
+Pienso que ésta puede ser una forma de conocer software libre y, al estar basado en gcc, gdb, etc. puede resultar interesante su "paralelismo" educacional con las herramientas de Unix / GNU/Linux. Los errores, los warnings, los mecanismos de depuración serán exactamente los mismos, por lo que estaremos educándonos "casi" en las mismas herramientas.
+</p>
+
+<p>
+No sé si he conseguido explicarme. Podría resumirlo en: dentro de lo malo, lo menos malo.
+</p>
+
+<p>
+Salud.<br>
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div><div id="archive">
+<a href="https://godest.vivencias.net/archive.html">Other posts</a>
+</div>
+</div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

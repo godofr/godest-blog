@@ -1,0 +1,23 @@
+#+title: Drupal y su diseño modular
+#+date: <2005-07-15 19:28>
+#+author: Godofredo Fdez.
+#+description: Queridos amigos, hoy toca algo de diversión, y agradecimiento, por medio de nuestro querido sistema gestor de contenidos (Content Management System - CMS - dirían otros): Drupal . Drupal ha sido construido de forma modular: hay un sistema base , que incluye las funciones mínimas, imprescindibles y comunes a todo gestor de contenidos, y un conjunto de módulos que pueden ir siendo añadidos para ir extendiendo las funciones del mismo.
+#+filetags: Bitácoras
+#+options: _:nil
+#+nid: 22
+
+Queridos amigos, hoy toca algo de diversión, y agradecimiento, por medio de nuestro querido sistema gestor de contenidos (Content Management System - CMS - dirían otros): [[http://drupal.org/][Drupal]].
+
+[[http://drupal.org/][Drupal]] ha sido construido de forma modular: hay un [[http://drupal.org/project/drupal][sistema base]], que incluye las funciones mínimas, imprescindibles y comunes a todo gestor de contenidos, y un conjunto de [[http://drupal.org/project/Modules][módulos]] que pueden ir siendo añadidos para ir extendiendo las funciones del mismo.
+
+Por ejemplo, hace un par de días añadí un módulo: [[http://drupal.org/project/trackback][trackback]] que permite hacer referencias a los contenidos que yo publico (aquí) desde otras bitácoras o páginas web de internet. El objetivo es, en este caso, informarme de cuando se utiliza, o se cita, "mi contenido" en otros rincones del ciberespacio, esto incentiva el debate, añade conocimiento y permite a las personas interesadas en un determinado tema ir saltando de forma interrelacionada.
+
+Otro ejemplo, no tan práctico pero sí simpático, hoy añado un módulo que traduce los "smileys" o "emoticons", esas caritas que intentan mostrar un determinado sentir o estado de ánimo cuando se escribe. El módulo se lo debemos a [[http://drupal.org/user/10/view][Steven Wittens]], gran contribuidor al proyecto [[http://drupal.org/][Drupal]], y puede ser encontrado [[http://drupal.org/project/smileys][aquí]]. Y permite cositas como:
+
+Ahora río :-) ahora lloro :-(
+
+...tras todo esto sólo me queda decir que estoy rodeado de genios ;-) y que uno se siente mal :sick: cuando ve todo lo poco que sabe }:-)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Drupal%20y%20su%20dise%C3%B1o%20modular][Dejar comentario]].
+

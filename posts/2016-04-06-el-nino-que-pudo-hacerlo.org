@@ -1,27 +1,25 @@
 #+title: El niño que pudo hacerlo
 #+date: <2016-04-06 00:33>
-#+description: 
+#+author: Godofredo Fdez.
+#+description: Siendo pequeño me aficioné a leer fábulas. Recuerdo que tuvimos, mi hermana y yo, un par de libros que recogían algunas de éstas escritas por diferentes…
 #+filetags: Libros
+#+options: _:nil
+#+nid: 551
 
 Siendo pequeño me aficioné a leer fábulas. Recuerdo que tuvimos, mi hermana y yo, un par de libros que recogían algunas de éstas escritas por diferentes autores. Va pasando el tiempo, pero sería capaz, poco a poco, de reconstruir casi todas ellas. Poco a poco porque si me lo propongo me bloqueo, pero de vez en cuando me vienen a la mente “llamadas” que me enganchan a una de ellas y en ese momento sí que soy capaz de recordarla completa, sin adornos pero con su desarrollo y su [[http://dle.rae.es/?id=Pm5dKdp][moraleja]].
 
-Esta: [[https://www.cervantesvirtual.com/obra-visor/el-gigante-egoista--0/html/ff0d04e8-82b1-11df-acc7-002185ce6064_1.htm][El gigante egoísta]], suele visitarme a menudo. Y reconozco que cuando visualizo la imagen del niño, demasiado pequeño para subir al árbol, y al gigante… en fin, ¡ya nos conocemos! ;-)
+Esta: [[http://www.catequesisenfamilia.org/primera-comunion/cuentos/691-el-gigante-egoista-el-valor-de-la-generosidad.html][El gigante egoísta]], suele visitarme a menudo. Y reconozco que cuando visualizo la imagen del niño, demasiado pequeño para subir al árbol, y al gigante... en fin, ¡ya nos conocemos! ;-)
 
 Me gustan las fábulas porque van directas al corazón. Y porque tienen un mensaje claro y sencillo, muy habitualmente relacionado con la exaltación de alguna virtud: templanza o serenidad, sinceridad, generosidad, humildad, nobleza, etc.; o algún gesto o comportamiento de los que nos hacen humanos a aquellos que creemos serlo. Las considero un buen ejercicio para el alma.
 
-Quizá por eso, ya con mis cuarenta ampliamente conquistados, sigo enamorado de ese género que, de forma ampliada, podríamos llamar “relatos cortos”. Como conclusión, tras muchas y extensas discusiones sobre el tema entre mi buen amigo Juanfer y yo, llegábamos a que un relato corto ha de ser como una flecha directa al corazón. Y que lo principal era que no se perdiera el ritmo: un comienzo fulgurante, impactante, que enganche al lector, un desarrollo trepidante y un final con un quiebro inesperado. Corrígeme si me equivoco, amigo (otro día os hablaré más de Juanfer).
+Quizá por eso, ya con mis cuarenta ampliamente conquistados, sigo enamorado de ese género que, de forma ampliada, podríamos llamar “relatos cortos”. Como conclusión, tras muchas y extensas discusiones sobre el tema entre mi buen amigo Juanfer y yo, llegábamos a que un relato ha de ser como una flecha directa al corazón. Y que lo principal era que no se perdiera el ritmo: un comienzo fulgurante, impactante, que enganche al lector, un desarrollo trepidante y un final con un quiebro inesperado. Corrígeme si me equivoco, amigo (otro día os hablaré más de Juanfer).
 
-Hoy os vuelvo a hablar de Eloy Moreno. Ya sabéis que este autor me impactó mucho con su [[https://godest.vivencias.net/2011-08-28-lecturas-de-verano-2011--el-boligrafo-de-gel-verde.html][Bolígrafo de gel verde]] y desde entonces intento seguirlo. Aquí también hablé de [[https://godest.vivencias.net/2015-03-18-lo-que-encontre-bajo-el-sofa.html][Lo que encontré bajo el sofá]], que me gustó menos. Y ahora os presento este magnífico libro de “cuentos cortos” que merece visitar, sin ninguna duda, todas vuestras mesitas de noche: [[https://eloymoreno.com/producto/cuentos1][Cuentos para entender el mundo]]. Os animo a leerlo. Y os dejo una muestra para que veáis que son fáciles de encajar en un ratito libre.
+Hoy os vuelvo a hablar de Eloy Moreno. Ya sabéis que este autor me impactó mucho con su [[http://godest.vivencias.net/content/lecturas-de-verano-2011-el-bol%C3%ADgrafo-de-gel-verde][Bolígrafo de gel verde]] y desde entonces intento seguirlo. Aquí también hablé de [[http://godest.vivencias.net/en/node/525][Lo que encontré bajo el sofá]], que me gustó menos. Y ahora os presento este magnífico libro de “cuentos cortos” que merece visitar, sin ninguna duda, todas vuestras mesitas de noche: [[http://www.eloymoreno.com/home/21-cuentos.html][Cuentos para entender el mundo]]. Os animo a leerlo. Y os dejo una muestra para que veáis que son fáciles de encajar en un ratito libre.
 
-
-* El niño que pudo hacerlo
-
+*El niño que pudo hacerlo*
 #+begin_export html
-<figure style="float:right">
-<img width="275" height="461" border="0" align="right" hspace="10" vspace="10" src="/static/2016/el-nino-que-pudo-hacerlo.jpg" alt="El niño que pudo hacerlo" />
-</figure>
+<img src="/static/img/el-niño-que-pudo-hacerlo.jpg" class="image image-preview " width="275" height="461" border="0" align="right" hspace="10" vspace="10" alt="El niño que pudo hacerlo"/>
 #+end_export
-
 Dos niños llevaban toda la mañana patinando sobre un lago helado cuando, de pronto, el hielo se rompió y uno de ellos cayó al agua.
 
 La corriente interna lo desplazó unos metros por debajo de la parte helada, por lo que para salvarlo la única opción que había era romper la capa que lo cubría.
@@ -34,14 +32,16 @@ A los pocos minutos, avisados por los vecinos que habían oído los gritos de so
 
 Cuando les contaron lo ocurrido, no paraban de preguntarse cómo aquel niño tan pequeño había sido capaz de romper una capa de hielo tan gruesa.
 
-=-= Es imposible que con esas manos lo haya logrado, es imposible, no tiene la fuerza suficiente ¿cómo ha podido conseguirlo? - comentaban entre ellos.
+- Es imposible que con esas manos lo haya logrado, es imposible, no tiene la fuerza suficiente ¿cómo ha podido conseguirlo? - comentaban entre ellos.
 
 Un anciano que estaba por los alrededores, al escuchar la conversación, se acercó a los bomberos.
 
-=-= Yo sí sé cómo lo hizo - dijo.
+- Yo sí sé cómo lo hizo - dijo.
 
-=-= ¿Cómo? - respondieron sorprendidos.
+- ¿Cómo? - respondieron sorprendidos.
 
-=-= No había nadie a su alrededor para decirle que no podía hacerlo.
+- No había nadie a su alrededor para decirle que no podía hacerlo.
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=El_niño_que_pudo_hacerlo][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=El%20ni%C3%B1o%20que%20pudo%20hacerlo][Dejar comentario]].
+

@@ -1,0 +1,15 @@
+#+title: Mundo Linux 95
+#+date: <2007-03-18 20:13>
+#+author: Godofredo Fdez.
+#+description: En este número de Mundo Linux inicio una serie de artículos que tratan sobre el gestor de contenidos: Drupal . Si los sigues serás capaz de crear, administrar…
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 211
+
+En este número de [[http://digital.revistasprofesionales.com/mundolinux/index.html][Mundo Linux]] inicio una serie de artículos que tratan sobre el gestor de contenidos: [[http://drupal.org/][Drupal]].
+
+Si los sigues serás capaz de crear, administrar y utilizar tu propio weblog o bitácora, portal, comunidad web, foros, etc., utilizando esta magnífica herramienta de [[http://es.wikipedia.org/wiki/Software_libre][software libre]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Mundo%20Linux%2095][Dejar comentario]].
+

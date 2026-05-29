@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Actualizado el 07-05-2013: instalación de la versión estable de Chrome y de la versión del plugin de flash que "mejor" funciona (que no es la última…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Instalando Google Chrome en Debian GNU/Linux</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">20 jul. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-07-20-instalando-google-chrome-en-debian-gnu-linux.html">Instalando Google Chrome en Debian GNU/Linux</a></h1>
+<p>
+<b>Actualizado el 07-05-2013: instalación de la versión estable de Chrome y de la versión del plugin de flash que "mejor" funciona (que no es la última disponible). Ver final del artículo.</b> Actualizado el 08-12-2009: lanzamiento de Google Chrome Beta. Ver final del artículo.
+Actualizado el 08-08-2009. Ver final del artículo.
+</p>
+
+<ul class="org-ul">
+<li>- -</li>
+</ul>
+
+<a href="/static/img/20090720-escritorio.jpg" target="_self"><img src="/static/img/20090720-escritorio.preview.jpg" alt="Google Chrome en Debian GNU/Linux"  class="image image-preview " width="300" height="225" border="0" align="right" hspace="10" vspace="10" /></a>
+<p>
+Aunque la versión del navegador es inestable aún, y tiene varios aspectos importantes que resolver: no funciona el plugin de flash, ni es posible imprimir, ni soporta corrección ortográfica en los formularios&#x2026; sí que es una gozada experimentar la velocidad de carga de las páginas webs. Además, una vez incorporado en nuestro amado <b>sources.list</b> (/etc/apt/sources.list) iremos actualizándolo de forma automática a las versiones más maduras conforme éstas vayan estando disponibles.
+</p>
+
+<p>
+Google Chrome para GNU/Linux está basado en un proyecto Open-Source: <a href="http://dev.chromium.org/">Chromium</a>.
+</p>
+
+<p>
+Lo primero que hay que hacer, como root, es añadir las siguientes líneas al archivo mencionado:
+</p>
+
+<pre class="example" id="org5bad9ef">
+
+# GOOGLE CHROME
+deb http://dl.google.com/linux/deb/ stable main
+
+</pre>
+
+<p>
+A continuación descargamos la clave pública con la que comprobaremos la integridad del software descargado (lo que sigue se teclea todo en una línea, pulsamos intro después del guión que aparece tras la palabra "add". Observamos que el resultado de la ejecución del par de comandos es "OK"):
+</p>
+
+<pre class="example" id="org4dbf583">
+
+alpechin:/home/godo# wget -q -O - http://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+OK                                                                                                      
+alpechin:/home/godo#
+
+</pre>
+
+<p>
+Lo siguiente: actualizamos el índice de fuentes de software disponibles:
+</p>
+
+<pre class="example" id="orge7ca9bc">
+
+alpechin:/home/godo# apt-get update                                                                     
+Obj http://security.debian.org lenny/updates Release.gpg                                                
+Ign http://security.debian.org lenny/updates/main Translation-es                                                                      
+Obj http://mirror.switch.ch testing Release.gpg                                                                                       
+Obj http://mirror.switch.ch testing/main Translation-es                                                                               
+Obj http://security.debian.org lenny/updates Release                                                                                  
+Des:1 http://dl.google.com stable Release.gpg [191B]                                                                                  
+Ign http://dl.google.com stable/main Translation-es                                                                                   
+Ign http://mirror.switch.ch testing/contrib Translation-es                                                                            
+Ign http://mirror.switch.ch testing/non-free Translation-es                                                                           
+Obj http://mirror.switch.ch testing Release                                                                                           
+Des:2 http://dl.google.com stable Release [1308B]                                                                                     
+Ign http://security.debian.org lenny/updates/main Packages/DiffIndex                                                                  
+Obj http://download.virtualbox.org lenny Release.gpg                                                                                  
+Ign http://download.virtualbox.org lenny/non-free Translation-es                                                                      
+Ign http://security.debian.org lenny/updates/main Sources/DiffIndex                                                                   
+Obj http://mirror.switch.ch testing/main Packages/DiffIndex                                                                           
+Obj http://security.debian.org lenny/updates/main Packages                                                                            
+Obj http://download.virtualbox.org lenny Release                                                                                      
+Ign http://dl.google.com stable/main Packages/DiffIndex                                                                               
+Obj http://security.debian.org lenny/updates/main Sources                                                                             
+Des:3 http://dl.google.com stable/main Packages [622B]                                                                                
+Obj http://mirror.switch.ch testing/contrib Packages/DiffIndex                                                                        
+Obj http://mirror.switch.ch testing/non-free Packages/DiffIndex                                                                       
+Ign http://download.virtualbox.org lenny/non-free Packages/DiffIndex                                                                  
+Obj http://download.virtualbox.org lenny/non-free Packages                                                                            
+Descargados 2121B en 1s (1090B/s)                                                                                                     
+Leyendo lista de paquetes... Hecho 
+
+</pre>
+
+<p>
+Y por último, instalamos el paquete correspondiente al navegador Google Chrome:
+</p>
+
+<pre class="example" id="orgc0258ab">
+
+alpechin:/home/godo# apt-get install google-chrome-unstable
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias
+Leyendo la información de estado... Hecho
+Se instalarán los siguientes paquetes NUEVOS:
+  google-chrome-unstable
+0 actualizados, 1 se instalarán, 0 para eliminar y 0 no actualizados.
+Necesito descargar 9524kB de archivos.
+Se utilizarán 32,3MB de espacio de disco adicional después de esta operación.
+Des:1 http://dl.google.com stable/main google-chrome-unstable 3.0.194.3-r20926 [9524kB]
+Descargados 9524kB en 19s (495kB/s)
+Seleccionando el paquete google-chrome-unstable previamente no seleccionado.
+(Leyendo la base de datos ...  00%
+102805 ficheros y directorios instalados actualmente.)
+Desempaquetando google-chrome-unstable (de .../google-chrome-unstable_3.0.194.3-r20926_i386.deb) ...
+Configurando google-chrome-unstable (3.0.194.3-r20926) ...
+Procesando disparadores para menu ...
+alpechin:/home/godo#
+
+</pre>
+
+<p>
+Eliminamos los paquetes de instalación:
+</p>
+
+<pre class="example" id="org4dfe24b">
+
+alpechin:/home/godo# apt-get clean
+alpechin:/home/godo# exit
+
+</pre>
+
+<p>
+Y disfrutamos con su ejecución:
+</p>
+
+<pre class="example" id="orgeea4b73">
+
+[22:16:20(godo@alpechin)~]&gt; google-chrome &amp;
+
+</pre>
+
+<p>
+<b>Actualización: 08-08-2009.</b> Tras la instalación de google-chrome, he observado que éste inserta su propio archivo sources.list en el directorio <i>etc/apt/sources.list.d</i> como comprobamos a continuación:
+</p>
+
+<pre class="example" id="orgabceaef">
+
+[09:52:40(root@surco)/etc/apt]&gt; cd sources.list.d/
+[09:52:51(root@surco)/etc/apt/sources.list.d]&gt; more google-chrome.list
+deb http://dl.google.com/linux/deb/ stable main
+[09:52:55(root@surco)/etc/apt/sources.list.d]&gt; 
+
+</pre>
+
+<p>
+A partir de este momento podemos comentar la línea que insertamos para realizar la primera instalación en nuestro fichero /etc/apt/sources.list (añadimos # al comienzo de la misma). <b>Fin de la actualización: 08-08-2009.</b>
+</p>
+
+<p>
+<b>Actualización: 08-12-2009.</b> Ahora ya no es necesario instalar:
+</p>
+
+<pre class="example" id="org11f8e12">
+
+alpechin:/home/godo# apt-get install google-chrome-unstable
+
+</pre>
+
+<p>
+sino:
+</p>
+
+<pre class="example" id="org802e1a5">
+
+alpechin:/home/godo# apt-get install google-chrome-beta
+
+</pre>
+
+<p>
+Si teníamos instalada la versión unstable, al instalar la beta se desintalará. <b>Fin de la actualización: 08-12-2009.</b>
+</p>
+
+<p>
+<b>Actualización: 07-05-2013.</b> Recuerdo cómo añadir el lugar desde donde descargar el navegador:
+Como root has de hacer esto:
+</p>
+
+<pre class="example" id="org1b7e27e">
+
+alpechin:/home/godo# cd /etc/apt/sources.list.d
+alpechin:/home/godo# nano google-chrome.list
+
+</pre>
+
+<p>
+Y añadimos la siguiente línea en el fichero de texto que estamos editando:
+</p>
+
+<pre class="example" id="org444282c">
+
+deb http://dl.google.com/linux/chrome/deb/ stable main
+
+</pre>
+
+<p>
+Guardamos con Ctrl+X y desde la línea de comandos instalamos la versión estable:
+</p>
+
+<pre class="example" id="orgdaa0fa2">
+
+alpechin:/home/godo# apt-get update
+alpechin:/home/godo# apt-get install google-chrome-stable
+
+</pre>
+
+<p>
+Otra cosa que he descubierto es que la versión 11.7 del plugin de flash-player que ya trae incorporada el navegador no reproduce bien los vídeos de flash: se entrecorta mucho el sonido. Para arreglar esto he ido al repositorio de Ubuntu (os recuerdo que muchos paquetes de Ubuntu son compatibles con Debian):
+</p>
+
+<p>
+<a href="http://archive.canonical.com/ubuntu/pool/partner/a/adobe-flashplugin/">http://archive.canonical.com/ubuntu/pool/partner/a/adobe-flashplugin/</a>
+</p>
+
+<p>
+He descargado el paquete: adobe-flashplugin<sub>11.2.202.280</sub>-0quantal1<sub>amd64.deb</sub> (versión para ordenadores de 64bits).
+</p>
+
+<p>
+Y lo he instalado así:
+</p>
+
+<pre class="example" id="org8a10135">
+
+alpechin:/home/godo# cd Descargas
+alpechin:/home/godo/Descargas# dpkg -i adobe-flashplugin_11.2.202.280-0quantal1_amd64.deb 
+
+</pre>
+
+<p>
+Al finalizar la instalación he agregado un enlace simbólico en el siguiente directorio:
+</p>
+
+<pre class="example" id="org9419de8">
+
+alpechin:/opt/google/chrome# ln -s /etc/alternatives/mozilla-flashplugin mozilla-flashplugin
+
+</pre>
+
+<p>
+¡OJO! mozilla-flashplugin se escribe todo junto.
+</p>
+
+<p>
+Ahora cerramos el navegador Chrome y lo volvemos a abrir. Escribimos en la barra de direcciones: about:plugins. Pulsamos sobre la palabra "Detalles" situada en la parte superior derecha de la página. Buscamos en el listado que aparece los plugins agrupados bajo el título "Adobe Flash Player". Inhabilitamos el que tiene como descripción "Shockwave Flash 11.7 r700", dejando habilitado únicamente el de versión "11.2 r202". Cerramos y abrimos el navegador.
+</p>
+
+<p>
+¡A disfrutar! <b>Fin de la actualización: 07-05-2013.</b>
+</p>
+
+<p>
+Salud&#x2026; y felices travesías por las procelosas, y aún libres, aguas de Internet.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Instalando%20Google%20Chrome%20en%20Debian%20GNU%2FLinux">Dejar comentario</a>.
+</p>
+<div id="outline-container-orgcdc0be6" class="outline-2">
+<h2 id="orgcdc0be6">Comentarios</h2>
+<div class="outline-text-2" id="text-orgcdc0be6">
+</div>
+<div id="outline-container-org92cd9c2" class="outline-3">
+<h3 id="org92cd9c2">¡Gracias por el tutorial! ((intento de) teleco 12/08/2009 - 20:41)</h3>
+<div class="outline-text-3" id="text-org92cd9c2">
+<p>
+Gracias Godo por el "tutorial". Ya te comento desde Chrome bajo Ubuntu ^^
+</p>
+
+<p>
+Enhorabuena por este blog que tienes, me parece realmente interesante y es fijo en mis feeds.
+</p>
+
+<p>
+Un saludo.
+</p>
+
+<p>
+&#x2013;
+Un alumno que no tuvo la suerte de tenerte como profe (por estar en la clase de al lado)
+</p>
+
+<p>
+PD: ¿Podrías habilitar la lectura completa de tus posts en los feeds o es una medida de protección ante los malignos bots de internet? :)
+</p>
+</div>
+</div>
+<div id="outline-container-org0d32272" class="outline-3">
+<h3 id="org0d32272">Muchas gracias a ti&#x2026; (Godo 13/08/2009 - 23:37)</h3>
+<div class="outline-text-3" id="text-org0d32272">
+<p>
+&#x2026;por dejarme este comentario tan agradable y alabador, y por agregarme a tus feeds. Espero no defraudarte.
+</p>
+
+<p>
+Respecto a lo de tenerme como profe, supongo que habrá quien piense lo contrario ;-)
+</p>
+
+<p>
+Y respecto a la lectura completa de los feeds, decidí hacerlo tal y como está para "obligar" a visitar la página si el extracto del artículo que llega por ellos resulta interesante. ¿Por qué? Personalmente aprendo mucho visitando las páginas de los demás: cuestiones de diseño web, enlaces interesantes en los bloques laterales, etc., por lo que estimo que es importante, de vez en cuando, darse una vueltecica por el sitio original.
+</p>
+
+<p>
+Salud.
+</p>
+</div>
+</div>
+<div id="outline-container-org7d9e862" class="outline-3">
+<h3 id="org7d9e862">Gracias (Anonymous 03/10/2009 - 15:31)</h3>
+<div class="outline-text-3" id="text-org7d9e862">
+<p>
+Gracias por la informacion, alfin veo que alguien no confunde "Chromium" con Google Chrome y coloca la informacion Objetiva y correcta, ya que los demas , solo copiaron y pegaron que "Chromium" es "Google Chrome" lo cual no es cierto, pero si es verdad que el "Google Chrome" esta basado en Chromium de eso no hay duda, pero a la final, Google Agrega unos parches y a la final aunque no lo paresca algo funciona distinto que el Chromium<br>
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

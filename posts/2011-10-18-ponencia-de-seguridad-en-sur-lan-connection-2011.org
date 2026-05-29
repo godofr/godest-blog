@@ -1,0 +1,15 @@
+#+title: Ponencia de seguridad en Sur Lan Connection 2011
+#+date: <2011-10-18 15:35>
+#+author: Godofredo Fdez.
+#+description: En esta conferencia se explorará el estado actual de la seguridad de la información en diferentes contextos (organizaciones públicas, privadas y a nivel…
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 431
+
+En esta conferencia se explorará el estado actual de la seguridad de la información en diferentes contextos (organizaciones públicas, privadas y a nivel personal). Se abordará la problemática asociada, los conceptos sobre los que se fundamenta y las principales técnicas de ataque y defensa. Concluiremos presentando las líneas de investigación actuales así como las oportunidades laborales que brinda a aquel que se especialice en ella.
+
+Más información aquí: [[http://www.surlan.es/][Sur Lan Connection 2011]]
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Ponencia%20de%20seguridad%20en%20Sur%20Lan%20Connection%202011][Dejar comentario]].
+

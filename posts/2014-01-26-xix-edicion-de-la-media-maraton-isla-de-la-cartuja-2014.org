@@ -1,0 +1,103 @@
+#+title: XIX Edición de la Media Maratón Isla de la Cartuja – 2014
+#+date: <2014-01-26 20:36>
+#+author: Godofredo Fdez.
+#+description: Esta ha sido mi segunda media maratón y, después de lo que sufrí en la primera , la he planificado con mucho más cuidado para intentar disfrutarla desde el…
+#+filetags: Juegos/Deportes
+#+options: _:nil
+#+nid: 521
+
+Esta ha sido mi segunda media maratón y, [[http://godest.vivencias.net/content/media-marat%C3%B3n-sevilla-los-palacios-2013][después de lo que sufrí en la primera]], la he planificado con mucho más cuidado para intentar disfrutarla desde el principio hasta el final... ¡Y así ha sido! Intentaré realizar esta entrada de forma cronológica, considerando la última semana de entrenamiento, el día previo y el gran día de hoy. La última semana de entrenamiento ha sido muy diferente a la que pude llevar a cabo para la anterior. Entonces, por diversas circunstancias (creo que mala climatología fundamentalmente) no pude salir a entrenar casi ningún día, con lo que afronté la prueba con, al menos, una semana en blanco. Esta semana he llevado a cabo tres salidas:
+
+#+BEGIN_QUOTE
+  - Último martes: 9,66 Km. y 6 series de: 20 segundos a máxima “potencia” y 2 minutos recuperando a ritmo lento.
+  - Último jueves: 4,83 Km. a ritmo lento.
+  - Último sábado (ayer): 4,83 Km. a ritmo lento y tres series de: 20 segundos a máxima “potencia” y 2 minutos recuperando.
+#+END_QUOTE
+
+Si os ha llamado la atención los decimales de las distancias, no es que yo los haya decidido por capricho y exceso de refinamiento, es simplemente que el plan de entrenamiento que “copié” de Internet venía con las distancias en millas :-). Ayer, día anterior a la carrera, Esther y yo convenimos tomárnoslo en “plan tranquilo”. Cenamos sobre las 21:30 e intentamos ver una película que, tras ciertos problemas de logística y varios intentos fallidos, acabó siendo: [[http://www.filmaffinity.com/es/film338747.html]["Las aventuras de Tintín: el secreto del unicornio"]]. Sobre las 0:30 nos fuimos a la cama y aproveché para releer el *capítulo 13: "Llegó el día"*, del libro: [[http://www.plataformaeditorial.com/ficha/271/1/3385/del-sillon-a-la-maraton.html]["Del sillón a la maratón. Correr es la mejor decisión de tu vida"]], que me regalaron para mi cumpleaños el año pasado y es uno de los grandes culpables de mi sufrimiento/disfrute actual. El capítulo es de gran ayuda para refrescar gran parte de los buenos consejos que mis amigos de aventuras me han ido dando. Entre ellos:
+
+#+BEGIN_QUOTE
+  a) La importancia del desayuno, que ha de ocurrir entre dos y tres horas antes de la carrera. En mi caso: tostada con aceite y lomo, café descafeinado, yogur con cereales y un plátano.
+  b) Beber y comer durante la carrera. Hoy sí que he sabido conjugar ambas acciones con mantener el ritmo de la respiración. El secreto se lo debo una vez más a mi compañero *Carlos*: botella en la mano todo el tiempo que haga falta y beber en fases: sorbo muy pequeñito sin tragar, respirar, dejar el agua en la boca, respirar, ir tragando poco a poco, respirar... Y respecto a la comida: tomar dos geles, uno sobre el kilómetro 7,5 y otro sobre el 15.
+  c) Pensamientos positivos: aquellos que te ayudan a ir siempre de menos a más, los días de entrenamientos duros, con lluvia y frío, la cara y los esfuerzos exigidos a los seres que más quieres para que te apoyen y ayuden en el día a día a encontrar las fuerzas y huecos necesarios, el gran beneficio de esta actividad tanto para tu cuerpo como para tu mente. Y en mi caso, siempre reforzados por los diferentes cambios de ritmo de la música que llevo, donde reina “el espíritu Bruce”.
+  d) El temido muro. [[http://godest.vivencias.net/content/media-marat%C3%B3n-sevilla-los-palacios-2013][Yo lo experimenté y lo conté en mi anterior intento]]. Como dice mi "impulsor" *Antonio Ríos* en su página 138: “El muro se va construyendo, ladrillo a ladrillo, desde el primer kilómetro. El inicio de la carrera debe ser lento. Tenemos que ir de menos a más...” ¡Y esta vez sí! Lo podemos comprobar aquí (como podéis ver es justo la imagen contraria a mi anterior rotura).
+#+END_QUOTE
+
+#+begin_export html
+<a href="/static/img/20140126-ritmo-mediaLaCartuja.jpg" rel="lightbox"><img align="middle" alt="20131215--01--grupo-en-salida" border="0" class="image image-preview " height="509" hspace="10" src="/static/img/20140126-ritmo-mediaLaCartuja.jpg" title="20140126-ritmo-mediaLaCartuja" vspace="10" width="371" /></a>
+#+end_export
+
+Hoy sí que he entrado con muy buenas sensaciones. El truco: hemos salido más lentos de lo habitual, hemos mantenido los 6 minutos/km casi todo el recorrido y hemos llegado con fuerzas al cambio de ritmo final. Y digo hemos porque en todo momento, y en todas las decisiones, he estado acompañado de mi compañero de “entrenos”: *Kader*. Y este ha sido el resultado:
+
+#+begin_export html
+<a href="/static/img/20140126-resumen-runkeeper-mediaLaCartuja.jpg" rel="lightbox"><img align="middle" alt="20140126-resumen-runkeeper-mediaLaCartuja" border="0" class="image image-preview " height="737" hspace="10" src="/static/img/20140126-resumen-runkeeper-mediaLaCartuja.jpg" title="20140126-resumen-runkeeper-mediaLaCartuja" vspace="10" width="628" /></a>
+#+end_export
+
+Mis sensaciones:
+
+#+BEGIN_QUOTE
+  1) Hasta el kilómetro 5 he ido prácticamente calentando. Las pulsaciones se mantenían alrededor de los 150 lpm.
+  2) Desde el 7 hasta el 15 he ido bastante concentrado en mantener el ritmo sin que se me elevaran las pulsaciones. Mantener una buena cadencia de respiración y no forzar la máquina creo que son las dos cosas que hay que cuidar. He corrido bastante relajado, con una sensación que parecía que iba flotando. Muy a gusto. Ese tramo lo he hecho a una media de 158 lpm.
+  3) En el 15, otra vez tras el avituallamiento, subí a 164 lpm y ya no pude bajarlas ni prácticamente mantenerlas, en el 18 (mi muro en la anterior) las tenía entre 168 y 171 lpm (entonces se me dispararon por encima de las 180). Viendo la fuerza con la que he llegado a meta creo que podía haber apretado ya en el 18, pero preferimos no arriesgar y no lo hicimos hasta superado el 19.
+  4) Los dos últimos kilómetros los he corrido a 5:47 y 5:03... poco más que añadir ;-).
+#+END_QUOTE
+
+Respecto a la organización de la carrera, en general ha sido buena. Lo mejor: la cantidad de personas señalizando el recorrido para que nunca surgiera la más mínima posibilidad de despistarse por otros caminos. Lo peor: en los avituallamientos 10 y final ¡no había agua suficiente para todos! Así que “los rezagados” sólo hemos podido beber en el 5 y en el 15. Menos mal que las he aprovechado hasta la última gota. Y así lucíamos todos, *Carlos, Kader, yo y Nuria* (de izquierda a derecha), al final:
+
+#+begin_export html
+<a href="/static/img/20140126-foto-final-mediaLaCartuja.jpg" rel="lightbox"><img align="middle" alt="20140126-foto-final-mediaLaCartuja" border="0" class="image image-preview " height="360" hspace="10" src="/static/img/20140126-foto-final-mediaLaCartuja.jpg" title="20140126-foto-final-mediaLaCartuja" vspace="10" width="640" /></a>
+#+end_export
+
+Despido el espectacular día que ha hecho hoy en Sevilla con muy buen sabor de boca. Y con ganas de “googlear” en busca de la siguiente. Alrededor del 15 de marzo sería una buena fecha, ¿recomendaciones? Un fuerte abrazo a todos los que lo habéis hecho posible con vuestro apoyo. P.D.: mi tiempo oficial:
+
+#+begin_export html
+<a href="/static/img/20140126-t_oficial-mediaLaCartuja.jpg" rel="lightbox"><img align="middle" alt="20140126-t_oficial-mediaLaCartuja" border="0" class="image image-preview " height="313" hspace="10" src="/static/img/20140126-t_oficial-mediaLaCartuja.jpg" title="20140126-t_oficial-mediaLaCartuja" vspace="10" width="610" /></a>
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=XIX%20Edici%C3%B3n%20de%20la%20Media%20Marat%C3%B3n%20Isla%20de%20la%20Cartuja%20%E2%80%93%202014][Dejar comentario]].
+
+** Comentarios
+
+*** La próxima (Félix Prado 26/01/2014 - 23:27)
+Felicidades por esa proeza :)
+
+Yo espero terminar la que sería mi primera media maratón en algo más de dos meses. No es el 15 de marzo pero no anda muy lejos: 6 de abril, media maratón de Málaga http://www.mediamaratonmalaga.com/web/ Por si quieres tenerla en cuenta.
+
+Un saludo.
+
+*** Gracias por la indicación (Godofredo Fdez. 22/02/2014 - 13:43)
+Hola Félix.
+
+Como te comenté, me lo he estado pensando y al final me he decidido. ¡Ya estoy inscrito!
+
+Ahora estoy entrenando para intentar bajar el tiempo de las 2h. Bueno, para serte sincero, y serme sincero, para intentar hacer alrededor de esas dos horas. Estaré igual de satisfecho si hago 1:58 que 2:02. A ver si lo consigo, porque arañar tiempo significa incrementar el ritmo, y bajar 15s. por kilómetro me suele costar bastante, no puntualmente, sino de forma mantenida durante toda la distancia.
+
+Ya nos contamos.
+
+Muchas gracias por estar por aquí.
+
+Salud.
+
+*** Hola Godofredo,
+Me alegro de (Félix Prado 23/02/2014 - 21:25)
+Hola Godofredo,
+
+Me alegro de que te hayas animado a apuntarte. Por lo que me han dicho, salvo un par de rampas que no soy muy largas, es una media bastante llana (no tanto como la de Sevilla, no hay ciudad más llana que esa :D) y creo que será una buena carrera.
+
+Yo, al ser mi primera media, no me he marcado más objetivo que terminarla y por los entrenamientos creo que voy por el buen camino.
+
+Si necesitas cualquier cosa o información más, o que recoja el dorsal cuando se abra el plazo, ya sabes cómo contactar conmigo.
+
+Un saludo.
+
+*** Comparto tu objetivo (Godofredo Fdez. 23/02/2014 - 22:15)
+Hola Félix.
+
+Efectivamente, el objetivo de la primera vez es terminar. Y yo agrego, si me lo permites y por si te inspira, terminar feliz. Eso implica no acabar de cualquier forma: no sufrir demasiado y no poner en riesgo tu "integridad física". Yo terminé mucho mejor mi segunda que mi primera, y aprendí mucho. Lo fundamental es cuidar el ritmo en todo momento, no salir fuerte, y controlar la logística (bebida y alimento). Intenta no cometer los errores que yo cometí... bueno, seguro que si lees este blog ya los tienes controlados ;-).
+
+Vamos "hablando" conforme se acerque la fecha, a ver si podemos vernos y comentar con una cervecita, ya sea antes o después de la prueba.
+
+Y muchas gracias por el ofrecimiento. Lo dicho: seguimos en contacto.
+
+Salud.

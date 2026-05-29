@@ -1,0 +1,20 @@
+#+title: Javi Osorio y Satán González en Sala Malandar
+#+date: <2007-04-30 12:56>
+#+author: Pili Cantautora
+#+description: Descripción: Sala Malandar. Calle Torneo, Sevilla. Entrada: 5€ ----------------------------------------- Presentación de la nueva maqueta de nuestro amigo…
+#+filetags: 
+#+options: _:nil
+#+nid: 228
+
+Descripción:
+Sala Malandar. Calle Torneo, Sevilla.
+Entrada: 5€
+-----------------------------------------
+Presentación de la nueva maqueta de nuestro amigo Calavera Bob
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Javi%20Osorio%20y%20Sat%C3%A1n%20Gonz%C3%A1lez%20en%20Sala%20Malandar][Dejar comentario]].
+

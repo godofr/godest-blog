@@ -1,0 +1,30 @@
+#+title: Economía 3.0
+#+date: <2011-07-11 22:40>
+#+author: Godofredo Fdez.
+#+description: Hace ya algunos años me propuse luchar contra la oxidación de mis conocimientos. Además de cultivar preferentemente, por motivos de tiempo y espacio, la…
+#+filetags: LinkedIn Pensamiento
+#+options: _:nil
+#+nid: 422
+
+#+begin_export html
+<a href="http://www.uimp.es/blogs/santander/" target="_blank"><img src="/static/img/img_santander_02.jpg" class="image image-preview " width="262" height="204" border="0" align="right" hspace="10" vspace="10" alt="Palacio de la Magdalena"/></a>
+#+end_export
+ Hace ya algunos años me propuse luchar contra la oxidación de mis conocimientos. Además de cultivar preferentemente, por motivos de tiempo y espacio, la autoformación, intentando llevar a buen puerto un plan de lectura que intercale los distintos temas que me interesan, también intento realizar al menos un curso presencial y/o algún otro on-line.
+
+Este año el curso prensencial elegido es el que imparte la Universidad Internacional Menéndez Pelayo en su bellísima sede del Palacio de la Magdalena, Santander, del 1 al 5 de agosto, titulado: [[http://www.uimp.es/uimp/home/homeUIMPdina.php?jcj=ACTIVIDADES_ACADEMICAS&juj=3002&lan=es&jpj=plan=60X8&any=2011-12&verasi=N&lan=es&tipo=ACA&lan=es][ECONOMÍA 3.0. LA ECONOMÍA DE LA INNOVACIÓN, LA INTELIGENCIA Y LAS INTERACCIONES]].
+
+Recientemente he leído [[http://www.casadellibro.com/libro-marketing-30-/1815427/2900001413702][Marketing 3.0]] (Philip Kotler, Kartajaya, Setiawan), libro que apuesta por otra forma de hacer las cosas para salir de los grises tiempos a los que nos ha conducido, básicamente, la falta de ética. Nos empuja así a recuperar los valores clásicos para cuidar tanto al cliente, a los empleados, los proveedores y, por qué no, al planeta. Me ha recordado un poco a un "segundo renacimiento". Quizá esta idea admita un nuevo artículo.
+
+Así, este curso me atrae porque lo veo como un complemento perfecto para seguir intentando completar el círculo que mejor encaje esta nueva época. Insisto, siempre que tengo oportunidad, en que Internet no está siendo puesta en valor tanto como se merece. La inmadurez con la que la utilizamos hace que la veamos como un pingüe almacén de casi todo lo que se puede digitalizar. El curso pretende aportar inteligencia al manejo de tanta información. Recorre las nuevas tendencias en marketing, en las formas de emprender e innovar, inteligencia de negocio, cuadros de mandos, seguridad TIC, cloud computing...
+
+Y todo eso en el incomparable entorno de Santander, con tardes largas de verano en las que confío poder intercalar algún baño en la playa y alguna copita con amena charla.
+
+¡Qué más se puede pedir!
+
+Os dejo el programa por si os animáis y nos vemos por allí.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Economia_3_0.PDF][Economia\_3\_0.PDF]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Econom%C3%ADa%203.0][Dejar comentario]].
+

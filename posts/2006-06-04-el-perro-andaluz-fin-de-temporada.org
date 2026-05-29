@@ -1,0 +1,21 @@
+#+title: El Perro Andaluz - Fin de Temporada
+#+date: <2006-06-04 13:20>
+#+author: Pili Cantautora
+#+description: Descripción: Una de las mejores formas de despedirnos de la primavera... igual que la inauguramos, con un buen conciertito en El Perro Andaluz, el último de la…
+#+filetags: 
+#+options: _:nil
+#+nid: 140
+
+Descripción:
+Una de las mejores formas de despedirnos de la primavera... igual que la inauguramos, con un buen conciertito en El Perro Andaluz, el último de la temporada, ¡no os lo perdáis!
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+-----------------------------------------------------------------------------
+
+C/ Bustos Tavera, 11. (Santa Catalina). Sevilla.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=El%20Perro%20Andaluz%20-%20Fin%20de%20Temporada][Dejar comentario]].
+

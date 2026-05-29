@@ -1,0 +1,15 @@
+#+title: Securmática
+#+date: <2012-04-21 21:51>
+#+author: Godofredo Fdez.
+#+description: Probablemente el congreso sobre seguridad de la información más importante que se celebra en España. Este año, 2012, imparto la ponencia: "Andalucía CERT:…
+#+filetags: 
+#+options: _:nil
+#+nid: 462
+
+Probablemente el congreso sobre seguridad de la información más importante que se celebra en España. Este año, 2012, imparto la ponencia: "Andalucía CERT: Gestión de incidentes de seguridad en la Junta de Andalucía", junto con Juan Antonio Muñoz Risueño (Responsable del Centro de Seguridad TIC de la Junta de Andalucía).
+
+Podéis encontrar toda la información del congreso [[http://www.securmatica.com][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Securm%C3%A1tica][Dejar comentario]].
+

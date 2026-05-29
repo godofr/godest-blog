@@ -1,0 +1,15 @@
+#+title: Escritorio en Alpechín a fecha 24 de julio de 2005
+#+date: <2005-07-24 14:58>
+#+author: Godofredo Fdez.
+#+description: Una captura de mi escritorio donde se puede ver la imagen dinámica que provoca la aplicación xearth (también hay versión para windows ) de la tierra en movimiento vista desde el sol. Y sobre ella las barras del escritorio kde . La superior contiene el menú kde, iconos para lanzar aplicaciones, los escritorios de trabajo (5), la bandeja del sistema, etc.; la de la derecha es una barra para anclar pequeñas aplicaciones ejecutándose: wmbiff (chequea buzones de correo), asmon (monitoriza el estado de la cpu, memoria, etc.), wmnd (monitoriza la carga de tráfico en el interfaz de red), wmmixer (para controlar el volumen en diferentes dispositivos de reproducción), wmweather+ (que muestra las condiciones atmosféricas) y wmmoonclock (que muestra la fase de la luna).
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 38
+
+Una captura de mi escritorio donde se puede ver la imagen dinámica que provoca la aplicación =xearth= (también hay [[http://hewgill.com/xearth/][versión para windows]]) de la tierra en movimiento vista desde el sol. Y sobre ella las barras del escritorio [[http://www.kde.org][kde]]. La superior contiene el menú kde, iconos para lanzar aplicaciones, los escritorios de trabajo (5), la bandeja del sistema, etc.; la de la derecha es una barra para anclar pequeñas aplicaciones ejecutándose: wmbiff (chequea buzones de correo), asmon (monitoriza el estado de la cpu, memoria, etc.), wmnd (monitoriza la carga de tráfico en el interfaz de red), wmmixer (para controlar el volumen en diferentes dispositivos de reproducción), wmweather+ (que muestra las condiciones atmosféricas) y wmmoonclock (que muestra la fase de la luna).
+
+En fin, espero que os guste ;-).
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Escritorio%20en%20Alpech%C3%ADn%20a%20fecha%2024%20de%20julio%20de%202005][Dejar comentario]].
+

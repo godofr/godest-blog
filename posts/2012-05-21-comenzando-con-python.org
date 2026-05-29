@@ -1,0 +1,52 @@
+#+title: Comenzando con Python
+#+date: <2012-05-21 21:12>
+#+author: Godofredo Fdez.
+#+description: ACTUALIZADO el 24-11-2012. Ver final del artículo. Algunos de mis alumnos más inquietos y, por tanto, más prometedores me han preguntado en las últimas semanas…
+#+filetags: Programación
+#+options: _:nil
+#+nid: 471
+
+#+begin_export html
+<a href="/static/img/python.png" rel="lightshow[roadpython]"><img src="/static/img/python.png" alt="Python" title="Python"  class="image image-preview " width="191" height="247" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+
+#+begin_export html
+<a href="/static/img/Practical_Programming--Using_Python.png" rel="lightshow[roadpython]" class="lightbox_hide_image"><img src="/static/img/Practical_Programming--Using_Python.png" alt="Python" title="Python"  class="image image-preview " width="191" height="247" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+*ACTUALIZADO el 24-11-2012. Ver final del artículo.*
+
+Algunos de mis alumnos más inquietos y, por tanto, más prometedores me han preguntado en las últimas semanas si conocía el lenguaje Python y si podía ayudarles a comenzar con su aprendizaje. Conozco la existencia de Python pero no he escrito ni una sola línea en ese lenguaje, por lo que las posibles referencias para el aprendizaje que puedo compartir son nulas.
+
+Quizá la ventaja más significativa respecto a ellos en este sentido sea mi edad, que me ha ido permitiendo tejer una red de contactos con la suficiente autoridad sobre diferentes materias a los que puedo recurrir en estas ocasiones. Así, mi buen "ciberamigo", [[http://hronia.blogalia.com/][Juan Lupión]], del que tanto he aprendido sobre estos mundos de tecnología, me escribió este interesante párrafo:
+
+De Python hay un par de recursos magníficos que yo conozca, el clásico "Dive Into Python" (http://www.diveintopython.net/) y el más moderno pero igualmente molón "Learn Python the Hard Way" (http://learnpythonthehardway.org/book/) Para tirar a partir de ahí, supongo que lo mejor es intentar hacer un proyectito en Python con Django o algo parecido y tirar de Stack Overflow y comunidad.
+
+Esta mañana en el desayuno, igualmente, he contrastado con mi buen amigo [[http://elradioplanner.wordpress.com/][Paco]] si en [[http://www.udacity.com/][Udacity]] estaban viendo Python en alguno de los cursos, y me ha confirmado que se utiliza en este: [[http://www.udacity.com/overview/Course/cs253][CS253: Web Application Engineering]] y que muy probablemente en estos otros dos: [[http://www.udacity.com/overview/Course/cs101][CS101: Building a Search Engine]] y [[http://www.udacity.com/overview/Course/cs262][CS262: Programming Languages]]. Aunque todos están empezados ya, estad atentos a posibles reediciones. Si podéis, os recomiendo el CS253.
+
+Y por último, como tenía que aportar algo propio a esta historia :-) he acudido a mi indiscutible editorial para este tipo de contenidos: lenguajes de programación y administración de sistemas, y he encontrado [[http://oreilly.com/python/index.html][toda una página dedicada a Python]]. Gracias, O'Reilly.
+
+Ahora sólo queda que estas referencias os sean útiles y que os animéis a compartir en los comentarios de esta entrada aquellas que vosotros mismos detectéis, exploréis y creáis que merecen la pena ser recomendadas. Me gustaría que esta entrada del blog fuera un punto de encuentro de personas interesadas en este lenguaje.
+
+Para mí es imposible sacar un gramo de tiempo ahora, pero este verano, cuando las tardes me sean liberadas, recorreré este post con ganas de devorar toda la comida que me ofrezcáis.
+
+*ACTUALIZACIÓN del 24-11-2012*
+
+Otro buen libro para aprender que estado siguiendo durante el curso ofrecido por Coursera ([[https://www.coursera.org/course/programming1][Learn to Program: The Fundamentals]]) es este: [[http://pragprog.com/book/gwpy/practical-programming][Practical Programming: An Introduction to Computer Science Using Python]].
+
+Para serviros.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Comenzando%20con%20Python][Dejar comentario]].
+
+** Comentarios
+
+*** Python (mortificador 21/05/2012 - 23:10)
+Python es, sin duda, el lenguaje de moda. A pesar de ser interpretado es bastante eficiente, tiene librerías prácticamente para cualquier cosa (no obstante, es Google quien está detrás de muchas de ellas) y es fácil de aprender.
+
+Si vienes de C, verás muchas similitudes en ciertas cosas (y es que Python está escrito en C) y hay una librería (que yo descubrí después de pasar horas sufriendo mientras migraba proyectos de C a python) llamada ctypes que te facilitará mucho la vida si quieres pasar algo de C a python. Y si quieres aprender programación orientada a objetos, Python es un buen lenguaje para empezar.
+
+Como ejemplo, hace un par de años escribí un pequeño sniffer en python (según vayáis cambiando los comentarios y el código hará una cosa u otra, tal y como lo pongo muestra el tráfico HTTP, o más bien, el tráfico de origen/destino el puerto 80). Podéis ejecutarlo para ver como es capaz de mostrar el tráfico en tiempo real sin problemas (y a todos los niveles, incluido el de enlace). Es necesario ejecutarlo como root.
+
+http://bit.ly/KEfXCf
+
+Saludos!

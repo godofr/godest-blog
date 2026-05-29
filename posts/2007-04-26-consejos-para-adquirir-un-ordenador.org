@@ -1,0 +1,48 @@
+#+title: Consejos para adquirir un ordenador
+#+date: <2007-04-26 22:56>
+#+author: Godofredo Fdez.
+#+description: El día 8 de abril de 2007 debía haber escrito un artículo en este blog para felicitar a los desarrolladores de Debian GNU/Linux , pues una nueva versión de la…
+#+filetags: Hardware Pensamiento Software
+#+options: _:nil
+#+nid: 224
+
+El día 8 de abril de 2007 debía haber escrito un artículo en este blog para felicitar a los desarrolladores de [[http://www.debian.org][Debian GNU/Linux]], pues una nueva versión de la rama estable había sido lanzada: [[http://www.debian.org/releases/stable/][Debian GNU/Linux 4.0 (alias etch)]]. Ese día no pude hacerlo :-(, ni el siguiente... Algunos días más tarde, 13 de abril de 2007, apareció [[http://www.guadalinex.org/][Guadalinex v4]]. Y el 19 de abril de 2007 lo hizo la última versión de [[http://www.ubuntu-es.org/node/44273][ubuntu/kubuntu 7.04]].
+
+Como todos sabemos, habiéndonos ayudado la imparable maquinaria de la publicidad, [[http://windows.microsoft.com/es-xl/windows-vista/products/home][Windows Vista]] está disponible en el mercado español desde principios de año.
+
+En la primavera de 2007 las dos grades civilizaciones de los sistemas operativos vuelven a mirarse a la cara frente a frente.
+
+Los requisitos mínimos que ha de tener su PC para ser conquistado por la civilización GNU/Linux los puede consultar [[http://www.debian.org/releases/stable/i386/ch03s04.html.es][aquí]]. Los que ha de tener para ser conquistado por la civilización Windows los tiene [[http://windows.microsoft.com/es-xl/windows-vista/products/home][aquí]]. Existe una tercera civilización, que hasta ahora vivía en su propia isla (tenían arquitectura hardware exclusiva) pero que [[http://www.microsiervos.com/archivo/ordenadores/mac-os-tiger-para-intel-hackeado.html][¿han decidido expandirse?]]: los MACs. De esta última civilización he de reconocer que no sé casi nada... pero tengo amigos que saben mucho y seguro que dejan algún comentario ;-)
+
+Este fin de semana pasado, el suplemento [[file:”http://www.elmundo.es/ariadna/index.html”][Ariadna]] del diaro [[file:”http://www.elmundo.es/”][El Mundo]] traía en su portada el artículo titulado: “Todas las claves para que cambie ahora de ordenador”, el cual puede usted consultar [[file:”http://www.elmundo.es/suplementos/ariadna/2007/325/1177080942.html”][aquí]].
+
+*Consejos*
+
+Tras toda esa información expuesta, me he atrevido a compartir una serie de consejos que, desde mi punto de vista, le pueden ayudar a ahorrarse mucho dinero.
+
+Antes de comprar un ordenador hágase la siguiente pregunta: ¿Para qué lo quiero? Si entre sus respuestas está casi todo *excepto*: la edición de vídeo y jugar a los últimos títulos disponibles en el mercado de los videojuegos, cómprese el modelo más barato posible que cumpla estas características mínimas:
+
+#+BEGIN_QUOTE
+  - Velocidad del procesador: 1 GHz.
+  - Memoria RAM: 1 GB.
+  - Disco Duro: 200 GB.
+  - Tarjeta gráfica: 256 MB.
+#+END_QUOTE
+
+Por unos 400 Euros encontrará modelos que le ofrezcan: procesador Intel Pentium Dual Core a 2'8 GHz., Disco duro de 250 GB, 1 GB de RAM y tarjeta ATI con 256MB de memoria.
+
+Además, debería traer: grabadora de DVD, 3 ó 4 puertos USB, tarjeta de red (a ser posible inalámbrica)... e incluso algunos comienzan a incorporar lectores de tarjetas de memoria (opción muy útil para un futuro cercano).
+
+Una cosa más, si usted puede encontrar algún ejemplar más barato, cómprelo. Escatime todo lo que quiera mientras no pase la frontera marcada en los requisitos mínimos anteriores. *Donde no debe escatimar es en el monitor*, asegúrese antes de adquirirlo que se ve bien, que los puntos no vibran ni los contornos de los iconos/letras se ven borrosos, que tiene capacidad suficiente para regular el brillo y el contraste a su gusto. La salud de sus ojos va en ello. Supongo que ya no los venden en ningún lado, pero ni se le ocurra comprar un monitor antiguo tipo CRT.
+
+Y por último, si le puede ayudar, este que escribe lo hace desde un ordenador con: procesador Intel Pentium a 1'7 GHz., 1 GB de RAM, Disco Duro de 160 GB y tarjeta gráfica ATI Rage 128 MB (mis juegos - el ajedrez, fundamentalmente- no necesitan mucha potencia gráfica :-)). Desde él realizo muchas tareas simultáneamente: procesador de textos, hoja de cálculo, cliente de correo electrónico, navegador web, reproducción de Mp3, compilación de programas en código C y java, mensajería instantánea, retoque fotográfico, cliente de redes P2P, contabilidad doméstica, visualización de vídeos/DVD... a modo de usuario. Como administrador he de contarles que también están ejecutándose los siguientes servicios: servidor web (donde pruebo desarrollos como el que usted está viendo ahora), servidor de correo, servidor de hora, servidor de base de datos, emulador de PC con su acelerador correspondiente, servidor de logs, etc.
+
+En definitiva, usted puede estar tranquilo pues tendrá máquina de sobra para realizar todo este conjunto de tareas. Y más tranquilo cuando conozca que todo lo anterior lo puede hacer *gratis: sólo tiene que dejar que la civilización GNU/Linux conquiste su recién adquirido compañero* ([[file:”http://www.us.debian.org/releases/stable/i386/ch02.html.es”][ver requisitos]]).
+
+Seguro que conoce mucha gente que se compra lo último que ha salido al mercado, los mejores ejemplares de la gama alta. Le aseguro que muchos de ellos están “tirando el dinero”. El 90% de las personas que conozco no le saca a sus equipos ni 1/5 del rendimiento que son capaces de dar. Y lo peor de todo, siguen apostando por mantenerse en esa cresta de la ola del consumismo desenfrenado que le hace cambiar el ordenador cada 3 ó 4 años. Claro, todo ello aliñado con la incorporación de la última versión del sistema operativo de moda, de la "suite" ofimática de moda, de los efectos gráficos de moda... pero, ¿de verdad lo necesita?
+
+Yo también fui de esos.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Consejos%20para%20adquirir%20un%20ordenador][Dejar comentario]].
+

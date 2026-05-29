@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="02-06-2009 ACTUALIZACIÓN: Si estás utilizando KDE4 lo que sigue no te funcionará, puedes leerlo para tener una idea del objetivo perseguido, y a continuación pulsa aquí , encontrarás lo mismo explicado para KDE4. ¡Disfrútalo! Fin de la actualización. A continuación comparto, a modo de guía, la solución a este problema.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Ejecutar un script interactivo *justo antes* de apagar KDE</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">10 dic. 2006</div><h1 class="post-title"><a href="https://godest.vivencias.net/2006-12-10-ejecutar-un-script-interactivo-justo-antes-de-apagar-kde.html">Ejecutar un script interactivo *justo antes* de apagar KDE</a></h1>
+<p>
+<b>02-06-2009 ACTUALIZACIÓN:</b> Si estás utilizando KDE4 lo que sigue no te funcionará, puedes leerlo para tener una idea del objetivo perseguido, y a continuación pulsa <a href="file:///d:/node/323">aquí</a>, encontrarás lo mismo explicado para KDE4. ¡Disfrútalo!
+</p>
+
+<p>
+<b>Fin de la actualización.</b>
+</p>
+
+<p>
+A continuación comparto, a modo de guía, la solución a este problema.
+</p>
+
+<p>
+Y digo problema porque, aunque en un principio creí que iba a ser más fácil, al final me ha costado bastante. Si buscáis en google os daréis cuenta de lo poco documentadas que están este tipo de cosas. No obstante, gracias a la flexibilidad y al estar al descubierto los entresijos del software libre, uno acaba consiguiéndolo :-).
+</p>
+
+<p>
+<b>Utilidad</b>: realizar una copia de seguridad de los contenidos que estimo valiosos <b>siempre antes</b> de apagar el ordenador (otro día hablaremos más de esto).
+</p>
+
+<p>
+<b>Objetivo</b>: ejecutar un <a href="http://es.wikipedia.org/wiki/Gui%C3%B3n_%28inform%C3%A1tica%29">shell script</a> (que en mi caso es el que realiza la copia de seguridad) <b>justo antes</b> de apagar el ordenador.
+</p>
+
+<p>
+<b>Restricciones</b>:
+1.- Trabajamos con el entorno <a href="http://kde.org">KDE</a>.
+2.- Hemos de ser capaces de apagar el ordenador de forma ordenada, es decir, conservando datos entre sesiones, sin "destrozar" la forma en la que lo hace KDE.
+3.- Hemos de evitar la existencia de varias opciones de "salida", obligando al usuario a ejecutar sólo una que colocaremos en un lugar fácilmente accesible (previa a esta, y de forma transparente para el usuario, se ejecutará el script).
+4.- El script es interactivo: solicita una contraseña (para cifrar las comunicaciones) al usuario, cuando ésta ha sido introducida el script continúa con su trabajo&#x2026; Y justo cuando finaliza se procede a apagar el sistema de forma ordenada.
+</p>
+
+<p>
+<b>Solución</b>:
+Tras investigar durante algunas horas entre foros y listas de correo, he conseguido construir justo la solución que estaba buscando:
+</p>
+
+<p>
+1.- He suprimido la opción "Terminar&#x2026;" del menú K. Lo he hecho con la herramienta <a href="http://extragear.kde.org/apps/kiosktool/">kiosktool</a>, que permite crear diferentes perfiles de usuarios y configurar en estos las acciones permitidas/prohibidas de los mismos (útil para la administración de cibercafés, etc.). La herramienta trae un perfil: "default", que es asociado a todos los usuarios del sistema por defecto. He creado uno nuevo para asociarlo sólo a mi usuario, y en este: configurar perfil - selección del componente "General" - configurar componente - selección "Deshabilitar la opción de terminar sesión". Mi usuario ya no puede apagar el sistema como habitualmente lo hacía.
+</p>
+
+<p>
+2.- He creado el siguiente script "intermedio": #!/bin/bash
+</p>
+
+<p>
+####################################################
+</p>
+
+<p>
+####################################################
+</p>
+
+<p>
+konsole -name casa-parada -title casa-parada -e /home/godo/bin/casa-parada \
+&amp;&amp; \
+dcop ksmserver ksmserver logout 1 2 0
+</p>
+
+<p>
+Lo denomino "intermedio" porque es ejecutado desde un botón que he creado en el panel de KDE (kicker) mediante la opción "Añadir aplicación no-KDE". Realiza dos acciones: abre una sesión de Konsole (programa terminal del entorno KDE) dentro de la cual ejecuta el script que me interesa (el que me solicita la contraseña y hace la verdadera tarea): /home/godo/bin/casa-parada, y cuando este termina satisfactoriamente (&amp;&amp;), hace una llamada al administrador de sesiones de KDE:
+</p>
+
+<p>
+dcop ksmserver ksmserver logout 1 2 0
+</p>
+
+<p>
+Donde los tres parámetros que siguen al mensaje de "logout" <a href="http://techbase.kde.org/Documentation/library/3.5-api/kdelibs-apidocs/kdecore/html/classKApplication.html">son</a>, respectivamente:
+</p>
+
+<p>
+enum ShutdownConfirm {
+ShutdownConfirmDefault = -1,
+ShutdownConfirmNo = 0,
+ShutdownConfirmYes = 1
+};
+</p>
+
+<p>
+enum ShutdownType {
+ShutdownTypeDefault = -1,
+ShutdownTypeNone = 0,
+ShutdownTypeReboot = 1,
+ShutdownTypeHalt = 2
+};
+</p>
+
+<p>
+enum ShutdownMode {
+ShutdownModeDefault = -1,
+ShutdownModeSchedule = 0,
+ShutdownModeTryNow = 1,
+ShutdownModeForceNow = 2,
+ShutdownModeInteractive = 3
+};
+</p>
+
+<p>
+Con lo que conseguimos <b>exactamente el mismo efecto</b> que cuando antes utilizábamos el botón "Terminar&#x2026;" del menú K, pero esta vez "terminamos" justo después de haber ejecutado nuestro script: ¡Objetivo conseguido!
+</p>
+
+<p>
+Como veis, hoy he aprendido muchas cosas nuevas.
+</p>
+
+<p>
+Y tengo un problema menos ;-)
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Ejecutar%20un%20script%20interactivo%20%2Ajusto%20antes%2A%20de%20apagar%20KDE">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

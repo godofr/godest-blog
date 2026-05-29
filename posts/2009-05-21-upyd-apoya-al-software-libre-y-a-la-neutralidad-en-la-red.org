@@ -1,0 +1,36 @@
+#+title: UPyD apoya al Software Libre y a la Neutralidad en la Red
+#+date: <2009-05-21 08:19>
+#+author: Godofredo Fdez.
+#+description: Sin tapujos. Con frases como estas: ... Se trata de compartir y de colaborar en la máxima difusión de herramientas informáticas en constante actualización, en…
+#+filetags: Activismo GNU/Linux Pensamiento Software
+#+options: _:nil
+#+nid: 321
+
+#+begin_export html
+<a href="http://www.upyd.es/" target="_self"><img src="/static/img/upyd-gnu.gif" alt="UPyD y FreeSoftware" title="UPyD y FreeSoftware"  class="image image-preview " width="313" height="284" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+Sin tapujos. Con frases como estas:
+
+/... Se trata de compartir y de colaborar en la máxima difusión de herramientas informáticas en constante actualización, en la línea tradicional de la cooperación científica. .../ /El desarrollo del “software libre” resulta especialmente interesante para países como España, que no cuentan con un sector industrial demasiado desarrollado en ese campo. Por tanto, puede favorecer la libre competencia y el desarrollo de pequeñas y medianas empresas independientes de los gigantes del sector de la programación cibernética./
+
+Que pueden ser leídas en dos artículos publicados en la [[http://www.upyd.es][web del partido]]:
+
+1. http://www.upyd.es/index.jsp?seccion=5&noticia=22664
+2. http://www.upyd.es/index.jsp?seccion=5&noticia=22666
+
+UPyD demuestra su compromiso con la libertad y, directamente, con parte del tejido productivo español que tiene al software libre como pilar imprescindible de subsistencia, como pieza fundamental en su modelo de negocio.
+
+Por no nombrar los grandes conceptos que encierra y por no extenderme demasiado en disquisiciones filosóficas, podéis aprender más sobre el software libre [[http://es.wikipedia.org/wiki/Software_libre][aquí]].
+
+He capturado los artículos y los he guardado en un par de archivos que dejo adjuntos, por si se pierden.
+
+Y la "regulación" de este tipo de cosas, con apoyo a favor y con batallas para cargárselo, sí que se han venido dirimiendo en el Parlamento Europeo, el cual elegimos dentro de poco ([[http://elecciones.mir.es/europeas2009/index.html][7 de junio de 2009]]).
+
+Una buena noticia, sin duda.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/UPyD_apoya_la_iniciativa_europea_Free_Software_Pact.pdf][UPyD\_apoya\_la\_iniciativa\_europea\_Free\_Software\_Pact.pdf]]
+- [[https://godest.vivencias.net/static/files/UPyD_APOYA_LA_NEUTRALIDAD_EN_LA_RED.pdf][UPyD\_APOYA\_LA\_NEUTRALIDAD\_EN\_LA\_RED.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=UPyD%20apoya%20al%20Software%20Libre%20y%20a%20la%20Neutralidad%20en%20la%20Red][Dejar comentario]].
+

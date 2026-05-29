@@ -1,21 +1,28 @@
 #+title: Envío de email cuando hay un login por ssh
 #+date: <2020-01-12 09:32>
-#+description: 
+#+author: Godofredo Fdez.
+#+description: En máquinas conectadas directamente a Internet (y esto incluye el acceso a ellas vía un puerto abierto del Firewall), es recomendable estar atento a los…
 #+filetags: Configuraciones Seguridad
+#+options: _:nil
+#+nid: 514
 
 En máquinas conectadas directamente a Internet (y esto incluye el acceso a ellas vía un puerto abierto del Firewall), es recomendable estar atento a los "logins de usuario" que se producen. En entornos profesionales, además del aviso de correo que programamos aquí, es conveniente hacer uso de otras herramientas tipo SIEM o HostIDS. En mi servidor, que es pequeñito y con pocos recursos, yo utilizo lo que sigue.
 
 He agregado esto al fichero "/etc/pam.d/sshd".
-#+begin_src sh :results output
+
+#+begin_example
+
 # Envío de correo cuando login
 session optional pam_exec.so /root/bin/send-mail-on-ssh-login.sh
-#+end_src
 
-El fichero completo (/etc/pam.d/sshd), como referencia y copia de seguridad, está adjunto [[https://godest.vivencias.net/static/2020/sshd.txt][aquí]] (le he agregado la extensión .txt para que sea "leible" desde el blog).
+#+end_example
+
+El fichero completo (/etc/pam.d/sshd), como referencia y copia de seguridad, está adjunto al final de este artículo (le has agregado la extensión .txt para que sea "subible" al blog).
 
 Y he creado el script correspondiente en "/root/bin/" con este contenido:
 
-#+begin_src sh :results output
+#+begin_example
+
 #!/bin/sh
 if [ "$PAM_TYPE" != "open_session" ]
 then
@@ -32,31 +39,32 @@ else
 fi
 
 exit 0
-#+end_src
+
+#+end_example
 
 *¡OJO!: has de modificar la dirección de mail "example@example.com" por la tuya propia donde quieres recibirlos*.
 
-Referencias: 
+Referencias:
+1.- http://blog.th-neumeier.de/2011/02/send-email-on-ssh-login-using-pam/
+2.- http://serverfault.com/questions/400613/send-notification-email-when-the-ubuntu-server-is-remoted-via-ssh
+3.- http://www.tiger-computing.co.uk/get-notified-with-every-ssh-login/
+4.- http://www.farinspace.com/secure-login-linux-server/
+5.- http://www.mydigitallife.info/how-to-get-linux-server-sends-email-alert-on-root-login/
 
-1.- http://blog.th-neumeier.de/2011/02/send-email-on-ssh-login-using-pam/ 
+Para avisar cuando alguien hace login como root (no permitido por ssh, sólo como "promoción interna" ;-)), añadimos al .bashrc de root lo siguiente (*¡¡OJO!! No hagas copy/paste de esta línea. Es mejor que la teclees pues debe de haber -introducidos por el "parser" de coloreado de sintaxis- códigos de control extraños en algunos caracteres que no funcionan si la copias*):
 
-2.- http://serverfault.com/questions/400613/send-notification-email-when-the-ubuntu-server-is-remoted-via-ssh 
+#+begin_example
 
-3.- http://www.tiger-computing.co.uk/get-notified-with-every-ssh-login/ 
-
-4.- http://www.farinspace.com/secure-login-linux-server/ 
-
-5.- http://www.mydigitallife.info/how-to-get-linux-server-sends-email-alert-on-root-login/ 
-
-
-Para avisar cuando alguien hace login como root (no permitido por ssh, sólo como "promoción interna" ;-)), añadimos al .bashrc de root lo siguiente (*¡¡OJO!! No hagas copy/paste de esta línea. Es mejor que la teclees pues debe de haber -introducidos por el "parser" de coloreado de sintaxis- códigos de control extraños en algunos caracteres que no funcionan si la copias*): 
-
-#+begin_src sh :results output
 echo 'ALERT - Root Shell Access () on:' `date` `who` | mail -s "Alert: Root Access from `who | cut -d"(" -f2 | cut -d")" -f1`" example@example.com
-#+end_src
+
+#+end_example
 
 Espero que te sea útil.
 
 Si consideras alguna parte mejorable, por favor, indícamelo con un comentario. Como siempre, te estaré muy agradecido.
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Envio_de_email_cuadno_hay_un_login_por_ssh][Dejar comentario]].
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/sshd.txt][sshd.txt]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Env%C3%ADo%20de%20email%20cuando%20hay%20un%20login%20por%20ssh][Dejar comentario]].
+

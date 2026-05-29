@@ -1,0 +1,21 @@
+#+title: Ventajas y dificultades de la adecuación al ENS
+#+date: <2011-07-01 22:18>
+#+author: Godofredo Fdez.
+#+description: En el último número de la revista " DINTEL alta dirección " (Época II - Número 16 - Abril/Mayo'2011) he publicado un artículo titulado: "Ventajas y dificultades de la adecuación al ENS", formando parte de una serie que sobre el mismo tema han publicado otros autores. Podéis encontrar todos los artículos en formato pdf aquí .
+#+filetags: COITAOC LinkedIn Publicaciones Seguridad
+#+options: _:nil
+#+nid: 418
+
+En el último número de la revista "[[http://www.revistadintel.es/EpocaII.htm][DINTEL alta dirección]]" (Época II - Número 16 - Abril/Mayo'2011) he publicado un artículo titulado: "Ventajas y dificultades de la adecuación al ENS", formando parte de una serie que sobre el mismo tema han publicado otros autores. Podéis encontrar todos los artículos en formato pdf [[http://www.revistadintel.es/Revista/Numeros/Numero16/Seguridad/ENS/ENS16.htm][aquí]].
+
+Intenté reflejar en él aquellas opiniones más comunes que he venido encontrando en foros de profesionales que se han enfrentado, o están planeando enfrentarse, a la adecuación de sus organizaciones al [[https://www.ccn-cert.cni.es/index.php?option=com_content&view=article&id=2420&Itemid=211&lang=es][Esquema Nacional de Seguridad]].
+
+Os dejo mi artículo adjunto al final de éste y espero conocer vuestras opiniones sobre el tema: ¿Creéis que el ENS os está ayudando? ¿En qué sentido? ¿Qué se os está haciendo más cuesta arriba? ¿Alguna puntualización a lo dicho?
+
+Como siempre, un placer compartir.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/201105-Dintel-ENS.pdf][201105-Dintel-ENS.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Ventajas%20y%20dificultades%20de%20la%20adecuaci%C3%B3n%20al%20ENS][Dejar comentario]].
+

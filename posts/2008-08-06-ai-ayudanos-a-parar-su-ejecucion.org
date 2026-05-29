@@ -1,0 +1,35 @@
+#+title: AI - Ayúdanos a parar su ejecución
+#+date: <2008-08-06 21:30>
+#+author: Godofredo Fdez.
+#+description: ACTUALIZADO 19-10-2008: ¡Lo conseguimos! Mira el archivo adjunto . Gracias. Querido amigo, Querida amiga, Alrededor del próximo día 12 de agosto dos jóvenes…
+#+filetags: Activismo
+#+options: _:nil
+#+nid: 292
+
+ACTUALIZADO 19-10-2008: ¡Lo conseguimos! Mira el archivo [[/files/ai-lo-conseguimos.pdf][adjunto]]. Gracias.
+
+#+begin_export html
+<a href="http://web.es.amnesty.org/iran-ejecucion-inminente/" target="_self"><img src="/static/img/actua.jpg" alt="ai actua" title="ai actua"  class="image image-preview " width="180" height="105" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+Querido amigo, Querida amiga,
+
+Alrededor del próximo día *12 de agosto* dos jóvenes iraníes, Behnoud y Mohammad, de 20 y 21 años, pueden ser ejecutados. Probablemente serán colgados de una grúa. Fueron condenados a pena de muerte por delitos cometidos cuando eran menores de edad.
+
+Irán es el país que más menores ejecuta, en contra de sus compromisos internacionales y del derecho internacional. Sin embargo, ya se ha conseguido incluso el perdón de otros sentenciados, como recientemente en el caso de Saeed Jazee.
+
+Poder salvar las vidas de Mohammad y Behnoud *es cuestión de muy poco tiempo*, pero si actuamos juntos podemos lograrlo. Por eso te pido dos cosas:
+
+* [[http://vivencias.net/ccount/click.php?id=8][Firma]] para salvar a Behnoud y a Mohammad y
+* [[http://info.es.amnesty.org/c/r?EMID=09501JU0FMVGV114U8F5F001H5KOC][Reenvía]] este mensaje a tus contactos
+
+En nombre de Behnoud y Mohammad, recibe nuestro más sincero agradecimiento,
+
+Esteban Beltrán
+Director -- Amnistía Internacional
+Sección Española\\
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/ai-lo-conseguimos.pdf][ai-lo-conseguimos.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=AI%20-%20Ay%C3%BAdanos%20a%20parar%20su%20ejecuci%C3%B3n][Dejar comentario]].
+

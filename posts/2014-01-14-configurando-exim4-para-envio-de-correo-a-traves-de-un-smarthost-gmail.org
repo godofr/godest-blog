@@ -1,0 +1,90 @@
+#+title: Configurando exim4 para envío de correo a través de un smarthost (gmail)
+#+date: <2014-01-14 21:31>
+#+author: Godofredo Fdez.
+#+description: Lo que sigue ha sido extraído de esta URL: https://wiki.debian.org/GmailAndExim4 He decidido recoger aquí solamente aquello que yo he llevado a cabo a modo de…
+#+filetags: Configuraciones GNU/Linux
+#+options: _:nil
+#+nid: 520
+
+Lo que sigue ha sido extraído de esta URL:
+https://wiki.debian.org/GmailAndExim4 He decidido recoger aquí solamente aquello que yo he llevado a cabo a modo de resumen. Quizá algún día tenga que replicarlo en alguna otra máquina y ya no sea capaz de encontrar dicha información. Obviamente, todo lo que sigue hay que hacerlo como root. 1) Reconfiguramos Exim.
+
+#+BEGIN_QUOTE
+  #+begin_example
+
+# dpkg-reconfigure exim4-config
+
+#+end_example
+
+#+begin_example
+
+*.google.com:nuestrousuario@gmail.com:nuestracontraseña
+
+#+end_example
+
+#+begin_example
+
+# chown root:Debian-exim /etc/exim4/passwd.client
+# chmod 640 /etc/exim4/passwd.client
+
+#+end_example
+
+3) Finalmente ejecutamos:
+
+#+begin_example
+
+# update-exim4.conf
+# invoke-rc.d exim4 restart
+# exim4 -qff
+
+#+end_example
+
+4) Y hacemos una prueba para ver que funciona:
+
+#+begin_example
+
+[21:16:47(root@debian)/etc/exim4]# mail -s "Prueba de envío" noexiste@vivencias.net
+Enviando con exim a través de gmail como smarthost. Ctrl-D Ctrl-D
+Cc: 
+
+#+end_example
+
+Si al intentar enviar un mail desde la línea de comandos, te aparece este error: "bash: mail: no se encontró la orden", instala este paquete: "apt-get install mailutils". 5) Comprobando en los logs que llega y, obviamente, viéndolo en nuestra bandeja de entrada de gmail.
+
+#+begin_example
+
+2014-01-14 21:17:16 1W3AQG-0003OJ-H9 <= root@localhost U=root P=local S=352
+2014-01-14 21:17:16 1W3AQG-0003OJ-H9 gmail-smtp-msa.l.google.com [2a00:1450:400c:c05::6d] Network is unreachable
+2014-01-14 21:17:18 1W3AQG-0003OJ-H9 => noexiste@vivencias.net R=smarthost T=remote_smtp_smarthost H=gmail-smtp-msa.l.google.com [173.194.67.108] X=TLS1.2:RSA_ARCFOUR_SHA1:128 DN="C=US,ST=California,L=Mountain View,O=Google Inc,CN=smtp.gmail.com"
+2014-01-14 21:17:18 1W3AQG-0003OJ-H9 Completed
+
+#+end_example
+
+Y esto es todo. P.D.: Por último, es muy útil la redirección de correo que se puede realizar entre usuarios en un sistema Unix o GNU/Linux. Existe el archivo "/etc/aliases" donde se nombra, en cada una de sus líneas, primero el usuario al que va dirigido el correo y, separado por dos puntos y un espacio, el usuario que en realidad lo va a recibir, es decir, a quien se redirige el correo del primero. Aquí un ejemplo (todas las líneas menos las dos últimas "vienen de serie"):
+
+#+begin_example
+
+[18:03:26(godo@surco)~]> sudo more /etc/aliases
+[sudo] password for godo:
+# /etc/aliases
+mailer-daemon: postmaster
+postmaster: root
+nobody: root
+hostmaster: root
+usenet: root
+news: root
+webmaster: root
+www: root
+ftp: root
+abuse: root
+noc: root
+security: root
+clamav: root
+root: godo
+godo: noexiste@vivencias.net
+
+#+end_example
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Configurando%20exim4%20para%20env%C3%ADo%20de%20correo%20a%20trav%C3%A9s%20de%20un%20smarthost%20%28gmail%29][Dejar comentario]].
+

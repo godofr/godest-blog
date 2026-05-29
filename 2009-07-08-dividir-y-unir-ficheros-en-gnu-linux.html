@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Muchas veces necesitamos transportar ficheros de una máquina a otra y el tamaño de éstos excede el espacio máximo disponible, por ejemplo, en una memoria USB.…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Dividir y unir ficheros en GNU/Linux</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">08 jul. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-07-08-dividir-y-unir-ficheros-en-gnu-linux.html">Dividir y unir ficheros en GNU/Linux</a></h1>
+<p>
+Muchas veces necesitamos transportar ficheros de una máquina a otra y el tamaño de éstos excede el espacio máximo disponible, por ejemplo, en una memoria USB. Ese ha sido el caso en el día de hoy: necesitaba trasladar un fichero de 2,3G y disponía de dos memorias USB, una con 2GB y otra con algo menos de 1GB. Así, tenía que dividir el fichero en varios, de tal forma que cada uno de ellos fuera inferior a 1GB. Con la orden <b>split</b> ha sido fácil, basta con hacer:
+</p>
+
+<pre class="example" id="org93ba356">
+
+[11:44:26(godo@alpechin)~]&gt; split -b 950MB 11-xp.vmdk
+
+</pre>
+
+<p>
+Y he obtenido como resultado los siguientes trozos de fichero (automáticamente llamados xa?, dónde la interrogación va avanzando por el abecedario cada vez que surge un nuevo trozito):
+</p>
+
+<pre class="example" id="org75d5763">
+
+[23:03:39(godo@surco)~/maq-virtual/VirtualBox/import]&gt; l
+total 2,3G
+-rwxr-xr-x 1 godo godo 906M jul  8 22:19 xaa
+-rwxr-xr-x 1 godo godo 906M jul  8 22:39 xab
+-rwxr-xr-x 1 godo godo 485M jul  8 23:03 xac
+
+</pre>
+
+<p>
+Que una vez transportados al lugar de destino han sido unidos con la orden <b>cat</b>, así:
+</p>
+
+<pre class="example" id="org2cf3b4d">
+
+[23:05:03(godo@surco)~/maq-virtual/VirtualBox/import]&gt; cat x?? &gt; 11-xp.vmdk
+
+</pre>
+
+<p>
+Y aquí podemos observar el resultado que, obviamente, coincide con el punto de partida:
+</p>
+
+<pre class="example" id="orgb459eb1">
+
+[23:11:12(godo@surco)~/maq-virtual/VirtualBox/import]&gt; l
+total 4,5G
+-rw-r--r-- 1 godo godo 2,3G jul  8 23:11 11-xp.vmdk
+-rwxr-xr-x 1 godo godo 906M jul  8 22:19 xaa
+-rwxr-xr-x 1 godo godo 906M jul  8 22:39 xab
+-rwxr-xr-x 1 godo godo 485M jul  8 23:03 xac
+
+</pre>
+
+<p>
+Ya podemos eliminar los trozos que nos han servido para realizar el transporte.
+</p>
+
+<p>
+Espero que os sea útil.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Dividir%20y%20unir%20ficheros%20en%20GNU%2FLinux">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

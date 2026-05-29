@@ -1,0 +1,68 @@
+#+title: Estoy en Twitter
+#+date: <2011-07-06 22:27>
+#+author: Godofredo Fdez.
+#+description: Desde el pasado lunes, 4 de julio de 2011, tengo cuenta en Twitter . Después de sopesar durante mucho tiempo si el mantener la presencia en esta red social era…
+#+filetags: Bitácoras LinkedIn
+#+options: _:nil
+#+nid: 420
+
+#+begin_export html
+<a href="http://twitter.com/godofdez" target="_blank"><img src="/static/img/iconsetc-promo-twitter3.png" class="image image-preview " width="185" height="185" border="0" align="right" hspace="1" vspace="1" alt="Un momento de descanso"/></a>
+#+end_export
+ Desde el pasado lunes, 4 de julio de 2011, [[http://twitter.com/godofdez][tengo cuenta en Twitter]]. Después de sopesar durante mucho tiempo si el mantener la presencia en esta red social era más positivo que negativo, me he decidido a darle una oportunidad. Mi análisis ha manejado los siguientes parámetros:
+
+Desde el lado negativo me condicionaba el vértigo que sentía al intentar seguir el ritmo de publicaciones de los más activos, la gestión del "timeline" (la página de inicio que va agregando todo lo que publican la gente/medios que sigues) es una auténtica locura desbordante. Si a los n (cuando n tiende a infinito) "tweets" por minuto que van apareciendo en ella les unes los m enlaces incorporados en los mismos y que te conducen a mucha más información... ¡misión imposible! La única posibilidad de gestión es tratarlo como si de una lectura de titulares se tratara.
+
+Y tú, ¿cómo lo haces?
+
+Hace unos días escuché que *Twitter es para opinar, Facebook para conversar y el blog para reflexionar*. Quizá éste sea el verdadero motivo de ser de cada uno. Twitter es eminentemente público. Facebook surgió (ya se que ahora permite ser utilizado casi como twitter) para ser "básicamente" privado, con suscripción mutua de seguidor y seguido. En Twitter puedes serguir sin que te sigan. Así, desde el lado positivo, *la facilidad de compartir* algo interesante simplemente pulsando un botón, que suele acompañar a todos los artículos publicados en lugares de Internet que se precien (como este ;-), ver abajo), con todos tus contactos, es lo que me ha hecho animarme.
+
+Y su inmediatez. Dicen que estar siguiendo un acontecimiento en Twitter se "aproxima" a lo experimentado en vivo y en directo :-O.
+
+Los usos de Twitter son tantos como ejercicios creativos seamos capaces de realizar.
+
+Sigo aclimatándome.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Estoy%20en%20Twitter][Dejar comentario]].
+
+** Comentarios
+
+*** Pues yo, en mi corta (Elradioplanner 07/07/2011 - 14:31)
+Pues yo, en mi corta experiencia, veo 3 puntos básicos:
+- Desarrollar una lectura "diagonal"... No hay que leerlo todo todo todo.
+- Conectarse con asiduidad para que no "se atrase el trabajo". Un dispositivo móvil es una gran ayuda, y convierte la experiencia en algo único, con la inmediatez de enviar imágenes recién captadas.
+- El uso del "favorito" para posponer lecturas.
+- Afina tu lista de "seguidos". Hay gente con auténtica "tuitorrea" que realmente no dice nada...
+
+*** Realmente son 4 je je.... (Elradioplanner 07/07/2011 - 14:32)
+Realmente son 4 je je....
+
+*** De acuerdo... (Godo 07/07/2011 - 19:04)
+...en los 4. :-)
+
+El uso de los favoritos fue una de las primeras cosas que descubrí, justo el primer día. Ahora tengo que refinar la gestión de los mismos, sino lograré tener tantos favoritos sin leer que dejen de serlo :-(.
+
+El dispositivo móvil tengo que conseguirlo aún. Animándome estoy.
+
+La "lectura diagonal" siempre me ha dado un poco de rabia porque tengo la impresión de que se me escapan las cosas. Y he comprobado en algunos que la practican que así es.
+
+La tuitorrea... ¡puff!
+
+Gracias por tu comentario. Nos seguimos }:).
+
+*** ¿Ya te has hartado?         (cjmateos 28/07/2011 - 19:17)
+¿Ya te has hartado?
+
+He intentado seguirte con este enlace http://twitter.com/fereq pero parece que el nombre de usuario no existe. Supongo que lo habrás cambiado.
+
+El mío es este http://twitter.com/cjmateos
+
+Aviso, soy muy poco activo, leo mas que escribo, con lo cual estás salvado de la tuitorrea conmigo ;)
+
+*** Gracias por señalarme el error (Godo 28/07/2011 - 22:05)
+Comencé siendo "fereq", una especie de acrónimo entre Fernández y Requena, pero luego vi que tenía que ponérselo fácil a la gente que me buscara, y cambié a godofdez - http://twitter.com/godofdez
+
+Lo he corregido en los enlaces del artículo.
+
+Gracias. Nos seguimos.

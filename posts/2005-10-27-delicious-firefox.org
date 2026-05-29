@@ -1,0 +1,13 @@
+#+title: delicious firefox
+#+date: <2005-10-27 23:25>
+#+author: Godofredo Fdez.
+#+description: Aquí podemos ver como del.icio.us se integra con firefox haciendo uso de diversas extensiones .
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 73
+
+Aquí podemos ver como [[http://del.icio.us/][del.icio.us]] se integra con [[http://www.mozilla.org/products/firefox/][firefox]] haciendo uso de [[http://pchere.blogspot.com/2005/02/absolutely-delicious-complete-tool.html][diversas extensiones]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=delicious%20firefox][Dejar comentario]].
+

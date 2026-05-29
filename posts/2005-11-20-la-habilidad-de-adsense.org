@@ -1,0 +1,35 @@
+#+title: La habilidad de "Adsense"
+#+date: <2005-11-20 19:18>
+#+author: Godofredo Fdez.
+#+description: A través de aquí me informé de como participar en la actividad publicitaria que google lleva a cabo mediante el programa " Adsense ". Hasta ahora simplemente la "sufría" (bien es verdad que de forma menos intrusiva que la de otros) como potencial cliente. Potencial cliente porque rara vez he consumido productos por internet... pero sí que era público objetivo . Y esto es lo que siempre me ha sorprendido de este programa de publicidad de google.
+#+filetags: Bitácoras Pensamiento
+#+options: _:nil
+#+nid: 82
+
+A través de [[http://google.dirson.com/post/1881/][aquí]] me informé de como participar en la actividad publicitaria que [[http://www.google.es][google]] lleva a cabo mediante el programa "Adsense". Hasta ahora simplemente la "sufría" (bien es verdad que de forma menos intrusiva que la de otros) como potencial cliente. Potencial cliente porque rara vez he consumido productos por internet... pero sí que era público objetivo.
+
+Y esto es lo que siempre me ha sorprendido de este programa de publicidad de google.
+
+En la licenciatura de [[http://www.us.es/sga/licenciado_en_investigacion_y_tecnicas_de_mercado.htm][Investigación y Técnicas de Mercado]] se encargaron de hacernos comprender la importancia de segmentar el mercado para encontrar, entre esos segmentos, el del público objetivo (el que de verdad está interesado en x) de nuestro producto/servicio. Una vez encontrado el público objetivo todo el esfuerzo de comunicación (publicidad, promociones, etc.) iba dirigido a éste. La segmentación del mercado y la correcta elección del público objetivo era fundamental para el logro del éxito: dar a conocer nuestro producto/servicio. Quizá con un ejemplo todo se entienda mejor: si nuestra empresa fabrica tapicerías para sofás de lujo y se estuviera planteando lanzar una campaña publicitaria para arañar cuota de mercado a su competencia, no tendría sentido lanzarla en propaganda masiva por medio de "buzoneo", ni plantar anuncios en los autobuses, etc. Nuestro público objetivo no es el gran público sino fabricantes de sofás (principalmente), tiendas "caras" (caro=prestigio) de muebles, y algunas familias de gran poder adquisitivo (si es que estas se plantean aprovechar un sofá ya estropeado cambiándole la tapicería, que probablemente vaya a ser que no }:-)). La campaña, por tanto, no se tendría que plantear a gran escala sino insertada en medios especializados, catálogos divulgativos que serían presentados personalmente a responsables de fabricación de sofás y a directores comerciales de fábricas de muebles lujosos.
+
+El programa "Adsense" de google se caracteriza por realizar todo este proceso de forma instantánea cuando se carga una página en nuestro navegador. Se entiende que si visitamos esa página es porque estamos interesados en lo que en ella se trata, el "motor publicitario" de google analiza la página, busca palabras clave y... ¡tachán! 8-) presenta la publicidad más apropiada para nosotros. Todos somos público objetivo: ya nos encargamos de serlo simplemente al seleccionar lo que nos gusta leer. Claro, todo esto sería perfecto si no fallara... pero considero que el nivel de acierto es lo suficientemente alto para resultar, a mi por lo menos, sorprendente.
+
+Bueno, pues aquí está "godest" probando "adsense". Como no tengo mucho tiempo libre he tenido que ir introduciéndolo poco a poco a lo largo de esta semana. Hoy ya es definitivo. En nuestro diseño hemos incorporado una barra de búsqueda "google" que nos permite buscar tanto en "godest.bitacoras.com" (opción por defecto) como en toda la web. Al presentar los resultados de la búsqueda, google insertará publicidad relacionada con la misma. Si alguno de esos enlaces es pinchado, la campaña habrá conseguido su objetivo... y "godest" habrá acumulado un click y, quizá, algún céntimo de dólar. También hay un bloque con un par de anuncios en la barra lateral derecha. Y algunos vínculos sobre el pié de cada página. Todo ello lo más disimulado posible en nuestro diseño. He intentado que sea mínimamente intrusivo y mínimamente molesto.
+
+Espero que la "publicidad" no os dañe demasiado y que no dejéis de visitar este rincón por ello. A mi, alguna que otra vez, me ha servido para conocer nuevos productos, comparar características entre ellos, y obtener información adicional que nunca viene mal... En fin, ya me contaréis.
+
+Evidentemente sé que con esto no me voy a hacer rico... por ahora me conformaría con obtener lo suficiente para comprar algún libro en [[http://www.amazon.com][amazón]] o algún artilugio en [[http://www.thinkgeek.com/index.shtml][thinkgeek]].
+
+Si queréis saber más, y dejad a vuestro paso algunos céntimos de dólar ;-), pinchad aquí:
+
+Que la salud os acompañe...
+
+#+BEGIN_QUOTE
+  ...y el amor os guíe.
+#+END_QUOTE
+
+*Corrección:* Esther me apunta que el título es inapropiado. Tras consultarle que le parece: /La habilidad/ de "Adsense", acordamos que refleja mejor el contenido de esta historia. Gracias, Esther.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=La%20habilidad%20de%20%22Adsense%22][Dejar comentario]].
+

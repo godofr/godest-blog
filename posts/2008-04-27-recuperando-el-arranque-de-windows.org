@@ -1,0 +1,138 @@
+#+title: Recuperando el arranque de Windows
+#+date: <2008-04-27 00:19>
+#+author: Godofredo Fdez.
+#+description: Ya hemos hablado en este blog de como recuperar gestores de arranque del mundo GNU/Linux (mirar aquí ), o quizá, más precisamente, de los que permiten la convivencia de ambos mundos: GNU/Linux y Windows. Hoy se trata de ver como recuperar el arranque de Windows tocando archivos de configuración del mismo. Os cuento lo que me ha pasado: en mi máquina conviven varios sistemas operativos, representantes de uno y otro bando. Suelo, pues, jugar bastante con las particiones del disco duro... y esto tiene sus riesgos.
+#+filetags: Software
+#+options: _:nil
+#+nid: 279
+
+Ya hemos hablado en este blog de como recuperar gestores de arranque del mundo GNU/Linux (mirar [[/node/207][aquí]]), o quizá, más precisamente, de los que permiten la convivencia de ambos mundos: GNU/Linux y Windows.
+
+Hoy se trata de ver como recuperar el arranque de Windows tocando archivos de configuración del mismo.
+
+Os cuento lo que me ha pasado: en mi máquina conviven varios sistemas operativos, representantes de uno y otro bando. Suelo, pues, jugar bastante con las particiones del disco duro... y esto tiene sus riesgos.
+
+En los días pasados hice un cambio que me llevó de esta tabla de particiones:
+
+#+begin_example
+
+Disco /dev/sda: 80.0 GB, 80026361856 bytes
+255 heads, 63 sectors/track, 9729 cylinders
+Units = cilindros of 16065 * 512 = 8225280 bytes
+Disk identifier: 0x0004e324
+
+Disposit. Inicio    Comienzo      Fin      Bloques  Id  Sistema
+/dev/sda1   *           1         261     2096451    6  FAT16
+/dev/sda2             262        9729    76051710    5  Extendida
+/dev/sda3            2332        3003     5393498   83  Linux
+/dev/sda4            2332        3674     5393498   83  Linux
+/dev/sda5            3675        8454    38395318+   7  HPFS/NTFS
+/dev/sda6            8455        9505     8442126   83  Linux
+/dev/sda7            9602        9729     1028128+  82  Linux swap / Solaris
+/dev/sda8            9506        9601      771088+  83  Linux
+/dev/sda9            262         2331    16627212   83  Linux
+
+Las entradas de la tabla de particiones no están en el orden del disco
+
+#+end_example
+
+a esta otra:
+
+#+begin_example
+
+Disco /dev/sda: 80.0 GB, 80026361856 bytes
+255 heads, 63 sectors/track, 9729 cylinders
+Units = cilindros of 16065 * 512 = 8225280 bytes
+Disk identifier: 0x0004e324
+
+Disposit. Inicio    Comienzo      Fin      Bloques  Id  Sistema
+/dev/sda1   *           1         261     2096451    6  FAT16
+/dev/sda2             262        9729    76051710    5  Extendida
+/dev/sda3            2332        3674    10787616   83  Linux
+/dev/sda5            3675        8454    38395318+   7  HPFS/NTFS
+/dev/sda6            8455        9505     8442126   83  Linux
+/dev/sda7            9602        9729     1028128+  82  Linux swap / Solaris
+/dev/sda8            9506        9601      771088+  83  Linux
+/dev/sda9            262        2331    16627212   83  Linux
+
+Las entradas de la tabla de particiones no están en el orden del disco
+
+#+end_example
+
+Ambas salidas las he obtenido utilizando, en GNU/Linux y como root, el comando:
+
+#+begin_example
+
+[root]> fdisk -l /dev/sda
+
+#+end_example
+
+Como podéis observar, el cambio ha consistido en fusionar la partición */dev/sda3* con la */dev/sda4*. El sistema de particiones de GNU/Linux sigue conservando el número asignado a cada una de las particiones que prosiguen. No así el de Windows, como vemos a continuación.
+
+La partición /dev/sda1 contiene los siguientes archivos de arranque del sistema Windows:
+
+#+begin_example
+
+E:\>dir /a
+ El volumen de la unidad E es PARTPRI
+ El número de serie del volumen es: 4C18-2979
+
+ Directorio de E:\
+
+03/11/2007  21:25             4.952 Bootfont.bin
+03/11/2007  21:25           250.640 ntldr
+03/11/2007  21:25            47.564 NTDETECT.COM
+26/04/2008  23:37               210 boot.ini
+26/04/2008  21:26               210 boot.ini-previo
+26/04/2008  23:51               903 fdisk.txt
+17/03/2008  00:13    <DIR>          System Volume Information
+16/03/2008  21:38    <DIR>          Recycled
+               6 archivos        304.479 bytes
+               2 dirs   2.144.174.080 bytes libres
+
+E:\>
+
+#+end_example
+
+El archivo que "dirigía" el arranque (ahora renombrado como "boot.ini-previo") antes del cambio de particiones mencionado más arriba era este:
+
+#+begin_example
+
+[boot loader]
+timeout=0
+default=multi(0)disk(0)rdisk(0)partition(4)\WINDOWS
+[operating systems]
+multi(0)disk(0)rdisk(0)partition(4)\WINDOWS="Microsoft Windows XP Professional" /noexecute=optin /fastdetect
+
+#+end_example
+
+Tras realizar el cambio: desaparece una partición, al intentar arrancar Windows obtenía el siguiente mensaje de error:
+
+#+begin_example
+
+No se ha iniciado Windows porque el siguiente archivo falta
+o está dañado:
+<windows root>\system32\hal.dll
+Reinstale una copia del archivo mencionado
+
+#+end_example
+
+Obviamente, yo sabía que el archivo no había desaparecido por arte de magia, y sospeché que el error se debía al cambio en las particiones. Arrancando con mi S.O. GNU/Linux (también es válido un [[http://grml.org/][disco de arranque]]) y montando la partición donde se encuentra: /dev/sda1, edité el archivo *boot.ini* para dejarlo tal que así:
+
+#+begin_example
+
+[boot loader]
+timeout=0
+default=multi(0)disk(0)rdisk(0)partition(3)\WINDOWS
+[operating systems]
+multi(0)disk(0)rdisk(0)partition(3)\WINDOWS="Microsoft Windows XP Professional" /noexecute=optin /fastdetect
+
+#+end_example
+
+¡Fijaos en el cambio del *4* por el *3*! Es lógico, pues hemos suprimido una partición que estaba previa a la partición donde se encontraba Windows. Así, deducimos que Windows sí que renumera las particiones.
+
+Ya sabemos una cosa más: contra la desesperación, investigación.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Recuperando%20el%20arranque%20de%20Windows][Dejar comentario]].
+

@@ -1,0 +1,24 @@
+#+title: Lanzamiento de FreeBSD 7.2
+#+date: <2009-05-04 23:07>
+#+author: Godofredo Fdez.
+#+description: Leo aquí el lanzamiento de FreeBSD 7.2. Incluye diversas mejoras técnicas a nivel de S.O. Además, para "entornos de trabajo de usuario" incluye soporte de los…
+#+filetags: FreeBSD
+#+options: _:nil
+#+nid: 311
+
+#+begin_export html
+<a href="/node/312" target="_self"><img src="/static/img/beastie.jpg" alt="FreeBSD" title="FreeBSD"  class="image image-preview " width="117" height="124" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+Leo [[http://www.freebsd.org/releases/7.2R/announce.html][aquí]] el lanzamiento de FreeBSD 7.2. Incluye diversas [[http://www.freebsd.org/releases/7.2R/relnotes.html][mejoras técnicas]] a nivel de S.O. Además, para "entornos de trabajo de usuario" incluye soporte de los actuales GNOME 2.26 y KDE 4.2.2 (habiendo saltado en este último desde el 3.5.10 disponible en la versión anterior).
+
+Para aquellos que desconozcáis este magnifico, y seguro, Sistema Operativo, podéis encontrar más información sobre este proyecto en la página [[http://www.freebsd.org/][web oficial]]. Y, como siempre, en la [[http://en.wikipedia.org/wiki/Freebsd][wikipedia]]: FreeBSD is a Unix-like free operating system descended from AT&T UNIX via the Berkeley Software Distribution (BSD) branch through the 386BSD and 4.4BSD operating systems.
+
+En fin... a ver como va el update. Y que lo disfrutemos.
+
+P.D.: con este post he conseguido mi [[http://softlibre.barrapunto.com/article.pl?sid=09/05/04/1630230][primera portada]] en [[http://barrapunto.com/][Barrapunto]]. Ver captura en pdf adjunto.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/primera-barrapunto.pdf][primera-barrapunto.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Lanzamiento%20de%20FreeBSD%207.2][Dejar comentario]].
+

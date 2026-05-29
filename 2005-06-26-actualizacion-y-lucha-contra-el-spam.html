@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Tras haber investigado un poco como se instalaba y configuraba el módulo de spam que los amigos de drupal han desarrollado, y tras haber migrado hace tiempo la instalación de casa a la versión 4.5.3 (con la adaptación del tema incluida :-) ), hoy me he decidido a actualizar la versión de "godest" y a añadir el módulo de spam para permitir, DE NUEVO, el envío de comentarios a todo el mundo sin necesidad de registrarse. Entendámonos, todo el mundo significa: toda la gente de bien que quiera colaborar con sus críticas, añadidos, pespunteados, etc., quedando excluidos los que intentan aprovechar esas intenciones sólo para fines comerciales, los que creen que todo el mundo es una caja de caudales y luchan por apropiarse de cuantos más mejor.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Actualización y lucha contra el spam</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">26 jun. 2005</div><h1 class="post-title"><a href="https://godest.vivencias.net/2005-06-26-actualizacion-y-lucha-contra-el-spam.html">Actualización y lucha contra el spam</a></h1>
+<p>
+Tras haber investigado un poco como se instalaba y configuraba el módulo de <a href="http://drupal.org/project/spam">spam</a> que los amigos de <a href="http://drupal.org/">drupal</a> han desarrollado, y tras haber migrado hace tiempo la instalación de casa a la versión 4.5.3 (con la adaptación del tema incluida :-) ), hoy me he decidido a actualizar la versión de "godest" y a añadir el módulo de spam para permitir, DE NUEVO, el envío de comentarios a todo el mundo sin necesidad de registrarse.
+</p>
+
+<p>
+Entendámonos, todo el mundo significa: toda la gente de bien que quiera colaborar con sus críticas, añadidos, pespunteados, etc., quedando excluidos los que intentan aprovechar esas intenciones sólo para fines comerciales, los que creen que todo el mundo es una caja de caudales y luchan por apropiarse de cuantos más mejor.
+</p>
+
+<p>
+En fin, ya os iré contando si con este módulo de lucha contra el spam los voy manteniendo a raya.
+</p>
+
+<p>
+Entrando en lo técnico:
+1.- El módulo es fácilmente instalable. Básicamente sólo hay que crear 5 tablas en la base de datos e incluir el fichero que lo implementa en el subdirectorio "modules".
+2.- Trae una configuración por defecto relativamente básica y "supongo" que efectiva. Aunque puede ser configurado para controlar diferentes vías de entrada de spam, en principio sólo viene configurado para comprobar los comentarios.
+3.- He añadido a la configuración por defecto que no publique el comentario cuando haya pensado que es presunto spam, y que me avise cuando esto ocurra.
+</p>
+
+<p>
+Los criterios para decidir si es spam o no:
+1.- Los tan traídos y llevados filtros bayesianos, tecnología que utilizan muchos lectores de correo, por ejemplo el <a href="http://www.mozilla.org/products/thunderbird/">thunderbird</a>.
+2.- Posibilidad de configurar listas negras, blancas y grises de expresiones que incluyan palabras, frases y "expresiones regulares" rechazadas, permitidas, etc.
+3.- Puede limitar el número total de URLs permitidas en comentarios y otro tipo de nodos (contenidos), así como el número de veces que la misma URL puede ser repetida dentro del mismo contenido. Personalmente creo que esta característica es muy útil ya que todos los spammers suelen dejar URLs en los comentarios esperando que, a través de ellas, sean visitados.
+4.- La cuarta herramienta incluida es la posibilidad de mirar si la IP del "spammer" está contenida en una "lista para boicotear a servidores distribuidos".
+</p>
+
+<p>
+Todo esto y más en: <a href="http://drupal.org/project/spam">spam</a>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Actualizaci%C3%B3n%20y%20lucha%20contra%20el%20spam">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-bitácoras.html">Bitácoras</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

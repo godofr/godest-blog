@@ -1,0 +1,25 @@
+#+title: Alfonso del Valle en el Laberinto
+#+date: <2007-04-30 12:17>
+#+author: Pili Cantautora
+#+description: Descripción: El Laberinto. C/ Regina, 20. Sevilla. Entrada: 2€ ------------------------------------------------- Mis compis (los pata negra ) se quedaron…
+#+filetags: 
+#+options: _:nil
+#+nid: 226
+
+Descripción:
+El Laberinto. C/ Regina, 20. Sevilla.
+Entrada: 2€
+-------------------------------------------------
+Mis compis (los pata negra
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+) se quedaron encantados con su primera experiencia en el Laberinto, así que esta semana volvemos a repetir, con tapitas pre - concierto incluidas
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+Espero que vosotros os animéis también a venir, cada vez nos van quedando menos oportunidades!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Alfonso%20del%20Valle%20en%20el%20Laberinto][Dejar comentario]].
+

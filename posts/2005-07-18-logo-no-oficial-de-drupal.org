@@ -1,0 +1,13 @@
+#+title: logo no oficial de drupal
+#+date: <2005-07-18 20:47>
+#+author: Godofredo Fdez.
+#+description: Logo no oficial del proyecto drupal creado (según parece) por la comunidad de desarrolladores de kde .
+#+filetags: Logos
+#+options: _:nil
+#+nid: 29
+
+Logo no oficial del proyecto [[http://www.drupal.org][drupal]] creado (según parece) por la [[http://www.kdedevelopers.org/][comunidad de desarrolladores de kde]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=logo%20no%20oficial%20de%20drupal][Dejar comentario]].
+

@@ -1,0 +1,66 @@
+#+title: Instalando VMware Player en Debian 
+#+date: <2019-06-02 00:28>
+#+author: Godofredo Fdez.
+#+description: 0. Prerrequisitos (con sudo o como root): sudo apt update sudo apt install build-essential sudo apt install linux-headers-$(uname -r) 1. Hemos descargado de…
+#+filetags: 
+#+options: _:nil
+#+nid: 567
+
+0. Prerrequisitos (con sudo o como root):
+
+#+begin_example
+
+sudo apt update
+sudo apt install build-essential
+sudo apt install linux-headers-$(uname -r)
+
+#+end_example
+
+1. Hemos descargado de VMware este paquete: "VMware-Workstation-Full-12.5.9-7535481.x86_64.bundle".
+También has guardado una copia en tu "Almacén de Software": F:\...
+
+2. Le hemos dado permiso de ejecución:
+
+#+begin_example
+
+sudo chmod +x VMware-Workstation-Full-12.5.9-7535481.x86_64.bundle
+
+#+end_example
+
+Como podemos ver aquí:
+
+#+begin_example
+
+godo@TuChi:~$ ls -l Descargas/
+total 581116
+-rw------- 1 root root      1024 jun  1 20:21 ~
+-rw-r--r-- 1 godo godo    465949 may 29 21:23 Antonio Dieguez. Transhumanismo (r1.1).epub
+-rw-r--r-- 1 godo godo 116430720 may 27 00:48 VMware-Player-14.1.7-12989993.x86_64.bundle
+-rwxr-xr-x 1 godo godo 478151002 jun  1 19:23 VMware-Workstation-Full-12.5.9-7535481.x86_64.bundle
+godo@TuChi:~$ 
+
+#+end_example
+
+3.- Hemos ejecutado lo siguiente como root:
+
+#+begin_example
+
+./VMware-Workstation-Full-12.5.9-7535481.x86_64.bundle
+
+#+end_example
+
+Esto instala un paquete completo donde va tanto el "VMware Workstation", que requiere licencia, aunque deja utilizarlo sin restricciones durante 30 días. Y también va el "VMware Player", que no requiere licencia y es el que yo estoy utilizando. Ambas aplicaciones aparecen en el listado de "Aplicaciones" de mi "Pantheon en Debian".
+
+4. Si alguna vez la deseamos desinstalar, cosa que dudo porque no puedo subir de versión (ya que las versiones superiores de este virtualizador ya no se llevan bien con mis COREs CPUs), hemos de ejecutar como root o con sudo:
+
+#+begin_example
+
+sudo vmware-installer -u vmware-workstation
+
+#+end_example
+
+5. Si una vez instalado el S.O. en el disco duro virtual deseas volver a arrancar desde el CD (imagen .iso) has de pulsar "ESC" (tecla escape) en el momento del arranque de la máquina virtual, justo cuando está saliendo la barra blanca de progreso inicial. Para hacerlo has de activar rápidamente la ventana, haciendo click dentro de ella con el ratón, y luego pulsar "ESC" (si no, la máquina virtual no recibe la pulsación). Aparecerá un menú de dispositivos desde los que lanzar el arranque, y ahí seleccionamos el CD con los cursores y pulsamos intro.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Instalando%20VMware%20Player%20en%20Debian%20][Dejar comentario]].
+

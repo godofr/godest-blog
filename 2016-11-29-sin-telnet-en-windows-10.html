@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Quizá a alguno de vosotros le haya pasado lo que a mí: voy a conectarme hoy a un viejo dispositivo que sólo permite conexiones utilizando " Telnet ", y no…">
 <link rel="alternate"
       type="application/rss+xml"
       href="https://godest.vivencias.net/rss.xml"
@@ -41,35 +42,26 @@
   </div>
 </div></div>
 <div id="content">
-<div class="post-date">29 nov 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-11-29-sin-telnet-en-windows-10.html">Sin telnet en Windows 10</a></h1>
+<div class="post-date">29 nov. 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-11-29-sin-telnet-en-windows-10.html">Sin telnet en Windows 10</a></h1>
 <p>
 Quizá a alguno de vosotros le haya pasado lo que a mí: voy a conectarme hoy a un viejo dispositivo que sólo permite conexiones utilizando "<a href="https://en.wikipedia.org/wiki/Telnet">Telnet</a>", y no puedo. Desde el interfaz de comandos de mi Windows 10 obtengo este error:
 </p>
 
-<div class="org-src-container">
-<pre class="src src-sh"><span style="color: #008000;">"telnet"</span> no se reconoce como un comando interno o externo, programa o archivo por lotes ejecutable.
+<pre class="example" id="org56efe9b">
+"telnet" no se reconoce como un comando interno o externo, programa o archivo por lotes ejecutable.
 </pre>
-</div>
 
 <p>
 Me ha extrañado por dos motivos:
+1.- ¿Windows 10 no trae telnet instalado por defecto? La respuesta es no. Más información <a href="https://www.rootusers.com/how-to-enable-the-telnet-client-in-windows-10/">aquí</a> (con solución autóctona Windows 10 incluida).
+2.- ¿Y mi instalación de <a href="https://www.cygwin.com/">Cygwin</a> tampoco? Pues la respuesta, obviamente, también era negativa.
 </p>
-
-<ol class="org-ol">
-<li>¿Windows 10 no trae telnet instalado por defecto? La respuesta es no. Más información <a href="https://www.rootusers.com/how-to-enable-the-telnet-client-in-windows-10/">aquí</a> (con solución autóctona Windows 10 incluida).</li>
-
-<li>¿Y mi instalación de <a href="https://www.cygwin.com/">Cygwin</a> tampoco? Pues la respuesta, obviamente, también era negativa.</li>
-</ol>
 
 <p>
 Así que arranco mi "setup-x86.exe" para instalar "telnet" desde los repositorios de Cygwin, y me encuentro que no existe ningún paquete llamado "telnet". Buscando por la red descubro dos cosas:
+1.- Para instalar "telnet" hay que seleccionar el paquete "<b>inetutils</b>".
+2.- En el sitio donde encuentro lo anterior, <a href="http://kennyroh.blogspot.com.es/2016/04/cygwin-install-telnet.html">aquí</a>, descubro que su autor utiliza un comando muy parecido a "apt-get" (maravilloso gestor de paquetes del mundo <a href="http://www.debian.org/">Debian</a> que por mi histórico, como sabéis los lectores de este blog, controlo bastante bien), en concreto: "apt-cyg", que tiene toda la pinta de funcionar de forma muy parecida a la "suite apt" original&#x2026; ¡A investigar!
 </p>
-
-<ol class="org-ol">
-<li>Para instalar "telnet" hay que seleccionar el paquete "<b>inetutils</b>".</li>
-
-<li>En el sitio donde encuentro lo anterior, <a href="http://kennyroh.blogspot.com.es/2016/04/cygwin-install-telnet.html">aquí</a>, descubro que su autor utiliza un comando muy parecido a "apt-get" (maravilloso gestor de paquetes del mundo <a href="http://www.debian.org/">Debian</a> que por mi histórico, como sabéis los lectores de este blog, controlo bastante bien), en concreto: "apt-cyg", que tiene toda la pinta de funcionar de forma muy parecida a la "suite apt" original&#x2026; ¡A investigar!</li>
-</ol>
 
 <p>
 En los primeros resultados de <a href="https://www.google.es/search?q=apt-cyg&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b&amp;gfe_rd=cr&amp;ei=BZQ9WMKeOdKp8wfSxpegDw">esta búsqueda</a> creo que hay material suficiente para profundizar en el uso de "apt-cyg".
@@ -79,17 +71,21 @@ En los primeros resultados de <a href="https://www.google.es/search?q=apt-cyg&am
 Conclusión: si quieres utilizar "telnet" en Windows 10 y eres usuario habitual del "port" del mundo GNU/Linux vía "Cygwin", instala el paquete "inetutils":
 </p>
 
-<div class="org-src-container">
-<pre class="src src-sh">[15:39:35(godo@surco)~]&gt; telnet --version
-<span style="color: #006699;">telnet</span> (GNU inetutils) 1.9.1
-<span style="color: #006699;">Copyright</span> (C) 2013 Free Software Foundation, Inc.
+<pre class="example" id="org9c6e39b">
+[15:39:35(godo@surco)~]&gt; telnet --version
+
+telnet (GNU inetutils) 1.9.1
+
+Copyright (C) 2013 Free Software Foundation, Inc.
+
 License GPLv3+: GNU GPL version 3 or later .
+
 This is free software: you are free to change and redistribute it.
+
 There is NO WARRANTY, to the extent permitted by law.
 
 Written by many authors.
 </pre>
-</div>
 
 <p>
 Obviamente, creo que no tiene sentido instalar Cygwin sólo para esto, pero si ya lo utilizas para hacer otras muchas cosas, sí que lo tiene. Sin embargo, si sólo necesitas "telnet", instálalo desde el propio Windows como comentan <a href="https://www.rootusers.com/how-to-enable-the-telnet-client-in-windows-10/">aquí</a>.
@@ -103,27 +99,27 @@ Obviamente, creo que no tiene sentido instalar Cygwin sólo para esto, pero si y
 P.D.: ni que decir tiene que el uso de "telnet" está tremendamente desaconsejado (toda la información viaja en claro entre tu extremo y el otro) y que, siempre que se pueda, es mejor utilizar "<a href="https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-in-ubuntu">ssh</a>".
 </p>
 
-<p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Sin_Telnet_en_Windows_10">Dejar comentario</a>.
-</p>
 
-<div id="outline-container-orgd3cd760" class="outline-2">
-<h2 id="orgd3cd760">Comentarios</h2>
-<div class="outline-text-2" id="text-orgd3cd760">
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Sin%20telnet%20en%20Windows%2010">Dejar comentario</a>.
+</p>
+<div id="outline-container-orga8b7821" class="outline-2">
+<h2 id="orga8b7821">Comentarios</h2>
+<div class="outline-text-2" id="text-orga8b7821">
 </div>
-<div id="outline-container-orgec8ce18" class="outline-3">
-<h3 id="orgec8ce18">Guillermo (no verificado Lun, 05/12/2016 - 09:46)</h3>
-<div class="outline-text-3" id="text-orgec8ce18">
+<div id="outline-container-org1d35633" class="outline-3">
+<h3 id="org1d35633">Después del ultimo intento (Guillermo 05/12/2016 - 09:46)</h3>
+<div class="outline-text-3" id="text-org1d35633">
 <p>
 Después del ultimo intento con telnets, sshs y demas encontre mobaxterm (<a href="http://mobaxterm.mobatek.net/">http://mobaxterm.mobatek.net/</a>) y me sorprendió.
 Lo primero es portable, con lo que te olvidas de instalar cosas (sabras por lo que te lo comento) y después emulaba un entorno X en le PC que es muy útil en algunos momentos.
-Pruebalo un día que estes aburrido, a mi me gustó.
+Pruebalo un día que estes aburrido, a mi me gustó.<br>
 </p>
 </div>
 </div>
-<div id="outline-container-orgac1682d" class="outline-3">
-<h3 id="orgac1682d">Godofredo Fdez. (Mié, 07/12/2016 - 20:27)</h3>
-<div class="outline-text-3" id="text-orgac1682d">
+<div id="outline-container-org9080673" class="outline-3">
+<h3 id="org9080673">Tiene muy buena pinta (Godofredo Fdez. 07/12/2016 - 20:27)</h3>
+<div class="outline-text-3" id="text-org9080673">
 <p>
 Muchas gracias por dejarme esta referencia, Guillermo. Le he echado un vistazo y tiene buena pinta (aunque no he llegado a instalarlo). La verdad es que desde que instalé Cygwin en mis Windows he automatizado muchas cosas que venía automatizando ya en mis GNU/Linux, reaprovecho scripts y conocimientos. Además tengo todo lo que necesito: ssh, telnet, x-windows, etc. Como ya he dicho en el artículo, instalar Cygwin sólo para el telnet o incluso el ssh me parece un desperdicio, pero si lo utilizas para muchas más cosas del mundo Unix/Linux creo que es una inmejorable alternativa.
 </p>
@@ -138,7 +134,7 @@ Gracias de nuevo por el comentario.
 </div>
 </div>
 </div>
-<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> <a href="https://godest.vivencias.net/tag-redes.html">Redes</a> </div></div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
 <div id="postamble" class="status"><div id="pie-de-pagina">
 <div id="archive">
   <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>

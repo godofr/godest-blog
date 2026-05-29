@@ -1,66 +1,91 @@
 #+title: Cómo convertir un .mkv a .avi
 #+date: <2019-07-15 17:20>
-#+description: 
-#+filetags: Software Utilidades
+#+author: Godofredo Fdez.
+#+description: Últimamente encuentro muchos archivos de vídeo codificados en el formato .mkv , sin embargo, el reproductor que tengo en casa conectado a mi TV no es capaz de…
+#+filetags: Software
+#+options: _:nil
+#+nid: 572
 
 Últimamente encuentro muchos archivos de vídeo codificados en el formato *.mkv*, sin embargo, el reproductor que tengo en casa conectado a mi TV no es capaz de reproducirlos, por lo que me obliga a pasar de ese formato al sí soportado *.avi*. [[https://www.xatakahome.com/curiosidades/al-descargar-video-en-internet-a-veces-usas-avi-o-mkv-pero-conoces-las-diferencias-entre-ambos][Aquí]] puedes encontrar un pequeño artículo que te cuenta las diferencias existentes entre ambos.
 
 He apostado por una solución que está disponible en todos los sistemas operativos que suelo utilizar, desde GNU/Linux hasta Mac OS, pasando por Windows: [[https://ffmpeg.org/][ffmpeg]].
 
 En GNU/Linux seguro que está en el sistema de paquetes de tu distribución, y puedes instalarlo de la forma habitual. Por ejemplo, en mi *Debian*, ejecutando como root:
-#+begin_src sh :results output
+
+#+begin_example
+
 # apt update
 # apt install ffmpeg
-#+end_src
 
-En MAC te aconsejo utilizar el "gestor de paquetes": [[https://brew.sh][Homebrew]], pues se instala muy fácilmente y nos servirá para utilizar diferentes herramientas tanto del proyecto GNU como de otros de código abierto, además de la que nos interesa ahora. Echa un vistazo a su página que te he dejado enlazada. *Instalamos Homebrew* así:
+#+end_example
 
-#+begin_src sh :results output
+En MAC te aconsejo utilizar el "gestor de paquetes": [[https://brew.sh/index_es][Homebrew]], pues se instala muy fácilmente y nos servirá para utilizar diferentes herramientas tanto del proyecto GNU como de otros de código abierto, además de la que nos interesa ahora. Echa un vistazo a su página que te he dejado enlazada. Instalamos *Homebrew* así:
+
+#+begin_example
+
 # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-#+end_src
+
+#+end_example
 
 Y con Homebrew ya instalado, instalamos ffmpeg así:
 
-#+begin_src sh :results output
+#+begin_example
+
 # brew install ffmpeg
-#+end_src
+
+#+end_example
 
 En Windows aún no he tenido la necesidad de instalarlo, pero como puedes observar en la sección "Download" del [[https://ffmpeg.org/][proyecto ffmpeg]], también existe un paquete de instalación para este sistema operativo.
 
 Una vez instalado puedes comprobar que funciona bien con este comando:
-#+begin_src sh :results output
+
+#+begin_example
+
 # ffmpeg -version
-#+end_src
+
+#+end_example
 
 Obteniendo algo como:
-#+begin_src sh :results output
+
+#+begin_example
+
 ffmpeg version 4.1.4 Copyright (c) 2000-2019 the FFmpeg developers
 ...
-#+end_src
+
+#+end_example
 
 Después de investigar un poco con diferentes opciones, *la línea de comandos que mejor relación calidad/"precio" (siendo el "precio" el tiempo necesario para llevar a cabo el proceso) ha arrojado es esta*:
-#+begin_src sh :results output
-# ffmpeg -i "video.mkv" -f avi -c:v mpeg4 -b:v 4000k -c:a libmp3lame -b:a 320k "video.avi"
-#+end_src
+
+#+begin_example
+
+# ffmpeg -i "video.mkv" -f avi -c:v mpeg4 -b:v 4000k -c:a libmp3lame -b:a 320k "video.avi" 
+
+#+end_example
 
 Los resultados son muy buenos, aunque observo que cuando hay cambios de imagen muy rápidos se pixela un poco, casi imperceptible, pero si estás atento lo notas.
 
 Los codecs utilizados en el formato *mkv* (tamaño: 2,2G) son más eficientes (mejores) que los utilizados en el formato *avi* (tamaño: 3,2G) que soporta mi reproductor, con su consecuente impacto en tamaño. Es decir, obtenemos algo de más tamaño y de peor calidad :-(.
 
-Otra combinación de opciones que arrojan un buen resultado, *creo que incluso mejor que el anterior en relación calidad/esfuerzo, es esta*:
-#+begin_src sh :results output
+Otra combinación de opciones que arrojan un buen resultado, *creo que incluso mejor que el anterior en relación calidad/esfuerzo*, es esta:
+
+#+begin_example
+
 # ffmpeg -i "video.mkv" -vcodec mpeg4 -acodec libmp3lame -qscale:v 2 -qscale:a 5 "video.avi"
-#+end_src
+
+#+end_example
 
 Y tú, ¿has tenido esta necesidad? ¿Has llegado a encontrar la combinación de opciones "optima" según la relación calidad/"precio"? Si es así, te agradezco que las compartas en los comentarios. También puedes comentarme cualquier otra información que consideres que contribuye a aumentar el conocimiento en esta temática.
 
-Espero que ayude.
+Espero que ayude.\\
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=como_convertir_un_mkv_a_avi][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=C%C3%B3mo%20convertir%20un%20.mkv%20a%20.avi][Dejar comentario]].
 
 ** Comentarios
-*** Agradecimiento (Mario Jue, 27/06/2024 - 13:48)
+
+*** Agradecimiento (Mario 27/06/2024 - 13:48)
 Hola Godofredo,
-Gracias por compartir estos comandos de ffmpeg.
-*** Gracias a ti por dejar tu comentario (Godofredo Fdez. Lun, 01/07/2024 - 09:15)
+Gracias por compartir estos comandos de ffmpeg.\\
+
+*** Gracias a ti por dejar tu comentario (Godofredo Fdez. 01/07/2024 - 09:15)
 Supongo que te han sido útiles. Muchas gracias por el feedback.

@@ -1,0 +1,88 @@
+#+title: Eliminar metadatos de ficheros pdf
+#+date: <2012-05-16 16:09>
+#+author: Godofredo Fdez.
+#+description: Pues eso. Conseguir la herramienta e instrucciones de instalación: http://www.pdflabs.com/docs/install-pdftk/ Para un fichero: #!/bin/bash SAVEIFS=$IFS IFS=$(echo -en "\n\b") pdftk_path="/usr/bin/pdftk" # full path to pdftk binary pdf_infokeys="/mnt/win/tmp/pdf-infokeys" # full path to file containing new metadata pdf_search_path="/mnt/win/tmp" # path to search for pdf files pdf_temp_path="/mnt/win/tmp" # temporary directory cp $1 $pdf_temp_path/temp.pdf $pdftk_path $pdf_temp_path/temp.pdf update_info $pdf_infokeys output $1
+#+filetags: 
+#+options: _:nil
+#+nid: 470
+
+Pues eso.
+
+Conseguir la herramienta e instrucciones de instalación:
+http://www.pdflabs.com/docs/install-pdftk/
+
+Para un fichero:
+
+#+begin_example
+
+#!/bin/bash
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
+pdftk_path="/usr/bin/pdftk"  # full path to pdftk binary
+pdf_infokeys="/mnt/win/tmp/pdf-infokeys"      # full path to file containing new metadata
+pdf_search_path="/mnt/win/tmp"    # path to search for pdf files
+pdf_temp_path="/mnt/win/tmp"               # temporary directory
+
+
+  cp $1 $pdf_temp_path/temp.pdf
+  $pdftk_path $pdf_temp_path/temp.pdf update_info $pdf_infokeys output $1
+  rm $pdf_temp_path/temp.pdf
+
+IFS=$SAVEIFS
+
+#+end_example
+
+Iterativo para todos los ficheros de un directorio:
+
+#+begin_example
+
+#!/bin/bash
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
+pdftk_path="/usr/bin/pdftk"  # full path to pdftk binary
+pdf_infokeys="~/tmp/pdf-infokeys"      # full path to file containing new metadata
+pdf_search_path="/mnt/win/tmp"    # path to search for pdf files
+pdf_temp_path="/tmp"               # temporary directory
+
+
+for i in $( find $pdf_search_path -type f -name "*.pdf" ); do
+  cp $i $pdf_temp_path/temp.pdf
+  $pdftk_path $pdf_temp_path/temp.pdf update_info $pdf_infokeys output $i
+  rm $pdf_temp_path/temp.pdf
+done
+
+IFS=$SAVEIFS
+
+
+#+end_example
+
+Fichero patrón de metadatos "sin información":
+
+#+begin_example
+
+InfoKey: Author
+InfoValue: --
+InfoKey: Company
+InfoValue: --
+InfoKey: CreationDate
+InfoValue: --
+InfoKey: Creator
+InfoValue: --
+InfoKey: ModDate
+InfoValue: --
+InfoKey: Title
+InfoValue: --
+InfoKey: Producer
+InfoValue: --
+InfoKey: SourceModified
+InfoValue: --
+
+#+end_example
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Imprimir - marshalgraham_ Removing PDF Metadata with PDF Toolkit.pdf][Imprimir - marshalgraham_ Removing PDF Metadata with PDF Toolkit.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Eliminar%20metadatos%20de%20ficheros%20pdf][Dejar comentario]].
+

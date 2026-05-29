@@ -1,30 +1,30 @@
 #+title: Lo que encontré bajo el sofá
 #+date: <2015-03-18 07:37>
-#+description: 
+#+author: Godofredo Fdez.
+#+description: Comparto con Eloy Moreno la manera de sentir la vida. Me refiero al Eloy Moreno autor. Y lo descubrí cuando leí su primer libro: “El bolígrafo de gel verde”.…
 #+filetags: Libros
+#+options: _:nil
+#+nid: 525
 
-Comparto con Eloy Moreno la manera de sentir la vida. Me refiero al Eloy Moreno autor. Y lo descubrí cuando leí su primer libro: “El bolígrafo de gel verde”. Como ya escribí [[https://godest.vivencias.net/2011-08-28-lecturas-de-verano-2011--el-boligrafo-de-gel-verde.html][aquí]], no sólo ciertos pasajes fueron capaces de hacerme sentir el dolor más encarnizado, sino que durante toda la historia fui presintiendo el compartido mensaje que acaba derramándose en las páginas finales.
+Comparto con Eloy Moreno la manera de sentir la vida. Me refiero al Eloy Moreno autor. Y lo descubrí cuando leí su primer libro: “El bolígrafo de gel verde”. Como ya escribí [[http://godest.vivencias.net/content/lecturas-de-verano-2011-el-bol%C3%ADgrafo-de-gel-verde][aquí]], no sólo ciertos pasajes fueron capaces de hacerme sentir el dolor más encarnizado, sino que durante toda la historia fui presintiendo el compartido mensaje que acaba derramándose en las páginas finales.
 
 Si tras leer un libro uno se siente crecer, tras leer “El bolígrafo de gel verde” yo me sentí distinto y más sereno, auténtico. Fue el aldabonazo que me empujó a poner en pie cierto orden de prioridades que me ayuda a caminar despacio.
 
 Y a poder dormir tranquilo.
 
 #+begin_export html
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="243" height="360" border="0" align="center" hspace="10" vspace="10" src="/static/2015/loqueencontrebajoelsofa.jpg"
- alt="Lo que encontré bajo el sofá" />
-</figure>
+<a href="/static/img/loqueencontrebajoelsofa.jpg" rel="lightbox"><img align="middle" alt="loqueencontrebajoelsofa.jpg" border="0" class="image image-preview " height="360" width="243"  src="/static/img/loqueencontrebajoelsofa.jpg" title="loqueencontrebajoelsofa" hspace="10" vspace="10"  /></a>
 #+end_export
 
-Llevaba tiempo queriendo leer su segunda novela: “Lo que encontré bajo el sofá”. Pero no fue hasta este invierno cuando le hice un pedido directo a través de [[http://www.eloymoreno.com/][su página web]] (junto con un ejemplar del “original” “El bolígrafo de gel verde” –lo leí en uno prestado- y algunas tacitas que nos acompañan ahora).
+Llevaba tiempo queriendo leer su segunda novela: “Lo que encontré bajo el sofá”. Pero no fue hasta este invierno cuando le hice un pedido directo a través de [[http://www.eloymoreno.com/][su página web]] (junto con un ejemplar del “original” “El bolígrafo de gel verde” --lo leí en uno prestado- y algunas tacitas que nos acompañan ahora).
 
-La novela se desarrolla en un entorno privilegiado para el misterio: Toledo. Y, aprovechando la grandeza temporal y espacial de dicha ciudad, Eloy, a través de dos de sus personajes se convierte en nuestro “guía turístico personal”, mostrándonos los entramados de callejuelas y cobertizos, los rincones, sus leyendas… y tejiendo el argumento de su novela.
+La novela se desarrolla en un entorno privilegiado para el misterio: Toledo. Y, aprovechando la grandeza temporal y espacial de dicha ciudad, Eloy, a través de dos de sus personajes se convierte en nuestro “guía turístico personal”, mostrándonos los entramados de callejuelas y cobertizos, los rincones, sus leyendas... y tejiendo el argumento de su novela.
 
 Esta vez me ha costado mucho identificarme con algún personaje, cosa que siempre acaba metiéndome más en la historia, y me ha costado también avanzar e ir digiriendo la novela. Me atrevo a resumir la trama principal como un sumatorio de *vidas insatisfechas* que nadie se atreve a romper, a cambiar, por la pesada carga acumulada de vivencias, decires y miedos. Vidas insatisfechas que casi todas acaban rompiendo contra alguna infidelidad. Que se convierte en secreto. Que se convierte en dolor. Ya sea porque se sigue viviendo como no se quiere o porque no se consigue vivir lo que se desea. Sintiéndolo al alcance de una sola decisión.
 
 *Esta generalización de vidas acaba transmitiendo una atmósfera demasiado viciada, irrespirable y que, en esta ocasión, comparto poco*. No ya tanto como negación de la realidad sino como efervescente deseo de que no haya tal cantidad de seres tan desgraciados.
 
-La novela permanece pegada a nuestro tiempo entremezclando dos historias “reales” (en tanto en cuanto las vemos y leemos en nuestros coetáneos medios de comunicación): un *acoso escolar* que acaba… ¿bien resuelto!; y un *retrato social de la corrupción* política, la falta de escrúpulos personales y el enfurecimiento de un pueblo que no sólo se siente engañado sino esquilmado por los que deberían ser sus servidores. Buen testimonio novelado de la historia reciente que entre todos seguiremos irresponsablemente perpetuando.
+La novela permanece pegada a nuestro tiempo entremezclando dos historias “reales” (en tanto en cuanto las vemos y leemos en nuestros coetáneos medios de comunicación): un *acoso escolar* que acaba... ¿bien resuelto!; y un *retrato social de la corrupción* política, la falta de escrúpulos personales y el enfurecimiento de un pueblo que no sólo se siente engañado sino esquilmado por los que deberían ser sus servidores. Buen testimonio novelado de la historia reciente que entre todos seguiremos irresponsablemente perpetuando.
 
 Por último, me quedo, sin lugar a dudas, con lo que para mí ha sido el descubrimiento de algunas *leyendas y otra de las historias que encierra la novela que más se parece a estas*, y que, si bien su génesis se cimienta en otra posible infidelidad, su desarrollo y conclusión encierran *la mayor historia de amor* de todo el libro, tan triste e insoportable que acaba destrozando la mente de su protagonista, pero tan llena de símbolos y énfasis que acaba haciendo brotar alguna lágrima en nuestros corazones.
 
@@ -32,22 +32,20 @@ Lo encerrado en estos dos últimos párrafos ha sido lo que ha ido tirando de m�
 
 Y concluyo dejando aquí casi el principio del libro. Un párrafo que subraya mi sintonía con la forma de sentir del autor:
 
-#+begin_export html
-<blockquote>
-“Con el paso del tiempo he comprendido que no hay secretos más difíciles de guardar que los propios, porque éstos, a pesar de creerlos controlados, saben cómo ir atravesando las grietas de nuestra conciencia.
-
-Los ajenos, en cambio, basta con abandonarlos en cualquier rincón de la mente y allí ellos mismos se van olvidando, van desapareciendo entre los silencios y las mentiras, entre las prisas y los días… pero los propios… los propios te persiguen en cada pensamiento”.
-</blockquote>
-#+end_export
+#+BEGIN_QUOTE
+  “Con el paso del tiempo he comprendido que no hay secretos más difíciles de guardar que los propios, porque éstos, a pesar de creerlos controlados, saben cómo ir atravesando las grietas de nuestra conciencia.
+  Los ajenos, en cambio, basta con abandonarlos en cualquier rincón de la mente y allí ellos mismos se van olvidando, van desapareciendo entre los silencios y las mentiras, entre las prisas y los días... pero los propios... los propios te persiguen en cada pensamiento”.
+#+END_QUOTE
 
 Y es que, no hay nada más difícil de gestionar que una mentira. *Lo difícil no es mentir sino gestionar dicha mentira*. Quizá los secretos no sean más que una mentira inacabada.
 
-*Ficha:*
-  - Título: /Lo que encontré bajo el sofá/.
-  - Autor: /[[http://www.eloymoreno.com/][Eloy Moreno]]/.
-  - Año: /2013/.
-  - Editorial: /Espasa/.
-  - ISBN: /978-84-670-3502-5/.
+Ficha:
+Título: Lo que encontré bajo el sofá.
+Autor: Eloy Moreno.
+Año: 2013
+Editorial: Espasa
+ISBN: 978-84-670-3502-5
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Lo_que_encontre_bajo_el_sofa][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Lo%20que%20encontr%C3%A9%20bajo%20el%20sof%C3%A1][Dejar comentario]].
 

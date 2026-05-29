@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="El 25 de junio del año pasado, 2012, escribía este artículo en el blog/portal de seguridad " Seguridad para Todos (SXato2) ". Lo recupero aquí porque vendrán…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Defendiéndonos de lo desconocido (I)</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">03 mar. 2013</div><h1 class="post-title"><a href="https://godest.vivencias.net/2013-03-03-defendiendonos-de-lo-desconocido-i.html">Defendiéndonos de lo desconocido (I)</a></h1>
+<p>
+El 25 de junio del año pasado, 2012, escribía este artículo en el blog/portal de seguridad "<a href="http://www.seguridadparatodos.es/">Seguridad para Todos (SXato2)</a>". Lo recupero aquí porque vendrán más partes en el futuro y porque deseo compartirlo con los lectores de este blog.
+</p>
+
+<p>
+Aprovecho para aconsejaros la lectura habitual de <a href="http://www.seguridadparatodos.es/">Seguridad para Todos (SXato2)</a>. Es un buen hábito para mantenerse al día ;-).
+</p>
+
+<ul class="org-ul">
+<li>- -</li>
+</ul>
+
+<p>
+Por definición, un zero-day es una vulnerabilidad existente en el sistema para la cual no existe contramedida ni temporal (inhibición por alguna técnica como podría ser la detección de un antivirus evitando que actúe) ni definitiva (existencia de parche que corrige la vulnerabilidad y deja de ser explotable para siempre). Por tanto, la existencia de un zero-day es una de las preocupaciones mayores de cualquier administrador de sistemas: ¿qué puede hacer para prevenir amenazas que intentan explotar este tipo de vulnerabilidades?
+</p>
+
+<p>
+En la siguiente figura he intentado plasmar los diferentes periodos en los que podríamos dividir el tiempo de vida de una vulnerabilidad, desde que se descubre hasta que deja de ser explotable (si se toman las medidas oportunas, tema que daría para otro artículo).
+</p>
+
+<a href="/static/img/zero-day-concepto.png"  rel="lightbox"><img src="/static/img/zero-day-concepto.png" alt="zero-day-concepto" title="zero-day-concepto"  class="image image-preview " width="640" height="225" border="0" align="middle" hspace="10" vspace="10" /></a>
+
+<p>
+El primer periodo lo he denominado investigación: intenta reflejar el tiempo invertido para hallar en el software un “agujero” explotable (vulnerabilidad). Aprovecho para informar a los lectores que existe un mercado en el que se compran y se venden vulnerabilidades, tanto por las empresas que ofrecen productos que las “mitigan” como por el cibercrimen que las utiliza para lograr sus objetivos.
+</p>
+
+<p>
+El segundo periodo, <b>para mí el más crítico, el verdaderamente desafiante y trascendental, como se ha podido leer estos días acerca de las <a href="http://unaaldia.hispasec.com/2012/05/theflame-reflexiones-sobre-otra.html">nuevas armas para la ciberguerra</a></b>, es aquel en el que la vulnerabilidad sólo es conocida por su descubridor y aquellos que han pagado lo suficiente para tener acceso a ella. Es, literalmente, como tener un espía en tu ejército o un traidor como escolta de tu emperador: una orden y estás muerto. Por eso he elegido la “zona roja”. Se comprueba cada vez más a menudo que este periodo está siendo ampliamente explotado, anchamente extendido y tremendamente cotizado.
+</p>
+
+<p>
+Existe un gran debate sobre las formas en las que se debe “hacer pública” una vulnerabilidad. No voy a profundizar en él ahora. Simplemente indicar que si la vulnerabilidad se hace pública en el mismo momento en el que es comunicada al desarrollador del software para que la corrija, se produce un zero-day: el desarrollador ha contado con cero días para poder investigar la solución, elaborar un parche, probarlo y distribuirlo. Sin embargo, <b>a mi juicio, esta situación no es tan grave como la previamente descrita: todos conocemos la existencia de la vulnerabilidad y, si bien no existe aún una solución definitiva, es posible establecer líneas de defensa que imposibiliten que sea explotada</b>.
+</p>
+
+<p>
+Como veis el tema da mucho juego y ha de ser considerado en <a href="http://www.aunclicdelastic.com/seguridad-logica/la-gestion-de-la-seguridad-y-el-miedo/">nuestra estrategia de seguridad</a>. De hecho creo que es el pilar que fundamenta toda la industria de seguridad actual. Es necesario conocer este ciclo para ir haciéndonos preguntas, reflexionando sobre posibles respuestas y, así, ir construyendo nuestras diferentes líneas de defensa. Si existen.
+</p>
+
+<p>
+He dejado varias preguntas en el aire que retomaré en sucesivas entregas de esta serie. Ahora, me encantaría contar con tus reflexiones.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Defendi%C3%A9ndonos%20de%20lo%20desconocido%20%28I%29">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

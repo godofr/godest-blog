@@ -1,0 +1,135 @@
+#+title: Visualizando archivos de código con sintaxis coloreada
+#+date: <2009-07-17 21:43>
+#+author: Godofredo Fdez.
+#+description: ACTUALIZADO: 14-03-2022 . Ver actualización al final del artículo. ACTUALIZADO: 27-07-2009 . Ver actualización al final del artículo. Hoy, revisando mis feeds…
+#+filetags: Configuraciones GNU/Linux
+#+options: _:nil
+#+nid: 331
+
+*ACTUALIZADO: 14-03-2022*. Ver actualización al final del artículo.
+
+*ACTUALIZADO: 27-07-2009*. Ver actualización al final del artículo.
+
+Hoy, revisando mis [[http://es.wikipedia.org/wiki/Feed][feeds]] sin leer, he encontrado en [[http://petereisentraut.blogspot.com/2009/07/adding-color-to-console-code-syntax.html][este post]] como hacer algo que llevaba tiempo queriendo conseguir. Muchos de vosotros lo veréis como un punto de "frikismo" avanzado ;-), sin embargo, los que trabajamos mucho tiempo visualizando código hemos aprendido a "apoyarnos" en este tipo de cosas para ganar rapidez en el análisis, detección de errores, etc. *¡OJO!* Era necesario conseguir este efecto a la hora de *visualizar* un fichero, no confundir con editar (para esto ya está el fantástico [[http://www.gnu.org/software/emacs/][emacs]]). En ocasiones es preferible simplemente visualizar para *no correr el riesgo de modificar algo*.
+
+Bien, lo primero que hemos de hacer es disponer de los paquetes apropiados:
+
+#+begin_example
+
+[21:24:19(root@surco)/home/godo]> apt-get install source-highlight less
+
+#+end_example
+
+*less* es un "paginador"/visualizador de ficheros (sustituto del más ampliamente conocido *more*), y *source-highlight* es la herramienta de coloreado de sintaxis que entiende los siguientes lenguajes: C/C++, C Sharp, Bison, Caml, Changelog, Diff, Flex, Fortran, Html, Java, Javascript, Latex, Logtalk, Log files, Lua, ML, Pascal, Perl, PHP, Postscript, Prolog, Python, Ruby, Shell and XML.
+
+Una vez instalado el software necesario, pasamos a crear el fichero *.lessfilter* en nuestro directorio home:
+
+#+begin_example
+
+[21:52:19(godo@surco)~]> more .lessfilter
+#!/bin/sh
+
+source-highlight -fesc -oSTDOUT "$1" 2>/dev/null
+
+#+end_example
+
+*Y le damos permisos de ejecución*:
+
+#+begin_example
+
+[21:34:31(godo@surco)~]> chmod 755 .lessfilter
+
+#+end_example
+
+Finalmente editamos nuestro fichero de configuración de la shell (.bashrc en mi caso) y agregamos lo siguiente:
+
+#+begin_example
+
+# Para que less muestre colores
+export LESS="-R"
+# Para que evalúe el fichero ~/.lessfilter
+eval "$(lesspipe)"
+
+#+end_example
+
+Y listo, ya podemos visualizar código con sintaxis coloreada:
+
+#+begin_example
+
+less somefile.c
+less somefile.py
+less somefile.patch
+
+#+end_example
+
+- - -
+
+*ACTUALIZACIÓN: 27-07-2009*:
+
+A muchos de vosotros os ocurrirá lo que a mí: cuando intentáis ver un shell script que *no* termina con extensión .sh, es decir, que no tiene extensión (cosa habitual en el mundo GNU/Linux - Unix), source-highlight no lo detecta y, por tanto, no lo colorea. Bueno, un poco de hacking ;-) nos ayuda a resolver esto:
+
+#+begin_example
+
+[21:52:19(godo@surco)~]> more .lessfilter
+#!/bin/sh
+
+# ===== POST ORIGINAL =====
+# http://petereisentraut.blogspot.com/2009/07/adding-color-to-console-code-syntax.html
+
+# ===== PARA VERISONES 3.X ======
+# En Debian ahora, 27-07-2009, están las versiones 2.x
+# supongo que cuando entren las versiones 3.x ha de funcionar
+# lo que me ha comentado betto said...
+# If you use --infer-lang option, and the shell script starts with 
+# the #!/bin/sh then source-highlight will highlight it as a shell 
+# script no matter what its extension is (you may want to take a 
+# look at the file src-hilite-lesspipe.sh
+# distributed with source-highlight).
+#    Hope this helps :-)
+#    Lorenzo
+#    26 July, 2009 14:01
+
+
+# En este bloque detectamos la extensión del fichero
+FILE="$1"
+EXTENSION=${FILE##*.}
+NAME=${FILE%.*}
+
+# Si EXTENSION y NAME son iguales el fichero no tiene extension,
+# en este caso, por defecto, le decimos a source-highlight
+# que considere la entrada como un script de shell
+
+if [ "$NAME" = "$EXTENSION" ]; then
+    EXTENSION=""
+fi
+
+if [ "$EXTENSION" = "" ]; then
+   source-highlight --src-lang=shell -fesc -oSTDOUT "$1" 2>/dev/null
+else
+   source-highlight -fesc -oSTDOUT "$1" 2>/dev/null
+fi
+
+
+#+end_example
+
+- - -
+
+*ACTUALIZACIÓN: 14-03-2022*:
+
+Mucho mejor, e inmediato, utilizar [[https://github.com/sharkdp/bat][bat]].
+
+#+begin_example
+
+[09:49:32(godo@surcopi)~]
+$ bat --help
+bat 0.18.3
+A cat(1) clone with syntax highlighting and Git integration.
+
+#+end_example
+
+- - - *Fuentes originales*:
+1) [[http://petereisentraut.blogspot.com/2009/07/adding-color-to-console-code-syntax.html][Peter Eisentraut: Adding Color to the Console: Code Syntax Highlighting with less and source-highlight]] 2) [[http://petereisentraut.blogspot.com/2009/07/adding-color-to-console-pygments-vs.html][Peter Eisentraut: Adding Color to the Console: Pygments vs. Source-highlight.]]
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Visualizando%20archivos%20de%20c%C3%B3digo%20con%20sintaxis%20coloreada][Dejar comentario]].
+

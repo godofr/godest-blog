@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Aquí encontraréis un Live CD basado en Debian GNU/Linux que os puede ayudar a dar vuestros primeros pasos en este sistema operativo (GNU/Linux) y en esta excelente distribución (Debian). Un Live CD es un sistema operativo instalado en un CD, desde el cual podemos arrancar nuestra máquina (seleccionando la opción apropiada en la BIOS, muchas veces viene por defecto) sin tener que realizar ninguna partición/instalación en nuestro disco duro. Así evitamos perder la información que este alberga si ocurre algún fallo, si somos inexpertos en materia de particiones/instalaciones, etc. La desventaja: el rendimiento es muy bajo, pero aún se puede trabajar.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Programando en C con KNOPPIX</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">07 abr. 2006</div><h1 class="post-title"><a href="https://godest.vivencias.net/2006-04-07-programando-en-c-con-knoppix.html">Programando en C con KNOPPIX</a></h1>
+<a href="http://www.knopper.net/knoppix/index-en.html" target="_self"><img width="140" height="138" border="0" align="right" src="/static/img/knoppix-cd-button.gif"></a>
+<p>
+<a href="http://www.knopper.net/knoppix/index-en.html">Aquí</a> encontraréis un <a href="http://es.wikipedia.org/wiki/LiveCD">Live CD</a> basado en <a href="http://www.debian.org">Debian GNU/Linux</a> que os puede ayudar a dar vuestros primeros pasos en este sistema operativo (GNU/Linux) y en esta excelente distribución (Debian).
+</p>
+
+<p>
+Un Live CD es un sistema operativo instalado en un CD, desde el cual podemos arrancar nuestra máquina (seleccionando la opción apropiada en la BIOS, muchas veces viene por defecto) sin tener que realizar ninguna partición/instalación en nuestro disco duro. Así evitamos perder la información que este alberga si ocurre algún fallo, si somos inexpertos en materia de particiones/instalaciones, etc. La desventaja: el rendimiento es muy bajo, pero aún se puede trabajar.
+</p>
+
+<p>
+Conseguimos así una herramienta muy útil para reconocer nuestro hardware y estudiar la compatibilidad de éste con GNU/Linux, para realizar los primeros pasos en un entorno de programación y, si conseguimos dominarlo (¡cuidado!), podemos incluso hacer particiones (qtparted) y copias de seguridad de las mismas (partimage), instalarlo en el disco duro, etc.
+</p>
+
+<p>
+Podéis descargar el CD desde <a href="ftp://csociety-ftp.ecn.purdue.edu/pub/knoppix/KNOPPIX_V4.0.2CD-2005-09-23-EN.iso">aquí</a> (versión 4.0.2 disponible a fecha 07/04/06), y podéis encontrar una lista de mirrors <a href="http://www.knopper.net/knoppix-mirrors/index-en.html">aquí</a> desde donde descargar las últimas versiones del CD y del DVD. <b>¡OJO!</b> Este archivo ha de ser "tostado" en el CD (o DVD según el caso) utilizando la opción de "grabar imagen" de los programas de grabación. No sirve si lo copiamos tal y como está al CD (si no entendéis lo que estoy diciendo aquí, pedirle ayuda a algún amigo).
+</p>
+
+<p>
+En <a href="http://godest.vivencias.net/node/86">este otro</a> artículo, en la <b>primera alternativa comentada</b>, destacaba el uso de las siguientes herramientas para lograr un entorno de programación C en GNU/Linux: emacs, gcc, gdb y make. Todas ellas están incluidas en esta distribución, además incluye las páginas de manual de las distintas funciones de librería de C, por ejemplo: man fgets.
+</p>
+
+<p>
+En fin, espero que os ayude a descubrir un nuevo modo de diversión y aprendizaje.
+</p>
+
+<p>
+Libertad y conocimiento.
+</p>
+
+<p>
+Actualización [11-10-2006]: Hay una nueva versión del Live CD de Knoppix disponible. Es la <b>5.0.1</b>, y puede ser descargada desde <a href="http://ftp.uni-erlangen.de/pub/mirrors/knoppix/KNOPPIX_V5.0.1CD-2006-06-01-EN.iso">aquí</a>. ¡OJO! En esta versión <b>no han incluido al editor emacs</b>, si a <a href="http://en.wikipedia.org/wiki/Zile_(editor)">zile</a>, que lo emula (para mi gusto demasiado básico pues en la configuración estándar ni colorea ni "sangra" bien el código). ¿Por qué no habrán incluido a <a href="http://www.jedsoft.org/jed/">jed</a> que si lo hace? Os recomiendo que utilicéis la versión anterior (<b>4.0.2</b>) descrita más arriba, y sólo si os da problemas con vuestro hardware lo intentéis con esta última (<b>5.0.1</b>). Si tenemos un DVD en lugar de un CD podemos utilizar <a href="http://ftp.uni-kl.de/pub/linux/knoppix/DVD/KNOPPIX_V5.0.1DVD-2006-06-01-EN.iso">esta versión arrancable desde el DVD</a>, donde sí se incluye a nuestro querido editor <a href="http://es.wikipedia.org/wiki/Emacs">emacs</a>.<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Programando%20en%20C%20con%20KNOPPIX">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

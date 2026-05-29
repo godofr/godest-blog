@@ -1,0 +1,17 @@
+#+title: Introducción a la Seguridad de la Información
+#+date: <2012-02-19 13:23>
+#+author: Godofredo Fdez.
+#+description: Tras analizar y ser consciente del interés que genera este tema en la actualidad, un grupo de profesionales hemos colaborado para lanzar este curso organizado…
+#+filetags: COITAOC Seguridad_de_la_información
+#+options: _:nil
+#+nid: 455
+
+Tras analizar y ser consciente del interés que genera este tema en la actualidad, un grupo de profesionales hemos colaborado para lanzar este curso organizado por ASITANO.
+
+Se celebrará los días 7, 8, 14 y 15 de marzo en horario de 16:00 a 21:00.
+
+Más información [[http://www.coitaoc.org/index.php?option=com_content&task=view&id=2226&Itemid=93][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Introducci%C3%B3n%20a%20la%20Seguridad%20de%20la%20Informaci%C3%B3n][Dejar comentario]].
+

@@ -1,0 +1,14 @@
+#+title: logo debian
+#+date: <2005-07-18 20:34>
+#+author: Godofredo Fdez.
+#+description: Logo del proyecto debian (distribución GNU/Linux). Para ver más logos de este proyecto visita esta página .
+#+filetags: Logos
+#+options: _:nil
+#+nid: 27
+
+Logo del proyecto [[http://www.debian.org][debian]] (distribución GNU/Linux).
+Para ver más logos de este proyecto visita [[http://www.debian.org/logos/][esta página]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=logo%20debian][Dejar comentario]].
+

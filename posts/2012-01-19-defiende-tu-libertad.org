@@ -1,0 +1,46 @@
+#+title: Defiende tu libertad
+#+date: <2012-01-19 22:19>
+#+author: Godofredo Fdez.
+#+description: Ayer se libraba una de las batallas con mayor repercusión mediática de los últimos tiempos. Las grandes organizaciones tecnológicas luchaban junto con millones…
+#+filetags: Activismo
+#+options: _:nil
+#+nid: 453
+
+#+begin_export html
+<a href="/content/stop-sopa" target="_blank"><img src="/static/img/stop-sopa_0.jpg" alt="Stop SOPA" title="Stop SOPA"  class="image image-preview " width="262" height="231" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+Ayer se libraba una de [[http://www.google.com/search?hl=es&gl=es&tbm=nws&btnmeta_news_search=1&q=sopa&oq=sopa&aq=f&aqi=d1g-z2g1d-o1&aql=&gs_sm=e&gs_upl=5834l6115l0l6370l4l3l0l0l0l0l147l402l0.3l3l0][las batallas con mayor repercusión mediática]] de los últimos tiempos. Las grandes organizaciones tecnológicas luchaban junto con millones de usuarios contra los grupos de poder amenazados por el actual patrón de uso de Internet. Ese otro bando compuesto por intermediarios organizados en potentes [[http://es.wikipedia.org/wiki/Lobby][lobbies]], gobiernos y medios de comunicación a la antigua usanza.
+
+El combate está claro: a un lado del ring los que han empujado Internet permitiendo que sea lo que es; al otro, los que ostentan posiciones seriamente amenazadas, es decir, los que sienten que pierden poder y dinero (el orden de estas dos últimas palabras es intercambiable: está más que demostrado que una lleva a la otra invariablemente).
+
+Unos claman libertad. Otros, proteccionismo de sus propios intereses.
+
+Sí, has leído bien, de sus propios intereses. Ninguno de los que componen el bando de los intermediarios-políticos-comunicadores está luchando por algún interés más que el suyo propio.
+
+Los intermediarios no quieren que compartas. El acceso a la cultura hoy en día es el mayor que jamás ha existido. [[http://www.enriquedans.com/2012/01/el-dramatico-hundimiento-de-la-industria-del-entretenimiento.html][Los niveles de creatividad y producción también]]. La democratización de su acceso (asequible a todos los públicos - de esto ya hablaré otro día, no quiero perderme en lo gratis o no-), la capacidad de su disfrute (desde el salón de tu casa puedes visitar museos, leer enciclopedias, aclarar dudas con gente que sabe más que tú...) y así, su efecto en el aprendizaje y en la evolución personal supera con creces el mayor imaginado por ilustrado alguno.
+
+Los políticos no quieren que te informes libremente, que escuches y emitas opiniones que les son incómodas y que les ponen en un aprieto. Siempre han preferido gobernar a una masa que se deja llevar que a ciudadanos que piensan por sí mismos. Por tanto, las redes sociales, los foros, los blogs... les causan miedo, escapan a su control. ¡Con lo bien que vivían haciendo que sonara sólo su voz a través de medios de comunicación fieles (y no tanto)!
+
+Y los medios de comunicación, [[http://www.kriptopolis.org/node/8825][¿cuánto llevan sin hacer su trabajo?]] Se quejan de que nadie los compra. ¡Claro! Nadie quiere leer lo que ya sabe. Voceros de los poderes anteriores porque viven de la publicidad que les meten, principalmente los poderes públicos. Sí, el dinero de tus impuestos utilizado no para darte servicios sino para mantenerse en el poder. ¿Cuántos reportajes serios de investigación? ¿Cuántas evidencias capturadas? ¿Cuánta presión y regulación a los poderosos? ¿Cuántas coincidencias empujando en la misma dirección, todos juntos, sin colores, cuando la verdad lo merecía y la justicia lo exigía?
+
+Y así se cierra el círculo. Y así se forma el "[[http://es.wikipedia.org/wiki/The_establishment][establishment]]" (falta la banca pero ya hablaré otro día de ella, hoy no está directamente implicada).
+
+Creo que es fácil imaginarse lo nerviosos que están todos cuando ante ellos explota un medio tan libre, tan par a par, donde todo el mundo ya no sólo escucha sino que también habla y condiciona y vierte opiniones contrarias e intercambia...
+
+¡Esto se nos va de las manos! ¡Hay que hacer algo! - exclaman.
+
+Y envueltos en un velo de protección a la propiedad intelectual... (continuará)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Defiende%20tu%20libertad][Dejar comentario]].
+
+** Comentarios
+
+*** Realmente, los derechos de (nacho 21/01/2012 - 00:10)
+Realmente, los derechos de propiedad intelectual son la excusa para limitar el flujo libre de información. Durante miles de años, las oligarquías dominantes han mantenido a la masa sumida en la ignorancia; mano de obra barata y sumisa.
+Y no les quedaba otro camino. El poder se les está yendo de las manos y la gente cada día está más empoderada de conocimiento, por tanto menos temerosa.
+Pienso que ésta será una batalla larga y dura, pero que finalmente, si la gente partidaria del conocimiento libre triunfa, las oligarquías represoras perderán el poder.
+O sea, estamos hablando de un nuevo orden social, al final del día.\\
+
+*** http://www.publico.es/417985/opmegaupload-la-venganza-de-anonymo (nacho 21/01/2012 - 17:15)
+http://www.publico.es/417985/opmegaupload-la-venganza-de-anonymous

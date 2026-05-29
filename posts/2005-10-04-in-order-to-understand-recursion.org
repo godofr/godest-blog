@@ -1,0 +1,13 @@
+#+title: In order to understand recursion...
+#+date: <2005-10-04 09:57>
+#+author: Godofredo Fdez.
+#+description: In order to understand recursion you must first understand recursion.
+#+filetags: 
+#+options: _:nil
+#+nid: 54
+
+In order to understand recursion you must first understand recursion.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=In%20order%20to%20understand%20recursion...][Dejar comentario]].
+

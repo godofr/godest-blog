@@ -1,0 +1,36 @@
+#+title: Ajedrez en Linares
+#+date: <2006-02-24 20:32>
+#+author: Godofredo Fdez.
+#+description: Desde hace varias semanas vengo sintiendo la necesidad de jugar al ajedrez casi de forma compulsiva. En cualquier momento una apertura asalta mi mente, veo…
+#+filetags: Juegos/Deportes
+#+options: _:nil
+#+nid: 105
+
+#+begin_export html
+<a href="/node/104" target="_self"><img width="143" height="143" border="0" align="right" src="/static/img/ruy_lopez.jpg"></a>
+#+end_export
+Desde hace varias semanas vengo sintiendo la necesidad de jugar al ajedrez casi de forma compulsiva. En cualquier momento una [[http://es.wikipedia.org/wiki/Apertura_%28ajedrez%29][apertura]] asalta mi mente, veo tableros con piezas desarrolladas, finales de partidas, sí, de esos en los que un par de torres contrarias luchan por mantener sus peones y acabar con los del otro bando, de esos que parecen fáciles de conseguir y acabas perdiendo. Como todo.
+
+Un viejo libro de aperturas, que adquirí por casi 8 euros, me acompaña en la mesita de noche, formando parte de la misteriosa posesión que se ha adueñado de mí.
+
+Este fin de semana pasado me pregunté: ¿por qué me ocurre esto? ¿por qué todos los años por estas fechas sientes algo parecido? No hizo falta escrutar mucho en mis adentros para hallar la causa: [[http://www.ajedrezenlinares.com/XXIII_ciudad_linares.htm][Ajedrez en Linares]].
+
+Es curioso comprobar como hay mimbres dentro de uno que prevalecen en ciertas épocas frente a los demás. Estos que ahora lo hacen vienen de antaño, de la pubertad. Sería el año 1987/88 cuando mi familia se trasladó a Linares, no dejábamos mi pueblo porque está tan cerca que todos los fines de semana volvíamos, pero sí que todos descubríamos una nueva forma de vida. Yo intentaba acostumbrarme al instituto, mi cambio fue doble: dejaba la EGB y dejaba a mis amigos de toda la vida para encontrar el BUP y nuevos compañeros.
+
+Siempre me ha gustado mucho el [[http://es.wikipedia.org/wiki/Ajedrez][ajedrez]], aunque nunca he sido bueno jugando. Desde que mi padre, cuando yo era pequeño, me dejaba ganarle, y desde que me cabreaba cuando mi rey moría una y otra vez víctima del "jaque pastor" sin ser capaz de hacerle frente: cuando intentaba proteger la diagonal del peón del alfil de rey adelantando el peón del caballo, la reina del otro color capturaba al peón de rey y me daba un doble rey-torre. Evidentemente se me acababa colando hasta la cocina, y era rey muerto.
+
+Agradezco mucho a mis padres todo lo que han hecho por mí, pero hoy especialmente quiero agradecerles la oportunidad que me dieron de visitar, casi todas las tardes, el inicio, transcurso y final de las partidas que se disputaban. Aún recuerdo a Ivanchuk ganando sus dos torneos casi seguidos, era un chaval, y yo alucinaba con él. A casi todos se les veía mucho con sus entrenadores, hablar y relacionarse unos con otros... Ivanchuk meditaba en solitario, se paseaba haciendo extraños movimientos, como si perdiera el equilibrio brevemente, incluso algunas veces abandonaba la sala y, siempre solo, paseaba por el parque que hay al lado del hotel Anibal.
+
+Es maravilloso el autoconocimiento: en este mes de febrero, casi 20 años después, soy consciente de la intensidad con la que llevo grabadas, a fuego, esas vivencias. Y un extraño misterio hace que estallen por si solas, con fuerza, en esta época.
+
+¡Ojalá que el torneo siga disputándose mucho tiempo! Y que yo, [[http://chessbase.com/espanola/index.asp][aunque sea por internet, pueada asistir a su desarrollo]]. De momento, este año se ha partido: primera mitad en Morelia (Mexico) y segunda en Linares.
+
+A ver si los organizadores, y los subvencionadores públicos, no acaban dejando perder esta manifestación deportiva y cultural tan amada en ese cachito de tierra, y tan respetada y admirada a nivel mundial...
+
+¡Ánimo!
+
+Y gracias.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Ajedrez%20en%20Linares][Dejar comentario]].
+

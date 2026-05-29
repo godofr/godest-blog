@@ -1,0 +1,27 @@
+#+title: Un sistema de leyenda
+#+date: <2013-04-15 22:29>
+#+author: Godofredo Fdez.
+#+description: En mi trabajo es habitual encontrarse con situaciones donde hay que elegir entre diferentes tecnologías que hacen, básicamente, lo mismo. Por ejemplo, un…
+#+filetags: Hardware
+#+options: _:nil
+#+nid: 503
+
+En mi trabajo es habitual encontrarse con situaciones donde hay que elegir entre diferentes tecnologías que hacen, básicamente, lo mismo. Por ejemplo, un cliente puede estar planteándose renovar los conmutadores de acceso, aquellos que sirven para dar servicio a los usuarios y que realizan una primera concentración de tráfico hacia el nivel de distribución, teniendo que seleccionar diferentes modelos de una misma gama tecnológica (hoy ya todo es Ethernet). En este punto, es curioso observar como sigue perviviendo el enfoque de máximos: se desea el conmutador más potente y con un conjunto de características funcionales mayor, ya se vayan a utilizar o no. Como se dice en mi pueblo: “burro grande ande o no ande”.
+
+Así, no es raro encontrar peticiones de conmutadores de acceso que incorporan 1000BaseT al puesto de trabajo, 10Gbps en los enlaces hacia la distribución, PoE en todos los puertos, capacidades de nivel 3 (routing), etc., cuando, en realidad, lo único necesario serían enlaces 10/100BaseT al puesto, un par de enlaces agregados de 1Gbps hacia el nivel de distribución (más por redundancia que por velocidad) y capacidades de creación de VLANs. Sí, algo muy básico pero más que suficiente. La diferencia entre una elección y la otra no es sólo el coste de adquisición sino el de las licencias software que habilitan las diferentes funcionalidades, el de mantenimiento, el de consumo energético, el de operación... en fin, casi todos aquellos que no suelen ser considerados nunca.
+
+Es algo así como adquirir un Ferrari para ir por una vía verde donde lo único que necesitas es una bicicleta. Tras haber acumulado muchos años de experiencia en redes, los niveles más elevados de carga de CPU que he visto en este tipo de equipos han sido de alrededor de un 40% en picos, en media rara vez superan el 10%. Equipos que han de tirarse prácticamente sin haber sido exprimidos cuando el fabricante decide dejar de mantenerlos (EOL -- End Of Life).
+
+Por eso, cuando uno lee lo siguiente no puede más que esbozar una sonrisa y contrastar las diferentes ópticas con las que se mira el mundo.
+
+El día 1 de abril del presente año se jubiló en el [[http://trajano.us.es/][Departamento de Ingeniería Telemática]] un router (por llamarle de algún modo porque hacía muchas más funciones) que había estado prestando servicios durante 15 años de forma ininterrumpida, con la sola ayuda de un [[http://es.wikipedia.org/wiki/Sistema_de_alimentaci%C3%B3n_ininterrumpida][SAI]]. Nuestro [[http://trajano.us.es/~jvt/][Director de Departamento]] nos lo comunicaba en un mail donde detallaba lo mejor: era un PC marca DELL con procesador 486 con 8MB de RAM (¡OJO! megas no gigas) y 256MB ¡! de disco duro, con tarjetas Ethernet de 10Mbps, que disponían de interfaces desconocidos para muchos de los que leéis este blog: [[http://en.wikipedia.org/wiki/10BASE2][10Base2]] y [[http://en.wikipedia.org/wiki/10BASE5][10Base5]] (yo sí los he visto, allá por los 90 en la Universidad, y después algunos sustituí al principio de mi vida laboral por su sucesor: 10BaseT), aunque desde que la ETSI se trasladó a Cartuja se venía utilizando el 10BaseT. Ejecutaba un sistema operativo Slackware GNU/Linux, instalado desde disquetes (por entonces no se llevaban aún los CD y USB), que le permitía, además de encaminar paquetes, realizar funciones de firewall (con ipfwadm), proxy ARP, IP masquerading (para algunas IP públicas) y PAT (para las IP privadas).
+
+¡Descansa en paz, compañero, porque tu vida ha sido plena!
+
+Ahora disponemos de otro superequipo con 256MB de RAM, 20GB de disco y un par de tarjetas 100BaseT. Ejecuta un sistema operativo [[http://www.debian.org][Debian GNU/Linux 6.x]] (probablemente la mejor distribución de GNU/Linux ;-) del mundo), y realiza todas las funciones descritas anteriormente.
+
+¡Bienvenido... y que tengas una larga y aprovechada vida!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Un%20sistema%20de%20leyenda][Dejar comentario]].
+

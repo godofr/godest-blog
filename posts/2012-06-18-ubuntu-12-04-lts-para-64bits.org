@@ -1,0 +1,15 @@
+#+title: Ubuntu 12.04 LTS para 64bits
+#+date: <2012-06-18 22:23>
+#+author: Godofredo Fdez.
+#+description: Este fin de semana pasado he tenido un poco de tiempo y he instalado Ubuntu 12.04 LTS para arquitectura de 64 bits en mi ordenador de sobremesa. En concreto,…
+#+filetags: 
+#+options: _:nil
+#+nid: 476
+
+Este fin de semana pasado he tenido un poco de tiempo y he instalado Ubuntu 12.04 LTS para arquitectura de 64 bits en mi ordenador de sobremesa. En concreto, el archivo que he utilizado ha sido este: "ubuntu-12.04-desktop-amd64.iso".
+
+Ya os iré comentando.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Ubuntu%2012.04%20LTS%20para%2064bits][Dejar comentario]].
+

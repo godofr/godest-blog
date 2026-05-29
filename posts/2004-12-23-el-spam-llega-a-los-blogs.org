@@ -1,0 +1,42 @@
+#+title: El Spam llega a los blogs
+#+date: <2004-12-23 15:21>
+#+author: Godofredo Fdez.
+#+description: Ya lo había leído en algunas bitácoras que suelo frecuentar, pero tenía los dedos cruzados pensando en que a mí no me iba a tocar. Acabo de borrar 13 ó 14 comentarios hechos por personajillos como "casino online", "casino fortune", etc., cuyo contenido podéis imaginar. Hasta que investigue como librarme de estos "motores de la jodienda" he suprimido la posibilidad de hacer comentarios, y con ello, Y ES LO QUE MÁS SIENTO, la libertad de compartir y de expresar nuestros sentires y conocimientos. Dios quiera (es una expresión hecha, supongo que quiero decir "La técnica quiera") que esta "fase" dure poco y este lugar vuelva a ser tribuna abierta.
+#+filetags: Bitácoras
+#+options: _:nil
+#+nid: 14
+
+Ya lo había leído en algunas bitácoras que suelo frecuentar, pero tenía los dedos cruzados pensando en que a mí no me iba a tocar. Acabo de borrar 13 ó 14 comentarios hechos por personajillos como "casino online", "casino fortune", etc., cuyo contenido podéis imaginar.
+
+Hasta que investigue como librarme de estos "motores de la jodienda" he suprimido la posibilidad de hacer comentarios, y con ello, Y ES LO QUE MÁS SIENTO, la libertad de compartir y de expresar nuestros sentires y conocimientos.
+
+Dios quiera (es una expresión hecha, supongo que quiero decir "La técnica quiera") que esta "fase" dure poco y este lugar vuelva a ser tribuna abierta.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=El%20Spam%20llega%20a%20los%20blogs][Dejar comentario]].
+
+** Comentarios
+
+*** De momento lo he resuelto así... (Anónimo 01/02/2005 - 16:48)
+...os tendréis que registrar para poder enviar comentarios.
+
+El proceso de registro es como sigue: para solicitar tal registro tenéis que elegir un login y poner una dirección de correo electrónico (vuestra) donde recibiréis la password (contraseña) que os autoriza a entrar y así poder hacer comentarios. Una vez que entréis la primera vez podéis cambiar la contraseña a una que os sea fácil recordar.
+
+A partir de que tengáis vuestro usuario y contraseña, cada vez que queráis hacer un comentario tendréis que "entrar" (pulsar "login" en el pié de cualquier historia o comentario), os saldrá la pantalla donde podréis introducir vuestro nombre de usuario y contraseña, y, tras pulsar el botón "login", obtendréis la pantalla de bienvenida donde podréis pulsar "home" o cualquier otro enlace de este sitio web, teniendo acceso a escribir comentarios en cada una de las "historias" o artículos.
+
+Podéis comprobar que habéis sido reconocidos y estáis "dentro" de este sitio viendo que en la parte superior derecha aparece un cuadrito con vuestro login, la opción de modificar parte de vuestro perfil (incluida la contraseña de acceso), Y ALGO MUY IMPORTANTE: "log out", CUANDO TERMINÉIS DE REALIZAR LOS COMENTARIOS Y VAYÁIS A ABANDONAR EL SITIO, POR FAVOR, PULSAR AQUÍ "log out" PARA SALIR O CERRAR VUESTRA SESIÓN.
+
+Siento mucho todo este "trajín"... las circunstancias obligan. Es más complicado describir el proceso que llevarlo a cabo, de verdad, no os desaniméis... y participad.
+
+Salud.
+
+P.D.: Os recuerdo que cada vez que hacéis un comentario estáis obligados a realizar un "Preview comment" para ver si "formalmente" queda como habéis supuesto (puntos y aparte, etc.). Tras realizar este "Preview comment" seguís disponiendo de la opción de modificar lo escrito y, además, OS APARECERÁ OTRO BOTÓN "Post comment" que, si lo pulsáis, enviará el comentario a la historia o artículo en cuestión.
+
+*** Bueno... a ver si lo hemos arreglado (Anonymous 26/06/2005 - 12:22)
+Hoy he incorporado el modulo [[http://drupal.org/project/spam][spam]] para intentar controlar con el mismo a los "desbocados" spammers y sus insignificantes comentarios.
+
+Ya os iré contando si está o no dando resultado... quizá incluso lo vayáis viendo en directo. De momento está configurado todo a lo que viene por defecto, eso sí, con las únicas modificaciones de: "no publicar lo presuntamente spam" y "avisar al administrador de la detección del mismo".
+
+Tiempo al tiempo.

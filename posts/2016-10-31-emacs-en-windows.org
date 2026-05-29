@@ -1,0 +1,13 @@
+#+title: Emacs en Windows
+#+date: <2016-10-31 19:09>
+#+author: Godofredo Fdez.
+#+description: Aquí recojo el catálogo de imágenes que acompañan al artículo publicado en este blog con título: " Trabajando con GNU Emacs en sistemas Windows ".
+#+filetags: 
+#+options: _:nil
+#+nid: 559
+
+Aquí recojo el catálogo de imágenes que acompañan al artículo publicado en este blog con título: "[[http://godest.vivencias.net/content/trabajando-con-gnu-emacs-en-sistemas-windows][Trabajando con GNU Emacs en sistemas Windows]]".
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Emacs%20en%20Windows][Dejar comentario]].
+

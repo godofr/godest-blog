@@ -1,0 +1,43 @@
+#+title: La fiebre consumista... y la tdt
+#+date: <2006-01-12 21:53>
+#+author: Godofredo Fdez.
+#+description: Es curioso observar como, año tras año, va desapareciendo un poco más el espíritu navideño de mi alma (ese principio vital de Aristóteles). Cada vez pienso con más fuerza que la navidad está hecha para los niños, y yo, por desgracia, ya hace tiempo que dejé de serlo (al menos en cuanto a obligaciones y sentires). Un año más me he visto envuelto en la vorágine devoradora de centros comerciales, en los pacientes atascos demoledores de nervios: a algunos he visto que han llegado casi a las manos (el espíritu navideño, supongo). Gente con la cara desencajada explorando desenfrenadamente miles de estanterías cogiendo soltando derramando gritando buscando... en fin, un placer.
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 96
+
+Es curioso observar como, año tras año, va desapareciendo un poco más el espíritu navideño de mi alma (ese principio vital de Aristóteles). Cada vez pienso con más fuerza que la navidad está hecha para los niños, y yo, por desgracia, ya hace tiempo que dejé de serlo (al menos en cuanto a obligaciones y sentires).
+
+Un año más me he visto envuelto en la vorágine devoradora de centros comerciales, en los pacientes atascos demoledores de nervios: a algunos he visto que han llegado casi a las manos (el espíritu navideño, supongo). Gente con la cara desencajada explorando desenfrenadamente miles de estanterías cogiendo soltando derramando gritando buscando... en fin, un placer.
+
+Muchos de ellos exclamaban al primer vendedor (cansado de echar horas extras de las que no va a recibir ni un duro porque ya están recogidas en el agresivo "convenio colectivo") que aparecía por su alrededor:
+
+- ¿Tienen de(s)codificadores "tedetes"?
+- Sí señor. Esos de allí.
+- No se vaya no se vaya ¡Cuál es el más barato?
+
+Claro, filosofía esta que dice mucho de la mejor "tonelada" de regalos a preparar. Si yo, en el fondo ;-), lo entiendo.
+
+- Ese modelo. El pequeñito negro. - respondía el vendedor.
+
+Y ahí los tienes a él y a ella, saliendo con la caja bajo el brazo y sin saber que serían incapaces de grabar la serie que le gusta a ella mientras él ve el partido en directo los miércoles (o los martes, o los lunes...).
+
+Hoy en día todos estamos acostumbrados a grabar una emisión mientras vemos otra, esto evita alguna que otra "sangrante" decisión. En toda Sevilla sólo encontré un lugar (SONYTEL - C/ Pagés del Corro cerca de República Argentina) en el que disponían de un descodificador de televisión digital terrestre *con doble sintonizador*.
+
+Creo que el grueso de los mortales desconoce que los descodificadores tdt más básicos (precio medio de 75 Euros) sólo dispone de un sintonizador, cuando ese sintonizador está ocupado descodificando un canal *ningún otro puede ser descodificado*. Esto se traduce a que una vez seleccionado el canal todo el descodificador queda "atrapado" en dicho canal. Y da igual el tener dos Euroconectores: por ambos obtendremos la misma señal descodificada, por tanto, sólo podemos grabar aquello que, a la vez, estamos viendo.
+
+Los modelos que permiten seleccionar un canal tdt para ser visto y otro canal tdt para ser grabado se denominan: descodificadores tdt *con doble sintonizador*. Esta gama de aparatos, que habitualmente vienen con doble Euroconector, permiten enviar un canal hacia el televisor *y otro distinto* hacia el vídeo. Su precio suele rondar los 150 Euros.
+
+Dos cosas más he de añadir:
+1.- Casi todos ellos son capaces de seleccionar los canales analógicos (los que ya teníamos de antes) para ser grabados mientras vemos un digital, o al contrario. Alguien puede estar pensando que esto resuelve el problema anterior. Sí, pero sólo parcialmente (hay 22 canales digitales y no todos ellos tienen "réplica" analógica) y temporalmente (hasta enero de 2008 que se apagarán).
+2.- No se han de confundir los descodificadores tdt con doble sintonizador con los descodificadores tdt *combo*. Estos últimos añaden la posibilidad de descodificar con un mismo aparato señales digitales terrestres (la nueva televisión, de la que habla todo el mundo, captada con antenas normales) y señales digitales recibidas desde algún satélite (esas que tiene tu amigo para ver canales extranjeros mediante una antena parabólica).
+
+No estoy diciendo que lo mejor sea comprarlos con doble sintonizador, simplemente estoy aconsejando una pensada sobre el posible uso que se le va a dar, y si merece la pena o no adquirirlos. En definita: que no nos llevemos una desilusión en un futuro.
+
+En fin, espero que haya aportado algo de luz al revuelto mundo de la televisión, en el que todo cambia para que todo siga igual }:-).
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=La%20fiebre%20consumista...%20y%20la%20tdt][Dejar comentario]].
+

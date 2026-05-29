@@ -1,0 +1,31 @@
+#+title: Servicios de estadísticas
+#+date: <2007-02-04 14:54>
+#+author: godest
+#+description: 
+#+filetags: 
+#+options: _:nil
+#+nid: 198
+
+#+begin_export html
+<a href="http://godest.vivencias.net/rss.xml"><img src="http://feeds.feedburner.com/~fc/GodEst?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+#+end_export
+
+#+begin_export html
+<A HREF="http://www.mypagerank.net/" target="_blank"><IMG SRC="http://www.mypagerank.net/srank.php?site=godest.vivencias.net" BORDER="0" ALT="This is my Google PageRank™ - SmE Rank free service Powered by Scriptme"></A>
+#+end_export
+
+#+begin_export html
+<a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c10.statcounter.com/counter.php?sc_project=982117&amp;java=0&amp;security=cb59bc81&amp;invisible=0" alt="counter" /></a>
+#+end_export
+
+#+begin_export html
+<a href="http://mapstats.blogflux.com/40107.html"><img src="http://mapstats.blogflux.com/button.php?id=40107" alt="Blog Flux MapStats: Stats and Counter for GodEst" border="0" /></a>
+#+end_export
+
+#+begin_export html
+<a href="http://linklog.blogflux.com/"><img src="http://linklog.blogflux.com/80x15.gif" alt="Blog Flux LinkLog: Outgoing Link Logging and Click Tracking for GodEst" border="0" /></a>
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Servicios%20de%20estad%C3%ADsticas][Dejar comentario]].
+

@@ -1,0 +1,25 @@
+#+title: La inseparable pareja
+#+date: <2005-07-20 20:56>
+#+author: Godofredo Fdez.
+#+description: Linux no es más que el kernel de un sistema operativo . Así, la frase: "mi ordenador tiene instalado un sistema operativo Linux " es falsa . El proyecto GNU tenía "todas" las herramientas (conjunto de programas) "básicas" para formar un sistema operativo al estilo UNIX , sólo le faltaba el kernel y... ¡ahí llegó linux! (aunque este proyecto tenía, y tiene, en desarrollo su propio kernel: Hurd ).
+#+filetags: GNU/Linux
+#+options: _:nil
+#+nid: 33
+
+#+begin_export html
+<a href="http://www.gnu.org" target="_self"><img width="56" height="60" border="0" align="right" src="/static/img/gnu-head-sm.jpg"></a>
+#+end_export
+[[http://es.wikipedia.org/wiki/Linux_%28desambiguaci%C3%B3n%29][Linux]] no es más que el [[http://es.wikipedia.org/wiki/Kernel][kernel]] de un [[http://es.wikipedia.org/wiki/Sistema_operativo][sistema operativo]]. Así, la frase: /"mi ordenador tiene instalado un sistema operativo *Linux*"/ es falsa. El proyecto [[http://www.gnu.org/][GNU]] tenía "todas" las herramientas (conjunto de programas) "básicas" para formar un sistema operativo al estilo [[http://es.wikipedia.org/wiki/Unix][UNIX]], sólo le faltaba el kernel y... ¡ahí llegó linux! (aunque este proyecto tenía, y tiene, en desarrollo su propio kernel: [[http://es.wikipedia.org/wiki/Hurd][Hurd]]).
+
+La frase correcta es: /"mi ordenador tiene instalado un sistema operativo *GNU/Linux*"/.
+
+#+begin_export html
+<a href="http://www.kernel.org" target="_self"><img width="56" height="60" border="0" align="right" src="/static/img/logo70-tran.png"></a>
+#+end_export
+En fin, para los puristas y para los que quieran reconocer el esfuerzo del proyecto GNU, no dejándolo caer en el olvido. Yo me considero entre estos últimos (¿Qué sería Linux sin "[[http://gcc.gnu.org/][gcc]]", "[[http://www.gnu.org/software/gdb/gdb.html][gdb]]", "[[http://www.gnu.org/software/libc/libc.html][libc]]", "[[http://www.gnu.org/software/emacs/emacs.html][emacs]]", etc.?).
+
+Para saber más sobre todo el trabajo desarrollado por el proyecto GNU, que incluso ha llegado a ser proyecto de la [[http://portal.unesco.org/es/][UNESCO]], mira este [[http://directory.fsf.org/wiki/Main_Page][directorio]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=La%20inseparable%20pareja][Dejar comentario]].
+

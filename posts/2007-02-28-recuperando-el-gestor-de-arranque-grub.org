@@ -1,0 +1,144 @@
+#+title: Recuperando el gestor de arranque: Grub
+#+date: <2007-02-28 21:13>
+#+author: Godofredo Fdez.
+#+description: ACTUALIZACIÓN : si conoces exactamente la partición raíz (root), por ejemplo: /dev/sda5, la forma más rápida de hacerlo está al final de este artículo . FIN de la ACTUALIZACIÓN
+#+filetags: Configuraciones GNU/Linux Seguridad
+#+options: _:nil
+#+nid: 207
+
+ACTUALIZACIÓN: si conoces exactamente la partición raíz (root), por ejemplo: /dev/sda5, la forma más rápida de hacerlo está al final de este artículo. FIN de la ACTUALIZACIÓN
+
+A quién no le ha ocurrido esto: un buen día logramos tener en nuestro ordenador instalados varios sistemas operativos, por ejemplo: un windows y un [[http://www.debian.org/][Debian GNU/Linux]]. En un momento triste descubrimos que la última aplicación que *debemos* utilizar no existe en GNU/Linux, o que el último [[http://es.wikipedia.org/wiki/Gadget][gadget]] que nos hemos comprado *ha de ser “gestionado”* desde un windows. Bien, asumimos nuestra tristeza y arrancamos nuestro ordenador para seleccionar en el menú, que nos presenta el gestor de arranque [[http://es.wikipedia.org/wiki/Grub][Grub]] (existen otros gestores de arranque más antiguos y menos versátiles, como [[http://es.wikipedia.org/wiki/Lilo_%28Linux%29][lilo]]), la opción correspondiente al sistema operativo de las ventanas.
+
+En nuestra sesión de trabajo nos conectamos a un par de páginas de internet, hacemos unas cuantas descargas y, sorprendentemente :-o, un virus se adueña de nuestro ordenador. Tras mil y una guerra con los [[http://es.wikipedia.org/wiki/Dialer][dialers]], las bajadas e instalación de [[http://es.wikipedia.org/wiki/Malware][malware]] a nuestras espaldas, etc., *decidimos reinstalar el windows original en su partición*. Arrancamos...
+
+¡Y descubrimos que esta reinstalación se ha cargado nuestro gestor de arranque!, con lo que ahora ya sólo podemos arrancar nuestra nueva instalación de windows. Pero, ¿qué ha pasado con nuestro Debian GNU/Linux que teníamos instalado? No hay que preocuparse, sigue estando instalado en las particiones en las que estaba. Lo único que hemos perdido es la posibilidad de arrancarlo dado que la reinstalación de windows, como digo, ha borrado el "pequeño programa" que vive en el sector de arranque de nuestro disco duro, y que nos presenta el menú de selección del sistema operativo con el que queremos trabajar justo cuando conectamos nuestra máquina.
+
+Vamos a ver como volvemos a instalar nuestro Grub tal y como estaba antes de que la tragedia ocurriera.
+
+Lo primero que os recomiendo es que os bajéis el último [[http://www.sysresccd.org/Main_Page][System Rescue CD]], y lo tostéis en un CD virgen que nos salvara de este tipo de emergencias. Este minisistema GNU/Linux es muy completo: trae una herramienta para la realización de particiones en modo gráfico: gparted (que ya utilizamos [[file:node/197][aquí]]), otra herramienta para realizar copias de seguridad de las particiones existentes: [[http://www.partimage.org/Main_Page][partimage]], y reconoce casi todos los tipos de sistemas de ficheros, [[http://es.wikipedia.org/wiki/NTFS-3g][incluido el NTFS]].
+
+Arrancamos nuestro ordenador, con el System Rescue CD introducido para que, obviamente, arranque desde él. Veremos una [[http://www.sysresccd.org/Screenshots][pantalla de bienvenida]], pulsamos intro para que continúe... y al final vemos una pantalla de instrucciones y una línea de comandos que nos invita a interactuar con el sistema.
+
+Ahora necesitamos conocer los siguientes datos: la tabla de particiones de nuestro sistema, y su correspondencia con los distintos directorios existentes en el árbol de una instalación GNU/Linux. Esto se puede obtener de la siguiente forma:
+
+[18:23:18(godo@surco)~]> mount
+/dev/hdb1 on / type reiserfs (rw)
+tmpfs on /lib/init/rw type tmpfs (rw,nosuid,mode=0755)
+proc on /proc type proc (rw,noexec,nosuid,nodev)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+procbususb on /proc/bus/usb type usbfs (rw)
+udev on /dev type tmpfs (rw,mode=0755)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=620)
+/dev/hdb2 on /boot type reiserfs (rw,notail)
+/dev/hdb7 on /home type reiserfs (rw)
+/dev/hdb8 on /tmp type ext3 (rw)
+/dev/hdb5 on /usr type reiserfs (rw)
+/dev/hdb6 on /var type reiserfs (rw)
+/dev/hdb4 on /mnt/vm type reiserfs (rw,nosuid,nodev,user=godo)
+[18:51:16(godo@surco)~]>
+
+Es tan fácil como teclear mount cuando nuestra máquina está funcionando bien, y conservar su salida en una hojita impresa, o en una página web que tengamos accesible ;-). Si no lo hemos hecho previamente, y nos encontramos con que no sabemos qué partición albergaba un determinado árbol de directorios, tendremos que ir montando una u otra, y viendo lo que tienen dentro, o utilizar herramientas como fdisk o cfdisk, ejecutándolas como se muestra a continuación:
+
+[20:11:19(root@surco)/mnt/vm/serie-debian]> fdisk -l /dev/hdb
+
+Disk /dev/hdb: 203.9 GB, 203928109056 bytes
+255 heads, 63 sectors/track, 24792 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+
+Device Boot Start End Blocks Id System
+/dev/hdb1 1 486 3903763+ 83 Linux
+/dev/hdb2 487 729 1951897+ 83 Linux
+/dev/hdb3 730 5118 35254642+ 5 Extended
+/dev/hdb4 5119 24792 158031405 83 Linux
+/dev/hdb5 730 1945 9767488+ 83 Linux
+/dev/hdb6 1946 3161 9767488+ 83 Linux
+/dev/hdb7 3162 4377 9767488+ 83 Linux
+/dev/hdb8 4378 4863 3903763+ 83 Linux
+/dev/hdb9 4864 5118 2048256 82 Linux swap / Solaris
+[20:11:25(root@surco)/mnt/vm/serie-debian]> [20:11:55(root@surco)/mnt/vm/serie-debian]> cfdisk /dev/hdb
+
+La primera, fdisk, como podéis observar, no muestra mucha información, sólo las particiones y el tipo de sistema de ficheros que tienen asociado. La segunda, cfdisk, muestra una pantalla estructurada en columnas, y una de ellas tiene información sobre el punto de montaje, sobre el árbol de directorios que vamos buscando.
+
+Observando esta información (la que anteriormente resultaba de ejecutar mount, que es donde más fácil se ve) podemos conocer que nuestro sistema raíz GNU/Linux, indicado por la / , está ubicado en nuestro segundo disco duro “hdb” y en su primera partición: /dev/hdb1. Y que el sistema de archivos utilizado es “reiserfs”.
+
+Igualmente, vemos que el directorio /boot está ubicado en nuestro segundo disco duro y en su segunda partición: /dev/hdb2, con sistema de archivos “reiserfs”.
+
+Por tanto, desde la línea de comandos que nos aparece tras haber arrancado con nuestro [[http://grml.org][CD de recuperación]], tecleamos:
+
+[18:51:16(godo@surco)~]> mkdir /mnt/temp1
+[18:51:16(godo@surco)~]> mount /dev/hdb1 /mnt/temp1
+[18:51:26(godo@surco)~]> mount -o bind /dev /mnt/temp1/dev
+[18:51:36(godo@surco)~]> mount -o bind /proc /mnt/temp1/proc
+
+Con lo que montamos la partición raíz del sistema GNU/Linux que queremos recuperar en el directorio que nos ofrece nuestro sistema de recuperación: /mnt/temp1. Es decir, ahora mismo nuestro habitual sistema raíz está accesible a través del directorio /mnt/temp1. Tanto es así, que si hacemos:
+
+[18:51:16(godo@surco)~]> cd /mnt/temp1
+[18:51:16(godo@surco)~]> ls
+bin dev initrd lib opt sbin tmp vmlinuz
+boot etc initrd.img media proc srv usr vmlinuz.old
+cdrom home initrd.img.old mnt root sys var
+
+Podemos observar la estructura correspondiente y “navegar” a través de ella. Las líneas que comienzan con "mount -o bind" se utilizan para evitar los problemas de "población dinámica del directorio /dev" por udev (ver [[https://help.ubuntu.com/community/RecoveringUbuntuAfterInstallingWindows#head-bf0ad184b84304b51996a11111a1901667529a80][esto]] para más información).
+
+Sin embargo, nuestra raíz actual es / correspondiente al sistema GNU/Linux de recuperación con el que hemos arrancado, Y NO /mnt/temp1 que es donde está el raíz que correspondería si hubiéramos arrancado normalmente desde nuestro GNU/Linux. ¡OJO, sé que lo que acabo de decir puede resultar algo confuso para un principiante! Aseguraros bien de que lo entendéis, si no, buscad más información.
+
+Podemos cambiar “virtualmente de raíz” con el siguiente comando:
+
+[18:51:16(godo@surco)~]> chroot /mnt/temp1
+
+Una vez fijada la nueva raíz a la que correspondería si arrancáramos desde el disco duro, tenemos que montar las particiones correspondientes al árbol de directorios /boot (donde se encuentra la información de arranque: kernel, datos de grub, etc.) y al árbol /usr (donde se encuentran los binarios o ejecutables de grub y otras herramientas de administración del sistema). Esto lo conseguimos con el siguiente par de comandos:
+
+[18:51:16(godo@surco)~]> mount /dev/hdb2 /boot
+[18:51:16(godo@surco)~]> mount /dev/hdb5 /usr
+
+Recuerda que esto es posible porque previamente hemos modificado la raíz de nuestro sistema de directorios (lo que hemos hecho con chroot).
+
+Ya sólo nos queda ejecutar grub-install para instalar el gestor de arranque en el sector correspondiente al primer disco duro de nuestro sistema: hda. Esto es así porque, habitualmente, los sistemas con dos discos duros están configurados para arrancar desde el primero, pero podría ser de otro modo. Finalizamos nuestra tarea ejecutando:
+
+[18:51:16(godo@surco)~]> /usr/sbin/grub-install /dev/hda
+
+Nos salimos del entorno “chroot” con:
+
+[18:51:16(godo@surco)~]> exit
+
+Y rearrancamos nuestra máquina:
+
+[18:51:16(godo@surco)~]> shutdown -r now
+
+Hemos de tener la precaución de sacar el CD justo cuando comience el encendido, para evitar así que se ejecute otra vez el sistema GNU/Linux de recuperación y obligar a que arranque desde el disco duro.
+
+¡Tachán! Nuestro viejo GRUB vuelve a estar en su sitio.
+
+Y una sonrisa vuelve a brillar en nuestro rostro.
+
+Salud.
+
+--
+
+*16-03-2008 Actualización:*
+
+Una manera rápida de recuperar grub, si conocemos cual es nuestra partición raíz (root == /) en nuestro GNU/Linux es: 1º.- Arrancar con un CD LIVE (recomiendo ultimas versiones de Knoppix).
+2º.- sudo grub
+3º.- grub> root (hd0,4)
+4º.- grub> setup (hd0)
+5º.- grub> quit Siendo hd0 nuestro primer disco duro, en mi portátil por ejemplo es: /dev/sda, y el 4 corresponde con el número de partición donde se encuentra nuestra raíz, en mi caso la raíz "/" está en /dev/sda5. Grub comienza la numeración de las particiones en 0, mientras que el kernel comienza en 1, es por eso que a sda5 le corresponde el 4.
+
+Esto funciona incluso si hemos cambiado el orden de las particiones, como suele ser el caso si hemos cambiado de disco duro y hemos restaurado unas copias de seguridad realizadas con "[[http://www.partimage.org/Main_Page][partimage]]".
+
+*Fin de la actualización*
+
+*30-03-2020 Actualización:*
+
+En el pdf que hay al final de este artículo hay otra forma de hacerlo utilizando un Live CD/USB de la familia derivada de Debian GNU/Linux. Lo encontré redactado para Ubuntu, pero yo lo he probado haciendo lo mismo con MX Linux y también funciona.
+
+*Fin de la actualización*
+
+P.D.: [[/node/279][Aquí]] hablamos de como recuperar el arranque de Windows.\\
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Recovery GRUB with Ubuntu or MxLinux Live USB.pdf][Recovery GRUB with Ubuntu or MxLinux Live USB.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Recuperando%20el%20gestor%20de%20arranque%3A%20Grub][Dejar comentario]].
+

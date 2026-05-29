@@ -1,0 +1,30 @@
+#+title: Un nuevo navegador en mi (¿tu?) escritorio
+#+date: <2005-10-02 23:50>
+#+author: Godofredo Fdez.
+#+description: Como siempre he de comenzar esta historia citando las fuentes que la originan: hace una semana leí aquí que Opera se convertía en gratuito (que no libre ) por amor al arte: sin publicidad, banners, registros para obtener licencias a cambio de datos personales, etc. Me decidí a probarlo empujado por los comentarios que alababan la rapidez con la que carga las páginas web. Mi experiencia previa con él (cuando estaba disponible gratuitamente pero mostraba anuncios en un área nada despreciable de la pantalla) había sido regular: recuerdo que no mostraba, no entendía, el diseño de muchas páginas (nunca me preocupé de si era por estar estas mal construidas o por ser él el malo). Esto hacía que no pudiera confiar en él por defecto, y a la postre siempre acababa con otro navegador (el explorer normalmente, entonces aún trabajaba bastante con windows) abierto en mi escritorio. Yo siempre he sido muy escrupuloso con el consumo de recursos del software... y tener dos navegadores abiertos chocaba frontalmente con mi manía.
+#+filetags: Software
+#+options: _:nil
+#+nid: 52
+
+#+begin_export html
+<a href="http://www.opera.com" target="_self"><img width="120" height="46" border="0" align="right" src="http://www.opera.com/graphics/press/images/logo/Opera_logo2_t.png"></a>
+#+end_export
+Como siempre he de comenzar esta historia citando las fuentes que la originan: hace una semana leí [[http://hronia.blogalia.com/historias/33137][aquí]] que [[http://www.opera.com/][Opera]] se convertía en gratuito (que no [[http://es.wikipedia.org/wiki/Software_Libre][libre]]) por amor al arte: sin publicidad, banners, registros para obtener licencias a cambio de datos personales, etc.
+
+Me decidí a probarlo empujado por los comentarios que alababan la rapidez con la que carga las páginas web. Mi experiencia previa con él (cuando estaba disponible gratuitamente pero mostraba anuncios en un área nada despreciable de la pantalla) había sido regular: recuerdo que no mostraba, no entendía, el diseño de muchas páginas (nunca me preocupé de si era por estar estas mal construidas o por ser él el malo). Esto hacía que no pudiera confiar en él por defecto, y a la postre siempre acababa con otro navegador (el explorer normalmente, entonces aún trabajaba bastante con windows) abierto en mi escritorio. Yo siempre he sido muy escrupuloso con el consumo de recursos del software... y tener dos navegadores abiertos chocaba frontalmente con mi manía.
+
+La experiencia de esta semana de pruebas ha sido bastante buena: Opera carga con rapidez las páginas, entiende bien las hojas de estilo, es ligero y arranca rápido. En el lado malo: he detectado algunos problemas con el javascript, los cuales no he conseguido arreglar y tampoco sé si es por incompatibilidad en el diseño de la página o por mal soporte del mismo por parte del Opera; las fuentes por defecto en el paquete .deb para Debian Sarge GNU/Linux se ven regular, pero permite configurarlas y este problema es fácilmente subsanable.
+
+¿Alguien más lo ha probado (en windows, linux, etc.)? ¿Qué os parece? A mí me sorprende especialmente el soporte de "feeds" o suscripciones a bitácoras, integrándolos, y actulizando los mismos, como si fueran mensajes de correo electrónico no web (thunderbird, outlook, eudora...), la estética minimalista, la capacidad de configuración de las barras de herramientas, etc.
+
+En fin, los seguidores de este rincón habrán observado que desde hace algunos días ha pasado a ser navegador sugerido para la buena visita y navegación...
+
+...espero que os guste y disfrutéis utilizándolo.
+
+Ah! Muchos me dirán que no es libre (aunque sí gratis) y, quizá, se sorprenderán de que lo recomiende aquí. Yo he sido, y sigo siendo, un defensor del software libre, considero a éste como una opción a elegir, casi siempre la primera, pero nunca la única. En este mundo hay cabida para todos: la capacidad de elegir es la principal libertad.
+
+He dicho. ;-)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Un%20nuevo%20navegador%20en%20mi%20%28%C2%BFtu%3F%29%20escritorio][Dejar comentario]].
+

@@ -1,0 +1,30 @@
+#+title: Construyendo nuestra propia bitácora con Drupal - 2ª Parte 
+#+date: <2007-10-07 17:49>
+#+author: Godofredo Fdez.
+#+description: En este nuevo número de Mundo Linux (nº 98) he publicado la segunda parte del artículo que, sobre nuestro querido sistema de gestión de contenidos (CMS -…
+#+filetags: Bitácoras GNU/Linux Publicaciones
+#+options: _:nil
+#+nid: 255
+
+#+begin_export html
+<a href="http://digital.revistasprofesionales.com:8080/View_Ctrl/ml.jsp" target="_self"><img width="170" height="227" border="0" align="right" hspace="10" vspace="10" src="/static/img/ml98.jpg"></a>
+#+end_export
+En este nuevo número de Mundo Linux (nº 98) he publicado la segunda parte del artículo que, sobre nuestro querido sistema de gestión de contenidos (CMS - Content Management System) Drupal, publiqué en "Mundo Linux 95" (más información [[../node/212][aquí]]). Os dejo a continuación la introducción al artículo actual: *Introducción.* /En este punto nos vamos a centrar en la descripción de cada una de las funcionalidades de administración y configuración que nos brinda nuestro gestor de contenidos. Concretamente, nos estamos refiriendo a cada una de las opciones del menú de administración, el cual está disponible para cada uno de los usuarios que poseen dichos permisos. Recordad que nuestro usuario administrador era: "godest"./ /Tras acceder a nuestro sitio web con el usuario administrador del mismo, podemos observar en el menú situado a la izquierda sobre fondo gris, todas las opciones del submenú "administer" En el artículo anterior veíamos como crear un nuevo usuario a través del submenú "user". Y como asignarle permisos apropiados para permitirle realizar ciertas tareas y prohibirle otras: submenú "access control". En los puntos siguientes vamos a ir viendo cada una de las opciones restantes y, en la medida de lo posible, observaremos los efectos de las mismas en nuestro blog./ Y a continuación describimos con detalle cada uno de los siguientes puntos:
+
+#+BEGIN_QUOTE
+  + block
+  + categories
+  + comments
+  + content
+  + input formats
+  + logs
+  + modules (añadir nuevas funcionalidades)
+  + settings
+  + themes
+#+END_QUOTE
+
+Así como los pasos necesarios para actualizar a la siguiente versión de Drupal. Os recomiendo que acudáis rápido a los kioscos si estáis pensando en tener vuestro propio "blog" en Internet, optando por saborear vuestros propios errores y aciertos en lo que a administración de sistemas se refiere frente a los [[http://www.lacoctelera.com/][preparados]](*) que ya existen por ahí. A la espera de que os resulte útil... ...salud. (*) Guiño a mi querido [[http://pantulis.lacoctelera.net/][maestro]], cuyos "post", que necesito, tanto echo de menos. *Actualizado el 10 de abril de 2011* P.D.: podéis conseguir el artículo en pdf [[/files/Admon_Drupalv5_ML98.pdf][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Construyendo%20nuestra%20propia%20bit%C3%A1cora%20con%20Drupal%20-%202%C2%AA%20Parte%20][Dejar comentario]].
+

@@ -1,0 +1,28 @@
+#+title: The power of less
+#+date: <2013-01-01 20:44>
+#+author: Godofredo Fdez.
+#+description: Creo que el comportamiento humano ante casi todas las cosas que afrontamos sigue un patrón muy parecido a este: A una primera fase donde la intensidad de…
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 498
+
+Creo que el comportamiento humano ante casi todas las cosas que afrontamos sigue un patrón muy parecido a este:
+
+#+begin_export html
+<a href="/static/img/transitorio-permanente.png"  rel="lightbox"><img src="/static/img/transitorio-permanente.png" alt="transitorio-permanente" title="transitorio-permanente"  class="image image-preview " width="274" height="256" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+A una primera fase donde la intensidad de nuestra emoción o comportamiento alcanza el máximo, le sigue una segunda donde descubrimos que no todo era tan "bonito" como nos lo habíamos imaginado y atravesamos cierta desilusión o hastío. Aquí pueden darse dos alternativas: a) si lo que nos traemos entre manos de verdad nos ha llegado para formar parte de nosotros, nos vemos en cierta forma en él, volvemos a retomar la ilusión habiendo filtrado mucho de lo superfluo que lo acompañaba; b) si fue simplemente un calentón, una quimera, lo acabamos sacando fuera de nuestra vida. Tanto una cosa como la otra nos construyen: la primera nos aporta positivamente a lo que somos, la segunda no nos resta durante demasiado tiempo. Estos ciclos, donde se alternan el crecimiento y decrecimiento de la ilusión, redescubriendo y filtrando motivos, nos llevan a alcanzar un régimen de convivencia permanente, donde el proceso de integración o adaptación del uno al otro "culmina" (en realidad creo que nunca lo hace pero sí que las oscilaciones son mínimas y las podemos considerar prácticamente despreciables). Cada vez soy más consciente de que en esta época, donde tenemos tantas posibilidades de conocer cosas nuevas, de interactuar con tanta gente distinta, de realizar mil y una actividades, es necesario *simplificar* y *planificar*. Y esto implica ser conscientes de ese régimen transitorio inicial, el cual hemos de saber controlar para llegar al régimen permanente de la manera más sana posible, de tal forma que, si de verdad lo queremos, nos permita acabar integrándolo en nuestra vida. Conocí a [[http://leobabauta.com/][Leo Babauta]] hace ya varios años. Llegué a él buscando por Internet alguna metodología para "hacer las cosas", que me ayudara a planificar mejor todo lo que quería conseguir en mi vida y a ser más productivo. Varias búsquedas en Google me condujeron a "[[http://thepowerofless.com/][The Power of LESS]]", aunque en aquel entonces, y ahora, era mucho más conocido el método "[[http://es.wikipedia.org/wiki/Getting_Things_Done][Getting Things Done]]", de David Allen. Leí los dos y acabé inclinándome por el primero: me pareció mucho más humano, más simple, más natural. Esto no quiere decir que no utilice algunas herramientas del segundo en mi día a día. De hecho, creo que he llegado a construir mi propio método, componiendo un mix de ambos. Pero a lo que iba: Leo es uno de los bloggers más leídos en Internet. Su sitio más famoso es [[http://zenhabits.net/][zenhabits]], donde escribe sobre "maneras de vivir" o "estilo de vida". Tras leer casi el 100% de sus artículos puedo asegurar que Leo y yo somos almas gemelas con un grado de similitud próximo al 90% (tengo algunas discrepancias pero no son significativas). Leo apuesta por vivir una vida mucho más natural, más simple y más auténtica (sana y satisfecha de uno mismo). Y como esta época es muy propicia para pararse a reflexionar sobre el año pasado y pensar qué nos gustaría conseguir en el que llega, te animo a que:
+
+#+BEGIN_QUOTE
+  - Leas el libro "[[http://thepowerofless.com/][The Power of LESS]]": es corto, se lee en muy pocos días, y ayuda mucho a trabajar los siguientes puntos.
+  - Planifiques tus tres cosas importantes. Sí, sólo tres. Es mejor lograr tres que ninguna.
+  - Dirijas tus acciones para intentar conseguir esas tres cosas.
+  - Y que simplifiques tu vida prescindiendo de todo lo superfluo que te resta energía y te distrae de lo importante.
+#+END_QUOTE
+
+*Te deseo que este nuevo año puedas vivirlo lleno de salud y que desde ella seas capaz de conquistar todos tus objetivos*. P.D.: hoy también nace un GodEst de imagen renovada. Inspirada casi al 98% en la imagen del blog "[[http://zenhabits.net/][zenhabits]]". Leo [[http://zenhabits.net/theme/][construyó a mano]] dicho tema para Wordpress y lo comparte de forma desinteresada (merece la pena leer [[http://zenhabits.net/open-source-blogging-feel-free-to-steal-my-content/][su postura ante el copyright]]). Yo he intentado adaptarlo desde cero para Drupal.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=The%20power%20of%20less][Dejar comentario]].
+

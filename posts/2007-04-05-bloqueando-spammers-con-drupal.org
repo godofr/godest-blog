@@ -1,0 +1,25 @@
+#+title: Bloqueando spammers con Drupal
+#+date: <2007-04-05 19:42>
+#+author: Godofredo Fdez.
+#+description: Hoy me han dejado la agradable cifra de 7 comentarios en diversos artículos de este blog. Todos ellos tenían el sugerente título: "people" y en el cuerpo, lo…
+#+filetags: Bitácoras Seguridad
+#+options: _:nil
+#+nid: 218
+
+Hoy me han dejado la agradable cifra de 7 comentarios en diversos artículos de este blog. Todos ellos tenían el sugerente título: "people" y en el cuerpo, lo típico, enlaces a sitios que promocionan.
+
+Se puede conocer la dirección IP desde la que se conectaban para dejar dichos recaditos a través del menú de Drupal: "administer -> logs", buscar los comentarios y pinchar sobre ellos. Era siempre la misma: 195.175.37.6, y haciendo un "[[http://es.wikipedia.org/wiki/WHOIS][whois]]" he obtenido [[http://www.dnsstuff.com/tools/whois/?ip=195.175.37.6][esta información]]. Corresponde a una dirección de la siguiente subred: 195.175.37.0/25, asignada a *ttnet.net.tr*, la cual, supongo, será la subsidiaria para prestar servicios ADSL de *Turk Telekom*.
+
+Con Drupal es muy fácil bloquear a estos seres "robóticos" amigos del incordio, basta con entrar en el menú "administer -> logs -> top visitors", buscar la dirección en cuestión y pulsar sobre el enlace que aparece en su misma fila: "ban". Esto nos llevará a la pestaña "access rules" del menú de administración "administer -> access control", donde aparecerán seleccionadas todas las opciones correspondientes a la regla de bloqueo (Deny / Host / 195.175.37.6) y, por tanto, sólo tendremos que pulsar el botón "Add rule", para activar dicha regla de control de acceso.
+
+Y yo me pregunto, ¿la gente que hace esto creerá que es indetectable, que en Internet todo queda oculto, o simplemente se refugia en la dificultad de denuncia y actuación? Esto último me lleva a una reflexión que, no lo dudo, muestra mi megalomanía: ¿sería posible un defensor del net-ciudadano donde se pudiera dar este tipo de quejas? ¿un organismo capaz de "sancionar" al poseedor de estas IPs (compañía que las tiene asignadas) y obligar que la sanción fuera descendiendo hasta el usuario final que las provoca? Es decir, obligar a la compañía que tire de sus logs y que averigüe cuales de sus conexiones ADSL está haciendo este mal uso (cosa que también es posible y que no cuesta nada). Indudablemente, haría falta una legislación mundial para que este acto, independientemente de donde se cometiera, fuera siempre sancionado de la misma forma. Sería lo más justo. E indudablemente, supongo que habrá pocos países comprometidos hasta este punto pues tendrán temas más importantes que resolver, para los cuales, por desgracia, tampoco existe esa "legislación mundial".
+
+Quedo a la espera de futuros acontecimientos. Y de si necesitan del refinamiento de la técnica.
+
+Seguiremos cuestionándonos dicha medida.
+
+*Actualización 29-04-2007*: más información [[http://godest.vivencias.net/node/18][aquí (spam module)]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Bloqueando%20spammers%20con%20Drupal][Dejar comentario]].
+

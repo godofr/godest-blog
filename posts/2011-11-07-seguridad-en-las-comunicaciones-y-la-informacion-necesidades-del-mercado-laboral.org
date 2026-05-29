@@ -1,0 +1,21 @@
+#+title: Seguridad en las Comunicaciones y la Información: necesidades del mercado laboral
+#+date: <2011-11-07 06:24>
+#+author: Godofredo Fdez.
+#+description: El objetivo de esta jornada es dar a conocer a los alumnos de los últimos cursos de ingenierías los distintos ámbitos de aplicación de la seguridad en las…
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 439
+
+El objetivo de esta jornada es dar a conocer a los alumnos de los últimos cursos de ingenierías los distintos ámbitos de aplicación de la seguridad en las comunicaciones y la información, ofreciendo una perspectiva empresarial de las demandas en este campo y poniendo de manifiesto las oportunidades laborales y necesidades formativas.
+
+Me gustaría veros por allí.
+
+Os dejo la agenda en el archivo adjunto.
+
+Que os sea provechosa.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Jornada Seguridad 16N.pdf][Jornada Seguridad 16N.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20en%20las%20Comunicaciones%20y%20la%20Informaci%C3%B3n%3A%20necesidades%20del%20mercado%20laboral][Dejar comentario]].
+

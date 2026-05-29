@@ -1,0 +1,16 @@
+#+title: Seguridad de la información: soluciones tecnológicas
+#+date: <2010-07-17 23:06>
+#+author: Godofredo Fdez.
+#+description: Universidad de Jaén. XI Cursos universitarios de verano Intendente Olavide. Seguridad y progreso en la red . Del 12 al 16 de julio. La Carolina - Jaén -
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 357
+
+Universidad de Jaén.
+XI Cursos universitarios de verano Intendente Olavide. [[http://www.ujaen.es/serv/continua/cursosverano/revistacarolina2010_tres.pdf][Seguridad y progreso en la red]].
+Del 12 al 16 de julio.
+La Carolina - Jaén -\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20de%20la%20informaci%C3%B3n%3A%20soluciones%20tecnol%C3%B3gicas][Dejar comentario]].
+

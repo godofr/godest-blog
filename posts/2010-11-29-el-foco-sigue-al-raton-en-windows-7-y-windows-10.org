@@ -1,0 +1,38 @@
+#+title: El foco sigue al ratón en Windows 7 y Windows 10
+#+date: <2010-11-29 19:26>
+#+author: Godofredo Fdez.
+#+description: Comprobado que funciona tanto en Windows 7 como en Windows 10. En Windows 8 creo que también lo hace (según he visto en alguna búsqueda en google) pero no lo…
+#+filetags: Configuraciones Software
+#+options: _:nil
+#+nid: 388
+
+Comprobado que funciona tanto en Windows 7 como en Windows 10. En Windows 8 creo que también lo hace (según he visto en alguna búsqueda en google) pero no lo he probado. Si tú lo has probado y me lo quieres confirmar, por favor, [[http://godest.vivencias.net/contact][escríbeme]]. Gracias.
+
+Los que hemos trabajado en un entorno [[http://es.wikipedia.org/wiki/X_Window_System][X Window]] (GNU/Linux y, en general, cualquier tipo de Unix) nos hemos acabado acostumbrando al juego del ratón. En estos entornos el ratón activa la ventana sobre la que se sitúa sin necesidad de hacer click en ningún sitio de esta. Y es más, la ventana es activada aún permaneciendo en segundo plano, es decir, sin pasar a ser la que está encima de todas. Esta última característica es muy útil a la hora de pasar información de unos documentos a otros, comparar, etc.
+
+Así lo explican en el [[http://www.freebsd.org/doc/handbook/x-understanding.html][FreeBSD Handbook]]:
+
+*focus-follows-mouse*
+The window that is under the mouse pointer is the window that has the focus. This may not necessarily be the window that is on top of all the other windows. The focus is changed by pointing at another window, there is no need to click in it as well.
+
+En *Windows 7* (y creo que en el resto también funciona) es fácil obtener este comportamiento con un poco de hacking en el registro (Menú inicio -> Buscar programas y archivos -> regedit).
+
+La siguiente figura muestra el estado ya modificado de la clave de registro que habilita dicho comportamiento(HKEY_CURRENT_USER -> Control Panel -> Desktop):
+#+begin_export html
+<img src="/static/img/registro-xmouse.png"  class="image image-preview " width="500" height="155" border="0" align="center" hspace="10" vspace="10" />
+#+end_export
+Para lograrlo hacemos doble click en el campo "UserPreferencesMask" y modificamos el primer valor: pasamos el *9e* (que tendréis por defecto) a *9f*. Pulsamos aceptar y cerramos la sesión (no hace falta apagar y encender) y volvemos a entrar. El comportamiento de las ventanas ahora es el descrito (focus-follows-mouse).
+
+¡Magnífico! ;-)
+
+*ACTUALIZACIÓN del 19 de abril de 2011* Es un poco molesto que la activación de la ventana que recibe el "foco del ratón" se realice inmediatamente. En windows 7 este efecto hace que, por ejemplo, cuando pulsamos la flechita de la barra de tareas que despliega la "ventanita" con los iconos ocultos, al dirigir el ratón hacia un icono para activar la aplicación la ventanita desaparezca antes de llegar al icono, pues el despliegue que justo acabamos de ordenar se desactiva al transitar sobre la propia barra de tareas. Para evitar este efecto hemos de incluir una nueva clave en el registro tal y como muestra la siguiente figura:
+#+begin_export html
+<img src="/static/img/retardo-activacion-ventana.png"  class="image image-preview " width="500" height="249" border="0" align="center" hspace="10" vspace="10" />
+#+end_export
+*¡OJO!* No confundáis la clave "ActiveWndTrackTimeout", que no vale para nada (respecto a lo que nos ocupa -sospecho que es un error porque no he encontrado información sobre ella-) con la que tenéis que agregar (en mi windows no venía de serie): ActiveWnd*Trk*Timeout (falta la "ac" de "Track"). La figura anterior muestra ambas en su estado final (funcionando el retardo) y la ventanita que muestra como hay que editar la clave que hay que añadir.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=El%20foco%20sigue%20al%20rat%C3%B3n%20en%20Windows%207%20y%20Windows%2010][Dejar comentario]].
+

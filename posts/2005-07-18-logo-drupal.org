@@ -1,0 +1,14 @@
+#+title: logo drupal
+#+date: <2005-07-18 20:42>
+#+author: Godofredo Fdez.
+#+description: Logo del proyecto drupal (sistema gestor de contenidos). Más logos de este proyecto aquí .
+#+filetags: Logos
+#+options: _:nil
+#+nid: 28
+
+Logo del proyecto [[http://www.drupal.org][drupal]] (sistema gestor de contenidos).
+Más logos de este proyecto [[http://drupal.org/node/9070][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=logo%20drupal][Dejar comentario]].
+

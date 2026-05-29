@@ -1,0 +1,35 @@
+#+title: Calendario de eventos... añadido.
+#+date: <2006-03-19 22:03>
+#+author: Godofredo Fdez.
+#+description: Tras recibir innumerables presiones ;-) por parte de nuestra amiga Pili, y con toda razón, he investigado un poco y he conseguido añadir un calendario de eventos donde, los usuarios registrados, podréis dar de alta y compartir con los demás distintas ocasiones de interés. He hecho la prueba añadiendo el evento que se nos avecina este martes: celebración de la primavera, y de algún titulado más, al lado de Alfonso del Valle y de Antonio Bernal ;-) Podemos consultar los eventos que han ido registrando el resto de nuestros vecinos de "esta nuestra bitácora" de dos formas distintas: a) pulsando en el enlace directo que he añadido en la barra principal (barra azul al comienzo de la página con "GodEst" a la izquierda y los "enlaces" a la derecha), que nos lleva directamente al calendario donde estos van siendo reflejados; b) consultando los 6 eventos que están por venir, y según van apareciendo en un cuadrito situado en la parte inferior-derecha de la página principal, en la columna donde aparece el calendario, "el tiempo", etc.
+#+filetags: Bitácoras
+#+options: _:nil
+#+nid: 115
+
+Tras recibir innumerables presiones ;-) por parte de nuestra amiga Pili, y con toda razón, he investigado un poco y he conseguido añadir un calendario de eventos donde, los usuarios registrados, podréis dar de alta y compartir con los demás distintas ocasiones de interés.
+
+He hecho la prueba añadiendo el evento que se nos avecina este martes: celebración de la primavera, y de algún titulado más, al lado de Alfonso del Valle y de Antonio Bernal ;-)
+
+Podemos consultar los eventos que han ido registrando el resto de nuestros vecinos de "esta nuestra bitácora" de dos formas distintas: a) pulsando en el enlace directo que he añadido en la barra principal (barra azul al comienzo de la página con "GodEst" a la izquierda y los "enlaces" a la derecha), que nos lleva directamente al calendario donde estos van siendo reflejados; b) consultando los 6 eventos que están por venir, y según van apareciendo en un cuadrito situado en la parte inferior-derecha de la página principal, en la columna donde aparece el calendario, "el tiempo", etc.
+
+Para lograr esta funcionalidad, y paso ya a terrenos más técnicos, he añadido dos nuevos módulos a nuestro querido gestor de contenidos (CMS) [[http://drupal.org][drupal]]:
+
+- [[http://drupal.org/project/flexinode][flexinode]] - [[http://drupal.org/project/event][event]]
+
+El primero es responsable de definir el tipo de "nodo", en nuestro caso: "Concierto", aunque ya iremos añadiendo más tipos que sean de nuestro interés. El segundo es el responsable de gestionar el calendario/agenda de eventos.
+
+¡La cantidad de cosas que la gente desarrolla para los demás!
+
+...hay tanto que aprender.
+
+Espero que os guste y que sea útil.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Calendario%20de%20eventos...%20a%C3%B1adido.][Dejar comentario]].
+
+** Comentarios
+
+*** Gracias!! ;-) (Pili Cantautora 20/03/2006 - 17:51)
+Buenas! me ha hecho mucha ilusión comprobar que ya tenemos nuestro calendario de eventos :D Por lo del diseño no te preocupes que esto es como todo, poquito a poco se irá perfeccionando. Desde luego hemos inaugurado el calendario con un evento de alto nivel. Hoy he intentado añadir otro, pero la cosa ha ido regular... quería añadir la defensa de José Ignacio, ya me dirás si te ha llegado algo como spam o similar, porque al final no ha salido... A ver si te vamos dando ideas para los tipos de evento: el cumpleaños, por ejemplo, que es un clásico, y no hay que olvidar que este año se nos casan dos godobitácoros, eso es EL EVENTO, con mayúsculas ;-)
+
+Lo dicho, que estoy encantada con nuestro calendario, y el universo de posibilidades que se abre ante nosotros gracias a él... Saluditos!

@@ -1,0 +1,13 @@
+#+title: Dev-C++ 4.0
+#+date: <2005-12-04 23:23>
+#+author: Godofredo Fdez.
+#+description: Dev-C++ es un entorno de programación bajo licencia GNU GPL , que incluye herramientas tan conocidas como: el compilador gcc , el depurador gdb y la…
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 85
+
+[[http://www.bloodshed.net/devcpp.html][Dev-C++]] es un entorno de programación bajo licencia [[http://es.wikipedia.org/wiki/GPL][GNU GPL]], que incluye herramientas tan conocidas como: el compilador [[http://gcc.gnu.org/][gcc]], el depurador [[http://www.gnu.org/software/gdb/gdb.html][gdb]] y la herramienta de gestión de proyectos [[http://www.gnu.org/software/make/manual/html_chapter/make_toc.html][make]]. Existen versiones para Windows y para GNU/Linux.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Dev-C%2B%2B%204.0][Dejar comentario]].
+

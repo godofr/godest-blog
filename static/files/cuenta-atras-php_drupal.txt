@@ -1,0 +1,44 @@
+<br>
+<div class="aviso">
+¡ FALTAN <b><font color="red">
+<?php 
+// Fijamos la timezone que corresponde a España.
+putenv("TZ=CET");
+
+//defino fecha 1
+$hour1 = date("H");
+$minute1 = date("i");
+$second1 = date("s");
+$mes1 = date("n");  
+$dia1 = date("j");  
+$year1 = date("Y"); 
+
+//echo "$hour1-$minute1-$second1--$mes1-$dia1-$year1";
+
+//defino fecha 2
+$ano2 = 2009;
+$mes2 = 9;
+$dia2 = 25;
+
+//calculo timestamp de las dos fechas
+$timestamp1 = mktime($hour1,$minute1,$second1,$mes1,$dia1,$year1);
+$timestamp2 = mktime(22,0,0,$mes2,$dia2,$ano2);
+
+//resto a una fecha la otra
+$segundos_diferencia = $timestamp1 - $timestamp2;
+//echo $segundos_diferencia;
+
+//convierto segundos en días
+$dias_diferencia = $segundos_diferencia / (60 * 60 * 24);
+
+//obtengo el valor absoulto de los días (quito el posible signo negativo)
+$dias_diferencia = abs($dias_diferencia);
+
+//quito los decimales a los días de diferencia
+$dias_diferencia = floor($dias_diferencia);
+
+echo $dias_diferencia; 
+?>
+</font></b> días para la <a href="http://imd.sevilla.org/carrera-nocturna">NOCTURNA DEL GUADALQUIVIR</a> !
+</div>
+<br>

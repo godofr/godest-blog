@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Continuamos con nuestras entregas sobre andLinux. Hoy vamos a ver como se actualiza y optimiza nuestro sistema instalado. ACTUALIZACIÓN Como en cualquier sistema GNU/Linux basado en Debian, con la herramienta apt procedemos así: [root@andLinux godo]# apt-get update [root@andLinux godo]# apt-get upgrade El sistema se actualiza sin ningún problema.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>andLinux (III)</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">11 may. 2012</div><h1 class="post-title"><a href="https://godest.vivencias.net/2012-05-11-andlinux-iii.html">andLinux (III)</a></h1>
+<p>
+Continuamos con nuestras entregas sobre andLinux. Hoy vamos a ver como se actualiza y optimiza nuestro sistema instalado.
+</p>
+
+<p>
+<b>ACTUALIZACIÓN</b>
+</p>
+
+<p>
+Como en cualquier sistema GNU/Linux basado en Debian, con la herramienta <i>apt</i> procedemos así:
+</p>
+
+<pre class="example" id="org891dfd9">
+
+[root@andLinux godo]# apt-get update
+[root@andLinux godo]# apt-get upgrade
+
+</pre>
+
+<p>
+El sistema se actualiza sin ningún problema.
+</p>
+
+<p>
+No obstante, aún quedan paquetes <i>retenidos</i>. Son aquellos que necesitan de otros para actualizarse. Debian en este sentido es muy conservador: siempre que es necesario instalar software nuevo el sistema opta por dejarle decidir al usuario. Otros te inundan el disco duro de software y cuando te das cuenta no tienes espacio.
+</p>
+
+<p>
+Veamos los paquetes retenidos:
+</p>
+
+<pre class="example" id="org74400a6">
+
+[root@andLinux godo]# apt-get upgrade
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias
+Leyendo la información de estado... Hecho
+Los siguientes paquetes se han retenido:
+  bind9-host firefox firefox-3.0 firefox-3.0-branding libbind9-40 libdns45 libisc45 libisccc40 libisccfg40 liblwres40
+0 actualizados, 0 se instalarán, 0 para eliminar y 10 no actualizados.
+
+</pre>
+
+<p>
+Instalamos los dos paquetes que son programas finales, las librerías necesarias se actualizarán solas:
+</p>
+
+<pre class="example" id="org7e8e4c3">
+
+[root@andLinux godo]# apt-get install bind9-host firefox
+
+</pre>
+
+<p>
+Tras la instalación podemos comprobar que nuestra distribución está actualizada al completo:
+</p>
+
+<pre class="example" id="org0c22cee">
+
+[root@andLinux godo]# apt-get upgrade
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias
+Leyendo la información de estado... Hecho
+0 actualizados, 0 se instalarán, 0 para eliminar y 0 no actualizados.
+[root@andLinux godo]#
+
+</pre>
+
+<p>
+<b>ELIMINAMOS LO SOBRANTE</b>
+</p>
+
+<p>
+Comprobamos si ha quedado alguna librería suelta que se pueda borrar. Para eso instalamos la utilidad <i>deborphan</i>:
+</p>
+
+<pre class="example" id="orgc2ab733">
+
+[root@andLinux godo]# apt-get install deborphan
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias
+Leyendo la información de estado... Hecho
+Se instalaron de forma automática los siguientes paquetes y ya no son necesarios.
+  xulrunner-1.9 firefox-3.0-branding
+Utilice «apt-get autoremove» para eliminarlos.
+Se instalarán los siguientes paquetes NUEVOS:
+  deborphan
+0 actualizados, 1 se instalarán, 0 para eliminar y 0 no actualizados.
+Se necesita descargar 0B/81,9kB de archivos.
+Se utilizarán 483kB de espacio de disco adicional después de esta operación.
+Seleccionando el paquete deborphan previamente no seleccionado.
+(Leyendo la base de datos ...
+120392 ficheros y directorios instalados actualmente.)
+Desempaquetando deborphan (de .../deborphan_1.7.27_i386.deb) ...
+Procesando disparadores para man-db ...
+Configurando deborphan (1.7.27) ...
+
+[root@andLinux godo]#
+
+</pre>
+
+<p>
+Antes de seguir nos fijamos en que la herramienta <i>apt</i> ya nos propone que eliminemos paquetes sobrantes:
+</p>
+
+<pre class="example" id="org057c37c">
+
+[root@andLinux godo]# apt-get autoremove
+
+</pre>
+
+<p>
+Ahora vamos a ver que nos dice <i>deborphan</i> respecto a librerías huérfanas, que son aquellas que antes eran necesarias para alguna aplicación pero que ahora ya no lo son:
+</p>
+
+<pre class="example" id="orgc13fbae">
+
+[root@andLinux godo]# deborphan     
+libdb1-compat                                  
+libxml1
+libperl5.10
+libident
+libssl0.9.7
+libungif4g
+cupsys-common
+libgdbmg1
+fileutils
+shellutils
+libnss3-0d
+slang1a-utf8
+libkcddb4
+libdb4.4++
+libbluetooth2
+libltdl3
+libopensync0
+textutils
+libsnmp10
+libmyspell3c2
+libdb4.2
+libdb4.3
+libdb4.4
+libdb4.5
+libiw29
+libmaildir4
+libcurl3
+libgadu3
+libtunepimp5
+gdk-imlib1
+libexiv2-4
+libgpmg1
+libstrigiqtdbusclient0
+libdns45
+libhunspell-1.1-0
+libmikmod2
+libdb3
+librasqal0
+sysvutils
+libsasl7
+libcupsys2
+libpcap0
+libxklavier11
+libmeanwhile1
+libdevmapper1.01
+libgnutls12
+libgnutls13
+libgnutls11
+liblaunchpad-integration0
+[root@andLinux godo]#
+
+</pre>
+
+<p>
+Podemos eliminar todas esas librerías sin ningún problema:
+</p>
+
+<pre class="example" id="orga0efec9">
+
+[root@andLinux godo]# dpkg --purge libdb1-compat libxml1 libperl5.10 libident libssl0.9.7 libungif4g cupsys-common libgdbmg1 fileutils shellutils libnss3-0d slang1a-utf8 libkcddb4 libdb4.4++ libbluetooth2 libltdl3 libopensync0 textutils libsnmp10 libmyspell3c2 libdb4.2 libdb4.3 libdb4.4 libdb4.5 libiw29 libmaildir4 libcurl3 libgadu3 libtunepimp5 gdk-imlib1 libexiv2-4 libgpmg1 libstrigiqtdbusclient0 libdns45 libhunspell-1.1-0 libmikmod2 libdb3 librasqal0 sysvutils libsasl7 libcupsys2 libpcap0 libxklavier11 libmeanwhile1 libdevmapper1.01 libgnutls12 libgnutls13 libgnutls11 liblaunchpad-integration0                                                                                                                     
+(Leyendo la base de datos ... 
+
+</pre>
+
+<p>
+Repetimos el paso varias veces pues hay librerías que son dependencias de otras, y van quedando al descubierto conforme eliminamos éstas últimas. Descubrimos:
+</p>
+
+<pre class="example" id="orgbe9a7f7">
+
+[root@andLinux godo]# deborphan
+libtasn1-2
+liblzo2-2
+libsnmp-base
+liblzo1
+libofa0
+libopencdk8
+libmusicbrainz4c2a
+libopencdk10
+[root@andLinux godo]#
+
+</pre>
+
+<p>
+Y purgamos:
+</p>
+
+<pre class="example" id="org300c496">
+
+[root@andLinux godo]# dpkg --purge libtasn1-2 liblzo2-2 libsnmp-base liblzo1 libofa0 libopencdk8 libmusicbrainz4c2a libopencdk10
+(Leyendo la base de datos ...
+119648 ficheros y directorios instalados actualmente.)
+Desinstalando libtasn1-2 ...
+
+</pre>
+
+<p>
+Hasta que llegamos a tener la distribución totalmente limpia de paquetes innecesarios:
+</p>
+
+<pre class="example" id="orgce39a1d">
+
+[root@andLinux godo]# deborphan
+[root@andLinux godo]#
+
+</pre>
+
+<p>
+Continuará.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=andLinux%20%28III%29">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

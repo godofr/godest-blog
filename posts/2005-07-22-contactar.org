@@ -1,0 +1,59 @@
+#+title: Contactar
+#+date: <2005-07-22 20:38>
+#+author: Godofredo Fdez.
+#+description: - Una parte del proyecto: Godo . - Correo electrónico: - Jabber ID: - Aquí puede encontrar la presentación de este lugar. - Breve descripción de los contenidos…
+#+filetags: 
+#+options: _:nil
+#+nid: 37
+
+- Una parte del proyecto: [[/?q=node/view/13][Godo]].
+
+#+BEGIN_EXAMPLE
+  - Correo electrónico:
+#+begin_export html
+<img src="/static/img/godo_fdez.png" height="17" width="113" border="0" align="center">
+#+end_export
+- Jabber ID:
+#+begin_export html
+<img src="/static/img/godo_fdez.png" height="17" width="113" border="0" align="center">
+#+end_export
+
+#+END_EXAMPLE
+
+- Aquí puede encontrar la [[/node/view/154][presentación]] de este lugar.
+
+- Breve [[/?q=node/view/5][descripción]] de los contenidos que tratamos.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Contactar][Dejar comentario]].
+
+** Comentarios
+
+*** Noches en los jardines del Real Alcázar de Sevilla (Miguel Ángel González 01/07/2007 - 05:56)
+En Sevilla, a 1 de julio de 2007
+
+Estimado Sr./Sra.:
+
+Me pongo de nuevo en contacto con usted para informarle de la realización del ciclo de conciertos NOCHES EN LOS JARDINES DEL REAL ALCÁZAR DE SEVILLA, que se realizará en nuestra ciudad entre los días 9 de julio y 2 de septiembre del presente año.
+
+Por octavo año consecutivo, el Patronato del Real Alcázar y de la Casa Consistorial de Sevilla abre sus puertas en las noches estivales para ofrecer una doble actividad: pasear por sus jardines y disfrutar de conciertos que fomentan el diálogo entre las distintas edades de la música, lectura paralela a la que ofrece el edificio desde el plano arquitectónico.
+
+NOCHES EN LOS JARDINES DEL REAL ALCÁZAR DE SEVILLA se ha consolidado como una de las propuestas culturales más atractivas del verano en nuestra ciudad, con marcados criterios de calidad, que ya se realizó en los siete ediciones anteriores con gran éxito de crítica y de público.
+
+Como en las anteriores ocasiones, la programación recuerda los sonidos de otros siglos y de los hombres y mujeres que nos legaron su música a través del tiempo. Recordaremos la figura de Dietrich Buxtehude, en el 300 aniversario de su muerte, uno de los músicos más interesantes del barroco europeo. Así mismo, 450 años después, recuperaremos los ecos de la vihuela impregnados en los muros del Alcázar, cuando la Alcoba era huerto de naranjos y refugio para las noches de verano, y rendiremos homenaje al salmantino Diego Pisador. También rendiremos homenaje a uno de los músicos más relevantes de la Historia de la Música como es L. V. Beethoven del que este año se celebra el 180 Aniversario de su muerte.
+
+Precisamente en los tiempos de Pisador, en la cercana hospedería del laurel un joven Tenorio escribía las credenciales del más pendenciero y seductor de los hombres, las mismas que lo convertirían en uno de los mitos más universales de la ciudad. En consonancia con la celebración del año cultural dedicado a la figura de Don Juan, el 9 de julio abriremos el cartel de conciertos con un recital dramático-musical a cargo del grupo Cantiana en el que sobresale la joven soprano catalana Anna Escala, que lo hará retornar a las noches de jardines, de música, de apartadas orillas, de lunas puras... Vuelve el mito y pasea por Sevilla, por el Alcázar, al encuentro de sus damas. Pero no vuelve solo. Si soplamos sobre la figura grisácea y polvorienta del personaje encontramos un contorno femenino, la silueta muda de aquellas que han elevado sus impulsos seductores a leyenda, las que lograron su salvación y lo llevaron a la inmortalidad. En definitiva las que sustentaban el mito, un mito con voz de hombre, sin embargo.
+
+Pero no queremos ser convidados de piedra y por eso aprovecharemos este año para cederle la palabra a la mujer, la olvidada, la eterna antagonista. Con su voz, Doña Inés ocupa su sitio y trasciende el tiempo, para desvanecer la fuerza destructiva y dominadora de Don Juan. La voz femenina, el ángel de amor, reconduce su protagonismo y encuentra en las noches de música del Alcázar la escena para poner sus propias notas a la leyenda. En esta apartada orilla, la mujer desvalida, burlada y seducida se ha convertido en idealista y luchadora, valiente y creadora... y se respira mejor.
+
+Si desea saber más sobre esta actividad visite la Web de la actividad:
+www.actidea.com/nochesalcazar2007
+
+Espero que esta actividad sea de su interés.
+
+Reciba un cordial saludo,
+
+Miguel Ángel González
+Productor ejecutivo y Director artístico
+Noches en los jardines del Real Alcázar
+nochesalcazar@actidea.com

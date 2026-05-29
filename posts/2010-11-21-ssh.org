@@ -1,0 +1,20 @@
+#+title: SSH
+#+date: <2010-11-21 19:17>
+#+author: Godofredo Fdez.
+#+description: SSH es una aplicación que vino a sustituir al ajado Telnet. Se utiliza para hacer conexiones a sistemas remotos, permitiendo su administración por un "canal…
+#+filetags: Seguridad Software
+#+options: _:nil
+#+nid: 384
+
+SSH es una aplicación que vino a sustituir al ajado Telnet. Se utiliza para hacer conexiones a sistemas remotos, permitiendo su administración por un "canal seguro" ya que todo el tráfico que se envía desde un sistema hasta el otro está cifrado.
+
+Puedes encontrar más información [[http://es.wikipedia.org/wiki/Secure_Shell][aquí]].
+
+Y en el archivo que adjunto viene una guía de configuración de la implementación libre "OpenSSH". En su día la encontré aquí (http://sial.org/howto/openssh/publickey-auth/) pero hoy esa página ya no responde. Menos mal que la imprimí a un pdf ;-).
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/OpenSSH_Public_Key_Authentication.pdf][OpenSSH\_Public\_Key\_Authentication.pdf]]
+- [[https://godest.vivencias.net/static/files/openssh_public_key_authentication.pdf][openssh\_public\_key\_authentication.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=SSH][Dejar comentario]].
+

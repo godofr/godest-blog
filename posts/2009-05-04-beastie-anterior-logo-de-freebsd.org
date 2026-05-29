@@ -1,0 +1,13 @@
+#+title: Beastie, anterior logo de FreeBSD
+#+date: <2009-05-04 23:18>
+#+author: Godofredo Fdez.
+#+description: Hasta octubre de 2005 este fue el logo del proyecto FreeBSD . Gracioso y simpático, ¿no?
+#+filetags: Logos
+#+options: _:nil
+#+nid: 312
+
+Hasta [[http://logo-contest.freebsd.org/result/][octubre de 2005]] este fue el logo del proyecto [[http://www.freebsd.org/][FreeBSD]]. Gracioso y simpático, ¿no?
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Beastie%2C%20anterior%20logo%20de%20FreeBSD][Dejar comentario]].
+

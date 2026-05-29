@@ -1,0 +1,13 @@
+#+title: Opera v8.5 en Debian Sarge
+#+date: <2005-10-04 23:36>
+#+author: Godofredo Fdez.
+#+description: Aquí podemos ver una captura del navegador Opera en mi Debian Sarge GNU/Linux. El look me resulta verdaderamente atractivo... una buena alternativa para…
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 55
+
+Aquí podemos ver una captura del navegador [[http://www.opera.com][Opera]] en mi Debian Sarge GNU/Linux. El look me resulta verdaderamente atractivo... una buena alternativa para navegar por la "entrered".
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Opera%20v8.5%20en%20Debian%20Sarge][Dejar comentario]].
+

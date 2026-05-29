@@ -1,0 +1,19 @@
+#+title: Máster Universitario Gestión de las Tecnologías de la Información y de las Comunicaciones
+#+date: <2013-05-12 22:05>
+#+author: Godofredo Fdez.
+#+description: El próximo día 20 de mayo de 2013 volveré a impartir una ponencia titulada "Seguridad en Entornos Web" en el Máster Universitario Oficial de la Universidad de…
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 509
+
+El próximo día 20 de mayo de 2013 volveré a impartir una ponencia titulada "Seguridad en Entornos Web" en el Máster Universitario Oficial de la Universidad de Sevilla titulado: [[http://www.mastergtic.us.es/descripcion.php][Gestión de las Tecnologías de la Información y de las Comunicaciones]].
+
+En la ponencia veremos los diferentes tipos de ataques más habituales y relevantes en este tipo de entornos, así como los mecanismos de defensa a adoptar para intentar mitigar el impacto de los mismos.
+
+En esta edición profundizamos en el estudio evolutivo de las amenazas y las medidas de protección. Veremos por qué las defensas tradicionales son vulneradas una y otra vez, y cómo podemos minimizar los riesgos evolucionándolas e implantando una serie de procesos que nos ayuden a realizar una correcta gestión de la seguridad.
+
+Espero que a los asistentes les resulte interesante.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=M%C3%A1ster%20Universitario%20Gesti%C3%B3n%20de%20las%20Tecnolog%C3%ADas%20de%20la%20Informaci%C3%B3n%20y%20de%20las%20Comunicaciones][Dejar comentario]].
+

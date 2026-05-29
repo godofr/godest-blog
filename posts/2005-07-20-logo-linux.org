@@ -1,0 +1,15 @@
+#+title: logo linux
+#+date: <2005-07-20 20:07>
+#+author: Godofredo Fdez.
+#+description: Linux no es más, ni menos, que el kernel de un sistema operativo . El logo que identifica a esta magnífica alternativa es un simpático pingüino llamado Tux .
+#+filetags: Logos
+#+options: _:nil
+#+nid: 31
+
+[[http://es.wikipedia.org/wiki/Linux_%28desambiguaci%C3%B3n%29][Linux]] no es más, ni menos, que el [[http://es.wikipedia.org/wiki/Kernel][kernel]] de un [[http://es.wikipedia.org/wiki/Sistema_operativo][sistema operativo]].
+
+El logo que identifica a esta magnífica alternativa es un simpático pingüino llamado [[http://es.wikipedia.org/wiki/Tux][Tux]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=logo%20linux][Dejar comentario]].
+

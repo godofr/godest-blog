@@ -1,0 +1,20 @@
+#+title: Cantaurores Reunidos de Sevilla
+#+date: <2006-03-28 08:40>
+#+author: Pili Cantautora
+#+description: Descripción: 18:00. El Perro Andaluz. Muy buena hora, buenísima me atrevería a decir... y muy buena música también. Espero que nos veamos por allí (Jose, no te…
+#+filetags: 
+#+options: _:nil
+#+nid: 118
+
+Descripción:
+18:00. El Perro Andaluz.
+
+Muy buena hora, buenísima me atrevería a decir... y muy buena música también. Espero que nos veamos por allí (Jose, no te resistas...
+#+begin_export html
+<img src="/static/img/smileys/tongue.png" title="Sticking out tongue" alt="Sticking out tongue" />
+#+end_export
+)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Cantaurores%20Reunidos%20de%20Sevilla][Dejar comentario]].
+

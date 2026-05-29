@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="¡Enhorabuena a la comunidad Debian! Este fin de semana se ha producido el lanzamiento de la última versión de Debian: 7.0 "Wheezy" . Y he aprovechado para…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Lanzamiento de Debian 7.0 "Wheezy" </title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">05 may. 2013</div><h1 class="post-title"><a href="https://godest.vivencias.net/2013-05-05-lanzamiento-de-debian-7-0-wheezy.html">Lanzamiento de Debian 7.0 "Wheezy" </a></h1>
+<p>
+¡Enhorabuena a la comunidad Debian!
+</p>
+
+<p>
+Este fin de semana se ha producido el lanzamiento de la última versión de <a href="http://www.debian.org/News/2013/20130504.es.html">Debian: 7.0 "Wheezy"</a>. Y he aprovechado para reanimar mi viejo portátil <a href="http://www.notebookcheck.org/Analisis-del-portatil-Dell-Latitude-D430.8773.0.html">DELL Latitude D430</a> (un Core2 Duo de 64bits, con 2GB de RAM y con 6 ó 7 años encima). No he tenido ningún problema con la detección del hardware exceptuando la tarjeta WiFi, que fue correctamente detectada por el instalador, avisándome de que debía instalar el firmware específico de la misma: firmware-b43-installer, que no venía en la imagen ISO utilizada. Cosa que realicé después, cuando finalizó la instalación, conectándome al router por el puerto ethernet y ejecutando:
+</p>
+
+<pre class="example" id="org10f5a7b">
+
+apt-get install  firmware-b43-installer
+
+</pre>
+
+<p>
+El magnífico gestor de paquetes de Debian (siempre he pensado que es uno de los puntos fuertes de esta distribución GNU/Linux y, por tanto, de sus derivadas) se encargó de todo, resolvió todas las dependencias, instaló los paquetes necesarios y hasta se conectó a la web de Broadcom Corporation para bajarse el último firmware disponible. Justo en ese momento, sin reinicios, el interfaz WiFi se activó, detectó las redes disponibles y&#x2026; ¡listo!
+</p>
+
+<p>
+Como ya he explicado en otros artículos de este blog, llegué a Debian tras haber probado otras distribuciones y jamás me he planteado cambiar desde entonces: su producto es impecable y <a href="http://www.debian.org/social_contract.es.html">su "filosofía" es la mía</a>. A familiares y amigos con un perfil menos técnico les recomiendo <a href="http://www.ubuntu.com/">Ubuntu</a>, que mantiene muchas de las buenas cualidades de Debian y está algo más dulcificada en, al menos, el proceso de instalación: relaja más las restricciones entre el software totalmente libre y el que no -cosa que Debian trata con mucho escrúpulo-, y evita así poner en aprietos, como el que he comentado en el primer párrafo, a usuarios menos duchos.
+</p>
+
+<p>
+Antiguamente utilizaba el escritorio <a href="http://www.kde.org/">KDE</a>, pero llevo ya tiempo utilizando <a href="http://www.xfce.org/">XFCE</a>. Siempre me ha gustado disponer de un entorno lo más simple posible: no quiero filigranas de efectos gráficos que llegan a marear, degradados de colores, transparencias, programitas corriendo y lanzándote mensajitos, etc., porque creo que no ayudan a nada, distraen y sólo ralentizan la máquina. Así, he partido de <a href="http://cdimage.debian.org/debian-cd/7.0.0/amd64/bt-cd/debian-7.0.0-amd64-xfce-CD-1.iso.torrent">este disco de instalación específico para el entorno XFCE</a> <b>y procesador de 64bits</b>, lo he grabado en un USB desde otro ordenador con Windows utilizando <a href="http://www.linuxliveusb.com/">LiLi</a>, y he comenzado la instalación desde cero, particionando y formateando&#x2026; sin problemas.
+</p>
+
+<p>
+<b>Debian trae todo lo que necesito para trabajar</b>:
+Para programar: gcc, gdb, emacs, python, php&#x2026;
+Para “vivir” en Internet: iceweasel (versión renombrada de Firefox) y google chrome (<a href="http://godest.vivencias.net/content/instalando-google-chrome-en-debian-gnulinux">aquí explico como instalarlo</a>) con los que tengo acceso a todos los servicios que suelo utilizar.
+Para escribir, llevar mi pequeña contabilidad, hacer alguna presentación, leer documentos descargados, algún retoque fotográfico/montaje de imágenes&#x2026; tareas de “oficina” en general: libreoffice, epdfview, gimp.
+Administración, redes y seguridad: todo lo que sea necesario, baste mencionar que <a href="http://www.kali.org/">Kali Linux</a>, distribución heredera de backtrack, especializada para la realización de test de penetración, está basada en Debian, con lo que es fácil encontrar herramientas/paquetes.
+El cliente de dropbox funciona perfectamente.
+</p>
+
+<p>
+Y lo mejor de todo: ¡el portátil va como un tiro!
+</p>
+
+<p>
+Me quedan las siguientes tareas pendientes y <b>agradezco sugerencias</b>:
+1.- PRIORITARIO - Realizar backups de la/s partición/es ext4 de forma incremental a ser posible. Por si ocurre alguna “tragedia” poder restaurar todo el sistema. En su día utilicé “partimage”, pero no se si sigue siendo la mejor opción. Me gustaría tenerlo en ejecución en background, o programar alguna tarea, de tal manera que cada cierto tiempo, supongamos que un mes, el sólo se ejecute y haga el backup incremental de la partición.
+</p>
+
+<p>
+2.- UNA DUDA - ¿Qué software de virtualización tiene mejor rendimiento para virtualizar sobre él un Windows XP? Yo creo que <a href="http://wiki.debian.org/VMware">VMware-Player</a> es la mejor opción, pero&#x2026;
+</p>
+
+<p>
+3.- SIN IMPORTANCIA - Descubrir un reproductor de música simple, al estilo de <a href="http://www.foobar2000.org/">“foobar2000”</a> (o incluso más simple aún) que es el que suelo utilizar cuando trabajo en Windows. Básicamente lo que busco es poder asociar un directorio donde se encuentra toda la música (en subdirectorios por autor) al programa, como si de un repositorio se tratara, que éste autorefresque los cambios y me deje reproducir en un par de clicks una determinada carpeta. Es muy importante que sea pequeño en ocupación de disco, no quiero cosas espectaculares que aconsejan reproducciones, etc., estilo Amarok, rythmbox (creo) y similares. Algo pequeñito y útil.
+</p>
+
+<p>
+4.- CREATIVO - cualquier otra cosa que se os ocurra: aconsejarme probar un determinado programa, dejar de utilizar uno porque otro lo supera&#x2026; servicios y opciones útiles.
+</p>
+
+<p>
+¡Animaros a disfrutar de Debian!
+</p>
+
+<p>
+Os espero para compartir ;-)
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Lanzamiento%20de%20Debian%207.0%20%22Wheezy%22%20">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

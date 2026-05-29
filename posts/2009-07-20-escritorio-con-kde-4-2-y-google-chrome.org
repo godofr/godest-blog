@@ -1,0 +1,13 @@
+#+title: Escritorio con KDE 4.2 y Google Chrome
+#+date: <2009-07-20 22:11>
+#+author: Godofredo Fdez.
+#+description: Aquí podéis ver como queda el navegador de Google, versión inestable de Chrome para GNU/Linux, instalado en la distribución Debian "testing" y utilizando como…
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 332
+
+Aquí podéis ver como queda el navegador de Google, versión inestable de Chrome para GNU/Linux, instalado en la distribución Debian "testing" y utilizando como entorno de escritorio KDE 4.2
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Escritorio%20con%20KDE%204.2%20y%20Google%20Chrome][Dejar comentario]].
+

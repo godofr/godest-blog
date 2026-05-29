@@ -1,0 +1,67 @@
+#+title: Drupal. Clean-URL con lighttpd
+#+date: <2009-05-12 01:11>
+#+author: Godofredo Fdez.
+#+description: Aunque en mi proveedor de hosting el servidor utilizado es el inestimable apache , en casa prefiero optar por un servidor web que sea algo más ligero, por eso…
+#+filetags: Bitácoras Configuraciones FreeBSD GNU/Linux
+#+options: _:nil
+#+nid: 318
+
+Aunque en mi proveedor de hosting el servidor utilizado es el inestimable [[http://www.apache.org/][apache]], en casa prefiero optar por un servidor web que sea algo más ligero, por eso trabajo con [[http://www.lighttpd.net/][lighttpd]].
+
+Para trabajar con la versión de pre-producción de mi [[http://drupal.org][Drupal]] habilitando el "/formato limpio de URL/", conocido en el argot como [[http://drupal.org/node/15365][clean-url]], en el que desaparecen de las direcciones web símbolos y demás caracteres sobrantes utilizados, normalmente, en las consultas realizadas a las bases de datos, he retocado un par de ficheros de configuración que indico a continuación.
+
+1.- El fichero de configuración de lighttpd:
+
+#+BEGIN_EXAMPLE
+  alpechin:/etc/lighttpd# emacs lighttpd.conf
+#+END_EXAMPLE
+
+En el que añadimos al final la siguiente línea:
+
+#+begin_example
+
+### Habilitamos cleanURL en drupal
+server.error-handler-404 = "/index.php"
+
+#+end_example
+
+2.- Y añadimos el siguiente código al final del fichero:
+
+#+BEGIN_EXAMPLE
+  /var/www/drupal.alpechin/sites/default]> emacs settings.php
+#+END_EXAMPLE
+
+#+begin_example
+
+if (strpos($_SERVER['SERVER_SOFTWARE'], 'lighttpd') !== false) {
+    $_lighty_url = $base_url.$_SERVER['REQUEST_URI'];
+    $_lighty_url = @parse_url($_lighty_url);
+
+    if ($_lighty_url['path'] != '/index.php' && $_lighty_url['path'] != '/update.php' && $_lighty_url['path'] != '/') {
+        $_SERVER['QUERY_STRING'] = $_lighty_url['query'];
+        parse_str($_lighty_url['query'], $_lighty_query);
+        foreach ($_lighty_query as $key => $val)
+            $_GET[$key] = $_REQUEST[$key] = urldecode($val);
+        $_GET['q'] = $_REQUEST['q'] = urldecode(substr($_lighty_url['path'], 1));
+    }
+}
+
+#+end_example
+
+3.- Rearrancamos lighttpd:
+
+#+begin_example
+
+alpechin:~# /etc/init.d/lighttpd restart
+
+#+end_example
+
+4.- Y habilitamos las clean-url aquí: /admin/settings/clean-urls
+
+Y a seguir disfrutando.
+
+P.D.: Este código ha sido construido tras buscar mucho en google. Incorpora todos los parches que he ido encontrando para evitar disfunciones, y por ahora ha funcionado siempre, con todos los módulos que suelo tener instalados y con los que voy probando. Si quieres dejarme alguna puntualización/sugerencia, por favor, deja un comentario. Gracias.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Drupal.%20Clean-URL%20con%20lighttpd][Dejar comentario]].
+

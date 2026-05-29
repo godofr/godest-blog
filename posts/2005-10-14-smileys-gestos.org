@@ -1,0 +1,19 @@
+#+title: Smileys = ¿Gestos?
+#+date: <2005-10-14 20:40>
+#+author: Godofredo Fdez.
+#+description: Hola. Simplemente informaros de que ya está disponible la imagen que os muestra como obtener las "caritas" que expresan "emociones". Para conseguirlas debéis…
+#+filetags: Desde_ti
+#+options: _:nil
+#+nid: 64
+
+Hola.
+
+Simplemente informaros de que ya está disponible la [[http://godest.bitacoras.com/?q=node/63][imagen]] que os muestra como obtener las "caritas" que expresan "emociones".
+
+Para conseguirlas debéis insertar en vuestro texto el "acronym" (segunda columna en la imagen) correspondiente. En algunos hay varias formas disponibles, basta con elegir una de ellas.
+
+Salud y diversión.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Smileys%20%3D%20%C2%BFGestos%3F][Dejar comentario]].
+

@@ -1,0 +1,33 @@
+#+title: Configurando Firefox
+#+date: <2008-05-25 13:19>
+#+author: Godofredo Fdez.
+#+description: Firefox es uno de los navegadores web más utilizados a pesar de no venir de serie con los sistemas operativos tipo Windows pues, obviamente, Microsoft tiende a…
+#+filetags: Seguridad Software
+#+options: _:nil
+#+nid: 281
+
+[[http://es.wikipedia.org/wiki/Firefox][Firefox]] es uno de los navegadores web más utilizados a pesar de no venir de serie con los sistemas operativos tipo Windows pues, obviamente, Microsoft tiende a posicionar su propio navegador: [[http://es.wikipedia.org/wiki/Internet_Explorer][Internet Explorer]]. En el mundo Unix - GNU/Linux es común encontrar a Firefox instalado en casi todos los sistemas operativos actuales, en [[http://www.debian.org][Debian GNU/Linux]] (no se si alguna vez he dicho por aquí ;-) que es mi distribución preferida), por motivos de licencias de imágenes, se decidió cambiar el nombre a "[[http://es.wikipedia.org/wiki/Iceweasel][IceWeasel]]".
+
+Mucho se ha venido escribiendo sobre la guerra librada por los diferentes navegadores (una graciosa animación ya compartimos [[file:node/265][), algunos argumentos utilizados a favor de firefox eran estos: un respeto escrupuloso por los estándares web, más rápido en la carga de páginas, y menos fallos de seguridad. Sólo por el primero nombrado merece la pena apoyar su uso y expansión: los estándares nos hacen más libres. Respecto a la seguridad soy bastante escéptico no sólo con este tipo de software sino con todo, creo que es prácticamente imposible permanecer al margen de estos problemas, y cada vez]] [[http://barrapunto.com/articles/08/05/13/1442221.shtml][van cayendo más mitos]]. Creo que la única estrategia válida es la de la disminución del tiempo de reacción: hacer lo más pequeño posible el tiempo que transcurre entre el descubrimiento de una vulnerabilidad y la implementación de su solución (parche).
+
+Os dejo aquí algunos de los puntos de configuración de firefox que suelo seguir cada vez que lo instalo, *sólo los puntos 3 y 4 tienen que ver con la seguridad*:
+
+1.- Editar - Preferencias - Principal (si trabajas con el sistema operativo Windows, sustituye "Editar - Preferencias" por "Herramientas - Opciones", para este punto y los siguientes), sección Inicio: podemos abrir varias pestañas mostrando cada una de ellas una página de inicio (útil para hacer un seguimiento diario), si escribimos en el formulario cada una de las páginas a abrir separadas por el carácter: | (pulsar simultáneamente las teclas: "Alt Gr" y "1").
+
+2.- Editar - Preferencias - Principal, sección Descargas: selecciono "Cerrarla cuando finalicen todas las descargas" y "Preguntarme siempre dónde guardar los archivos".
+
+*3*.- Editar - Preferencias - Privacidad, no selecciono nada, excepto: "Aceptar cookies de las webs" (hay páginas que no funcionan bien si quitamos esta selección) y "Limpiar siempre la información privada cuando cierre firefox". En este último punto hemos de presionar el botón "Configuración" que aparece a la derecha y *seleccionarlo todo*.
+
+*4*.- Editar - Preferencias - Seguridad, sección "Contraseñas", quitar la selección a "Recordar contraseñas de los sitios".
+
+5.- Editar - Preferencias - Avanzado, selecciono "Buscar texto mientras se escribe". Característica bastante útil para encontrar una palabra en la página que estamos consultando.
+
+¿Algo más que añadir?
+
+P.D.: Me ha parecido muy interesante la entrevista que [[http://www.expansion.com/][Expansión]] realiza a Tristan Nitot, presidente de Mozilla Europa. Ver archivo adjunto.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/presi-moz-eu.pdf][presi-moz-eu.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Configurando%20Firefox][Dejar comentario]].
+

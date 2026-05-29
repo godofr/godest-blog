@@ -1,0 +1,13 @@
+#+title: Apertura española
+#+date: <2006-02-24 20:00>
+#+author: Godofredo Fdez.
+#+description: Esta apertura es una de las más utilizadas en la actualidad, a pesar de su vejez. Su creador fue el extremeño Ruy López , por lo que también se le conoce con este nombre. Una de las variantes puestas de moda es la defensa berlinesa (la mostrada aquí, elegida con el movimiento 3. ...C3AR), aunque ahora parece que está siendo refutada , para mayor información mirad esto .
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 104
+
+Esta [[http://es.wikipedia.org/wiki/Apertura_espa%C3%B1ola][apertura]] es una de las más utilizadas en la actualidad, a pesar de su vejez. Su creador fue el extremeño [[http://es.wikipedia.org/wiki/Ruy_L%C3%B3pez_de_Segura][Ruy López]], por lo que también se le conoce con este nombre. Una de las variantes puestas de moda es la [[http://en.wikipedia.org/wiki/Ruy_Lopez#Berlin_Defence][defensa berlinesa]] (la mostrada aquí, elegida con el movimiento 3. ...C3AR), aunque ahora parece que está siendo [[http://buscon.rae.es/draeI/SrvltGUIBusUsual?TIPO_HTML=2&LEMA=refutar][refutada]], para mayor información mirad [[http://chessbase.com/espanola/newsdetail2.asp?id=4048][esto]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Apertura%20espa%C3%B1ola][Dejar comentario]].
+

@@ -1,0 +1,36 @@
+#+title: Configurando i3 window manager en Debian/Raspbian
+#+date: <2020-01-18 09:26>
+#+author: Godofredo Fdez.
+#+description: Inspirado en este artículo: https://github.com/addy-dclxvi/i3-starterpack (gracias a tu alma generosa por compartir). Yo lo tengo todo en MEGA, así lo comparto…
+#+filetags: 
+#+options: _:nil
+#+nid: 575
+
+Inspirado en este artículo:
+https://github.com/addy-dclxvi/i3-starterpack (gracias a tu alma generosa por compartir).
+
+Yo lo tengo todo en MEGA, así lo comparto entre la Raspberry y mi portátil con Debian, además de facilitarme las copias de seguridad (cosa que explicaré en otro artículo). Por tanto, lo que hago para crear la estructura de archivos y directorios implicados es utilizar enlaces simbólicos a los mismos.
+
+[09:15:55(godo@surco)~]> ln -s MEGA/Raspberry3Bplus/puntoconfig/fonts .fonts
+[09:16:19(godo@surco)~]> ln -s MEGA/Raspberry3Bplus/puntoconfig/urxvt .urxvt
+[09:16:35(godo@surco)~]> ln -s MEGA/Raspberry3Bplus/puntoconfig/Xresources .Xresources
+[09:17:25(godo@surco)~]> ln -s MEGA/Raspberry3Bplus/puntoconfig/xsettingsd .xsettingsd
+
+Los otros archivos y directorios implicados están situados en este directorio:
+
+[09:17:49(godo@surco)~]> lla .config
+lrwxrwxrwx 1 godo godo 22 ene 18 08:53 .config -> MEGA/surco/puntoconfig
+
+Y en concreto son estos:
+[09:25:15(godo@surco)~/.config]> lla
+total 24
+drwxr-xr-x 5 godo godo 4096 ene 18 08:56 .
+drwxr-xr-x 6 godo godo 4096 ene 18 08:56 ..
+-rwxr-xr-x 1 godo godo 1227 ene 18 08:56 compton.conf
+drwxr-xr-x 2 godo godo 4096 ene 18 08:56 dunst
+drwxr-xr-x 2 godo godo 4096 ene 18 08:56 i3
+drwxr-xr-x 2 godo godo 4096 ene 18 08:56 i3status\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Configurando%20i3%20window%20manager%20en%20Debian%2FRaspbian][Dejar comentario]].
+

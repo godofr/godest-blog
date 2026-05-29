@@ -1,0 +1,30 @@
+#+title: Ejecutar un script interactivo *justo antes* de apagar KDE4
+#+date: <2009-06-02 23:25>
+#+author: Godofredo Fdez.
+#+description: Ya vimos aquí por qué necesito hacer este tipo de cosas. Ahora, que permanezco en GNU/Linux Debian testing y que comienzo a disfrutar del formidable KDE4, veo que lo que explicaba en dicho artículo no funciona.
+#+filetags: Configuraciones GNU/Linux
+#+options: _:nil
+#+nid: 323
+
+Ya vimos [[/node/183][aquí]] por qué necesito hacer este tipo de cosas. Ahora, que permanezco en GNU/Linux Debian testing y que comienzo a disfrutar del formidable KDE4, veo que lo que explicaba en dicho artículo no funciona.
+
+Tras investigar un poquito (con ayuda de google) descubro que en KDE4 se ha sustituido a "dcop" por "dbus", por lo que la llamada a *ksmserver* para guardar la sesión y apagar el sistema ya no la puedo hacer como la venía haciendo, sino como he leído [[http://linux-tipps.blogspot.com/2008/08/standbysuspend-to-ram-with-dbus-in-kde.html][aquí]] (en una sola línea):
+
+#+begin_example
+
+dbus-send --session --dest=org.kde.ksmserver --type=method_call --print-reply /KSMServer org.kde.KSMServerInterface.logout int32:-1 int32:2 int32:2
+
+#+end_example
+
+Además he descubierto lo complicado que es añadir una aplicación al panel si esta no figura listada en el "menú K". Si figura listada en dicho menú basta con pinchar sobre ella con el botón derecho del ratón y seleccionar la opción: "Añadir al panel", pero si no... ¡es casi imposible!. Así, lo que he hecho para añadir mi script, que hace la copia de seguridad y luego apaga la máquina, es lo siguiente:
+
+1.- He añadido el script al "menú K" dentro del submenú "Objetos perdidos". ¿Cómo? Pinchamos con el botón derecho del ratón sobre la "K" y elegimos "Editor de menús". Una vez dentro del "Editor de menús" seleccionamos el submenú "Objetos perdidos" (yo ya lo tenía creado y en el residía la aplicación kdiff3), o cualquier otro que nos interese, y pulsamos sobre el icono que hay en la fila superior: "Nuevo elemento". Ponemos el nombre del "nuevo elemento", pulsamos aceptar, buscamos el icono que más nos guste y la "orden", es decir el script, navegando por los directorios de nuestra máquina hasta seleccionarlo.
+2.- Una vez añadida dicha aplicación/script al "menú K" es muy fácil añadirla al panel: navegamos hasta ella, la pinchamos con el botón derecho del ratón y seleccionamos: "Añadir al panel".
+
+¡Listo!\\
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Standby-suspend-kde4.txt][Standby-suspend-kde4.txt]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Ejecutar%20un%20script%20interactivo%20%2Ajusto%20antes%2A%20de%20apagar%20KDE4][Dejar comentario]].
+

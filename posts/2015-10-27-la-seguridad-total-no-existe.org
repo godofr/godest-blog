@@ -1,0 +1,17 @@
+#+title: La seguridad total NO EXISTE
+#+date: <2015-10-27 22:56>
+#+author: Godofredo Fdez.
+#+description: Creo que soy afortunado por poder dedicarme profesionalmente a aquello que me gusta: el mundo de las redes y la seguridad. En este blog tienes mucha…
+#+filetags: 
+#+options: _:nil
+#+nid: 541
+
+Creo que soy afortunado por poder dedicarme profesionalmente a aquello que me gusta: el mundo de las redes y la seguridad. En este blog tienes mucha información a este respecto. Navega por las diferentes categorías que puedes encontrar en la columna de la derecha.
+
+Y si lo disfrutas, por favor, interacciona. Seguro que nos podemos enriquecer mútuamente.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=La%20seguridad%20total%20NO%20EXISTE][Dejar comentario]].
+

@@ -1,0 +1,39 @@
+#+title: Unas vistas al windows
+#+date: <2004-08-14 21:49>
+#+author: Godofredo Fdez.
+#+description: Para todos aquellos que llevamos tiempo trabajando con linux y estamos acostumbrados a la flexibilidad que este muestra respecto a lo que a entornos gráficos se refiere (y respecto a tantas otras aplicaciones, servicios, etc.), junto con la riqueza de configuración de la que disponemos a la hora de seleccionar: marcos de ventanas, menús, disposición de objetos en la pantalla, iconos, etc.; cuando nos vemos obligados a trabajar con windows y con su "cerrado" y limitado entorno gráfico: siempre la misma barra de tareas, siempre los mismos menús llenos de aplicaciones que no son nuestras favoritas, y clasificados sin ninguna utilidad respecto a más utilizados (últimamente lo han querido arreglar mostrando sólo aquellas que, se supone, más utilizamos lo cual a veces nos hace incurrir en esperas y búsquedas innecesarias), etc., nos sentimos en cierto modo limitados y sin ese gusto que sentimos cuando miramos nuestro sistema linux y vemos que lo hemos modelado a nuestra imagen y semejanza.
+#+filetags: Software
+#+options: _:nil
+#+nid: 12
+
+Para todos aquellos que llevamos tiempo trabajando con linux y estamos acostumbrados a la flexibilidad que este muestra respecto a lo que a entornos gráficos se refiere (y respecto a tantas otras aplicaciones, servicios, etc.), junto con la riqueza de configuración de la que disponemos a la hora de seleccionar: marcos de ventanas, menús, disposición de objetos en la pantalla, iconos, etc.; cuando nos vemos obligados a trabajar con windows y con su "cerrado" y limitado entorno gráfico: siempre la misma barra de tareas, siempre los mismos menús llenos de aplicaciones que no son nuestras favoritas, y clasificados sin ninguna utilidad respecto a más utilizados (últimamente lo han querido arreglar mostrando sólo aquellas que, se supone, más utilizamos lo cual a veces nos hace incurrir en esperas y búsquedas innecesarias), etc., nos sentimos en cierto modo limitados y sin ese gusto que sentimos cuando miramos nuestro sistema linux y vemos que lo hemos modelado a nuestra imagen y semejanza.
+
+Bien, habitualmente la capa del sistema operativo que se relaciona con el usuario ha sido denominada shell (palabra que, en inglés, significa concha, como la que muestran algunas almejas y moluscos). Antiguamente la shell era simplemente el intérprete de comandos (a los que vienen del MS-DOS, el querido command.com les será familiar, los más avanzados también conocerán [[http://jpsoft.com/][4DOS y 4NT]]; a los que se han movido en linux con toda seguridad estarán acostumbrados a [[http://www.gnu.org/software/bash/bash.html][bash]] (el que utilizan por defecto casi todas las distribuciones), pero también hay otros: [[http://www.tcsh.org/Home][tsch]], [[http://sourceforge.net/projects/zsh/][zsh]], etc.), pero últimamente, con los entornos gráficos de ventanas y/o los sistemas de escritorio gráfico (los llaman de muchas formas) el concepto de shell se ha extendido a todo aquello que sirve para interactuar con el usuario: marcos de ventanas, barras de tareas, botones de ampliar y cerrar ventanas, menús, etc.
+
+Pues bien, en windows también podemos encontrar shells alternativas y gratuitas, algunas de ellas, como mi preferida, con licencia [[http://www.gnu.org/][GNU]] (¿por qué será?). Un par de sitios para comenzar a buscar y leer sobre ellas son: [[http://www.shellfront.org/][ShellFront]] y [[http://shell-shocked.org/][Shell-Shocked]].
+
+Mi preferida, LiteStep, que pretende emular el comportamiento de windowmanagers muy utilizados y vistosos en linux como: [[http://www.afterstep.org][afterstep]], [[http://windowmaker.org/][windowmaker]], etc. puede ser encontrada en: [[http://www.dev.litestep.net/][LsDev]], siendo este el sitio donde se albergan los principales desarrollos de la misma y donde se recopilan enlaces a demás repositorios de módulos (programas que se integran en la shell añadiéndole funcionalidades: calendarios, indicadores de recursos como: memoria libre, espacio de discos duros, etc., barras de tareas con diferente formato gráfico, etc.), temas gráficos, forums... El más completo de estos repositorios que he sido capaz de encontrar es [[http://www.litestep.net/][LiteStep.net]] (hace falta crearse un usuario y una password para tener acceso, desconozco cual es su objetivo). Si os decidís a instalarla, os aconsejo buscar el Omar's LS Installer, descargarlo a vuestro PC, hacer doble click sobre él y...
+
+En fin, no añado capturas gráficas porque mi espacio web es escaso, pero os recomiendo que, si estáis obligados a utilizar windows, y si os ilusiona tener un entorno de trabajo que rezume vuestra personalidad, y adaptado a vuestros gustos, os deis una vuelta por alguno de los enlaces que he apuntado en los dos párrafos anteriores, accedáis a las secciones de temas (themes) y veáis en vuestro navegador algunas de las capturas de pantalla... no habrá vuelta atrás.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Unas%20vistas%20al%20windows][Dejar comentario]].
+
+** Comentarios
+
+*** Otro más (Anónimo 03/10/2004 - 20:06)
+www.emergedesktop.org
+
+Fdo: Epaminondas ;-)\\
+
+*** util y lenguaje muy claro (Anónimo 05/10/2004 - 15:20)
+Soy Antonio, arorta. Me ha pasado pablo la url de tu página. Y bueno me ha gustado muxo.
+Respecto a este artículo pues que es muy interesante y supongo que estará muy probado este "shell" por tu parte y tiene poco impacto negativo en el sistema.
+Respecto a la web no esta mal, pero... consigue un plugin en "Español" cuanto antes. Pues las etiquetas estan en ingles y el contenido en Español.
+
+*** ...muy estable (Anónimo 05/10/2004 - 15:56)
+Gracias, Antonio, por tu comentario y por participar en este cachito de red que compartimos.
+Respecto a tu suposición de "muy probado este shell" decirte que yo llevo casi un año con él y nunca he tenido un "cuelgue", eso sí, algunos instaladores de programas (los menos, creo que uno o dos en todo este tiempo) buscan alguna integración con la shell por defecto en windows y, al no encontrarla no quieren instalarse. Yo en ese caso lo que hago es cambiar a la shell de windows, instalarlos y volver a cambiar a LiteStep... ¡Todo continua yendo bien!
+Respecto al "plugin" en español, drupal, el cms que utilizo, tiene un desarrollo muy activo y entre versión y versión suelen cambiar muchas cositas, entre ellas el módulo de selección de idiomas... esperemos que cuando quede estable sea capaz de añadirlo aquí. Tiempo al tiempo.
+
+Muchas gracias por tus comentarios. Sigo esperándolos. Toda opinión razonada es útil. :-)

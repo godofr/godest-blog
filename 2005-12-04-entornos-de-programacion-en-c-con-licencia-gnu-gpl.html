@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Se me ha ocurrido tratar este tema mientras pensaba en como ayudar a aquellas personas que no disponen de suficientes destrezas, ni de suficientes ganas de experimentar ;-) con un entorno GNU/Linux, y sin embargo se ven obligadas (por sus estudios, principalmente) a programar en lenguaje C . Como su título indica este artículo habla de los medios necesarios para crear un entorno de programación C . Voy a plantear dos alternativas, recomendándoos encarecidamente que os decidáis por la primera de ellas, aunque os suponga un mayor esfuerzo al comienzo y una mayor dedicación de tiempo. Si no disponéis de este tiempo necesario, no dejéis de leer, en la segunda alternativa encontraréis una posible vía rápida.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Entornos de programación en C (con licencia GNU/GPL)</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">04 dic. 2005</div><h1 class="post-title"><a href="https://godest.vivencias.net/2005-12-04-entornos-de-programacion-en-c-con-licencia-gnu-gpl.html">Entornos de programación en C (con licencia GNU/GPL)</a></h1>
+<p>
+Se me ha ocurrido tratar este tema mientras pensaba en como ayudar a aquellas personas que no disponen de suficientes destrezas, ni de suficientes ganas de experimentar ;-) con un entorno GNU/Linux, y sin embargo se ven obligadas (por sus estudios, principalmente) a programar en lenguaje C. Como su título indica este artículo habla de los medios necesarios para crear un entorno de programación C. Voy a plantear dos alternativas, recomendándoos encarecidamente que os decidáis por la primera de ellas, aunque os suponga un mayor esfuerzo al comienzo y una mayor dedicación de tiempo. Si no disponéis de este tiempo necesario, no dejéis de leer, en la segunda alternativa encontraréis una posible vía rápida. Las alternativas se distinguen por el sistema operativo que utilizamos para trabajar con nuestra máquina: la primera de ellas se plantea en un sistema GNU/Linux (os sugiero <a href="http://www.debian.org">debian</a>, por supuesto }:-)), la segunda se plantea en un sistema Windows. AMBAS ALTERNATIVAS UTILIZAN <a href="http://es.wikipedia.org/wiki/Software_libre">SOFTWARE LIBRE</a>. <b>La primera alternativa</b> que os recomiendo (y antes he añadido "encarecidamente" porque se puede disponer de ella en español, se puede utilizar desde un sistema instalado en el disco duro o desde un <a href="http://es.wikipedia.org/wiki/Live_CD">live-cd</a>, es un entorno fiable y robusto, existen miles de tutoriales en internet, etc.), como ya se ha dicho para un entorno GNU/Linux, es la constituida por:
+</p>
+
+<blockquote>
+<p>
+1.- El editor <a href="http://es.wikipedia.org/wiki/Emacs">emacs</a> para crear nuestro código fuente. En su "mode-c" este editor nos ayudará a detectar errores coloreando la sintaxis de nuestro código e "identando" el mismo, de forma que nos resulte más fácil de seguir.
+2.- El compilador <a href="http://es.wikipedia.org/wiki/Gcc">gcc</a>, con las opciones "-Wall" para generar tantos avisos (warnings) como sea posible (sí, ya se que es posible generar muchos más, pero con estos creo que es suficiente para obtener un código bastante bueno) y con la opción "-g" para generar información de depuración (ver siguiente punto).
+3.- El depurador <a href="http://es.wikipedia.org/wiki/GNU_Debugger">gdb</a>, el cual nos ayudará a rastrear en nuestro "ejecutable" resultados, acciones, que no hemos previsto.
+4.- La herramienta <a href="http://es.wikipedia.org/wiki/Make">make</a>, que nos servirá para generar "archivos de compilación" de nuestros "proyectos". Útil para aquellos trabajos que están compuestos por más de un fichero de código fuente, ya que nos permite compilaciones "condicionadas" a los cambios producidos en dichos ficheros, compilando sólo los necesarios y ahorrándonos tiempo.
+</p>
+</blockquote>
+
+<p>
+En este artículo no pretendo enseñar el uso de cada una de estas herramientas, sólo darlas a conocer. Apuntarlas para que todos aquellos que estáis empezando en esto de la programación en C las conozcáis, y emprendáis el largo camino hacia su dominio. Para obtener más información sobre este entorno lee <a href="file:///d:/node/122">esto</a>. <b>La segunda alternativa</b> que existe, utilizando software libre pero esta vez en un sistema Windows, es instalar el entorno de desarrollo: <a href="http://www.bloodshed.net/devcpp.html">Dev-C++</a>. Este entorno incorpora ya un editor de código fuente (que colorea la sintaxis pero no la "identa" de forma inteligente como hace emacs), el compilador "gcc" en su versión para windows (evidentemente), el compilador "g++" por si queremos iniciarnos en C++, EL DEPURADOR "gdb", la herramienta "make"&#x2026; ¡bastante completo! La desventaja es que está en inglés (aunque supongo que es fácil entender los cuatro comandos necesarios para comenzar). Para disponer de él has de seguir los siguientes pasos: 1.- Descargar el .zip desde <a href="http://ftp1.sourceforge.net/dev-cpp/devcpp4.zip">aquí</a>. Para comprobar la última versión disponible, visitar <a href="http://www.bloodshed.net/devcpp.html">este enlace</a>. ¡OJO! no os recomiendo instalar versiones Beta, estas versiones están en desarrollo y pueden dar problemas.
+2.- Descomprimir el .zip descargado en una carpeta. Tras la instalación esta carpeta y el archivo .zip pueden ser eliminados de nuestro sistema.
+3.- En la carpeta donde hemos descomprimido el .zip hemos de encontrar el archivo "setup.exe" y ejecutarlo (doble click).
+4.- El primer cuadro de diálogo que nos aparece es el de la licencia. En él podremos comprobar que dicha licencia es la GNU GPL (versión 2 - junio 1991). ¡Es <a href="http://es.wikipedia.org/wiki/Software_libre">software libre</a>! De hecho el código fuente está disponible en su página web. Aceptamos el acuerdo pulsando "Yes".
+5.- A continuación nos aparecen las opciones de instalación. Podemos seguir aceptando las que nos propone por defecto: "tipical", y directorio (o carpeta) de instalación: "C:\Dev-C++". Pulsamos "Next".
+6.- Comienza el proceso de instalación. Observaremos una barra de progreso que se va completando hasta llegar al 100%.
+7.- El último cuadro de diálogo del proceso de instalación nos permite elegir si queremos leer el archivo "readme.txt" y si queremos "ejecutar el programa por primera vez"&#x2026; seleccionamos lo que nos apetezca y pulsamos "Finish".
+8.- Una vez que tenemos el programa instalado, para ejecutarlo basta con ir al menú "inicio/programas/Dev-C++/" y seleccionar el icono que muestra un escritorio con un flexo.
+9.- Cuando se ejecuta por primera vez nos muestra una ventanita con las asociaciones de archivos que va a realizar en el sistema (a partir de ese momento abriremos con él todos los archivos que terminen en: .dev, .c, .cpp, .h, .hpp. Y si nos atrevemos con la programación gráfica nos propone hacer uso de la librería gráfica "gnome". En fin, aceptamos todo esto pulsando la tecla "OK". Nos vuelve a avisar de que va a hacer cambios en el "registro de windows". De nuevo pulsamos "OK".
+10.- Si todo ha ido bien ya tenemos nuestro entorno de desarrollo "C" y "C++" funcionando.
+11.- Un ajuste necesario: para disponer de todos los mensajes de "aviso" (warnings) del compilador vamos a modificar la siguiente opción: menú "options/compiler options", y se nos abrirá una ventanita con opciones. En la primera pestaña, "Directories", seleccionamos el cuadrito: "add the following commands when calling compiler:", y agregamos en el rectángulo blanco de debajo (formulario) la siguiente opción "-Wall" (sin las comillas). En la última pestaña, "Linker", seleccionamos "Generate debugging information", para que podamos depurar nuestros programas con "gdb".
+12.- El entorno de desarrollo tiene 3 grandes zonas:
+</p>
+
+<blockquote>
+<p>
+  
+</p>
+<a href="/node/85" target="_self"><img width="300" height="300" border="0" align="right" src="/static/img/Dev-C++_4.jpg"></a>
+<p>
+a) El menú seguido por dos filas de iconos (accesos rápidos a algunas funciones, como por ejemplo: el aspa verde situada en el centro, aproximadamente, nos permite compilar, etc.)
+  b) La zona donde escribimos el código fuente (el editor), situada en la parte central de la pantalla.
+  c) La zona de mensajes, situada en la parte inferior de la pantalla, donde aparecen 4 pestañas. La más importante para los principiantes es la correspondiente al "compiler". En ella aparecerán los "errores" y los "warnings" del proceso de compilación. Situándonos sobre cada uno de ellos con el ratón, y haciendo doble click, se iluminará en el código fuente (editor, en parte central) la línea que ha provocado dicho error o "warning", conduciéndonos así hacia su solución.
+</p>
+</blockquote>
+
+<p>
+13.- Para iniciar la escritura de un fichero de código fuente ".c": menú "file/new source file" ó pulsando las teclas "Ctrl-U".
+14.- Eliminar los "#include" que no necesitamos: sobre todo el #include "iostream.h". Si programamos en lenguaje C, grabaremos nuestros ficheros con la extensión ".c". Esto hará que el compilador seleccionado a la hora de compilar sea el "gcc" y no el "g++" (este último se utiliza para ficheros guardados con extensión ".cpp"). Bien, si estamos programando en Lenguaje C y dejamos el #include "iostream.h" tendremos MUCHOS ERRORES DE COMPILACIÓN. CONSEJO: incluir siempre sólo los #include que necesitemos, y guardar los ficheros creados con extensión ".c" (sin las comillas). En fin, chicos, espero que esto os sea útil. Salud, y fuerzas para seguir mejorando.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Entornos%20de%20programaci%C3%B3n%20en%20C%20%28con%20licencia%20GNU%2FGPL%29">Dejar comentario</a>.
+</p>
+<div id="outline-container-org0521c94" class="outline-2">
+<h2 id="org0521c94">Comentarios</h2>
+<div class="outline-text-2" id="text-org0521c94">
+</div>
+<div id="outline-container-org91dab22" class="outline-3">
+<h3 id="org91dab22">Seamos más radicales (Adrián 10/02/2006 - 22:40)</h3>
+<div class="outline-text-3" id="text-org91dab22">
+<p>
+Enviado por Adrián (no verificado) el Vie, 30/12/2005 - 07:25
+</p>
+
+<p>
+Está muy bien que expliques eso para los profanos, ¡pero es contraproducente!
+</p>
+
+<p>
+Desde un punto de vista puramente tecnológico:
+</p>
+
+<p>
+Podrán hacer todos los exes que les de la gana con Dev-C++, pero de informática "general" (llamémosle así y espero que me entiendas) van a aprender más bien poco si siguen en Hasefroch. Y eso nos repercurte a nosotros: cuanto más idiota el usuario más idiota te lo hacen, un idiota no necesita saber qué coño es una tabla DSDT, así que nos pasamos los acuerdos de estándar ACPI por el forro, y también los W3C, y el otro, y el otro&#x2026; Ya me entiendes. Hoy día el Desktop GNU es bastante eye-candy y "usable" (es cachondísimo eso de la usabilidad, como si desde shell la máquina no funcionara&#x2026;), pero como esto es un circulo vicioso&#x2026; Dicen: "¿¡Que en Linux no puedo jugar a $ULTIMOJUEGODELMERCADOWINONLY?! Vaya mierda." Y así fundamentamos excusas en excusas y acabamos usando SL los frikis&#x2026;
+</p>
+
+<p>
+Desde el punto de vista de la libertad, y como anécdota, harto de que me llamaran con un problema made in M$, mi familia es 100% libre. A cada uno se le ha dado la excusa correspondiente, y aunque no sepan qué es el software libre, lo usan. Algo es algo, digamos que son usuarios "pasivos" que engordan la comunidad.
+</p>
+
+<p>
+Y bueno, después de soltar el discursito de siempre, mírate ReactOS si no lo conoces. Es un SO 100% libre clon de Ventanas. Está verde, y aunque a priori puede parecer un derroche de esfuerzo, al menos amplia la elección. De libertad hablamos al fin y al cabo&#x2026;
+</p>
+
+<p>
+Saludos.<br>
+</p>
+</div>
+</div>
+<div id="outline-container-org25e0ca0" class="outline-3">
+<h3 id="org25e0ca0">Es contraproducente&#x2026; pero menos (Godo 10/02/2006 - 22:46)</h3>
+<div class="outline-text-3" id="text-org25e0ca0">
+<p>
+(Enviado por Godo el Dom, 01/01/2006 - 18:39)
+</p>
+
+<p>
+Hola Adrián.
+</p>
+
+<p>
+Encantado de contar con tu colaboración por aquí. Y espero seguir escuchándote porque estoy seguro de que siempre aprenderé algo.
+</p>
+
+<p>
+Estoy de acuerdo contigo en que es contraproducente ofrecer alternativas sobre windows, pero creo que es bueno intentar que la gente se vaya acostumbrando a entornos "libres" aunque estos no sean lo mejor. Es decir, prefiero que utilicen Dev-C++ antes que una versión "pirata" de "turbo C" más vieja que Matusalén y que estaba prevista para MS-DOS, con lo que muestra ciertos problemas de integración con "ventanas" y "teclados"&#x2026; transformando el placer de programar en desagradable esfuerzo.
+</p>
+
+<p>
+Pienso que ésta puede ser una forma de conocer software libre y, al estar basado en gcc, gdb, etc. puede resultar interesante su "paralelismo" educacional con las herramientas de Unix / GNU/Linux. Los errores, los warnings, los mecanismos de depuración serán exactamente los mismos, por lo que estaremos educándonos "casi" en las mismas herramientas.
+</p>
+
+<p>
+No sé si he conseguido explicarme. Podría resumirlo en: dentro de lo malo, lo menos malo.
+</p>
+
+<p>
+Salud.<br>
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-programación.html">Programación</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+#+title: FreeBSD 7.1 - Primeros pasos
+#+date: <2009-04-08 22:34>
+#+author: Godofredo Fdez.
+#+description: FreeBSD es uno de los sistemas operativos más seguros y se encuentra embebido (este archivo lo he encontrado en google y profesionalmente, sin entrar en…
+#+filetags: FreeBSD
+#+options: _:nil
+#+nid: 306
+
+#+begin_export html
+<a href="http://www.freebsd.org" target="_self"><img src="/static/img/logo-full-thumb.png" alt="FreeBSD" title="FreeBSD"  class="image image-preview " width="180" height="65" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+[[http://es.wikipedia.org/wiki/FreeBSD][FreeBSD]] es uno de los sistemas operativos más seguros y se encuentra /[[http://godest.vivencias.net/files/BSDi%20-%20WellsFargo.ppt][embebido]]/ (este archivo lo he encontrado en google y profesionalmente, sin entrar en revelar secretos, me constan algunos casos) en muchos de los dispositivos de comunicaciones y seguridad que, hoy en día, forman Internet. Así uno, que vocacional y profesionalmente proviene del mundo de las /redes de comunicaciones/ y ahora transita por los terrenos de la /seguridad/, no podía dejar de probarlo e intentar familiarizarse con él.
+
+Hoy me he descargado el [[ftp://ftp.freebsd.org/pub/FreeBSD/releases/i386/ISO-IMAGES/7.1/7.1-RELEASE-i386-bootonly.iso][archivo mínimo]] para realizar la instalación, lo he tostado en un CD y le he echado un ratillo. A continuación os describo el proceso.
+
+*Haciéndole hueco en el disco duro*
+
+Hace tiempo que había llegado a la conclusión de que la mejor forma de [[http://es.wikipedia.org/wiki/Partici%C3%B3n_de_disco][particionar]] un disco duro era la siguiente:
+
+#+BEGIN_QUOTE
+  a) Una partición primaria (a los windows les cuesta arrancar si no la tienen).
+  b) Una partición extendida que, a su vez, contiene diversas particiones lógicas: GNU/Linux es un todo terreno que puede arrancar desde cualquier sitio, y es fácil a posteriori redimensionar las particiones lógicas sumando/restando espacio de unas a otras según va siendo necesitado.
+#+END_QUOTE
+
+Mi primera sorpresa ha sido descubrir que a FreeBSD no le gustan las particiones lógicas para instalarse (ver [[http://www.freebsd.org/doc/en/books/handbook/install-pre.html][esto]]: /"FreeBSD must be installed into a primary partition"/), lo cual tiene sentido para su vida profesional: sólo el viviendo dentro de un dispositivo, pero no para su vida en casa: donde hay que convivir con más sistemas. He enredado un poco más, y he descubierto que si decides complicarte la vida quizá sea posible conseguirlo: más información [[http://forums.freebsd.org/showthread.php?p=18734][aquí]].
+
+Así que he tenido que coger mi [[http://gparted.sourceforge.net/][gparted]] desde dentro de mi [[http://www.debian.org][Debian GNU/Linux]], y le he hecho un poco de hueco al principio del disco: partición según es nombrada en GNU/Linux, /dev/sda3, [[/node/307][enmarcada en negro en la figura]].
+
+*Comenzando la instalación*
+
+Siguiendo las instrucciones que aparecen [[http://www.freebsd.org/doc/en/books/handbook/install-steps.html][aquí]], y teniendo muy claro la diferencia de nomenclatura existente entre los mundos GNU/Linux y FreeBSD, además de la *concepción diferente* de las particiones (DOS - GNU/Linux) versus *slices* (FreeBSD), éstas últimas se pueden anidar; he conseguido instalar un sistema mínimo (prefiero comenzar siempre así y luego ir añadiendo /sólo/ lo que necesito). ¡¡OJO!! Tened mucho cuidado con los conceptos que acabo de señalar, permitidme que insista, os podéis cargar toda la información que almacenáis en vuestro disco si cometéis un error. Es aconsejable hacer una copia de backup de vuestros datos.
+
+*Recuperando Grub* Aunque durante el proceso de instalación le indiqué que no "sobreescribiera" el sector de arranque con su propio gestor, supongo que debido al proceso de particionado, formateado y guardado de dichos cambios, acabé perdiendo a [[http://es.wikipedia.org/wiki/GRUB][GRUB]], con lo que tras finalizar la instalación sólo podía decidir entre dos opciones:
+
+#+BEGIN_QUOTE
+  F1) arrancar windows
+  F3) arrancar FreeBSD
+#+END_QUOTE
+
+Y, además, la opción F1 no funcionaba, sí que lo hacía F3... uff, menos mal, ¡No todo estaba perdido ;-)! ...aunque un pequeño susto sí me he llevado.
+
+Bueno, con los galones ganados a lo largo de mucho tiempo en estas lides, eché mano de mi [[http://grml.org/][CD/USB de recuperación]] y acabé reinstalando GRUB tal y como lo tenía. Lo hice siguiendo lo que ya indicamos en otra ocasión [[http://godest.vivencias.net/node/207#ACT][aquí]].
+
+Una vez que pude arrancar de nuevo mi Debian GNU/Linux, edité el fichero: //boot/grub/menu.lst/, añadí las siguientes líneas, justo delante de la entrada que lanza windows, para poder arrancar el recién instalado FreeBSD:
+
+#+begin_example
+
+#FreeBSD en /dev/sda3
+title   FreeBSD 7.1
+root    (hd0,2,a)
+kernel  /boot/loader
+
+#+end_example
+
+*Algunos detalles del sistema mínimo instalado*
+
+Aquí podemos ver el reparto del espacio de disco y su etiquetado. Observamos lo que ocupa el sistema instalado: el kernel, los paquetes base y poco más.
+
+#+begin_example
+
+$ df -h
+Filesystem     Size    Used   Avail Capacity  Mounted on
+/dev/ad0s3a    272M    138M    112M    55%    /
+devfs          1.0K    1.0K      0B   100%    /dev
+/dev/ad0s3e    161M     12K    148M     0%    /tmp
+/dev/ad0s3f    2.2G    244M    1.8G    12%    /usr
+/dev/ad0s3d    210M    1.0M    192M     1%    /var
+$                                                        
+
+#+end_example
+
+También he observado que la shell por defecto es [[http://en.wikipedia.org/wiki/C_shell][csh]]... ¡vaya, yo estoy acostumbrado a [[http://en.wikipedia.org/wiki/Bash][bash]]:
+
+#+begin_example
+
+$ env
+SSH_CLIENT=192.168.4.7 46762 22
+USER=godo
+MAIL=/var/mail/godo
+HOME=/home/godo
+SSH_TTY=/dev/ttyp0
+PAGER=more
+ENV=/home/godo/.shrc
+LOGNAME=godo
+BLOCKSIZE=K
+TERM=xterm
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/home/godo/bin
+SHELL=/bin/sh
+PWD=/usr/home/godo
+SSH_CONNECTION=192.168.4.7 46762 192.168.4.100 22
+FTP_PASSIVE_MODE=YES
+EDITOR=vi
+$                                
+
+#+end_example
+
+Y estos son los ficheros que inicialmente hay en mi directorio home:
+
+#+begin_example
+
+$ pwd
+/usr/home/godo
+$
+$ ls -la
+total 20
+drwxr-xr-x  2 godo  godo   512 Apr  8 21:49 .
+drwxr-xr-x  3 root  wheel  512 Apr  8 21:49 ..
+-rw-r--r--  1 godo  godo   758 Apr  8 21:49 .cshrc
+-rw-r--r--  1 godo  godo   258 Apr  8 21:49 .login
+-rw-r--r--  1 godo  godo   167 Apr  8 21:49 .login_conf
+-rw-------  1 godo  godo   379 Apr  8 21:49 .mail_aliases
+-rw-r--r--  1 godo  godo   339 Apr  8 21:49 .mailrc
+-rw-r--r--  1 godo  godo   773 Apr  8 21:49 .profile
+-rw-------  1 godo  godo   284 Apr  8 21:49 .rhosts
+-rw-r--r--  1 godo  godo   980 Apr  8 21:49 .shrc
+$                     
+
+#+end_example
+
+En fin, próximamente intentaré:
+
+#+BEGIN_QUOTE
+  a) Ver como se gestionan (instalar/desinstalar/configurar) paquetes. ¿Existirá alguna utilidad parecida a [[][apt]]?
+  b) Detectar y configurar mi WiFI ([[http://www.eduroam.si/en/osebni-dostop/navodila-za-povezavo/navodila-za-freebsd-eng][Intel 2200GB]]).
+  c) Instalar el entorno gráfico y, como no, [[http://www.kde.org][KDE]].
+  d) Y lo que vaya surgiendo...
+#+END_QUOTE
+
+Por aquí sigo, caminando, viviendo, disfrutando... y aprendiendo.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/BSDi - WellsFargo.ppt][BSDi - WellsFargo.ppt]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=FreeBSD%207.1%20-%20Primeros%20pasos][Dejar comentario]].
+

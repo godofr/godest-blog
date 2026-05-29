@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Hace unas semanas el alumno Manuel Rodríguez presentó el proyecto fin de carrera titulado: &ldquo;SISTEMA DE RECOPILACIÓN DE INFORMACIÓN SOBRE EL ESTADO DEL…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Sistema de recopilación de información... en tiempo real</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">01 nov. 2013</div><h1 class="post-title"><a href="https://godest.vivencias.net/2013-11-01-sistema-de-recopilacion-de-informacion-en-tiempo-real.html">Sistema de recopilación de información... en tiempo real</a></h1>
+<p>
+Hace unas semanas el alumno <a href="http://es.linkedin.com/pub/manuel-rodr%C3%ADguez/42/800/804">Manuel Rodríguez</a> presentó el proyecto fin de carrera titulado: “SISTEMA DE RECOPILACIÓN DE INFORMACIÓN SOBRE EL ESTADO DEL TRÁFICO EN TIEMPO REAL”, el cual he dirigido.
+</p>
+
+<p>
+Manuel contactó conmigo en mayo y me propuso la idea. Me interesó mucho porque creo que actualmente hay una tendencia que apuesta por desarrollar este tipo de sistemas que podríamos englobar dentro de la categoría: “estudio de los hábitos del&#x2026;”, siendo los puntos suspensivos sustituibles por: conductor, ciudadano, cliente y, en definitiva, cualquier persona cuyo comportamiento interese conocer en un determinado ámbito. El objetivo final es poder mejorar el servicio ofrecido. En la conclusión del artículo se describen algunos ejemplos.
+</p>
+
+<p>
+Sí, a mí también me plantea algunos dilemas éticos, de hecho en EE.UU. que siempre van un poquito por delante en cuanto a tendencias tecnológicas ya hay <a href="http://www.madrimasd.org/informacionidi/noticias/noticia.asp?id=58392&amp;origen=notiweb&amp;dia_suplemento=martes">cierto movimiento social interesándose por regular el tema.</a> Mi posición, de momento, es favorable siempre que los datos se “anonimicen” lo suficiente para que la persona no sea identificable/rastreable y sólo sirvan para identificar una tendencia anónima, números, cantidades. Es decir, no pretender conocer quién sino cuándo, cuántos y qué.
+</p>
+
+<p>
+Os dejo a continuación el resumen ejecutivo del proyecto. Espero que os resulte interesante.
+</p>
+
+<p>
+El objetivo del proyecto es desarrollar un sistema autónomo para la recopilación de información sobre el estado del tráfico en tiempo real, con las restricciones siguientes: sistema de bajo coste, rápida implantación y de escaso mantenimiento.
+</p>
+
+<p>
+Para obtener la información necesaria se utilizan antenas Bluetooth y WiFi conectadas a la placa “Raspberry Pi” que detectan los dispositivos móviles de la población y los que suelen ir incorporados, cada vez más, en los vehículos. Además se utilizarán tags RFID activos colocados en los vehículos de la flota de Conservación de Carreteras para obtener más datos. La autonomía del sistema se consigue gracias a un equipo de alimentación basado en energía solar, y la conexión a internet a través de un dispositivo 3G. El software se fundamenta en un demonio programado en Java, que haciendo uso de una serie de hilos independientes recoge la información proveniente de los escaneos de dispositivos (MAC y timestamp), la cifra y la envía periódicamente al servidor, donde se almacena ya cifrada.
+</p>
+
+<p>
+Además se expone un caso práctico de implantación del sistema, incluyendo presupuesto y estudio comparativo de costes para posicionarlo en el mercado.
+</p>
+
+<p>
+Se han realizado dos experimentos, uno en carretera y otro en un establecimiento particular, mostrándose en el primero de ellos los datos obtenidos sin ningún tipo de tratamiento y, en el segundo, los datos ya tratados por un sistema de “minería de datos” en desarrollo.
+</p>
+
+<p>
+Se concluye que el sistema desarrollado en el presente proyecto cumple con los objetivos que se proponían al inicio, dejando la puerta abierta a numerosas mejoras relacionadas con el tratamiento de los datos obtenidos, así como la posibilidad de incluir nuevos sensores que permitan trabajar con más variables actuando como entradas del sistema.
+</p>
+
+<p>
+Las posibilidades en el tratamiento de la información recibida son muchas: además de ofrecer los datos a terceros gracias a la conexión al servidor mediante un servicio web, se podría generar un sistema de tratamiento de la información propio, a través del cual poder ofrecer a la población una página web que contenga información acerca de los principales datos de movilidad en tiempo real, así como predicciones en base a la información recopilada durante cierto tiempo. Si además se incluye la interconexión con redes sociales la potencia del servicio proporcionado se multiplica aún más.
+</p>
+
+<p>
+Estas últimas aplicaciones pueden dar al desrarrollo realizado una continuidad real, aportando un valor añadido diferente del hecho de contar vehículos o identificar tendencias en una red de carreteras. Por su escalabilidad podría ser una herramienta interesante para muchas empresas que tienen la necesidad de contar con información significativa para el estudio de la afluencia de los clientes a sus negocios.
+</p>
+
+<p>
+¡Seguimos!
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Sistema%20de%20recopilaci%C3%B3n%20de%20informaci%C3%B3n...%20en%20tiempo%20real">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-proyectos_fin_de_carrera.html">Proyectos_Fin_de_Carrera</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

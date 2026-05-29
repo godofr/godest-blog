@@ -1,0 +1,62 @@
+#+title: Charla-coloquio 'Salidas profesionales en el sector de las telecomunicaciones'
+#+date: <2012-09-24 22:48>
+#+author: Godofredo Fdez.
+#+description: function abrircerrar() { if(document.getElementById('oculto').style.height != "auto") { document.getElementById('oculto').style.height = "auto"; } else { document.getElementById('oculto').style.height = "0px"; } } Todo comenzó hace unas semanas tal y como describía en la primera parte de este post (pulsa el botón para desplegarla si no la leíste en su día):
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 494
+
+Todo comenzó hace unas semanas tal y como describía en la primera parte de este post (pulsa el botón para desplegarla si no la leíste en su día):
+
+<<oculto>>
+Muchos de mis alumnos me han transmitido, en casi todos los cursos que llevo impartidos en la [[http://www.esi.us.es/][Escuela Técnica Superior de Ingeniería]] de la [[http://www.us.es][Universidad de Sevilla]], y en especial en este último, sus inquietudes sobre el mundo profesional que les espera como Ingenieros de Telecomunicación, sus dudas, su balance de lo positivo y lo negativo de la carrera... y su deseo por conocer mis recomendaciones.
+
+Supongo que lo ven como parte del valor añadido que puede transmitirles alguien que compatibiliza su trabajo en una empresa privada con impartir unas pocas clases en la universidad. Yo también lo creo ;-) Desde aquí reivindico esta figura de profesor asociado a tiempo parcial, aunque cada vez se va haciendo más complicada.
+
+Tengo la gran suerte de conocer a muy buenos profesionales, así que me he decidido y junto con [[http://es.linkedin.com/pub/alex-lopez/0/602/b86][Alex López]] (Iberia Sales Manager at Arbor Networks), que siempre me ha transmitido sus ganas y su buen hacer, llevaremos a cabo una sesión pública para todo aquel que se quiera apuntar. ¿Queréis conocer mejor a Alex? Os dejo su perfil a través del enlace que esconde su nombre... a mí, si estáis leyendo esto, probablemente ya me conozcáis.
+
+Hablaremos del complejo sector de las telecomunicaciones, de los tipos de empresas que existen, su estructura organizativa... de la vida de un proyecto de telecomunicaciones, desde su prescripción hasta su despliegue. Y, como no, intentaremos anticipar el futuro que le espera.
+
+También analizaremos el modelo de relación Empresa-Universidad, estamos obligados, no? :-)
+
+Ahora, si lo ves interesante, sólo tienes que hacer tres cosas:
+
+#+BEGIN_QUOTE
+  *1.- Apuntarte [[http://bit.ly/PPTeac][aquí]] (necesitamos estimar la demanda para gestionar bien la logística)*.
+  2.- Transmitir esta URL -- http://bit.ly/OXOhKc -- a tus amigos (seguro que te lo agradecerán)
+  3.- Permanecer atento a este post - guarda la URL en tu bookmark - porque en él iré agregando la información oportuna.
+#+END_QUOTE
+
+Encantado de tenerte por aquí.
+
+Desplegar/Plegar parte 1
+
+*Actualización: 3 de octubre de 2012*.
+
+Habiendo analizado los resultados de las inscripciones realizadas hasta este domingo pasado, 30 de septiembre de 2012, se obtienen los siguientes resultados (pulsando sobre las imágenes se agrandan a toda la ventana de vuestro navegador):
+
+#+begin_export html
+<a href="/static/img/captura-fecha-hora.png"  rel="lightbox"><img src="/static/img/captura-fecha-hora.png" alt="captura-fecha-hora" title="captura-fecha-hora"  class="image image-preview " width="520" height="409" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+Donde se puede apreciar que el lunes 22 de octubre gana por poco al martes 23. Sin embargo, hay un claro empate en las horas propuestas. Así, el lunes 22 queda asignado.
+
+Para desempatar las horas he utilizado el siguiente criterio: ¿qué piensan los alumnos de 5º, 4º y 3º? Son los que están más cerca de acabar la carrera y a los que en primera instancia va más enfocada la charla (más que nada porque, de salir bien, el resto podrá asistir en futuras convocatorias que hagamos). Y este es el gráfico resultante:
+
+#+begin_export html
+<a href="/static/img/captura-fecha-hora-3-4-5.png"  rel="lightbox"><img src="/static/img/captura-fecha-hora-3-4-5.png" alt="captura-fecha-hora-3-4-5" title="captura-fecha-hora-3-4-5"  class="image image-preview " width="519" height="317" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+Donde se puede apreciar que la hora ganadora es: de 19:00 a 20:15.
+
+Por tanto, y una vez confirmada con la ETSI la disponibilidad del *Salón de Grados, la charla-coloquio tendrá lugar el día 22 de octubre de 2012 a las 19:00 horas* en dicho salón, situado en la última planta de la Escuela Técnica Superior de Ingenieros.
+
+Espero veros por allí al menos a los que habéis confirmado con una probabilidad elevada (90% - 100%).
+
+Seguiré actualizando este post durante los próximos días. Hay más cosas que contar pero ya está bien por hoy.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Charla-coloquio%20%27Salidas%20profesionales%20en%20el%20sector%20de%20las%20telecomunicaciones%27][Dejar comentario]].
+

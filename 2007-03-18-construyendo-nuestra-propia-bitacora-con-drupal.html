@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Seguro que muchos de los que frecuentáis esta bitácora, incluso los que llegáis por primera vez, habéis sentido la curiosidad sobre cómo se construye un "sitio…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Construyendo nuestra propia bitácora con Drupal</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">18 mar. 2007</div><h1 class="post-title"><a href="https://godest.vivencias.net/2007-03-18-construyendo-nuestra-propia-bitacora-con-drupal.html">Construyendo nuestra propia bitácora con Drupal</a></h1>
+<a href="http://digital.revistasprofesionales.com:8080/View_Ctrl/ml.jsp" target="_self"><img width="170" height="227" border="0" align="right" hspace="10" vspace="10" src="/static/img/ml95.jpg"></a>
+<p>
+Seguro que muchos de los que frecuentáis esta bitácora, incluso los que llegáis por primera vez, habéis sentido la curiosidad sobre cómo se construye un "sitio web" como éste. Seguro que muchos de vosotros <a href="file:///d:/node/178">deseáis tener uno igual</a> ;-), ¡Esta es vuestra oportunidad!
+</p>
+
+<p>
+En este número de <a href="http://digital.revistasprofesionales.com/mundolinux/index.html">Mundo Linux (95)</a> inicio una serie de artículos sobre la magnífica herramienta <a href="http://drupal.org">Drupal</a>, que, además, es <a href="http://es.wikipedia.org/wiki/Software_libre">software libre</a>.
+</p>
+
+<p>
+<b>Introducción.</b> <i>El objetivo que pretendemos conseguir con este artículo es la construcción de nuestra propia bitácora. Para ello vamos a utilizar el sistema de gestión de contenidos libre: Drupal. Nos centraremos en su instalación, configuración y administración. También veremos algunos consejos para mantener nuestro rincón de internet con buena salud</i>.
+</p>
+
+<p>
+Considero que el nivel del artículo es apropiado para todos aquellos lectores que quieran adentrarse en este mundo de los weblogs/bitácoras, creación de portales web, comunidades, foros, etc. Comienza definiendo qué es una bitácora, siguen algunas recomendaciones sobre el contenido y la forma de las mismas, y terminamos con la instalación/integración de todo lo necesario para poner en marcha un "sitio web": servidor web "Apache", motor de bases de datos "MySQL", lenguaje de scripting "PHP", y nuestra herramienta "Drupal": configuración de nuestro primer sitio web (Drupal es una herramienta "multi-site" que permite servir más de un "sitio web" con una sola instalación - lo veremos en el siguiente artículo), configuración de un perfil de usuario y un usuario asociado a dicho perfil, y la publicación del primer "post/story" o "entrada/noticia" en nuestra recién estrenada plataforma.
+</p>
+
+<p>
+El artículo fue escrito "capturando" al detalle todos los pasos necesarios para realizar cada una de las tareas, lo cual ayudará al lector que, sin experiencia ni conocimientos avanzados en las herramientas involucradas, se decida a poner en marcha "su propia voz en Internet". Salvados estos primeros pasos, la posterior administración/utilización de Drupal es asequible para todos los perfiles (de letras y de ciencias - como se suele decir).
+</p>
+
+<p>
+Como siempre, <a href="http://godest.vivencias.net/node/37">aquí</a> estoy, tanto si tenéis alguna duda como si queréis hacerme llegar algún comentario, sugerencia, etc.
+</p>
+
+<p>
+¡Divulga! &#x2026;que algo queda.
+</p>
+
+<p>
+<b>Actualizado el 10 de abril de 2011</b> P.D.: puedes descargar el artículo desde <a href="file:///d:/files/ML95-bitacora-drupal-vol1.pdf">aquí</a>.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Construyendo%20nuestra%20propia%20bit%C3%A1cora%20con%20Drupal">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-bitácoras.html">Bitácoras</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-publicaciones.html">Publicaciones</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

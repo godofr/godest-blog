@@ -1,0 +1,13 @@
+#+title: Debian Etch en portátil FUJITSU SIEMENS, modelo AMILO Pi 1536
+#+date: <2007-01-27 19:57>
+#+author: Godofredo Fdez.
+#+description: Aquí podéis observar la imagen de una instalación de Debian Etch, llevada a cabo con la versión del instalador por red: RC1 . Casi sin esfuerzo ya que detectó…
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 196
+
+Aquí podéis observar la imagen de una instalación de Debian Etch, llevada a cabo con la versión del [[http://www.us.debian.org/devel/debian-installer/][instalador por red: RC1]]. Casi sin esfuerzo ya que detectó todo el hardware correctamente. Más información [[http://godest.vivencias.net/node/197][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Debian%20Etch%20en%20port%C3%A1til%20FUJITSU%20SIEMENS%2C%20modelo%20AMILO%20Pi%201536][Dejar comentario]].
+

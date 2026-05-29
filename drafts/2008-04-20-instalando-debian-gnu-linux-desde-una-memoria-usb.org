@@ -1,0 +1,161 @@
+#+title: Instalando Debian GNU/Linux desde una memoria usb
+#+date: <2008-04-20 11:54>
+#+author: Godofredo Fdez.
+#+description: Primero particionamos el disco duro destino con gparted. Para ello arrancamos desde otra memoria usb que contiene el arranque de la distribución grml. Esta memoria usb arrancable ha sido creada con la herramienta: wget - http://hg.grml.org/grml2usb/raw-file/tip/grml2usb Instalamos los siguientes paquetes: (root) apt-get install qemu dosfstools syslinux mtools Bajamos los archivos de arranque (initrd.gz y vmlinuz) de: ftp://ftp.debian.org/debian/dists/testing/main/installer-i386/current/images/hd-media
+#+filetags: 
+#+options: _:nil
+#+nid: 278
+
+Primero particionamos el disco duro destino con gparted. Para ello arrancamos desde otra memoria usb que contiene el arranque de la distribución grml. Esta memoria usb arrancable ha sido creada con la herramienta:
+wget - http://hg.grml.org/grml2usb/raw-file/tip/grml2usb
+
+Instalamos los siguientes paquetes:
+(root) apt-get install qemu dosfstools syslinux mtools
+
+Bajamos los archivos de arranque (initrd.gz y vmlinuz) de:
+ftp://ftp.debian.org/debian/dists/testing/main/installer-i386/current/images/hd-media
+¡OJO! Es importante bajar estos archivos desde la misma "rama de distribución" (stable, testing, sid) que posteriormente vamos a instalar desde el archivo .iso correspondientemente descargado.
+
+Conectamos la memoria usb y comprobamos el dispositivo asociado por el kernel:
+dmesg
+
+#+BEGIN_EXAMPLE
+  usb 5-6: new high speed USB device using ehci_hcd and address 3
+
+  usb 5-6: configuration #1 chosen from 1 choice
+
+  Initializing USB Mass Storage driver...
+
+  scsi2 : SCSI emulation for USB Mass Storage devices
+
+  usbcore: registered new driver usb-storage
+
+  USB Mass Storage support registered.
+
+  usb-storage: device found at 3
+
+  usb-storage: waiting for device to settle before scanning
+
+    Vendor: UDISK     Model: PDU15_4G 77I2.0   Rev: 0.00
+
+    Type:   Direct-Access                      ANSI SCSI revision: 02
+
+  SCSI device sdb: 7897087 512-byte hdwr sectors (4043 MB)
+
+  sdb: Write Protect is off
+
+  sdb: Mode Sense: 00 00 00 00
+
+  sdb: assuming drive cache: write through
+
+  SCSI device sdb: 7897087 512-byte hdwr sectors (4043 MB)
+
+  sdb: Write Protect is off
+
+  sdb: Mode Sense: 00 00 00 00
+
+  sdb: assuming drive cache: write through
+
+   sdb: sdb1
+
+  sd 2:0:0:0: Attached scsi removable disk sdb
+
+  sd 2:0:0:0: Attached scsi generic sg2 type 0
+
+  usb-storage: device scan complete
+#+END_EXAMPLE
+
+Comprobamos que el dispositivo es /dev/sdb1
+
+Formateamos dicho dispositivo para partir desde cero:
+mkfs.vfat /dev/sdb1
+
+Y comprobamos el espacio disponible (observar última línea):
+mount /mnt/usbflash
+
+#+BEGIN_EXAMPLE
+  atalaya:/media/sda5/usr/local/zxspectrum# df -h
+
+  S.ficheros          Tamaño Usado  Disp Uso% Montado en
+
+  /dev/sda8             7,4G  2,0G  5,4G  27% /
+
+  tmpfs                1011M     0 1011M   0% /lib/init/rw
+
+  udev                   10M   96K   10M   1% /dev
+
+  tmpfs                1011M     0 1011M   0% /dev/shm
+
+  /dev/sda5              12G   10G  1,3G  89% /media/sda5
+
+  /dev/sda6             9,2G  8,8G   21M 100% /media/sda6
+
+  /dev/sda11            753M  291M  463M  39% /home
+
+  /dev/sda7              37G   17G   21G  44% /mnt/windows
+
+  /dev/sdb1             3,8G  4,0K  3,8G   1% /mnt/usbflash
+#+END_EXAMPLE
+
+umount /mnt/usbflash
+
+Grabamos en dicho dispositivio el sistema de arranque
+(root) syslinux /dev/sdb1
+¡OJO! Quizá no baste con realizar lo anterior, sino que también haya que crear un Master Boot Record (mbr) válido, lo cual se consigue con:
+atalaya:/home/godo# dd if=/usr/lib/syslinux/mbr.bin of=/dev/sdb
+
+Montamos el dispositivo para comprobar que, efectivamente, hay ficheros grabados (hemos partido de una memoria usb formateada con sistema de archivos fat32):
+mount /mnt/usbflash (si en el /etc/fstab hemos definido este punto de montaje)
+
+Y seguimos copiando el resto de ficheros que nos hace falta:
+ls -l
+
+#+BEGIN_EXAMPLE
+  [12:39:30(godo@atalaya)/mnt/usbflash]> ll
+
+  total 663388
+
+  -rwxr-xr-x 1 godo godo 674988032 2008-04-20 12:39 debian-testing-i386-kde-CD-1.iso
+
+  -rwxr-xr-x 1 godo godo   3207145 2008-04-20 12:33 initrd.gz
+
+  -r-xr-xr-x 1 godo godo      9932 2008-04-20 12:28 ldlinux.sys
+
+  -rwxr-xr-x 1 godo godo   1099704 2008-04-20 12:33 vmlinuz
+
+  [12:40:47(godo@atalaya)/mnt/usbflash]>
+#+END_EXAMPLE
+
+Y creamos el fichero de configuración del arranque con un editor de texto:
+vim syslinux.cfg
+
+#+BEGIN_EXAMPLE
+  default vmlinuz
+
+  append initrd=initrd.gz ramdisk_size=10240 root=/dev/rd/0 devfs=mount,dall rw DEBCONF_PRIORITY=medium
+#+END_EXAMPLE
+
+La memoria usb queda con el siguiente contenido:
+ls -l
+
+[12:43:28(godo@atalaya)/mnt/usbflash]> ll
+total 663392
+-rwxr-xr-x 1 godo godo 674988032 2008-04-20 12:39 debian-testing-i386-kde-CD-1.iso
+-rwxr-xr-x 1 godo godo 3207145 2008-04-20 12:33 initrd.gz
+-r-xr-xr-x 1 godo godo 9932 2008-04-20 12:28 ldlinux.sys
+-rwxr-xr-x 1 godo godo 118 2008-04-20 12:43 syslinux.cfg
+-rwxr-xr-x 1 godo godo 1099704 2008-04-20 12:33 vmlinuz
+[12:43:30(godo@atalaya)/mnt/usbflash]>
+
+Desmontamos dicha memoria
+umount /mnt/usbflash
+
+Comprobamos que el sistema de arranque hace su función. Utilizamos qemu para ello.
+qemu -m 512 -hda /dev/sdb1
+Ver captura de pantalla.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/grml2usb.txt][grml2usb.txt]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Instalando%20Debian%20GNU%2FLinux%20desde%20una%20memoria%20usb][Dejar comentario]].
+

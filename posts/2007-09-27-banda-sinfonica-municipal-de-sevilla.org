@@ -1,0 +1,55 @@
+#+title: Banda Sinfónica Municipal de Sevilla
+#+date: <2007-09-27 09:40>
+#+author: Godofredo Fdez.
+#+description: Título: Prácticas orquestales, alumnos de conservatorio. Lugar: Teatro Hogar Virgen de los Reyes. Director: Francisco Javier Gutiérrez Juan. 1ª Parte Impresiones Cordobesas (Gámez Laserna) I Plaza del Potro II Elegía a Manolete III Patio Cordobés IV La Mezquita Brisas de Andalucía (López Quiroga) I Garrotín de Córdoba II Andalucía Mora (Baile) III Maleficio (Danza) 2ª Parte
+#+filetags: 
+#+options: _:nil
+#+nid: 250
+
+Título: Prácticas orquestales, alumnos de conservatorio.
+Lugar: Teatro Hogar Virgen de los Reyes. Director: Francisco Javier Gutiérrez Juan.
+1ª Parte
+
+#+BEGIN_QUOTE
+  Impresiones Cordobesas (Gámez Laserna)
+  #+BEGIN_QUOTE
+    I Plaza del Potro
+
+    II Elegía a Manolete
+
+    III Patio Cordobés
+
+    IV La Mezquita
+  #+END_QUOTE
+
+  Brisas de Andalucía (López Quiroga)
+  #+BEGIN_QUOTE
+    
+    I Garrotín de Córdoba
+
+    II Andalucía Mora (Baile)
+
+    III Maleficio (Danza)
+  #+END_QUOTE
+#+END_QUOTE
+
+2ª Parte
+
+#+BEGIN_QUOTE
+  The Year of the Dragon (*) (P Sparke)
+  #+BEGIN_QUOTE
+    I Toccata
+
+    II Interlude
+
+    III Finale
+  #+END_QUOTE
+
+  Poeme Montagnard (*) (J. Van der Roost)
+#+END_QUOTE
+
+(*) 1ª vez por la Banda Sinfónica Municipal de Sevilla.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Banda%20Sinf%C3%B3nica%20Municipal%20de%20Sevilla][Dejar comentario]].
+

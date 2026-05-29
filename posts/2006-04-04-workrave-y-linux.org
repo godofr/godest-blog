@@ -1,0 +1,13 @@
+#+title: Workrave y Linux
+#+date: <2006-04-04 13:24>
+#+author: Godofredo Fdez.
+#+description: Este programita nos ayuda a corregir malos hábitos posturales. Échale un vistazo aquí . En Debian GNU/Linux está disponible, basta con un apt-get install…
+#+filetags: Logos
+#+options: _:nil
+#+nid: 120
+
+Este programita nos ayuda a corregir malos hábitos posturales. Échale un vistazo [[http://www.workrave.org/][aquí]]. En [[http://www.debian.org][Debian GNU/Linux]] está disponible, basta con un apt-get install workrave.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Workrave%20y%20Linux][Dejar comentario]].
+

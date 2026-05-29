@@ -1,0 +1,13 @@
+#+title: elinks: navegador en modo texto
+#+date: <2005-07-25 20:44>
+#+author: Godofredo Fdez.
+#+description: Captura de una página web vista con el navegador en modo texto elinks . Muy útil cuando fallan los drivers de nvidia y hay que acudir, sin modo gráfico, a la…
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 39
+
+Captura de una página web vista con el navegador en modo texto =elinks=. Muy útil cuando fallan los drivers de nvidia y hay que acudir, sin modo gráfico, a la web para [[http://www.nvidia.com/object/unix.html][descargarlos]] ;-).
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=elinks%3A%20navegador%20en%20modo%20texto][Dejar comentario]].
+

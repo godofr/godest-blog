@@ -1,0 +1,33 @@
+#+title: Organizando tus bookmarks con Scuttle
+#+date: <2006-04-22 20:10>
+#+author: Godofredo Fdez.
+#+description: Leyendo este artículo descubrí que no era el único que desde hace tiempo sentía la necesidad de organizar mis "favoritos" o "bookmarks". Quien, como yo, utiliza varios navegadores y varios ordenadores para consultar la web, seguro que alguna vez ha echado de menos aquel enlace que un día descubrió y guardó en otro navegador o, quien sabe, en el ordenador de su hermana. Bien, hace poco tratamos aquí la herramienta del.icio.us que nos ofrecía unos "favoritos" o "bookmarks" que eran almacenados en un determinado lugar de internet y que, siempre que tuviéramos conexión los tendríamos disponibles (por otra parte tampoco es necesario tenerlos disponibles si no tenemos conexión, creo). El inconveniente que veíamos en dicha herramienta era que esos enlaces que íbamos almacenando no sólo estaban disponibles para nosotros sino para toda la comunidad. El verdadero objetivo de del.icio.us es elaborar una clasificación de enlaces, de forma colaborativa, que indique la popularidad de una determinada dirección en el ciberespacio.
+#+filetags: Bitácoras I+D+i Software
+#+options: _:nil
+#+nid: 126
+
+Leyendo [[http://www.hermann-uwe.de/blog/server-client-bookmarks-a-la-del-icio-us][este artículo]] descubrí que no era el único que desde hace tiempo sentía la necesidad de organizar mis "favoritos" o "bookmarks". Quien, como yo, utiliza varios navegadores y varios ordenadores para consultar la web, seguro que alguna vez ha echado de menos aquel enlace que un día descubrió y guardó en otro navegador o, quien sabe, en el ordenador de su hermana.
+
+Bien, hace poco tratamos [[/node/71][aquí]] la herramienta [[http://delicious.com/][del.icio.us]] que nos ofrecía unos "favoritos" o "bookmarks" que eran almacenados en un determinado lugar de internet y que, siempre que tuviéramos conexión los tendríamos disponibles (por otra parte tampoco es necesario tenerlos disponibles si no tenemos conexión, creo). El inconveniente que veíamos en dicha herramienta era que esos enlaces que íbamos almacenando no sólo estaban disponibles para nosotros sino para toda la comunidad. El verdadero objetivo de del.icio.us es elaborar una clasificación de enlaces, de forma colaborativa, que indique la popularidad de una determinada dirección en el ciberespacio.
+
+[[http://sourceforge.net/projects/scuttle/][Scuttle]] es software libre ([[http://www.gnu.org/copyleft/gpl.html][licencia GNU/GPL]]) y clona la API (la interfaz para la programación de aplicaciones) de del.icio.us. Esto quiere decir que funciona de manera "casi" exacta pero además incorpora las siguientes características que lo hacen una verdadera joya:
+
+- Permite importar todos tus enlaces que tienes en tus favoritos locales.
+- Permite importar todos tus enlaces almacenados en del.icio.us.
+- Puedes elegir si un determinado enlace lo haces público, lo mantienes en privado, o lo compartes con una lista de usuarios (restringes su visión a tus amigos).
+- Puedes asociar tantas etiquetas como desees a cada enlace (a la del.icio.us), cosa que posteriormente permite búsquedas condicionadas (linux+gnu+compilador).
+- Las etiquetas, que aparecen en el lateral derecho, van haciéndose más gruesas cuanto más enlaces hay clasificados haciendo uso de ellas, lo cual da una idea de la importancia de las mismas en los contenidos, y del perfil temático que interesa a quien recopila los enlaces.
+- Puedes suscribirte, mediante RSS, a enlaces que están siendo recopilados (y clasificados como públicos) por otros usuarios, o a los enlaces públicos del sitio común.
+- Distintas clasificaciones de los enlaces: fecha, popularidad, alfabética.
+
+Para instalarlo necesitáis: un servidor web con soporte de php, una base de datos mysql (creo que también es posible en otras) y un poco de "ajuste paramétrico" en los ficheros de configuración.
+
+Me ha gustado mucho.
+
+Podéis verlo y consultar mis enlaces públicos (con suerte algún bug también abrirá las puertas a mis privados ;-)) visitando [[http://scuttle.vivencias.net/][esta página]].
+
+Seguiremos compartiendo.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Organizando%20tus%20bookmarks%20con%20Scuttle][Dejar comentario]].
+

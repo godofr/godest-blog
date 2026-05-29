@@ -1,0 +1,18 @@
+#+title: Seguridad en Entornos Cloud
+#+date: <2012-02-12 16:27>
+#+author: Godofredo Fdez.
+#+description: Bajo el título: "Seguridad en entornos cloud. Amenazas, medidas de protección y gestión de incidentes", impartiré una ponencia en el "Máster en Sistemas de…
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 468
+
+#+begin_export html
+<img src="/static/img/201202-master-upm.png" alt="Máster UPM" title="Máster UPM"  class="image image-preview " width="275" height="197" border="0" align="right" hspace="10" vspace="10" />
+#+end_export
+Bajo el título: "Seguridad en entornos cloud. Amenazas, medidas de protección y gestión de incidentes", impartiré una ponencia en el "Máster en Sistemas de Comunicación e Información para la Seguridad y la Defensa" que organiza la Escuela Técnica Superior de Ingenieros de Telecomunicación de la Universidad Politécnica de Madrid.
+
+En la ponencia desgranaré el estado actual de las amenazas de seguridad, su evolución a lo largo del tiempo y los nuevos retos que plantean a los responsables de seguridad de los diferentes tipos de organizaciones. Nos centraremos después en ver las medidas tecnológicas propias de este tipo de entornos cloud que, junto a medidas organizativas y normativas/cumplimiento legal, nos ayudan a mantener en marcha el proceso de la seguridad, refinándolo constantemente, alcanzando mayor grado de madurez.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20en%20Entornos%20Cloud][Dejar comentario]].
+

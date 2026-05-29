@@ -1,0 +1,20 @@
+#+title: How to run KMyMoney in Windows
+#+date: <2011-01-01 21:05>
+#+author: Godofredo Fdez.
+#+description: 1.- http://technosrix.blogspot.com/2009/05/how-to-run-kmymoney-in-windows.html 2.-…
+#+filetags: 
+#+options: _:nil
+#+nid: 395
+
+1.-
+http://technosrix.blogspot.com/2009/05/how-to-run-kmymoney-in-windows.html
+
+2.-
+http://www.undermyhat.org/blog/2009/10/tip-run-kde-konqueror-on-windows-in-three-easy-steps/
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Technosrix_ How to run KMyMoney in Windows.pdf][Technosrix_ How to run KMyMoney in Windows.pdf]]
+- [[https://godest.vivencias.net/static/files/Tip_ Run KDE Konqueror natively from Windows in three easy steps _ Under My Hat.pdf][Tip_ Run KDE Konqueror natively from Windows in three easy steps _ Under My Hat.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=How%20to%20run%20KMyMoney%20in%20Windows][Dejar comentario]].
+

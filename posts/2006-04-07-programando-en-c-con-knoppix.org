@@ -1,0 +1,30 @@
+#+title: Programando en C con KNOPPIX
+#+date: <2006-04-07 21:35>
+#+author: Godofredo Fdez.
+#+description: Aquí encontraréis un Live CD basado en Debian GNU/Linux que os puede ayudar a dar vuestros primeros pasos en este sistema operativo (GNU/Linux) y en esta excelente distribución (Debian). Un Live CD es un sistema operativo instalado en un CD, desde el cual podemos arrancar nuestra máquina (seleccionando la opción apropiada en la BIOS, muchas veces viene por defecto) sin tener que realizar ninguna partición/instalación en nuestro disco duro. Así evitamos perder la información que este alberga si ocurre algún fallo, si somos inexpertos en materia de particiones/instalaciones, etc. La desventaja: el rendimiento es muy bajo, pero aún se puede trabajar.
+#+filetags: GNU/Linux Programación
+#+options: _:nil
+#+nid: 122
+
+#+begin_export html
+<a href="http://www.knopper.net/knoppix/index-en.html" target="_self"><img width="140" height="138" border="0" align="right" src="/static/img/knoppix-cd-button.gif"></a>
+#+end_export
+[[http://www.knopper.net/knoppix/index-en.html][Aquí]] encontraréis un [[http://es.wikipedia.org/wiki/LiveCD][Live CD]] basado en [[http://www.debian.org][Debian GNU/Linux]] que os puede ayudar a dar vuestros primeros pasos en este sistema operativo (GNU/Linux) y en esta excelente distribución (Debian).
+
+Un Live CD es un sistema operativo instalado en un CD, desde el cual podemos arrancar nuestra máquina (seleccionando la opción apropiada en la BIOS, muchas veces viene por defecto) sin tener que realizar ninguna partición/instalación en nuestro disco duro. Así evitamos perder la información que este alberga si ocurre algún fallo, si somos inexpertos en materia de particiones/instalaciones, etc. La desventaja: el rendimiento es muy bajo, pero aún se puede trabajar.
+
+Conseguimos así una herramienta muy útil para reconocer nuestro hardware y estudiar la compatibilidad de éste con GNU/Linux, para realizar los primeros pasos en un entorno de programación y, si conseguimos dominarlo (¡cuidado!), podemos incluso hacer particiones (qtparted) y copias de seguridad de las mismas (partimage), instalarlo en el disco duro, etc.
+
+Podéis descargar el CD desde [[ftp://csociety-ftp.ecn.purdue.edu/pub/knoppix/KNOPPIX_V4.0.2CD-2005-09-23-EN.iso][aquí]] (versión 4.0.2 disponible a fecha 07/04/06), y podéis encontrar una lista de mirrors [[http://www.knopper.net/knoppix-mirrors/index-en.html][aquí]] desde donde descargar las últimas versiones del CD y del DVD. *¡OJO!* Este archivo ha de ser "tostado" en el CD (o DVD según el caso) utilizando la opción de "grabar imagen" de los programas de grabación. No sirve si lo copiamos tal y como está al CD (si no entendéis lo que estoy diciendo aquí, pedirle ayuda a algún amigo).
+
+En [[http://godest.vivencias.net/node/86][este otro]] artículo, en la *primera alternativa comentada*, destacaba el uso de las siguientes herramientas para lograr un entorno de programación C en GNU/Linux: emacs, gcc, gdb y make. Todas ellas están incluidas en esta distribución, además incluye las páginas de manual de las distintas funciones de librería de C, por ejemplo: man fgets.
+
+En fin, espero que os ayude a descubrir un nuevo modo de diversión y aprendizaje.
+
+Libertad y conocimiento.
+
+Actualización [11-10-2006]: Hay una nueva versión del Live CD de Knoppix disponible. Es la *5.0.1*, y puede ser descargada desde [[http://ftp.uni-erlangen.de/pub/mirrors/knoppix/KNOPPIX_V5.0.1CD-2006-06-01-EN.iso][aquí]]. ¡OJO! En esta versión *no han incluido al editor emacs*, si a [[http://en.wikipedia.org/wiki/Zile_(editor)][zile]], que lo emula (para mi gusto demasiado básico pues en la configuración estándar ni colorea ni "sangra" bien el código). ¿Por qué no habrán incluido a [[http://www.jedsoft.org/jed/][jed]] que si lo hace? Os recomiendo que utilicéis la versión anterior (*4.0.2*) descrita más arriba, y sólo si os da problemas con vuestro hardware lo intentéis con esta última (*5.0.1*). Si tenemos un DVD en lugar de un CD podemos utilizar [[http://ftp.uni-kl.de/pub/linux/knoppix/DVD/KNOPPIX_V5.0.1DVD-2006-06-01-EN.iso][esta versión arrancable desde el DVD]], donde sí se incluye a nuestro querido editor [[http://es.wikipedia.org/wiki/Emacs][emacs]].\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Programando%20en%20C%20con%20KNOPPIX][Dejar comentario]].
+

@@ -1,0 +1,16 @@
+#+title: Y sigue siendo tú...
+#+date: <2012-11-25 11:30>
+#+author: Godofredo Fdez.
+#+description: 
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 497
+
+#+begin_export html
+<a href="/static/img/Sigue_siendo.jpg"  rel="lightbox"><img src="/static/img/Sigue_siendo.jpg" alt="Y sigue siendo tú..." title="Y sigue siendo tú..."  class="image image-preview " width="515" height="329" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Y%20sigue%20siendo%20t%C3%BA...][Dejar comentario]].
+

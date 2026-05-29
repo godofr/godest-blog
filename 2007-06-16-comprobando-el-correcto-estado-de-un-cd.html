@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Algunas veces echamos mano a un CD que teníamos grabado, o nos pasan uno, y al utilizarlo nos da problemas: normalmente la instalación no progresa por algún motivo, o no podemos acceder a alguna de las carpetas que tiene en su interior, o no podemos abrir/ejecutar algún archivo. Entonces, sospechamos sobre el correcto estado del CD.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Comprobando el correcto estado de un CD</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">16 jun. 2007</div><h1 class="post-title"><a href="https://godest.vivencias.net/2007-06-16-comprobando-el-correcto-estado-de-un-cd.html">Comprobando el correcto estado de un CD</a></h1>
+<p>
+Algunas veces echamos mano a un CD que teníamos grabado, o nos pasan uno, y al utilizarlo nos da problemas: normalmente la instalación no progresa por algún motivo, o no podemos acceder a alguna de las carpetas que tiene en su interior, o no podemos abrir/ejecutar algún archivo.
+</p>
+
+<p>
+Entonces, sospechamos sobre el correcto estado del CD.
+</p>
+
+<p>
+Si sabemos lo que contiene, por ejemplo: el CD se "construyó" con la última imagen disponible del <a href="http://www.sysresccd.org/Download">SystemRescueCd-x86-0.3.6</a>, podemos consultar en su web el "checksum o <a href="http://es.wikipedia.org/wiki/Hash">hash</a>" <a href="http://es.wikipedia.org/wiki/MD5">md5</a>, en nuestro ejemplo: 10e593919f24237de1e6dcfcb3517c50, y comprobar que el "checksum" de nuestro CD es el correcto. De serlo, con toda probabilidad el CD estará bien, por el contrario, si falla, tendremos que perder la esperanza de utilizarlo. Normalmente, esto nos ahorrará mucho tiempo, pues desistiremos de realizar sucesivos intentos fallidos.
+</p>
+
+<p>
+La pregunta es, <b>¿cómo puedo comprobar el "checksum" md5 de un CD?</b>
+</p>
+
+<p>
+Y la respuesta es sencilla: metemos el CD en nuestra lectora, y como root hacemos:
+</p>
+
+<pre class="example" id="org8f154fa">
+[22:34:45(root@surco)~]&gt; dd if=/dev/cdrom | md5sum
+242124+0 records in
+242124+0 records out
+123967488 bytes (124 MB) copied, 40,2209 seconds, 3,1 MB/s
+10e593919f24237de1e6dcfcb3517c50  -
+[22:35:41(root@surco)~]&gt;
+
+</pre>
+
+<p>
+Vemos que, en nuestro ejemplo, <b>¡coincide!</b>
+</p>
+
+<p>
+Justo cuando grabamos un CD podemos ejecutar este comando, y anotar su "checksum" en la etiqueta, así, posteriormente siempre podremos comprobar que todo sigue bien.
+</p>
+
+<p>
+También es aconsejable realizar este proceso cada vez que descargamos un archivo de Internet, comprobando que el "checksum" generado en nuestra máquina es el mismo que el que generaron sus autores (y del que nos informan, habitualmente, en su web).
+</p>
+
+<p>
+Se haría así:
+</p>
+
+<pre class="example" id="org8494abf">
+
+[22:35:50(godo@surco)~]&gt; md5sum systemrescuecd-x86-0.3.6.iso
+10e593919f24237de1e6dcfcb3517c50  systemrescuecd-x86-0.3.6.iso
+[22:35:56(godo@surco)~]&gt;
+
+</pre>
+
+<p>
+No malgastes tu tiempo, ¡es irrecuperable!
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Comprobando%20el%20correcto%20estado%20de%20un%20CD">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

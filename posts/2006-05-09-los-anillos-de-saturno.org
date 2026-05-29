@@ -1,0 +1,50 @@
+#+title: Los anillos de Saturno
+#+date: <2006-05-09 21:54>
+#+author: José Ignacio
+#+description: Muy buenas a todos. Quería compartir con vosotros mi última experiencia cuasi-mística y realmente emocionante ;) Algunos ya sabéis de mi reciente afición al apasionante mundo de la astronomía. Sí, una afición más: un buen amigo me dijo hace poco que soy como los italianos del Renacimiento porque practico todas las disciplinas (hasta ahora música, patinaje artístico, pintura y friki-level 2; a partir de ahora, además, astronomía). El caso es saber de todo un poco, hay tantas cosas que merecen la pena... :) Bueno, pues hace poco compré un telescopio reflector, y he estado empollando lo mínimo que hay que saber para finalmente acabar haciendo algunas observaciones de la Luna. Y anoche conseguí ver algo muy emocionante: el planeta Saturno. Gracias al programilla StarCalc (www.relex.ru/~zalex), introduciendo las coordenas exactas de la azotea de mi casa (http://spaniards.es/mapa/coordenadas), pude saber que Saturno estaría sobre las 23:00 justo en la línea que marca el Oeste (azimut 270 grados), con una elevación de unos 35 grados. Primero lo localicé visualmente, pero lo emocionante vino cuando mirando a través del telescopio pude comprobar que lo que a simple vista no es más que otro punto en el cielo, era en realidad una bolita con un anillo inclinado que la rodeaba. Fue increíble: allí estaba Saturno, ¡tal y como aparecía en los libros de "Naturales" en el colegio! Pero que nunca había visto en realidad. Me quedé embobado cuando veía los anillos (en realidad, el "anillo único" desde mi telescopio) y casi no me lo podía creer: siempre ha estado ahí, visible desde cualquier sitio, con pocos medios, y nunca lo había visto. Os recomiendo la experiencia, cuando queráis en mi casa.
+#+filetags: Desde_ti
+#+options: _:nil
+#+nid: 130
+
+Muy buenas a todos.
+
+Quería compartir con vosotros mi última experiencia cuasi-mística y realmente emocionante ;)
+
+Algunos ya sabéis de mi reciente afición al apasionante mundo de la astronomía. Sí, una afición más: un buen amigo me dijo hace poco que soy como los italianos del Renacimiento porque practico todas las disciplinas (hasta ahora música, patinaje artístico, pintura y friki-level 2; a partir de ahora, además, astronomía). El caso es saber de todo un poco, hay tantas cosas que merecen la pena... :) Bueno, pues hace poco compré un telescopio reflector, y he estado empollando lo mínimo que hay que saber para finalmente acabar haciendo algunas observaciones de la Luna. Y anoche conseguí ver algo muy emocionante: el planeta Saturno. Gracias al programilla StarCalc (www.relex.ru/~zalex), introduciendo las coordenas exactas de la azotea de mi casa (http://spaniards.es/mapa/coordenadas), pude saber que Saturno estaría sobre las 23:00 justo en la línea que marca el Oeste (azimut 270 grados), con una elevación de unos 35 grados. Primero lo localicé visualmente, pero lo emocionante vino cuando mirando a través del telescopio pude comprobar que lo que a simple vista no es más que otro punto en el cielo, era en realidad una bolita con un anillo inclinado que la rodeaba. Fue increíble: allí estaba Saturno, ¡tal y como aparecía en los libros de "Naturales" en el colegio! Pero que nunca había visto en realidad. Me quedé embobado cuando veía los anillos (en realidad, el "anillo único" desde mi telescopio) y casi no me lo podía creer: siempre ha estado ahí, visible desde cualquier sitio, con pocos medios, y nunca lo había visto. Os recomiendo la experiencia, cuando queráis en mi casa.
+
+Ya estoy inscrito en un par de asociaciones que tenemos en Sevilla sobre astronomía (Albireo y www.astrosevilla.tk), y espero que pronto pueda ir a una de las salidas que se hacen al campo por la noche, cargados con telescopios. Ya os contaré, y si alguno se anima ya sabe que puede incorporarse... ;)
+
+Un abrazo para todos
+José Ignacio
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Los%20anillos%20de%20Saturno][Dejar comentario]].
+
+** Comentarios
+
+*** La realidad supera a la ficción (Godo 18/05/2006 - 21:20)
+Hola José Ignacio.
+
+La verdad es que ha de ser alucinante ver, en realidad, aquello que sólo hemos visto en fotos. A mi ya me lo parecen estas cuando las veo aquí, en nuestra sección del Cosmos... creo que cuando tenga la oportunidad de verlas a través de tu telescopio me quedaré con la boca abierta: "algo tan insignificante disfrutando de algo tan infinito". Un verdadero placer a nuestro alcance que no necesita una victoria o mucho dinero o tantos otros condicionantes con los que nos pretenden esclavizar, hasta nuestros sentires.
+
+Sólo un cielo despejado, un "apagado" monte, y tú. Los auténticos placeres que dependen de uno mismo, los que nadie te puede amargar: como la música, como el saber, como el degustar un buen vino o una buena comida casera...
+
+Mucha fuerza y mucha ilusión para que sigas cultivando aficiones, esas son las que van dando un sentido a nuestra vida, supongo.
+
+Deseo que sigas compartiendo tus experiencias aquí, y no temas entrar en detalles. Creo que alguien dijo por ahí que cuando de verdad admiras una cosa es cuando llegas a conocerla a fondo. Haz que siga aumentando mi admiración.
+
+Calma y cielos despejados.\\
+
+*** La confirmación de una gran afición. (José Ignacio 27/06/2006 - 19:30)
+Siguiendo con este hilo astronómico, os dejo el enlace a las crónicas de una salida que hicimos la semana pasada. En lugar de escribir cosas repetidas, creo que (si tenéis curiosidad) es mejor que echéis un vistazo en:
+
+http://astrosurf.com/astrosevilla/encontros/20060621000.html
+
+La cosa va evolucionando, y ya pienso en invertir más dinero en este mundo tan apasionante... Lo malo es que es todo tan caro...
+
+José Ignacio.
+----------------------------------
+Dime cuánto tiempo queda,
+qué hago, aparte del vago,
+finjo estar de acuerdo,
+es un milagro que siga estando cuerdo

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Concretamente en Debian GNU/Linux , pero probablemente también sirva para otras distribuciones como, por ejemplo, Ubuntu . El ordenador fijo de casa tiene una tarjeta WiFI 3Com (como está pinchada en la placa desde hace tiempo no recuerdo el modelo exacto) soportada por el driver que, para el chipset atheros, ha desarrollado el proyecto madwifi .">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Configurando tarjeta WiFI 3Com en GNU/Linux</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">30 may. 2008</div><h1 class="post-title"><a href="https://godest.vivencias.net/2008-05-30-configurando-tarjeta-wifi-3com-en-gnu-linux.html">Configurando tarjeta WiFI 3Com en GNU/Linux</a></h1>
+<p>
+Concretamente en <a href="http://www.debian.org">Debian GNU/Linux</a>, pero probablemente también sirva para otras distribuciones como, por ejemplo, <a href="http://www.ubuntu.com">Ubuntu</a>.
+</p>
+
+<p>
+El ordenador fijo de casa tiene una tarjeta WiFI 3Com (como está pinchada en la placa desde hace tiempo no recuerdo el modelo exacto) soportada por el driver que, para el chipset atheros, ha desarrollado el proyecto <a href="http://madwifi.org/">madwifi</a>.
+</p>
+
+<p>
+¡¡OJO!! Todo lo que se ejecuta a continuación se hace desde un terminal. Buscad en vuestros menús un icono con una pantallita negra y la leyenda "terminal". Y una vez en él hemos de actuar como usuario root (en muchos casos basta con hacer: sudo su).
+</p>
+
+<p>
+Antes que nada, comprobad que tenéis el mismo chipset que yo haciendo esto (fijaos en la línea donde aparece: "Atheros Communications"):
+</p>
+
+<pre class="example" id="orga389c2e">
+[13:16:48(godo@surco)~]&gt; lspci
+00:00.0 Host bridge: Intel Corporation 82845 845 [Brookdale] Chipset Host Bridge (rev 03)
+00:01.0 PCI bridge: Intel Corporation 82845 845 [Brookdale] Chipset AGP Bridge (rev 03)
+00:1e.0 PCI bridge: Intel Corporation 82801 PCI Bridge (rev 12)
+00:1f.0 ISA bridge: Intel Corporation 82801BA ISA Bridge (LPC) (rev 12)
+00:1f.1 IDE interface: Intel Corporation 82801BA IDE U100 Controller (rev 12)
+00:1f.2 USB Controller: Intel Corporation 82801BA/BAM USB Controller #1 (rev 12)
+00:1f.3 SMBus: Intel Corporation 82801BA/BAM SMBus Controller (rev 12)
+00:1f.4 USB Controller: Intel Corporation 82801BA/BAM USB Controller #1 (rev 12)
+00:1f.5 Multimedia audio controller: Intel Corporation 82801BA/BAM AC97 Audio Controller (rev 12)
+01:00.0 VGA compatible controller: ATI Technologies Inc Rage 128 Pro Ultra TF
+02:08.0 Ethernet controller: Intel Corporation 82801BA/BAM/CA/CAM Ethernet Controller (rev 03)
+02:0b.0 Ethernet controller: Atheros Communications Inc. AR5413 802.11abg NIC (rev 01)
+[13:16:53(godo@surco)~]&gt;
+
+</pre>
+
+<p>
+En debian existen los siguientes paquetes con las fuentes del driver:
+</p>
+
+<pre class="example" id="org28cabf6">
+[11:49:40(godo@surco)~]&gt; dpkg --list | grep madwifi
+ii  madwifi-doc                          1:0.9.3-2
+documentation for the Multiband Atheros Driv
+ii  madwifi-source                       1:0.9.4~rc2-1
+source for the Multiband Atheros Driver for
+ii  madwifi-tools                        1:0.9.4~rc2+dfsg-1
+tools for the Multiband Atheros Driver for W
+[11:49:47(godo@surco)~]&gt;
+
+</pre>
+
+<p>
+Los cuales tienes que tener instalados en el sistema.
+</p>
+
+<p>
+Estos paquetes dejan en el directorio /usr/src el archivo madwifi.tar.bz2. Al descomprimirlo se genera el siguiente directorio /usr/src/modules/madwifi.
+</p>
+
+<p>
+Además, hace falta tener instalado el paquete de las cabeceras "headers" correspondiente al núcleo, al kernel, con el que se arranca la máquina. Como las actualizaciones de "apt-get upgrade" suelen renovar la versión del kernel cada cierto tiempo, es necesario tras cada actualización que implique renovación de versión hacer lo siguiente:
+</p>
+
+<p>
+1.- Asegurarse de que existe en el directorio /usr/src los siguientes archivos:
+</p>
+
+<pre class="example" id="org6c2d023">
+[11:50:44(godo@surco)/usr/src]&gt; ll
+total 3492
+-rw-r--r--  1 root root   24181 abr 30 10:42 cloop.tar.bz2
+lrwxrwxrwx  1 root src       26 may 30 11:41 linux -&gt;
+linux-headers-2.6.24-1-686
+drwxr-xr-x  4 root root     600 may 25 20:34 linux-headers-2.6.24-1-686
+drwxr-xr-x 18 root root     456 may 25 20:34
+linux-headers-2.6.24-1-common
+drwxr-xr-x  3 root root      72 dic 23  2006 linux-kbuild-2.6.18
+drwxr-xr-x  3 root root      72 oct  5  2007 linux-kbuild-2.6.22
+drwxr-xr-x  3 root root      72 may 25 20:34 linux-kbuild-2.6.24
+-rw-r--r--  1 root root 3543950 feb 12 13:08 madwifi.tar.bz2
+drwxr-xr-x  3 root root      72 feb 12 13:08 modules
+[11:53:18(godo@surco)/usr/src]&gt;
+
+</pre>
+
+<p>
+Para ello hay que tener instalados, desde siempre, los siguientes paquetes:
+</p>
+
+<pre class="example" id="orgb358e14">
+apt-get install madwifi-source madwifi-tools madwifi-doc
+linux-headers-2.6-686 wireless-tools
+
+</pre>
+
+<p>
+2.- Hacer el enlace simbólico linux -&gt; linux-headers-2.6.24-1-686 que no existirá pues es necesario hacerlo a mano, así:
+</p>
+
+<pre class="example" id="orge17d950">
+[11:50:44(godo@surco)/usr/src]&gt; ln -s linux-headers-2.6.24-1-686 linux
+
+</pre>
+
+<p>
+3.- Descomprimir el archivo madwifi.tar.bz2, así:
+</p>
+
+<pre class="example" id="org6250209">
+[11:50:44(godo@surco)/usr/src]&gt; tar -xvjf madwifi.tar.bz2
+
+</pre>
+
+<p>
+4.- Meternos en el directorio del driver:
+</p>
+
+<pre class="example" id="org6a26620">
+[11:50:44(godo@surco)/usr/src]&gt; cd modules/madwifi
+
+</pre>
+
+<p>
+5.- Ejecutar los siguientes comandos:
+</p>
+
+<pre class="example" id="orgf18453a">
+[11:50:44(godo@surco)/usr/src]&gt; make
+[11:50:44(godo@surco)/usr/src]&gt; make install
+[11:50:44(godo@surco)/usr/src]&gt; modprobe ath_pci countrycode=724
+
+</pre>
+
+<p>
+Y por último ejecutamos el script (creado previamente por nosotros) de configuración de nuestra tarjeta:
+</p>
+
+<pre class="example" id="orgce02e05">
+[11:50:44(godo@surco)/usr/src]&gt; /sbin/iwconfig ath0 essid "ElVuestro" enc 53C268252C7642BD23484D970E
+
+</pre>
+
+<p>
+El essid es el identificador de red que difunde vuestro punto de acceso, y la ristra que sigue a enc es la clave WEP de cifrado, si lo tenéis activo, claro está.
+</p>
+
+<p>
+Y, si todo ha ido bien, ya tenemos nuestra tarjeta WiFI detectada.
+</p>
+
+<p>
+6.-Lo podemos comprobar así:
+</p>
+<pre class="example" id="orgd20fddb">
+[11:50:44(godo@surco)/usr/src]&gt; iwconfig
+
+ath0      IEEE 802.11g  ESSID:"ElVuestro"  Nickname:""
+          Mode:Managed  Frequency:2.442 GHz  Access Point: 00:23:4A:30:E1:B4
+          Bit Rate:54 Mb/s   Tx-Power:16 dBm   Sensitivity=1/1
+          Retry:off   RTS thr:off   Fragment thr:off
+          Encryption key:53C2-6825-2C76-42BD-2348-4D97-0E   Security mode:restricted
+          Power Management:off
+          Link Quality=47/70  Signal level=-49 dBm  Noise level=-96 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+</pre>
+
+<p>
+7.- Y ahora solo falta configurar las direcciones ip de nuestro interfaz y de nuestro router por defecto (ojo, que esto depende de la que tenga configurada el router):
+</p>
+
+<p>
+Si queremos hacerlo de forma fija, y la que tiene el router wifi es 192.168.7.77:
+</p>
+
+<pre class="example" id="orge8879a0">
+[11:50:44(godo@surco)/usr/src]&gt; /sbin/ifconfig ath0 192.168.7.7 netmask 255.255.255.0 up
+[11:50:44(godo@surco)/usr/src]&gt; /sbin/route add default gw 192.168.7.77
+
+</pre>
+
+<p>
+Si queremos hacerlo por dhcp (para el que no sepa que significa esto del ip, mejor esta opción):
+</p>
+
+<pre class="example" id="org1a14a12">
+[11:50:44(godo@surco)/usr/src]&gt; /sbin/dhclient ath0
+
+</pre>
+
+<p>
+8.- Comprobamos que tenemos conectividad WiFI:
+</p>
+
+<pre class="example" id="org5f0cc6e">
+[12:29:59(root@surco)/etc/init.d]&gt; ping 192.168.7.77
+PING 192.168.7.77 (192.168.7.77) 56(84) bytes of data.
+64 bytes from 192.168.7.77: icmp_seq=1 ttl=64 time=1.00 ms
+64 bytes from 192.168.7.77: icmp_seq=2 ttl=64 time=0.936 ms
+64 bytes from 192.168.7.77: icmp_seq=3 ttl=64 time=0.953 ms
+. . . pulsamos Ctrl+C para terminar.
+
+</pre>
+
+<p>
+Si la respuesta es de este tipo, todo hay ido bien.
+</p>
+
+<p>
+Si, por el contrario, es así:
+</p>
+
+<pre class="example" id="orged03147">
+[12:29:59(root@surco)/etc/init.d]&gt; ping 192.168.7.77
+PING 192.168.7.77 (192.168.7.77) 56(84) bytes of data.
+... aquí no aparece nada ...
+
+</pre>
+
+<p>
+Algún problema ha habido.
+</p>
+
+<p>
+Espero que ayude. ¡A disfrutad de la red desde GNU/Linux!
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Configurando%20tarjeta%20WiFI%203Com%20en%20GNU%2FLinux">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-hardware.html">Hardware</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

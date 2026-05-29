@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="En kernels 2.4 Este paquete de utilidades sirve para monitorizar algunos de los sensores que actualmente incorporan las placas madre. En mi caso puedo monitorizar la temperatura de la CPU, la del ¿Sistema? y la velocidad de giro (rpm) del ventilador de la CPU (y algunas otras cosas más que no me interesan tanto). Paquetes Debian necesarios (en otras distribuciones pueden variar): libsensors1 lm-sensors lm-sensors-source wmsensormon xsensors">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Como instalar el paquete lm-sensors</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">17 jun. 2004</div><h1 class="post-title"><a href="https://godest.vivencias.net/2004-06-17-como-instalar-el-paquete-lm-sensors.html">Como instalar el paquete lm-sensors</a></h1>
+<div id="outline-container-org9255ec0" class="outline-2">
+<h2 id="org9255ec0">En kernels 2.4</h2>
+<div class="outline-text-2" id="text-org9255ec0">
+<p>
+Este paquete de utilidades sirve para monitorizar algunos de los sensores que actualmente incorporan las placas madre. En mi caso puedo monitorizar la temperatura de la CPU, la del ¿Sistema? y la velocidad de giro (rpm) del ventilador de la CPU (y algunas otras cosas
+más que no me interesan tanto).
+</p>
+
+<p>
+Paquetes Debian necesarios (en otras distribuciones pueden variar):
+</p>
+
+<ol class="org-ol">
+<li>libsensors1</li>
+<li>lm-sensors</li>
+<li>lm-sensors-source</li>
+<li>wmsensormon</li>
+<li>xsensors</li>
+</ol>
+
+<p>
+Una vez instalados dichos paquetes, has de descomprimir el paquete /usr/src/lm-sensors.tar.gz, apareciéndote el directorio: /usr/src/modules/lm-sensors.
+Situados en el directorio anterior, como root, hacemos lo siguiete:
+</p>
+
+<ol class="org-ol">
+<li><code>make</code></li>
+<li><code>make install</code></li>
+</ol>
+
+<hr>
+
+<p>
+Lo que sigue <b>sólo hay que hacerlo una vez</b> ya que permanece en archivos de configuración del sistema aunque el kernel sea recompilado:
+</p>
+
+<ul class="org-ul">
+<li><code>depmod -a</code></li>
+<li>añadir la línea <code>/usr/local/lib</code> al archivo /etc/ld.so.conf</li>
+<li><code>ldconfig</code></li>
+<li>crear los ficheros de dispositivo: <code>/usr/src/modules/lm-sensors/prog/mkdev/mkdev.sh</code></li>
+<li>detectar tu hardware: <code>/usr/src/modules/lm-sensors/prog/detect/sensors-detect</code></li>
+<li>añadir los módulos detectados a /etc/modules</li>
+<li>ir cargando cada uno de los módulos detectados con: <code>modprobe nombre_modulo</code></li>
+<li>ejecutar el comando: <code>sensors -s</code></li>
+<li>consultar los sensores con: <code>sensors</code></li>
+</ul>
+
+<hr>
+</div>
+</div>
+<div id="outline-container-orgcc6e942" class="outline-2">
+<h2 id="orgcc6e942">En kernels 2.6</h2>
+<div class="outline-text-2" id="text-orgcc6e942">
+<p>
+<b>Requisitos previos</b>: los paquetes que actualmente tengo instalados (estoy utilizando Debian Sarge) son los siguientes:
+</p>
+
+<pre class="example" id="org7a19f2c">
+ii  ksensors       0.7.2-16       lm-sensors frontend for KDE
+
+ii  libsensors3    2.8.6-13       Library to read temperature/voltage/fan sens
+
+ii  lm-sensors     2.8.6-13       Utilities to read temperature/voltage/fan se
+</pre>
+
+<p>
+El primero de ellos es el programa de KDE que me permite tener la
+información obtenida de los sensores en la bandeja del sistema.
+Hay mucho software libre que sirve para mostrar dicha información,
+utiliza el que más te guste.
+</p>
+
+<p>
+En estos kernels se están incorporando poco a poco el soporte de distintos
+chipsets. Los que hay en mi placa base ya están soportados, y para compilar un
+kernel que los utilice hago lo siguiente:
+</p>
+
+<p>
+Selecciono en el panel de la izquierda (yo utilizo make xconfig): Device Drivers &#x2013;&gt; I2C support. Y en las opciones posibles en el panel de la derecha selecciono:
+</p>
+
+<ul class="org-ul">
+<li>I2C support: cableado en el kernel (una marca "v" en su casilla).</li>
+<li>I2C Device Interface: como módulo (un punto "." en su casilla).</li>
+<li>I2C Hardware Bus support: módulos: ISA Bus support y VIA82C596/82C686/823X</li>
+<li>Hardware Sensors Chip support: módulos: National semiconductor LM80 y VIA686A</li>
+<li>Other I2C Chip support: módulo: EEPROM reader</li>
+</ul>
+
+<p>
+Todo lo que no menciono está deseleccionado.
+</p>
+
+<p>
+Claro, por eso
+esto sólo da soporte a mi actual máquina, si el día de mañana cambiara tendría
+que averiguar previamente los chipsets de los que dispondría, lo cual se hace con el comando sensors-detect.
+</p>
+
+<p>
+Tras guardar la configuración y compilar el kernel has de tener soporte de los citados dispositivos.
+</p>
+
+<hr>
+</div>
+</div>
+<div id="outline-container-org5ca19eb" class="outline-2">
+<h2 id="org5ca19eb">Configuración y arranque automático</h2>
+<div class="outline-text-2" id="text-org5ca19eb">
+<p>
+Te aconsejo que eches un vistazo, para fijar los valores máximos y mínimos de tus "dispositivos" que están siendo monitorizados por
+los sensores, al fichero /etc/sensors.conf.
+</p>
+
+<p>
+Igualmente te aconsejo que crees un enlace simbólico en el nivel de ejecución apropiado de tu sistema linux (en mi caso /etc/rc2.d/S89sensors) que apunte a un script situado en /etc/init.d/sensors.sh que ejecute el comando <code>sensors -s</code> cada vez
+que inicie el sistema, fijando así los valores máximos y mínimos de los dispositivos a monitorizar según lo configurado en el fichero
+/etc/sensors.conf.
+</p>
+
+<p>
+Y esto es todo.
+</p>
+
+<p>
+Salud.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Como%20instalar%20el%20paquete%20lm-sensors">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

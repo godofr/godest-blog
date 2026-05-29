@@ -1,0 +1,15 @@
+#+title: GNU-Linux al ataque
+#+date: <2009-05-21 13:13>
+#+author: Godofredo Fdez.
+#+description: Un sistema operativo libre. ¡ Al ataque !
+#+filetags: 
+#+options: _:nil
+#+nid: 322
+
+Un sistema operativo libre.
+
+¡[[http://www.gnu.org/software/software.html][Al ataque]]!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=GNU-Linux%20al%20ataque][Dejar comentario]].
+

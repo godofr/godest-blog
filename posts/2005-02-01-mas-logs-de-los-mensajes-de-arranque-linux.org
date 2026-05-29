@@ -1,0 +1,71 @@
+#+title: Más "logs" de los mensajes de arranque (Linux)
+#+date: <2005-02-01 15:03>
+#+author: Godofredo Fdez.
+#+description: A todos los que nos hemos decidido a profundizar en el apasionante mundo del sistema operativo Linux, nos ha sido necesario, alguna vez, "monitorizar" los…
+#+filetags: GNU/Linux
+#+options: _:nil
+#+nid: 15
+
+A todos los que nos hemos decidido a profundizar en el apasionante mundo del sistema operativo Linux, nos ha sido necesario, alguna vez, "monitorizar" los mensajes que el sistema está arrojando mientras arranca.
+
+La primera forma de hacerlo, que suele aparecer en casi todos los manuales para "principiantes", ha sido utilizando el comando "dmesg" (tanto como usuario como root). Posteriormente hemos aprendido que, mientras que arranca el sistema, podemos pulsar la tecla "Bloq Despl" de la parte superior derecha de nuestros teclados, y lograr así una pausa del "desplazamiento de nuestra pantalla" (también conocido como "scroll"), y movernos a su través utilizando las combinaciones: "Mayúsculas + Re Pág" (arriba) y "Mayúsculas + Av Pág" (abajo).
+
+Existe una tercera forma de conseguir más mensajes de "log" (de rastro, o traza) que tanto el kernel como otros procesos del sistema van generando durante el arranque.
+
+Es fácil:
+
+Has de adaptar el contenido del siguiente archivo tal y como se muestra:
+
+#+BEGIN_EXAMPLE
+  [13:51:59(root@capacho) /var/log]#more /etc/default/bootlogd
+
+  # Run bootlogd at startup ?
+
+  BOOTLOGD_ENABLE=Yes
+#+END_EXAMPLE
+
+Tras el siguiente encendido de nuestra máquina (y, obviamente, todos los que realices en el futuro) tendrás en el fichero /var/log/boot toda la información que complementa a la obtenida con el comando "dmesg". Ambas corresponden, como hemos comentado anteriormente, a la generada por el kernel, y los diferentes procesos, a lo largo del arranque del sistema.
+
+Ejemplo:
+
+#+BEGIN_EXAMPLE
+  [13:53:19(root@capacho) /var/log]#more boot
+
+  Tue Feb  1 09:55:46 2005: bootlogd.
+
+  Tue Feb  1 09:55:46 2005: Activating swap.
+
+  Tue Feb  1 09:55:46 2005: Checking root file system...
+
+  Tue Feb  1 09:55:46 2005: fsck 1.35 (28-Feb-2004)
+
+  Tue Feb  1 09:55:46 2005: /: clean, 150543/622592 files, 908933/1245037 blocks
+
+  Tue Feb  1 09:55:46 2005: mount: wrong fs type, bad option, bad superblock on tmp fs,
+
+  Tue Feb  1 09:55:46 2005:        or too many mounted file systems
+
+  Tue Feb  1 08:55:47 2005: System time was Tue Feb  1 07:55:47 UTC 2005.
+
+  Tue Feb  1 08:55:47 2005: Setting the System Clock using the Hardware Clock as reference...
+
+  Tue Feb  1 08:55:49 2005: System Clock set.System local time is Tue Feb 1 8:55:49 CET 2005.
+
+  Tue Feb  1 08:55:49 2005: Cleaning up ifupdown...done.
+
+  Tue Feb  1 08:55:49 2005: Calculating module dependencies... done.
+
+  ... (cortamos aquí la salida por comodidad ;-)  )
+#+END_EXAMPLE
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=M%C3%A1s%20%22logs%22%20de%20los%20mensajes%20de%20arranque%20%28Linux%29][Dejar comentario]].
+
+** Comentarios
+
+*** log arranque (gavsys 26/08/2009 - 20:26)
+Gracias por el post. En linux todos los dias se aprende algo.
+Salu2.\\
+
+*** Excelente dato, se agradece. (alejo 23/08/2011 - 00:21)
+Excelente dato, se agradece.

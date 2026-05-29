@@ -1,0 +1,22 @@
+#+title: Artículos a revisar
+#+date: <2021-09-15 07:38>
+#+author: Godofredo Fdez.
+#+description: Abro esta entrada para revisar artículos donde he detectado que describo cosas que han dejado de funcionar. 1) Artículo:…
+#+filetags: 
+#+options: _:nil
+#+nid: 577
+
+Abro esta entrada para revisar artículos donde he detectado que describo cosas que han dejado de funcionar.
+
+1) Artículo: https://godest.vivencias.net/content/blog-personal-o-blog-tem%C3%A1tico
+Ha dejado de funcionar lo que digo al final de unir varias categorías en una única "consulta" a la taxonomía. Es decir, esto:
+http://godest.vivencias.net/taxonomy/term/10+27+16
+http://godest.vivencias.net/taxonomy/term/10+27+16/feed
+
+Investigar para ver si es posible solucionarlo, porque es potente incluso para ti mismo sino lo llegara a usar nadie más ;-)
+
+2)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Art%C3%ADculos%20a%20revisar][Dejar comentario]].
+

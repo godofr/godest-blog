@@ -1,0 +1,19 @@
+#+title: Seguridad en Entornos Web
+#+date: <2012-05-15 09:46>
+#+author: Godofredo Fdez.
+#+description: El próximo día 17 de mayo de 2012 impartiré una ponencia titulada "Seguridad en Entornos Web" en el Máster Universitario Oficial de la Universidad de Sevilla…
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 469
+
+El próximo día 17 de mayo de 2012 impartiré una ponencia titulada "Seguridad en Entornos Web" en el Máster Universitario Oficial de la Universidad de Sevilla titulado: [[http://www.mastergtic.us.es/descripcion.php][Gestión de las Tecnologías de la Información y de las Comunicaciones]].
+
+En la ponencia veremos los diferentes tipos de ataques más habituales y relevantes en este tipo de entornos, así como los mecanismos de defensa a adoptar para intentar mitigar el impacto de los mismos.
+
+La seguridad es un proceso en continua evolución, y dentro del mismo habrá que tratar con diferentes incidentes que se produzcan. Veremos también los pilares básicos sobre los que construir un proceso de Gestión de Incidentes de Seguridad.
+
+Espero que a los asistentes les resulte interesante.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20en%20Entornos%20Web][Dejar comentario]].
+

@@ -1,0 +1,109 @@
+#+title: Servicios en la nube. El fantástico Dropbox
+#+date: <2010-04-21 10:48>
+#+author: Godofredo Fdez.
+#+description: Si ya sabes lo que es Dropbox y simplemente quieres instalártelo consiguiendo 250MB más sobre los 2GB gratuitos, pincha aquí ;-). Si no sabes nada de él, sigue…
+#+filetags: Seguridad Software
+#+options: _:nil
+#+nid: 352
+
+Si ya sabes lo que es *Dropbox* y simplemente quieres instalártelo consiguiendo 250MB más sobre los 2GB gratuitos, pincha *[[https://db.tt/51sY8Fy][aquí]]* ;-). Si no sabes nada de él, sigue leyendo.
+
+Hace tiempo, un compañero de la Universidad me envió una invitación a *Dropbox*. Vengo utilizándolo desde entonces y cuento con la suficiente experiencia para aconsejar su uso.
+
+*¿Qué es Dropbox?*
+Dropbox es un software que al ser instalado en vuestro PC (da igual el sistema operativo que utilicéis pues hay versión para Windows, GNU/Linux y MAC) crea una carpeta con nombre "My Dropbox" y cualquier fichero que guardéis en ella es copiado a vuestro espacio en sus servidores.
+
+*¿Qué prestaciones nos brinda esto?*
+
+1.- Si repetimos el paso anterior (instalación de Dropbox) en varios de nuestros ordenadores o iPhones tendremos todos los ficheros que guardemos en la carpeta de "My Dropbox" de cualquiera de ellos disponibles (sincronizados) en el resto. ¡Esto es magnífico!
+
+2.- Copia de Seguridad on-line. Todos vuestros ficheros, incluso los borrados, estarán disponibles desde vuestra cuenta de usuario en Dropbox. Tenemos una capacidad disponible inicial de 2GB para almacenar ficheros, los cuales podemos recuperar en cualquier PC donde instalemos, o reinstalemos (tras un formateo, por ejemplo) Dropbox.
+
+3.- Pero, ¿qué pasa si borráis un fichero sin querer o hacéis cambios del mismo y luego detectáis que esos cambios no son oportunos? Es posible recuperar ficheros y carpetas borradas. También es posible recuperar versiones antiguas de documentos. Si hoy trabajamos en un fichero, y mañana también, en Dropbox habrá dos versiones almacenadas de ese fichero, y así hasta los últimos 30 días. A través del interfaz web podemos recuperar cualquiera de dichas versiones previas. La versión del fichero actual, la última disponible, siempre será conservada sin límite de tiempo. Sólo se van desechando las antiguas.
+
+4.- Permite compartir de forma pública un fichero. Basta con guardarlo en la carpeta "Public" de "My Dropbox", pulsar sobre el botón derecho del ratón y seleccionar dentro del apartado "Dropbox" la opción "Copy Public Link". Tendremos una dirección "web" a ese fichero copiada en el portapapeles. Si ahora compartimos dicha dirección: por mail, página web, etc. nuestro destinatario o destinatarios (todo aquel que tenga acceso al enlace "pegado", por eso esta es la forma pública) podrá bajar de los servidores de Dropbox dicho fichero.
+
+5.- La compartición privada de una carpeta entre varios usuarios, y sólo entre ellos, para trabajar en equipo, también es muy fácil: basta con entrar en nuestra cuenta de Dropbox a través de su página web y seguir los pasos indicados tras seleccionar "Share a Folder". En este caso todos los usuarios tendrán que tener cuenta en "Dropbox", por eso es privada.
+
+*A partir de ahora os será más fácil todo esto*:
+
+#+BEGIN_QUOTE
+  - Ya no será necesario distribuir grandes ficheros como adjuntos a los emails (evitando consumir espacio en servidores de correo que suelen limitarlo).
+  - Tampoco tendremos que copiar ficheros en "memorias USB" para moverlos entre diferentes ordenadores.
+  - Evitamos tener que renombrar ficheros para mantener un histórico de versiones. Lo tenemos en Dropbox (eso sí, recordad que sólo tendremos las versiones viejas existentes en los últimos 30 días). Siempre podemos volver a una versión anterior del mismo si la actual se corrompe.
+  - Tener un servicio de backup (básico) de nuestro trabajo. No sólo en los servidores de Dropbox sino distribuido en varios de nuestros ordenadores. Para manejar esto último ¡¡ojo con la sincronización!!: si borramos algo en uno de ellos lo borraremos en todos los que estén sincronizando, para evitarlo, tendremos que encender nuestro "segundo" ordenador sin conexión a Internet, o más fácil, acceder a nuestra cuenta de Dropbox y recuperar la versión que deseemos.
+#+END_QUOTE
+
+*¿Y de la privacidad de mis datos qué?*
+Pues hombre, no trabajo en Dropbox pero claman lo siguiente: los ficheros que se almacenan en sus servidores están cifrados con el algoritmo AES-256 (suficientemente fuerte a día de hoy), así, ninguno de sus empleados puede tener acceso a dichos ficheros descifrados. Además, el envío se realiza por túneles SSL, es decir, también cifrados. Y el resto depende de ti: piensa a quién invitas a tus carpetas privadas (ellos garantizan el acceso a sólo tu invitados), piensa qué compartes en tu carpeta pública, y protege tu cuenta con una password de acceso segura: si alguien consigue tu password ¡será tú!
+Y si todo esto no os parece suficiente pensar en lo que ocurre cada vez que enviáis un mail sin cifrar (pocos los enviamos de forma cifrada), adjuntos sin cifrar, documentos sin cifrar en USBs que se acaban perdiendo... en fin, que puestos a dudar extender la duda a lo que hacéis todos los días, incluso a las líneas de comunicaciones por donde pasan vuestros datos sin cifrar, ¿os habéis parado a pensar en eso?
+
+*¿Qué hay que hacer para utilizar Dropbox?* Es tan fácil, y necesario, como pulsar *[[https://db.tt/51sY8Fy][aquí]]* ;-).
+
+¡A disfrutadlo!
+
+P.D.: a modo de negocio, no me extrañaría nada que esta pequeña empresa fuera siendo adquirida por algún "Gran jugador" de servicios desde la "nube" (forma snob de llamar ahora a Internet)... yo lo haría.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Servicios%20en%20la%20nube.%20El%20fant%C3%A1stico%20Dropbox][Dejar comentario]].
+
+** Comentarios
+
+*** Mi experiencia con Dropbox (jfc 26/03/2011 - 12:23)
+Yo también llevo tiempo usando dropbox y lo veo muy útil.
+
+Me creé una cuenta por probar, pense que no lo necesitaba. Cuando de verdad empecé a usarlo fue cuando varios compañeros de la escuela comenzados a hacer varios trabajos en común.
+
+Creamos varias carpetas compartidas y nos facilita enormemente la vida. Podemos seguir el desarrollo del trabajo sin tener que andar enviándonos los archivos por email. Simplemente trabajamos sobre los archivos de la carpeta de Dropbox compartida, que se almacena localmente en el ordenador y se sincroniza cuando hay cambios.
+
+Lo único que a día de hoy hecho en falta es una especie de chat o log donde poder dejar comentarios para los trabajos en común. Nosotros usamos un archivo log.txt que editamos con las novedades que vayan surgiendo.
+
+Sobre la integración en dispositivos móviles, otro punto a favor. Lo he probado en iPod touch y actualmente lo uso en mi móvil con android.
+
+Conclusión: Un servicio que cuando lo pruebas no puedes prescindir de él. Muy cómodo.
+
+*** Carpeta Public de Dropbox (Susana 01/12/2011 - 22:28)
+Hola, me cargué la carpeta public porque desconocía su utilidad y hace tanto que ahora ni siquiera puedo verla en archivos borrados ¿cómo puedo recuperarla o crear una con las mismas prestaciones? Gracias
+
+*** Según el foro de dropbox (Godo 02/12/2011 - 13:10)
+conforme se explica aquí: http://forums.dropbox.com/topic.php?id=48139
+
+Básicamente:
+
+#+BEGIN_EXAMPLE
+  You can simply create a new folder in the ROOT of your dropbox, and name it "Public"
+
+  (note the capital P).
+
+  The ROOT means at at for example: C:\Users\John\Dropbox\Public
+
+  The Public folder will not work if you create within other sub-folders within Dropbox.
+
+  To get back the "globe icon", once you have created the new "Public folder", use Notepad and create a new file named "desktop.ini" within the Public folder. Write the following contents in the "desktop.ini" file (replacing the username John with your own Windows username):
+
+  [.ShellClassInfo]
+
+  IconFile=C:\Users\John\AppData\Roaming\Dropbox\bin\Dropbox.exe
+
+  IconIndex=-2101
+
+  InfoTip=A securely backed up place to put your important files.
+#+END_EXAMPLE
+
+Por favor, cuéntame si te ha funcionado.
+
+Salud.
+
+*** privacidad (Anonymous 08/05/2012 - 19:33)
+Entonces, lo unico que tiene acceso la gente es lo que ponga en la carpeta "Public"? es que generé un link de un archivo que no estaba en esa carpeta y pude ver el archivo en un ordenador que no tiene Dropbox instalado.
+
+Saludos.
+
+*** La gente no tiene acceso a nada... (Godo 10/05/2012 - 09:14)
+Partamos de que la gente no tiene acceso a nada hasta que tú lo compartes (a través del enlace asociado al documento).
+
+Acabo de comprobar que en la versión actual de mi cliente Dropbox (1.4.3) es cierto lo que dices: permite generar un enlace desde cualquier archivo, indiferentemente de donde esté ubicado. No se desde qué versión esto es posible, pero cuando escribí el artículo esta funcionalidad sólo era posible para aquellos archivos ubicados en la carpeta "public". Y esto tiene implicaciones de seguridad: no tanto tecnológicas sino de comportamiento del usuario: antes tenías que pasar dos filtros mentales: 1) ubicar el archivo en public, 2) generar el enlace y compartirlo. Ahora estos dos pasos quedan reducidos al segundo, lo que facilita la compartición (no obliga a mover/copiar los archivos de su carpeta original a la "públic") y favorece el error de compartir algo no adecuado (esto, como siempre, depende de nosotros).
+
+MUCHAS GRACIAS POR DEJAR EL COMENTARIO. Me ha hecho descubrir una nueva realidad ;-)
+
+...tengo que leer más.

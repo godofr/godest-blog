@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Para imprimir en la impresora configurada en la máquina linux, utilizando para ello "cups" (la impresora ha de estar correctamente configurada en "cups", si no…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Servidor de impresión Linux para clientes Windows</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">15 jun. 2004</div><h1 class="post-title"><a href="https://godest.vivencias.net/2004-06-15-servidor-de-impresion-linux-para-clientes-windows.html">Servidor de impresión Linux para clientes Windows</a></h1>
+<p>
+Para imprimir en la impresora configurada en la máquina linux, utilizando para ello "cups" (la impresora ha de estar correctamente configurada en "cups", si no lo está, es decir, si áun no has conseguido imprimir desde Linux, no sigas leyendo este documento) has de hacer lo siguiente:
+</p>
+
+<p>
+1.- Tener los apartados correspondientes a la impresora en /etc/samba/smb.conf, copiado a continuación, ¿completito? ;-), por comodidad:
+</p>
+
+<p>
+#+begin<sub>example</sub>
+</p>
+<div id="outline-container-org753152e" class="outline-2">
+<h2 id="org753152e">smb.conf <b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></h2>
+<div class="outline-text-2" id="text-org753152e">
+<p>
+[(godo) /etc/samba]&gt; more smb.conf
+</p>
+
+<p>
+[global]
+        workgroup = ACEITE
+        netbios name = ALPECHIN
+        server string = %h server (Samba %v)
+        security = SHARE
+        encrypt passwords = Yes
+        passwd program = /usr/bin/passwd %u
+        passwd chat = <b>Enter\snew\sUNIX\spassword:</b> %n\n <b>Retype\snew\sUNIX\spassword:</b> %n\n .
+        syslog = 0
+        max log size = 1000
+        socket options = IPTOS<sub>LOWDELAY</sub> TCP<sub>NODELAY</sub> SO<sub>SNDBUF</sub>=4096 SO<sub>RCVBUF</sub>=4096
+        dns proxy = No
+        invalid users = root
+        hosts allow = 172.31.0.2
+
+#Para compartir la impresora con cups
+        load printers = Yes
+        printing = cups
+        printcap name = cups
+
+[printers]
+        comment = Todas las impresoras
+        path = /var/spool/samba
+        browseable = No
+        public = Yes
+        create mask = 0700
+        guest ok = Yes
+        writeable = No
+        printable = Yes
+        print command = lpr-cups -P 0
+        lpq command = lpstat -o 0
+        lprm command = cancel 0-%j
+
+[Linux-godo]
+        path = /home/godo
+        read only = No
+
+[Linux-GFR]
+        path = /home/godo/gfr
+        read only = No
+
+[Lin-Usuarios]
+        path = /mnt/usuarios
+        read only = No
+
+<b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+</p>
+
+<p>
+#+end<sub>example</sub>
+</p>
+
+<p>
+2.- Haber creado como root el directorio: /var/spool/samba con permisos <code>chmod 777</code>.
+</p>
+
+<p>
+3.- Instalar en la máquina Windows la impresora utilizando el CD-ROM que esta trae consigo. Pulsas sobre la opción "instalar drivers" - "Avanzado" - "Impresora en red" y, automáticamente, aparece la impresora \\alpechin\stcolor400 definida en "cups". Le das a continuar&#x2026; y todo se instala correctamente. Aunque al final el programa de instalación parece quedarse colgado e incluso escupe un mensajito de los típicos "La aplicación debe ser cerrada y&#x2026;" ¡OJO: esto último (lo del cuelgue) no tiene porqué pasarte a ti ;-), de hecho es mejor si no te pasa, porque vamos, pasar "pa na" es tontería.
+</p>
+
+<p>
+4.- Rearrancas la máquina windows (creo que no es necesario) y&#x2026; ¡LISTO! a imprimir como un loco por tu "epson" (en tu caso por la impresora que toque, yo de momento le hago publicidad a "epson" sin que me paguen -en fin, almas caritativas que hay en la vida-).
+</p>
+
+<p>
+Y esto es todo.
+</p>
+
+<p>
+Salud.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Servidor%20de%20impresi%C3%B3n%20Linux%20para%20clientes%20Windows">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

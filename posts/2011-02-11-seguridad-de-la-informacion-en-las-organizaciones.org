@@ -1,0 +1,24 @@
+#+title: Seguridad de la información en las organizaciones
+#+date: <2011-02-11 07:27>
+#+author: Godofredo Fdez.
+#+description: " La información es uno de los principales activos de las entidades públicas o privadas, siendo considerada por algunos autores como la verdadera ventaja…
+#+filetags: LinkedIn Publicaciones Seguridad
+#+options: _:nil
+#+nid: 396
+
+#+begin_export html
+<a href="http://www.coitaoc.org/index.php?option=com_content&task=blogcategory&id=39&Itemid=321" target="_blank"><img src="/static/img/telecos-andaluces-04.png" class="image image-preview " width="185" height="260" border="0" align="right" hspace="10" vspace="10" alt="Telecos Andaluces 04"/></a>
+#+end_export
+"/La información es uno de los principales activos de las entidades públicas o privadas, siendo considerada por algunos autores como la verdadera ventaja competitiva de éstas. Su correcto tratamiento posibilita adquirir nuevo conocimiento y su protección contribuye a rentabilizarlo, no solo aumentando ingresos sino evitando costes/".
+
+Así comienza el último artículo que he escrito colaborando con la revista editada por el Colegio de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta: "[[http://www.coitaoc.org/index.php?option=com_content&task=blogcategory&id=39&Itemid=321][Telecos Andaluces 04]]"
+
+Podéis encontrarlo en el archivo pdf adjunto. Es para mi un placer compartirlo con los lectores de este blog. Y mayor placer aún recibir vuestros comentarios, sugerencias e ideas. ¿Habéis detectado algo similar? ¿Algunas soluciones? ¿Enfoques alternativos?
+
+Seguimos.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/RevistaTTAA04-Seg_Informacion.pdf][RevistaTTAA04-Seg\_Informacion.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20de%20la%20informaci%C3%B3n%20en%20las%20organizaciones][Dejar comentario]].
+

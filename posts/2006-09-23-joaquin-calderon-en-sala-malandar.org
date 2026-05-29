@@ -1,0 +1,28 @@
+#+title: Joaquín Calderón en Sala Malandar
+#+date: <2006-09-23 14:39>
+#+author: Pili Cantautora
+#+description: Descripción: Presentación con banda de "Anfibiótico" Sala Malandar, Calle Torneo, Sevilla. ---------------------------------------------- Por fin podremos…
+#+filetags: 
+#+options: _:nil
+#+nid: 168
+
+Descripción:
+Presentación con banda de "Anfibiótico"
+Sala Malandar, Calle Torneo, Sevilla.
+----------------------------------------------
+Por fin podremos tener la presentación en Sevilla, más vale tarde...
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Joaqu%C3%ADn%20Calder%C3%B3n%20en%20Sala%20Malandar][Dejar comentario]].
+
+** Comentarios
+
+*** Estaremos ahí (Godo 25/11/2006 - 19:58)
+Acompañando a nuestra querida amiga Pili, por aclamación popular, estaremos ahí para disfrutar de un ratito de buena música, amistad y compaña: Rocío, Paco, Esther, Yo... y como no, ¡los mejores anfitriones de la fiesta!: Pili y José Ignacio.
+
+Aún por confirmar nuestra gran y perdida amiga: Alejandro y MariCarmen.
+
+¿Nos vemos?

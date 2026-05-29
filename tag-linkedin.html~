@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>GodEst.vivencias.net</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<h1 class="title">Posts tagged "LinkedIn":</h1>
+<div class="post-date">30 sep. 2016</div><h1 class="post-title"><a href="https://godest.vivencias.net/2016-09-30-y-ahora-ccda.html">Y ahora, CCDA</a></h1>
+<p>
+El próximo 8 de octubre me cumplía (espero que ya no) la certificación que obtuve hace casi tres años, <a href="http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html">CCNA Routing and Switching</a>, y de la que ya os hablé en su día <a href="http://godest.vivencias.net/content/de-nuevo-ccna">aquí</a>. Así que, encontrando el apoyo de mi jefe y de mi gerente (muchas gracias), estos movieron los hilos para conseguir que pudiera presentarme a un nuevo examen. Ahora quedaba elegir cuál, y preparármelo por mi cuenta.
+</p>
+
+<p>
+Teniendo que hacer este nuevo esfuerzo, pensé que lo mejor sería optar a una nueva certificación que me sirviera, a su vez, para recertificar la que ya tenía y para aprender/afianzar otros conceptos. Y, <a href="https://learningnetwork.cisco.com/thread/99471">si no me equivoqué mirando diversas fuentes de información</a>, obtener el CCDA serviría para conseguir el objetivo.
+</p>
+
+<p>
+Así que me puse manos a la obra. Solicité el material a <a href="http://www.ciscopress.com/">CISCO Press</a> el 27 de agosto. Os recomiendo que elijáis esta edición: “<a href="http://www.ciscopress.com/store/ccda-200-310-official-cert-guide-9781587144547">CCDA 200-310 Official Cert Guide Premium Edition and Practice Test</a>” pues además del libro físico, que merece la pena tenerlo siempre, viene acompañada de las versiones del libro electrónico, tanto en formato epub como mobi y del pdf. También incorpora <b>el software de simulación de tests</b> (recoge las cuestiones de todos los capítulos y viene muy bien para repasar) y exámenes que, con el correspondiente código de activación, os permite registraros y descargar las preguntas directamente desde Pearson (editorial en la que CISCO delega todo el proceso del examen). Todo el material está “firmado” con una marca de agua (como podéis ver en la siguiente imagen) que dificulta su “compartición/pirateo” (¡Cómo se lo curran!). Y La verdad es que tanto el contenido (de todo) como los materiales (del libro físico) son muy buenos, <b>y la inversión merece mucho la pena</b>.
+</p>
+<img src="/static/img/20160930-ccda-marca-de-agua.jpg" width="390" height="127" alt="" />
+<p>
+A modo de diario, que no suelo escribir pero siempre ha sido una de esas pretensiones que uno tiene y nunca acaba de cuajar, mi mes de septiembre no ha sido el más apropiado para preparar una “empresa” de esta magnitud (cuanto más estudiaba más consciente era): desde el punto de vista profesional la carga de trabajo ha tenido varios picos bastante desbordantes; y desde el punto de vista personal los cambios en la rutina ocasionados por diversos factores, y algún que otro imprevisto, incluyendo la visita de ese inoportuno virus de 24 horas, han hecho que mis periodos de estudio hayan sido muy duros de conseguir, excesivamente cortos y sin continuidad.
+</p>
+
+<p>
+Sin embargo, creo que he podido sobreponerme a todo esto porque la motivación era máxima. Y era máxima porque había algunos temas que me apetecía mucho abordar, por ejemplo:
+</p>
+<ul class="org-ul">
+<li>De la parte II “LAN and WAN Design” me llamaba mucho la atención la parte dedicada al “*Data Center Design*”.</li>
+<li>De la parte III “The Internet Protocol and Routing Protocols”, que reconozco que es la que más me gusta (soy muy de redes puras ;-) ), los capítulos 9, “*Internet Protocol Version 6 Design*”, y 11, “*OSPF, BGP, Route Manipulation and IP Multicast*”.</li>
+<li>Y ya de la parte IV, “Security, Convergence, Network Management”, me atraía mucho profundizar en la visión de CISCO tanto de la gestión de la seguridad, capítulo 12, “*Managing Security*”, como de sus soluciones propias en este ámbito, capítulo 13, “*Security Solutions*”.</li>
+</ul>
+
+<p>
+Total, unas 700 páginas entre teoría, escenarios y cuestiones que había que digerir. Y repartidas así:
+</p>
+<img src="/static/img/20160930-tabla-de-contenidos.jpg" width="557" height="737" alt="" />
+<p>
+Hoy a las 11:30 llegaba la hora de demostrar si la digestión había sido buena y el alimento me había hecho crecer. El examen me ha parecido excesivamente mal balanceado: mucha carga de los primeros capítulos (parte I y II) y poca de cosas que considero cada vez más interesantes para el futuro, como: data center, IPv6, routing avanzado (OSPF, BGP) y soluciones de seguridad.
+</p>
+
+<p>
+En fin, con mucho sudor, “*Status: Pass*”.
+</p>
+<img src="/static/img/20160930-CCDA-Pass.jpg" width="640" height="297" alt="" />
+<p>
+¡Que te vaya bonito, septiembre de 2016!
+</p>
+
+<p>
+Y que la salud nos acompañe muchos septiembres más.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Y%20ahora%2C%20CCDA">Dejar comentario</a>.
+</p>
+<div id="outline-container-orgafd2954" class="outline-2">
+<h2 id="orgafd2954">Comentarios</h2>
+<div class="outline-text-2" id="text-orgafd2954">
+</div>
+<div id="outline-container-org5e9bc4c" class="outline-3">
+<h3 id="org5e9bc4c">¡Enhorabuena! (Juan Fernando 04/10/2016 - 13:01)</h3>
+<div class="outline-text-3" id="text-org5e9bc4c">
+<p>
+¡Enhorabuena!
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe165f4" class="outline-3">
+<h3 id="orgfe165f4">Gracias, amigo! (Godofredo Fdez. 04/10/2016 - 14:38)</h3>
+<div class="outline-text-3" id="text-orgfe165f4">
+<p>
+&#x2026;sigamos creciendo ;-)
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> </div>
+<div class="post-date">30 sep. 2015</div><h1 class="post-title"><a href="https://godest.vivencias.net/2015-09-30-de-windows-10-a-los-proactive-firewalls.html">De Windows 10 a los “Proactive Firewalls”</a></h1>
+<p>
+En el <a href="http://godest.vivencias.net/content/windows-10-%C2%BFqui%C3%A9n-es-el-producto">anterior artículo</a> dejábamos el tema preocupados por la información que, algunos queriendo y casi todos sin querer, acabamos cediendo a terceros. Y si a muchos ya os sorprendía la cantidad y tipo de información que “compartimos” alegremente: “/historial de búsqueda en los navegadores, lugares físicos y lógicos que visitamos, análisis de nuestros correos, historial de llamadas&#x2026; ¡”nuestra propia voz”!/”, cuando de verdad vais a alucinar es cuando os preocupéis de todos aquellos programas que, una vez instalados en vuestras máquinas, abren conexiones salientes (desde vuestra máquina hacia Internet) buscando algún servidor donde “obtener/verter información”. Y actúan “en blanco” (como podría ser aquella necesaria para tener accesos a actualizaciones de seguridad) o “en negro” (como podría ser aquella que nos roba un “malware” que escanea nuestros documentos o pulsaciones de teclas o “pantallazos” cuando accedemos a nuestra banca por Internet).
+</p>
+
+<p>
+<b>¿Qué podemos hacer para intentar detectar la información que escapa, que sale, de nuestra máquina?</b>
+</p>
+
+<p>
+Pues no es nada fácil. Son tantas las rendijas que cerrar y técnicas para evitarlas que resolver el problema de forma total es imposible.
+</p>
+
+<p>
+Si me leéis habitualmente estaréis acostumbrados a vivir con el riesgo. Y a gestionarlo. Si de verdad lo has interiorizado estarás relajado y disfrutando del viaje ;-). Significa esto que no hemos de hacer nada&#x2026; hombre no, tampoco es eso.
+</p>
+
+<p>
+<a href="http://godest.vivencias.net/content/%C2%BFhay-alguien-ah%C3%AD">Decíamos aquí que todo comienza con la monitorización</a>. Monitorizar es como ir encendiendo luces en un gran edificio donde habita el miedo aliado con la oscuridad.
+</p>
+
+<p>
+Pero también hay que actuar. Hoy os presentaré a nuestros amigos: los “*proactive firewalls*”.
+</p>
+
+<p>
+El concepto de firewall/cortafuegos surgió para aislar la “conectividad total” entre dos mundos: el interno (que supuestamente nos pertenece y queremos controlar) y el externo (Internet en toda su anchura).
+</p>
+
+<p>
+Así, los firewalls corporativos se sitúan justo en la puerta (o puertas) de conexión de la organización a Internet, emanando de aquí el concepto de perímetro (delimitan lo interno de lo externo) que acaba refinando su nombre: <b>firewalls perimetrales</b>. Su objetivo, grosso modo, era limitar las conexiones que desde el exterior se podían realizar hacia el interior: qué máquinas y qué “servicios” dentro de estas eran alcanzables; y así evitar el descubrimiento de la topología, del mapa de red/servicios, que facilitaría mucho el ataque definitivo y mortal.
+</p>
+
+<p>
+En el mundo personal recuerdo cuando los sistemas operativos de Microsoft venían sin firewall y cualquier PC conectado a Internet era pasto de las llamas: esos fatídicos días en los que un PC recién instalado, todo limpito él, se conectaba a Internet con un modem, recibía una IP pública y&#x2026; ¡Tachán! En menos de 30 segundos te habían escaneado, descubierto una vulnerabilidad y estabas infectado&#x2026; ¡Tiempo perdido! ¡A reinstalar! No recuerdo ahora mismo si fue el blaster, el sasser o gusanos similares los que sufrí en mis propias carnes, personal y profesionalmente (redes corporativas enteras “tumbadas” porque no podían resistir el volumen de tráfico ocasionado por la “replicación incesante”).
+</p>
+
+<p>
+<b>Hoy en día la necesidad de un firewall en todo tipo de topologías y sistemas es irrenunciable</b>. Lo flipo cuando aún escucho a “Tarzanes desnudos” clamando contra esto. En fin, me tranquilizo cuando lo comparo con los que claman contra las vacunas, pero este es otro tema. Doctores tiene la iglesia.
+</p>
+
+<p>
+<b>Entonces, ¿vale cualquier firewall? ¿Basta con parar las conexiones entrantes?</b>
+</p>
+
+<p>
+Uuuummm, si habéis estado atentos, si leéis a conciencia, ya tenéis la respuesta&#x2026;
+</p>
+
+<p>
+Piensa&#x2026;
+</p>
+
+<p>
+Piensa&#x2026;
+</p>
+
+<p>
+Sigue pensando&#x2026;
+</p>
+
+<p>
+¡NO! ¡NO! ¡NO! &#x2026;Un NO como un PIANO ;-).
+</p>
+
+<p>
+Un firewall debe vigilar tanto lo que entra (¡por supuesto!) como lo que sale: lo que nos roban, lo que compartimos sin querer&#x2026;
+</p>
+
+<p>
+<b>Y los firewalls que hacen esto, ¿cómo se llaman?</b> Pues se llaman de muchas formas, o más bien va implícito en muchos nombres, pero a mí la que más me gusta es: “*proactive firewalls*”. Proactivo implica anticipación. Y veréis a continuación por qué este concepto está justificadísimo en el nombre.
+</p>
+
+<p>
+Las tripas de estos “proactive firewalls” no son muy diferentes a las tripas de los tradicionales, de hecho, la tecnología básica es la misma: monitorizan e interceptan. Es decir, un firewall tradicional también serviría para filtrar conexiones salientes, pero tendrías que ir haciéndolo a mano, cosa que no es ni abordable ni escalable. El refinamiento, la disrupción que aportan los “proactive firewall” es esta: están vigilando todas las conexiones, entrantes y salientes, y cuando detectan una saliente “te preguntan” (esto es configurable, a mí me gusta que me pregunten) si quieres permitirla o no. Así, un sólo click configura una regla: permite o deniega.
+</p>
+
+<p>
+Ejemplos:
+</p>
+
+<p>
+1.- El Windows Update quiere actualizar el sistema. Se detecta la conexión saliente. Me avisa. Estoy trabajando en algo que he de entregar dentro de una hora y no quiero ni siquiera que se descargue la actualización. Bloqueo.
+</p>
+
+<p>
+2.- La aplicación Mozilla Firefox quiere conectarse a Internet para&#x2026; Acepto.
+</p>
+
+<p>
+3.- El Internet Explorer quiere conectarse a Internet para&#x2026; Bloqueo (nunca uso Internet Explorer, así que lo bloqueo para evitar que sea utilizado por “un proceso” oculto que pueda sacar información, o si en un despiste mío lo abro e intento conectarme a Internet con tan mala suerte que el servidor al que me conecto está comprometido y explota una vulnerabilidad conocida de Internet Explorer para infectarme). Podéis cambiar “Internet Explorer” por cualquier otra aplicación. No os quedéis con el dato concreto sino con la idea general.
+</p>
+
+<p>
+4.- La aplicación X quiere conectarse a Internet y&#x2026; ¿la aplicación X? ¿Y esto? ¿Yo instalé esta aplicación? Busco en Google&#x2026; ¡jolín, ya me han infectado! ;-). Bloqueo y muy probablemente “acabe reinstalando” :-(.
+</p>
+
+<p>
+OK, Ok, me has convencido pero, <b>¿cómo lo hago?</b>
+</p>
+
+<p>
+He probado muchos productos y el que más me gusta es este “<a href="http://www.eset.es/particulares/productos/smart-security/">Eset Smart Security</a>” (recuerda que todo lo que escribo aquí es a <a href="http://godest.vivencias.net/en/node/479">título personal</a>, no tengo comisión ni presión ni decoro&#x2026;:sick:) por lo visual y, sobre todo, por lo poco que carga al sistema base.
+</p>
+
+<p>
+Cuando detecta algo nos informa. Por ejemplo, si actualizo el <a href="https://www.piriform.com/ccleaner">CCleaner</a> hay una conexión a Internet y una modificación del ejecutable:
+</p>
+
+<p>
+Intento de conexión:
+</p>
+
+<a href="/static/img/eset-01.png" rel="lightbox"><img align="middle" alt="Eset Smart Security mostrando intento de conexión" border="0" class="image image-preview " height="409" width="452"  src="/static/img/eset-01.png" title="Eset Smart Security mostrando intento de conexión" hspace="10" vspace="10"  /></a>
+
+<p>
+Aplicación modificada (por una actualización en este caso, lo sabemos porque lo hemos provocado nosotros o una autoactualización -previamente hemos autorizado que se conecte a Internet para descargarla-, pero pensad que podría haber sido modificada por un virus, lo que nos alertaría, ¿no?):
+</p>
+
+<a href="/static/img/eset-02.png" rel="lightbox"><img align="middle" alt="Eset Smart Security mostrando aplicación modificada" border="0" class="image image-preview " height="347" width="452"  src="/static/img/eset-02.png" title="Eset Smart Security mostrando aplicación modificada" hspace="10" vspace="10"  /></a>
+
+<p>
+Y además permite monitorizar todo el tráfico saliente en tiempo real, conociendo qué aplicación lo provoca (zoom sobre lo que ya vimos <a href="http://godest.vivencias.net/content/%C2%BFhay-alguien-ah%C3%AD">aquí</a>):
+</p>
+
+<a href="/static/img/eset-03.png" rel="lightbox"><img align="middle" alt="Eset Smart Security mostrando tráfico en tiempo real" border="0" class="image image-preview " height="441" width="567"  src="/static/img/eset-03.png" title="Eset Smart Security mostrando tráfico en tiempo real" hspace="10" vspace="10"  /></a>
+
+<p>
+También he visto esta otra aplicación, WFN (Windows Firewall Notifier), que “se integra con el firewall de Windows tradicional” y lo convierte en un “proactive firewall”. No la he probado pero tiene muy buena pinta: <a href="http://wfn.codeplex.com/">http://wfn.codeplex.com/</a>
+</p>
+
+<p>
+Sobre los “proactive firewalls” se construyen conceptos más avanzados: next generation firewalls, applications firewalls, etc., que ya iremos abordando desde un punto de vista “más profesional”.
+</p>
+
+<p>
+Y para ir terminando, <b>recuerda que no existe la seguridad 100%</b>. Que todo lo dicho aquí puede ser “bypassed”/puenteado con una programación suficientemente profunda y hábil. Que si van a por ti estás muerto. Pero mientras sigamos siendo “hombres-masa” tomar estas precauciones nos ayudará a estar ligeramente más seguros o, lo que es lo mismo, disminuir el riesgo.
+</p>
+
+<p>
+¿De verdad que vas a seguir sin tener un “proactive firewall”? ¿Ya lo tienes? ¿Tienes dudas? ¿Crees que he olvidado algo? ¿Me ayudas a aprender más? Déjame tu comentario, por favor.
+</p>
+
+<p>
+¡Gracias!
+</p>
+
+<p>
+<b>23-08-2021 NOTA:</b> últimamente el software de firewall proactivo que estoy utilizando en mi ordenador con Windows 10 es la versión free de este: <a href="http://www.sphinx-soft.com/Vista/order.html">http://www.sphinx-soft.com/Vista/order.html</a>. Junto con el antivirus del propio Windows 10, también gratis, forman una pareja "suficientemente perfecta" para asegurar el sistema.
+</p>
+
+<pre class="example" id="orgebf9218">
+
+P.D.: ahora puedes suscribirte a mi blog para que te lleguen los artículos puntualmente a tu correo: pulsa en la palabra "email" que está en el apartado "Suscribir" de la columna derecha y sigue el proceso: 1) introduce tu correo y resuelve el captcha, 2) pulsa sobre el enlace de validación/activación que vas a recibir en la dirección de email introducida.
+
+</pre>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=De%20Windows%2010%20a%20los%20%E2%80%9CProactive%20Firewalls%E2%80%9D">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div>
+<div class="post-date">15 oct. 2013</div><h1 class="post-title"><a href="https://godest.vivencias.net/2013-10-15-de-nuevo-ccna.html">De nuevo, CCNA</a></h1>
+<p>
+Hace un mes, aproximadamente, mi gerente (gracias) me ofreció la oportunidad de asistir a un curso de preparación del <a href="http://www.cisco.com/web/learning/certifications/associate/ccna/index.html">Cisco Certified Network Associate (CCNA)</a> que incluía la “obligación” de realizar el examen final, obteniendo si se aprobaba la certificación correspondiente. Ya me certifiqué por primera vez en 2003, cuando sí que estaba muy metido en el mundo de la configuración de dispositivos CISCO, pero luego dejé vencer dicha certificación, “un mucho” por los inescrutables caminos del destino y “un poco” porque siempre he creído que subirse al tren sin parada de las certificaciones resulta cansino y acaba considerándose un cúmulo de medallitas con más valor simbólico que real. En fin, la verdad es que me apetecía el reto, al que ya llevaba tiempo dándole alguna que otra vuelta, no tanto por los beneficios que implica la certificación respecto al reconocimiento de tu saber por el “mundo exterior” sino por lo que me suponía de desafío, de ponerme a prueba de algo que dominé bastante y que con el paso del tiempo, quizá, se hubiera ajado. Así que enfoqué la oportunidad con un doble objetivo: demostrarme a mí mismo que sigo siendo capaz (la verdadera satisfacción, cuando se descubre, no es tanto la que te proporciona el cómo te ven sino el cómo te ves) y actualizar conocimientos (sospechaba que había nuevas cosillas de moda). Y aquí está mi certificación (aún no tengo el diploma pero sí una captura de pantalla de los sistemas de información de CISCO):
+</p>
+
+<a href="/static/img/20131014-resultado-CCNA.png" rel="lightbox"><img align="middle" alt="20131014-resultado-CCNA" border="0" class="image image-preview " height="349" hspace="10" src="/static/img/20131014-resultado-CCNA.png" title="20131014-resultado-CCNA" vspace="10" width="640" /></a>
+
+<p>
+Respecto a los contenidos me han sorprendido los siguientes puntos:
+</p>
+
+<blockquote>
+<ul class="org-ul">
+<li>Se sigue manteniendo bastante peso de Frame-Relay, HDLC y PPP ¿? No sé en otros países pero en España la WAN hace tiempo que dejó de ser eso. Vestigios quedan pero&#x2026; - Muy agradablemente se incorpora un bloque destinado a cubrir las diferentes medidas de seguridad tanto referente a la gestión del propio dispositivo como al tráfico que lo atraviesa: a nivel 2 (viendo los mecanismos disponibles en switches) y a nivel 3/4 (en routers). ¡Bien! Me ha gustado. - Otro bloque nuevo es el que trata de IPv6. También lo he visto muy útil y apropiado. ¡Ojalá que más pronto que tarde las Telco tiren de este protocolo para adelante! Prometedor en muchos sentidos. ¿El futuro? ¿Acabará como IPv5 ;-)? - Los contenidos con más peso siguen siendo los clásicos: modelos de referencia OSI y TCP/IP, VLANs, las diferentes modalidades de Spanning-Tree, trunking, subnetting y protocolos de routing: RIP, OSPF e EIGRP. - Y una última parte dedicada a los protocolos de “gestión”: SNMP, Syslog y NetFlow; a los que no les concedí mucha importancia y de los que me sorprendieron varias cuestiones en el examen ¡cachis!</li>
+</ul>
+</blockquote>
+
+<p>
+Una miniaventura con la que he comprobado mi estado de forma respecto al <a href="http://en.wikipedia.org/wiki/Internetworking">internetworking</a> (que sigue siendo bueno, creo), he actualizado conocimientos y he reforzado la seguridad en mí mismo en <a href="http://www.fundeu.es/consulta/esta-area-29/">esta área</a> de conocimiento que tanto amo. Ha merecido la pena.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=De%20nuevo%2C%20CCNA">Dejar comentario</a>.
+</p>
+<div id="outline-container-org713c9a2" class="outline-2">
+<h2 id="org713c9a2">Comentarios</h2>
+<div class="outline-text-2" id="text-org713c9a2">
+</div>
+<div id="outline-container-org43ab808" class="outline-3">
+<h3 id="org43ab808">enhorabuena (Fatima 03/10/2016 - 10:45)</h3>
+<div class="outline-text-3" id="text-org43ab808">
+<p>
+Felicidades, eres una fiera. Ahora a compartir tus conocimientos con los demás :-)
+</p>
+</div>
+</div>
+<div id="outline-container-orgddaf5e0" class="outline-3">
+<h3 id="orgddaf5e0">Gracias! (Godofredo Fdez. 03/10/2016 - 17:54)</h3>
+<div class="outline-text-3" id="text-orgddaf5e0">
+<p>
+Es para mí un placer siempre compartir lo que voy aprendiendo. Este blog nació como consecuencia de eso. A veces con más esfuerzo y otras con menos, siempre intento ir dejando aquí algunas reflexiones propias que ayuden a los demás. Gracias por seguir por aquí.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> </div>
+<div class="post-date">30 oct. 2012</div><h1 class="post-title"><a href="https://godest.vivencias.net/2012-10-30-seguridad-el-camino-hacia-la-especializacion.html">Seguridad. El camino hacia la especialización</a></h1>
+<p>
+Hasta hace aproximadamente un año era difícil encontrar en Andalucía cualquier tipo de enseñanza organizada alrededor de la “seguridad de la información”, concepto muy amplio que incluye no sólo la seguridad “informática”, aunque la mayoría de nosotros comenzamos viéndola sólo así, sino todo lo que gira alrededor de la gestión de los riesgos a los que está expuesta la información en una organización principalmente, pues también incluye aspectos más relacionados con la información personal y con la gestión que de ésta hacemos los propios individuos tanto en nuestra faceta profesional como en la personal.
+</p>
+
+<p>
+Como decía, hasta hace un año aproximadamente era habitual encontrar diversos Masters y cursos de especialización en Madrid, hervidero de oportunidades del que todavía estamos lejos; pero en Andalucía, si se recorrían los diferentes planes de estudios de enseñanzas oficiales y los cursos ofertados por entidades formativas no se encontraba nada.
+</p>
+
+<p>
+Hoy, según me cuentan mis amigos, ya se ven algunos temas específicos en asignaturas que están siendo impartidas en diferentes carreras de universidades andaluzas, y tanto la <a href="http://www.esi.us.es/">Escuela Técnica Superior de Ingenieros de la Universidad de Sevilla</a> como el <a href="http://coitaoc.org/">Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a> (en adelante COITAOC) han hecho grandes esfuerzos para cubrir las necesidades formativas en esta área de conocimiento.
+</p>
+
+<p>
+En el <a href="http://trajano.us.es/">Departamento de Ingeniería Telemática</a>, al que contribuyo en pequeña medida como profesor asociado, nos propusimos lanzar una <a href="http://www.us.es/estudios/grados/plan_199/asignatura_1990041">asignatura de seguridad</a> que nacerá en el segundo cuatrimestre de este curso 2012-2013. La asignatura forma parte de la especialidad de Telemática y cubrirá los aspectos fundamentales: cifrado, seguridad en redes, seguridad en aplicaciones, gestión de incidentes y muy brevemente la normativa básica de referencia. Lo que suficientemente podemos abarcar en unas 45 horas de clases presenciales, pero lo bastante para transmitir al alumno de 3º de grado una visión amplia de la disciplina que le permita decidir si sigue especializándose o no, a su criterio y con su conocimiento.
+</p>
+
+<p>
+Con contenido muy similar al cubierto por la asignatura de seguridad descrita en el párrafo anterior, el COITAOC editó un curso en marzo de 2012, <a href="http://www.si-class.org/">y lo volverá a reeditar a finales de este mes de noviembre</a>, dirigido a aquellos profesionales y alumnos que por una u otra causa no han podido o podrán cursar la asignatura descrita (según me informan alumnos que pertenecen al plan antiguo, no podrán matricularse en la asignatura ni siquiera como libre configuración por ser de un plan diferente).
+</p>
+
+<p>
+Finalmente, la ETSI ha puesto en marcha un <a href="http://trajano.us.es/seguridadtic">curso de experto universitario titulado: seguridad en tecnologías de la información y las comunicaciones.</a> cuyo periodo de inscripción está actualmente abierto (expira a finales de noviembre). Dirigido, en mi opinión, a todo aquel que quiere especializarse en dicha materia. Obviamente, este curso, que cuenta con unas 300 horas de dedicación, aumenta tanto la anchura como la profundidad de los conocimientos transmitidos, y situará al alumno en una posición muy distinguida y valorada actualmente.
+</p>
+
+<p>
+La oferta está ahí. Cada uno tiene que hacer su propia reflexión y tomar la decisión que mejor se adapte a sus circunstancias. Quizá, a mi modo de ver, para todo aquel que “desconoce la seguridad” el itinerario lógico puede ser: cursar la asignatura (o el curso ofertado por el COITAOC) donde se obtendrá la primera visión global de la disciplina y después, tras meditar si ese es su mundo o no, elegir el curso de experto para especializarse. Sin embargo, soy consciente de la existencia de perfiles que a través de muchas horas de dedicación y esfuerzo, profesional o estudiantil, han realizado un proceso de autoformación que les posibilita acceder directamente al curso de experto.
+</p>
+
+<p>
+Reflexionad y animaos a descubrir un mundo de vértigo&#x2026; donde casi nada resulta ser lo que parece, sobre todo, desde aquel caballo de Troya.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Seguridad.%20El%20camino%20hacia%20la%20especializaci%C3%B3n">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">14 jun. 2012</div><h1 class="post-title"><a href="https://godest.vivencias.net/2012-06-14-la-gestion-de-la-seguridad-y-el-miedo.html">La Gestión de la Seguridad... y el Miedo</a></h1>
+<p>
+Os dejo a continuación el artículo con el que comencé mi colaboración con el blog <a href="http://www.aunclicdelastic.com/">AunCLICdelasTIC</a>.
+</p>
+
+<p>
+El miedo es una de las cinco emociones básicas. Etimológicamente el término emoción significa “lo que nos hace movernos”. El miedo es procesado por una de las estructuras más antiguas del cerebro, la amígdala, que prepara al organismo de forma rápida e inconsciente para responder de la forma más eficaz posible. Así, el miedo es una adaptación evolutiva: los humanos que reaccionaron rápido a un peligro lograron sobrevivir y al reproducirse fueron contribuyendo a su propia selección natural. Por eso, la palanca del miedo es la más accionada para buscar una reacción, desde el control de un niño pequeño hasta la dominación de todo un pueblo.
+No es de extrañar que <b>el miedo sea uno de los argumentos más frecuentemente utilizados para “motivar” la gestión de la seguridad en una organización</b>. Prácticamente todas las presentaciones realizadas por cualquiera de los actores del “sector” a alguno de sus clientes dedican un gran porcentaje en su inicio a mostrar las miríadas de males que acechan ahí fuera.
+</p>
+
+<p>
+<b>Otro argumento utilizado es el cumplimiento normativo</b>. En España casi todas las organizaciones se ven empujadas a cumplir con la “Ley Orgánica de Protección de Datos (LOPD)” y, dependiendo del sector, con algunas más particulares, por ejemplo: los organismos públicos con el “Esquema Nacional de Seguridad”. El razonamiento positivo de este bloque debería ser el de contribuir a la difusión y aumento del uso de sistemas de información por parte del ciudadano, ganándose su confianza al saber que sus datos y los sistemas que los tratan están especialmente bien gestionados/protegidos. Sin embargo, según aprecio en mi día a día, nuestra cultura suele interpretar el ordenamiento jurídico en negativo: actuamos de acuerdo a la ley porque si no nos sancionan. Y si esto es así, el miedo vuelve a ser el principal agente motivador.
+</p>
+
+<p>
+<b>El tercer argumento</b>, con el que siempre me he sentido más identificado, <b>apuesta por alinear la seguridad con los objetivos de la organización</b>. A la respuesta de: ¿para qué gestionamos la seguridad?, este argumento responde: para incrementar los ingresos, disminuir los gastos o aumentar nuestro prestigio.
+</p>
+
+<p>
+Los dos primeros argumentos nos llevan a movimientos tácticos: decidimos con qué recursos, técnicos o humanos, nos defendemos de “los malos” y cumplimos con el ordenamiento normativo. <b>El tercer argumento nos conduce a un planteamiento estratégico</b>: ya hemos respondido al “para qué”, pero aún nos quedaría responder al: qué, cómo, a quién y por qué. Hallar estas respuestas depende de cada organización y es lo más difícil.
+</p>
+
+<p>
+<b>El miedo, cuando sobrepasa ciertos umbrales, pone a la víctima bajo el “efecto túnel”</b>: si la emoción es demasiado intensa, la visión periférica se reduce y, junto con la atención, se concentra en el arma que esgrime el atacante. La víctima podrá describirla con precisión pero no registrará detalles importantes para la identificación del agresor: su ropa, su voz, sus rasgos, etc. La víctima se pierde todo lo que ocurre a su alrededor, incluyendo lo que hay detrás del atacante. Esta es una de las principales causas de disparos accidentales entre agentes de la policía.
+</p>
+
+<p>
+Deberíamos evitar este “efecto túnel” que nos lleva a concentrarnos en un determinado aspecto de la seguridad para dedicar mayor tiempo a pensar cómo plantearla estratégicamente, contribuyendo a alcanzar los objetivos globales del “negocio”. Una vez que la organización es consciente del enfoque global y estratégico de la seguridad, debería plantearse una serie de <b>medidas tecnológicas, organizativas y formativas para ir disminuyendo el riesgo</b> que asume.
+</p>
+
+<p>
+<b>En los siguientes post nos centraremos en aspectos más tecnológicos de la seguridad</b>. Analizaremos casos de uso, productos y servicios concretos. Detallaremos las “buenas prácticas” que están siendo emprendidas en los diferentes sectores, e intentaremos compartir con todos vosotros aquellas tendencias dignas de ser tenidas en cuenta para la evolución de la seguridad en nuestra organización.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=La%20Gesti%C3%B3n%20de%20la%20Seguridad...%20y%20el%20Miedo">Dejar comentario</a>.
+</p>
+<div id="outline-container-org677eb5e" class="outline-2">
+<h2 id="org677eb5e">Comentarios</h2>
+<div class="outline-text-2" id="text-org677eb5e">
+</div>
+<div id="outline-container-orge2b9b15" class="outline-3">
+<h3 id="orge2b9b15">Es inútil decir que no (Anonymous 22/06/2012 - 14:59)</h3>
+<div class="outline-text-3" id="text-orge2b9b15">
+<p>
+Es inútil decir que no deberíamos querer la seguridad. Hemos de descubrir que no existe la seguridad, que buscarla es doloroso y que cuando imaginamos haberla encontrado, no nos gusta. Lo principal es comprender que no hay ninguna seguridad.
+Para comprender la seguridad no hay que enfrentarse a ella, sino incorporarla a uno mismo.
+</p>
+
+<p>
+Una mente íntergra y sincera no actua de acuerdo con las reglas, sino con las circusntancias del momento, y el "bien" que desea a los demás no es seguridad, sino libertad
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">18 dic. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-12-18-utilizacion-de-listas-en-twitter.html">Utilización de listas en Twitter</a></h1>
+<p>
+En mi proceso de aclimatación a Twitter emprendido este verano pasado y que aún continúa, descubrí casi desde el comienzo y ha ido cobrando cada vez más valor el "concepto de lista". Basándome en mi experiencia afirmo que gestionar Twitter con ellas no sólo es posible sino la única forma eficiente de hacerlo. Si aún no lo haces y continúas leyendo me lo agradecerás ;-).
+</p>
+
+<p>
+Las listas sirven para clasificar en ellas a usuarios, de tal forma que visitando dicha lista obtienes un "timeline" con sólo los tweets de los usuarios que has agregado. La lista puede ser pública, cualquiera que visite tu perfil puede verla, o privada, sólo tú la ves. Y a la lista puedes agregar usuarios que sigues o que no (útil para seguir a gente, grupos, empresas, etc., que no quieres que aparezcan en "siguiendo", es decir, consigues seguir de forma anónima tanto para el que "es seguido" como para los que "consultan a quién sigues").
+</p>
+
+<p>
+Añadir a alguien a una lista es muy fácil: <b>visitas su perfil</b> y a la derecha del botón "seguir|siguiendo" encontrarás un icono con una "silueta foto carnet y una flechita", pulsas en él y verás que una opción es: "Añadir a la lista". La seleccionas. Esperas y&#x2026;
+</p>
+
+<p>
+Por ejemplo, si creas una lista de "mejoresAmigos", la mantienes privada (por aquello de no herir susceptibilidades) y a ella agregas sólo a tus "tres mejores amigos" que ya estás siguiendo, cuando la visites verás sólo sus tweets. ¿Qué ventaja aporta esto? Los tweets de tus amigos aparecerán en tu timeline (porque los sigues) pero se perderán entre otros muchos si no estás todo el día con el ojo puesto en él. Ahora ya no tienes que estar buscándolos entre infinitos tweets que pueblan tu "timeline" y puedes estar al día de lo que expresan simplemente visitando tu lista.
+</p>
+
+<p>
+<b>Mi consejo</b>: crea tres listas, por ejemplo: A, B y C. Agrega en A a aquellos de los que no quieres perderte ni un tweet. Agrega en B a aquellos interesantes pero que no lo son tanto, y en C a los menos interesantes aún. El resto, los no agregados, sólo aparecerán y se perderán en tu "timeline". Has de ser muy estricto con la clasificación, sólo así te será útil. Mantén el número de agregados en A (recuerda que son muy importantes para ti) relativamente bajo. B será un poco mayor y C aún más. Observa que estamos intentando modelar "aquellos círculos que establecemos en la vida real" (las comillas quieren expresar que no ha de ser exactamente así sino que esa es la idea). Visita la lista A siempre que puedas, B de vez en cuando y C casi nunca (cuando has visitado A y B y no tienes mejor cosa que hacer). Cuando estés muy agobiado, y el tiempo se te quede corto, acabarás mirando sólo la lista A. Lo digo por experiencia. Pero estarás “conservando lo importante”.
+</p>
+
+<p>
+El párrafo anterior es simplemente un ejemplo, tu número de listas puede ser mayor o menor, pueden ser temáticas, de nivel de "relación" (familia, amigos, compañerosDeTrabajo), mezcla de ambas, etc.
+</p>
+
+<p>
+¡No olvides seleccionar oportunamente si la lista quieres que sea <b>pública o privada</b>!
+</p>
+
+<p>
+Y déjame un comentario contándome tu experiencia :-) Seguro que entre todos aprendemos más.<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Utilizaci%C3%B3n%20de%20listas%20en%20Twitter">Dejar comentario</a>.
+</p>
+<div id="outline-container-org6afaedf" class="outline-2">
+<h2 id="org6afaedf">Comentarios</h2>
+<div class="outline-text-2" id="text-org6afaedf">
+</div>
+<div id="outline-container-org2ba89c0" class="outline-3">
+<h3 id="org2ba89c0">Ya sabes que no termino de (Godesa 29/12/2011 - 14:02)</h3>
+<div class="outline-text-3" id="text-org2ba89c0">
+<p>
+Ya sabes que no termino de engancharme al twitter y entiendo que esta gestión que sugieres es útil cuando tengas tal número de personas/asociaciones/etc que seguir que sea ingobernable. Para cuando yo me encuentre por esos derroteros, seguiré tu consejo, que me parece muy meditado y mejor explicado.
+Besos
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-bitácoras.html">Bitácoras</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> </div>
+<div class="post-date">13 ago. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-08-13-sobre-redes-sociales-google-y-falsas-sensaciones-de-seguridad.html">Sobre redes sociales, Google+ y falsas sensaciones de seguridad</a></h1>
+<p>
+Cada día son más frecuentes los indicios que en todos los ámbitos (personal/profesional, de compras/de viajes, etc.) vamos recogiendo sobre el uso y la importancia que el concepto de "red" va tomando en la actualidad. Parece que todo el mundo ha descubierto a la vez que el mantener el contacto con las personas que te interesan es beneficioso. A mi me gusta digerir y explicar el concepto de red en el sentido mas amplio de su palabra: no estamos hablando de redes de ordenadores (LAN, WAN, Wireless, etc.), ni de redes sociales por Internet (Facebook sigue siendo, por ahora, su máximo exponente)&#x2026; quizá lo que más se le parece a la idea que quiero transmitir sea simple y llanamente una red de contactos, en su versión más genérica, que se soporta en diferentes "tecnologías" (desde simples llamadas de vez en cuando, cañas de cerveza dialogadas, hasta las diferentes implementaciones que se han ido creando en Internet) y que acaba especializándose, o fragmentándose en diferentes subconjuntos, según los intereses compartidos entre cada uno. Y así surge una red de amigos, una red de profesionales, una red de amigos que juegan al fútbol los jueves, una red de cervecitas los viernes después de trabajar&#x2026; o una red de frikis del Linux ;-).
+</p>
+
+<p>
+Una vez entendida y formada la red, el estudio de este tipo de "asociaciones" entre personas está vertiendo mucha literatura y es un campo de investigación multidisciplinar en la actualidad: identificación de roles (líderes -con mayor influencia sobre los demás- y seguidores), estudio del crecimiento y decrecimiento, cómo se organizan, cómo se interrelacionan (tanto internamente -los individuos que las componen- como externamente -entre ellas-), qué hace que un determinado mensaje cale y se propague con más o menos virulencia, etc.
+</p>
+
+<p>
+Tanto es así que algunas compañías están destinando cada vez mayor presupuesto, y por tanto mayor esfuerzo, en utilizarlas como vehículos de selección de personal, lanzamiento de productos, reputación de imagen corporativa&#x2026; o simplemente como un canal de "ida y vuelta" que les permite pulsar a sus clientes y recuperar su opinión, con la potencia que esto tiene para realizar, por ejemplo, estudios de mercado en sus diferentes formas o soporte a incidencias. Si me animo, escribiré un artículo sobre cada uno de estos usos.
+</p>
+
+<p>
+Aunque este concepto de "interrelación" ha existido en diferentes formas durante toda la vida de la humanidad, parece que ha sido ayer mismo, con el lanzamiento sobre Internet: Facebook, Tuenti, Twitter, etc., cuando ha surgido. Estas diferentes implementaciones permitían, en mayor o menor grado, crear tu grupo de contactos online y compartir con ellos pensamientos/opiniones, fotos, localización, etc. Creo que la principal ventaja apreciada ha sido su potencia para mantener un nivel de interrelación muy rico, en vivo y en directo. *Y estoy seguro que su mayor desventaja ha sido su escaso control sobre lo compartido y la privacidad, por ende, del que lo compartía o formaba parte de él*(una foto indiscreta, por reflejar un ejemplo simple).
+</p>
+
+<p>
+En este contexto nace Google+ (28 de junio de 2011). La enésima apuesta de Google por participar en este "juego". Esta vez parece que le va a ir mejor que las anteriores. <b>A mi juicio la idea que la sustenta, los círculos, es tan potente como falsa</b>. Me explico: la filosofía con la que han ido naciendo las implementaciones anteriores era que hacía falta una relación de amistad, aceptada recíprocamente por dos individuos, para formar parte cada uno de ellos de la red del otro. Tras este paso inicial, todo lo compartido en tu red era visible por todos tus amigos, incluso por los amigos de tus amigos. Esto dio lugar a problemas de privacidad -sensación de pérdida de control sobre lo que se publicaba-. Luego se han ido refinando las posibilidades hasta permitir fijar permisos sobre lo que se comparte: accesible a todo el mundo, compartir sólo con alguien determinado, y todas las posibilidades intermedias. Pero la usabilidad de esto, al no haber nacido con la concepción inicial de las plataformas, ha sido difícil de entender por muchos usuarios. Google+ nace incorporando esto en su ADN, como podéis ver en el vídeo que dejo abajo (que no es mío, su autor aparece justo al principio).
+</p>
+
+<p>
+Y si tras ver el vídeo pensáis que todos los problemas de privacidad han sido resueltos, <b>¡os equivocáis!</b>
+</p>
+
+<p>
+Os aconsejo que penséis en los círculos como una herramienta que te da parte de control sobre con quién compartes y hasta dónde compartes (esto no se ve en el vídeo pero Google+ permite fijar la prohibición de que alguien con quien tú compartes, a su vez, también comparta lo que recibe de ti). Perfecto, ¿verdad?
+</p>
+
+<p>
+Pues no, <b>¡SIEMPRE ES POSIBLE HACER UNA CAPTURA DE PANTALLA!</b>
+</p>
+
+<p>
+Es verdad que si compartís una foto de vuestro bebe con vuestro círculo "familiar", presuponiendo que en él estén las personas bien seleccionadas, es difícil (que no imposible -fallos de seguridad siempre puede haber-) pensar que dicha foto va a acabar en manos de un pedófilo (por ser brusco e impactar)&#x2026; pero, ¿qué pasa si esa misma foto la compartís con un círculo de "amigos" y alguien no lo es tanto, o deja de serlo, o le "hackean" su pc, su cuenta&#x2026;
+</p>
+
+<p>
+<b>La idea de los círculos me parece genial pero hay que tratarla con mucho cuidado y responsabilidad</b>.
+</p>
+
+<p>
+Mi consejo: pensad que todo lo que compartís por Internet corre el riesgo de acabar siendo público antes o después, contad hasta diez y actuad con el mayor cuidado posible.
+</p>
+
+<p>
+Tras la técnica siempre hay un ser humano. Google+ aporta lo mejor de la técnica hasta el momento. Las intenciones, buenas o malas, sólo son controlables por el ser humano que está detrás.
+</p>
+
+<p>
+Y tras esto, ¿nos circulamos? }:-)
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Sobre%20redes%20sociales%2C%20Google%2B%20y%20falsas%20sensaciones%20de%20seguridad">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-pensamiento.html">Pensamiento</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">11 jul. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-07-11-economia-3-0.html">Economía 3.0</a></h1>
+<a href="http://www.uimp.es/blogs/santander/" target="_blank"><img src="/static/img/img_santander_02.jpg" class="image image-preview " width="262" height="204" border="0" align="right" hspace="10" vspace="10" alt="Palacio de la Magdalena"/></a>
+<p>
+Hace ya algunos años me propuse luchar contra la oxidación de mis conocimientos. Además de cultivar preferentemente, por motivos de tiempo y espacio, la autoformación, intentando llevar a buen puerto un plan de lectura que intercale los distintos temas que me interesan, también intento realizar al menos un curso presencial y/o algún otro on-line.
+</p>
+
+<p>
+Este año el curso prensencial elegido es el que imparte la Universidad Internacional Menéndez Pelayo en su bellísima sede del Palacio de la Magdalena, Santander, del 1 al 5 de agosto, titulado: <a href="http://www.uimp.es/uimp/home/homeUIMPdina.php?jcj=ACTIVIDADES_ACADEMICAS&amp;juj=3002&amp;lan=es&amp;jpj=plan=60X8&amp;any=2011-12&amp;verasi=N&amp;lan=es&amp;tipo=ACA&amp;lan=es">ECONOMÍA 3.0. LA ECONOMÍA DE LA INNOVACIÓN, LA INTELIGENCIA Y LAS INTERACCIONES</a>.
+</p>
+
+<p>
+Recientemente he leído <a href="http://www.casadellibro.com/libro-marketing-30-/1815427/2900001413702">Marketing 3.0</a> (Philip Kotler, Kartajaya, Setiawan), libro que apuesta por otra forma de hacer las cosas para salir de los grises tiempos a los que nos ha conducido, básicamente, la falta de ética. Nos empuja así a recuperar los valores clásicos para cuidar tanto al cliente, a los empleados, los proveedores y, por qué no, al planeta. Me ha recordado un poco a un "segundo renacimiento". Quizá esta idea admita un nuevo artículo.
+</p>
+
+<p>
+Así, este curso me atrae porque lo veo como un complemento perfecto para seguir intentando completar el círculo que mejor encaje esta nueva época. Insisto, siempre que tengo oportunidad, en que Internet no está siendo puesta en valor tanto como se merece. La inmadurez con la que la utilizamos hace que la veamos como un pingüe almacén de casi todo lo que se puede digitalizar. El curso pretende aportar inteligencia al manejo de tanta información. Recorre las nuevas tendencias en marketing, en las formas de emprender e innovar, inteligencia de negocio, cuadros de mandos, seguridad TIC, cloud computing&#x2026;
+</p>
+
+<p>
+Y todo eso en el incomparable entorno de Santander, con tardes largas de verano en las que confío poder intercalar algún baño en la playa y alguna copita con amena charla.
+</p>
+
+<p>
+¡Qué más se puede pedir!
+</p>
+
+<p>
+Os dejo el programa por si os animáis y nos vemos por allí.
+</p>
+<div id="outline-container-org67351e4" class="outline-2">
+<h2 id="org67351e4">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-org67351e4">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/Economia_3_0.PDF">Economia\<sub>3</sub>\<sub>0.PDF</sub></a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Econom%C3%ADa%203.0">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-pensamiento.html">Pensamiento</a> </div>
+<div class="post-date">06 jul. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-07-06-estoy-en-twitter.html">Estoy en Twitter</a></h1>
+<a href="http://twitter.com/godofdez" target="_blank"><img src="/static/img/iconsetc-promo-twitter3.png" class="image image-preview " width="185" height="185" border="0" align="right" hspace="1" vspace="1" alt="Un momento de descanso"/></a>
+<p>
+Desde el pasado lunes, 4 de julio de 2011, <a href="http://twitter.com/godofdez">tengo cuenta en Twitter</a>. Después de sopesar durante mucho tiempo si el mantener la presencia en esta red social era más positivo que negativo, me he decidido a darle una oportunidad. Mi análisis ha manejado los siguientes parámetros:
+</p>
+
+<p>
+Desde el lado negativo me condicionaba el vértigo que sentía al intentar seguir el ritmo de publicaciones de los más activos, la gestión del "timeline" (la página de inicio que va agregando todo lo que publican la gente/medios que sigues) es una auténtica locura desbordante. Si a los n (cuando n tiende a infinito) "tweets" por minuto que van apareciendo en ella les unes los m enlaces incorporados en los mismos y que te conducen a mucha más información&#x2026; ¡misión imposible! La única posibilidad de gestión es tratarlo como si de una lectura de titulares se tratara.
+</p>
+
+<p>
+Y tú, ¿cómo lo haces?
+</p>
+
+<p>
+Hace unos días escuché que <b>Twitter es para opinar, Facebook para conversar y el blog para reflexionar</b>. Quizá éste sea el verdadero motivo de ser de cada uno. Twitter es eminentemente público. Facebook surgió (ya se que ahora permite ser utilizado casi como twitter) para ser "básicamente" privado, con suscripción mutua de seguidor y seguido. En Twitter puedes serguir sin que te sigan. Así, desde el lado positivo, <b>la facilidad de compartir</b> algo interesante simplemente pulsando un botón, que suele acompañar a todos los artículos publicados en lugares de Internet que se precien (como este ;-), ver abajo), con todos tus contactos, es lo que me ha hecho animarme.
+</p>
+
+<p>
+Y su inmediatez. Dicen que estar siguiendo un acontecimiento en Twitter se "aproxima" a lo experimentado en vivo y en directo :-O.
+</p>
+
+<p>
+Los usos de Twitter son tantos como ejercicios creativos seamos capaces de realizar.
+</p>
+
+<p>
+Sigo aclimatándome.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Estoy%20en%20Twitter">Dejar comentario</a>.
+</p>
+<div id="outline-container-org14c9e94" class="outline-2">
+<h2 id="org14c9e94">Comentarios</h2>
+<div class="outline-text-2" id="text-org14c9e94">
+</div>
+<div id="outline-container-org0ceea85" class="outline-3">
+<h3 id="org0ceea85">Pues yo, en mi corta (Elradioplanner 07/07/2011 - 14:31)</h3>
+<div class="outline-text-3" id="text-org0ceea85">
+<p>
+Pues yo, en mi corta experiencia, veo 3 puntos básicos:
+</p>
+<ul class="org-ul">
+<li>Desarrollar una lectura "diagonal"&#x2026; No hay que leerlo todo todo todo.</li>
+<li>Conectarse con asiduidad para que no "se atrase el trabajo". Un dispositivo móvil es una gran ayuda, y convierte la experiencia en algo único, con la inmediatez de enviar imágenes recién captadas.</li>
+<li>El uso del "favorito" para posponer lecturas.</li>
+<li>Afina tu lista de "seguidos". Hay gente con auténtica "tuitorrea" que realmente no dice nada&#x2026;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org28c2557" class="outline-3">
+<h3 id="org28c2557">Realmente son 4 je je&#x2026;. (Elradioplanner 07/07/2011 - 14:32)</h3>
+<div class="outline-text-3" id="text-org28c2557">
+<p>
+Realmente son 4 je je&#x2026;.
+</p>
+</div>
+</div>
+<div id="outline-container-orga9cae8f" class="outline-3">
+<h3 id="orga9cae8f">De acuerdo&#x2026; (Godo 07/07/2011 - 19:04)</h3>
+<div class="outline-text-3" id="text-orga9cae8f">
+<p>
+&#x2026;en los 4. :-)
+</p>
+
+<p>
+El uso de los favoritos fue una de las primeras cosas que descubrí, justo el primer día. Ahora tengo que refinar la gestión de los mismos, sino lograré tener tantos favoritos sin leer que dejen de serlo :-(.
+</p>
+
+<p>
+El dispositivo móvil tengo que conseguirlo aún. Animándome estoy.
+</p>
+
+<p>
+La "lectura diagonal" siempre me ha dado un poco de rabia porque tengo la impresión de que se me escapan las cosas. Y he comprobado en algunos que la practican que así es.
+</p>
+
+<p>
+La tuitorrea&#x2026; ¡puff!
+</p>
+
+<p>
+Gracias por tu comentario. Nos seguimos }:).
+</p>
+</div>
+</div>
+<div id="outline-container-orga01a3fb" class="outline-3">
+<h3 id="orga01a3fb">¿Ya te has hartado?         (cjmateos 28/07/2011 - 19:17)</h3>
+<div class="outline-text-3" id="text-orga01a3fb">
+<p>
+¿Ya te has hartado?
+</p>
+
+<p>
+He intentado seguirte con este enlace <a href="http://twitter.com/fereq">http://twitter.com/fereq</a> pero parece que el nombre de usuario no existe. Supongo que lo habrás cambiado.
+</p>
+
+<p>
+El mío es este <a href="http://twitter.com/cjmateos">http://twitter.com/cjmateos</a>
+</p>
+
+<p>
+Aviso, soy muy poco activo, leo mas que escribo, con lo cual estás salvado de la tuitorrea conmigo ;)
+</p>
+</div>
+</div>
+<div id="outline-container-orgd22d00d" class="outline-3">
+<h3 id="orgd22d00d">Gracias por señalarme el error (Godo 28/07/2011 - 22:05)</h3>
+<div class="outline-text-3" id="text-orgd22d00d">
+<p>
+Comencé siendo "fereq", una especie de acrónimo entre Fernández y Requena, pero luego vi que tenía que ponérselo fácil a la gente que me buscara, y cambié a godofdez - <a href="http://twitter.com/godofdez">http://twitter.com/godofdez</a>
+</p>
+
+<p>
+Lo he corregido en los enlaces del artículo.
+</p>
+
+<p>
+Gracias. Nos seguimos.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-bitácoras.html">Bitácoras</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> </div>
+<div class="post-date">01 jul. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-07-01-ventajas-y-dificultades-de-la-adecuacion-al-ens.html">Ventajas y dificultades de la adecuación al ENS</a></h1>
+<p>
+En el último número de la revista "<a href="http://www.revistadintel.es/EpocaII.htm">DINTEL alta dirección</a>" (Época II - Número 16 - Abril/Mayo'2011) he publicado un artículo titulado: "Ventajas y dificultades de la adecuación al ENS", formando parte de una serie que sobre el mismo tema han publicado otros autores. Podéis encontrar todos los artículos en formato pdf <a href="http://www.revistadintel.es/Revista/Numeros/Numero16/Seguridad/ENS/ENS16.htm">aquí</a>.
+</p>
+
+<p>
+Intenté reflejar en él aquellas opiniones más comunes que he venido encontrando en foros de profesionales que se han enfrentado, o están planeando enfrentarse, a la adecuación de sus organizaciones al <a href="https://www.ccn-cert.cni.es/index.php?option=com_content&amp;view=article&amp;id=2420&amp;Itemid=211&amp;lang=es">Esquema Nacional de Seguridad</a>.
+</p>
+
+<p>
+Os dejo mi artículo adjunto al final de éste y espero conocer vuestras opiniones sobre el tema: ¿Creéis que el ENS os está ayudando? ¿En qué sentido? ¿Qué se os está haciendo más cuesta arriba? ¿Alguna puntualización a lo dicho?
+</p>
+
+<p>
+Como siempre, un placer compartir.
+</p>
+<div id="outline-container-org521f56e" class="outline-2">
+<h2 id="org521f56e">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-org521f56e">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/201105-Dintel-ENS.pdf">201105-Dintel-ENS.pdf</a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Ventajas%20y%20dificultades%20de%20la%20adecuaci%C3%B3n%20al%20ENS">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-publicaciones.html">Publicaciones</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">10 mar. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-03-10-iadministracion-proxima-parada-del-ciclo-sitano-d.html">iAdministración, próxima parada del Ciclo @sitano +d </a></h1>
+<p>
+Es para mi un placer anunciar a los lectores de este blog las jornadas de iAdministración que está organizando el Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta. En esta participo en una mesa redonda en la que debatiré con excelentes profesionales sobre el Esquema Nacional de Seguridad.
+</p>
+
+<p>
+Por si os interesa, tenéis más información y el programa de la jornada <a href="http://www.coitaoc.org/index.php?option=com_content&amp;task=view&amp;id=1789&amp;Itemid=115">aquí</a>.
+</p>
+<div id="outline-container-org9aa398e" class="outline-2">
+<h2 id="org9aa398e">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-org9aa398e">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/programa_iadministracion_detalle_web.pdf">programa\<sub>iadministracion</sub>\<sub>detalle</sub>\<sub>web.pdf</sub></a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=iAdministraci%C3%B3n%2C%20pr%C3%B3xima%20parada%20del%20Ciclo%20%40sitano%20%2Bd%20">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad_de_la_información.html">Seguridad_de_la_información</a> </div>
+<div class="post-date">11 feb. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-02-11-seguridad-de-la-informacion-en-las-organizaciones.html">Seguridad de la información en las organizaciones</a></h1>
+<a href="http://www.coitaoc.org/index.php?option=com_content&task=blogcategory&id=39&Itemid=321" target="_blank"><img src="/static/img/telecos-andaluces-04.png" class="image image-preview " width="185" height="260" border="0" align="right" hspace="10" vspace="10" alt="Telecos Andaluces 04"/></a>
+<p>
+"<i>La información es uno de los principales activos de las entidades públicas o privadas, siendo considerada por algunos autores como la verdadera ventaja competitiva de éstas. Su correcto tratamiento posibilita adquirir nuevo conocimiento y su protección contribuye a rentabilizarlo, no solo aumentando ingresos sino evitando costes</i>".
+</p>
+
+<p>
+Así comienza el último artículo que he escrito colaborando con la revista editada por el Colegio de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta: "<a href="http://www.coitaoc.org/index.php?option=com_content&amp;task=blogcategory&amp;id=39&amp;Itemid=321">Telecos Andaluces 04</a>"
+</p>
+
+<p>
+Podéis encontrarlo en el archivo pdf adjunto. Es para mi un placer compartirlo con los lectores de este blog. Y mayor placer aún recibir vuestros comentarios, sugerencias e ideas. ¿Habéis detectado algo similar? ¿Algunas soluciones? ¿Enfoques alternativos?
+</p>
+
+<p>
+Seguimos.
+</p>
+<div id="outline-container-orgecc2ee5" class="outline-2">
+<h2 id="orgecc2ee5">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-orgecc2ee5">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/RevistaTTAA04-Seg_Informacion.pdf">RevistaTTAA04-Seg\<sub>Informacion.pdf</sub></a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Seguridad%20de%20la%20informaci%C3%B3n%20en%20las%20organizaciones">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-publicaciones.html">Publicaciones</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">05 dic. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-12-05-avast-antivirus-en-gnu-linux.html">Avast antivirus en GNU/Linux</a></h1>
+<p>
+Desde hace tiempo todo lo que descargo de Internet lo hago en una máquina GNU/Linux. La resistencia de este sistema operativo, hoy por hoy, frente a virus es mucho mayor que la de un windows. Así, descargar en un GNU/Linux e intentar chequear lo descargado sobre este sistema, antes de sacarlo a una "caja windows", es bastante saludable.
+</p>
+
+<p>
+Basta una <a href="http://www.google.es/search?q=free+antivirus+for+linux&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:es-ES:official&amp;client=firefox-a">búsqueda en google</a> para encontrar varios antivirus gratuitos para GNU/Linux. Yo me he inclinado por <a href="http://www.avast.com/linux-home-edition#tab1">Avast</a>, pues su uso es bastante simple y no carga ningún demonio en la máquina, por lo que no hace que esta vaya más lenta. Esto nos obliga a hacer "escaneos" bajo demanda pues no hay módulo residente. Es justo lo que necesitaba&#x2026;
+</p>
+
+<p>
+Y lo simple si funciona, dos veces bueno. }:)
+</p>
+
+<p>
+Descargar versión desde aquí:
+</p>
+
+<pre class="example" id="orga9bccca">
+
+[19:26:47(godo@surco)~/temp]&gt; wget http://files.avast.com/files/linux/avast4workstation_1.3.0-2_i386.deb
+--2010-12-05 19:46:52--  http://files.avast.com/files/linux/avast4workstation_1.3.0-2_i386.deb
+Resolviendo files.avast.com... 67.228.147.162, 74.55.40.226, 74.55.48.42, ...
+Connecting to files.avast.com|67.228.147.162|:80... conectado.
+Petición HTTP enviada, esperando respuesta... 302 Found
+Localización: http://download834.avast.com/files/linux/avast4workstation_1.3.0-2_i386.deb [siguiendo]
+--2010-12-05 19:46:52--  http://download834.avast.com/files/linux/avast4workstation_1.3.0-2_i386.deb
+Resolviendo download834.avast.com... 174.120.185.10
+Connecting to download834.avast.com|174.120.185.10|:80... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 29093380 (28M) [text/plain]
+Saving to: `avast4workstation_1.3.0-2_i386.deb'
+
+100%[===============================================================================================================================&gt;] 29.093.380   543K/s   in 51s
+
+2010-12-05 19:47:44 (553 KB/s) - `avast4workstation_1.3.0-2_i386.deb' saved [29093380/29093380]
+
+[19:27:44(godo@surco)~/temp]&gt;
+
+</pre>
+
+<p>
+Actuando como "root", instalar así:
+</p>
+
+<pre class="example" id="orgd93ea6f">
+
+[19:34:11(root@surco)~]&gt; dpkg -i avast4workstation_1.3.0-2_i386.deb
+
+</pre>
+
+<p>
+Al finalizar la instalación os pedirá que vayáis a una URL de avast y os registréis, gratuitamente, para obtener una licencia, la cual tenéis que teclear.
+</p>
+
+<p>
+Comandos disponibles:
+</p>
+
+<pre class="example" id="org7bea883">
+
+[19:39:35(root@surco)/home/godo/temp]&gt; avast
+avast         avastgui      avast-update
+
+</pre>
+
+<p>
+Scripts útiles para ser ejecutados al inicio:
+Actualización:
+</p>
+
+<pre class="example" id="orga977258">
+
+[19:42:50(godo@surco)~/bin]&gt; more avast-get-update
+#!/bin/bash
+
+# Hacemos ping a una dirección IP pública
+# security.debian.org
+/bin/ping -c 5 -W 1 212.211.132.32
+
+# Informamos y ejecutamos "apt-get update"
+echo "Actualizando las firmas de virus... " &gt; /tmp/avast-update
+/bin/date &gt;&gt; /tmp/avast-update
+/usr/bin/avast-update &amp;&amp; /usr/bin/avast -V &gt;&gt; /tmp/avast-update
+echo "Fin de la actualizacion" &gt;&gt; /tmp/avast-update
+/bin/date &gt;&gt; /tmp/avast-update
+
+#
+# FIN del script.
+#
+[19:42:55(godo@surco)~/bin]&gt;
+
+</pre>
+
+<p>
+Escaneo de un directorio:
+</p>
+
+<pre class="example" id="orge41fdef">
+
+[19:42:48(godo@surco)~/bin]&gt; more avast-scan
+#!/bin/bash
+
+# Esperamos 5 minutos -&gt; 5 * 60 = 300
+ping -c 300 127.0.0.1
+
+# Escaneamos el directorio de descargas
+echo "Escaneando directorio de descargas " &gt; /tmp/avast-scan.txt
+/bin/date &gt;&gt; /tmp/avast-scan.txt
+/usr/bin/avast -a -r /tmp/avast-scan.txt /mnt/vm/aa-almacen/*
+echo "Enviando mail..."
+/usr/bin/mail -s "Escaneo antivirus del directorio de descargas" g...@gmail.com m...@gmail.com  &lt; /tmp/avast-scan
+.txt
+echo "Mail enviado."
+
+#
+# FIN del script.
+#
+
+</pre>
+
+<p>
+Y eso es todo. A disfrutar de un mundo un poco más ¿seguro? ;-)
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Avast%20antivirus%20en%20GNU%2FLinux">Dejar comentario</a>.
+</p>
+<div id="outline-container-org952e60c" class="outline-2">
+<h2 id="org952e60c">Comentarios</h2>
+<div class="outline-text-2" id="text-org952e60c">
+</div>
+<div id="outline-container-org394275e" class="outline-3">
+<h3 id="org394275e">can not initialize avast! engine (Godo 16/01/2011 - 14:04)</h3>
+<div class="outline-text-3" id="text-org394275e">
+<p>
+Tras la última actualización avast lanza este mensaje al intentar ejecutarlo:
+</p>
+
+<pre class="example" id="org75b6517">
+avast: can not initialize avast! engine: Argumento inválido
+</pre>
+
+<p>
+La solución para la sesión actual es hacer esto como root:
+</p>
+
+<pre class="example" id="orgcbbf0e1">
+sysctl -w kernel.shmmax=128000000
+</pre>
+
+<p>
+Y la definitiva es agregar esta línea al fichero /etc/sysctl.conf
+</p>
+
+<pre class="example" id="orgeb5eabe">
+kernel.shmmax=128000000
+</pre>
+</div>
+</div>
+<div id="outline-container-org4e2d3c9" class="outline-3">
+<h3 id="org4e2d3c9">Gracias por tu post me fue de (DanySam 27/09/2011 - 03:19)</h3>
+<div class="outline-text-3" id="text-org4e2d3c9">
+<p>
+Gracias por tu post me fue de mucha ayuda
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div>
+<div class="post-date">02 oct. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-10-02-upgrade-a-drupal-6.html">Upgrade a Drupal 6</a></h1>
+<p>
+El idioma inglés dispone de dos palabras distintas para hablar de actualizaciones: update y upgrade. Se utiliza update para hablar de los frecuentes parches que corrigen diversos problemas dentro de la rama actual del código. Por ejemplo: pasar de la versión de Drupal 5.22 a la 5.23; aunque corregimos problemas seguimos manteniéndonos en la versión 5 del código y, por tanto, seguimos teniendo disponibles las mismas funcionalidades. Se utiliza upgrade para referirnos a una subida de versión y, así, de funcionalidades asociadas. Por ejemplo: pasar de la versión 5.23 a la 6.19. Esto ha sido lo que he hecho. Ten claro estos matices para tu vida de comprador y/o mantenedor de software, he asistido a varios malentendidos que han costado más de una desagradable discusión: una cosa es que Microsoft te mantenga tu windows parcheado, otra que te regale la nueva versión del sistema operativo :-P.
+</p>
+
+<p>
+Despido así a la anterior rama 5.xx que tantos años me ha acompañado subiéndome al carro de la rama 6.xx, y lo hago casi dos años y medio después de que la versión <a href="http://drupal.org/drupal-6.0">6.0</a> fuera estrenada. He dejado que los más intrépidos se enfrenten a los tempranos bugs que suelen acompañar a todo lanzamiento. Es una buena política que descubrimos y compartimos diversos compañeros de trabajo desde hace años, en todos los contextos: desarrollo web, software de comunicaciones, sistemas operativos, etc.
+</p>
+
+<p>
+Y es una mala política de seguridad hablar aquí de la versión de software que "soporta" el sitio web: se da una pista a los que me quieran atacar&#x2026; en fin, confío no estar en el punto de mira de nadie con malas intenciones y, sobre todo, en la seguridad de Drupal.
+</p>
+
+<p>
+Aprovechando la subida de versión he lavado la cara del tema gráfico y estreno uno nuevo basado en <a href="http://drupal.org/project/zen">Zen</a>, una magnífica "escritura" del "motor gráfico" de Drupal, que clarifica mucho tanto los "layout" como las "hojas de estilo". He creado un subtema que hereda y refina el que usaba en la versión anterior. ¿Os gusta? Espero que sí. También he reescrito/readaptado casi todas las secciones del menú principal, situado arriba, al comienzo de la página. Especialmente nuevas son: contactar y presentación.
+</p>
+
+<p>
+Puedes consultar las mejoras que incorpora la versión 6 de Drupal <a href="http://drupal.org/drupal-6.0">aquí</a>. Yo intentaré aprovechar: la pontencia de jQuery, la flexibilidad de CCK, la espectacularidad de presentación de contenido con Views&#x2026;
+</p>
+
+<p>
+&#x2026;ya lo irás descubriendo en futuros artículos.
+</p>
+
+<p>
+Si detectas algo que no funciona como debiera, por favor, <a href="file:///d:/contact">házmelo saber</a>.
+</p>
+
+<p>
+Muchas gracias.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Upgrade%20a%20Drupal%206">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-bitácoras.html">Bitácoras</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> </div>
+<div class="post-date">27 ago. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-08-27-identidad-en-internet-i.html">Identidad en Internet (I)</a></h1>
+<p>
+A continuación os dejo el artículo número <b>8</b> que, continuando mi línea de colaboración, he publicado en el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>. Divulgad que algo queda ;-)
+</p>
+
+<p>
+Un par de <a href="http://www.internetlibros.com/650391/Nuevos-casos-de-Lupi%C3%B3n.html">lecturas</a> de este verano me han sugerido escribir aquí sobre la identidad en la Red (algunos dirán en la nube), los peligros que la acechan y las posibles formas de protegerla.
+</p>
+
+<p>
+Cuando nos adentramos en el concepto identidad vemos la gran problemática que ha originado desde la antigüedad griega, pasando por la época moderna, hasta nuestros días. Y los que seguirá ocasionando en un futuro. En este artículo simplificaremos para poder delimitar el problema y abordar, si cabe, la solución que nos interesa.
+</p>
+
+<p>
+Identidad es uno de esos conceptos que se define “hacia fuera” y “hacia dentro”. El primer caso, “hacia fuera”, es el que nos interesa a nosotros y es el que el DRAE recoge en sus acepciones: “2. Conjunto de rasgos propios de un individuo o de una colectividad que los caracterizan frente a los demás. 3. Conciencia que una persona tiene de ser ella misma y distinta a las demás”. Como podemos observar en todas estas acepciones “los demás”, los otros, son necesarios para observar diferencias a través de las interrelaciones establecidas. El segundo caso, “hacia dentro”, es el que le preocupa a los filósofos y responde a las preguntas: ¿quiénes somos? o ¿cómo y cuándo dejamos de ser lo que somos? (resulta curiosa la lectura de la “<a href="http://es.wikipedia.org/wiki/Paradoja_de_Teseo">Paradoja de Teseo”</a>).
+</p>
+
+<p>
+Algunos rasgos que construyen nuestra identidad son: nuestro físico, nuestros recuerdos, nuestros sentimientos, nuestras inquietudes, el sentido del humor, etc. Hasta esta época el conjunto de estos elementos estaba tan ligado a nuestro espacio y a nuestro tiempo que era tan fácil de controlar que pasaba desapercibido. Pero, ¿qué está ocurriendo en la Red masivamente y en la “tecnosociedad” en general? La tecnología posibilita la construcción, la copia, la destrucción, la “perennidad” (en un futuro quizá la “inmortalidad”, como sugieren los cuentos referenciados al comienzo del artículo) de identidades, y así, la pérdida de control sobre las mismas con los problemas que esto causa.
+</p>
+
+<p>
+Avancemos pues desde lo más simple hasta lo más complejo para ver qué está ocurriendo en Internet.
+</p>
+
+<p>
+En un principio, cuando escasamente interactuábamos en la Red, lo único que nos identificaba en ella era nuestro nombre (login) y nuestra contraseña (password). Parece que ha pasado mucho tiempo pero hace tan sólo 10 años, aproximadamente, la web era estática, la información fluía desde el emisor hasta el receptor, y casi todos éramos destinatarios de la misma con escasas posibilidades de verter comentarios, indicar si “me gusta / no me gusta”, compartirla con nuestros amigos; había pocas “cookies” que se interesaran por nuestros sitios frecuentados y el correo no vivía perennemente en el servidor sino que se descargaba habitualmente (algunos hemos convivido con pop1/pop2 y convivimos con pop3) a nuestra máquina. Aquí el principal riesgo era el robo de nuestras credenciales, login y password, cosa no muy difícil pues viajaban sin cifrar y bastaba una simple captura de tráfico para obtenerlas. Un ataque a la privacidad en toda regla, pero limitado: sólo se obtendría el correo no descargado aún. La mejor defensa entonces: cambiar la clave frecuentemente, obligando a que la captura de ayer no fuera útil para hoy, y minimizar el número de sondeos de correo nuevo contra el servidor. Nadie lo hacía: todos aprendimos a convivir con el riesgo. Lo interiorizamos, supongo. Actualmente, cuando el acceso a estos servicios se debería plantear de forma cifrada, hay que incidir en la fortaleza de la contraseña (la típica mezcla de mayúsculas, minúsculas, números y signos), pues el ataque por fuerza bruta (prueba y error de sucesivas contraseñas hasta encontrar la válida) cobra mayor peso.
+</p>
+
+<p>
+Posteriormente la Red evolucionó, la web pasó a llamarse “web 2.0”; el correo, “correo web”; los foros y chats se convirtieron en espléndidas “redes sociales” y la mensajería instantánea añadió tráfico multimedia: intercambio de fotos, voz y video en tiempo real.
+</p>
+
+<p>
+Y a todos se nos olvidó ese viejo consejo que nos daban nuestras madres: “niño, no hables con extraños, ni te acerques cuando te ofrezcan caramelos”.
+</p>
+
+<p>
+Continuará.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Identidad%20en%20Internet%20%28I%29">Dejar comentario</a>.
+</p>
+<div id="outline-container-orgc0a93cc" class="outline-2">
+<h2 id="orgc0a93cc">Comentarios</h2>
+<div class="outline-text-2" id="text-orgc0a93cc">
+</div>
+<div id="outline-container-orga53a436" class="outline-3">
+<h3 id="orga53a436">¿Para cuando la segunda (elradioplanner 11/09/2010 - 17:39)</h3>
+<div class="outline-text-3" id="text-orga53a436">
+<p>
+¿Para cuando la segunda parte?
+</p>
+</div>
+</div>
+<div id="outline-container-orgf2a08e8" class="outline-3">
+<h3 id="orgf2a08e8">Está al caer. (Godo 12/09/2010 - 22:16)</h3>
+<div class="outline-text-3" id="text-orgf2a08e8">
+<p>
+Este mes de septiembre, si las circunstancias no lo impiden.
+</p>
+</div>
+</div>
+<div id="outline-container-org2dfc944" class="outline-3">
+<h3 id="org2dfc944">Como has empezado con el (Ricardo (como verás pongo mi nombre) 16/09/2010 - 13:53)</h3>
+<div class="outline-text-3" id="text-org2dfc944">
+<p>
+Como has empezado con el tema de la identidad, tema que me interesa muchísimo, te dejo una frase que me impactó:
+</p>
+
+<p>
+Si yo soy yo porque tu eres tu, y tu eres tu porque yo soy yo, entonces ni yo soy yo, ni tu eres tu.
+</p>
+</div>
+</div>
+<div id="outline-container-org2296b15" class="outline-3">
+<h3 id="org2296b15">Identidad (Otra vez Ricardo 18/09/2010 - 11:37)</h3>
+<div class="outline-text-3" id="text-org2296b15">
+<p>
+“Si yo soy yo porque tu eres tu, y tu eres tu porque yo soy yo, entonces ni tu eres tu, ni yo soy yo”. Esta frase cuadra muy bien con la de todos conocido "si yo soy tu y tu eres yo ¿quien es mas tonto de los dos?".jejejejej
+La frase (que no quien la dijo), está muy bien porque en lo profundo no sabemos quienes somos, somos en la medida que nos comparamos con el otro, pero esto pierde el poco sentido que pudiera tener, cuando los demás hacen lo mismo con nosotros.
+</p>
+
+<p>
+Ese sentido ilusorio del ser es lo que Albert Einstein, con su percepción profunda no solamente de la realidad del espacio y el tiempo sino de la naturaleza humana, denominó "ilusión óptica de la conciencia". Esa ilusión del ser se convierte entonces en
+la base de todas las demás interpretaciones o, mejor aún, nociones erradas de la realidad, de todos los procesos de pensamiento, las interacciones y las relaciones. La realidad se convierte en un reflejo de la ilusión original.
+Pues bien, esa identidad a la que llamamos YO con la cual nos relacionamos normalmente es lo que también podríamos llamar ego.
+</p>
+
+<p>
+Una relación genuina es aquella en la cual no domina el ego con su búsqueda del yo y su creación de imágenes. En una relación genuina hay una corriente de atención sincera y alerta hacia la otra persona, en la cual no hay sensación alguna de deseo. Esta atención alerta es la Presencia. Es el requisito para toda relación auténtica. Pero ¿nos relacionamos así normalmente?, ¿estamos viendo de verdad a la otra persona o son las imágenes las que se relacionan?.
+</p>
+
+<p>
+Una de las estructuras mentales básicas a través de la cual entra en existencia el ego es la identificación. El vocablo "identificación" viene del latín "ídem" que significa "igual" y "facere" que significa "hacer". Así, cuando nos identificamos con algo, lo "hacemos igual". ¿Igual a qué? Igual al yo. Dotamos a ese algo de un sentido de ser, de tal manera que se convierte en parte de nuestra "identidad". En uno de los niveles más básicos de identificación están las cosas: el juguete se convierte después en el automóvil, la casa, la ropa, etcétera. Tratamos de hallarnos en las cosas pero nunca lo logramos del todo y terminamos perdiéndonos en ellas. Ese es el destino del ego.
+</p>
+
+<p>
+Partiendo de esto, partiendo de esta falsa percepción de lo que somos que habitualmente todos tenemos, ¿Qué es lo que puede salir perjudicado en una supuesta invasión de lo que llamamos intimidad?. Tanto en la vida “real” como en que podemos llamar virtual, que por cierto, puede llegar a ser como un sueño dentro de otro sueño. ¿Qué es lo que tememos?. ¿Qué hay en el fondo del miedo al ridículo?.
+Entiendo que la seguridad, la privacidad en Internet, es o debiera ser, la misma que en la vida real. Creo que hay un miedo exagerado cuando se habla de Internet, cuando los riesgos son idénticos que en de la vida real.
+En la vida real también puedo coger una foto tuya en situación, digamos, comprometida y pegarla en los alrededores de tu casa. Quizás en Internet sea mas fácil, pero en la vida real es mas efectivo, porque al hacerlo así, seguro que la van a ver personas cercanas de tu entorno. Pero en ninguna de las dos, mi verdadero ser se va a ver comprometido. Es mi imagen, mi ego, el que sale dañado.
+</p>
+
+<p>
+Resumiendo, estoy diciendo dos cosas, por un lado el riesgo me perece idéntico en Internet que en la vida real y por otro lo que tratamos de proteger tanto en un plano como en el otro, es nuestro ego, nuestra imagen, no lo que verdaderamente somos.<br>
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">26 jul. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-07-26-el-factor-humano.html">El factor humano</a></h1>
+<p>
+A continuación os dejo el artículo número <b>7</b> que, continuando mi línea de colaboración, he publicado en el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>. Divulgad que algo queda ;-).
+</p>
+
+<p>
+No es raro encontrar en toda la literatura existente sobre seguridad de la información en los diferentes contextos (doméstico, empresarial), la idea que señala al factor humano como el eslabón más débil de la cadena, metáfora que recoge las diferentes componentes del proceso de seguridad como si de eslabones se trataran de la misma: gestión del hardware, gestión del software, aspectos organizativos, gestión de incidentes, adecuación legal&#x2026; sin entrar en detalles y abusando del término “gestión”. Asimismo, tampoco es raro encontrar la solución que, como si de algún hechizo mágico se tratara, todos repetimos para fortalecer ese eslabón más débil: formación.
+Y, aunque en los últimos años han aflorado algunos “máster de seguridad”, basta una búsqueda en google para ver que los más antiguos rondan los 10 años y casi todos ellos se imparten en Madrid. También es verdad que de los pocos que aparecen, menos aún, a mi modo de ver, están bien estructurados: casi todos cargan demasiado las tintas en los aspectos técnicos y minimizan la parte dedicada a la gestión, y al sentido común que permite alinear la seguridad y el negocio, entendiendo negocio como el objetivo último de la empresa u organización. Ese que no se puede sacrificar en pos de la seguridad y que algunos olvidan.
+</p>
+
+<p>
+Durante este mes de julio he participado en la selección de un grupo de personas que trabajarán en un proyecto donde, entre otras muchas tareas relacionadas con la seguridad, se dedicarán a gestionar incidentes de seguridad. Buscábamos dos tipos de características en ellos: tenían que tener suficiente base técnica para entender lo que pudiera ocurrir y, aún más importante si cabe, las suficientes destrezas o habilidades para poder relacionarse con diferentes tipos de interlocutores, más o menos técnicos.
+</p>
+
+<p>
+Entre la “base técnica” buscábamos conocimientos de teoría y diseño de redes, de soluciones de seguridad, de los diferentes componentes que las conforman, de amenazas típicas (desde el malware a la ingeniería social), de vulnerabilidades, su explotación y uso, de sistemas Windows y Unix, de diferentes tipos de ataques y herramientas para llevarlos a cabo y, en general, de toda la nomenclatura que se ha ido acumulando: phising, botnets, pharming, DDoS, etc.
+</p>
+
+<p>
+La principal conclusión que hemos obtenido todos los que hemos participado en este proceso ha sido que, aunque hemos entrevistado a personas procedentes de diferentes titulaciones (Ingeniería Informática, Ingeniería de Telecomunicación, Ciclos Formativos de Grado Superior, etc.) todos compartían una misma característica: el 80% de los conocimientos que buscábamos los habían adquirido por su cuenta, autoformándose, y sólo el 20% de los mismos habían sido adquiridos en su titulación (abusando ahora del principio de Pareto). Afirmándose así la idea con la que abríamos este artículo que, a su vez, ha sido ratificada por los alumnos y profesionales con los que compartí una ponencia, también este mes de julio, en los "<a href="http://www.ujaen.es/serv/continua/cursosverano/revistacarolina2010_tres.pdf">XI Cursos universitarios de verano Intendente Olavide</a>" de la Universidad de Jaén.
+</p>
+
+<p>
+Pero, ¿estamos haciendo lo suficiente por fortalecer ese eslabón más débil? En Andalucía es difícil encontrar profesionales con conocimientos en seguridad de la información, y aún más a profesionales con experiencia. Siendo optimista, y creyendo que ser conscientes del problema es el primer paso hacia su solución, comienzo a observar algunos movimientos en los planes de estudio adaptados a Bolonia que se aproximan a lo necesario. Pero son muy pequeños e insuficientes&#x2026; veámoslos como un primer paso para conseguir algo más. Mientras tanto, sigamos autoformándonos.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=El%20factor%20humano">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">16 may. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-05-16-seguridad-en-el-puesto-de-trabajo-antivirus.html">Seguridad en el puesto de trabajo. Antivirus.</a></h1>
+<p>
+A continuación os dejo el artículo número <b>6</b> que, continuando mi línea de colaboración, he publicado en el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>. Divulgad que algo queda ;-).
+</p>
+
+<p>
+Esta semana me he reunido, de forma independiente, con dos de los fabricantes líderes en el mercado de la seguridad en el puesto de trabajo (omitiré nombres para que no se enfaden el resto) y, como si se tratara de un mecanismo de relojería perfectamente sincronizado, describían la situación actual de forma muy parecida. Veámoslo.
+Ambos contaban, obviamente, con un laboratorio (simplificando) que viene analizando históricamente todas las muestras de “<a href="http://es.wikipedia.org/wiki/Malware">malware</a>” que sus distintas sondas/clientes les van haciendo llegar. Fruto del análisis en profundidad de cada una de las muestras por máquinas que automatizan, en la medida de lo posible, la búsqueda de código malicioso y de aportaciones puntuales de inteligencia de expertos analistas humanos, generaban los famosos ficheros de firmas a los que estamos acostumbrados por los mensajitos de actualización que lanzan todos nuestros antivirus de puesto de trabajo (se denominan así para diferenciarlos de aquellos antivirus que se despliegan en el perímetro de las organizaciones intentando contener la entrada de infecciones: antivirus de navegación web, antivirus de correo, y poco más) cada vez que se actualizan.
+</p>
+
+<p>
+También coincidían en que ese modelo reactivo de contención de las amenazas basándose en el ciclo descrito y que finaliza con desarrollo de la firma/vacuna “*está acabado*” como estrategia de defensa, y que pervive en la práctica, y lo hará durante varios años más, porque los otros enfoques estratégicos (de los que hablaremos en futuros artículos) aún no han alcanzado la madurez suficiente para acabar con el primero. Aunque, como veremos, los pasos se van dando.
+</p>
+
+<p>
+¿Por qué está “acabado” el modelo actual? La cifra concreta que daba cada uno de ellos difería pero el orden de magnitud era parecido: cada día llegan a sus laboratorios cientos de miles de muestras nuevas (en un solo día actual llegan tantas muestras como las conocidas hasta el año 2003. ¡Impresionante!), y el crecimiento es exponencial. Muchas de estas muestras son variaciones sobre el mismo código patrón, utilizadas por “los malos” para despistar a “los buenos”: mientras trabajan en ellas cabe la posibilidad de que se les escape un porcentaje bajo, pero suficiente, para seguir haciendo estragos.
+</p>
+
+<p>
+¿Qué pasos están dando para contener esto? Todos se están centrando en un modelo de negocio de “Software como Servicio” (Software as a Service &#x2013; SaaS). Concepto que cada vez vais a ir oyendo con más frecuencia, y que quiere decir lo siguiente: el software se monta en un servidor de internet y el servicio que antes prestaba cuando lo montabas en tu máquina ahora se presta desde allí. Puede servirnos como ejemplo un servicio al que nos hemos ido acostumbrando poco a poco y que hoy es abrumadoramente mayoritario: el correo web. Antes casi todos teníamos nuestro cliente de correo en nuestro PC, ahora casi todos utilizamos servicios como Gmail / Hotmail / Yahoo mail (perdón por los ejemplos concretos pero creo que es lo mejor para conseguir explicarme). Antes teníamos la música en nuestro ordenador, ahora utilizamos Spotify. Antes utilizábamos una “suite ofimática” ahora tenemos Google docs y la propia Office de MicroSoft en su versión 2010 está disponible como servicio en la web&#x2026; en fin.
+</p>
+
+<p>
+¿En qué consiste, y qué ventajas tiene, un antivirus en la nube? Si lo definiéramos en terminología industrial: acortar el ciclo de producción. Toda la inteligencia está ubicada en ese servidor que reside en Internet (la nube). Ese servidor, que en realidad es una granja de servidores muy potentes, maneja los millones de firmas conocidas en diferentes ficheros, y es capaz de correr, en tiempos infinitamente menores que los que consumirían nuestras máquinas, complejos algoritmos de detección heurística. Además se nutre de los envíos de cientos de miles de personas que han instalado un agente ligero (consume pocos recursos en nuestra máquina) y cuya comunicación con los servidores no podemos desactivar por lo malo (nos acabaríamos infectando) y por lo bueno (colaboramos con los demás). Y es que, cuando este agente ligero sospecha de algún fichero lo bloquea, lo envía a la granja de servidores para su análisis, y espera recomendación sobre si permite o no su ejecución.
+</p>
+
+<p>
+¿Qué gana el usuario de estos nuevos servicios? Tiene un agente instalado en su máquina más ligero que los habituales, que da menos problemas y que se gestiona centralizadamente, dispone así de más recursos para su trabajo habitual (nuestro ordenador ya no va tan lento cuando le instalamos el antivirus), en local sólo permanecen las firmas que identifican a los virus que están en el “top x” (también conocidos como “wild list”), es decir, los que actualmente tienen un mayor índice de actividad. Pero eso no quiere decir que estemos desprotegidos, cuando nuestro agente detecta un proceso cuyo “comportamiento” es sospechoso lo bloquea y pide ayuda como hemos explicado.
+</p>
+
+<p>
+A esa forma de trabajar en la nube, en la que todos nos acabamos ayudando a todos porque lo que me afecta a mí, lo comparto, y probablemente no te acabe afectando a ti, se la conoce como “inteligencia colectiva”. Bonito nombre&#x2026;
+</p>
+
+<p>
+&#x2026;y extraña sensación cuando lo escucho por echadla tanto en falta. Supongo.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Seguridad%20en%20el%20puesto%20de%20trabajo.%20Antivirus.">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">04 abr. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-04-04-botnets-y-medios-de-comunicacion.html">Botnets y medios de comunicación</a></h1>
+<p>
+A continuación os dejo el artículo número 5 que, continuando mi línea de colaboración, he publicado en el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>. Divulgad que algo queda ;-).
+</p>
+
+<p>
+Este mes de marzo ha saltado la noticia de la desactivación de la “Red Mariposa” que, desde España, controlaba millones de ordenadores esparcidos por todo el mundo. Aquí podéis leerla en tres medios distintos: <a href="http://www.elmundo.es/elmundo/2010/03/09/navegante/1268151520.html">1</a>, <a href="http://www.google.com/hostednews/epa/article/ALeqM5iRnXGn7g8LfAV_sXa5EAGmH6SUAQ">2</a> y <a href="http://elpais.com/articulo/20100302elpeputec_8/Tes">3</a>. Y como casi siempre, después de leer esto queda una sensación que podríamos describir como: “mucho ruido y pocas nueces”, que equivale a: “mucha alarma y poca formación”. Pues, ¿en qué consisten este tipo de redes conocidas como botnets? ¿Por qué se expanden? ¿Cómo operan? Y lo que es más importante, ¿cómo podemos intentar no caer en sus pegajosos hilos-trampa?
+“Bot” es una abreviación de “robot”. En este contexto un bot es un tipo de programa que, con malos fines, es instalado en un ordenador de forma “silenciosa”, pasando desapercibido a su propietario, siendo controlado en remoto por su dueño, conocido como “Bot Master”. Este tipo de programas suelen tener la capacidad de tomar el control completo del ordenador donde se instalan y de su funcionamiento en Internet, pero, al contrario de otro tipo de “malware”, su principal característica es no levantar sospechas. Pretenden así extenderse en el tiempo, despertando sólo cuando se le ordena, logrando formar verdaderos ejércitos denominados “Botnets”, redes de robots, uniéndose a gran cantidad de semejantes. Ejércitos dispuestos a lanzarse sobre el objetivo dictado por su “Bot Master” con tan sólo recibir la orden apropiada.
+</p>
+
+<p>
+¿Qué buscan los “Bot Master” con estas “botnets”? La respuesta es cada vez más fácil: rentabilidad. Los “Bot Master” alquilan este tipo de redes a todo aquel que quiere hacer uso del gran potencial distribuido que brindan: spammers, scammers, phishers, grupos terroristas, etc. Presumen de su robustez y efectividad: ataques lanzados desde todas estas máquinas colonizadas consiguen ser más difícil de evitar que un ataque lanzado desde la propia máquina del “Bot Master”.
+</p>
+
+<p>
+Sus principales vías de propagación son las habituales: correos electrónicos y redes de mensajería instantánea (ofreciendo increíbles videos o programas antivirus gratuitos que no hacen más que esconder bajo el plugin que falta para ver el video, en el primer caso, o bajo el falso antivirus, en el segundo, el verdadero software robot), páginas web especialmente diseñadas para ejecutar el código de instalación de dicho software en nuestra máquina con tan sólo ser visitadas con un navegador vulnerable y sin nosotros ser conscientes, redes peer-to-peer que ofrecen gratuidad con peligro, distribución de software por medio de redes sociales tras la “ingeniería social” correspondiente, etc.
+</p>
+
+<p>
+¿Cómo funcionan? Una vez instalado el software en nuestro ordenador abrirá una conexión con algún servicio ofrecido desde Internet público: suscripción a grupos de noticias o a canales de chat (IRC), abriendo conexiones a redes peer-to-peer, etc., o privado: simplemente conectándose al servicio especialmente diseñado y alojado en su “propio servidor”. A través de esta conexión inicial el bot es capaz de recibir órdenes, actualizarse, e incluso desinstalar otros bots alojados en nuestra máquina o convivir con ellos.
+</p>
+
+<p>
+Todos nos deberíamos hacer estas preguntas: ¿formo parte de una botnet? ¿Qué puedo hacer para evitarlo? Los consejos son los ya conocidos y poco practicados: no trabajar habitualmente en nuestro sistema operativo con una cuenta de administrador, interesarnos por la seguridad de nuestra máquina y <a href="http://www.hispasec.com/rss/unaaldia.xml">permanecer informados</a> sobre la evolución de las amenazas, mantener actualizado nuestro antivirus, instalar un buen cortafuegos que inspeccione y filtre todas las conexiones salientes que se produzcan sin nuestro consentimiento (evitando que el bot “llame a casa” para ponerse en contacto con su dueño), dejar el ordenador encendido sin ningún programa que haga uso de Internet y observar la actividad de nuestra conexión (hay <a href="http://www.softonic.com/windows/medidores-de-trafico-opinion">programas</a> que ayudan a monitorizar la actividad de red), junto con lo anterior, acudir a la línea de comandos y al viejo amigo “netstat” ;-) si observamos actividad sospechosa. Además, podemos complementar todo esto con herramientas gratuitas de “escaneo desde la nube” como <a href="http://www.pandasecurity.com/activescan/index/">esta</a>, esta <a href="http://free.antivirus.com/rubotted/">otra</a>, y muchas más.
+</p>
+
+<p>
+Salud, y evitad caer en las teledirigidas telarañas.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Botnets%20y%20medios%20de%20comunicaci%C3%B3n">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">01 mar. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-03-01-seguridad-de-la-informacion-en-los-hogares.html">Seguridad de la información en los hogares</a></h1>
+<p>
+A continuación os dejo el artículo número 4 que, continuando mi línea de colaboración, he publicado en el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>. Divulgad que algo queda ;-).
+</p>
+
+<p>
+Quiero aprovechar el artículo de este mes de febrero para divulgar el estudio que, de forma trimestral e ininterrumpida desde 2004, elabora el <b>Instituto Nacional de Tecnologías de la Comunicación (INTECO)</b> sobre la seguridad de la información y la e-confianza de los hogares españoles. Sirva también este artículo para invitaros a todos los que aún no conozcáis este Instituto Nacional a <a href="http://www.inteco.es/Presentacion/">visitar su web</a> y, en especial, a consultar su sección de <a href="http://www.inteco.es/Seguridad/">Seguridad</a>, la cual contiene mucha información útil para todos los usuarios de las TICs preocupados por mantener a salvo su información. Aprovechad, asimismo, para recomendadlo a vuestros familiares y amigos pues está realizando una gran labor divulgativa que, como a continuación veremos, es cada día más necesaria.
+El <a href="http://www.inteco.es/Seguridad/Observatorio/Estudios/Informe_hogares_3T09">Estudio sobre la seguridad de la información y la e-confianza de los hogares españoles</a> pretende actuar como un termómetro que indica la evolución de una serie de indicadores que, como su nombre sugiere, presentan información sobre el uso y costumbres de los usuarios de las TICs.
+</p>
+
+<p>
+La información aparece clasificada en una serie de apartados: medidas y hábitos de seguridad, incidencias de seguridad, seguridad y fraude on-line, seguridad de las comunicaciones móviles e inalámbricas de los hogares, consecuencias de las incidencias de seguridad y reacción de los usuarios ante ellas y e-confianza de los hogares españoles.
+</p>
+
+<p>
+No me extenderé mucho en comentar cada uno de ellos pues tenéis disponibles tanto un “resumen ejecutivo” como una “reseña” algo más extensa, que acompañan al propio estudio. Sí que aprovecharé para dar mi opinión (de esto va el blog, ¿no?) sobre aquellos aspectos que considero más significativos.
+</p>
+
+<p>
+Me parece muy acertado distinguir entre “medidas de seguridad automatizables” (programas antivirus, cortafuegos, anti-“todo”, actualizaciones, etc.) y “medidas de seguridad <b>no</b> automatizables” (copias de seguridad, partición del disco duro, utilización habitual de usuario con permisos reducidos, cifrado de documentos o datos, etc.), pues nos permite detectar el gran escalón que aún existe entre la adopción de unas y otras. El uso de las automatizables está enmarcado entre el 64% y el 91%, exceptuando herramientas más actuales como el anti-fraude (34%) y alertando sobre el poco uso (38%) de herramientas ya clásicas para la protección de menores basadas en control parental. Por el contrario, el uso de medidas no automatizables se sitúa entre el 50% y el 78%, destacando el porcentaje de usuarios que se preocupa por salvaguardar su información, sólo el 60%, y el escaso uso que se realiza de métodos/herramientas de cifrado de la información cuando esta se transmite o se almacena: DNI electrónico y certificados digitales en torno al 23% y cifrado de documentos alrededor del 18%. Todo esto me hace pensar que sigue existiendo una gran confusión entre la preocupación por la conservación del sistema y no por la conservación de la información que de verdad nos interesa. Se sigue olvidando que todas las herramientas automatizables no son más que barreras para frenar un posible desastre que conlleve pérdida de información, ¿qué pasa si alguna de ellas falla? Hecho que suele ocurrir.
+</p>
+
+<p>
+La “intención declarada de uso de medidas de seguridad automatizables y no automatizables en los próximos 3 meses” no deja de subrayar el hecho resaltado en el párrafo anterior: la adopción de hábitos correctos sigue muy por detrás de la adopción de barreras “protectoras”. Sin embargo, la adopción masiva de estas últimas provoca una falsa sensación de seguridad que queda destruida cuando se acaba sufriendo un incidente grave.
+</p>
+
+<p>
+Por último, también me ha llamado mucho la atención los motivos por los que no se utilizan estas medidas de seguridad (tanto automatizables como no). Fijaos que la mayoría de respuestas se encuadran en la columna “No conoce”. Sin embargo, esto contrasta con el conjunto de “Medidas demandadas a la administración”: las medidas agrupadas bajo el bloque de “sensibilización” acaparan el 10% aproximadamente de las demandas frente a las de “respuesta técnica” que acaparan el 33%. Otra vez clamando a papá Estado que nos resuelva los problemas en lugar de que nos ayude a que seamos capaces de resolverlos por nosotros mismos, o incluso a lo que es aún mejor: evitarlos.
+</p>
+
+<p>
+Y todo esto cuando en el mes de septiembre, el cual supuso un mínimo histórico, el 56,2% de los ordenadores seguían comprometidos. Permitidme poner esto en contexto: tu microempresa (las medidas de seguridad en las “microempresas” suelen ser similares a las adoptadas en los “hogares”) y la de tu amigo: una de las dos está infectada, una de las dos está perdiendo información o siendo utilizada para realizar “cyberdelitos”&#x2026; ¡escalofriante!
+</p>
+
+<p>
+En fin, que parece que seguimos confiados en que más valen que nos curen en lugar de que nos ayuden a no enfermar, ignorando que la cura suele llegar demasiado tarde: cuando la pérdida de información ya se ha producido.
+</p>
+
+<p>
+Resguárdense.<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Seguridad%20de%20la%20informaci%C3%B3n%20en%20los%20hogares">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">12 ene. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-01-12-tendencias-2010.html">Tendencias 2010</a></h1>
+<p>
+A continuación os dejo el artículo número 3 que, continuando mi línea de colaboración, he publicado en el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>. Espero que os ayude a tomar decisiones ;-).
+</p>
+
+<p>
+Las fechas en las que nos encontramos invitan a realizar un ejercicio de previsión que nos ayude a identificar aquellos temas que acabarán destacando a lo largo de este año. O quizá, como viene siendo habitual, alguno de ellos acabe retrasándose aún más, para desgracia de aquellas organizaciones que así lo sufran.
+Por tanto, aceptando los riesgos que supone todo pronóstico, voy a intentar describir los que, a mi juicio, pueden ser los temas a considerar por los responsables de seguridad de las organizaciones, obligándoles a tomar decisiones y, como no, a evaluar sus riesgos.
+</p>
+
+<p>
+También aprovecharé algunos de los puntos para ver que impacto tienen en el usuario final, ya sea desde un punto de vista profesional, cuando está trabajando en su organización, o personal, cuando trabaja en casa para resolver sus propios asuntos: económicos, ocio, búsqueda y utilización de información, etc.
+</p>
+
+<p>
+<b>- Seguridad en entornos virtualizados</b>
+</p>
+
+<p>
+Diversos estudios publicados nos informan de que el porcentaje de crecimiento de las soluciones virtualizadas está siendo superior al 30%. Gran parte de este crecimiento se debe a que muchas organizaciones están confiando su infraestructura o sus aplicaciones a terceros que las alojan sobre “entornos virtualizados”. Este movimiento ha sido realizado buscando una mayor flexibilidad en la configuración de las plataformas, así como intentando disminuir la inversión asociada a la evolución tecnológica, mejorando el retorno de la misma.
+</p>
+
+<p>
+Sin embargo, este enfoque implica una cesión a terceros de información “crítica” para el negocio, siendo cada vez mayor el número de estos con los que la organización comparte información. ¿Cómo se protege esta información? ¿Quién tiene acceso a ella? ¿Quién se responsabiliza de lo que le pueda ocurrir, o lo que es lo mismo, qué cláusulas se han de especificar en los contratos que regulan la prestación del servicio?
+</p>
+
+<p>
+<b>- Registros de logs, correlación y confiabilidad</b>
+</p>
+
+<p>
+Recuerdo, en los años en los que comencé a trabajar, ver impresoras conectadas a las salidas de consola de aquellos sistemas de los cuales se quería tener un registro “físico” de lo que iba ocurriendo en cada momento. Algo ha cambiado desde aquel entonces en los que interminables rollos de papel eran agujereados por impresoras matriciales. Aunque todos los administradores serios de sistemas prestan una especial atención a los logs, no en vano son los que nos proporcionan pistas claves para averiguar lo que ha ocurrido o está ocurriendo, no todos ellos se preocupan de almacenarlos para hacer posible un posterior análisis con mayor detalle, si fuera necesario, o incluso para demostrar ante la autoridad judicial los daños y la responsabilidad de quien los llevó a cabo.
+</p>
+
+<p>
+Por tanto, las preguntas claves son: ¿nos están aportando los logs toda la información que necesitamos? ¿Existen mecanismos de correlación, filtrado y lanzamiento de alarmas? ¿Tenemos herramientas que garantizan la confiabilidad de los logs que se están produciendo? ¿Están los logs siendo almacenados de forma que su integridad pueda ser verificada? ¿Somos conscientes de que cualquier detalle que se escape en su tratamiento puede invalidarlos como pruebas judiciales?
+</p>
+
+<p>
+<b>- Dispersión de datos y amenazas</b>
+</p>
+
+<p>
+Se está haciendo mucho hincapié en como la información fluye a lo largo y ancho de la organización. Podemos encontrar información clave para el negocio en: servidores de correo, servidores de ficheros, bases de datos, discos duros de los puestos de trabajo, memorias usb que entran y salen de la organización y, para los más eruditos en La Red, en aplicaciones que son prestadas desde “la nube”: almacenamiento en red, correos electrónicos personales, redes sociales, herramientas colaborativas, etc.
+</p>
+
+<p>
+Asimismo, se comprueba (véase el último informe del INTECO sobre la seguridad en los hogares) que las amenazas evolucionan cada vez más rápido, llegándose a detectar un amplio conjunto de variaciones de los mismos especimenes. La característica fundamental: todos ellos intentan pasar desapercibidos y robar información confidencial que puede ser utilizada para ganar dinero.
+</p>
+
+<p>
+Medidas: ¿qué información es crítica? ¿Hemos identificado dónde está esa información? ¿Existen políticas en la organización que garanticen su correcto tratamiento? ¿Hemos implantado mecanismos que nos garanticen que esa información no “se escapa” de forma incontrolada?
+</p>
+
+<p>
+<b>- El eslabón más débil: el factor humano</b>
+</p>
+
+<p>
+Muchos estudios nos siguen mostrando que el eslabón más débil de la cadena de seguridad sigue siendo el factor humano: que el porcentaje de equipos infectados ronde el 60%, que sólo el 30% de los usuarios gestione las actualizaciones de sus sistemas (software de seguridad, sistema operativo, aplicaciones), y que sólo el 34% de los mismos se preocupe de escanear los ficheros descargados de redes P2P, junto con el escaso conocimiento de conceptos como el de: cortafuegos, anti-spam, anti-fraude, etc., y la poca preocupación por adoptar habilidades favorables a la protección de la información: contraseñas fuertes, copias de seguridad, cifrado de la información confidencial, etc., así lo demuestra.
+</p>
+
+<p>
+Cada vez es más patente la necesidad de formación y de crear cultura de seguridad en las organizaciones. La seguridad se sigue sintiendo más como un inconveniente que como una ayuda al correcto desempeño del trabajo diario.
+</p>
+
+<p>
+Quizá, como me comentó un compañero, no viniera mal una campaña publicitaria de organismos públicos, entre tantas, ilustrando alguno de estos conceptos.
+</p>
+
+<p>
+<b>- Orientación al negocio</b>
+</p>
+
+<p>
+Desconozco si será una tendencia o un deseo mío. Ya lo comentaba en otro de mis artículos. Se viene detectando la necesidad de que los responsables de seguridad estén cada vez más involucrados en el entendimiento del negocio y de los procedimientos con los que se enfrentan las personas que trabajan en la organización. La seguridad está escapando de su jaula tecnológica y está filtrándose por cada una de las fibras que componen el tejido de la organización.
+</p>
+
+<p>
+El arte: ser capaz de enfrentarse a las múltiples y evolucionadas amenazas impactando lo menos posible en el negocio, e incluso favoreciendo la adopción de nuevas formas de interrelación.
+</p>
+
+<p>
+Iremos observando como transcurre este nuevo año 2010.
+</p>
+
+<p>
+Y comentándolo.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Tendencias%202010">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">14 dic. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-12-14-seguridad-de-la-informacion-algunos-conceptos-basicos.html">Seguridad de la información. Algunos conceptos básicos.</a></h1>
+<p>
+Continuando mi colaboración con el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>, hoy he presentado "los conceptos básicos" que sirven de cimientos al más amplio: "seguridad de la información". Asimismo, recojo al final un consejo práctico que nos ayuda a evitar infecciones a través de dispositivos USB, las más comunes hoy en día.
+</p>
+
+<p>
+Os dejo a continuación la que ha sido mi 2ª colaboración.
+</p>
+
+<p>
+Pensando en el carácter público de este blog, y así, en la diversidad de conocimientos que atesorarán los distintos lectores que nos visiten, he pensado que, tras el primer artículo dedicado a la “seguridad de la información” que publiqué a modo de presentación, es conveniente proceder en este a fijar algunos conceptos muy básicos que ayudarán a comprender los cimientos del tema que nos ocupa.
+Intentaremos, pues, responder a la siguiente pregunta: ¿qué encierra el concepto “seguridad de la información”?, o formulada de otro modo: ¿sobre qué conceptos básicos se construye?
+</p>
+
+<p>
+El Diccionario de la Real Academia Española (DRAE) recoge, al menos, estas cuatro acepciones del adjetivo seguro:
+</p>
+
+<blockquote>
+<ol class="org-ol">
+<li>adj. Libre y exento de todo peligro, daño o riesgo.</li>
+
+<li>adj. Cierto, indubitable y en cierta manera infalible.</li>
+
+<li>adj. Firme, constante y que no está en peligro de faltar o caerse.</li>
+
+<li>adj. No sospechoso.</li>
+</ol>
+</blockquote>
+
+<p>
+En el marco de la seguridad de la información utilizamos una serie de conceptos que identifican cada una de estas cualidades en los diferentes elementos utilizados. Así, definimos:
+<b>Integridad</b>: propiedad que busca mantener la información libre de modificaciones realizadas por personal no autorizado.
+</p>
+
+<p>
+<b>Confidencialidad</b>: propiedad que garantiza el uso de la información sólo por personal autorizado.
+</p>
+
+<p>
+<b>Disponibilidad</b>: propiedad de la información de estar accesible a los usuarios de la misma.
+</p>
+
+<p>
+<b>No repudio (irrefutabilidad)</b>: esta propiedad liga la información a un determinado autor, evitando el rechazo de su autoría.
+</p>
+
+<p>
+Por tanto, <b>podremos decir que algo es tanto más seguro cuanto mayor grado de estas propiedades atesore</b>, es decir, cuanto más íntegro, más confidencial, más disponible y más irrefutable sea.
+</p>
+
+<p>
+Un enfoque práctico, que nos ayude a obtener el objetivo buscado, ha de comenzar con la siguiente pregunta: ¿qué necesitamos proteger y qué se debe garantizar?, para que una vez identificados estos elementos continuemos preguntándonos: ¿de qué necesitamos protegerlo?, cuya respuesta nos revelará las diversas vulnerabilidades y amenazas que podrán poner en riesgo alguna de las propiedades descritas (integridad, confidencialidad, disponibilidad y no repudio), finalizando el ciclo con la pregunta: ¿cómo vamos a protegerlo?
+</p>
+
+<p>
+<b>La seguridad así enfocada pasa de ser un estado</b>, que en un determinado momento califica a nuestra información, <b>a ser un proceso continuo que requiere ser evaluado, adaptado y mejorado constantemente</b>, puesto que las respuestas a las tres preguntas que nos hemos hecho van evolucionando con el tiempo, y el cambio de sólo alguna de ellas muy probablemente implique la adaptación del resto. Por ejemplo, si aparece una nueva amenaza hemos de encontrar un nuevo mecanismo de defensa, si aparece un nuevo elemento a proteger, o cambia su entorno, sus usuarios o su tecnología, hemos de emprender de nuevo el camino que nos llevará a recorrer las amenazas que sobre él se ciernen y los mecanismos de defensa que tendríamos que poner en marcha.
+</p>
+
+<p>
+Desde el punto de vista <b>estratégico</b> de la seguridad de la información en una organización, toda planificación comenzará por un análisis de riesgos cuyos principales resultados serán: tipos de activos con los que cuenta la organización (inventario), qué vulnerabilidades incorporan, qué amenazas se ciernen sobre dichos activos, y qué salvaguardas se han de considerar para proteger dichos activos. Esto sería un análisis cualitativo, que es el que mayoritariamente se practica. Un análisis cuantitativo intentará obtener una magnitud que nos informe del estado de nuestros activos. Suelen estar asociadas a los conceptos de “Esperanza de Pérdida Anual” o “Coste Anual Estimado”, y su cálculo consiste en multiplicar la “pérdida potencial” por la “probabilidad de que ocurra”. La gestión de todo este proceso ha de ser continua en el tiempo, como ya indicábamos en el párrafo anterior.
+</p>
+
+<p>
+Y como en todos mis artículos intentaré terminar con una sección más <b>operativa</b> y práctica, tanto para las organizaciones como para los usuarios domésticos, me gustaría despedirme destacando un secreto a voces recogido en el <a href="http://www.eset.es/index.php?option=com_content&amp;task=view&amp;id=263&amp;Itemid=">último informe</a> que sobre la seguridad ha elaborado la compañía ESET (especializada en software de protección: antivirus, antispam, etc.): la principal vía de contagio de malware entre ordenadores es el autoarranque de ficheros contenidos en las memorias USB. Personalmente en todos mis ordenadores tengo deshabilitado el autoarranque pues creo que aporta muy poco para el gran riesgo que supone.
+</p>
+
+<p>
+¿Cómo se hace?
+</p>
+
+<p>
+<b>En Windows XP</b>:
+</p>
+
+<ol class="org-ol">
+<li>Abrimos un bloc de notas y copiamos lo siguiente (tres líneas independientes):</li>
+</ol>
+
+<blockquote>
+<p>
+Windows Registry Editor Version 5.00
+</p>
+
+<p>
+[HKEY<sub>LOCAL</sub><sub>MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer</sub>]
+</p>
+
+<p>
+“NoDriveTypeAutoRun”=dword:000000b5
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li>Guardamos el archivo en algún lugar de nuestro ordenador con el nombre Quitar<sub>Autorun.reg</sub></li>
+<li>Hacemos doble clic en el archivo que hemos creado y saldrá una ventanita en la que se nos pregunta si estamos seguros de querer agregar la información de dicho archivo al registro de Windows.</li>
+
+<li>Hacemos clic en “Sí” y se termina el proceso.</li>
+</ol>
+
+<p>
+<b>Para Windows Vista</b>:
+</p>
+
+<ol class="org-ol">
+<li>y 2. Son los mismos pasos que los descritos para Windows XP.</li>
+
+<li>Hacemos clic con el botón derecho del ratón en el archivo que hemos creado y seleccionamos “Combinar”.</li>
+
+<li>Debemos “darle permiso” a las ventanas que nos lo soliciten y después saldrá una ventanita n la que se nos pregunta si estamos seguros de querer agregar la información de dicho archivo al registro de Windows.</li>
+
+<li>Hacemos clic en “Sí” y se termina el proceso.</li>
+</ol>
+
+<p>
+<b>Para GNU/Linux:</b>
+</p>
+
+<p>
+Ya han terminado ;-) Duerman tranquilos.
+</p>
+
+<p>
+Salud.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Seguridad%20de%20la%20informaci%C3%B3n.%20Algunos%20conceptos%20b%C3%A1sicos.">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div>
+<div class="post-date">13 nov. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-11-13-colaborando-con-el-blog-del-coitaoc.html">Colaborando con el blog del COITAOC</a></h1>
+<p>
+Hoy viernes, 13 de noviembre de 2009, inicio una nueva colaboración con el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>. Intentaré ir recogiendo aquí también las entradas que publico allí, a modo de backup, ya que de la seguridad de la información se trata ;-).
+</p>
+
+<p>
+Os dejo a continuación la que ha servido para inaugurar la colaboración.
+</p>
+
+<p>
+Quiero comenzar este primer artículo sobre seguridad de la información dándole las gracias al departamento técnico del <a href="http://coitaoc.org/">COITAOC</a> por invitarme a colaborar en esta nueva y emocionante aventura, que nos permite compartir nuestros conocimientos sobre distintas temáticas desde una óptica tan personal como la que brinda un blog: sus artículos y sus comentarios. En los años que llevo trabajando en diferentes proyectos relacionados con las TIC he desarrollado un punto de vista no dogmático, y aquí, en esta sección, asumiré el riesgo de transitar por la delgada línea que separa lo generalmente aceptado y lo individualmente cuestionado.
+¿Cuál es la situación actual del tema que nos ocupa? ¿Cómo hemos llegado hasta aquí? Cuando hace doce años comencé a trabajar en el mundo de las redes de datos de grandes organizaciones, tanto públicas como privadas, se utilizaba el término seguridad para referirnos a los controles físicos, a los registros de entrada que teníamos que superar para acceder a los edificios y además, en algunos lugares de seguridad excepcional, para controlar el acceso al centro de proceso de datos. Algunas de estas organizaciones ya se habían conectado a Internet, las universidades por ejemplo, otras, más centradas en hacer negocio, estaban planteándoselo y no tardarían en dar el salto. La seguridad comenzaba a evolucionar desde esos controles físicos hasta otros controles lógicos que, desde el exterior, tenían que ser superados para lograr el acceso a los sistemas de información. Comenzaba a protegerse los sistemas: en esa época bastaba con cerrar puertos implementando algunos centenares de listas de control de acceso en los encaminadores (routers). Bien es verdad que ya se llevaban utilizando antivirus algunos años, y algunos usuarios, los que tenían la suerte de poder trabajar con sistemas operativos de verdad, podían tener sus propias credenciales de acceso a su sesión de trabajo. Los que tuvimos la ocasión de poder contrastar esto que veíamos en los sistemas profesionales con el juguetito que teníamos en casa (¿recordáis cuando en un Windows 9X bastaba con pulsar “cancelar” para saltarnos la pantalla de inicio que nos desafiaba con “usuario” y “contraseña”? Ahora podemos sonreír) creíamos estar descubriendo esos otros mundos de ciencia-ficción que nos mostraban algunas películas (quizá esto fuera lo que nos hizo darle una oportunidad a GNU/Linux). Hoy en día, esta idea de protección lógica de los sistemas de información comienza a darse por obvia, y la preocupación se traslada a la propia información en sí, a esos documentos, bases de datos, correos electrónicos&#x2026; datos, en definitiva, que fluyen y se dispersan por toda la organización y que un día, sin saber como, aparecen tirados en un cubo de basura (como algún caso de expedientes médicos) o en los discos duros de miles de usuarios porque se han compartido, supongamos que involuntariamente, por redes P2P (como le ocurrió a algún sindicato).
+</p>
+
+<p>
+Analizaremos en esta sección desde el enfoque estratégico de la seguridad de la información hasta el enfoque operativo de ésta, desde la política de seguridad de una organización hasta las buenas prácticas que ha de implantar entre sus empleados, desde el conjunto de leyes que han elaborado las administraciones para asegurarnos nuestros derechos hasta las normas aprobadas por organismos internacionales que nos trasladan qué y cómo debemos hacer las cosas para no caer en los errores en los que cayeron otros, y garantizar la eficacia de las medidas adoptadas. Revisaremos el impacto tanto económico como operativo en las organizaciones, en su negocio, y llegaremos a conclusiones que no distan mucho de la clásica idea: en el equilibrio está la virtud, decían.
+</p>
+
+<p>
+¿Y qué más? Pues presentaremos algunas tendencias en los productos, en los proyectos, en los servicios, en su despliegue. Y no me gustaría olvidar algunos consejos para nuestro propio día a día, algunas curiosidades y cosillas interesantes que voy encontrando por La Red (si aún tenéis ganas de seguir leyendo podéis echar un vistazo a <a href="http://crypto.stanford.edu/PwdHash/">esto</a>).
+</p>
+
+<p>
+Bromeando con algunos colegas suelo decir que quizá se olvidaron de contarnos la octava capa del <a href="http://es.wikipedia.org/wiki/Modelo_osi">modelo OSI</a>. Y tú, ¿qué piensas?
+</p>
+
+<p>
+¡Que sea por mucho tiempo y disfrutemos con ello!
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Colaborando%20con%20el%20blog%20del%20COITAOC">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div><div id="archive">
+<a href="https://godest.vivencias.net/archive.html">Other posts</a>
+</div>
+</div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

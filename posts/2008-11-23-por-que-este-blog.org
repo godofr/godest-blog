@@ -1,0 +1,41 @@
+#+title: ¿Por qué este blog?
+#+date: <2008-11-23 21:45>
+#+author: Godofredo Fdez.
+#+description: He decidido crear este blog para recoger en él aquel contenido socioeconómico que no debería sernos indiferente. En él habrá muchas más preguntas que respuestas, e intentaré profundizar un poco más en los hechos dejando de lado esa visión estereotipada del mundo que se han empeñado en contarnos todos: desde los telediarios de la primera hasta el periódico de mayor tirada nacional.
+#+filetags: ochentaveinte
+#+options: _:nil
+#+nid: 299
+
+He decidido crear este blog para recoger en él aquel contenido socioeconómico que no debería sernos indiferente. En él habrá muchas más preguntas que respuestas, e intentaré profundizar un poco más en los hechos dejando de lado esa visión estereotipada del mundo que se han empeñado en contarnos todos: desde los telediarios de la primera hasta el periódico de mayor tirada nacional.
+
+¿Quién no se ha preguntado al terminar de ver una noticia trascendental, por ejemplo: los miles de refugiados del conflicto del Congo que viven día tras día sufriendo hambruna y demás calamidades, cómo se ha dado lugar a ello, quién combate, quién apoya a cada una de las facciones, qué se está haciendo a nivel internacional para evitarlo, por qué no se moviliza casi nadie por eso, etc.? Pienso que la televisión, con su inmenso poder de comunicación, está siendo desperdiciada. Y lo peor es que este mal se está extendiendo a la prensa, la radio, etc., si bien es verdad que en estos últimos aún podemos encontrar pequeños oasis donde los temas se desarrollan un poco más. Y por supuesto, por ahora podemos seguir contando con algunos programas como: En portada, Informe Semanal, y poco más, que se salvan de la quema.
+
+¿Y por qué este nombre: 80|20? Porque desde que descubrí el [[http://es.wikipedia.org/wiki/Principio_de_Pareto][principio de Pareto]] he visto como es aplicable a infinidad de ámbitos. Este principio se describe así (copiado y pegado del comienzo del artículo correspondiente de wikipedia): "Pareto observó que la gente en su sociedad se dividía naturalmente entre los «pocos de mucho» y los «muchos de poco», y se dividían así en dos grupos de proporciones 80:20 tales que el grupo minoritario, formado por un 20% de población, ostentaba el 80% de algo y el grupo mayoritario, formado por un 80% de población, el 20% de algo. Estas cifras son meramente descriptivas. No son exactas y pueden variar. Su aplicación reside en la descripción de un fenómeno y como tal es aproximada y ligeramente adaptable a cada caso particular.
+
+El principio de Pareto se ha aplicado con éxito a los ámbitos de la política y la Economía. Se describió cómo una población de aproximadamente el 20% ostentaba el 80% del poder político y la abundancia económica, mientras que el otro 80% de población, lo que Pareto denominó «las masas», se repartía el 20% restante de la riqueza y tenía poca influencia política. Así sucede aproximadamente en el reparto de los bienes naturales y la riqueza mundial".
+
+Este principio puede aplicarse con éxito a muchos ámbitos de nuestra vida, por ejemplo, en un curso de "gestión del tiempo" al que asistí hace aproximadamente un año, descubrí que para conseguir el 80% de los objetivos bastaba con dedicarse al 20% de las tareas que uno tiene pendientes. Dicho de otro modo, un buen gestor es aquel que intenta descubrir qué tareas tiene que completar para conseguir el 80% de sus objetivos, normalmente ese grupo de tareas estará formado por el 20% del total que uno tiene sobre la mesa. Es a estas tareas a las que uno ha de intentar dedicar el máximo de tiempo para hacerlas bien, para lograrlas. Asimismo, hay que fijar un límite de tiempo a consumir en tareas tediosas que no aportan prácticamente resultados. Conclusión: dedicar aproximadamente un 80% del tiempo a completar el 20% de las tareas (las verdaderamente importantes), y no más de un 20% al resto. Hay que vigilar bien esta frontera porque lo que suele ocurrir es lo contrario. Conocer esto no quiere decir que automáticamente se consiga, pero como tantas otras cosas en la vida, si lo intentas te aproximarás al éxito. Otro ejemplo práctico es la "reclamación de deudas": normalmente el 20% de los clientes atesoran el 80% de la deuda, obviamente esto marca una línea de actuación, ¿verdad?
+
+Como veis se adapta mucho a lo que quiero transmitir en este blog: ¿por qué el 80% de los medios de comunicación sólo hablan del 20% de la noticia? ¿por qué el 80% de la política cotidiana vocifera sólo el 20% de los temas importantes? ¿dónde podemos encontrar al 20% de personal cualificado que ensanche nuestro conocimiento de los hechos hasta ese 80% deseado?
+
+En fin, espero aprender mucho de vosotros, que con vuestros comentarios iluminéis ese 80% de zona oscura de cada uno de los temas que me gustaría conocer.
+
+Y que mi artículos os ayuden a ensanchar vuestra visión.
+
+Lo dicho: espero.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=%C2%BFPor%20qu%C3%A9%20este%20blog%3F][Dejar comentario]].
+
+** Comentarios
+
+*** Un 0'00000000001% es todo un logro (Esther CM 02/12/2008 - 20:36)
+El artículo me inspira varios pensamientos, que aunque inconexos, quisiera dejar en tu rincón.
+
+Uno de los temas planteados es ‘por qué no se moviliza casi nadie por eso'; qué empezaría antes, el desánimo de la sociedad a estar informados y a partir de ahí la facilidad de los informadores (ya sean telediarios, periódicos, comentaristas...) para tenernos contentos con una pasada rápida por las noticias sin entrar en profundidad porque en el fondo nos importa poco lo que nos cuenten; o será que hace tiempo que venimos escuchando tanta información rápida y superficial que hemos perdido el interés y no conseguimos sentirnos involucrados en ninguna causa. ¿Realmente es la televisión lo que nos tiene adormecidos, o es la anestesia que produce el bienestar en el que nos encontramos? Cuándo, quién y por qué los realities y programas basura pasaron a televisarse en hora punta y los reportajes, tertulias, películas, etc. se emiten a horas imposibles para aquellos a los que el despertador arranca de la cama a las 7 de la mañana.
+
+Por su parte, la teoría 80/20 de Pareto, que tanto engloba en su sencillez, puede que venga a representar un yin-yang desequilibrado de la filosofía oriental. Puedo decir que tengo poco porque me comparo con los que tienen mucho, tengo poder porque lo ejerzo sobre los que no lo tienen, soy feliz porque experimento sentimientos positivos de los que carecen los infelices. Existen esas palabras porque existen sus opuestas.
+
+Constituiría un acto de auténtica solidaridad que el 20% afortunado cediera su 60% de posesión sobrante al 80% desafortunado. Porque la injusticia es tan evidente que no es creíble que no hagamos nada porque no nos damos cuenta. Entiendo que la lucha que propones en tu blog, consiste en ir igualando esos porcentajes. Y aplaudo que te embarques en esta utópica tarea, porque cada gesto, por insignificante que parezca, va restando al menos 0'00000000001% al 80% desafortunado de la balanza, y esto, comparado con lo que aportamos algunos es todo un logro.
+
+TQT\\

@@ -1,0 +1,95 @@
+#+title: XXIV MEDIA MARATÓN CIUDAD DE MÁLAGA - 2014
+#+date: <2014-04-07 21:22>
+#+author: Godofredo Fdez.
+#+description: Todo comenzó con este comentario que me dejó Félix en mi crónica de la media maratón Isla de La Cartuja. Después comprobé mi agenda de actividades previstas…
+#+filetags: Juegos/Deportes
+#+options: _:nil
+#+nid: 522
+
+Todo comenzó con [[http://godest.vivencias.net/content/xix-edici%C3%B3n-de-la-media-marat%C3%B3n-isla-de-la-cartuja-%E2%80%93-2014#comment-4462][este comentario]] que me dejó *Félix* en mi crónica de la media maratón Isla de La Cartuja. Después comprobé mi agenda de actividades previstas para los diferentes fines de semana viendo que para ese no había ninguna, y con el tiempo que aún restaba, me decidí a inscribirme. *Kader* también se lo estaba pensando, pero por problemas de agenda no pudo confirmar hasta última hora, cuando ya era tarde. Ambos creíamos que no íbamos a correr juntos :-(, y la verdad es que me dio tristeza. Entonces se nos ocurrió solicitar un dorsal por las redes sociales (entre tanta gente, 6000 corredores, era probable que a alguien le hubiera surgido un imprevisto). Ahí fue cuando volvió a intervenir *Félix*. No sólo [[https://twitter.com/godofdez/status/450010525804822528][retuiteó mi tweet]] sino que días más tarde me escribió diciendo que había conseguido un dorsal. ¡Mil gracias, *Félix*! ¡Te debemos una! Para que luego digan que las redes sociales no sirven para nada. Sabiéndolas usar hacen maravillas, eh?! Nuestros otros dos compañeros de “sufrires”, *Nuria* y *Carlos*, no pudieron acudir en esta ocasión por diferentes motivos. ¡Os echamos de menos, amigos! ;-). Comentaba que me decidí a inscribirme, y también me decidí a intentar cumplir un objetivo. Dicen que un buen objetivo ha de ser medible y alcanzable. Difícil pero no imposible. Lo primero te motiva, lo segundo te hunde. *Mi objetivo: bajar de las dos horas*. Tuve suerte. En la revista [[http://www.sportlife.es/deportes/correr/articulo/a-por-el-medio-maraton/pagina/5][Sport Life -- número 173, de septiembre de 2013]], que me dieron en la bolsa del corredor de la media maratón Isla de La Cartuja, venía un reportaje titulado: “Especial Medio Maratón. Planes para todos los niveles. Alimentación. Los ejercicios antilesiones”. Y de ahí cogí este plan para entrenar durante las semanas que aún quedaban (disculpad la calidad, es una foto de la citada página de la revista. Si pulsáis sobre ella se hace un poquito más grande y se ve mejor):
+
+#+begin_export html
+<a href="/static/img/20140406-plan-entrenamiento-sub2h.jpg" rel="lightbox"><img align="middle" alt="20140406-plan-entrenamiento-sub2h" border="0" class="image image-preview " height="282" hspace="10" src="/static/img/20140406-plan-entrenamiento-sub2h.jpg" title="20140406-plan-entrenamiento-sub2h" vspace="10" width="645" /></a>
+#+end_export
+
+Quedaban siete semanas desde que me lo propuse, con lo que entre la semana 5 y la 6 volví a repetir la 4. Y creo que sólo he faltado a dos de las citas, dos domingos que por diversos compromisos no pude entrenar. El resto de sesiones, moviendo alguna de día, ajustándolas unas veces un poquito menos y otras un poquito más *y obligando a mi fuerza de voluntad*, he logrado hacerlas. El resultado ha sido este:
+
+#+begin_export html
+<a href="/static/img/20140406-24MMMLG.jpg" rel="lightbox"><img align="middle" alt="20140406-24MMMLG" border="0" class="image image-preview " height="739" hspace="10" src="/static/img/20140406-24MMMLG.jpg" title="20140406-24MMMLG" vspace="10" width="630" /></a>
+#+end_export
+
+Sobre el tiempo invertido, si releéis mi artículo de “la penúltima”, veréis que [[http://godest.vivencias.net/content/xix-edici%C3%B3n-de-la-media-marat%C3%B3n-isla-de-la-cartuja-%E2%80%93-2014#comment-4465][en el comentario que respondí a *Félix*]] ya hacía público este objetivo: “Ahora estoy entrenando para intentar bajar el tiempo de las 2h. Bueno, para serte sincero, y serme sincero, para intentar hacer alrededor de esas dos horas. Estaré igual de satisfecho si hago *1:58* que 2:02”.
+
+#+begin_export html
+<a href="/static/img/20140406-tiempo-oficial.jpg" rel="lightbox"><img align="middle" alt="20140406-tiempo-oficial" border="0" class="image image-preview " height="353" hspace="10" src="/static/img/20140406-tiempo-oficial.jpg" title="20140406-tiempo-oficial" vspace="10" width="645" /></a>
+#+end_export
+
+*Tiempo oficial: 1:57:56 ¡Bien! ¡Bien! ¡Bien!* :-D Mis sensaciones.
+
+#+begin_export html
+<a href="/static/img/20140406-ritmo.jpg" rel="lightbox"><img align="middle" alt="20140406-ritmo" border="0" class="image image-preview " height="511" hspace="10" src="/static/img/20140406-ritmo.jpg" title="20140406-ritmo" vspace="10" width="373" /></a>
+#+end_export
+
+Me estoy acostumbrando a dividir la carrera en tres tercios:
+
+#+BEGIN_QUOTE
+  1) Al principio, entre que uno sale con el mogollón y no tiene prácticamente espacio, siendo más importante tener cuidado de no pisar ni ser pisado ;-), me dedico prácticamente a calentar y observar qué me va diciendo mi cuerpo. Hoy estaba bastante bien, como suele ser habitual salí con las pulsaciones muy elevadas (160 lpm) --tomé café, he de observar si es por eso- pero se mantenían ahí incluso cuando fuimos apretando para encontrar el ritmo que nos permitiría acabar por debajo de las 2H. El primer kilómetro fuimos a 6:19, el segundo a 5:44 y en el tercero ya nos situamos en el ritmo medio: 5:32. Para acabar por debajo de las 2H nos hacía falta “rodar” alrededor de los 5:40. ¡Ir comiéndole esos 8 segundos controlando las pulsaciones no estaba nada mal!
+  Evidentemente fui bebiendo como ya expliqué en mi anterior entrada: manteniendo la botella mucho tiempo y a traguitos muy pequeños. Y tomé un gel de naranja a los 7,5 Km. aproximadamente.
+
+  2) La segunda mitad de la carrera es cuando mejor me encuentro y cuando más cabeza he de ponerle. El cuerpo me pide muchas veces ir más deprisa... pero vigilando mi pulsómetro cuando veía que subía de los 166 lpm, regulaba, bajaba intensidad y comprobaba que la velocidad media por kilómetro seguía siendo la misma: 5:32. Eso me ha ayudado mucho en la parte final.
+  Seguí bebiendo mucho, poco a poco, hasta que comencé a sentir cierta presión en la vejiga (sensación algo incómoda pero que no fue a más). Tomé otro gel de naranja en el kilómetro 15,5 ó 16.
+
+  3) La tercera parte de la carrera ha sido la más dura. No porque me llegara la pájara, sintiera “el murito” en exceso ni demás cosas que ya he ido explicando en otras entradas. Esta vez ha sido por el calor. Hacía un calor casi insoportable. Y eso que iba con mis pantaloncitos imperceptibles (¡qué calidad!) y la camiseta de la organización que también es bastante buena. *Kader* intentó acelerar entre el kilómetro 18 y el 19, lo seguí lo suficiente para que se notara el cambio de ritmo pero, como estaba algo preocupado por el calor, no quise forzar. Veía que iba a acabar por debajo de las 2H que era mi objetivo y quería conservar una sensación agradable. Aun así, al cruzar la línea de meta tuve que estar un rato andando para bajar la temperatura...
+#+END_QUOTE
+
+*La organización ha estado muy bien*. Había mucha agua (menos mal, porque ya digo que ha apretado el sol), todo muy bien señalizado... *el punto negativo*: cuando íbamos llegando al centro (por el plano deduzco que sobre los kilómetros 11, 12 y 13) han dejado sólo un carril de la calzada, lo que ha hecho que se formen algunos tapones (es normal ir corriendo dos o tres personas juntas) que hacían que se te cortara el ritmo. Para otro año a ver si es posible que habiliten en esa zona los dos carriles, igual que estaba el resto del recorrido. Algún avituallamiento de fruta tampoco hubiera venido mal (¡esas naranjas cortadas!). Álbum de fotos (si pincháis en la que sigue se hace más grande y podéis ir pasando para adelante y para atrás pulsando las flechitas que aparecen en sus laterales cuando sitúas el ratón sobre ellos).
+
+#+begin_export html
+<a href="/static/img/20140406-en_la_salida.jpg" rel="lightbox[roadtrip] [1]"><img align="middle" alt="20140406-en_la_salida" border="0" class="image image-preview " height="600" hspace="10" src="/static/img/20140406-en_la_salida.jpg" title="20140406-en_la_salida" vspace="10" width="450" /></a>
+#+end_export
+
+#+begin_export html
+<a href="/static/img/20140406-distancia-a-salida.jpg" rel="lightbox[roadtrip] [2]" class="lightbox_hide_image"><img align="middle" alt="20140406-distancia-a-salida" border="0" class="image image-preview " height="600" hspace="10" src="/static/img/20140406-distancia-a-salida.jpg" title="20140406-distancia-a-salida" vspace="10" width="450" /></a>
+#+end_export
+
+#+begin_export html
+<a href="/static/img/20140406-durante-recorrido.jpg" rel="lightbox[roadtrip] [3]" class="lightbox_hide_image"><img align="middle" alt="20140406-durante-recorrido" border="0" class="image image-preview " height="800" hspace="10" src="/static/img/20140406-durante-recorrido.jpg" title="20140406-durante-recorrido" vspace="10" width="600" /></a>
+#+end_export
+
+#+begin_export html
+<a href="/static/img/20140406-final.jpg" rel="lightbox[roadtrip] [4]" class="lightbox_hide_image"><img align="middle" alt="20140406-final" border="0" class="image image-preview " height="450" hspace="10" src="/static/img/20140406-final.jpg" title="20140406-final" vspace="10" width="600" /></a>
+#+end_export
+
+Y vosotros, ¿habéis estado? ¿Compartís conmigo vuestras sensaciones, consejos... en los comentarios? ¡Nos vemos en la próxima!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=XXIV%20MEDIA%20MARAT%C3%93N%20CIUDAD%20DE%20M%C3%81LAGA%20-%202014][Dejar comentario]].
+
+** Comentarios
+
+*** Agradecimiento (Kader 07/04/2014 - 23:29)
+Gracias Godo, muy buen crónica, fiel retrato a como se desarrolló la carrera.
+Yo también quiero agradecer a Félix su intervención para la obtención del dorsal para correr la #MMMLG y a Antonio Mora, el dueño del dorsal 4872, por su generosidad en cedérmelo.
+
+*** ¡Claro! (Godofredo Fdez. 08/04/2014 - 08:57)
+Gracias, Kader. Me alegra que te haya gustado nuestra crónica ;-).
+
+Efectivamente, hay que agradecérselo a Antonio Mora, al que no le pusimos cara en esta ocasión pero que seguro pondremos en la próxima. Ya queda menos de un año :-).
+
+*** Enhorabuena (Félix Prado 08/04/2014 - 15:40)
+Buena crónica Godo :)
+
+Espero que disfrutaseis la carrera y el día malagueño. Un placer poder haber echado una mano primero con el aviso y después con el dorsal.
+
+Seguro que coincidimos en alguna otra -con más calma, espero :D- más pronto que tarde.
+
+¡A seguir corriendo!
+
+*** Lo bueno y bonito... (Godofredo Fdez. 08/04/2014 - 20:26)
+...de esta actividad es que te permite compartir muchas sensaciones con los amigos. Y ya sabes lo que se dice: superar una adversidad une más que superar una dicha ;-).
+
+Aprovecho para comentar esta frase: "se juega como se entrena". No sé si en otros deportes es así pero te aseguro que en esto de correr, y en mi caso, no lo es. Por ejemplo: tengo entrenamientos de 17 ó 18km corriendo a 5:15 o 5:20, sin embargo creo que a día de hoy no sería capaz de acabar una media a ese ritmo. Cuando entrenaba a 5:50, acababa en 6:05 aproximadamente. ¿Cuál es la causa? No soy nada especialista en el tema, todo lo que voy "conociendo" es por auto-observación y diálogo con los que me rodean. Probablemente sean varias, pero los 3 ó 4 últimos kilómetros de una media maratón se hacen muy duros. Coinciden con eso que señalan algunos como "muro" y que suele corresponder con el punto que se encuentra al 80% de la distancia total. Seguro que hay gran parte de psicología y otra gran parte de "física/química": adrenalina, más pulsaciones desde el principio, más tensión...
+
+Por todo eso, mi planteamiento de las carreras siempre es un poco más "conservativo" de lo que entreno. Lo escribo por si ayuda ;-)
+
+¡Salud!

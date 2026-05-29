@@ -1,0 +1,15 @@
+#+title: andLinux en Windows 7
+#+date: <2011-03-20 21:10>
+#+author: Godofredo Fdez.
+#+description: En esta captura podemos ver dos aplicaciones típicas de GNU/Linux corriendo empotradas en Windows 7 gracias a andLinux . Mientras que el firefox que se ve es…
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 403
+
+En esta captura podemos ver dos aplicaciones típicas de GNU/Linux corriendo empotradas en Windows 7 gracias a [[http://www.andlinux.org/][andLinux]]. Mientras que el firefox que se ve es una aplicación windows, las otras dos: un terminal con vim y el gestor de archivos de kde, son dos aplicaciones GNU/Linux.
+
+Podéis leer más [[/node/404][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=andLinux%20en%20Windows%207][Dejar comentario]].
+

@@ -1,21 +1,27 @@
 #+title: ¿De qué va esto?
 #+date: <2004-04-11 11:25>
-#+description: 
+#+author: Godofredo Fdez.
+#+description: Creo que no viene mal mantener, al menos durante esta época inicial (que no sé cuanto durará), una presentación de esta compartida bitácora como primera…
 #+filetags: Pensamiento
+#+options: _:nil
+#+nid: 5
 
 Creo que no viene mal mantener, al menos durante esta época inicial (que no sé cuanto durará), una presentación de esta compartida bitácora como primera historia para tí, querido visitante. Con el objetivo de respetar tu tiempo: si este resumen te parece interesante continúa leyendo, si no, navega en busca de mejores islas donde atracar tu barca.
 
 Compartida bitácora porque se debe al deseo de nosotros dos: Esther y Godo.
 
+[[http://www.vivencias.net/tarrodemiel/adageattention.php][comment]]
+
 Y el contenido, que es lo que importa, una mezcla, ojalá que interesante, de: divulgación científica (con especial énfasis en compartir conocimiento sobre este nuevo concepto: I+D+i), análisis de sistemas operativos, de aplicaciones software, de tecnologías de comunicaciones: conmutación, routing, etc., de seguridad informática: sistemas de protección, consejos y buenas prácticas, descripción de ataques, divulgación de estudios estadísticos procedentes de diversas fuentes que incidan en los temas anteriores. Y algo de reflexión personal, y de ética, sobre algunos temas de actualidad.
 
 En fin, esperemos que no estalle... o sí.
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=De_que_va_esto][Dejar comentario]].
 
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=%C2%BFDe%20qu%C3%A9%20va%20esto%3F][Dejar comentario]].
 
 ** Comentarios
-*** Arribar (jmtrigos Vie, 19/05/2006 - 21:37)
+
+*** Arribar (jmtrigos 19/05/2006 - 21:37)
 Que agradable es llegar a esta recondita cala a resguardo de tramontanas y sirocos, de levantes y ponientes. Al abrigo de corrientes y rompientes.
 
 Fondear proa al ligero terral, arranchar aparejos y sentimientos.
@@ -24,14 +30,14 @@ Sentarse junto al espejo de popa, acariciar un vaso de ron entre las manos y sen
 
 Este es un hospitalario puerto al que volvere a menudo.
 
-*** ...pero sobre todo (Godofredo Fdez. Dom, 21/05/2006 - 22:43)
+*** ...pero sobre todo (Godo 21/05/2006 - 22:43)
 Gracias por arribar y quedarte, pero sobre todo gracias por tu amistad y poesía, por tu humanidad y sabiduría...
 
 Porque ni tramontanas ni sirocos, ni levantes ni ponientes han cegado tus ojos, y sigues viendo una persona allí donde otros sólo ven el monstruo de las cifras, y sigues viendo la bandera de la ética antes que la de ninguna otra nación.
 
 Seguiremos navegando compartiendo corazón y mares.
 
-*** Llegué, ví y si me dejáis me quedo (Sofista antes d... (no verificado) Mar, 18/07/2006 - 01:01)
+*** Llegué, ví y si me dejaís me quedo (Sofista antes de registrarse 18/07/2006 - 01:01)
 Llegué a esta página no hace mucho enlazando paginas con información sobre Alfonso del Valle y Chiqui Calderón, y de vez en cuando la he seguido visitando viendo con entusiasmo como los temas que tratais me encantan, y que tienen mucho que ver conmigo, mi pensamiento y las cosas que hago. Además que por lo visto muchos de vosotros y yo frecuentamos algunos lugares comunes.
 Así que aquí me teneís pidiendo un huequito en este acojedor y cómodo rincón, si es que a los habitantes de este lar del ciberespacio no les importa compartirlo conmigo.
 
@@ -40,7 +46,7 @@ Un abrazo a todos los que sois
 Sofista ;)
 a la espera del mail de confirmación para ser parte de este lugar.
 
-*** Bienvenida! (Pili Cantautora Mié, 19/07/2006 - 13:55)
+*** Bienvenida! (Pili Cantautora 19/07/2006 - 13:55)
 Bienvenida Sofista! encantados de recibirte en este nuestro riconcito. Es cierto que la parte cantautoril cada vez va inundando más nuestro lugar, siempre con permiso de nuestro webmaster ;) ahora viene una etapa de sequía, pero en octubre nos reecontraremos, supongo.
 
 Un abrazo :)

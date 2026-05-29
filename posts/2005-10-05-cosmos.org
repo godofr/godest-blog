@@ -1,0 +1,32 @@
+#+title: Cosmos
+#+date: <2005-10-05 00:00>
+#+author: Godofredo Fdez.
+#+description: Hoy he encontrado lo que ya llevaba un tiempo buscando. Lo he hecho vía esta bitácora . Suelo visitarla porque tengo muchos puntos en común con esta persona, él mismo se define como "un desarrollador Debian ligeramente paranoico" ;-), además también utiliza Drupal como gestor de contenidos (la base de toda esta arquitectura de página web que estáis viendo). En fin, a lo que iba. Este artículo presenta una nueva serie de capturas gráficas que nos acompañarán, en un pequeño bloque situado en la columna derecha de esta página, a partir de ahora. El bloque se titula "Cosmos", y lo he titulado así en homenaje a los libros de texto de igual nombre con los que me educaron (en parte) durante los primeros cursos de la EGB, además de por ser bastante indicativo de su contenido.
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 56
+
+Hoy he encontrado lo que ya llevaba un tiempo buscando. Lo he hecho vía [[http://www.hermann-uwe.de][esta bitácora]]. Suelo visitarla porque tengo muchos puntos en común con esta persona, él mismo se define como "un desarrollador [[http://www.debian.org][Debian]] ligeramente paranoico" ;-), además también utiliza [[http://drupal.org/][Drupal]] como gestor de contenidos (la base de toda esta arquitectura de página web que estáis viendo).
+
+En fin, a lo que iba. Este artículo presenta una nueva serie de capturas gráficas que nos acompañarán, en un pequeño bloque situado en la columna derecha de esta página, a partir de ahora. El bloque se titula "Cosmos", y lo he titulado así en homenaje a los libros de texto de igual nombre con los que me educaron (en parte) durante los primeros cursos de la EGB, además de por ser bastante indicativo de su contenido.
+
+Si he conseguido "programarlo" bien ha de ir mostrando la "imagen astronómica del día", seleccionada y comentada por un par de astrónomos de la [[http://www.nasa.gov][NASA]]. Pulsando sobre ella podéis acceder a [[http://apod.nasa.gov/apod/][dicha página]] para conocerla con mayor detalle.
+
+Espero que os guste. Nunca viene mal echar un vistazo ahí afuera y acordarse de lo minúsculos y perecederos que somos. Quizá esto nos haga ser a todos un poquito más humildes, y por qué no, más buenos.
+
+...que la fuerza os acompañe :-)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Cosmos][Dejar comentario]].
+
+** Comentarios
+
+*** ¡Cosmos! (Epaminondas Pantulis 13/02/2006 - 21:55)
+(Enviado por Epaminondas Pantulis (no verificado) el Mié, 05/10/2005 - 06:21)
+
+¡Qué recuerdos me has traído al rememorar los libros "Cosmos" de la EGB! Los había olvidado por completo (sólo recuerdo los de lectura, que se llamaban "Mundo Nuevo")
+
+*** charolín... (Godo 13/02/2006 - 21:56)
+(Enviado por Godo el Mié, 05/10/2005 - 22:16)
+
+...y mediasuela. ¿Eran estos los personajes principales de ese libro de lectura? No me acuerdo del título, quizá fueran de otro libro distinto, pero estas dos eran un par de botitas muy simpáticas con las que muchos nos fuimos haciendo amigos de la lectura, ¿verdad?

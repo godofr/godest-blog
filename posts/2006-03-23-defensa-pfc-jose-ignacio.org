@@ -1,0 +1,24 @@
+#+title: Defensa PFC José Ignacio
+#+date: <2006-03-23 13:18>
+#+author: Pili Cantautora
+#+description: Descripción: ESI Isla de la Cartuja. Aula 108. Para los que no hayan andado mucho por ahí, está en la Entreplanta-1, entrando por la puerta principal izquierda (la opuesta a Isla Mágica) se sube por unas escaleras que hay a la izquierda, y creo que es, de las aulas que hay en el pasillo que hay enfrente, la que está junto a la Asociación de Antiguos Alumnos... un poco lioso, no? en fin... preguntando se llega a Roma Estará mu guay seguro... y después, que corran las kaipiriñas!
+#+filetags: 
+#+options: _:nil
+#+nid: 117
+
+Descripción:
+ESI Isla de la Cartuja. Aula 108.
+
+Para los que no hayan andado mucho por ahí, está en la Entreplanta-1, entrando por la puerta principal izquierda (la opuesta a Isla Mágica) se sube por unas escaleras que hay a la izquierda, y creo que es, de las aulas que hay en el pasillo que hay enfrente, la que está junto a la Asociación de Antiguos Alumnos... un poco lioso, no? en fin... preguntando se llega a Roma
+#+begin_export html
+<img src="/static/img/smileys/tongue.png" title="Sticking out tongue" alt="Sticking out tongue" />
+#+end_export
+
+Estará mu guay seguro... y después, que corran las kaipiriñas!
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Defensa%20PFC%20Jos%C3%A9%20Ignacio][Dejar comentario]].
+

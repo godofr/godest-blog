@@ -1,7 +1,10 @@
 #+title: Aniversario de GodEst con Drupal v7
 #+date: <2016-03-02 22:10>
-#+description: 
-#+filetags: Blog Software
+#+author: Godofredo Fdez.
+#+description: Hace hoy 12 años y cuatro días que este pequeño rincón de Internet vio la luz. Aquel año, 2004, también fue bisiesto, naciendo GodEst el día 29 de febrero.…
+#+filetags: Bitácoras Software
+#+options: _:nil
+#+nid: 545
 
 Hace hoy 12 años y cuatro días que este pequeño rincón de Internet vio la luz.
 
@@ -10,10 +13,7 @@ Aquel año, 2004, también fue bisiesto, naciendo GodEst el día 29 de febrero. 
 *Hemos mudado la piel (la forma)*.
 
 #+begin_export html
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="640" height="480" border="0" align="center" hspace="10" vspace="10" src="/static/2016/GodEstv7.jpg"
- alt="Piel de GodEst v7" />
-</figure>
+<img align="middle" alt="Piel de GodEst v7" border="0" class="image image-preview " width="640" height="480"  src="/static/img/GodEstv7.jpg" title="Piel de GodEst v7" hspace="10" vspace="10"  />
 #+end_export
 
 Es el cambio que muchos de vosotros podréis apreciar de forma rápida si estáis visitando nuestro sitio web (si habéis recibido este post por correo os animo a pasaros). El nuevo tema, ligeramente retocado por mí a través de las hojas de estilos, es Bartik, en honor a uno de los primeros programadores de ENIAC, como podéis leer [[https://www.drupal.org/project/bartik][aquí]].
@@ -22,7 +22,7 @@ Volvemos a un tema donde las secciones de la página están, de nuevo, bien deli
 
 La página principal siempre nos recibirá con la última entrada disponible, de forma única, acaparando todo el protagonismo y mostrándose totalmente completa, desde principio a fin. Es fácil lograr este "efecto" haciendo uso del módulo "views".
 
-Espero que os guste y me encantaría, como siempre, ver vuestros comentarios. Que, por cierto, también muestran un renovado estilo visual… ¡Animaros a dejar alguno para verlo! :-D
+Espero que os guste y me encantaría, como siempre, ver vuestros comentarios. Que, por cierto, también muestran un renovado estilo visual... ¡Animaros a dejar alguno para verlo! :-D
 
 *Y hemos actualizado “el motor” (el fondo)*.
 
@@ -31,18 +31,18 @@ Ya he hablado muchas veces de la potencia de Drupal, que la viene desplegando en
 A ninguno de mis lectores le pasará desapercibido el riesgo que suponía mantenerse en la rama 6.x en estos días donde la caza de bugs y la exploración de vulnerabilidades asociadas a estos es el deporte al uso, más cotidiano aún que el correr. Así que he tenido que acelerar el paso y saltar a la rama 7.x que será soportada, a priori, durante 4 años más según se indica [[https://www.drupal.org/core/release-cycle-overview][aquí]]. Y es probable, incluso, que acabe alargándose. Ya sabéis cómo son estas cosas. *Aprovecho para dejar constancia de una de mis máximas: aprendí en mis primeros años de técnico ir siempre en los vagones más rezagados del tren en movimiento*, es decir, quedarme en las últimas revisiones de la penúltima versión estable. Lo hago ahora quedándome en la versión 7.43 (43 refinamientos posteriores al lanzamiento, ni más ni menos), antes que subirme a la versión 8.0 (a mitad del próximo mes se espera la 8.1). Y lo recomiendo siempre para conmutadores, routers, firewalls y demás hardware+software en producción. Nunca salto a la última a no ser que necesite sí o sí alguna nueva funcionalidad.
 
 La actualización, siguiendo el procedimiento indicado, ha sido muy limpia y nada traumática. Más allá de unos cuantos ajustes en las “css”. El proceso recomendado se puede leer en muchos sitios (basta una búsqueda en Google para encontrarlos, incluso con vídeos a través de youtube). Yo me he inspirado en [[http://gerardmcgarry.com/2011/my-drupal-6-to-7-upgrade-process/][este]]. Y, muy resumido, he realizado esto:
-- Backup de base de datos *¡Muy importante!*
-- Backup del directorio de archivos.
+- Backup de base de datos *¡Muy importante!* - Backup del directorio de archivos.
 - Inventario de módulos en uso, sobre todo los “contribuidos por la comunidad”, es decir, los no “core” y “optional core”.
 -Deshabilitar los módulos “contribuidos por la comunidad” y los “temas gráficos” no core (yo fallé en esto último pero pude recuperarlo sin mucho esfuerzo).
-- Migrar…
-- …Ajustar ;-)
+- Migrar...
+- ...Ajustar ;-)
 
 Y, como comentaba antes, ahora ya estamos en la versión 7.43, lanzada como reacción a un “[[https://www.drupal.org/SA-CORE-2016-001][aviso de seguridad]]” que fue difundido el mismo 24 de febrero de 2016. Y disfrutamos de sus notificaciones de seguridad, fácil y rápida actualización, estabilidad, ciclo de vida en vigor, etc.
 
 Para terminar también os diré que estuve viendo la posibilidad de dar “dos pasos en uno”, lo que nos habría llevado a disfrutar de la versión 8.x. Pero el proceso de migración no está aún muy maduro. La próxima 8.1 lo madurará un poco más, pero no lo suficiente. Y esto por no hablar de muchos de los módulos de funcionalidad adicional que aún están en versiones alpha o beta. Demasiado riesgo. Demasiados ajustes pendientes. Demasiado tiempo a invertir para el poco del que dispongo. Lo que subraya mi máxima expresada más arriba... Así que la dejaré reposar unos cuantos otoños.
 
-En fin, espero que todo esto nos ayude a permanecer juntos muchos años más.
+En fin, espero que todo esto nos ayude a permanecer juntos muchos años más.\\
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Aniversario_de_GodEst_con_Drupal_v7][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Aniversario%20de%20GodEst%20con%20Drupal%20v7][Dejar comentario]].
 

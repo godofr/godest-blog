@@ -1,0 +1,59 @@
+#+title: Versiones de Java en Debian GNU/Linux
+#+date: <2009-06-15 20:17>
+#+author: Godofredo Fdez.
+#+description: [19:41:53(godo@alpechin)~]> java -version java version "1.5.0" gij (GNU libgcj) version 4.3.3 Copyright (C) 2007 Free Software Foundation, Inc. This is free software; see the source for copying conditions. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. [19:50:31(godo@alpechin)~]> su Contraseña: alpechin:/home/godo# update-alternatives --config java There are 3 choices for the alternative java (providing /usr/bin/java).
+#+filetags: 
+#+options: _:nil
+#+nid: 325
+
+#+begin_example
+[19:41:53(godo@alpechin)~]> java -version                                             
+java version "1.5.0"
+gij (GNU libgcj) version 4.3.3
+
+Copyright (C) 2007 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[19:50:31(godo@alpechin)~]> su
+Contraseña:
+alpechin:/home/godo# update-alternatives --config java
+There are 3 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                  Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-gcj/jre/bin/java     1042      auto mode
+  1            /usr/bin/gij-4.3                       43        manual mode
+  2            /usr/lib/jvm/java-6-sun/jre/bin/java   63        manual mode
+  3            /usr/lib/jvm/java-gcj/jre/bin/java     1042      manual mode
+
+Press enter to keep the current choice[*], or type selection number: 2
+update-alternatives: using /usr/lib/jvm/java-6-sun/jre/bin/java to provide /usr/bin/java (java) in manual mode.
+alpechin:/home/godo# update-alternatives --config javac
+There is only one alternative in link group javac: /usr/lib/jvm/java-6-sun/bin/javac
+Nothing to configure.
+alpechin:/home/godo# update-alternatives --config java
+There are 3 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                  Priority   Status
+------------------------------------------------------------
+  0            /usr/lib/jvm/java-gcj/jre/bin/java     1042      auto mode
+  1            /usr/bin/gij-4.3                       43        manual mode
+* 2            /usr/lib/jvm/java-6-sun/jre/bin/java   63        manual mode
+  3            /usr/lib/jvm/java-gcj/jre/bin/java     1042      manual mode
+
+Press enter to keep the current choice[*], or type selection number:
+alpechin:/home/godo# java -version
+java version "1.6.0_14"
+Java(TM) SE Runtime Environment (build 1.6.0_14-b08)
+Java HotSpot(TM) Client VM (build 14.0-b16, mixed mode, sharing)
+alpechin:/home/godo#
+alpechin:/home/godo#
+alpechin:/home/godo# exit
+exit
+[20:11:16(godo@alpechin)~]>
+
+#+end_example
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Versiones%20de%20Java%20en%20Debian%20GNU%2FLinux][Dejar comentario]].
+

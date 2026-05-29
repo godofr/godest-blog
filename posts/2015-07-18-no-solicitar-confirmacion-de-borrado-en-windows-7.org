@@ -1,0 +1,34 @@
+#+title: No solicitar confirmación de borrado en Windows 7
+#+date: <2015-07-18 12:40>
+#+author: Godofredo Fdez.
+#+description: Una de las cosas que he descubierto con el uso de las versiones "preview" de Windows 10 ( quizá te interese este otro artículo ) es que no solicita…
+#+filetags: Configuraciones Software
+#+options: _:nil
+#+nid: 536
+
+Una de las cosas que he descubierto con el uso de las versiones "preview" de Windows 10 ([[/content/windows-10-%C2%BFqui%C3%A9n-es-el-producto][quizá te interese este otro artículo]]) es que no solicita "confirmación de borrado" una vez que presionas suprimir sobre un archivo o carpeta.
+
+#+begin_export html
+<a href="/static/img/confirmacion-eliminar-archivos.jpg" rel="lightbox"><img align="middle" alt="Confirmación Eliminar Archivos" border="0" class="image image-preview " height="" width=""  src="/static/img/confirmacion-eliminar-archivos.jpg" title="Confirmación Eliminar Archivos" hspace="10" vspace="10"  /></a>
+#+end_export
+
+Al principio me sorprendió pero luego me paré a pensar y, básicamente, llegué a estas conclusiones:
+1.- Aunque no solicita confirmación, el archivo sigue yendo a la carpeta de reciclaje, luego no se pierde. Es decir, es fácil recuperar un supuesto error.
+2.- ¿Cuántas veces borras algo por accidente, donde la confirmación te ha evitado trabajo posterior? Quizá un 5% (y creo que estimo un valor elevado aquí).
+3.- ¿Cuántas veces borras algo que realmente deseas borrar? Un 95% (es la misma pregunta que en 2.- pero desde la óptica complementaria :-)).
+
+Entonces, ¿no es mejor no perder el tiempo leyendo y confirmando molestos cartelitos? A mi entender sí. ¡Gracias Windows 10! Has tenido que llegar tú para que simplifique este aspecto ;-).
+
+*¿Cómo hacerlo en Windows 7* (creo que en otras versiones es lo mismo)*?*
+
+Os situáis con el ratón sobre la papelera, botón derecho, propiedades... y desmarcáis la opción: "Mostrar cuadro de diálogo para confirmar eliminación".
+
+#+begin_export html
+<a href="/static/img/propiedades-papelera-reciclaje.jpg" rel="lightbox"><img align="middle" alt="Evitar Confirmación Eliminar Archivos" border="0" class="image image-preview " height="" width=""  src="/static/img/propiedades-papelera-reciclaje.jpg" title="Evitar Confirmación Eliminar Archivos" hspace="10" vspace="10"  /></a>
+#+end_export
+
+Espero que os sea útil.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=No%20solicitar%20confirmaci%C3%B3n%20de%20borrado%20en%20Windows%207][Dejar comentario]].
+

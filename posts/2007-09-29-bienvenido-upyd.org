@@ -1,0 +1,35 @@
+#+title: Bienvenido, UPyD
+#+date: <2007-09-29 21:51>
+#+author: Godofredo Fdez.
+#+description: En este blog siempre he defendido la libertad del ser humano, la esencial posibilidad de elegir entre varias alternativas atendiendo a sus propios criterios. Y tanto ha sido así, que muchas veces he criticado aún más la decisión guiada, arrastrada, abandonada al vocerío exterior que la intrínseca malicia de la opción elegida.
+#+filetags: Activismo Pensamiento
+#+options: _:nil
+#+nid: 251
+
+En este blog siempre he defendido la libertad del ser humano, la esencial posibilidad de elegir entre varias alternativas atendiendo a sus propios criterios. Y tanto ha sido así, que muchas veces he criticado aún más la decisión guiada, arrastrada, abandonada al vocerío exterior que la intrínseca malicia de la opción elegida.
+
+Por ejemplo, aunque desde estas páginas una y otra vez defienda el universo GNU/Linux frente al universo Windows, además de los argumentos utilizados para fundamentar tal defensa, siempre lo he hecho desde el respeto al adversario y a lo con él relacionado. Hace tiempo que superé esos debates encarnizados, que suelen encontrarse en foros de discusión, en los que unos sólo vencen con la aniquilación de los otros: el mundo es muy ancho para que quepan en él ambas concepciones y ambos modelos de negocio.
+
+Bien, quizá algún día retome la reflexión del párrafo anterior, pero hoy no es el objeto de este "articulo".
+
+Hoy quiero dedicar estas palabras a dar la bienvenida a un partido que proclama cordura y cercanía al electorado. Lo hago con ilusión por representar una opción más, lo suficientemente distinta a las existentes para ser tenida en cuenta, para ensanchar mis posibilidades de elección, o lo que es lo mismo, mi libertad.
+
+Por favor, no os confundáis, desde aquí no pido el voto para ese partido, como jamás haré para ninguno. Simplemente informo de su existencia, y animo a mis lectores a que le echen una hojeada a sus propuestas (como deberían hacer con casi todas, y tanto más con las que finalmente decidan votar). Y utilizo esta tribuna a modo de "publicidad no pagada" porque estimo que serán pocos los grandes medios que apoyarán y difundirán las mismas, cosa que sí harán con los partidos tradicionales.
+
+Partieron de la iniciativa ciudadana [[http://www.bastaya.org][Basta Ya]]. Crearon la [[http://www.plataformapro.org][Plataforma Pro]]...
+
+...Y hoy han presentado en Madrid a "*Unión, Progreso y Democracia (UPD)*" (la nueva web del partido, [[http://www.upyd.es][www.upyd.es]], estará disponible en unos días).
+
+En fin, ¡suerte!
+
+P.D.1: Os dejo un [[http://elpais.com/articulo/20070928elpepiopi_6/Tes][artículo]] publicado hoy por Fernando Savater en el diario "El País".
+
+P.D.2: Una de sus "[[http://www.plataformapro.org/index.php?option=com_content&task=view&id=2&Itemid=9][líneas maestras]]" recoge la denuncia que, sobre la ley electoral, en su día ya hicimos [[http://godest.vivencias.net/node/240][aquí]].\\
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/20070929-savater-upyd.pdf][20070929-savater-upyd.pdf]]
+- [[https://godest.vivencias.net/static/files/manifiesto.pdf][manifiesto.pdf]]
+- [[https://godest.vivencias.net/static/files/071201-gorriaran.pdf][071201-gorriaran.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Bienvenido%2C%20UPyD][Dejar comentario]].
+

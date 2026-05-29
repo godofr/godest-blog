@@ -1,0 +1,186 @@
+#+title: Configurando tarjeta WiFI 3Com en GNU/Linux
+#+date: <2008-05-30 12:58>
+#+author: Godofredo Fdez.
+#+description: Concretamente en Debian GNU/Linux , pero probablemente también sirva para otras distribuciones como, por ejemplo, Ubuntu . El ordenador fijo de casa tiene una tarjeta WiFI 3Com (como está pinchada en la placa desde hace tiempo no recuerdo el modelo exacto) soportada por el driver que, para el chipset atheros, ha desarrollado el proyecto madwifi .
+#+filetags: Configuraciones GNU/Linux Hardware
+#+options: _:nil
+#+nid: 283
+
+Concretamente en [[http://www.debian.org][Debian GNU/Linux]], pero probablemente también sirva para otras distribuciones como, por ejemplo, [[http://www.ubuntu.com][Ubuntu]].
+
+El ordenador fijo de casa tiene una tarjeta WiFI 3Com (como está pinchada en la placa desde hace tiempo no recuerdo el modelo exacto) soportada por el driver que, para el chipset atheros, ha desarrollado el proyecto [[http://madwifi.org/][madwifi]].
+
+¡¡OJO!! Todo lo que se ejecuta a continuación se hace desde un terminal. Buscad en vuestros menús un icono con una pantallita negra y la leyenda "terminal". Y una vez en él hemos de actuar como usuario root (en muchos casos basta con hacer: sudo su).
+
+Antes que nada, comprobad que tenéis el mismo chipset que yo haciendo esto (fijaos en la línea donde aparece: "Atheros Communications"):
+
+#+begin_example
+[13:16:48(godo@surco)~]> lspci
+00:00.0 Host bridge: Intel Corporation 82845 845 [Brookdale] Chipset Host Bridge (rev 03)
+00:01.0 PCI bridge: Intel Corporation 82845 845 [Brookdale] Chipset AGP Bridge (rev 03)
+00:1e.0 PCI bridge: Intel Corporation 82801 PCI Bridge (rev 12)
+00:1f.0 ISA bridge: Intel Corporation 82801BA ISA Bridge (LPC) (rev 12)
+00:1f.1 IDE interface: Intel Corporation 82801BA IDE U100 Controller (rev 12)
+00:1f.2 USB Controller: Intel Corporation 82801BA/BAM USB Controller #1 (rev 12)
+00:1f.3 SMBus: Intel Corporation 82801BA/BAM SMBus Controller (rev 12)
+00:1f.4 USB Controller: Intel Corporation 82801BA/BAM USB Controller #1 (rev 12)
+00:1f.5 Multimedia audio controller: Intel Corporation 82801BA/BAM AC97 Audio Controller (rev 12)
+01:00.0 VGA compatible controller: ATI Technologies Inc Rage 128 Pro Ultra TF
+02:08.0 Ethernet controller: Intel Corporation 82801BA/BAM/CA/CAM Ethernet Controller (rev 03)
+02:0b.0 Ethernet controller: Atheros Communications Inc. AR5413 802.11abg NIC (rev 01)
+[13:16:53(godo@surco)~]>
+
+#+end_example
+
+En debian existen los siguientes paquetes con las fuentes del driver:
+
+#+begin_example
+[11:49:40(godo@surco)~]> dpkg --list | grep madwifi
+ii  madwifi-doc                          1:0.9.3-2
+documentation for the Multiband Atheros Driv
+ii  madwifi-source                       1:0.9.4~rc2-1
+source for the Multiband Atheros Driver for
+ii  madwifi-tools                        1:0.9.4~rc2+dfsg-1
+tools for the Multiband Atheros Driver for W
+[11:49:47(godo@surco)~]>
+
+#+end_example
+
+Los cuales tienes que tener instalados en el sistema.
+
+Estos paquetes dejan en el directorio /usr/src el archivo madwifi.tar.bz2. Al descomprimirlo se genera el siguiente directorio /usr/src/modules/madwifi.
+
+Además, hace falta tener instalado el paquete de las cabeceras "headers" correspondiente al núcleo, al kernel, con el que se arranca la máquina. Como las actualizaciones de "apt-get upgrade" suelen renovar la versión del kernel cada cierto tiempo, es necesario tras cada actualización que implique renovación de versión hacer lo siguiente:
+
+1.- Asegurarse de que existe en el directorio /usr/src los siguientes archivos:
+
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> ll
+total 3492
+-rw-r--r--  1 root root   24181 abr 30 10:42 cloop.tar.bz2
+lrwxrwxrwx  1 root src       26 may 30 11:41 linux ->
+linux-headers-2.6.24-1-686
+drwxr-xr-x  4 root root     600 may 25 20:34 linux-headers-2.6.24-1-686
+drwxr-xr-x 18 root root     456 may 25 20:34
+linux-headers-2.6.24-1-common
+drwxr-xr-x  3 root root      72 dic 23  2006 linux-kbuild-2.6.18
+drwxr-xr-x  3 root root      72 oct  5  2007 linux-kbuild-2.6.22
+drwxr-xr-x  3 root root      72 may 25 20:34 linux-kbuild-2.6.24
+-rw-r--r--  1 root root 3543950 feb 12 13:08 madwifi.tar.bz2
+drwxr-xr-x  3 root root      72 feb 12 13:08 modules
+[11:53:18(godo@surco)/usr/src]>
+
+#+end_example
+
+Para ello hay que tener instalados, desde siempre, los siguientes paquetes:
+
+#+begin_example
+apt-get install madwifi-source madwifi-tools madwifi-doc
+linux-headers-2.6-686 wireless-tools
+
+#+end_example
+
+2.- Hacer el enlace simbólico linux -> linux-headers-2.6.24-1-686 que no existirá pues es necesario hacerlo a mano, así:
+
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> ln -s linux-headers-2.6.24-1-686 linux
+
+#+end_example
+
+3.- Descomprimir el archivo madwifi.tar.bz2, así:
+
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> tar -xvjf madwifi.tar.bz2
+
+#+end_example
+
+4.- Meternos en el directorio del driver:
+
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> cd modules/madwifi
+
+#+end_example
+
+5.- Ejecutar los siguientes comandos:
+
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> make
+[11:50:44(godo@surco)/usr/src]> make install
+[11:50:44(godo@surco)/usr/src]> modprobe ath_pci countrycode=724
+
+#+end_example
+
+Y por último ejecutamos el script (creado previamente por nosotros) de configuración de nuestra tarjeta:
+
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> /sbin/iwconfig ath0 essid "ElVuestro" enc 53C268252C7642BD23484D970E
+
+#+end_example
+
+El essid es el identificador de red que difunde vuestro punto de acceso, y la ristra que sigue a enc es la clave WEP de cifrado, si lo tenéis activo, claro está.
+
+Y, si todo ha ido bien, ya tenemos nuestra tarjeta WiFI detectada.
+
+6.-Lo podemos comprobar así:
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> iwconfig
+
+ath0      IEEE 802.11g  ESSID:"ElVuestro"  Nickname:""
+          Mode:Managed  Frequency:2.442 GHz  Access Point: 00:23:4A:30:E1:B4
+          Bit Rate:54 Mb/s   Tx-Power:16 dBm   Sensitivity=1/1
+          Retry:off   RTS thr:off   Fragment thr:off
+          Encryption key:53C2-6825-2C76-42BD-2348-4D97-0E   Security mode:restricted
+          Power Management:off
+          Link Quality=47/70  Signal level=-49 dBm  Noise level=-96 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+#+end_example
+
+7.- Y ahora solo falta configurar las direcciones ip de nuestro interfaz y de nuestro router por defecto (ojo, que esto depende de la que tenga configurada el router):
+
+Si queremos hacerlo de forma fija, y la que tiene el router wifi es 192.168.7.77:
+
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> /sbin/ifconfig ath0 192.168.7.7 netmask 255.255.255.0 up
+[11:50:44(godo@surco)/usr/src]> /sbin/route add default gw 192.168.7.77
+
+#+end_example
+
+Si queremos hacerlo por dhcp (para el que no sepa que significa esto del ip, mejor esta opción):
+
+#+begin_example
+[11:50:44(godo@surco)/usr/src]> /sbin/dhclient ath0
+
+#+end_example
+
+8.- Comprobamos que tenemos conectividad WiFI:
+
+#+begin_example
+[12:29:59(root@surco)/etc/init.d]> ping 192.168.7.77
+PING 192.168.7.77 (192.168.7.77) 56(84) bytes of data.
+64 bytes from 192.168.7.77: icmp_seq=1 ttl=64 time=1.00 ms
+64 bytes from 192.168.7.77: icmp_seq=2 ttl=64 time=0.936 ms
+64 bytes from 192.168.7.77: icmp_seq=3 ttl=64 time=0.953 ms
+. . . pulsamos Ctrl+C para terminar.
+
+#+end_example
+
+Si la respuesta es de este tipo, todo hay ido bien.
+
+Si, por el contrario, es así:
+
+#+begin_example
+[12:29:59(root@surco)/etc/init.d]> ping 192.168.7.77
+PING 192.168.7.77 (192.168.7.77) 56(84) bytes of data.
+... aquí no aparece nada ...
+
+#+end_example
+
+Algún problema ha habido.
+
+Espero que ayude. ¡A disfrutad de la red desde GNU/Linux!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Configurando%20tarjeta%20WiFI%203Com%20en%20GNU%2FLinux][Dejar comentario]].
+

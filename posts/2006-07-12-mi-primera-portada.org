@@ -1,0 +1,13 @@
+#+title: Mi primera portada
+#+date: <2006-07-12 22:13>
+#+author: Godofredo Fdez.
+#+description: Aquí podéis ver mi primera portada conseguida en una revista técnica: " Mundo Linux ". Y aquí un comentario sobre el tema.
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 150
+
+Aquí podéis ver mi primera portada conseguida en una revista técnica: "[[http://digital.revistasprofesionales.com:8080/View_Ctrl/ml.jsp][Mundo Linux]]". Y [[file:151][aquí]] un comentario sobre el tema.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Mi%20primera%20portada][Dejar comentario]].
+

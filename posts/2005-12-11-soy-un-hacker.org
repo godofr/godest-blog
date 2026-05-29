@@ -1,47 +1,34 @@
 #+title: ¿Soy un hacker?
 #+date: <2005-12-11 21:13>
-#+description: 
-#+filetags: Pensamiento GNU/Linux Seguridad Programar
+#+author: Godofredo Fdez.
+#+description: Uno tiene la costumbre, y el entrenamiento, de intentar perderse los menos detalles posibles. El emblema que preside esta página: hermann-uwe , la cual visito desde hace mucho tiempo, me intrigaba. Cuanto más tiempo transcurría sin saber su verdadero significado mayor era la intriga. Hoy he podido leer a placer...
+#+filetags: GNU/Linux Pensamiento Programación Seguridad
+#+options: _:nil
+#+nid: 90
 
 #+begin_export html
-<figure style="float:right">
-<img width="55" height="55" border="0" align="right" hspace="10" vspace="10" src="/static/2005/glider.png" alt="glider" />
-</figure>
+<a href="/node/88" target="_self"><img width="55" height="55" border="0" align="right" hspace="10" vspace="10" src="/static/img/glider.png"></a>
 #+end_export
+Uno tiene la costumbre, y el entrenamiento, de intentar perderse los menos detalles posibles. *El emblema* que preside esta página: [[http://www.hermann-uwe.de/][hermann-uwe]], la cual visito desde hace mucho tiempo, me intrigaba. Cuanto más tiempo transcurría sin saber su verdadero significado mayor era la intriga. Hoy he podido leer a placer...
 
-Uno tiene la costumbre, y el entrenamiento, de intentar perderse los menos detalles posibles. *El emblema* que preside esta página: [[https://www.hermann-uwe.de/][Uwe Hermann]], la cual visito desde hace mucho tiempo, me intrigaba. Cuanto más tiempo transcurría sin saber su verdadero significado mayor era la intriga. Hoy he podido leer a placer...
-
-Este emblema es el elegido por la comunidad [[http://es.wikipedia.org/wiki/Hacker][hacker]] para, entre otras cosas, fortalecer las señas de identidad de la misma. Es curioso el uso, y la [[http://www.catb.org/hacker-emblem/faqs.html][justificación de este]], propuesto por su creador, [[http://www.catb.org/~esr/][Eric Steven Raymond]].
+Este emblema es el elegido por la comunidad [[http://es.wikipedia.org/wiki/Hacker][hacker]] para, entre otras cosas, fortalecer las señas de identidad de la misma. Es curioso el uso, y la [[http://www.catb.org/hacker-emblem/faqs.html][justificación de éste]], propuesto por su creador, [[http://www.catb.org/~esr/][Eric Steven Raymond]].
 
 ¿Quién puede usarlo? Según el autor del mismo, aquel que se sienta identificado por la cultura hacker, aunque no sea uno de ellos.
 
-¿Y cuál es la cultura hacker? Para responder a esta pregunta tenía que leerme el pequeño documento en el que este mismo autor intenta explicar: "[[http://www.catb.org/~esr/faqs/hacker-howto.html][Cómo llegar a ser un hacker]]".
+¿Y cuál es la cultura hacker? Para responder a esta pregunta tenía que leerme el pequeño documento en el que este mismo autor intenta explicar: [[http://www.catb.org/~esr/faqs/hacker-howto.html]["Como llegar a ser un hacker"]].
 
 La conclusión que he obtenido es la siguiente: ser un hacker es la unión de dos cosas, la primera es mantener una determinada actitud ante la vida, la segunda consiste en desarrollar una serie de habilidades. Tanto más hacker se es cuanto más avancemos en cada una de ellas, y cuanto mejor sea la mezcla de ambas en nosotros.
 
-¿En qué consiste el desarrollo de la "actitud vital"?
-
-1.- *Los hackers creen en la libertad y en la ayuda mutua*. Los hacker resuelven problemas y crean soluciones útiles para la humanidad (entre ellas lo que hoy todo el mundo conoce como Internet).
-
-2.- Los hackers piensan que *ninguno de estos problemas a los que se enfrentan debería resolverse dos veces partiendo desde cero*, para lo cual es imprescindible la comunicación y el compartir la "sabiduría". Esto no quiere decir que no existan mejores soluciones que otras, precisamente para utilizar esta palabra es necesario poder conocer y comparar.
-
+¿En qué consiste el desarrollo de la "actitud vital"? 1.- *Los hackers creen en la libertad y en la ayuda mutua*. Los hacker resuelven problemas y crean soluciones útiles para la humanidad (entre ellas lo que hoy todo el mundo conoce como Internet).
+2.- Los hackers piensan que *Ninguno de estos problemas a los que se enfrentan debería resolverse dos veces partiendo desde cero*, para lo cual es imprescindible la comunicación y el compartir la "sabiduría". Esto no quiere decir que no existan mejores soluciones que otras, precisamente para utilizar esta palabra es necesario poder conocer y comparar.
 3.- El aburrimiento y el trabajo [[http://buscon.rae.es/draeI/SrvltGUIBusUsual?TIPO_HTML=2&LEMA=tedio][tedioso]] (repetitivo) son malos. Luchar contra esto, automatizando todo lo que se pueda esas "tediosas" tareas, es una de las principales metas del hacker.
+4.- El hacker AMA LA LIBERTAD, por ello *lucha contra las actitudes /autoritarias/*. Esto no significa que esté contra toda autoridad y contra todo sistema.
+5.- El hacker cree en el desarrollo de habilidades (en el documento les llaman "competences"==competencias), en el aprendizaje, fundamentándose éste en la inteligencia, práctica, dedicación y trabajo duro.
 
-4.- El hacker AMA LA LIBERTAD, por ello *lucha contra las actitudes autoritarias*. Esto no significa que esté contra toda autoridad y contra todo sistema.
-
-5.- El hacker cree en el *desarrollo de habilidades* (en el documento les llaman "competences"==competencias), en el aprendizaje, fundamentándose éste en la inteligencia, práctica, dedicación y trabajo duro.
-
-
-¿Cuáles son las habilidades a desarrollar?
-
-1.- Aprender a programar en *varios lenguajes* ("It's best, actually, to learn all five of Python, C/C++, Java, Perl, and LISP").
-
+¿Cuáles son las habilidades a desarrollar? 1.- Aprender a programar *en varios lenguajes* ("It's best, actually, to learn all five of Python, C/C++, Java, Perl, and LISP").
 2.- Conseguir un *sistema operativo "tipo" UNIX* y aprender a usarlo (evidentemente, en el amplio sentido de la palabra usarlo: ser capaz de utilizar toda su funcionalidad).
-
-3.- Comprender los fundamentos de la WEB y saber crearla. Propone el *conocimiento de las especificaciones actuales de [[http://www.w3.org/TR/html401/][HTML]] y, más concretamente, [[http://www.w3.org/TR/xhtml1/][XHTML]]*. Incluso apunta que el inicio del "no programador" a través de uno de estos lenguajes podría ser conveniente: son más fáciles de aprender y ayudan a "ir creándose" una forma de pensar.
-
+3.- Comprender los fundamentos de la WEB y saber crearla. Propone *el conocimiento de las especificaciones actuales de [[http://www.w3.org/TR/html401/][HTML]] y, más concretamente, [[http://www.w3.org/TR/xhtml1/][XHTML]]*. Incluso apunta que el inicio del "no programador" a través de uno de estos lenguajes podría ser conveniente: son más fáciles de aprender y ayudan a "ir creándose" una forma de pensar.
 4.- *Conseguir un buen nivel de inglés*. No por ser el idioma del imperio (que lo es) sino porque los mayores desarrollos técnicos, y por tanto la mayor cantidad de literatura, se han venido produciendo en ese idioma (una curiosidad que apunta para respaldar este punto es el caso de Linus, parece ser que comentó el código fuente del kernel que creó en su día ya en inglés... así podría compartirlo con más gente).
-
 
 Bien, pues todo este conjunto de actitud y habilidad es condición necesaria pero no suficiente: *sólo se es hacker cuando los demás te atribuyen esa condición*.
 
@@ -51,17 +38,25 @@ Por todo esto, a partir de hoy, habrá un "guiño" a esa "manera de vivir" en la
 
 Para profundizar en esta historia os recomiendo seguir los enlaces existentes en toda la página, leer y pensar. Yo me quedo pendiente de seguir investigando si todo esto tiene algo que ver con el [[http://es.wikipedia.org/wiki/Humanismo][humanismo]]. A priori se me antoja una evolución del mismo.
 
-Salud, y disfrutad de vuestros sueños.
+Salud, y disfrutad de vuestros sueños.\\
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Soy_un_hacker][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=%C2%BFSoy%20un%20hacker%3F][Dejar comentario]].
 
 ** Comentarios
-*** Humanismo (Enviado por Juan Fernando (no verificado) el Dom, 01/01/2006 - 20:01)
+
+*** Humanismo (Juan Fernando 10/02/2006 - 22:31)
+(Enviado por Juan Fernando (no verificado) el Dom, 01/01/2006 - 20:01)
+
 Mucho habría que decir sobre lo que es humanismo. Además del movimiento humanista renacentista (sentido, podemos decir, restringido), podemos hablar del humanismo en nuestros días (sentido amplio de humanismo), para lo cual se me ocurren tres ineludibles referencias: un texto de Heidegger sobre el asunto (Carta sobre el humanismo), otro de Sartre (El existencialismo es un humanismo)y, recientemente, la réplica a Heidegger de un polémico filósofo alemán llamado Sloterdijk con su conferencia titulada Normas para un parque humano. Prometo pensar un poco sobre el asunto y su relación con los hackers, aunque no me comprometo a plazo temporal alguno. Saludos.
 
-*** Con ansias espero (Enviado por Godo el Lun, 02/01/2006 - 20:29)
+*** Con ansias espero (Godo 10/02/2006 - 22:35)
+(Enviado por Godo el Lun, 02/01/2006 - 20:29)
+
 ..."Prometo pensar un poco sobre el asunto y su relación con los hackers, aunque no me comprometo a plazo temporal alguno".
 
 Sabes que, como he indicado en el título, con ansias espero dicha respuesta. Y, evidentemente, espero sin límite alguno. ;-)
 
 Muchas gracias por tus palabras. Espero que, cuando vaya madurando todos esos temas que mantengo abiertos, podamos seguir compartiendo interminables conversaciones. Las nuestras.
+
+Un abrazo.\\

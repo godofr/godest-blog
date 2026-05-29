@@ -1,0 +1,45 @@
+#+title: Excel en ventanas independientes
+#+date: <2013-10-15 13:23>
+#+author: Godofredo Fdez.
+#+description: Escribo esta entrada a modo de chuleta rápida para conseguir tener abiertos varios documentos Excel en ventanas independientes, de tal forma que podamos…
+#+filetags: Configuraciones Software
+#+options: _:nil
+#+nid: 512
+
+Escribo esta entrada a modo de chuleta rápida para conseguir tener abiertos varios documentos Excel en ventanas independientes, de tal forma que podamos colocarlas en el escritorio de forma cómoda para poder ver datos de uno y otro documento, copiar, comparar, etc.
+
+Como podéis ver en la siguiente figura... ¡lo he conseguido!
+
+#+begin_export html
+<a href="/static/img/excel-ventanas-independientes-ejemplo.png"  rel="lightbox"><img src="/static/img/excel-ventanas-independientes-ejemplo.png" alt="excel-ventanas-independientes-ejemplo" title="excel-ventanas-independientes-ejemplo"  class="image image-preview " width="542" height="369" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+Las versiones de sistema operativo y Excel donde lo he probado son: Windows 7 y Excel 2010.
+
+Hay que ejecutar los siguientes pasos:
+1.- Ejecutar "regedit" en modo administrador.
+2.- Desplegar la clave "HKEY_CLASSES_ROOT \ *Excel. Sheet.12* \ Shell \ Open"
+2.1.- Eliminar la carpeta DDEEXEC
+2.2.- Entrar en la carpeta COMMAND
+2.3.- Encontramos en esta carpeta (COMMAND) dos valores, uno con el nombre "predeterminado" y otro con el nombre "command".
+2.4.- Eliminamos el valor "command".
+2.5.- Hacemos doble clic sobre el valor "predeterminado" y añadimos un espacio y "%1" (con las comillas, como aquí) al final de línea, para que el dato quede así: "C:\Program Files\Microsoft Office\Office14\EXCEL.EXE" /dde "%1"
+
+En la siguiente figura podemos ver cómo se ha modificado el valor "predeterminado" y el valor *"command" que hay que eliminar* (en la figura aún está presente).
+
+#+begin_export html
+<a href="/static/img/excel-vent-indep-registro.png"  rel="lightbox"><img src="/static/img/excel-vent-indep-registro.png" alt="excel-vent-indep-registro" title="excel-vent-indep-registro"  class="image image-preview " width="542" height="369" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+3.- Desplegar la clave "HKEY_CLASSES_ROOT \ *Excel. Sheet.8* \ Shell \ Open"
+3.1.- Eliminar la carpeta DDEEXEC
+3.2.- Entrar en la carpeta COMMAND
+3.3.- Encontramos en esta carpeta (COMMAND) dos valores, uno con el nombre "predeterminado" y otro con el nombre "command".
+3.4.- Eliminamos el valor "command".
+3.5.- Hacemos doble clic sobre el valor "predeterminado" y añadimos un espacio y "%1" (con las comillas, como aquí) al final de línea, para que el dato quede así: "C:\Program Files\Microsoft Office\Office14\EXCEL.EXE" /dde "%1"
+
+¡A disfrutar del Excel sin las ventanas anidadas!\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Excel%20en%20ventanas%20independientes][Dejar comentario]].
+

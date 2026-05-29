@@ -1,0 +1,66 @@
+#+title: Normas de asistencia a las tutorías online
+#+date: <2011-11-28 21:05>
+#+author: Godofredo Fdez.
+#+description: * Aún no está programada la siguiente tutoría online * Hazme llegar tus dudas para dotarla de contenido interesante. Puedes utilizar la dirección de correo electrónico que aparece aquí o el formulario de contacto de este sitio web. Permanece atento a esta página o al twitter . PRÓXIMA TUTORÍA: 24 de enero de 2012 a las 20:30 horas.
+#+filetags: Programación
+#+options: _:nil
+#+nid: 440
+
+** Aún no está programada la siguiente tutoría online **
+Hazme llegar tus dudas para dotarla de contenido interesante. Puedes utilizar la dirección de correo electrónico que aparece [[http://trajano.us.es/personal.html][aquí]] o el [[/contact][formulario de contacto]] de este sitio web.
+Permanece atento a esta página o al [[http://twitter.com/godofdez][twitter]].
+
+PRÓXIMA TUTORÍA: 24 de enero de 2012 a las 20:30 horas.
+Duración: 45 minutos.
+TEMAS
+- - - - - - - - - -
+- Por qué se utiliza #ifndef #define y #undef
+- Utilización de typedef sobre una estructura
+- Lectura y escritura en ficheros
+- Utilización de fscanf
+- Compilación separada y make
+- Reserva dinámica de memoria
+- Trabajaremos con una tabla de estructuras reservada dinámicamente
+- Conceptos básicos/fundamentales del gdb
+
+A continuación describo las normas de asistencia a las tutorías online que organizaré durante el curso.
+
+1.- +En un principio, y debido a los límites de capacidad de la plataforma, sólo podrán asistir a las tutorías online aquellos alumnos pertenecientes a mi grupo de teoría. En un futuro valoraré la oportunidad de abrirlas al resto de interesados+. *He valorado la posibilidad de que asista todo aquel que aparezca en las listas de la asignatura, ya esté en mi clase de teoría o no*. El límite lo impondrá la plataforma: se respetará el orden de inscripción a través del formulario de registro. Una vez se alcance el límite no se admitirán más inscripciones.
+
+2.- *El permiso de acceso a la plataforma será controlado contrastando los datos del proceso de registro con la lista de clase*. Es por eso muy importante que te registres con tu nombre y apellidos, así como con un *correo electrónico válido* donde se te irá informando, en inglés, de los pasos para completar el proceso hasta la asistencia a la tutoría online. A los alumnos que no se adapten a este requisito no les será permitida la asistencia.
+
+*3.- El proceso de registro puedes llevarlo a cabo pulsando [[http://www.anymeeting.com/PIID=EB56DD848546][aquí]]. Este enlace sólo está disponible si hay una "tutoría online" anunciada. Si la hay, aparece en un bloque de fondo gris y letras azules al principio de esta página.*
+
+4.- Es importante que asistas a la tutoría utilizando el navegador [[http://www.mozilla.org/es-ES/firefox/fx/][Firefox]] como herramienta: las pruebas que he realizado han sido mejores con él.
+
+5.- Si es la primera vez que asistes intenta ajustar la pantalla que yo comparto a la tuya. Para eso, durante los primeros instantes de la tutoría online, tendrás que situar el ratón en la parte inferior de la zona de "mi pantalla" (la que transmito hacia ti) en tu navegador, aparecerá un cuadrado con flechas interiores hacia los vértices, pulsándolo se ajustará "mi pantalla" a tu ventana. También aparecerá una lupa con la que puedes ampliar la zona visible o dejarla tal cual es emitida (siempre que tengáis una pantalla suficientemente grande os recomiendo esta última opción).
+
+6.- Al principio de la sesión explicaré todo esto de nuevo. Permanece atento y tras ajustar la pantalla intenta tocar lo menos posible tu software.
+
+7.- Si deseas intervenir hazlo por chat. El "chat" estará deshabilitado por defecto para evitar distracciones durante mi explicación. Tras cada explicación lo habilitaré y todo aquel que tenga una duda podrá lanzarla simplemente escribiendo en la ventana de chat.
+
+8.- Al final de la sesión, cuando yo me despida, *NO CIERRES EL NAVEGADOR, por favor*. Se presentará automáticamente una encuesta para intentar conocer tu opinión. La plataforma no permite realizar esta encuesta de forma anónima (¡lástima!). *Te ruego que participes en ella pues así me ayudas*.
+
+Si deseas hacerme algún comentario sobre este tema, ahora o en cualquier momento al margen de la tutoría, puedes hacerlo pulsando en el enlace que aparece a continuación. Valoro mucho todas las críticas constructivas, los ánimos, etc. Todo es mejorable y lucharé por conseguirlo.
+
+Espero que te sea útil.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Normas%20de%20asistencia%20a%20las%20tutor%C3%ADas%20online][Dejar comentario]].
+
+** Comentarios
+
+*** Yo con mucha suerte a las (Jose Carlos 28/11/2011 - 21:29)
+Yo con mucha suerte a las 8.20 esoty en mi casa. Mi pre gunta es, una vez pasadas las 8 podemos entrar cuando queramos no?
+
+*** Genial iniciativa, a ver qué (Julio 29/11/2011 - 00:24)
+Genial iniciativa, a ver qué tal sale!
+
+*** Inténtalo... (Godo 29/11/2011 - 10:54)
+...y vemos qué pasa. Creo que mientras la sesión esté activa es posible entrar. Si tienes algún problema coméntamelo por aquí. Y si has podido entrar, también. Así vamos aprendiendo todos.
+
+La siguiente vez intentamos fijar mejor la hora de inicio para evitar problemas.
+
+Aprovecho también para dar las gracias a Julio, siguiente comentario que aparece, por su opinión.
+
+Salud.

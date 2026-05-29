@@ -1,0 +1,39 @@
+#+title: La Clave
+#+date: <2008-02-12 21:54>
+#+author: Godofredo Fdez.
+#+description: Hace casi un año que descubrí esta revista semanal. Lo hice empujado por mi ajado conocimiento de su director. Tengo en mi subconsciente, estimo por lo…
+#+filetags: Libros Pensamiento
+#+options: _:nil
+#+nid: 273
+
+#+begin_export html
+<a href="http://www.laclave.com" target="_self"><img src="/static/img/laclave354.jpg" alt="La Clave de la opinión pública" title="La Clave de la opinión pública"  class="image image-preview " width="180" height="190" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+Hace casi un año que descubrí esta revista semanal. Lo hice empujado por mi ajado conocimiento de su director. Tengo en mi subconsciente, estimo por lo emborronados que aparecen, grabados los debates que antaño seguía mi padre en la televisión que, en blanco y negro, alumbraba las noches de mi temprana infancia. Adquirí varios números consecutivos en los quioscos, y fui aficionándome a varias de sus secciones: abre la revista su director, [[http://es.wikipedia.org/wiki/José_Luis_Balbín][José Luis Balbín]], con "El periscopio". Otras columnas de opinión que me gustan mucho son las escritas por [[http://es.wikipedia.org/wiki/Luis_González_Seara][Luis González Seara]] y Per Abbat, esta última breve pero directa al corazón.
+
+El lema del que pretende hacer gala esta publicación es: "Ni sectarios, ni neutrales", y en mi opinión el fiel reflejo del mismo se produce en la sección, "El triángulo", que a doble página trata un único tema desarrollado por tres firmas: [[http://es.wikipedia.org/wiki/Julio_Anguita][Julio Anguita]], [[http://es.wikipedia.org/wiki/Pablo_Castellano][Pablo Castellano]] y [[http://es.wikipedia.org/wiki/Manuel_Pimentel][Manuel Pimentel]]. Sencillamente, genial.
+
+El resto de publicación se divide en cinco grandes bloques: política española, internacional, economía, ciencia y sociedad y cultura; un par de entrevistas, editoriales y más opinión.
+
+Pero, si tuviera que quedarme sólo con un par de páginas, si hay una sección que de verdad sigo con pasión es la columna de opinión escrita por [[http://es.wikipedia.org/wiki/Heleno_Sa%C3%B1a][Heleno Saña]], "Humanamente hablando". El canto que este señor realiza cada semana a los verdaderos valores humanos: la defensa del débil, el amor desinteresado hacia tus iguales, la ternura, el conocimiento de nuestros límites..., es engrandecedor y alentador. Aún es posible ser delfín entre tanto tiburón.
+
+Os dejo aquí, sin permiso solicitado ni al autor ni a la revista (bastará pues una palabra de los mismos para retirarlo), el artículo que publicó en el número 354 (25 de enero de 2008).
+
+*SINDICALISMO Y PARLAMENTARISMO*
+Aunque no suele ser noticia mediática de gran vuelo, uno de los fenómenos sociológicos más importantes de las últimas décadas es la profunda crisis cualitativa y cuantitativa que atraviesa el sindicalismo. Crisis de identidad, de militancia, de afiliación, de espíritu combativo, de irradiación pública, de convocatoria, de credibilidad. Disminuye en todo caso el número de asalariados que ingresan en un sindicato y crece en cambio el de los que se abstienen de hacerlo. Ello reza en primer lugar para los EEUU, pero también para los países europeos con una gran tradición sindicalista, entre los que se encuentra el nuestro. Eso explica que incluso los sindicatos mayoritarios sean cada vez más minoritarios. Lo que queda de sindicalismo militante está ciertamente en condiciones de organizar todavía huelgas y enfrentarse con mayor o menor éxito al Estado o a las patronales, pero en líneas generales es hoy una pálida sombra de lo que fue en sus tiempos heroicos.
+
+El poder que los sindicatos han perdido ha pasado en gran parte a manos de los partidos políticos socialistas, socialdemócratas y laboristas. Ambas fuerzas formaban en el pasado una gran familia unida, hoy viven cada vez más alejadas unas de las otras. Los partidos de izquierda fueron una creación de las clases trabajadoras, y no a la inversa, aunque entre sus militantes figurasen también algunos intelectuales o representantes de las profesiones liberales. Pero la última palabra la tenían los trabajadores, y no los diputados que los sindicatos enviaban al Parlamento. *Todo esto es agua pasada*. Nada es más elocuente en este contexto que el escaño de diputado a Cortes que el secretario general de la UGT ha mendigado a la cúpula del PSOE para uno de los suyos con el objeto de defender mejor los intereses de la militancia ugetista. La iniciativa de Cándido Méndez demuestra por lo menos dos cosas: la debilidad de su sindicato y el reconocimiento tácito de la jefatura del PSOE, algo inconcebible no ya en los tiempos de Pablo Iglesias, sino también en los de Nicolás Redondo, quien, además de enfrentarse a la política vergonzosamente procapitalista y antiobrera de Felipe González, votó contra la integración de España en la OTAN. Y en 1987 subrayó su independencia y su firmeza de carácter renunciando -con Antón Saracibar- a su escaño parlamentario en señal de protesta por la orientación antisocial de los Presupuestos Generales del Estado.
+
+A lo que estamos asistiendo desde hace tiempo es al paso del sindicalismo al parlamentarismo, una mutación histórica que va *unida al aburguesamietno de la izquierda histórica y a su ruptura casi total con los ideales emancipativos de antaño*. Aunque los votantes de los partidos socialistas y socialdemócratas proceden en buena parte de las clases trabajadoras, sus representantes en el Parlamento son en su inmensa mayoría hombres y mujeres "de carrera", especialmente abogados, los cuales, como sabía Max Weber, constituyen el estrato profesional más apto y más hábil para dominar la retórica parlamentaria. Los antiguos sindicatos socialistas y socialdemócratas eran organizaciones de clase que exigían no sólo mejoras salariales y laborales inmediatas para sus afiliados, sino que a largo plazo aspiraban a sustituir el capitalismo por un sistema socioeconómico más justo y más acorde con su visión emancipativa de la historia, la sociedad y el hombre. *Desde hace tiempo han renunciado a este ideal y aceptado la estrategia empresarial de la "partnership", un pacto que ha conducido a un paulatino deterioro de las condiciones de trabajo y de vida de las clases trabajadoras y a la hegemonía cada vez más implacable del capitalismo desregulado y salvaje* que hizo su aparición con Margaret Thatcher y Ronald Reagan y que entretanto se ha convertido en el signo distintivo de la economía global. *Los resultados de este proceso regresivo están a la vista de todo el mundo: empleos precarios y mal pagados, paro masivo y crónico, "dumping" salarial, "working poor", marginación social, beneficios cada vez más escandalosos del "big business" y pensiones muy por debajo del índice de subsistencia*. Estos son los amargos frutos del papel hegemónico y casi monopolista que el parlamentarismo desempeña en el seno de lo que queda de izquierda histórica. Por su origen social y profesional, sus privilegios materiales y su mentalidad elitista, los representantes de los partidos socialistas y socialdemócratas tienden, con pocas y honrosas excepciones, a servir más al sistema que a las clases obreras, empezando por el ilustre inquilino de La Moncloa.
+
+Después de esto ni que decir tiene que estoy suscrito a la misma.
+
+Y seguiré mientras el tiempo no nos cambie.
+
+* Página Web actual de la revista: http://www.laclave.com/
+* Una breve historia del programa de televisión: http://es.wikipedia.org/wiki/La_clave
+* *Una triste, y por ahora última, noticia: [[/node/291][aquí]]*.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=La%20Clave][Dejar comentario]].
+

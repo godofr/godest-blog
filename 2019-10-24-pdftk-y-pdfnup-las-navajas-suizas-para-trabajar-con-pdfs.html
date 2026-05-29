@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Hace tiempo que descubrí pdftk como herramienta en línea de comandos para trabajar con documentos pdf. Básicamente la he venido utilizando para extraer partes…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>pdftk y pdfnup, las navajas suizas para trabajar con PDFs</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">24 oct. 2019</div><h1 class="post-title"><a href="https://godest.vivencias.net/2019-10-24-pdftk-y-pdfnup-las-navajas-suizas-para-trabajar-con-pdfs.html">pdftk y pdfnup, las navajas suizas para trabajar con PDFs</a></h1>
+<p>
+Hace tiempo que descubrí <a href="https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/">pdftk</a> como herramienta en línea de comandos para trabajar con documentos pdf. Básicamente la he venido utilizando para extraer partes concretas de dichos documentos (algunas páginas seleccionadas ya sean consecutivas o salteadas), y para fusionar dos documentos (por ejemplo, una oferta y un anexo que te llegan o "fabricas" por separado pero luego quieres distribuir juntos, como un único documento).
+</p>
+
+<p>
+Lo que más me gusta es que, como he dicho, es una herramienta que puede utilizarse en línea de comandos, y esto, aunque el común de los mortales no está muy preparado para entenderlo, suele ser una fuente de potencia inimaginable a la hora de hacer tareas de preprocesamiento como las que he descrito en el párrafo anterior, y, por tanto, obtenemos un gran ahorro de tiempo.
+</p>
+
+<p>
+Yo llegué a esta herramienta desde mi <a href="https://www.debian.org/">Debian</a> (pues venía en su sistema de paquetes), pero luego busqué una versión para Windows y la encontré. Además, es gratuita. Podéis descargarla directamente de la página de los autores, aunque yo por mi comodidad, sólo por la mía ;-), he subido un .zip de los dos ficheros que son necesarios a este mismo post (lo tenéis al final). Basta con descargarlo, descomprimirlo en la carpeta donde queráis trabajar, es decir, donde tengáis también los documentos objeto del trabajo, y utilizarlo (modo usuario básico). Si sois usuarios avanzados, lo mejor es meter ambos ficheros en una carpeta que esté en el PATH de vuestra máquina.
+</p>
+
+<p>
+La potencia de esta herramienta permite cosas como:
+a) Extraer las páginas impares de un documento pdf, resultando un documento nuevo:
+</p>
+
+<pre class="example" id="orgdc9c91a">
+
+$ pdftk Finanzas.pdf cat 1-endodd output newFinanzas.pdf
+
+</pre>
+
+<p>
+b) Lo mismo, pero con las páginas pares:
+</p>
+
+<pre class="example" id="org53cf15d">
+
+$ pdftk Finanzas.pdf cat 1-endeven output newFinanzas.pdf
+
+</pre>
+
+<p>
+c) Reconstruir el documento original a partir de dos documentos separados en pares e impares:
+</p>
+
+<pre class="example" id="orgc573454">
+
+$ pdftk A=doc1.pdf B=doc2.pdf shuffle A B output complete.pdf
+
+</pre>
+
+<p>
+e) Fusionar dos documentos, como decía al principio, uno detrás de otro:
+</p>
+
+<pre class="example" id="org53b890b">
+
+$ pdftk oferta.pdf anexo.pdf cat output oferta-anexo.pdf
+
+</pre>
+
+<p>
+Además, viene con una ayuda muy completa a la que se accede con:
+</p>
+
+<pre class="example" id="org8a029a1">
+
+$ pdftk --help
+
+</pre>
+
+<p>
+Recientemente <a href="https://unix.stackexchange.com/questions/254308/printing-two-pages-per-sheet-from-the-command-line">he descubierto</a> otra utilidad que permite muy fácilmente pasar un documento original a otro que tenga dos páginas del original, o más, en una sola hoja. Algo muy útil para imprimir "borradores" o versiones no definitivas. Esta herramienta también la he conseguido <a href="https://takitamblog.tk/free-pdfnup-for-windows-compiled-to-exe-python-script-gpl-3/">compilada para Windows</a> y, tras revisar "su malware" con <a href="https://www.virustotal.com/gui/home/upload">Virustotal</a>, la he utilizado satisfactoriamente. También te dejo un .zip al final de este artículo.
+</p>
+
+<pre class="example" id="org402dae5">
+
+$ pdfnup --help
+
+</pre>
+
+<p>
+Pues nada más, espero que te ayude.<br>
+</p>
+<div id="outline-container-org03e4607" class="outline-2">
+<h2 id="org03e4607">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-org03e4607">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/pdftk-para-windows.zip">pdftk-para-windows.zip</a></li>
+<li><a href="https://godest.vivencias.net/static/files/pdfnup(py2exe).zip">pdfnup(py2exe).zip</a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=pdftk%20y%20pdfnup%2C%20las%20navajas%20suizas%20para%20trabajar%20con%20PDFs">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

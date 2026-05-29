@@ -1,0 +1,57 @@
+#+title: Windows: sobreviviendo a la primera sesión
+#+date: <2005-08-09 23:13>
+#+author: Godofredo Fdez.
+#+description: El objetivo de este artículo es aconsejar unas normas iniciales de actuación, mínimas, para evitar la destrucción/corrupción de los sistemas windows en sus primeros minutos de funcionamiento. La causa que me ha llevado a escribirlo es la mezcla de sentimientos de tristeza, desesperación e impotencia que muchos familiares, amigos y conocidos me muestran cuando les ha ocurrido este tipo de cosas. El problema: La instalación por defecto de los sistemas windows (Windows 9X, Windows 2000, Windows XP, etc.) es bastante insegura, como muestra este documento (y en más detalle todos los que en el se referencian al final). Concretando: los sistemas windows recien instalados tienen una serie de puertas de entrada abiertas, bien conocidas por los crackers (que no hackers como los llama mucha prensa mal informada), y que son explotadas por miles de virus, gusanos y todo tipo de variedades englobadas bajo el "palabro" inglés malware (software maligno), que quieren fastidiarnos la vida por el mero hecho, la mayoría, de hacerse notar.
+#+filetags: Seguridad Software
+#+options: _:nil
+#+nid: 43
+
+El objetivo de este artículo es aconsejar unas normas iniciales de actuación, mínimas, para evitar la destrucción/corrupción de los sistemas windows en sus primeros minutos de funcionamiento. La causa que me ha llevado a escribirlo es la mezcla de sentimientos de tristeza, desesperación e impotencia que muchos familiares, amigos y conocidos me muestran cuando les ha ocurrido este tipo de cosas. El problema: La instalación por defecto de los sistemas windows (Windows 9X, Windows 2000, Windows XP, etc.) es bastante insegura, como muestra [[http://www.google.es/url?sa=t&ct=res&cd=1&url=http%3A//www.hispasec.com/directorio/laboratorio/articulos/GuiasupervivenciaWindowsXP/Descarga/WXP.Sobrevivir_primer_dia.pdf&ei=0wX5QoDnK8_8wQGHjaWhBQ][este documento]] (y en más detalle todos los que en el se referencian al final). Concretando: los sistemas windows recien instalados tienen una serie de puertas de entrada abiertas, bien conocidas por los [[http://es.wikipedia.org/wiki/Cracker][crackers]] (que no [[http://es.wikipedia.org/wiki/Hacker][hackers]] como los llama mucha prensa mal informada), y que son explotadas por miles de virus, gusanos y todo tipo de variedades englobadas bajo el "palabro" inglés [[http://es.wikipedia.org/wiki/Malware][malware]] (software maligno), que quieren fastidiarnos la vida por el mero hecho, la mayoría, de hacerse notar. *Las soluciones:* a) Básica para usuarios de Windows XP: Seguir los pasos detallados en [[http://www.google.es/url?sa=t&ct=res&cd=1&url=http%3A//www.hispasec.com/directorio/laboratorio/articulos/GuiasupervivenciaWindowsXP/Descarga/WXP.Sobrevivir_primer_dia.pdf&ei=0wX5QoDnK8_8wQGHjaWhBQ][este documento]]. b) General, para los usuarios de todo tipo de Windows (y que yo prefiero por no confiar en las tecnologías de una única empresa). Seguir estos pasos:
+
+#+BEGIN_QUOTE
+  1.- No conectar un ordenador nuevo (recien comprado o recien instalado el sistema operativo) a internet hasta haber completado los siguientes pasos. Esto quiere decir que, físicamente, el cable está desconectado de la roseta de teléfono, o que está deshabilitada la tarjeta de conexión inalámbrica, o apagado el punto de acceso o router inalámbrico.
+
+  2.- Disponer de un CD con el siguiente software actualizado: firewall personal, antivirus, navegador web y lector de correo (para los que no utilicen correo web al estilo de gmail, hotmail, terra, etc., sino que utilicen correo basado en los protocolos pop3 o imap). Un ejemplo freeware (gratis) de cada uno de estos productos (seleccionados por mi experiencia con ellos y otros similares, y sin pago de comisiones :-)) es: [[http://www.zonealarm.com/][zonealarm]] (ojo, tener cuidado que hay una versión de pago, la PRO, y otra gratuita), [[http://home.ca.com/dr/v2/ec_main.entry25?page=AVTrialwareLandingPage&client=ComputerAssociates&sid=35715%20][EZ Antivirus]] (licencia de prueba durante 30 días), [[http://www.mozilla.org/en-US/][firefox]] y [[http://www.mozilla.org/products/thunderbird/][thunderbird]]. Hoy en día, que todo el mundo tiene una grabadora de CD, es conveniente tener un CD-RW (reescribible) con estos programas grabados, preocupándonos de tener siempre la última versión. Si no disponemos de ellos, o de otros parecidos, hemos de conseguirlos.
+
+  3.- Consultar el tutorial inicial del firewall (en nuestro caso zonealarm) e intentar comprenderlo. Para más información consultar [[http://www.seguridadenlared.org/33.html][esto]] (qué es un firewall) y [[http://www.vsantivirus.com/za.htm][esto]] (como configurar correctamente zonealarm, con capturas de pantalla y explicaciones). Igualmente, consultar el tutorial del antivirus para saber utilizarlo y actualizarlo.
+
+  4.- Instalar el firewall, el antivirus, el navegador firefox y, en su caso, el lector de correo thunderbird.
+
+  5.- No utilizar el "internet explorer" ni el "outlook" o "outlook express" y utilizar firefox y thunderbird en su lugar. Este comentario está hecho desde la fundamentación estadística: el número de vulnerabilidades que afecta a los productos "internet explorer" y "outlook" es muy grande (no voy a entrar en los motivos, ni en las justificaciones, por no ser el objetivo de este artículo).
+
+  6.- Cuando estemos seguros de que tenemos bien instalados el firewall, el antivirus y el navegador, conectaremos el ordenador a internet.
+
+  7.- Una vez conectados a internet, lo primero que hemos de hacer es ir al sitio de actualizaciones de microsoft: [[file:%20http://windowsupdate.microsoft.com][windowsupdate]], y seguir los pasos para actualizar nuestro sistema operativo con los últimos parches desarrollados. ¡OJO! Esto hay que hacerlo con el navegador de microsoft, internet explorer, porque no funciona con ningún otro.
+
+  8.- Date un paseo por [[http://www.seguridadenlared.org/index.html][aquí]] y aprende algo más sobre seguridad informática. Además de las noticias que ocupan la parte central de la página de bienvenida, son especialmente importantes todos los temas del menú (en azul) situado a la izquierda, accede a ellos e infórmate. La educación en las nuevas herramientas que nos acompañan en esta época es fundamental, como siempre lo ha sido.
+#+END_QUOTE
+
+Con estos sencillos pasos habremos aprendido algo más de informática personal y evitaremos malos ratos, pérdidas de tiempo innecesarias y, lo que es más importante, la pérdida de nuestra información valiosa. No me gustaría acabar este artículo sin dar un par de consejos más:
+
+#+BEGIN_QUOTE
+  * Cuando instaléis, o reinstaléis, cualquier sistema operativo deberíais hacer, al menos, dos particiones en el disco duro: una para instalar el propio sistema operativo y aplicaciones adicionales, y otra sólo y exclusivamente para vuestros datos: documentos, hojas de cálculo, etc. Así, si alguna vez tenéis que formatear el sistema por cualquier problema, bastará con formatear la partición del sistema y reinstalar este y las aplicaciones, sin haber perdido nada de vuestra partición de datos. Sé que este párrafo puede resultar algo confuso al usuario excesivamente neófito, pero bueno, sirva como apunte para seguir investigando/aprendiendo, como suele decirse: [[http://www.google.es/][google es tu amigo]], busca y encontrarás.
+
+  * Como medida de precaución, y norma de comportamiento higiénico, no abras ningún documento que no hayas solicitado, aunque proceda de un correo de tu mejor amigo (este puede tener virus y el envío puede no haber sido hecho a conciencia). La norma es: desconfía de todo lo que te llegue al no ser que conozcas el porqué te llega.
+#+END_QUOTE
+
+Y a modo de colofón (sin sectarismo alguno }:-)), vete pensando en cambiar a [[http://www.debian.org][Debian GNU/Linux]], o cualquier otra distribución GNU/Linux, como: [[http://www.ubuntu.com/][Ubuntu]] o [[http://www.guadalinex.org][Guadalinex]], este último especialmente indicado para los autóctonos andaluces ;-).
+
+--------------
+
+Algunos enlaces de interés: 1.- [[http://www.michaelstevenstech.com/cleanxpinstall.html][Como instalar un sistema windows xp "limpio" (en inglés)]].
+2.- [[http://www.markusjansson.net/exp.html][Un windows más seguro (en inglés)]]. ¡OJO! no hacer nada de esto si no sabemos lo que hacemos.
+3.- [[http://nsa2.www.conxion.com/winxp/][National Security Agency. Security Recommendation Guides. Windows XP Guides]].
+4.- [[http://markusjansson.net/software.html][Clasificación de enlaces y software interesantes desde el punto de vista de la seguridad]].
+5.- [[http://www.microsiervos.com/archivo/internet/hacker-cracker.html][Cracker :sick: no es igual que HACKER :-O]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Windows%3A%20sobreviviendo%20a%20la%20primera%20sesi%C3%B3n][Dejar comentario]].
+
+** Comentarios
+
+*** Más info sobre actualizaciones del windows (Godo 15/08/2005 - 19:00)
+Añado este comentario para aportar un par de cosas más sobre actualizaciones del windows:
+
+1.- Las últimas versiones disponibles del Windows XP ya incorporan el ServicePack 2, último macroparche (a día de la fecha) de M$ para evitar los problemas de "puertas abiertas", por lo que un sistema con este tipo de versiones instaladas está, en principio, libre de sufrir malas experiencias en su primera sesión en internet. No obstante, os sigo recomendando las buenas prácticas aquí mencionadas.
+
+2.- Hay problemas para obtener las últimas actualizaciones de los windows a través del "windowsupdate". También hay soluciones. Podéis leer más sobre ellas [[http://www.kriptopolis.org/node/937][aquí]] y [[http://www.kriptopolis.org/node/962][aquí]]. Y para los que utilicen [[http://winehq.org/][wine]], [[http://www.kriptopolis.org/node/965][aquí]].

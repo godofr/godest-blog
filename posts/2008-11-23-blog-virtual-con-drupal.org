@@ -1,0 +1,38 @@
+#+title: Blog Virtual con Drupal
+#+date: <2008-11-23 19:20>
+#+author: Godofredo Fdez.
+#+description: En este artículo vamos a ver como podemos construir un blog “independiente”: con su propio diseño y sus propios contenidos, pero sobre una infraestructura…
+#+filetags: Bitácoras
+#+options: _:nil
+#+nid: 298
+
+En este artículo vamos a ver como podemos construir un blog “independiente”: con su propio diseño y sus propios contenidos, pero sobre una infraestructura común: la misma base de datos, los mismos perfiles de administración y usuarios, en definitiva, sobre la misma instalación de Drupal. Conseguimos así independizar los diferentes blogs, particularizándolos según temática, pero seguimos manteniendo en común todos los procesos de administración: basta con mantener una única base de datos donde reside toda la información, facilitando así tareas como: backups, parcheos de bugs, actualizaciones, suma de nuevas funcionalidades, búsquedas y consolidación de información, etc.
+
+Antes de seguir, podéis comprobar el resultado de esta “virtualización” [[http://ochenta-veinte.vivencias.net][aquí]]. Este blog, [[/taxonomy/term/24][80/20]], comparte la misma infraestructura (base de datos mysql, servidor web, módulo de php, archivos de instalación, parámetros “básicos” de configuración, etc.) que este que estáis leyendo, [[http://godest.vivencias.net][GodEst]], sin embargo, parece algo totalmente distinto. ¿Cómo lo hemos conseguido?
+
+Lo hemos conseguido haciendo uso de este módulo de nuestro Drupal: [[http://Drupal.org/project/taxonomy_theme][taxonomy_theme]], permite particularizar el tema gráfico de un nodo según su clasificación en la taxonomía, el vocabulario o el tipo de nodo (el lector que no maneje estos conceptos puede consultarlos [[/node/255][en este artículo]]), también permite asignar un tema determinado a un determinado “forum” o URL (trayecto / path) de nuestro sitio web.
+
+Este módulo está ligeramente desactualizado, tanto es así que ha originado un fork (ver [[http://Drupal.org/node/197494][esto]]) al ser migrado a la versión 6 de Drupal. Parece ser que los desarrolladores iniciales están ahora involucrados en este otro proyecto: [[http://Drupal.org/project/themekey][]], el cual también parece algo empantanado.
+
+Probablemente, por esta falta de empuje de los diferentes desarrolladores la versión estable del módulo, tal y como quedó allá por el 25 de febrero de 2007, no maneja bien los comentarios a los nodos cuyo tema ha sido particularizado, cambiando al tema por defecto del sitio web. Esto se puede solucionar con un parche que encontraréis [[http://Drupal.org/node/154024][aquí]]. Y más concretamente descargando el archivo que figura adjunto a este artículo, que ya lo incorpora.
+
+La configuración del módulo es simple, y consiste básicamente en:
+1.- Descomprimir el fichero en el directorio correspondiente (en mi caso: Drupal/modules/contrib/), y habilitarlo en la sección admin/build/modules.
+2.- Crear un nuevo vocabulario en la sección admin/content/taxonomy (en mi caso Ochenta-Veinte, cuyo aspecto será particularizado).
+3.- Filtrar la aparición de este vocabulario en el bloque que genera la taxonomía del sitio web. Intentamos así que no aparezca rastro del nuevo “blog virtual” en el antiguo. Esto se realiza aquí: admin/settings/sitemenu (sección: ommitted vocabularies).
+4.- Eliminar la obligación de seleccionar un término del vocabulario artículos. Se configura aquí: Administer - Categories - Articulos_Edit Vocabulary -> Deseleccionar Required y submit.
+5.- Habilitar el tema “ov” (el que cada uno desee) para poder seleccionarlo. Se hace aquí: admin/build/themes
+6.- Asociar el tema “ov” a la categoría ochenta-veinte. Se hace aquí: admin/settings/taxonomy_theme/taxonomy
+7.- Seleccionar los bloques que quieres ver en el tema “ov”. Se hace aquí: admin/build/block/list/ov.
+
+Tiene algunos inconvenientes, casi todos relacionados con el resto de módulos que no se independizan: comentarios recientes, contenido popular, etc., los cuales siguen reflejando todos los contenidos del sitio web, y entre ellos, los del nuevo "blog virtual". Creo que esto puede ser mejorado con el módulo [[http://drupal.org/project/views][views 2]], lo cual exige una migración a Drupal 6. Ya veremos.
+
+Y esto es todo, amigos.
+
+¿Os ha surgido esta necesidad en vuestro sitio gestionado por Drupal? ¿Cómo la habéis resuelto? ¿Estáis satisfechos con el resultado? ¿Qué ventajas e inconvenientes habéis detectado?
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/taxonomy_theme-5.x-1.2.tar.gz][taxonomy\_theme-5.x-1.2.tar.gz]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Blog%20Virtual%20con%20Drupal][Dejar comentario]].
+

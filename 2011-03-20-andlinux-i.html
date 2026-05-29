@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Buscando la forma de poder gestionar mi contabilidad con kmymoney en windows, me preguntaba si existía un port o algo similar, he encontrado esta magnífica herramienta que comparto con vosotros.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>andLinux (I)</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">20 mar. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-03-20-andlinux-i.html">andLinux (I)</a></h1>
+<a href="http://andlinux.org/" target="_blank"><img src="/static/img/logo-andLinux.png" class="image image-preview " width="185" height="45" border="0" align="right" hspace="10" vspace="10" alt="Logo de andLinux"/></a>
+<p>
+Buscando la forma de poder gestionar mi contabilidad con <a href="http://kmymoney2.sourceforge.net/index-home.html">kmymoney</a> en windows, me preguntaba si existía un port o algo similar, he encontrado esta magnífica herramienta que comparto con vosotros.
+</p>
+
+<p>
+andLinux es una "migración" del kernel de GNU/Linux para que pueda ejecutarse como si fuera un "driver" de windows. Así podemos lograr tener en la misma máquina corriendo en paralelo aplicaciones windows y aplicaciones GNU/Linux. ¡Genial! He visto por ahí comparativas (he perdido el enlace si lo encontráis, por favor, dejadme un comentario) de rendimiento y el alcanzado con esta solución es mayor que el que ofrecen soluciones basadas en virtualización con vmWare, Virtualbox, etc.. Además, evitamos tener que arrancar la máquina virtual cada vez que lo necesitamos: en este entorno las aplicaciones de GNU/Linux están tan accesibles como cualquier otra aplicación windows (menús, accesos directos, etc.), de forma transparente para el usuario habitual.
+</p>
+
+<p>
+Resumo el escenario: sobre nuestro windows (lo he probado en XP y en W7) instalamos andLinux como si se tratara de otra aplicación más, similar a las instalaciones que hacemos todos los días: sin tener que particionar el disco, sin pelearnos con la detección de hardware, etc. Yo he elegido el <a href="http://andlinux.org/downloads.php">sabor kde</a> porque es el que venía usando en mi linuxera historia, ocupa más pero ofrece software útil y potente (ver archivo 7z al final de este artículo con las capturas de mi proceso de instalación). Al finalizar la instalación tendremos un lanzador de aplicaciones en la bandeja del sistema (una k en blanco sobre fondo azul) que nos permitirá ejecutar cosas como: una consola, un explorador de archivos, el propio navegador konqueror, etc.
+</p>
+
+<p>
+Además permite acceder al sistema de ficheros de vuestra máquina utilizando tanto samba como un driver particular, cofs. Yo he elegido esta última opción, y aunque no es la recomendada (puede dar problemas con caracteres extraños en los nombres de ficheros) sí es la más rápida. Me he estado peleando con <b>samba</b> y, de momento, no he sido capaz. Lo dejo pendiente para más adelante.
+</p>
+
+<p>
+¿No os parece maravilloso?
+</p>
+
+<p>
+Nada de esto sería posible sin <a href="http://www.colinux.org/">colinux</a>, el verdadero núcleo del sistema y nombre del esfuerzo realizado por migrar el kernel Linux al espacio de "drivers" de windows. Os dejo la presentación que hizo el fundador de colinux en el "Linux Symposium" que se celebró en el año 2004 en Ontario, Canada (ver archivo adjunto: Reprint-Aloni-OLS2004.pdf).
+</p>
+
+<p>
+Como andLinux está basado en una distribución Ubuntu, concretamente en <a href="http://old-releases.ubuntu.com/releases/9.04/">jaunty 9.04</a>, en próximos artículos veremos toda la potencia de configuración y de aplicaciones que nos ofrece. He probado varias y funcionan muy bien.
+</p>
+
+<p>
+¿Conocéis algo similar? ¿Lo habéis probado? ¿Cómo os va?
+</p>
+
+<p>
+Seguimos aprendiendo.
+</p>
+<div id="outline-container-org3146589" class="outline-2">
+<h2 id="org3146589">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-org3146589">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/andLinux.7z">andLinux.7z</a></li>
+<li><a href="https://godest.vivencias.net/static/files/Reprint-Aloni-OLS2004.pdf">Reprint-Aloni-OLS2004.pdf</a></li>
+<li><a href="https://godest.vivencias.net/static/files/andLinux.7z">andLinux.7z</a></li>
+<li><a href="https://godest.vivencias.net/static/files/Reprint-Aloni-OLS2004.pdf">Reprint-Aloni-OLS2004.pdf</a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=andLinux%20%28I%29">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbb5c046" class="outline-2">
+<h2 id="orgbb5c046">Comentarios</h2>
+<div class="outline-text-2" id="text-orgbb5c046">
+</div>
+<div id="outline-container-orga6a4cad" class="outline-3">
+<h3 id="orga6a4cad">Me parece muy interesante (jfc 26/03/2011 - 23:42)</h3>
+<div class="outline-text-3" id="text-orga6a4cad">
+<p>
+No suelo usar windows, pero para cuando lo uso vendrá bien tener algo así que te hace sentir un poco "como en casa".
+</p>
+
+<p>
+Lo único parecido que conozco es Cywin, me ha sacado de más de un apuro y es útil para correr programas no muy complejos en windows. Digamos que importa un poco de la versatilidad de linux al tener una shell en windows. Desde el propio instalador creo que podías descargar programas como emacs, gcc&#x2026;
+</p>
+
+<p>
+Voy a probar este tal andLinux que pinta muy bien.
+</p>
+
+<p>
+PD: aqui hay una "comparativa" entre cywin y andLinux:
+<a href="http://nonrational.org/b/?p=36">http://nonrational.org/b/?p=36</a>
+</p>
+
+<p>
+Un saludo.<br>
+</p>
+</div>
+</div>
+<div id="outline-container-org211f0f4" class="outline-3">
+<h3 id="org211f0f4">Ya está instalado. (jfc 27/03/2011 - 13:35)</h3>
+<div class="outline-text-3" id="text-org211f0f4">
+<p>
+Está funcionando sobre W7. También he elegido KDE.
+</p>
+
+<p>
+Me sorprende lo bien que va. Desde synaptic he instalado emacs y alguna que otra utilidad más. Todo funciona bien.
+</p>
+
+<p>
+Me gusta que puedas elegir la opción de que no se arranque el servicio automáticamente, sino que tu puedas elegir manualmente cuando arrancarlo y cuando detenerlo.
+</p>
+
+<p>
+Muy buen software.
+</p>
+</div>
+</div>
+<div id="outline-container-org933a6d6" class="outline-3">
+<h3 id="org933a6d6">Sí, es sorprendente&#x2026; (Godo 01/04/2011 - 16:15)</h3>
+<div class="outline-text-3" id="text-org933a6d6">
+<p>
+&#x2026;lo bien que va. Yo lo utilizo todos los días para distintas tareas. Por ejemplo, tenía ya construidos scripts que automatizaban copias de seguridad con rsync, y viene muy bien poder usarlos en "background". Por esto, yo sí que elegí arrancarlo como servicio.
+</p>
+
+<p>
+Respecto a Cygwin, he venido trabajando con él durante estos últimos años, ahora estoy migrando a andLinux&#x2026; ya que apostamos por un entorno Unix este es un poco más de verdad ;-), por ejemplo: en el tema de los permisos de directorios, ficheros, etc., en la arquitectura del sistema de ficheros (arbol de directorios). Esto, que parece una tontería, cuando estás desarrollando webs que luego van a vivir en servidores GNU/Linux facilita el traspaso de tu máquina local a la red.
+</p>
+
+<p>
+Muchas gracias por tus comentarios. Seguimos leyéndonos.
+</p>
+
+<p>
+Saud.<br>
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#+title: Alfonso del Valle - Fin de Temporada
+#+date: <2006-04-25 08:41>
+#+author: Pili Cantautora
+#+description: Descripción: El Perro Andaluz. C/ Bustos Tavera, 11. Sevilla (www.elperroandaluz.es) Será el último de la temporada de Alfonso, en verano echaremos mucho de…
+#+filetags: 
+#+options: _:nil
+#+nid: 127
+
+Descripción:
+El Perro Andaluz. C/ Bustos Tavera, 11. Sevilla (www.elperroandaluz.es)
+
+Será el último de la temporada de Alfonso, en verano echaremos mucho de menos sus conciertitos... Además, a partir de las 00:01 remojaremos con un "johnny-cola" el cumple feliz de nuestro webmaster
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Alfonso%20del%20Valle%20-%20Fin%20de%20Temporada][Dejar comentario]].
+

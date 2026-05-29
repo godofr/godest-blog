@@ -1,0 +1,19 @@
+#+title: Seguridad de la información. Aspecto clave en la sociedad hiperconectada
+#+date: <2013-01-20 21:59>
+#+author: Godofredo Fdez.
+#+description: De especial relevancia, como podemos comprobar en las noticias que diariamente publican los medios de comunicación, la seguridad informática ha de ser incluida…
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 504
+
+#+begin_export html
+<a href="/static/img/20130123--Seminario-UPO-SegInfo-en-Sociedad-Hiperconectada.png"  rel="lightbox"><img src="/static/img/20130123--Seminario-UPO-SegInfo-en-Sociedad-Hiperconectada.png" alt="20130123--Seminario-UPO-SegInfo-en-Sociedad-Hiperconectada" title="20130123--Seminario-UPO-SegInfo-en-Sociedad-Hiperconectada"  class="image image-preview " width="630" height="237" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+De especial relevancia, como podemos comprobar en las noticias que diariamente publican los medios de comunicación, la seguridad informática ha de ser incluida en una estrategia global de protección de la información, activo crítico para todas las organizaciones. Ha de considerarse desde el puesto de trabajo multidispositivo hasta los sistemas de información con los que nos interrelacionamos con clientes y proveedores, los sistemas de comunicaciones utilizados, los servicios en “la nube”...
+
+En esta ponencia se describirá el panorama actual de la seguridad: qué amenazas son las más relevantes, qué impacto tienen en el desarrollo empresarial y cuáles son las medidas de protección con las que contamos: desde las legales hasta las tecnológicas, pasando por las necesarias capas de formación y gestión de la seguridad.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20de%20la%20informaci%C3%B3n.%20Aspecto%20clave%20en%20la%20sociedad%20hiperconectada][Dejar comentario]].
+

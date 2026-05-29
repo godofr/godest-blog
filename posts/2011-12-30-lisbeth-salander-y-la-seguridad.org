@@ -1,0 +1,29 @@
+#+title: Lisbeth Salander y la seguridad
+#+date: <2011-12-30 21:20>
+#+author: Godofredo Fdez.
+#+description: Hace unos días hablaba aquí del libro "La chica que soñaba con una cerilla y un bidón de gasolina". Dejé pendiente una continuación centrada exclusivamente en…
+#+filetags: Libros Seguridad
+#+options: _:nil
+#+nid: 448
+
+Hace unos días hablaba [[/node/443][aquí]] del libro "La chica que soñaba con una cerilla y un bidón de gasolina". Dejé pendiente una continuación centrada exclusivamente en los aspectos más relevantes que recogía el libro concernientes a la *seguridad de la información y técnicas de intrusión*.
+
+A este respecto encontramos un conjunto de ideas otra vez genialmente documentadas. *Lisbeth ha desarrollado su propio "troyano" denominado "Asphyxia 1.3"*. Os dejo la descripción textual:
+
+"Su única función consistía en actualizar el Internet Explorer del disco duro de Armanskij con una versión más moderna... el programa presentaba el mismo aspecto y se comportaba exactamente igual que la versión original, pero era un poco más grande y un microsegundo más lento. Todas las configuraciones eran idénticas al original, inclusive la fecha de instalación. No se apreciaba ninguna huella del nuevo programa.
+Escribió una dirección ftp de un servidor de Holanda y le apareció una ventana. Hizo clic en la casilla de copy, escribió "Armanskij/MiltSec" y le dio al OK. Inmediatamente el ordenador empezó a copiar el disco duro de Armanskij en el servidor de Holanda. Un reloj le indicó que el proceso iba a tardar treinta y cuatro minutos".
+
+El mismo software sigue sincronizando los cambios del disco duro local con esa copia realizada en la red, pasando desapercibido, y permite el robo de sesión del usuario que está frente a la máquina, evitando el rastreo de la dirección IP:
+
+"El autor era Mikael Blomkvist. Ella había creado el documento en su ordenador y con su propia licencia. Era mejor que un correo electrónico y no dejaba ningún número IP susceptible de ser rastreado, aunque, de todos modos, Mikael estaba convencido de que sería casi imposible rastrear a Lisbeth Salander a través de la red".
+
+Pero *lo que más me ha gustado* ha sido esto:
+
+"...Lisbeth sospechaba que Ekström, sencillamente, pasaba de las normas, se llevaba el trabajo a casa y se conectaba a Internet sin ningún cortafuegos.
+Una vez más, eso demostraba su tesis de que no hay mejor grieta en un sistema de seguridad que el más tonto de los colaboradores. Gracias al ordenador de Ekström obtuvo información esencial".
+
+Una de las grandes brechas de seguridad que muchas de las organizaciones hoy mismo siguen considerando como su talón de Aquiles y para la que se siguen imaginando muchas técnicas de protección. Pero que *pone de manifiesto ese eslabón débil de la seguridad: el factor humano y su formación*.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Lisbeth%20Salander%20y%20la%20seguridad][Dejar comentario]].
+

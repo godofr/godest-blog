@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="El correo electrónico es un medio de comunicación a distancia no confiable. El símil más comúnmente utilizado para describir el funcionamiento del correo…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>¿Por qué no me llegan tus correos electrónicos?</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">16 abr. 2008</div><h1 class="post-title"><a href="https://godest.vivencias.net/2008-04-16-por-que-no-me-llegan-tus-correos-electronicos.html">¿Por qué no me llegan tus correos electrónicos?</a></h1>
+<p>
+El correo electrónico es un medio de comunicación a distancia no confiable. El símil más comúnmente utilizado para describir el funcionamiento del correo electrónico es el correo postal. El clásico servicio de correo postal (envío normal) no garantiza la entrega de la carta al destinatario, al contrario de lo que sí hacen otros servicios de comunicación a distancia, por ejemplo, el fax: un reporte de envío correcto garantiza que el fax ha llegado a su destino. Esto es así, fundamentalmente, porque en el fax hay un establecimiento de conexión entre los dos extremos, el emisor y el receptor, previo al envío de la información (es como si ambos extremos se conectaran con una tubería y comprobaran que, al verter agua por uno de ellos esta sale por el otro, sin ningún punto de fuga). Una vez realizada esa conexión se procede al envío de datos y, finalmente, se libera (se deshace la tubería y quedamos a la espera de volverla a establecer con otro interlocutor distinto). En el servicio de correos, por el contrario, la carta es abandonada a su propia suerte una vez que es depositada en algún buzón de recogida, confiando en el transportista, y no estando el viaje libre de problemas.
+</p>
+
+<p>
+Así, vamos a intentar describir cual es el funcionamiento del correo electrónico apoyándonos en la siguiente figura:
+</p>
+
+<img src="/static/img/email-1.png" alt="Arquitectura correo electrónico 1" title="Arquitectura correo electrónico 1"  class="image image-preview " width="430" height="300" border="0" hspace="10" vspace="10" />
+
+<p>
+<b>Descripción del servicio en tres etapas</b>
+</p>
+
+<p>
+<b>Etapa 1</b>: El cliente C1 desea enviar un correo al cliente C2. Procede a su redacción en su programa de correo (Outlook, thunderbird, correos web como: hotmail, gmail, yahoo, etc.), y cuando está listo pulsa el botón de enviar. En ese instante el programa de correo se pone en contacto con su servidor, y deposita el mensaje en él, en nuestra figura en el servidor S1. Este acto es equivalente al que se realiza cuando depositamos la carta en el buzón de recogida de nuestra oficina de correos.
+</p>
+
+<p>
+<b>Etapa 2</b>: Posteriormente el servicio de correos va transportando nuestro mensaje por diferentes estafetas (oficinas de correos) hasta que este llega a su destino. En nuestra figura, el mensaje irá siendo transmitido desde nuestro servidor S1 hasta el servidor del destinatario S3, pasando por S2.
+</p>
+
+<p>
+<b>Etapa 3</b>: Finalmente el mensaje queda almacenado en el servidor S3 esperando que el cliente C2 se conecte y lo descargue a su programa de correo, donde procederá a su lectura. Este último hecho es equivalente al que realiza el cartero al depositar la carta en el buzón de nuestra vivienda, quedando a la espera de ser recogida, cosa que ocurrirá cuando procedamos a la apertura de nuestro buzón.
+</p>
+
+<p>
+Así, si la comunicación fuera limpia, sin problemas, todos los mensajes enviados llegarían a su destino. Pero&#x2026;
+</p>
+
+<p>
+<b>¿Dónde aparecen los problemas?</b>
+</p>
+
+<p>
+Al margen de los propios problemas originados en elementos físicos que pueden sufrir las diferentes máquinas que intervienen en el camino: roturas de disco duro, memoria, procesador, etc., los principales problemas son causados por distintos mecanismos de lucha contra el spam o correo basura: es considerado correo basura todo aquel correo no expresamente solicitado y carente de interés para el destinatario. Esta podría ser una definición lo suficientemente genérica, y que refleja la gran carga de subjetividad que encierra la clasificación de correo como spam.
+</p>
+
+<p>
+En todos los puntos que atraviesa el mensaje enviado hacia su destino se toman este tipo de decisiones: ¿es este mensaje correo basura? Si la respuesta es sí, el correo es destruido y, por cortesía (ojo, no están obligados a hacerlo y dependerá de como haya sido programada esa máquina, de hecho, hoy en día casi ningún servidor lo hace), se devolverá un mensaje al emisor informándole de tal hecho.
+</p>
+
+<p>
+<b>¿Cuáles son los mecanismos más utilizados de lucha contra el spam?</b>
+</p>
+
+<p>
+Existen dos: las listas negras y los filtros de contenidos.
+</p>
+
+<p>
+<b>Las listas negras</b>, como su nombre indica, recogen una serie de máquinas que alguien ha catalogado como potencialmente peligrosas por el envío, alguna vez, de spam. Las causas de entrar en esa lista negra son múltiples: desde enviar mucho correo en un corto periodo de tiempo (cosa que suelen hacer algunos virus), hasta que alguien, no muy amigo nuestro, señale a nuestra máquina como “dañina”. Es así de subjetivo. Como cuando te meten en el RAI/Asnef porque no has pagado un determinado recibo sin entrar en justificar quien tiene razón: el cobrador o el no pagador.
+</p>
+
+<p>
+<b>Los filtros de contenidos</b> son diferentes técnicas que buscan en el texto del mensaje expresiones que, habitualmente, pueden ser utilizadas para el envío de propaganda no solicitada, promesas de dinero fácil&#x2026; del tipo: “si elige nuestra opción obtendrá los resultados esperados”. El mensaje puede estar hablando del programa de ventas de la organización que lo distribuye entre distintos agentes (correo legítimo, no spam) o del “viagra”. También, así de subjetivo.
+</p>
+
+<p>
+Normalmente, los mecanismos de listas negras suelen ser utilizados en los servidores. En nuestro ejemplo en las máquinas S1, S2 y S3. Y los mecanismos de filtros de contenidos en los clientes, no sólo en el programa de lectura de correo sino en otras “soluciones de seguridad” tipo antivirus / antispam / antiphishing. En nuestro ejemplo en C2.
+</p>
+
+<p>
+<b>¿Cómo evitar todos estos puntos de posibles problemas?</b>
+</p>
+
+<p>
+Me atrevo a decir que es imposible por el propio funcionamiento de Internet: un determinado emisor de correo, C1 en nuestro ejemplo, sólo puede controlar su programa cliente de correo, y ni eso en el caso de utilizar un servicio de lectura/escritura basado en web (gmail, yahoo, hotmail&#x2026;), pues en este caso dependerá de los filtros que activen las diferentes empresas que ofrecen el servicio. Por consiguiente, si C1 utilizara su propio programa de correo y tuviera contratado (servicio de pago) su buzón de envío y recepción con el servidor S1, también podría exigir a dicho servidor ciertos tipos de actuación ante el problema, como relajar las políticas antispam empleadas. Otra cosa es que sea escuchado ya que, normalmente, los gestores de ese servidor albergarán a otros clientes en el mismo que no querrán desproteger.
+</p>
+
+<p>
+Estos dos puntos más cercanos al emisor, C1, son los más “controlables” pero siempre escaparán de su influjo el resto: S2, S3 y C2.
+</p>
+
+<p>
+<b>Conclusiones</b>
+</p>
+
+<p>
+1.- Una organización podrá asegurar la correcta recepción de los mensajes de correo enviados entre sus integrantes, si todos ellos disponen de un buzón de correo en un servidor gestionado por la propia organización: correo corporativo. Nuestro esquema se reduciría al siguiente:
+</p>
+
+<img src="/static/img/email-2.png" alt="Arquitectura correo electrónico 2" title="Arquitectura correo electrónico 2"  class="image image-preview " width="430" height="315" border="0" hspace="10" vspace="10" />
+
+<p>
+Bajo este esquema de funcionamiento la organización tiene todos los controles necesarios para asegurar que el mensaje enviado por C1 ha llegado al buzón de recogida del resto de integrantes, Cn.
+</p>
+
+<p>
+Aún así, ese mensaje podría ser descartado por el filtro aplicado en el propio programa de lectura de correo de cada uno de los integrantes. Se podría evitar este último paso ofreciendo la posibilidad de leer el correo vía web, conectándose cada uno de los clientes a través de un navegador al servidor de la organización.
+</p>
+
+<p>
+2.- La organización evita realizar los comunicados oficiales utilizando el correo electrónico. Sustituye, pues, esta vía de comunicación por una página web donde va colgando la información que quiere difundir entre sus integrantes. En este escenario el emisor de la información asegura que ésta está disponible (es fácil comprobar que una vez publicada está visible para todos), y delega la responsabilidad de mantenerse actualizado a los integrantes (estos han de tomar la iniciativa de consultar esa página web de información. Pero no olvidemos que cuando se decide leer el correo también se ha de tomar la iniciativa).
+</p>
+
+<p>
+<b>Posibles preguntas</b>
+</p>
+
+<p>
+<b>¿Por qué no confiar en los acuses de recibo?</b>
+</p>
+
+<p>
+Alguien podría pensar que enviar el correo electrónico solicitando acuse de recibo solucionaría esta problemática. Eso no es así, y si cabe, la complica. De nuevo es necesario un procedimiento porque: no todos los programas clientes envían confirmación, es más, por defecto casi todos la traen desactivada, no todos los receptores leerán los mensajes en un tiempo determinado (habrá gente viajando y sin acceso al correo, gente de vacaciones, etc.), se exige un control de todas las confirmaciones y determinar que hacer si estas no se reciben, ¿se vuelve a enviar? ¿cuántas veces más? ¿y si se sigue sin confirmación? ¿cuánto tiempo vamos a esperar entre cada reenvío?
+</p>
+
+<p>
+En fin, creo que esto no sólo no soluciona el problema sino que exige más esfuerzo y dedicación para no acabar agravándolo.
+</p>
+
+<p>
+<b>¿Quién da más?</b>
+</p>
+
+<p>
+;-)
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=%C2%BFPor%20qu%C3%A9%20no%20me%20llegan%20tus%20correos%20electr%C3%B3nicos%3F">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

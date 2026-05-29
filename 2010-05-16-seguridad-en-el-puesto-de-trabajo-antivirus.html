@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="A continuación os dejo el artículo número 6 que, continuando mi línea de colaboración, he publicado en el blog del Colegio Oficial de Ingenieros de…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Seguridad en el puesto de trabajo. Antivirus.</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">16 may. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-05-16-seguridad-en-el-puesto-de-trabajo-antivirus.html">Seguridad en el puesto de trabajo. Antivirus.</a></h1>
+<p>
+A continuación os dejo el artículo número <b>6</b> que, continuando mi línea de colaboración, he publicado en el <a href="http://blog.coitaoc.org/">blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta</a>. Divulgad que algo queda ;-).
+</p>
+
+<p>
+Esta semana me he reunido, de forma independiente, con dos de los fabricantes líderes en el mercado de la seguridad en el puesto de trabajo (omitiré nombres para que no se enfaden el resto) y, como si se tratara de un mecanismo de relojería perfectamente sincronizado, describían la situación actual de forma muy parecida. Veámoslo.
+Ambos contaban, obviamente, con un laboratorio (simplificando) que viene analizando históricamente todas las muestras de “<a href="http://es.wikipedia.org/wiki/Malware">malware</a>” que sus distintas sondas/clientes les van haciendo llegar. Fruto del análisis en profundidad de cada una de las muestras por máquinas que automatizan, en la medida de lo posible, la búsqueda de código malicioso y de aportaciones puntuales de inteligencia de expertos analistas humanos, generaban los famosos ficheros de firmas a los que estamos acostumbrados por los mensajitos de actualización que lanzan todos nuestros antivirus de puesto de trabajo (se denominan así para diferenciarlos de aquellos antivirus que se despliegan en el perímetro de las organizaciones intentando contener la entrada de infecciones: antivirus de navegación web, antivirus de correo, y poco más) cada vez que se actualizan.
+</p>
+
+<p>
+También coincidían en que ese modelo reactivo de contención de las amenazas basándose en el ciclo descrito y que finaliza con desarrollo de la firma/vacuna “*está acabado*” como estrategia de defensa, y que pervive en la práctica, y lo hará durante varios años más, porque los otros enfoques estratégicos (de los que hablaremos en futuros artículos) aún no han alcanzado la madurez suficiente para acabar con el primero. Aunque, como veremos, los pasos se van dando.
+</p>
+
+<p>
+¿Por qué está “acabado” el modelo actual? La cifra concreta que daba cada uno de ellos difería pero el orden de magnitud era parecido: cada día llegan a sus laboratorios cientos de miles de muestras nuevas (en un solo día actual llegan tantas muestras como las conocidas hasta el año 2003. ¡Impresionante!), y el crecimiento es exponencial. Muchas de estas muestras son variaciones sobre el mismo código patrón, utilizadas por “los malos” para despistar a “los buenos”: mientras trabajan en ellas cabe la posibilidad de que se les escape un porcentaje bajo, pero suficiente, para seguir haciendo estragos.
+</p>
+
+<p>
+¿Qué pasos están dando para contener esto? Todos se están centrando en un modelo de negocio de “Software como Servicio” (Software as a Service &#x2013; SaaS). Concepto que cada vez vais a ir oyendo con más frecuencia, y que quiere decir lo siguiente: el software se monta en un servidor de internet y el servicio que antes prestaba cuando lo montabas en tu máquina ahora se presta desde allí. Puede servirnos como ejemplo un servicio al que nos hemos ido acostumbrando poco a poco y que hoy es abrumadoramente mayoritario: el correo web. Antes casi todos teníamos nuestro cliente de correo en nuestro PC, ahora casi todos utilizamos servicios como Gmail / Hotmail / Yahoo mail (perdón por los ejemplos concretos pero creo que es lo mejor para conseguir explicarme). Antes teníamos la música en nuestro ordenador, ahora utilizamos Spotify. Antes utilizábamos una “suite ofimática” ahora tenemos Google docs y la propia Office de MicroSoft en su versión 2010 está disponible como servicio en la web&#x2026; en fin.
+</p>
+
+<p>
+¿En qué consiste, y qué ventajas tiene, un antivirus en la nube? Si lo definiéramos en terminología industrial: acortar el ciclo de producción. Toda la inteligencia está ubicada en ese servidor que reside en Internet (la nube). Ese servidor, que en realidad es una granja de servidores muy potentes, maneja los millones de firmas conocidas en diferentes ficheros, y es capaz de correr, en tiempos infinitamente menores que los que consumirían nuestras máquinas, complejos algoritmos de detección heurística. Además se nutre de los envíos de cientos de miles de personas que han instalado un agente ligero (consume pocos recursos en nuestra máquina) y cuya comunicación con los servidores no podemos desactivar por lo malo (nos acabaríamos infectando) y por lo bueno (colaboramos con los demás). Y es que, cuando este agente ligero sospecha de algún fichero lo bloquea, lo envía a la granja de servidores para su análisis, y espera recomendación sobre si permite o no su ejecución.
+</p>
+
+<p>
+¿Qué gana el usuario de estos nuevos servicios? Tiene un agente instalado en su máquina más ligero que los habituales, que da menos problemas y que se gestiona centralizadamente, dispone así de más recursos para su trabajo habitual (nuestro ordenador ya no va tan lento cuando le instalamos el antivirus), en local sólo permanecen las firmas que identifican a los virus que están en el “top x” (también conocidos como “wild list”), es decir, los que actualmente tienen un mayor índice de actividad. Pero eso no quiere decir que estemos desprotegidos, cuando nuestro agente detecta un proceso cuyo “comportamiento” es sospechoso lo bloquea y pide ayuda como hemos explicado.
+</p>
+
+<p>
+A esa forma de trabajar en la nube, en la que todos nos acabamos ayudando a todos porque lo que me afecta a mí, lo comparto, y probablemente no te acabe afectando a ti, se la conoce como “inteligencia colectiva”. Bonito nombre&#x2026;
+</p>
+
+<p>
+&#x2026;y extraña sensación cuando lo escucho por echadla tanto en falta. Supongo.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Seguridad%20en%20el%20puesto%20de%20trabajo.%20Antivirus.">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-coitaoc.html">COITAOC</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

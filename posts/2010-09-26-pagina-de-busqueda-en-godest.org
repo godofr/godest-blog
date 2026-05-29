@@ -1,0 +1,18 @@
+#+title: Página de Búsqueda en GodEst
+#+date: <2010-09-26 20:04>
+#+author: Godofredo Fdez.
+#+description: Puedes buscar contenido en este sitio (por defecto) o en toda la web (seleccionar "web"). El motor utilizado es el de Google. --> Web GodEst Cuando presiones…
+#+filetags: 
+#+options: _:nil
+#+nid: 366
+
+Puedes buscar contenido en este sitio (por defecto) o en toda la web (seleccionar "web"). El motor utilizado es el de Google.
+
+*Web*
+*GodEst*
+
+Cuando presiones buscar se abrirá en tu navegador una nueva pestaña con los resultados encontrados.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=P%C3%A1gina%20de%20B%C3%BAsqueda%20en%20GodEst][Dejar comentario]].
+

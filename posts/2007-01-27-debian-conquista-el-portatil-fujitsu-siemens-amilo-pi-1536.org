@@ -1,0 +1,297 @@
+#+title: Debian conquista el portátil Fujitsu Siemens AMILO Pi 1536
+#+date: <2007-01-27 21:04>
+#+author: Godofredo Fdez.
+#+description: Amanecía un sábado tranquilo. Con expectación, preparaba minuciosamente el nuevo hardware que, dentro de poco, extendería los dominios de Debian un poquito más. Encendí el portátil, le dí la bienvenida a casa y lo tranquilicé: estaba seguro de que se lo devolvería a sus dueños en mejores condiciones de las que había llegado a mis manos. ;-) Procedí a arrancarlo desde un CD donde, previamente, había tostado la versión más reciente de GParted LiveCD , maravillosa herramienta gráfica que os recomiendo tener siempre a mano para trabajar con particiones: crear, redimensionar, etc. Obviamente es " Software Libre ".
+#+filetags: GNU/Linux
+#+options: _:nil
+#+nid: 197
+
+#+begin_export html
+<a href="http://godest.vivencias.net/node/196" target="top"><img width="250" height="188" border="0" align="right" hspace="10" vspace="10" src="/static/img/etch-luna.jpg"></a>
+#+end_export
+Amanecía un sábado tranquilo. Con expectación, preparaba minuciosamente el nuevo hardware que, dentro de poco, extendería los dominios de Debian un poquito más. Encendí el portátil, le dí la bienvenida a casa y lo tranquilicé: estaba seguro de que se lo devolvería a sus dueños en mejores condiciones de las que había llegado a mis manos. ;-)
+
+Procedí a arrancarlo desde un CD donde, previamente, había tostado la versión más reciente de [[http://gparted.sourceforge.net/livecd.php][GParted LiveCD]], maravillosa herramienta gráfica que os recomiendo tener siempre a mano para trabajar con particiones: crear, redimensionar, etc. Obviamente es "[[http://es.wikipedia.org/wiki/Software_Libre][Software Libre]]".
+
+Confiné al omnipresente "Windows XP Home" a un reducido espacio de 20 GB, y creé otras dos particiones: 40 GB para fat32 (zona de intercambio de ficheros para Windows y GNU/Linux, ya que este sistema de ficheros es reconocido sin problemas por ambos Sistemas Operativos) y 20 GB para Debian Etch.
+
+Grabé los cambios... y comprobé que todo había quedado como quería.
+
+Arranqué desde el CD de Debian Etch de instalación por red, concretamente [[http://cdimage.debian.org/cdimage/etch_di_rc1/i386/iso-cd/debian-testing-i386-netinst.iso][éste (RC1)]]. Sí, aún está en fase de pruebas (testing), pero funcionó correctamente.
+
+Seguí todo el proceso, bien guiado en cada fase por los menús que se iban sucediendo en correcto Español. Terminé eligiendo una "instalación para PC de escritorio" y no tuve ningún problema. Tras 3 horas, aproximadamente, había terminado (tened en cuenta que todo el software fue descargado de Internet por una conexión ADSL de 1 Mbps.).
+
+Volví a arrancar y ¡ahí estaba [[http://es.wikipedia.org/wiki/Grub][grub]]! Mostrándome un menú de selección del S.O. que deseara utilizar. Seleccioné la opción predeterminada: Debian GNU/Linux, y observé detenidamente todo el proceso. Pude ver como el kernel iba detectando todo el hardware, incluida la tarjeta gráfica, el sonido, etc. Y lleno de ilusión desemboqué en una fantástica pantalla de bienvenida, antesala de la pantalla capturada que ilustra este artículo, en la cual podemos ver un magnífico entorno gráfico: [[http://www.gnome.org/][GNome]] (aunque yo utilizo habitualmente este otro: [[http://www.kde.org/][KDE]]). Jugué un poco con él... y detecté que no se podía hacer uso de la tarjeta de red inalámbrica. Único problema que solucioné fácilmente como os indico a continuación.
+
+Comprobé con el siguiente comando que la tarjeta sí que estaba siendo detectada por el kernel Linux:
+
+#+BEGIN_EXAMPLE
+  luna:/home/eulalia# lspci
+
+  00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS/940GML and 945GT Express Memory Controller Hub (rev 03)
+
+  00:01.0 PCI bridge: Intel Corporation Mobile 945GM/PM/GMS/940GML and 945GT Express PCI Express Root Port (rev 03)
+
+  00:1b.0 Audio device: Intel Corporation 82801G (ICH7 Family) High Definition Audio Controller (rev 02)
+
+  00:1c.0 PCI bridge: Intel Corporation 82801G (ICH7 Family) PCI Express Port 1 (rev 02)
+
+  00:1c.2 PCI bridge: Intel Corporation 82801G (ICH7 Family) PCI Express Port 3 (rev 02)
+
+  00:1d.0 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI #1 (rev 02)
+
+  00:1d.1 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI #2 (rev 02)
+
+  00:1d.2 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI #3 (rev 02)
+
+  00:1d.3 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI #4 (rev 02)
+
+  00:1d.7 USB Controller: Intel Corporation 82801G (ICH7 Family) USB2 EHCI Controller (rev 02)
+
+  00:1e.0 PCI bridge: Intel Corporation 82801 Mobile PCI Bridge (rev e2)
+
+  00:1f.0 ISA bridge: Intel Corporation 82801GBM (ICH7-M) LPC Interface Bridge (rev 02)
+
+  00:1f.1 IDE interface: Intel Corporation 82801G (ICH7 Family) IDE Controller (rev 02)
+
+  00:1f.2 SATA controller: Intel Corporation 82801GBM/GHM (ICH7 Family) Serial ATA Storage Controller AHCI (rev 02)
+
+  00:1f.3 SMBus: Intel Corporation 82801G (ICH7 Family) SMBus Controller (rev 02)
+
+  01:00.0 VGA compatible controller: ATI Technologies Inc Radeon Mobility X1400
+
+  04:00.0 Network controller: Intel Corporation PRO/Wireless 3945ABG Network Connection (rev 02)
+
+  05:04.0 FireWire (IEEE 1394): Texas Instruments TSB43AB22/A IEEE-1394a-2000 Controller (PHY/Link)
+
+  05:05.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL-8169 Gigabit Ethernet (rev 10)
+
+  luna:/home/eulalia# 
+#+END_EXAMPLE
+
+Busqué en los repositorios de Debian, desde mi ordenador de sobremesa y haciendo uso de apt-cache, algo que tuviera que ver con: "Intel Corporation PRO/Wireless 3945ABG".
+
+#+BEGIN_EXAMPLE
+  [20:24:19(godo@surco)~]> apt-cache search 3945
+#+END_EXAMPLE
+
+Y obtuve, entre otras cosas, los paquetes necesarios que tenía que instalar para reconocer dicho hardware, que son:
+
+#+BEGIN_EXAMPLE
+  firmware-ipw3945 - Binary firmware for IPW3945
+
+  ipw3945d - Binary userspace regulatory daemon for Intel PRO/Wireless 3945ABG cards
+
+  ipw3945-modules-2.6.18-3-686 - Intel PRO/Wireless 3945ABG (ipw3945) driver modules for Linux 2.6.18 on PPro/Celeron/PII/PIII/P4
+#+END_EXAMPLE
+
+El último lo elegí tras comprobar la versión del kernel que había sido instalada en el portátil (tened cuidado porque ha de coincidir la versión del paquete de "módulos" que soportan la tarjeta wireless con la versión del kernel que tengáis):
+
+#+BEGIN_EXAMPLE
+  luna:/home/eulalia# uname -a
+
+  Linux luna 2.6.18-3-686 #1 SMP Mon Dec 4 16:41:14 UTC 2006 i686 GNU/Linux
+#+END_EXAMPLE
+
+Tras investigar un poquito, descubrí que estos paquetes no habían sido instalados por defecto debido a que el instalador de Debian es muy escrupuloso: sólo había incluido en las fuentes de los repositorios la parte "main" de los mismos, y no las partes "contrib" y "non-fre", estando en esta última ubicados los paquetes anteriores, necesarios para el soporte de la tarjeta de red inalámbrica.
+
+Tuve que editar el fichero "sources.list" y dejarlo de la siguiente forma:
+
+#+BEGIN_EXAMPLE
+  luna:/home/eulalia# more /etc/apt/sources.list
+
+  #
+
+  # deb cdrom:[Debian GNU/Linux testing _Etch_ - Official Snapshot i386 Binary-1 (20061111)]/ etch main
+
+  deb http://ftp.debian.nl/debian/ etch main contrib non-free
+
+  #deb-src http://ftp.debian.nl/debian/ etch main
+
+  deb http://security.debian.org/ etch/updates main contrib non-free
+
+  #deb-src http://security.debian.org/ etch/updates main
+
+  luna:/home/eulalia#
+#+END_EXAMPLE
+
+Finalmente, bastó con ejecutar lo siguiente para que la tarjeta fuera reconocida:
+
+#+BEGIN_EXAMPLE
+  luna:/home/eulalia# apt-get update
+
+  luna:/home/eulalia# apt-get install firmware-ipw3945 ipw3945d ipw3945-modules-2.6.18-3-686
+#+END_EXAMPLE
+
+Ya sólo faltaba configurarla con el uso de la aplicación: [[http://www.gnome.org/projects/NetworkManager/][Network Manager]].
+
+Hoy, el universo Debian es un poquito más grande.
+
+Ánimo, [[http://www.debian.org][entrad en él]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Debian%20conquista%20el%20port%C3%A1til%20Fujitsu%20Siemens%20AMILO%20Pi%201536][Dejar comentario]].
+
+** Comentarios
+
+*** Efectivamente, en un día (Dueños del portatil 28/01/2007 - 12:35)
+Efectivamente, en un día nuestro portatil cambió. Ahora tenemos dos entornos de trabajo y cada vez que encendemos el ordenador trabajamos un poco con el nuevo, hay que acostumbrarse. Bueno, agradecemos el cambio, que como bien dice el autor, lo puede considerar una conquista, ya que por nosotros mismos no lo hubiésemos hecho.
+
+Esperamos que sea para bien
+
+Gracias
+
+*** Bonitas explicaciones, pero (Squil 18/03/2007 - 21:03)
+Bonitas explicaciones, pero yo por mi parte no me he quedado conforme con la instalación de debian en mi portátil... parece ser que debian no trae el cpufreq activado en el kernel por lo cual el procesador no baja de frecuencia así que está siempre al máximo consumiendo la batería en un rato... Ahora me queda conseguir solucionar el problema que tengo ahora que es que falla la compilación del kernel... así que supongo que tendré que volverme a kubuntu como siempre :( porque aunque tiene fallos al menos no me tiene al máximo el procesador... y por cierto en kubuntu el control del procesador si viene puesto por defecto.
+
+*** Me extraña mucho... (Godo 24/03/2007 - 18:13)
+...que el kernel de Debian no venga compilado con esa facilidad. Otra cosa es que necesites instalar algún paquete adicional, como es el caso de "cpufreqd" y "cpufrequtils":
+
+#+BEGIN_EXAMPLE
+  [18:08:19(godo@surco)~]> apt-cache search cpufreq
+
+  collectd - statistics collection daemon
+
+  cpudyn - CPU dynamic frequency control for processors with scaling
+
+  cpufreqd - fully configurable daemon for dynamic frequency and voltage scaling
+
+  cpufrequtils - utilities to deal with the cpufreq Linux kernel feature
+
+  libcpufreq-dev - development files to deal with the cpufreq Linux kernel feature
+
+  libcpufreq0 - shared library to deal with the cpufreq Linux kernel feature
+
+  xfce4-cpufreq-plugin - cpufreq information plugin for the Xfce4 panel
+
+  gnome-applets - Various applets for GNOME 2 panel - binary files
+
+  powernowd - control cpu speed and voltage using 2.6 kernel interface
+
+  powersaved - power management daemon
+
+  [18:08:24(godo@surco)~]>
+#+END_EXAMPLE
+
+He de reconocer que, hasta ahora, no me había preocupado por esto que cuentas. Suelo utilizar el portátil casi todo el tiempo conectado a la red eléctrica ;-). No obstante, investigaré un poco y contaré aquí lo aprendido. Igualmente, te agradecería que si hallas la solución la compartas.
+
+Muchas gracias por tu comentario.
+
+Salud.\\
+
+*** Muy buen artículo. Cuando (jflombera 28/03/2007 - 06:10)
+Muy buen artículo. Cuando se plantean las cosas de esa manera todo parece fácil y las personas que aún no han probado el mundo Debian ( y Linux en general) les de ganas de hacerlo.
+
+Solo tengo una sugerencia. Sería mejor que la partición de fat32 la hubieras creado de tipo NTFS y la hubieras administrado desde Linux con el controlador ntfs-3g que soporta la escritura de NTFS, yo lo uso actualmente y hasta el momento ha funcionado muy bien sin ningún problema.
+
+Un saludo.
+
+*** Sobre ntfs-3g (Godo 28/03/2007 - 10:57)
+Muchas gracias... me alegro mucho de que te haya gustado.
+
+La verdad es que cuando uno lee la descripción que aún aparece de este paquete en los repositorios Debian, acaba sintiendo algo de vértigo:
+
+#+BEGIN_EXAMPLE
+  [10:24:03(godo@surco)~]> apt-cache show ntfs-3g
+
+  ...
+
+  The driver currently is in BETA status: before release of this software we
+
+   haven't experienced any driver crashes or data loss during our heavy quality
+
+   testing, however we are aware of some minor issues which will be resolved
+
+   in the near future.
+
+  ...
+#+END_EXAMPLE
+
+Aunque comentarios como el tuyo vayan haciendo crecer la confianza sobre el mismo. He de reconocer que en este tipo de cosas, y más tratándose de un equipo que no era mío, decido asumir riesgo cero.
+
+Seguiremos compartiendo nuestras experiencias.
+
+Una nueva cosa que conocer... ¡el mundo es ancho!
+
+*** pues... (Squil 01/04/2007 - 21:22)
+Si que instale las diferentes aplicaciones incluso probe alguna otra como el powersave o algo asi que utiliza ubuntu... pero el problema esta en que esos programas no pueden hacer nada ya que no existe nada que puedan controlar... (ya desinstale debian si no te contaba que es lo que falta) por eso me figuro que el problema venga de la compilacion del kernel que al no tener compilado lo adecuado para el cpufreq no genera los "dispositivos" que necesita el programa, pero no lo puedo asegurar...
+
+Yo tambien suelo tener casi siempre el portatil enchufao a la corriente pero vista la temperatura que coge el portatil por funcionar al maximo de revoluciones es mucho mejor hacerle que siempre regule las revoluciones asi ademas consigo que baje el ruido que provoca...
+
+*** amilo pi1536 (Eva 13/04/2007 - 03:46)
+Se me estropeó windows y no encuentro el disco con windows de siemens que tiene los drivers del sata, un windows normal no lo acepta y estoy harta, ¿crees que podría instalar sin problemas linux siguiendo tus instrucciones? A mí todos esos códigos me suenan a chino...
+
+*** quizá, mejor Ubuntu (Godo 15/04/2007 - 13:39)
+Hola Eva.
+
+Por tu comentario deduzco que no estás muy ducha en "operar" un sistema GNU/Linux. Aunque el artículo está descrito con suficiente nivel de detalle, reconozco que meterse a editar ficheros de configuración puede ser algo duro para un neófito en Debian. Es por ello por lo que te aconsejo que intentes instalar la última versión disponible de Ubuntu, puedes obtener más información sobre ella [[http://www.ubuntu.com/business/desktop/overview][aquí]]. La página te explica las características fundamentales de esta distribución, al final aparecen enlaces para: seguir viendo más características, descargar el CD de instalación de la última versión estable (Ubuntu 6.10 desktop), o incluso solicitar que te los envíen a casa gratuitamente.
+
+Ya me contarás si la opción aconsejada te ha sido útil.
+
+Salud.
+
+*** cd original del amilo pi1536 (magl 23/04/2007 - 15:18)
+Hola Eva, tengo el mismo problema que tú. Necesito una copia de ese CD original como sea.
+He conseguido descargarme los drivers SATA necesarios para que el ordenaror reconozca el disco duro, pero solo hay 2 formas de incorporarlos:
+1.- con una unidad de discos de 3,5 con puerto USB. Al empezar a instalar el sistema operativo pulsas F6 cuando te lo indique y descargará los drivers que previmanete hemos grabado en el discket.
+2.- Grabando los drivers en el mismo cd que el sistema operativo (se puede hacer con algunos programas, p.e:nLite).
+En el 1º caso necesito una disquetera para estos discos, que no tengo.
+El segundo caso: no consegúí que funcionara.
+
+Tendré que descartar avería de mi disco duro WD1200... (es el que trae el amilo pi1536). Por si acaso he encargato otro.
+
+Por favor, si encuentras ese cd o alquien que lo tenga, contacta conmigo. (veterheliomar@yahoo.es)
+
+Miguel Ángel\\
+
+*** Debian Lenny ha conquistado un portáil Toshiba Satellite A100-99 (lenny 25/04/2007 - 01:14)
+La instalación de Debian te deja un sistema bastante usable. En concreto a mi me reconoció todo excepto la Intel Corporation PRO/Wireless 3945ABG Network Connection...pero con un simple apt install .... instalé los módulos, el firmware y el demonio (como tu bien explicas en tu artículo) y asunto arreglado :)
+
+Ejecutando un simple *iwconfig* puedo saber si todo a ido sobre ruedas...y efectivamente me dice que la conexión wireless se asoma por eth2, ahora solo queda probarla...
+La utilidad de gnome: *Network Administration Tool* me reconoce los puntos de acceso inalámbricos cercanos.Simplemente queda conectarme a uno y listo.
+
+Una pregunta Godo ¿Para cuando algo sobre Network Manager?. A ver si me convences para no utilizar la anterior herramienta...:)
+
+Enhorabuena por tu artículo
+
+*** Gracias por apostar por Debian (Godo 26/04/2007 - 20:46)
+Hola.
+
+Me alegro mucho de que hayas apostado por Debian GNU/Linux. Estoy seguro de que no te arrepentirás. No sé si ya lo habré dejado escrito por aquí alguna vez, pero yo he dado muchos tumbos entre diferentes distribuciones hasta que arribé a este puerto, me atrapa especialmente su estabilidad y la maravillosa gestión de paquetes con "apt".
+
+Respecto a "[[http://www.gnome.org/projects/NetworkManager/][Network Manager]]" he de decirte que no lo he probado demasiado, sólo cuando instalé el portátil objeto de este artículo. Yo aposté en su día por [[http://kde.org/][KDE]], por lo que en todo caso utilizaría [[http://kde-apps.org/content/show.php?content=46395][Knetworkmanager]]. No obstante, he de decirte que no me gusta ninguno, quizá por ello soy algo más "hack": lo hago [[http://godest.vivencias.net/node/151][a pelo]].
+
+Muchísimas gracias.
+
+Nos seguimos leyendo. Espero ;-)
+
+*** Y el microfono? (pedro 24/06/2007 - 11:04)
+Muy interesante tu articulo, y explicas todo con mucha facilida. Te cuento que tengo la misma Pc-Laptop que tu y he hecho todo lo que explicas en tu pagina y solo tengo ahora un problema y seguro que tambien muchos lo tendran y se trata del microfono. No me funciona desde hace meses. Tendras algúna idea del porque. Te funcionan a tí el microfono.
+Los detalles no creo que sean necesarios ya que poseo la misma Laptop que tu. Espero que puedas ayudarme, porque tengo tiempo con ese problema y es lo unico que me mantiene a usar el xp aparte. Gracias.
+Linux-Debian por un mundo libre
+
+*** Conquista y reconquista (elradioplanner 13/09/2007 - 09:38)
+Pues sí, en un arrebato debianesco, se ha conquistado para la causa también un Toshiba Satellite del año la polka (no tengo el modelo aquí porque he cedido la maquinita). En principio no ha dado ningún problema, va todo bastante bien... y como diría un ingeniero ;-) si todo va bastante bien es que aún le faltan funcionalidades, de manera que en breve le volveré a meter mano para añadirle cosillas que lo hagan más versátil. Además será una especie de experimento, porque lo está usando mi suegro, que desde luego no es ningún experto en el tema... Y seguramente también acabarán jugando con él mis primillas... ¿Estará Debian hecho a prueba de niños?
+
+Y, por otro lado, Debian ha logrado dos reconquistas. Ayer actualicé el que tenía en mi portátil, un Dell Inspiron 9400. Aquí me sigo peleando con el tema de la tarjeta gráfica: Con el driver "estándar" autodetectado funciona, pero desde luego no con todas sus posibilidades. Y también ayer, reinstalé el de mi PC de casa... como la seda, lo reconoció todo de forma automática, y funciona de maravilla.
+
+¡¡¡Saludillos!!!
+
+*** Sobre el sonido en el amilo (Godo 07/10/2007 - 18:55)
+Hola.
+
+Siento mucho no haberte podido responder antes. La verdad es que recuerdo que me ocurrió exactamente igual que a ti: al principio no me funcionaba el sonido. Yo comprobé que no era capaz de reproducir ni mp3 ni CD de música. El micrófono en sí no lo probé.
+
+Como verás hablo en pasado porque el laptop no es mío sino de unos conocidos, me lo dejaron un fin de semana y... ahora no puedo hacer pruebas porque ya no lo tengo.
+
+Lo que sí puedo aconsejarte es que pruebes a abrir el mezclador de gnome (yo utilizo kde, pero supongo que no será difícil abrir el dispositivo mezclador en gnome -si algún lector, usuario de gnome, puede ayudar a nuestro amigo que, por favor, deje un comentario tras este-, si te aparece un altavoz en la "bandeja del sistema" suele bastar con hacer click con el botón derecho sobre él y elegir "abrir dispositivo de mezclas"). Una vez abierto el mezclador comprueba que no tienes en "mute" (en silencio == desactivado) los diferentes dispositivos de sonido, ¡Y entre ellos el micrófono!
+
+Si necesitas más ayuda, házmelo saber. Intentaré hacer todo lo que pueda.
+
+Sigue apostando por un mundo un poco más libre.
+
+*** Lo que me acabas de (pedro 21/10/2007 - 11:49)
+Lo que me acabas de escribir ya lo he intentado desde hace tiempo, y la verdad el sonido me funciona a la perfección.Y con el microfono lo intente todo, ( mezclador de gnome) tambien desde el terminal el alsamixer. He instalado programas como audacity,,, pero nada,, ademas ahora probe el nuevo Ubuntu 7.10, y ahora tengo "Ext Mic y Int Mic".
+En Alsa Mixer tengo HDA Intel y en OSS Mixer tengo Raeltek ALC880.
+En debian Etch, tenia como motorola ( y en windows motorola figura en mi computadora como modem. Yo creo que en Ubuntu tengo un problema de compatibilidad entre la tarjeta de sonido y el modem. ( pero no se como solucionarlo) ademas en ubuntu desaparecio el motorola. Tengo los ultimos drivers Alsa compilados e instalados.
+De antemano ya me acostumbre al problema, y tengo 10 gigas para windows, que lo uso solo para conversar por Skype (que pena). Pero si conoces alguna solucion,me alegraras de verdad el día. gracias

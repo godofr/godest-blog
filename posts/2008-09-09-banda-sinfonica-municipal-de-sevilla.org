@@ -1,0 +1,29 @@
+#+title: Banda Sinfónica Municipal de Sevilla
+#+date: <2008-09-09 12:34>
+#+author: Godofredo Fdez.
+#+description: Lugar: Teatro Hogar Virgen de los Reyes Hora de comienzo: 20’30 horas. Director Invitado: Enrique García Asensio PATROCINA: La Estepeña Colaboran: * Temas…
+#+filetags: 
+#+options: _:nil
+#+nid: 293
+
+Lugar: Teatro Hogar Virgen de los Reyes
+Hora de comienzo: 20'30 horas. *Director Invitado: Enrique García Asensio* PATROCINA: La Estepeña Colaboran: * Temas Sevillanos
+* Ateneo Popular *I PARTE* =============== - LOS MAESTROS CANTORES (Obertura) R. Wagner (1)
+- NABUCCO ( Coro de esclavos ) G. Verdi
+- LA TRAVIATA ( Preludio -- Acto 2º ) G. Verdi
+- LA FORZA DEL DESTINO (Obertura) G. Verdi *II PARTE* =============== - MARCHA ESLAVA, Op. 31 P. Tschaikowsky
+- ROMEO Y JULIETA Sergei Prokofiev
+
+#+BEGIN_QUOTE
+  1. Montescos y capuletos
+  2. La joven Julieta
+  3. Romeo y Julieta antes de despedirse
+  4. Máscaras
+  5. La Muerte de Tibaldo
+#+END_QUOTE
+
+(1) 125 Aniversario de su fallecimiento.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Banda%20Sinf%C3%B3nica%20Municipal%20de%20Sevilla][Dejar comentario]].
+

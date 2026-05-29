@@ -1,0 +1,15 @@
+#+title: Master en Sistemas de Comunicación e Información para la Seguridad y la Defensa
+#+date: <2012-02-15 16:27>
+#+author: Godofredo Fdez.
+#+description: El día 22 de febrero impartiré en este Máster una ponencia titulada "Seguridad en entornos Cloud". Tenéis más información aquí .
+#+filetags: 
+#+options: _:nil
+#+nid: 467
+
+El día 22 de febrero impartiré en este Máster una ponencia titulada "Seguridad en entornos Cloud".
+
+Tenéis más información [[http://godest.vivencias.net/es/content/seguridad-en-entornos-cloud][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Master%20en%20Sistemas%20de%20Comunicaci%C3%B3n%20e%20Informaci%C3%B3n%20para%20la%20Seguridad%20y%20la%20Defensa][Dejar comentario]].
+

@@ -1,0 +1,49 @@
+#+title: Comprobando el correcto estado de un CD
+#+date: <2007-06-16 23:13>
+#+author: Godofredo Fdez.
+#+description: Algunas veces echamos mano a un CD que teníamos grabado, o nos pasan uno, y al utilizarlo nos da problemas: normalmente la instalación no progresa por algún motivo, o no podemos acceder a alguna de las carpetas que tiene en su interior, o no podemos abrir/ejecutar algún archivo. Entonces, sospechamos sobre el correcto estado del CD.
+#+filetags: GNU/Linux Software
+#+options: _:nil
+#+nid: 242
+
+Algunas veces echamos mano a un CD que teníamos grabado, o nos pasan uno, y al utilizarlo nos da problemas: normalmente la instalación no progresa por algún motivo, o no podemos acceder a alguna de las carpetas que tiene en su interior, o no podemos abrir/ejecutar algún archivo.
+
+Entonces, sospechamos sobre el correcto estado del CD.
+
+Si sabemos lo que contiene, por ejemplo: el CD se "construyó" con la última imagen disponible del [[http://www.sysresccd.org/Download][SystemRescueCd-x86-0.3.6]], podemos consultar en su web el "checksum o [[http://es.wikipedia.org/wiki/Hash][hash]]" [[http://es.wikipedia.org/wiki/MD5][md5]], en nuestro ejemplo: 10e593919f24237de1e6dcfcb3517c50, y comprobar que el "checksum" de nuestro CD es el correcto. De serlo, con toda probabilidad el CD estará bien, por el contrario, si falla, tendremos que perder la esperanza de utilizarlo. Normalmente, esto nos ahorrará mucho tiempo, pues desistiremos de realizar sucesivos intentos fallidos.
+
+La pregunta es, *¿cómo puedo comprobar el "checksum" md5 de un CD?*
+
+Y la respuesta es sencilla: metemos el CD en nuestra lectora, y como root hacemos:
+
+#+begin_example
+[22:34:45(root@surco)~]> dd if=/dev/cdrom | md5sum
+242124+0 records in
+242124+0 records out
+123967488 bytes (124 MB) copied, 40,2209 seconds, 3,1 MB/s
+10e593919f24237de1e6dcfcb3517c50  -
+[22:35:41(root@surco)~]>
+
+#+end_example
+
+Vemos que, en nuestro ejemplo, *¡coincide!*
+
+Justo cuando grabamos un CD podemos ejecutar este comando, y anotar su "checksum" en la etiqueta, así, posteriormente siempre podremos comprobar que todo sigue bien.
+
+También es aconsejable realizar este proceso cada vez que descargamos un archivo de Internet, comprobando que el "checksum" generado en nuestra máquina es el mismo que el que generaron sus autores (y del que nos informan, habitualmente, en su web).
+
+Se haría así:
+
+#+begin_example
+
+[22:35:50(godo@surco)~]> md5sum systemrescuecd-x86-0.3.6.iso
+10e593919f24237de1e6dcfcb3517c50  systemrescuecd-x86-0.3.6.iso
+[22:35:56(godo@surco)~]>
+
+#+end_example
+
+No malgastes tu tiempo, ¡es irrecuperable!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Comprobando%20el%20correcto%20estado%20de%20un%20CD][Dejar comentario]].
+

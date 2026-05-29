@@ -1,0 +1,87 @@
+#+title: En nuestro segundo aniversario...
+#+date: <2006-03-02 19:49>
+#+author: Godofredo Fdez.
+#+description: ...nos hemos cambiado de proveedor. Desde aquí quiero dar las gracias a bitacoras.com por el espacio gratuito que puso a mi disposición, y gracias al cual he ido aprendiendo a manejar este gestor de contenidos ( drupal ) y a convivir con todos vosotros. Hoy comienza una nueva aventura: me convierto en webmaster de verdad. He registrado el dominio vivencias.net y he alquilado un servicio de albergue "profesional" de sitios web. Todo ello ha sido posible por los inestimables consejos y gran ayuda de mi amigo (creo que tras casi dos años de "cibertrato" nos podemos llamar así, a menos que tú pienses lo contrario) Epaminondas Pantulis . Gracias a este artículo suyo he conseguido un nada despreciable descuento en el servicio de alojamiento que, dicho sea de paso, ofrece dreamhost.com .
+#+filetags: Bitácoras
+#+options: _:nil
+#+nid: 106
+
+...nos hemos cambiado de proveedor.
+
+Desde aquí quiero dar las gracias a [[http://bitacoras.com][bitacoras.com]] por el espacio gratuito que puso a mi disposición, y gracias al cual he ido aprendiendo a manejar este gestor de contenidos ([[http://drupal.org][drupal]]) y a convivir con todos vosotros.
+
+Hoy comienza una nueva aventura: me convierto en webmaster de verdad. He registrado el dominio [[http://vivencias.net][vivencias.net]] y he alquilado un servicio de albergue "profesional" de sitios web. Todo ello ha sido posible por los inestimables consejos y gran ayuda de mi amigo (creo que tras casi dos años de "cibertrato" nos podemos llamar así, a menos que tú pienses lo contrario) [[http://hronia.blogalia.com][Epaminondas Pantulis]]. Gracias a [[http://sobrerailes.com/pages/publi_hosting/][este artículo]] suyo he conseguido un nada despreciable descuento en el servicio de alojamiento que, dicho sea de paso, ofrece [[http://dreamhost.com][dreamhost.com]].
+
+El primer subdominio que he creado en vivencias.net ha sido, por supuesto, *godest.vivencias.net* y, tras varios ratos de trabajo, he migrado a él todo el contenido que era albergado en la anterior ubicación.
+
+Todo esto, y otra vez por extrañas casualidades, ha ocurrido en el segundo aniversario de nuestro nacimiento, como podéis comprobar en la fecha del [[http://godest.vivencias.net/node/1][primer artículo]] con el que Esther inauguró [[http://godest.vivencias.net][godest]].
+
+Hoy comienza una nueva etapa, llena de posibilidades y rebosante de ilusiones...
+
+El primer proyecto que ponga en marcha será el rescate de una antigua aventura literaria. Pero cada cosa a su tiempo.
+
+Espero que el cambio sea para mejor.
+
+¿Hay alguien ahí?
+
+* Nota:
+- No olvidéis actualizar vuestros bookmarks o enlaces.
+- Igualmente, el nuevo servicio de suscripciones RSS es: [[http://godest.vivencias.net/rss.xml]]
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=En%20nuestro%20segundo%20aniversario...][Dejar comentario]].
+
+** Comentarios
+
+*** Gracias (Epaminondas Pantulis 03/03/2006 - 19:57)
+Has tardado menos de 24h en tener todo el chiringuito migrado, :-). Cuando puse la promoción del hosting, lo pensé como una forma de ganar algo de dinero recomendando unos servicios profesionales que, en mi opinión, no son malos en absoluto --aunque ya sabemos que nadie da duros a 4 pesetas. Como tal, he tenido algunas altas y he cubierto los gastos para este año de mi dominio, que era lo que me había planteado en un principio.
+
+Sin embargo, no me esperaba que un amigo mio contratase esta promoción. Como comprenderás, una cosa distinta es recomendar algo que no me cabe la menor duda que no está mal a un desconocido (sin mayor compromiso por mi parte) y otra cosa es que no quiero que absolutamente nada te salga mal a tí y que tu experiencia con Dreamhost sea la mejor posible. Así que ya sabes, si tienes alguna cosilla, puede que yo me haya peleado con ella ya.
+
+Así que por aquí seguiremos.
+
+*** Estos lazos... (Godo 04/03/2006 - 11:06)
+...que va tejiendo Internet entre dos personas son los que nos han ido uniendo desde aquel día que me tropecé con tu bitácora, sintonizando con tus temas y con tus puntos de vista, y desde que ¿meses? después te solicité mi primera invitación a gmail, siéndome esta amablemente concedida.
+
+Hemos compartido muchas lecturas, críticas (constructivas, que son las buenas aunque sean malas), hallazgos, conocimiento, etc. y seguimos uniéndonos y ayudándonos. Esto es sacarle partido a Internet. En la "knowledge society" quizá este sea el verdadero conocimiento que uno nunca acaba de completar.
+
+Nos leemos.
+
+*** Aaaaaai Chaaaacho!! (drimakus 10/03/2006 - 09:13)
+"Parafraseando" a Lázaro Carreter (es Lázaro Carreter, ¿no?): Te deseo mucha suerte en esta nueva "singladura", chacho!
+
+PERO, al menos podrías haber puesto un último artículo de despedida en Bitácoras, que yo hubiera vista iso-fasto por RSS, ¿no?. ¡Qué lástima haberme tenido que enterar de ésto por la prensa!
+
+¡Cría cuervos...!
+
+Tu no eres un webmaster, qué va, tú eres un Web Jedi por lo menos!! (Que no es lo mismo que un Web Gedi, eh!
+
+Un abrazo, Micky!!
+
+*** ¡¿Tú por aquí?! (Godo 11/03/2006 - 22:24)
+Hola Jose.
+
+Me alegro mucho de verte por aquí. Ya me enteré que habías sido reclutado para el CPD, espero que estés mucho mejor allí, y muy bien en general.
+
+Sé que me equivoqué. Debía haber hecho lo que tú apuntas: una última noticia en godest.bitacoras.com para que los que estuvieran suscritos por RSS la recibieran. Pensé que si dejaba la bitácora "abierta" la gente podría seguir comentando e insertando contenido... y que en algún momento tendría que decidir cuando cortar y migrar todo al sitio nuevo. Por eso hice un corte brusco y absoluto. Ahora sé que lo podía haber hecho mejor: podía haber escrito la última historia de allí y eliminar la posibilidad de poder seguir añadiendo contenido.
+
+En fin, a lo hecho, pecho.
+
+Y, ¿qué lector RSS utilizas? Si sigues moviéndote en el entorno KDE ;-) ... yo utilizo el "KnewsTicker". Es un applet que se puede añadir a un panel, que a su vez decido si lo tengo desplegado o no en mi pantalla, y que te va pasando los títulares de derecha a izquierda a cierta velocidad... está curioso y es muy sencillo de usar: cuando te interesa el titular, lo pinchas y despliegas el artículo en el "konqueror".
+
+Por cierto, que ya que has recuperado de tu memoria la clave de tu usuario en este rincón, ¿por qué no te escribes algo friki en el foro? ¿por qué no nos presentas tus últimos avances, enredos, etc., en este ilusomundo del Linux?
+
+Un abrazo, amigo.
+
+*** Por aquí, mayormente (drimakus 21/03/2006 - 09:14)
+Pozi, Godo, sigo bastante de cerca tus devaneos drupalisticos!!
+
+La verdad es que tengo ganas de colgar algún artículo friki en tu blog, pero el último enreo en el que me estoy metiendo creo que es demasiado ambicioso, demasiado friki, no es del tipo "COMO ver las letras de las canciones con Amarok en 3 horas".
+
+Me compré hace un par de meses una multifunción Canon muy bonita y a muy buen precio, pero no me aseguré de que estuviera soportada en Linux (de hecho Canon no colabora lo más mínimo). Me estoy pensando el entrar en la comunidad SANE y desarrollar el driver para el scanner de la Canon, empezando a esnifar el tráfico USB entre Windows y la multifunción. Pero todavía no he dado el paso, no sé si le voy a poder dedicar el tiempo necesario, que puede ser mucho.
+
+En cuanto a RSS, estoy utilizando Thunderbird y Kontact, aunque esta tarde probaré el que me sugieres, pa enrear!!
+
+Y en cuanto a lo del CPD, ya te lo comentaré en un emilio!!!
+
+Un abrazo, maese Godo!!

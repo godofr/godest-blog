@@ -1,0 +1,25 @@
+#+title: Configuraciones
+#+date: <2005-11-12 14:05>
+#+author: Godofredo Fdez.
+#+description: En esta página iré añadiendo enlaces desde los cuales podréis descargar y/o ver mis ficheros de configuración de algunas de las aplicaciones, y entornos, que…
+#+filetags: Configuraciones
+#+options: _:nil
+#+nid: 80
+
+En esta página iré añadiendo enlaces desde los cuales podréis descargar y/o ver mis ficheros de configuración de algunas de las aplicaciones, y entornos, que utilizo habitualmente. A su vez, aparece un enlace a este artículo en el menú de navegación situado a vuestra izquierda, que os permitirá acceder a él siempre que lo deseéis (porque, como todos, acabara siendo engullido por el propio devenir de esta bitácora). Aquí están:
+
+#+BEGIN_QUOTE
+  #+BEGIN_EXAMPLE
+    - Akregator (lector de "feeds" para kde): akregator-feeds_xml
+    - Alias para la shell bash: .alias
+    - Editor emacs: .emacs
+    - Shell bash: .bashrc
+    - Xdefaults: .Xdefaults
+  #+END_EXAMPLE
+#+END_QUOTE
+
+Espero que os alumbren nuevas ideas. Yo he aprendido mucho de ver como otros (que saben) hacen las cosas. Ánimo... y a seguir conociendo.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Configuraciones][Dejar comentario]].
+

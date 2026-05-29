@@ -1,0 +1,25 @@
+#+title: Última vulnerabilidad de Internet Explorer y consecuencias
+#+date: <2010-01-23 20:54>
+#+author: Godofredo Fdez.
+#+description: La última vulnerabilidad conocida de Internet Explorer ha supuesto un gran revuelo en todo el ciberespacio, y en parte del espacio real terrestre. No ha sido por ser especialmente maligna (que lo es, pero ya antes ha habido varias de este tipo) sino porque: a) Microsoft conocía el fallo desde hace cinco meses (en algunas fuentes aparece "desde agosto" y en otras "desde septiembre") y no ha sacado hasta hace un par de días (21-01-2010) un parche que lo corrija.
+#+filetags: Programación Seguridad
+#+options: _:nil
+#+nid: 347
+
+La última vulnerabilidad conocida de Internet Explorer ha supuesto un gran revuelo en todo el ciberespacio, y en parte del espacio real terrestre. No ha sido por ser especialmente maligna (que lo es, pero ya antes ha habido varias de este tipo) sino porque:
+
+a) [[http://www.hispasec.com/unaaldia/4107/][Microsoft conocía el fallo desde hace cinco meses]] (en algunas fuentes aparece "desde agosto" y en otras "desde septiembre") y no ha sacado hasta hace un par de días (21-01-2010) un parche que lo corrija.
+
+b) Ha sido utilizada para atacar a varios gigantes de la red (Google y Yahoo) y de la informática (adobe), provocando en el primero un [[http://googleblog.blogspot.com/2010/01/new-approach-to-china.html][cambio de política en China]].
+
+c) [[http://barrapunto.com/articles/10/01/18/0816215.shtml][Alemania y Francia]], y posteriormente Australia, recomiendan el uso de [[http://www.favbrowser.com/tracker/][navegadores alternativos a Internet Explorer]], con el consiguiente daño al producto de Microsoft frente al [[http://www.theregister.co.uk/2010/01/20/opera_and_mozilla_download_uptick_post_ie_warnings/][impresionante disparo de descargas de opera y firefox]].
+
+Y todo esto por un puntero "dislocado" ;-), según leo en [[http://www.genbeta.com/seguridad/analizamos-la-vulnerabilidad-de-internet-explorer-y-sus-consecuencias][esta notica de Genbeta]]. Por eso insistimos tanto a [[http://trajano.us.es/~godo/][nuestros alumnos]], cuando estamos enseñando a programar en C, del especial cuidado que hay que tener con el uso de punteros: se han de hacer apuntar sólo a aquellos datos que queremos tratar y a NULL cuando ya no se utilicen. Soy consciente, claro está, de que todo es mucho más complejo, pero creo que sirve como ejemplo de concepto para aquellos que comienzan a conocer los "secretos de la programación" en una asignatura de primero de carrera.
+
+¡Ay de esta insegura ciencia!
+
+Y de los que trabajamos con ella }:-)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=%C3%9Altima%20vulnerabilidad%20de%20Internet%20Explorer%20y%20consecuencias][Dejar comentario]].
+

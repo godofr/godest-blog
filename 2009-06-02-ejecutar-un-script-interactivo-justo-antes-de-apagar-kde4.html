@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Ya vimos aquí por qué necesito hacer este tipo de cosas. Ahora, que permanezco en GNU/Linux Debian testing y que comienzo a disfrutar del formidable KDE4, veo que lo que explicaba en dicho artículo no funciona.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Ejecutar un script interactivo *justo antes* de apagar KDE4</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">02 jun. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-06-02-ejecutar-un-script-interactivo-justo-antes-de-apagar-kde4.html">Ejecutar un script interactivo *justo antes* de apagar KDE4</a></h1>
+<p>
+Ya vimos <a href="file:///d:/node/183">aquí</a> por qué necesito hacer este tipo de cosas. Ahora, que permanezco en GNU/Linux Debian testing y que comienzo a disfrutar del formidable KDE4, veo que lo que explicaba en dicho artículo no funciona.
+</p>
+
+<p>
+Tras investigar un poquito (con ayuda de google) descubro que en KDE4 se ha sustituido a "dcop" por "dbus", por lo que la llamada a <b>ksmserver</b> para guardar la sesión y apagar el sistema ya no la puedo hacer como la venía haciendo, sino como he leído <a href="http://linux-tipps.blogspot.com/2008/08/standbysuspend-to-ram-with-dbus-in-kde.html">aquí</a> (en una sola línea):
+</p>
+
+<pre class="example" id="org7cc200e">
+
+dbus-send --session --dest=org.kde.ksmserver --type=method_call --print-reply /KSMServer org.kde.KSMServerInterface.logout int32:-1 int32:2 int32:2
+
+</pre>
+
+<p>
+Además he descubierto lo complicado que es añadir una aplicación al panel si esta no figura listada en el "menú K". Si figura listada en dicho menú basta con pinchar sobre ella con el botón derecho del ratón y seleccionar la opción: "Añadir al panel", pero si no&#x2026; ¡es casi imposible!. Así, lo que he hecho para añadir mi script, que hace la copia de seguridad y luego apaga la máquina, es lo siguiente:
+</p>
+
+<p>
+1.- He añadido el script al "menú K" dentro del submenú "Objetos perdidos". ¿Cómo? Pinchamos con el botón derecho del ratón sobre la "K" y elegimos "Editor de menús". Una vez dentro del "Editor de menús" seleccionamos el submenú "Objetos perdidos" (yo ya lo tenía creado y en el residía la aplicación kdiff3), o cualquier otro que nos interese, y pulsamos sobre el icono que hay en la fila superior: "Nuevo elemento". Ponemos el nombre del "nuevo elemento", pulsamos aceptar, buscamos el icono que más nos guste y la "orden", es decir el script, navegando por los directorios de nuestra máquina hasta seleccionarlo.
+2.- Una vez añadida dicha aplicación/script al "menú K" es muy fácil añadirla al panel: navegamos hasta ella, la pinchamos con el botón derecho del ratón y seleccionamos: "Añadir al panel".
+</p>
+
+<p>
+¡Listo!<br>
+</p>
+<div id="outline-container-orga4754f9" class="outline-2">
+<h2 id="orga4754f9">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-orga4754f9">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/Standby-suspend-kde4.txt">Standby-suspend-kde4.txt</a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Ejecutar%20un%20script%20interactivo%20%2Ajusto%20antes%2A%20de%20apagar%20KDE4">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

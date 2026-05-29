@@ -1,0 +1,18 @@
+#+title: Evento Mayor de María
+#+date: <2006-04-12 12:02>
+#+author: Pili Cantautora
+#+description: Descripción: Evento Mayor de María. Para más datos, preguntar también a la susodicha! Enhorabuena chicos!
+#+filetags: 
+#+options: _:nil
+#+nid: 124
+
+Descripción:
+Evento Mayor de María. Para más datos, preguntar también a la susodicha!
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+Enhorabuena chicos!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Evento%20Mayor%20de%20Mar%C3%ADa][Dejar comentario]].
+

@@ -1,0 +1,71 @@
+#+title: Comparando versiones: Diffuse y, sobre todo, Meld
+#+date: <2015-05-29 18:33>
+#+author: Godofredo Fdez.
+#+description: --- ACTUALIZADO 08-03-2020: últimamente la herramienta que vengo utilizando para comparar no sólo archivos sino también directorios es Meld . Hablaba de ella…
+#+filetags: GNU/Linux Software
+#+options: _:nil
+#+nid: 529
+
+---
+ACTUALIZADO 08-03-2020: últimamente la herramienta que vengo utilizando para comparar no sólo archivos sino también directorios es [[https://meldmerge.org/][Meld]]. Hablaba de ella en el artículo que sigue, pero no la instalaba por ocupar "mucho espacio". Ahora ese "mucho espacio" se ha relativizado, por el mayor tamaño de los discos instalados en mis máquinas. Así que le he dado una oportunidad. Existen también versiones para Windows y viene como paquete instalable en las principales distribuciones de GNU/Linux. Es realmente buena. Os la aconsejo.
+---
+
+Los que trabajamos frecuentemente realizando diferentes tipos de configuraciones, tanto en electrónica de red como en sistemas finales, estamos acostumbrados a escudriñar ficheros de texto buscando información relevante: qué interfaces hay activos en un determinado conmutador, por qué funciona una configuración en un puerto y no en otro si “supuestamente” son iguales, qué rutas están intercambiando los encaminadores, qué opciones hay configuradas en un servidor web, etc.
+
+Además, es habitual tener que comparar diferentes versiones de un mismo fichero de configuración pues, tras los cambios oportunos para habilitar alguna nueva funcionalidad, actualizaciones de software, etc., suelen ocurrir errores que es necesario depurar (¿qué habré tocado que antes funcionaba y ahora no?), o simplemente queremos ver qué nuevas opciones están disponibles, cuáles han cambiado de una versión a otra o comparar una plantilla genérica con el resultado de haber sido personalizada para ver qué hemos cambiado y qué no.
+
+Escribo esta entrada en mi blog tras haberme tenido que enfrentar a un disco duro con sectores defectuosos que estaban (y están) afectando a los archivos de mi máquina virtual Debian (ya os contaré por qué “virtualicé” [[http://godest.vivencias.net/content/lanzamiento-de-debian-70-wheezy][mi Debian]]). Aunque suelo tener una copia de seguridad de la misma, es inevitable el desfase entre la copia de backup, que recoge el estado de la máquina de hace varios meses, y la versión de trabajo. Así, he tenido que realizar diversos ajustes para intentar llevar dicha copia de seguridad hasta el mismo estado que la que ha comenzado a fallar (he tenido suerte pues aún no ha fallado del todo y me deja arrancar y realizar algunas operaciones).
+
+Lo primero que he realizado ha sido la comprobación de qué paquetes tenía instalados en la copia de seguridad y cuáles en la de trabajo. Para ello he ejecutado este comando en una y en la otra:
+
+#+begin_example
+
+(En_producción)# dpkg --list > paquetes-instalados-en-produccion
+(Backup)# dpkg --list > paquetes-instalados-backup
+
+#+end_example
+
+Después he comparado con la excelente utilidad Diffuse ambos ficheros, obteniendo una imagen en pantalla como esta:
+
+#+begin_export html
+<a href="/static/img/diffuse-en-linux.png" rel="lightbox"><img align="middle" alt="diffuse-en-linux" border="0" class="image image-preview " height="516" width="645"  src="/static/img/diffuse-en-linux.png" title="diffuse-en-linux" hspace="10" vspace="10"  /></a>
+#+end_export
+
+Con Diffuse es posible recorrer los ficheros de forma síncrona, viendo los dos a la vez, y apreciando de forma rápida -- muy visual -- las diferencias entre uno y otro: donde aparece una línea que no estaba (observar el primer resaltado) o donde una misma línea aparece modificada (resaltado de la línea de “fuse”). Y lo que más me gusta: en el lado derecho aparecen dos líneas verticales, correspondientes a sendos ficheros, donde se resaltan las zonas de diferencias en los archivos: con línea gris lo que no hay en uno y sí (con línea naranja contigua) en el otro; y una ventanita que te indica la zona del fichero que estás visualizando. En fin, a mí me ayuda mucho a agilizar el trabajo yendo directamente al grano y, así, elevar mi productividad.
+
+Llegué a [[http://diffuse.sourceforge.net/][Diffuse]] tras [[http://www.noticiasubuntu.com/diffuse-una-herramienta-para-unir-y-comparar-archivos-de-textos/][buscar un poco]] en Google. También encontré [[https://enboliviacom.wordpress.com/2013/11/21/comparar-archivos-y-carpetas-con-meld/][esta otra]] utilidad: [[http://meldmerge.org/][Meld]], mucho más potente como podréis observar en sus capturas de pantalla. Pero mientras que Diffuse una vez instalada ocupa (en mi distro) 1MB, el tamaño requerido para la instalación de Meld es de: 200MB. Lo que me hizo inclinarme por la primera pues siempre intento mantener la máquina virtual lo más ligera posible. Inigualable relación calidad/precio ;-)
+
+Además existe versión para Windows con “idéntico” interfaz, lo que ayuda a aprovechar el efecto experiencia.
+
+#+begin_export html
+<a href="/static/img/diffuse-en-windows.png" rel="lightbox"><img align="middle" alt="diffuse-en-windows" border="0" class="image image-preview " height="492" width="645"  src="/static/img/diffuse-en-windows.png" title="diffuse-en-windows" hspace="10" vspace="10"  /></a>
+#+end_export
+
+Sed creativos: esto puede ser útil para un escritor que, por ejemplo, quisiera ver qué ha ido cambiando entre una versión y otra de un determinado capítulo de su novela. Todo texto que “evolucione” y necesite ser comparado es susceptible de ser devorado por Diffuse.
+
+Espero que os sea útil.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Comparando%20versiones%3A%20Diffuse%20y%2C%20sobre%20todo%2C%20Meld][Dejar comentario]].
+
+** Comentarios
+
+*** Alternativas (Félix Prado 30/05/2015 - 20:11)
+Buenas Godo,
+
+Gracias por la recomendación, no conocía este programa aunque sí otros muy parecidos que te pongo por aquí por si algún día te pueden ser útiles:
+
+* WinMerge: este es un clásico que por lo que intuyo se parece muy mucho a Diffuse, aunque solo es para Windows. [http://winmerge.org]
+
+* Beyond Compare: este es un software mucho más versátil que no solo compara archivos "en texto plano", sino archivos en algunos formatos, permite comparar y sincronizar el contenido de carpetas. La versión pro creo que deja comparar y mezclar el contenido de 3 ficheros. Este sí es multiplataforma [http://www.scootersoftware.com/download.php]
+
+Espero que te puedan ser útiles :)
+
+*** Utilicé WinMerge (Godofredo Fdez. 08/06/2015 - 17:41)
+Gracias, Félix.
+
+Pues ahora que lo nombras utilicé "WinMerge" hace tiempo, pero lo perdería en alguna reinstalación y acabé olvidándolo ;-(
+
+Beyond Compare tiene muy buena pinta, veo que tiene versión libre y versión pro, de pago. Permite comparar directorios/carpetas, y más de dos documentos... me atrevo a decir, sin haber utilizado ninguno, que es bastante parecido a Meld. Es bueno tener a ambos en la recámara, listos para acudir a ellos en caso de necesidad.
+
+¡Seguimos en contacto! Y gracias por leerme.

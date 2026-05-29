@@ -1,0 +1,77 @@
+#+title: ¿Realidad o cuento?
+#+date: <2007-12-06 14:43>
+#+author: Godofredo Fdez.
+#+description: Seguro que más de uno de los que lean este artículo ha recibido alguna vez un mail como este: URGENTISIMOOOOOOOOOOOO !!! POR FAVOR, HAZ CIRCULAR ESTE AVISO A TUS AMISTADES, FAMILIA, CONTACTOS !!! En los próximos días, debes estar atent@: No abras ningún mensaje con un archivo anexo llamado: Invitación, independientemente de quien te lo envíe. Es un virus que abre una antorcha olímpica que quema todo el disco duro C de la computadora. Este virus vendrá de una persona conocida que te tenia en su lista de direcciones.
+#+filetags: Seguridad Software
+#+options: _:nil
+#+nid: 267
+
+Seguro que más de uno de los que lean este artículo ha recibido alguna vez un mail como este:
+
+#+BEGIN_EXAMPLE
+  URGENTISIMOOOOOOOOOOOO !!!
+
+  POR FAVOR, HAZ CIRCULAR ESTE AVISO A TUS AMISTADES, FAMILIA,
+
+  CONTACTOS !!!
+
+  En los próximos días, debes estar atent@: No abras ningún mensaje con
+
+  un archivo anexo llamado:  Invitación, independientemente de quien te lo envíe. 
+
+  Es un virus que abre   una antorcha olímpica que quema todo el disco 
+
+  duro C de la computadora.
+
+  Este virus vendrá de una persona conocida que te tenia en su lista de direcciones.
+
+  Es por eso que debes enviar este mensaje a todos tus contactos .
+
+  Es preferible recibir 25 veces este correo que recibir el virus y
+
+  abrirlo. Si recibes el mensaje llamado:   Invitación , aunque sea
+
+  enviado por un amigo, no lo abras y apaga tu maquina inmediatamente .
+
+  Es el peor virus anunciado por CNN.  Un nuevo virus ha sido
+
+  descubierto recientemente que ha sido clasificado por Microsoft como
+
+  el virus mas destructivo que haya existido. Este virus fue
+
+  descubierto ayer por la tarde por Mc Afee. Y no hay arreglo aun para
+
+  esta clase de virus. Este virus destruye simplemente el Sector Zero
+
+  del Disco Duro, donde la información vital de su función es guardada.
+
+  ENVIA ESTE E-MAIL A QUIENES CONOZCAS. COPIA ESTE CORREO A UNO 
+
+  NUEVO Y MANDALO A TODOS TUS AMIGOS.
+
+  RECUERDA:
+
+  SI LO ENVIAS A ELLOS, NOS BENEFICIAS A TODOS.
+#+END_EXAMPLE
+
+Y seguro que jamás ha recibido el citado espécimen malicioso que ha destrozado su ordenador.
+
+Quizá sean los posos que en mi dejó [[http://es.wikipedia.org/wiki/Ren%C3%A9_Descartes][Descartes]], el cual, a mediados del siglo XVII e imbuido en la filosofía racionalista de la época, en su análisis hacia la verdad primera, esa piedra angular sobre la cual construir toda su filosofía, nos enseño a dudar de todo: las falacias de los sentidos, la imposibilidad de distinguir la vigilia del sueño, y ese espíritu maligno "de extremado poder e inteligencia que pone todo su empeño en inducirnos a error (Meditaciones, I)". Y es de agradecer ese "aprendizaje" del concepto de "duda razonada" que despierta el sentido crítico (a la vez que hemos de rechazar esa duda que tiende a igualar a todas las opiniones y que acaba derivando en una rebeldía sin causa).
+
+A este tipo de mensajes se les denomina, habitualmente en Internet, *Hoax*, que en inglés significa engaño o bulo, e incluyen no sólo falsas leyendas sobre virus sino sobre casi todo: sexo, fama, dinero fácil, etc. Los objetivos buscados por estos bulos vienen claramente explicados en [[http://es.wikipedia.org/wiki/Hoax][su página de Wikipedia]], cuya lectura os recomiendo. Simplemente, me gustaría recoger aquí el que yo creo que es el principal: la recogida de direcciones de correo electrónico, por el simple hecho de ser reenviados de unos a otros (¡como no, a nuestros más allegados contactos no queremos que le ocurra nada malo!), las cuales, a posteriori, serán utilizadas para envío indiscriminado de spam.
+
+Respecto a las que se refieren a virus, y si uno está acostumbrado a dudar, es fácil detectarlas y confirmar las sospechas: basta una simple búsqueda en google con los términos apropiados, en este caso: [[http://www.google.es/search?q=alerta+virus+invitacion&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:es-ES:official&client=firefox-a][alerta virus invitacion]].
+
+También podéis visitar páginas como estas: [[http://www.inteco.es/Seguridad][alerta-antivirus.es]], y [[http://www.vsantivirus.com/][vsantivirus]], donde encontraréis bastante información sobre las últimas amenazas y falsas alarmas.
+
+Obviamente, todos los que utilicéis sistemas operativos Windows, sin más remedio por la gran afluencia, mantened un [[http://www.google.es/search?q=antivirus+gratis+uso+personal&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:es-ES:official&client=firefox-a][antivirus actualizado]] en vuestro PC. Y acostumbraros a visitar, de vez en cuando, algún [[http://www.google.es/search?q=antivirus+online&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:es-ES:official&client=firefox-a][servicio de escaneo on-line]].
+
+Por último, los más "profesionales" e inquietos que sospechen que un determinado archivo puede contener virus, pueden utilizar este servicio, [[http://www.virustotal.com/es/][Virus Total]], donde, tras enviar la muestra, esta es analizada por varios motores antivirus, haciéndonos llegar un informe de las amenazas detectadas por correo electrónico .
+
+Recuerda: intenta no contribuir a la propagación de estos bulos. Por tu salud, y la de Internet.
+
+Crítica siempre alerta.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=%C2%BFRealidad%20o%20cuento%3F][Dejar comentario]].
+

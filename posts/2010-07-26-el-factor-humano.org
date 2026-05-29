@@ -1,0 +1,24 @@
+#+title: El factor humano
+#+date: <2010-07-26 22:07>
+#+author: Godofredo Fdez.
+#+description: A continuación os dejo el artículo número 7 que, continuando mi línea de colaboración, he publicado en el blog del Colegio Oficial de Ingenieros de…
+#+filetags: COITAOC LinkedIn Seguridad
+#+options: _:nil
+#+nid: 359
+
+A continuación os dejo el artículo número *7* que, continuando mi línea de colaboración, he publicado en el [[http://blog.coitaoc.org/][blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta]]. Divulgad que algo queda ;-).
+
+No es raro encontrar en toda la literatura existente sobre seguridad de la información en los diferentes contextos (doméstico, empresarial), la idea que señala al factor humano como el eslabón más débil de la cadena, metáfora que recoge las diferentes componentes del proceso de seguridad como si de eslabones se trataran de la misma: gestión del hardware, gestión del software, aspectos organizativos, gestión de incidentes, adecuación legal... sin entrar en detalles y abusando del término “gestión”. Asimismo, tampoco es raro encontrar la solución que, como si de algún hechizo mágico se tratara, todos repetimos para fortalecer ese eslabón más débil: formación.
+Y, aunque en los últimos años han aflorado algunos “máster de seguridad”, basta una búsqueda en google para ver que los más antiguos rondan los 10 años y casi todos ellos se imparten en Madrid. También es verdad que de los pocos que aparecen, menos aún, a mi modo de ver, están bien estructurados: casi todos cargan demasiado las tintas en los aspectos técnicos y minimizan la parte dedicada a la gestión, y al sentido común que permite alinear la seguridad y el negocio, entendiendo negocio como el objetivo último de la empresa u organización. Ese que no se puede sacrificar en pos de la seguridad y que algunos olvidan.
+
+Durante este mes de julio he participado en la selección de un grupo de personas que trabajarán en un proyecto donde, entre otras muchas tareas relacionadas con la seguridad, se dedicarán a gestionar incidentes de seguridad. Buscábamos dos tipos de características en ellos: tenían que tener suficiente base técnica para entender lo que pudiera ocurrir y, aún más importante si cabe, las suficientes destrezas o habilidades para poder relacionarse con diferentes tipos de interlocutores, más o menos técnicos.
+
+Entre la “base técnica” buscábamos conocimientos de teoría y diseño de redes, de soluciones de seguridad, de los diferentes componentes que las conforman, de amenazas típicas (desde el malware a la ingeniería social), de vulnerabilidades, su explotación y uso, de sistemas Windows y Unix, de diferentes tipos de ataques y herramientas para llevarlos a cabo y, en general, de toda la nomenclatura que se ha ido acumulando: phising, botnets, pharming, DDoS, etc.
+
+La principal conclusión que hemos obtenido todos los que hemos participado en este proceso ha sido que, aunque hemos entrevistado a personas procedentes de diferentes titulaciones (Ingeniería Informática, Ingeniería de Telecomunicación, Ciclos Formativos de Grado Superior, etc.) todos compartían una misma característica: el 80% de los conocimientos que buscábamos los habían adquirido por su cuenta, autoformándose, y sólo el 20% de los mismos habían sido adquiridos en su titulación (abusando ahora del principio de Pareto). Afirmándose así la idea con la que abríamos este artículo que, a su vez, ha sido ratificada por los alumnos y profesionales con los que compartí una ponencia, también este mes de julio, en los "[[http://www.ujaen.es/serv/continua/cursosverano/revistacarolina2010_tres.pdf][XI Cursos universitarios de verano Intendente Olavide]]" de la Universidad de Jaén.
+
+Pero, ¿estamos haciendo lo suficiente por fortalecer ese eslabón más débil? En Andalucía es difícil encontrar profesionales con conocimientos en seguridad de la información, y aún más a profesionales con experiencia. Siendo optimista, y creyendo que ser conscientes del problema es el primer paso hacia su solución, comienzo a observar algunos movimientos en los planes de estudio adaptados a Bolonia que se aproximan a lo necesario. Pero son muy pequeños e insuficientes... veámoslos como un primer paso para conseguir algo más. Mientras tanto, sigamos autoformándonos.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=El%20factor%20humano][Dejar comentario]].
+

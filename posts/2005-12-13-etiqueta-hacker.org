@@ -1,0 +1,13 @@
+#+title: Etiqueta Hacker
+#+date: <2005-12-13 09:33>
+#+author: Godofredo Fdez.
+#+description: Una pequeña etiqueta que simboliza el compartir los rasgos de la cultura hacker .
+#+filetags: Logos
+#+options: _:nil
+#+nid: 91
+
+Una pequeña etiqueta que simboliza el compartir los rasgos de la [[http://www.catb.org/~esr/faqs/hacker-howto.html][cultura hacker]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Etiqueta%20Hacker][Dejar comentario]].
+

@@ -1,0 +1,55 @@
+#+title: Acelerando nuestro firefox
+#+date: <2006-02-06 23:27>
+#+author: Godofredo Fdez.
+#+description: Hace tiempo, un mes y medio más o menos, leí esto . Y justo tras finalizar de leerlo configuré mi Firefox para que volara ... y voló. Ahora lo comparto con todos vosotros, y no lo he hecho antes porque creía que el truco no podía estar exento de cierta inestabilidad (que hiciera apagarse el navegador, etc.). Tras este periodo de pruebas no ha ocurrido nada, así que a disfrutar. Método para acelerar a nuestro querido amigo : 0.- Pulsa ctrl-t y abre una nueva pestaña. 1.- Teclea en la barra de direcciones: about:config (pulsa intro)
+#+filetags: GNU/Linux Software
+#+options: _:nil
+#+nid: 99
+
+Hace tiempo, un mes y medio más o menos, leí [[http://digg.com/news/technology/Make_Firefox_Start_Faster_][esto]]. Y justo tras finalizar de leerlo configuré mi *Firefox* para que volara... y voló.
+
+Ahora lo comparto con todos vosotros, y no lo he hecho antes porque creía que el truco no podía estar exento de cierta inestabilidad (que hiciera apagarse el navegador, etc.). Tras este periodo de pruebas no ha ocurrido nada, así que a disfrutar.
+
+Método para acelerar a nuestro querido amigo:
+
+0.- Pulsa ctrl-t y abre una nueva pestaña.
+
+1.- Teclea en la barra de direcciones: about:config (pulsa intro)
+
+2.- Aparece una tabla con cuatro columnas: Preference Name, Status, Type y Value. En la primera de ellas busca los siguientes nombres:
+
+#+BEGIN_QUOTE
+  * network.http.pipelining (en la columna "value" aparecerá "false", pulsa dos veces con el ratón sobre él para que cambie a "true")
+  * network.http.proxy.pipelining (haz lo mismo)
+  * network.http.pipelining.maxrequests (en la columna "value" aparecerá "4", pulsa dos veces y pon "30")
+#+END_QUOTE
+
+3.- Ahora viene algo más difícil, vamos a añadir una línea a la tabla de valores. En un lugar en blanco, en el fondo de la tabla, alejado de cualquier "letra existente", pulsa con el botón derecho del ratón, del menú desplegable selecciona "New-> Integer". En el cuadro de diálogo que te solicita un "Name" pon nglayout.initialpaint.delay (pulsa intro), aparecerá un nuevo cuatro que te solicita un "Value", pon 0 (cero) (pulsa intro). Observa que aparece una nueva fila con lo que acabas de introducir.
+
+4.- Cierra la pestaña. Apaga el navegador... y vuélvelo a abrir para que coja los cambios.
+
+5.- VUEEEEEEEEEELA vuela vuela vuela\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Acelerando%20nuestro%20firefox][Dejar comentario]].
+
+** Comentarios
+
+*** Dicho y hecho (jibseijo 09/03/2006 - 17:19)
+Qué chulada, esto funciona de verdad!! Creo que es lo que por fin hará que deje de usar Explorer de una vez por todas, que cuesta tanto dejarlo después de estar tan acostumbrado...
+
+Muy útil el consejo, Godo :)
+-----------------------------------------
+Dime cuánto tiempo queda,
+qué hago, aparte del vago,
+finjo estar de acuerdo,
+es un milagro que siga estando cuerdo
+
+*** No imaginaba... (Godo 11/03/2006 - 22:30)
+...que costaba más dejar el "explorer" que, a algunos, el tabaco. ;-)
+
+Y no imaginaba que tú aún seguías utilizándolo. Un amante de la libertad y de lo alternativo, ¿cómo sobrevive sin ser un aliado de este "zorro de fuego"?
+
+Ahora tendré que descubrir que aún sigues con Windows... y tú ahí, tan pancho, escuchando al Joaqui :-D
+
+En fin... me alegro de que te haya gustado.

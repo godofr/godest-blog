@@ -1,0 +1,84 @@
+#+title: Seguridad de la información. Algunos conceptos básicos.
+#+date: <2009-12-14 01:27>
+#+author: Godofredo Fdez.
+#+description: Continuando mi colaboración con el blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta , hoy he presentado "los…
+#+filetags: COITAOC LinkedIn Seguridad
+#+options: _:nil
+#+nid: 344
+
+Continuando mi colaboración con el [[http://blog.coitaoc.org/][blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta]], hoy he presentado "los conceptos básicos" que sirven de cimientos al más amplio: "seguridad de la información". Asimismo, recojo al final un consejo práctico que nos ayuda a evitar infecciones a través de dispositivos USB, las más comunes hoy en día.
+
+Os dejo a continuación la que ha sido mi 2ª colaboración.
+
+Pensando en el carácter público de este blog, y así, en la diversidad de conocimientos que atesorarán los distintos lectores que nos visiten, he pensado que, tras el primer artículo dedicado a la “seguridad de la información” que publiqué a modo de presentación, es conveniente proceder en este a fijar algunos conceptos muy básicos que ayudarán a comprender los cimientos del tema que nos ocupa.
+Intentaremos, pues, responder a la siguiente pregunta: ¿qué encierra el concepto “seguridad de la información”?, o formulada de otro modo: ¿sobre qué conceptos básicos se construye?
+
+El Diccionario de la Real Academia Española (DRAE) recoge, al menos, estas cuatro acepciones del adjetivo seguro:
+
+#+BEGIN_QUOTE
+  1. adj. Libre y exento de todo peligro, daño o riesgo.
+
+  2. adj. Cierto, indubitable y en cierta manera infalible.
+
+  3. adj. Firme, constante y que no está en peligro de faltar o caerse.
+
+  4. adj. No sospechoso.
+#+END_QUOTE
+
+En el marco de la seguridad de la información utilizamos una serie de conceptos que identifican cada una de estas cualidades en los diferentes elementos utilizados. Así, definimos:
+*Integridad*: propiedad que busca mantener la información libre de modificaciones realizadas por personal no autorizado.
+
+*Confidencialidad*: propiedad que garantiza el uso de la información sólo por personal autorizado.
+
+*Disponibilidad*: propiedad de la información de estar accesible a los usuarios de la misma.
+
+*No repudio (irrefutabilidad)*: esta propiedad liga la información a un determinado autor, evitando el rechazo de su autoría.
+
+Por tanto, *podremos decir que algo es tanto más seguro cuanto mayor grado de estas propiedades atesore*, es decir, cuanto más íntegro, más confidencial, más disponible y más irrefutable sea.
+
+Un enfoque práctico, que nos ayude a obtener el objetivo buscado, ha de comenzar con la siguiente pregunta: ¿qué necesitamos proteger y qué se debe garantizar?, para que una vez identificados estos elementos continuemos preguntándonos: ¿de qué necesitamos protegerlo?, cuya respuesta nos revelará las diversas vulnerabilidades y amenazas que podrán poner en riesgo alguna de las propiedades descritas (integridad, confidencialidad, disponibilidad y no repudio), finalizando el ciclo con la pregunta: ¿cómo vamos a protegerlo?
+
+*La seguridad así enfocada pasa de ser un estado*, que en un determinado momento califica a nuestra información, *a ser un proceso continuo que requiere ser evaluado, adaptado y mejorado constantemente*, puesto que las respuestas a las tres preguntas que nos hemos hecho van evolucionando con el tiempo, y el cambio de sólo alguna de ellas muy probablemente implique la adaptación del resto. Por ejemplo, si aparece una nueva amenaza hemos de encontrar un nuevo mecanismo de defensa, si aparece un nuevo elemento a proteger, o cambia su entorno, sus usuarios o su tecnología, hemos de emprender de nuevo el camino que nos llevará a recorrer las amenazas que sobre él se ciernen y los mecanismos de defensa que tendríamos que poner en marcha.
+
+Desde el punto de vista *estratégico* de la seguridad de la información en una organización, toda planificación comenzará por un análisis de riesgos cuyos principales resultados serán: tipos de activos con los que cuenta la organización (inventario), qué vulnerabilidades incorporan, qué amenazas se ciernen sobre dichos activos, y qué salvaguardas se han de considerar para proteger dichos activos. Esto sería un análisis cualitativo, que es el que mayoritariamente se practica. Un análisis cuantitativo intentará obtener una magnitud que nos informe del estado de nuestros activos. Suelen estar asociadas a los conceptos de “Esperanza de Pérdida Anual” o “Coste Anual Estimado”, y su cálculo consiste en multiplicar la “pérdida potencial” por la “probabilidad de que ocurra”. La gestión de todo este proceso ha de ser continua en el tiempo, como ya indicábamos en el párrafo anterior.
+
+Y como en todos mis artículos intentaré terminar con una sección más *operativa* y práctica, tanto para las organizaciones como para los usuarios domésticos, me gustaría despedirme destacando un secreto a voces recogido en el [[http://www.eset.es/index.php?option=com_content&task=view&id=263&Itemid=][último informe]] que sobre la seguridad ha elaborado la compañía ESET (especializada en software de protección: antivirus, antispam, etc.): la principal vía de contagio de malware entre ordenadores es el autoarranque de ficheros contenidos en las memorias USB. Personalmente en todos mis ordenadores tengo deshabilitado el autoarranque pues creo que aporta muy poco para el gran riesgo que supone.
+
+¿Cómo se hace?
+
+*En Windows XP*:
+
+1. Abrimos un bloc de notas y copiamos lo siguiente (tres líneas independientes):
+
+#+BEGIN_QUOTE
+  Windows Registry Editor Version 5.00
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer]
+
+  “NoDriveTypeAutoRun”=dword:000000b5
+#+END_QUOTE
+
+2. Guardamos el archivo en algún lugar de nuestro ordenador con el nombre Quitar_Autorun.reg
+3. Hacemos doble clic en el archivo que hemos creado y saldrá una ventanita en la que se nos pregunta si estamos seguros de querer agregar la información de dicho archivo al registro de Windows.
+
+4. Hacemos clic en “Sí” y se termina el proceso.
+
+*Para Windows Vista*:
+
+1. y 2. Son los mismos pasos que los descritos para Windows XP.
+
+3. Hacemos clic con el botón derecho del ratón en el archivo que hemos creado y seleccionamos “Combinar”.
+
+4. Debemos “darle permiso” a las ventanas que nos lo soliciten y después saldrá una ventanita n la que se nos pregunta si estamos seguros de querer agregar la información de dicho archivo al registro de Windows.
+
+5. Hacemos clic en “Sí” y se termina el proceso.
+
+*Para GNU/Linux:*
+
+Ya han terminado ;-) Duerman tranquilos.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20de%20la%20informaci%C3%B3n.%20Algunos%20conceptos%20b%C3%A1sicos.][Dejar comentario]].
+

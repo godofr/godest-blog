@@ -1,0 +1,26 @@
+#+title: La lucha por la dignidad
+#+date: <2007-01-13 19:38>
+#+author: Godofredo Fdez.
+#+description: El pasado verano leí este libro, escrito por José A. Marina y María de la Válgoma: "La lucha por la dignidad" , entonces asumí la deuda con los lectores de…
+#+filetags: Activismo Libros Pensamiento
+#+options: _:nil
+#+nid: 192
+
+#+begin_export html
+<a href="http://www.anagrama-ed.es/titulo/CM_384" target="top"><img width="100" height="151" border="0" align="right" hspace="10" vspace="10" src="/static/img/la_lucha_por_la_dignidad.jpg"></a>
+#+end_export
+El pasado verano leí este libro, escrito por José A. Marina y María de la Válgoma: *"La lucha por la dignidad"*, entonces asumí la deuda con los lectores de este sitio web, que aún persiste, de hacer un artículo entrando en mayor detalle en los contenidos del mismo. La verdad es que por querer hacerlo bien aún no lo he hecho (un claro ejemplo de bloqueo ocasionado por el espíritu de perfeccionamiento).
+
+Pero además de hacerme asumir esa deuda, el libro sembró en mí la semilla de la propia lucha que su título proclama. Me era difícil tras leer la historia de los derechos humanos, de la construcción del hombre como ser que sigue buscando la conquista de un mayor grado de humanización, permanecer impasible ante tanta injusticia y decadencia como aún pervive en nuestro bonito planeta (o lo que va quedando de él, que esto es otro tema).
+
+Desde el día 9 de enero de este año (2007) [[file:190][soy socio]] de [[http://www.es.amnesty.org/que-es-ai/quienes-somos/][Amnisitía Internacional]]. He elegido esta organización por ser una de las que muestran mayor independencia política en sus actuaciones, ya que pienso que, en muchos casos, es el poder establecido el causante de las mayores violaciones de los derechos humanos.
+
+Quiero aprovechar este artículo para inaugurar una nueva entrada en nuestra taxonomía de contenidos: "[[http://godest.vivencias.net/taxonomy/term/19][Activismo]]", la cual señalará, a partir de ahora, artículos en este rincón que requieran vuestra colaboración en la lucha por conseguir un mundo mejor. *Un mundo feliz*.
+
+Y así, utilizo esta despedida para hacer [[http://www.es.amnesty.org/actua/acciones/irak-pena-muerte/][la primera petición]].
+
+Hay cosas por las que merece la pena luchar. Y esta creo que es la más importante.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=La%20lucha%20por%20la%20dignidad][Dejar comentario]].
+

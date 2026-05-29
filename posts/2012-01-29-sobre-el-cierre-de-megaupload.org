@@ -1,0 +1,75 @@
+#+title: Sobre el cierre de Megaupload
+#+date: <2012-01-29 13:30>
+#+author: Godofredo Fdez.
+#+description: El cierre de Megaupload se produjo hace diez días. Desde entonces he estado atento a la evolución. He leído casi todo lo que se ha cruzado ante mis ojos y he…
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 454
+
+#+begin_export html
+<img src="/static/img/cierre-megaupload.png" alt="Cierre de Megaupload" title="Cierre de Megaupload"  class="image image-preview " width="200" height="201" border="0" align="right" hspace="10" vspace="10" />
+#+end_export
+El cierre de Megaupload se produjo hace diez días. Desde entonces he estado atento a la evolución. [[http://www.google.es/search?hl=es&gl=es&tbm=nws&btnmeta_news_search=1&q=cierre+de+megaupload&oq=cierre+de+megaupload&aq=f&aqi=d1d-o1&aql=&gs_sm=e&gs_upl=3964l9060l0l9237l20l18l0l15l15l0l137l392l0.3l3l0][He leído casi todo lo que se ha cruzado ante mis ojos]] y he reflexionado intentando adoptar diferentes puntos de vista: como consumidor, como posible autor, como intermediario, etc.
+
+*Creo que toda persona tiene derecho a vivir de su trabajo, de aquellas tareas que culmina con su esfuerzo y que nos resultan útiles a los demás*. De esta intersección surge el mercado, posibilitando el intercambio de bienes y servicios a cambio de dinero (habitualmente). Las “técnicas de fijación de precio” las dejaré para otro día, pero obviamente no todas son iguales de éticas. [[http://www.elmundo.es/blogs/elmundo/jaqueperpetuo/2012/01/20/una-pagina-perdida-una-inmensa.html][Y contra los abusos de unos surge el mercado negro de otros]].
+
+Ya tenemos alguien que oferta algo, llamémosle autor/productor/prestador del servicio, y alguien que está dispuesto a pagar por ese algo, llamémosle consumidor. Entre estos dos extremos se sitúa el canal: suma de intermediarios entre el productor y el consumidor. Hay mercados donde el canal es más largo (suele ocurrir con los productos de consumo habitual -véase la presión en precios que soportan agricultores, ganaderos y pescadores-) y otros donde directamente no existe (ejemplos típicos han venido siendo los productos de venta directa: Avon, Thermomix, etc.).
+
+La distribución de obras culturales encajaba, hasta hoy, en el modelo de canal largo: el grupo de música que has formado con cuatro amigos ha de buscarse una compañía discográfica (primer eslabón del canal y más poderoso) que apueste por ti, te diga si eres bueno para exprimirte (lo que equivale a que ven posibilidades de ofrecerte como producto a un manipulable mercado que acabará ansioso por consumirte y que les permitirá forrarse), te graban, te hacen campaña de publicidad encubierta pagando para situarte en los primeros puestos de todas las listas musicales de las ondas mediáticas; también directa: forran autobuses con tu imagen, carteleras y paredes a lo largo y ancho de las ciudades, buscan quien te grite las primeras veces que bajas de tu furgoneta, llenan salas... y cierran el círculo: miles de fans arrasan en las tiendas discográficas (segundo eslabón en el canal de distribución que también tiene que vivir) y compran CDs con coste de fabricación de unos 5 Euros (y creo que me paso de largo: grabar el CD cuesta escasos céntimos, el resto corresponde al envoltorio, redes de transporte, logística de almacenamiento, gastos publicitarios, etc.) por 20 ó 25 ó... Euros de los que tu grupo ve, con suerte, un 15%. Si dejamos otro 25% del precio de venta para sufragar el coste mencionado, todo lo demás, en torno al 60% PVP, va para los beneficios de los que de verdad controlan el canal de distribución (las compañías discográficas) y deciden si juegas o te quedas fuera (que de esto también habría que hablar largo y tendido).
+
+*Pero llegó Internet*, tal y como la conocemos hoy (mañana ya veremos en qué se torna -hablaré en otro artículo-), implicando la disminución del canal: un autor puede ahora vender directamente a su público (canal = 0) o pueden existir plataformas al estilo de iTunes, Spotify, Netflix, etc., que se constituyen en único salto entre el autor y el consumidor. Este nuevo paradigma provoca, entre otras muchas cosas que podemos analizar en otra ocasión, una amenaza al modelo tradicional. Pero, a mi juicio, constituye el único modelo de negocio válido y perdurable que acabará empujando al anterior modelo a un nicho de mercado (un modo coleccionista dispuesto a pagar más por más "lujo": caja negra, firma de su grupo, camiseta, etc.). *Modelo que sigue posibilitando que el autor viva de su esfuerzo creativo incluso mejor que el anterior: acortando el canal se gana en eficiencia*.
+
+*¿Jugaba Megaupload al nuevo juego?* Según lo que he leído mucho me temo que no: cobraba cuotas Premium que daban ciertos derechos a quien las pagaba frente a las descargas gratuitas, ¡bonificaba a quien compartía contenidos protegidos!, no llegaba a retirar los contenidos denunciados y simplemente anulaba el enlace que los apuntaba permitiendo la creación de otros, no daba ni un solo “duro” de los recaudados a los autores, etc. *Y como no podemos estar en contra de los excesivos beneficios que acumulaban los intermediarios del modelo tradicional sin estarlo de aquellos que acumulan los que están lucrándose sin ni siquiera revertir parte a los autores, por coherencia, este servidor está a favor del cierre de Megaupload y sitios similares*. ¡OJO! Todo esto lo tiene que demostrar aún la justicia.
+
+Quedan abiertas otras preguntas: ¿servirá de algo? ¿Es el comienzo del fin de la Internet que conocemos? ¿[[http://m.elblogsalmon.com/empresas/caso-megaupload-que-cierren-google-ya?utm_source=twitterfeed&utm_medium=twitter][Por qué Megaupload y no otros]]? ¿Queda tocado el “modelo de negocio en la nube”? ¿Tiene algo de montaje peliculero y de medida ejemplarizante o era lo única forma de hacerlo? ¿[[http://gallir.wordpress.com/2012/01/21/todo-lo-malo-del-cierre-de-megaupload/][Y los contenidos legales que tenían los usuarios (¡que también hay que ser incauto para mantener allí el original sin copia!)]]? ¿Por qué los intermediarios tradicionales se niegan a apostar por el nuevo escenario? ¿[[http://www.expansion.com/blogs/endiferido/2012/01/25/verdades-mentiras-y-consecuencias-del.html][Existe un punto de equilibrio rentable para todos]]? ¿Es justo el poder acumulado por los intermediarios? ¿Qué pasará si en lugar de apostar por alguno de los nuevos modelos de negocio se siguen empeñando a vivir del herido de muerte? En este caso, ¿Es ético el enfrentamiento directo, algo así como la desobediencia civil a las leyes dictadas para protegerles? Y a los autores, ¿qué vida les espera? ¿Llevará la no existencia de intermediarios a la no existencia de autores? ¿La creación cultural se va a acabar? ¿[[http://www.enriquedans.com/2012/01/enorme-tim-oreilly-por-que-lucho-contra-sopa.html][Es la mal llamada piratería (hay mucho intercambio sin beneficio alguno) la causa o la consecuencia]]? ¿Son mejores los sitios tipo Megaupload o las redes P2P? ¿Cómo evolucionará la tecnología de intercambio? ¿Y las leyes? ¿Y la neutralidad en la red? ¿Qué puedo hacer para no ir a la cárcel y seguir disfrutando de la cultura a un precio justo? Y muchas, muchas más.
+
+Y tú, ¿qué piensas?
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Sobre%20el%20cierre%20de%20Megaupload][Dejar comentario]].
+
+** Comentarios
+
+*** Mi opinión (CarlosRdrz 29/01/2012 - 14:36)
+Hola!
+
+En primer lugar: puede ser cierto que Megaupload no "juega limpio" con el tema del copyright, pero me parece que también se le está juzgando un poco mal.
+
+¿Por qué no admitirlo? He descargado mucho contenido de Megaupload, algunos con derechos de autor y otros sin ellos, y entre descargas puedo decir que he encontrado MUCHOS enlaces retirados por motivos de derechos de autor.
+
+Hay que tener en cuenta que Megaupload tenía un 4% de todo el tráfico de Internet, y supongo que llega un momento en el que tanto archivo es incontrolable. Es imposible controlar qué archivo tiene qué derechos, y revisarlos todos, por supuesto, no es viable.
+
+La pregunta de: ¿por qué Megaupload y no otros? me parece muy buena. Sin ir mas lejos, y siguiendo el mismo criterio, ¿por qué no cerrar Youtube? Por supuesto también tiene contenido protegido por derechos de autor. Peliculas, series, videoclips...
+
+En fin, no defiendo del todo a Megaupload, pero si lamento su pérdida. Me parece que era un buen servicio, y que no ha sido su mejor final. ¿Todas las cuentas premium de los usuarios perdidas? ¿Ficheros sin retorno en manos desconocidas?
+
+Por último, también quería nombrar la famosa noticia de: "El cierre de megaupload beneficia a videoclubs y cines" que cuando la leo, no sé si reir o llorar. Megaupload estaba bien, pero tampoco era la única alternativa, y nunca lo ha sido.
+
+Lo que está claro es que el sistema tiene que cambiar. Cuando me presentan un CD por 25€ lo único que consiguen es hacerme reir, y no me importa admitirlo vamos. EN MI VIDA voy a comprar un cd a 25 € o una película del año 95 a 20 €. Lo que no puede ser es que los autores defiendan algo indefendible, y que las discográficas y demás encima se aprovechen.
+
+Un saludo!
+
+*** Antes que nada GRACIAS por (Godo 29/01/2012 - 22:37)
+Antes que nada GRACIAS por participar. Todas las opiniones razonadas nos ayudan a crecer.
+
+De tu comentario me quedo con dos temas muy interesantes:
+
+- "Es imposible controlar qué archivo tiene qué derechos, y revisarlos todos, por supuesto, no es viable".
+
+Este argumento, aunque cierto, me parece débil para decidir si algo está bien y debe seguir o mal, y debemos evitarlo. No obstante, es posible disuadir al que comparte lucrándose si se incorpora dicha disuasión en el modelo de negocio. Megaupload parece, por lo que leo, que incentivaba lo contrario. Es decir, en lugar de dejar claro en su política que no se podía compartir contenido protegido y sancionar (cerrar la cuenta e incluso emprender acciones legales llegado el caso), ¡pagaba al que lo subía! ¿Hay en esa conducta un intento de control o justo lo contrario?
+
+- "y que no ha sido su mejor final. ¿Todas las cuentas premium de los usuarios perdidas? ¿Ficheros sin retorno en manos desconocidas?"
+
+Efectivamente, totalmente de acuerdo contigo. En otro artículo del blog haré hincapié en como este tipo de actuaciones mezcladas con "la dificultad de control de los contenidos" ponen en riesgo todo un modelo de negocio por el que se está apostando: cloud computing.
+
+Gracias y salud. Nos leemos!! ;-)
+
+*** En primer lugar el gran (Reclusiarca 29/01/2012 - 23:18)
+En primer lugar el gran problema que existe en la industria es la poca intención de equipararse al consumidor.
+Desde la actualización masiva de internet para el uso y desarrollo del entretenimiento, los usuarios no hemos encontrado con un abanico de posibilidades infinito al que acudir para consumir productos, pero lo mejor de todo y lo mas importante es su precio : 0 . Si puedo descargar un película, serie o videojuego gratuitamente posiblemente lo haga, por mas que se esfuerce la industria ese precio es inmejorable, y debes competir con un producto de mayor calidad que el producto gratuito.
+
+En el caso de los videojuegos, la competencia es mas que adecuada:sistemas de seguridad por cuentas, claves de instalación limitada , DLC's, Ediciones coleccionistas, precios reducidos....etc. Con estas medidas yo compro gustosamente un producto de calidad, con infinitas posibilidades, ya sea ahora con precio de recién salida, o en un año con precio reducido.
+Sin Embargo, el cine, la musica o la Televisión están obsoletas. Pagar 15-20 euros por un Cd o película, o 30-40 por una Temporada de una serie, es simplemente absurdo. El precio es desorbitado cuando internet te da lo mismo gratis con la misma calidad. Ya no es solo el precio, sino el valor de lo mas preciado que tenemos que es el Tiempo.
+Ver una película supone transporte, comprar algo de comer y beber además de la entrada = 15-20 euros y 2-3 horas de tu vida. En internet a un click de descarga tienes tu película gratis y no pierdes ni un segundo de tu vida.
+
+Podría seguir con el tema, desde la creación de una ley mundial de internet, hasta la necesidad de la reeducación de la sociedad en cuestión de derechos de autor.

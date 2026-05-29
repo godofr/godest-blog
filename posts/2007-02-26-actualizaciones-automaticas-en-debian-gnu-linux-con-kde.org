@@ -1,0 +1,80 @@
+#+title: Actualizaciones Automáticas en Debian GNU/Linux con KDE
+#+date: <2007-02-26 19:24>
+#+author: Godofredo Fdez.
+#+description: En una de mis últimas instalaciones de la distribución Debian GNU/Linux comprobé que el entorno gráfico instalado por defecto es Gnome . Aproveché y estuve trasteando un poquito por los menús, opciones, etc., intentando ver lo amigable que podía resultar para un principiante en este mundillo GNU/Linux. Le puse cierto interés porque es el entorno elegido por la distribución guadalinex , y por tanto, estimo que en poco tiempo me lo iré encontrando en toda la geografía Andaluza/Extremeña.
+#+filetags: Configuraciones GNU/Linux
+#+options: _:nil
+#+nid: 202
+
+En una de mis últimas instalaciones de la distribución [[http://www.debian.org][Debian GNU/Linux]] comprobé que el entorno gráfico instalado por defecto es [[http://www.gnome.org][Gnome]]. Aproveché y estuve trasteando un poquito por los menús, opciones, etc., intentando ver lo amigable que podía resultar para un principiante en este mundillo GNU/Linux. Le puse cierto interés porque es el entorno elegido por la distribución [[http://www.guadalinex.org][guadalinex]], y por tanto, estimo que en poco tiempo me lo iré encontrando en toda la geografía Andaluza/Extremeña.
+
+Hubo una característica que me llamó especialmente la atención, y es de la que me ocupo en este artículo. Al poquito tiempo de arrancar con el sistema recién instalado, y cuando estaba jugueteando con él, surgió un “globito de notificación” de la bandeja del sistema en el que se me informaba de la disponibilidad de actualizaciones para el mismo.
+
+Recuerdo que hice “click” sobre dicha notificación, y se me abrió una ventana de diálogo en la que se informaba con mayor detalle de los paquetes cuyas últimas versiones se iban a instalar. He de reconocer que en este momento estaba un poco alucinado pues creía que el desorden del mundo “windows” estaba aterrizando en GNU/Linux: “¿Cómo un usuario normal puede hacer estas cosas? ¡Bueno, bueno... lo que me quedaba que ver!”
+
+Sin embargo, cuando pulsé sobre aceptar comprobé que la máquina te solicitaba la clave de root para realizar dichas tareas de mantenimiento... ¡no todo estaba perdido!
+
+Uno, que tiene el vicio de utilizar [[http://www.kde.org/][KDE]], se quedó un poquito picado con esta funcionalidad existente e integrada en el entorno Gnome. Y me puse a investigar a ver como podía conseguirlo en KDE.
+
+Descubrí un conjunto de aplicaciones que, bajo el nombre de [[http://web.mornfall.net/adept.html][adept]], se podían utilizar para realizar la gestión de paquetes en el entorno KDE. Y más concretamente, adept_notifier, que sirve para mostrar el globito de notificación.
+
+Por tanto, lo primero que tenéis que instalar es “adept”:
+
+apt-get install adept
+
+Tras instalarlo debéis ejecutarlo en segundo plano y dejarlo corriendo:
+
+[10:45:27(godo@olivo)/home/godo]> adept_notifier &
+
+[10:45:27(godo@olivo)/home/godo]> ps | grep adept
+godo 3940 0.1 2.8 29356 14424 ? S 09:06 0:06 adept_notifier
+
+Ahora faltaba programar la comprobación de las actualizaciones para que estas fueran automáticas y ocurrieran siempre al inicio del sistema.
+
+Elaboré el siguiente script que situé en /etc/init.d/ y que llamé apt-get-update:
+
+[18:50:28(root@olivo)/home/godo]> more /etc/init.d/apt-get-update
+#!/bin/sh
+
+################################################
+# Para actualizar los paquetes disponibles en los repositorios
+################################################
+# Lanzamos 3 pings para levantar la conexión ADSL
+# como dirección IP podéis utilizar cualquier dirección IP pública.
+# Para los que no sepan que significa esto, utilizar los DNS que
+# os haya dado vuestro proveedor.
+
+/bin/ping -c 3 -W 1 131.111.8.35
+
+echo "Actualizando los paquetes disponibles en los repositorios..."
+echo ""
+
+/usr/bin/apt-get update > /tmp/apt \
+&& \
+/usr/bin/apt-get -dy upgrade >> /tmp/apt &
+
+El script utiliza la herramienta apt para actualizar (apt-get update) y descargar (apt-get -dy upgrade) los distintos paquetes disponibles.
+
+Sólo queda crear un enlace simbólico en el nivel de arranque habitual de nuestra distribución, en Debian es el 2 (/etc/rc2.d):
+
+[19:06:08(root@olivo)/etc/rc2.d]> update-rc.d apt-get-update start 98 2 .
+Adding system startup for /etc/init.d/apt-get-update ...
+/etc/rc2.d/S98apt-get-update -> ../init.d/apt-get-update
+
+¿Qué hemos conseguido?
+
+* Actualizar la lista de paquetes disponibles (apt-get update), dejando rastro en /tmp/apt.
+* Tener una pequeña aplicación que nos informa gráficamente si existen actualizaciones para los paquetes que tenemos instalados (adept_notifier).
+* Descargar, si los hay, los paquetes necesarios y dejarlos en nuestra máquina preparados para llevar a cabo la actualización. Seguimos dejando rastro de esta tarea en /tmp/apt.
+
+Este último paso se podría haber automatizado también, pero prefiero llevarlo a cabo de forma supervisada.
+
+Cuando nuestro globito nos informe de que existen actualizaciones, y veamos en nuestro monitor de red (apt-get install wmnd) que ha cesado el tráfico de descarga, todas ellas estarán esperando a que, como root, ejecutemos nuestro apt-get upgrade y veamos como se desarrolla la cosa.
+
+Espero que os sea útil.
+
+Y que os ahorre tiempo.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Actualizaciones%20Autom%C3%A1ticas%20en%20Debian%20GNU%2FLinux%20con%20KDE][Dejar comentario]].
+

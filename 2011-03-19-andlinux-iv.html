@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Como vengo trabajando con andLinux, el espacio inicialmente "fijado" por la distribución se me ha quedado pequeño. Ha llegado la hora de añadir un disco duro nuevo ;-)) virtual. CONSTRUYENDO EL DISCO DURO VIRTUAL Desde windows, como administrador (ejecutar "Símbolo del sistema" como administrador) si estamos en W7, creamos el nuevo disco virtual. Paramos el servicio: C:\Program Files\andLinux\Drives>net stop andLinux El servicio de andLinux está deteniéndose..... El servicio de andLinux se detuvo correctamente.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>andLinux (IV)</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">19 mar. 2011</div><h1 class="post-title"><a href="https://godest.vivencias.net/2011-03-19-andlinux-iv.html">andLinux (IV)</a></h1>
+<p>
+Como vengo trabajando con andLinux, el espacio inicialmente "fijado" por la distribución se me ha quedado pequeño. Ha llegado la hora de añadir un disco duro nuevo ;-)) virtual.
+</p>
+
+<p>
+<b>CONSTRUYENDO EL DISCO DURO VIRTUAL</b>
+</p>
+
+<p>
+Desde windows, <b>como administrador</b> (ejecutar "Símbolo del sistema" como administrador) si estamos en W7, creamos el nuevo disco virtual.
+</p>
+
+<p>
+Paramos el servicio:
+</p>
+
+<pre class="example" id="orgcfe0a68">
+
+C:\Program Files\andLinux\Drives&gt;net stop andLinux
+El servicio de andLinux está deteniéndose.....
+El servicio de andLinux se detuvo correctamente.
+
+</pre>
+
+<p>
+Creamos el disco: N * (1024<sup>3</sup>) = N GB ; siendo N=1 en este caso
+</p>
+
+<pre class="example" id="org6d5959b">
+
+C:\Program Files\andLinux\Drives&gt;
+C:\Prog...\Drives&gt;fsutil file createnew prue.vdi 1073741824
+El archivo C:\Program Files\andLinux\Drives\prue.vdi está creado
+
+C:\Program Files\andLinux\Drives&gt;dir
+ El volumen de la unidad C es Win7
+ El número de serie del volumen es: 0EB8-1076
+
+ Directorio de C:\Program Files\andLinux\Drives
+
+19/03/2011  09:22    &lt;DIR&gt;          .
+19/03/2011  09:22    &lt;DIR&gt;          ..
+19/03/2011  09:19     4.294.967.296 base.vdi
+19/03/2011  09:22     1.073.741.824 prue.vdi
+13/03/2011  13:24       268.419.072 swap.vdi
+               3 archivos  5.637.128.192 bytes
+               2 dirs  313.645.645.824 bytes libres
+
+</pre>
+
+<p>
+Editamos el fichero, también <b>como administrador</b>, "settings.txt" y añadimos la nueva unidad (fijaos en la línea: cobd3=Drives\prue.vdi):
+</p>
+
+<pre class="example" id="orgcff104c">
+
+C:\Program Files\andLinux&gt;more settings.txt
+mem=512
+root=/dev/cobd0
+kernel=vmlinux
+cobd0=Drives\base.vdi
+cobd1=Drives\swap.vdi
+cobd3=Drives\prue.vdi
+cofs31=.
+eth0=slirp
+eth1=tuntap,"TAP-Colinux",00:11:22:33:44:55
+cofs0=D:\
+
+</pre>
+
+<p>
+Arrancamos el servicio:
+</p>
+
+<pre class="example" id="org09181c1">
+
+C:\Program Files\andLinux\Drives&gt;net start andLinux
+
+El servicio de andLinux se ha iniciado correctamente.
+
+</pre>
+
+<p>
+<b>ACCEDIENDO AL NUEVO DISCO DURO VIRTUAL</b>
+</p>
+
+<p>
+Desde nuestra consola de andLinux, y como root, creamos el sistema de ficheros en el nuevo disco así:
+</p>
+
+<pre class="example" id="org3f65968">
+
+[root@andLinux godo]# mkfs.ext3 /dev/cobd3                                                        
+mke2fs 1.41.4 (27-Jan-2009)                                                                       
+Etiqueta del sistema de ficheros=                                                                 
+Tipo de SO: Linux                                                                                 
+Tamaño del bloque=4096 (bitácora=2)                                                               
+Tamaño del fragmento=4096 (bitácora=2)                                                            
+65536 nodos-i, 262144 bloques                                                                     
+13107 bloques (5.00%) reservados para el superusuario                                             
+Primer bloque de datos=0                                                                          
+Número máximo de bloques del sistema de ficheros=268435456                                        
+8 bloque de grupos                                                                                
+32768 bloques por grupo, 32768 fragmentos por grupo                                               
+8192 nodos-i por grupo                                                                            
+Respaldo del superbloque guardado en los bloques:                                                 
+        32768, 98304, 163840, 229376                                                              
+
+Escribiendo las tablas de nodos-i: hecho                           
+Creating journal (8192 blocks): hecho                              
+Escribiendo superbloques y la información contable del sistema de ficheros: hecho
+
+Este sistema de ficheros se revisará automáticamente cada 39 montajes o
+180 días, lo que suceda primero.  Utilice tune2fs -c o -i para cambiarlo.
+
+</pre>
+
+<p>
+Comprobamos que todo ha ido bien:
+</p>
+
+<pre class="example" id="orgdcc069b">
+
+[root@andLinux godo]# e2fsck -f /dev/cobd3                                  
+e2fsck 1.41.4 (27-Jan-2009)                                              
+/dev/cobd3: limpio, 11/65536 ficheros, 12644/262144 bloques              
+
+</pre>
+
+<p>
+Y lo montamos en /mnt/nuevo:
+</p>
+
+<pre class="example" id="orgb0d31fe">
+
+[root@andLinux mnt]# mkdir nuevo
+[root@andLinux mnt]# mount /dev/cobd3 /mnt/nuevo 
+
+</pre>
+
+<p>
+Comprobamos que lo podemos usar:
+</p>
+
+<pre class="example" id="org7176017">
+
+[root@andLinux mnt]# cd /mnt/nuevo                                       
+[root@andLinux nuevo]# ll                                                
+total 16                                                                 
+drwx------ 2 root root 16384 2011-03-19 09:31 lost+found                 
+[root@andLinux nuevo]# touch hola
+[root@andLinux nuevo]# ll        
+total 16
+-rw-r--r-- 1 root root     0 2011-03-19 09:33 hola
+drwx------ 2 root root 16384 2011-03-19 09:31 lost+found
+
+</pre>
+
+<p>
+Y vemos qué aparece cuando consultamos "cómo estamos de espacio":
+</p>
+
+<pre class="example" id="org69d03ba">
+
+[root@andLinux nuevo]# df
+S.ficheros         Bloques de 1K   Usado    Dispon Uso% Montado en
+/dev/cobd0             4128448   2791564   1211056  70% /
+tmpfs                   257936         0    257936   0% /lib/init/rw
+varrun                  257936        76    257860   1% /var/run
+varlock                 257936         0    257936   0% /var/lock
+udev                    257936       228    257708   1% /dev
+tmpfs                   257936         0    257936   0% /dev/shm
+31                   357560724  51266708 306294016  15% /mnt/and
+/dev/cofs0           118036476  72898676  45137800  62% /mnt/win
+/dev/cobd3             1032088     34088    945572   4% /mnt/nuevo
+[root@andLinux nuevo]# df -h
+S.ficheros            Tamaño Usado  Disp Uso% Montado en
+/dev/cobd0            4,0G  2,7G  1,2G  70% /
+tmpfs                 252M     0  252M   0% /lib/init/rw
+varrun                252M   76K  252M   1% /var/run
+varlock               252M     0  252M   0% /var/lock
+udev                  252M  228K  252M   1% /dev
+tmpfs                 252M     0  252M   0% /dev/shm
+31                    341G   49G  293G  15% /mnt/and
+/dev/cofs0            113G   70G   44G  62% /mnt/win
+/dev/cobd3           1008M   34M  924M   4% /mnt/nuevo
+[root@andLinux nuevo]#
+
+</pre>
+
+<p>
+Como normalmente hemos de trabajar con un usuario sin privilegios de root, en mi caso "godo", hacemos que este usuario sea el propietario de la "nueva unidad":
+</p>
+
+<pre class="example" id="org4b1dae0">
+
+root@andLinux:/mnt# chown -R godo:godo nuevo/
+
+</pre>
+
+<p>
+<b>MONTANDO LA UNIDAD AUTOMÁTICAMENTE AL INICIO</b>
+</p>
+
+<p>
+Añadimos la siguiente línea al archivo /etc/fstab (última que aparece):
+</p>
+
+<pre class="example" id="org7f31ba6">
+
+godo@andLinux:/mnt/nuevo$ more /etc/fstab
+# /etc/fstab: static file system information.
+#
+# &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;               &lt;dump&gt;  &lt;pass&gt;
+proc            /proc           proc    defaults                0       0
+/dev/cobd0      /               ext3    defaults                1       1
+/dev/cobd1      none            swap    sw                      0       0
+31              /mnt/and        cofs    defaults                0       0
+/dev/cofs0 /mnt/win cofs defaults,uid=godo,gid=godo,dmask=0755,fmask=0755 0 0
+/dev/cobd3      /mnt/nuevo  ext3    user,exec,auto          0       0
+godo@andLinux:/mnt/nuevo$
+
+</pre>
+
+<p>
+¡CONSEGUIDO!
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=andLinux%20%28IV%29">Dejar comentario</a>.
+</p>
+<div class="taglist"></div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

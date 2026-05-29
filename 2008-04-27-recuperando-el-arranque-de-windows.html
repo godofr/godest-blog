@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Ya hemos hablado en este blog de como recuperar gestores de arranque del mundo GNU/Linux (mirar aquí ), o quizá, más precisamente, de los que permiten la convivencia de ambos mundos: GNU/Linux y Windows. Hoy se trata de ver como recuperar el arranque de Windows tocando archivos de configuración del mismo. Os cuento lo que me ha pasado: en mi máquina conviven varios sistemas operativos, representantes de uno y otro bando. Suelo, pues, jugar bastante con las particiones del disco duro... y esto tiene sus riesgos.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Recuperando el arranque de Windows</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">27 abr. 2008</div><h1 class="post-title"><a href="https://godest.vivencias.net/2008-04-27-recuperando-el-arranque-de-windows.html">Recuperando el arranque de Windows</a></h1>
+<p>
+Ya hemos hablado en este blog de como recuperar gestores de arranque del mundo GNU/Linux (mirar <a href="file:///d:/node/207">aquí</a>), o quizá, más precisamente, de los que permiten la convivencia de ambos mundos: GNU/Linux y Windows.
+</p>
+
+<p>
+Hoy se trata de ver como recuperar el arranque de Windows tocando archivos de configuración del mismo.
+</p>
+
+<p>
+Os cuento lo que me ha pasado: en mi máquina conviven varios sistemas operativos, representantes de uno y otro bando. Suelo, pues, jugar bastante con las particiones del disco duro&#x2026; y esto tiene sus riesgos.
+</p>
+
+<p>
+En los días pasados hice un cambio que me llevó de esta tabla de particiones:
+</p>
+
+<pre class="example" id="org4ddd7ff">
+
+Disco /dev/sda: 80.0 GB, 80026361856 bytes
+255 heads, 63 sectors/track, 9729 cylinders
+Units = cilindros of 16065 * 512 = 8225280 bytes
+Disk identifier: 0x0004e324
+
+Disposit. Inicio    Comienzo      Fin      Bloques  Id  Sistema
+/dev/sda1   *           1         261     2096451    6  FAT16
+/dev/sda2             262        9729    76051710    5  Extendida
+/dev/sda3            2332        3003     5393498   83  Linux
+/dev/sda4            2332        3674     5393498   83  Linux
+/dev/sda5            3675        8454    38395318+   7  HPFS/NTFS
+/dev/sda6            8455        9505     8442126   83  Linux
+/dev/sda7            9602        9729     1028128+  82  Linux swap / Solaris
+/dev/sda8            9506        9601      771088+  83  Linux
+/dev/sda9            262         2331    16627212   83  Linux
+
+Las entradas de la tabla de particiones no están en el orden del disco
+
+</pre>
+
+<p>
+a esta otra:
+</p>
+
+<pre class="example" id="org3c25aca">
+
+Disco /dev/sda: 80.0 GB, 80026361856 bytes
+255 heads, 63 sectors/track, 9729 cylinders
+Units = cilindros of 16065 * 512 = 8225280 bytes
+Disk identifier: 0x0004e324
+
+Disposit. Inicio    Comienzo      Fin      Bloques  Id  Sistema
+/dev/sda1   *           1         261     2096451    6  FAT16
+/dev/sda2             262        9729    76051710    5  Extendida
+/dev/sda3            2332        3674    10787616   83  Linux
+/dev/sda5            3675        8454    38395318+   7  HPFS/NTFS
+/dev/sda6            8455        9505     8442126   83  Linux
+/dev/sda7            9602        9729     1028128+  82  Linux swap / Solaris
+/dev/sda8            9506        9601      771088+  83  Linux
+/dev/sda9            262        2331    16627212   83  Linux
+
+Las entradas de la tabla de particiones no están en el orden del disco
+
+</pre>
+
+<p>
+Ambas salidas las he obtenido utilizando, en GNU/Linux y como root, el comando:
+</p>
+
+<pre class="example" id="orged14c47">
+
+[root]&gt; fdisk -l /dev/sda
+
+</pre>
+
+<p>
+Como podéis observar, el cambio ha consistido en fusionar la partición <b>/dev/sda3</b> con la <b>/dev/sda4</b>. El sistema de particiones de GNU/Linux sigue conservando el número asignado a cada una de las particiones que prosiguen. No así el de Windows, como vemos a continuación.
+</p>
+
+<p>
+La partición /dev/sda1 contiene los siguientes archivos de arranque del sistema Windows:
+</p>
+
+<pre class="example" id="org8a1409c">
+
+E:\&gt;dir /a
+ El volumen de la unidad E es PARTPRI
+ El número de serie del volumen es: 4C18-2979
+
+ Directorio de E:\
+
+03/11/2007  21:25             4.952 Bootfont.bin
+03/11/2007  21:25           250.640 ntldr
+03/11/2007  21:25            47.564 NTDETECT.COM
+26/04/2008  23:37               210 boot.ini
+26/04/2008  21:26               210 boot.ini-previo
+26/04/2008  23:51               903 fdisk.txt
+17/03/2008  00:13    &lt;DIR&gt;          System Volume Information
+16/03/2008  21:38    &lt;DIR&gt;          Recycled
+               6 archivos        304.479 bytes
+               2 dirs   2.144.174.080 bytes libres
+
+E:\&gt;
+
+</pre>
+
+<p>
+El archivo que "dirigía" el arranque (ahora renombrado como "boot.ini-previo") antes del cambio de particiones mencionado más arriba era este:
+</p>
+
+<pre class="example" id="orgfb1376e">
+
+[boot loader]
+timeout=0
+default=multi(0)disk(0)rdisk(0)partition(4)\WINDOWS
+[operating systems]
+multi(0)disk(0)rdisk(0)partition(4)\WINDOWS="Microsoft Windows XP Professional" /noexecute=optin /fastdetect
+
+</pre>
+
+<p>
+Tras realizar el cambio: desaparece una partición, al intentar arrancar Windows obtenía el siguiente mensaje de error:
+</p>
+
+<pre class="example" id="org991540c">
+
+No se ha iniciado Windows porque el siguiente archivo falta
+o está dañado:
+&lt;windows root&gt;\system32\hal.dll
+Reinstale una copia del archivo mencionado
+
+</pre>
+
+<p>
+Obviamente, yo sabía que el archivo no había desaparecido por arte de magia, y sospeché que el error se debía al cambio en las particiones. Arrancando con mi S.O. GNU/Linux (también es válido un <a href="http://grml.org/">disco de arranque</a>) y montando la partición donde se encuentra: /dev/sda1, edité el archivo <b>boot.ini</b> para dejarlo tal que así:
+</p>
+
+<pre class="example" id="org5adf705">
+
+[boot loader]
+timeout=0
+default=multi(0)disk(0)rdisk(0)partition(3)\WINDOWS
+[operating systems]
+multi(0)disk(0)rdisk(0)partition(3)\WINDOWS="Microsoft Windows XP Professional" /noexecute=optin /fastdetect
+
+</pre>
+
+<p>
+¡Fijaos en el cambio del <b>4</b> por el <b>3</b>! Es lógico, pues hemos suprimido una partición que estaba previa a la partición donde se encontraba Windows. Así, deducimos que Windows sí que renumera las particiones.
+</p>
+
+<p>
+Ya sabemos una cosa más: contra la desesperación, investigación.<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Recuperando%20el%20arranque%20de%20Windows">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

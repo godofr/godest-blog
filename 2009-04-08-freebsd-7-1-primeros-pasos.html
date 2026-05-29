@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="FreeBSD es uno de los sistemas operativos más seguros y se encuentra embebido (este archivo lo he encontrado en google y profesionalmente, sin entrar en…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>FreeBSD 7.1 - Primeros pasos</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">08 abr. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-04-08-freebsd-7-1-primeros-pasos.html">FreeBSD 7.1 - Primeros pasos</a></h1>
+<a href="http://www.freebsd.org" target="_self"><img src="/static/img/logo-full-thumb.png" alt="FreeBSD" title="FreeBSD"  class="image image-preview " width="180" height="65" border="0" align="right" hspace="10" vspace="10" /></a>
+<p>
+<a href="http://es.wikipedia.org/wiki/FreeBSD">FreeBSD</a> es uno de los sistemas operativos más seguros y se encuentra <i><a href="http://godest.vivencias.net/files/BSDi%20-%20WellsFargo.ppt">embebido</a></i> (este archivo lo he encontrado en google y profesionalmente, sin entrar en revelar secretos, me constan algunos casos) en muchos de los dispositivos de comunicaciones y seguridad que, hoy en día, forman Internet. Así uno, que vocacional y profesionalmente proviene del mundo de las <i>redes de comunicaciones</i> y ahora transita por los terrenos de la <i>seguridad</i>, no podía dejar de probarlo e intentar familiarizarse con él.
+</p>
+
+<p>
+Hoy me he descargado el <a href="ftp://ftp.freebsd.org/pub/FreeBSD/releases/i386/ISO-IMAGES/7.1/7.1-RELEASE-i386-bootonly.iso">archivo mínimo</a> para realizar la instalación, lo he tostado en un CD y le he echado un ratillo. A continuación os describo el proceso.
+</p>
+
+<p>
+<b>Haciéndole hueco en el disco duro</b>
+</p>
+
+<p>
+Hace tiempo que había llegado a la conclusión de que la mejor forma de <a href="http://es.wikipedia.org/wiki/Partici%C3%B3n_de_disco">particionar</a> un disco duro era la siguiente:
+</p>
+
+<blockquote>
+<p>
+a) Una partición primaria (a los windows les cuesta arrancar si no la tienen).
+b) Una partición extendida que, a su vez, contiene diversas particiones lógicas: GNU/Linux es un todo terreno que puede arrancar desde cualquier sitio, y es fácil a posteriori redimensionar las particiones lógicas sumando/restando espacio de unas a otras según va siendo necesitado.
+</p>
+</blockquote>
+
+<p>
+Mi primera sorpresa ha sido descubrir que a FreeBSD no le gustan las particiones lógicas para instalarse (ver <a href="http://www.freebsd.org/doc/en/books/handbook/install-pre.html">esto</a>: <i>"FreeBSD must be installed into a primary partition"</i>), lo cual tiene sentido para su vida profesional: sólo el viviendo dentro de un dispositivo, pero no para su vida en casa: donde hay que convivir con más sistemas. He enredado un poco más, y he descubierto que si decides complicarte la vida quizá sea posible conseguirlo: más información <a href="http://forums.freebsd.org/showthread.php?p=18734">aquí</a>.
+</p>
+
+<p>
+Así que he tenido que coger mi <a href="http://gparted.sourceforge.net/">gparted</a> desde dentro de mi <a href="http://www.debian.org">Debian GNU/Linux</a>, y le he hecho un poco de hueco al principio del disco: partición según es nombrada en GNU/Linux, /dev/sda3, <a href="file:///d:/node/307">enmarcada en negro en la figura</a>.
+</p>
+
+<p>
+<b>Comenzando la instalación</b>
+</p>
+
+<p>
+Siguiendo las instrucciones que aparecen <a href="http://www.freebsd.org/doc/en/books/handbook/install-steps.html">aquí</a>, y teniendo muy claro la diferencia de nomenclatura existente entre los mundos GNU/Linux y FreeBSD, además de la <b>concepción diferente</b> de las particiones (DOS - GNU/Linux) versus <b>slices</b> (FreeBSD), éstas últimas se pueden anidar; he conseguido instalar un sistema mínimo (prefiero comenzar siempre así y luego ir añadiendo <i>sólo</i> lo que necesito). ¡¡OJO!! Tened mucho cuidado con los conceptos que acabo de señalar, permitidme que insista, os podéis cargar toda la información que almacenáis en vuestro disco si cometéis un error. Es aconsejable hacer una copia de backup de vuestros datos.
+</p>
+
+<p>
+<b>Recuperando Grub</b> Aunque durante el proceso de instalación le indiqué que no "sobreescribiera" el sector de arranque con su propio gestor, supongo que debido al proceso de particionado, formateado y guardado de dichos cambios, acabé perdiendo a <a href="http://es.wikipedia.org/wiki/GRUB">GRUB</a>, con lo que tras finalizar la instalación sólo podía decidir entre dos opciones:
+</p>
+
+<blockquote>
+<p>
+F1) arrancar windows
+F3) arrancar FreeBSD
+</p>
+</blockquote>
+
+<p>
+Y, además, la opción F1 no funcionaba, sí que lo hacía F3&#x2026; uff, menos mal, ¡No todo estaba perdido ;-)! &#x2026;aunque un pequeño susto sí me he llevado.
+</p>
+
+<p>
+Bueno, con los galones ganados a lo largo de mucho tiempo en estas lides, eché mano de mi <a href="http://grml.org/">CD/USB de recuperación</a> y acabé reinstalando GRUB tal y como lo tenía. Lo hice siguiendo lo que ya indicamos en otra ocasión <a href="http://godest.vivencias.net/node/207#ACT">aquí</a>.
+</p>
+
+<p>
+Una vez que pude arrancar de nuevo mi Debian GNU/Linux, edité el fichero: <i>/boot/grub/menu.lst</i>, añadí las siguientes líneas, justo delante de la entrada que lanza windows, para poder arrancar el recién instalado FreeBSD:
+</p>
+
+<pre class="example" id="orgad1f019">
+
+#FreeBSD en /dev/sda3
+title   FreeBSD 7.1
+root    (hd0,2,a)
+kernel  /boot/loader
+
+</pre>
+
+<p>
+<b>Algunos detalles del sistema mínimo instalado</b>
+</p>
+
+<p>
+Aquí podemos ver el reparto del espacio de disco y su etiquetado. Observamos lo que ocupa el sistema instalado: el kernel, los paquetes base y poco más.
+</p>
+
+<pre class="example" id="orgde905a8">
+
+$ df -h
+Filesystem     Size    Used   Avail Capacity  Mounted on
+/dev/ad0s3a    272M    138M    112M    55%    /
+devfs          1.0K    1.0K      0B   100%    /dev
+/dev/ad0s3e    161M     12K    148M     0%    /tmp
+/dev/ad0s3f    2.2G    244M    1.8G    12%    /usr
+/dev/ad0s3d    210M    1.0M    192M     1%    /var
+$                                                        
+
+</pre>
+
+<p>
+También he observado que la shell por defecto es <a href="http://en.wikipedia.org/wiki/C_shell">csh</a>&#x2026; ¡vaya, yo estoy acostumbrado a <a href="http://en.wikipedia.org/wiki/Bash">bash</a>:
+</p>
+
+<pre class="example" id="orgfd97bfa">
+
+$ env
+SSH_CLIENT=192.168.4.7 46762 22
+USER=godo
+MAIL=/var/mail/godo
+HOME=/home/godo
+SSH_TTY=/dev/ttyp0
+PAGER=more
+ENV=/home/godo/.shrc
+LOGNAME=godo
+BLOCKSIZE=K
+TERM=xterm
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/home/godo/bin
+SHELL=/bin/sh
+PWD=/usr/home/godo
+SSH_CONNECTION=192.168.4.7 46762 192.168.4.100 22
+FTP_PASSIVE_MODE=YES
+EDITOR=vi
+$                                
+
+</pre>
+
+<p>
+Y estos son los ficheros que inicialmente hay en mi directorio home:
+</p>
+
+<pre class="example" id="orgf6aaca6">
+
+$ pwd
+/usr/home/godo
+$
+$ ls -la
+total 20
+drwxr-xr-x  2 godo  godo   512 Apr  8 21:49 .
+drwxr-xr-x  3 root  wheel  512 Apr  8 21:49 ..
+-rw-r--r--  1 godo  godo   758 Apr  8 21:49 .cshrc
+-rw-r--r--  1 godo  godo   258 Apr  8 21:49 .login
+-rw-r--r--  1 godo  godo   167 Apr  8 21:49 .login_conf
+-rw-------  1 godo  godo   379 Apr  8 21:49 .mail_aliases
+-rw-r--r--  1 godo  godo   339 Apr  8 21:49 .mailrc
+-rw-r--r--  1 godo  godo   773 Apr  8 21:49 .profile
+-rw-------  1 godo  godo   284 Apr  8 21:49 .rhosts
+-rw-r--r--  1 godo  godo   980 Apr  8 21:49 .shrc
+$                     
+
+</pre>
+
+<p>
+En fin, próximamente intentaré:
+</p>
+
+<blockquote>
+<p>
+a) Ver como se gestionan (instalar/desinstalar/configurar) paquetes. ¿Existirá alguna utilidad parecida a [[][apt]]?
+b) Detectar y configurar mi WiFI (<a href="http://www.eduroam.si/en/osebni-dostop/navodila-za-povezavo/navodila-za-freebsd-eng">Intel 2200GB</a>).
+c) Instalar el entorno gráfico y, como no, <a href="http://www.kde.org">KDE</a>.
+d) Y lo que vaya surgiendo&#x2026;
+</p>
+</blockquote>
+
+<p>
+Por aquí sigo, caminando, viviendo, disfrutando&#x2026; y aprendiendo.
+</p>
+<div id="outline-container-orga008825" class="outline-2">
+<h2 id="orga008825">Archivos adjuntos</h2>
+<div class="outline-text-2" id="text-orga008825">
+<ul class="org-ul">
+<li><a href="https://godest.vivencias.net/static/files/BSDi%20-%20WellsFargo.ppt">BSDi - WellsFargo.ppt</a></li>
+</ul>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=FreeBSD%207.1%20-%20Primeros%20pasos">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-freebsd.html">FreeBSD</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+#+title: Sistema de recopilación de información... en tiempo real
+#+date: <2013-11-01 22:09>
+#+author: Godofredo Fdez.
+#+description: Hace unas semanas el alumno Manuel Rodríguez presentó el proyecto fin de carrera titulado: &ldquo;SISTEMA DE RECOPILACIÓN DE INFORMACIÓN SOBRE EL ESTADO DEL…
+#+filetags: Proyectos_Fin_de_Carrera
+#+options: _:nil
+#+nid: 517
+
+Hace unas semanas el alumno [[http://es.linkedin.com/pub/manuel-rodríguez/42/800/804][Manuel Rodríguez]] presentó el proyecto fin de carrera titulado: “SISTEMA DE RECOPILACIÓN DE INFORMACIÓN SOBRE EL ESTADO DEL TRÁFICO EN TIEMPO REAL”, el cual he dirigido.
+
+Manuel contactó conmigo en mayo y me propuso la idea. Me interesó mucho porque creo que actualmente hay una tendencia que apuesta por desarrollar este tipo de sistemas que podríamos englobar dentro de la categoría: “estudio de los hábitos del...”, siendo los puntos suspensivos sustituibles por: conductor, ciudadano, cliente y, en definitiva, cualquier persona cuyo comportamiento interese conocer en un determinado ámbito. El objetivo final es poder mejorar el servicio ofrecido. En la conclusión del artículo se describen algunos ejemplos.
+
+Sí, a mí también me plantea algunos dilemas éticos, de hecho en EE.UU. que siempre van un poquito por delante en cuanto a tendencias tecnológicas ya hay [[http://www.madrimasd.org/informacionidi/noticias/noticia.asp?id=58392&origen=notiweb&dia_suplemento=martes][cierto movimiento social interesándose por regular el tema.]] Mi posición, de momento, es favorable siempre que los datos se “anonimicen” lo suficiente para que la persona no sea identificable/rastreable y sólo sirvan para identificar una tendencia anónima, números, cantidades. Es decir, no pretender conocer quién sino cuándo, cuántos y qué.
+
+Os dejo a continuación el resumen ejecutivo del proyecto. Espero que os resulte interesante.
+
+El objetivo del proyecto es desarrollar un sistema autónomo para la recopilación de información sobre el estado del tráfico en tiempo real, con las restricciones siguientes: sistema de bajo coste, rápida implantación y de escaso mantenimiento.
+
+Para obtener la información necesaria se utilizan antenas Bluetooth y WiFi conectadas a la placa “Raspberry Pi” que detectan los dispositivos móviles de la población y los que suelen ir incorporados, cada vez más, en los vehículos. Además se utilizarán tags RFID activos colocados en los vehículos de la flota de Conservación de Carreteras para obtener más datos. La autonomía del sistema se consigue gracias a un equipo de alimentación basado en energía solar, y la conexión a internet a través de un dispositivo 3G. El software se fundamenta en un demonio programado en Java, que haciendo uso de una serie de hilos independientes recoge la información proveniente de los escaneos de dispositivos (MAC y timestamp), la cifra y la envía periódicamente al servidor, donde se almacena ya cifrada.
+
+Además se expone un caso práctico de implantación del sistema, incluyendo presupuesto y estudio comparativo de costes para posicionarlo en el mercado.
+
+Se han realizado dos experimentos, uno en carretera y otro en un establecimiento particular, mostrándose en el primero de ellos los datos obtenidos sin ningún tipo de tratamiento y, en el segundo, los datos ya tratados por un sistema de “minería de datos” en desarrollo.
+
+Se concluye que el sistema desarrollado en el presente proyecto cumple con los objetivos que se proponían al inicio, dejando la puerta abierta a numerosas mejoras relacionadas con el tratamiento de los datos obtenidos, así como la posibilidad de incluir nuevos sensores que permitan trabajar con más variables actuando como entradas del sistema.
+
+Las posibilidades en el tratamiento de la información recibida son muchas: además de ofrecer los datos a terceros gracias a la conexión al servidor mediante un servicio web, se podría generar un sistema de tratamiento de la información propio, a través del cual poder ofrecer a la población una página web que contenga información acerca de los principales datos de movilidad en tiempo real, así como predicciones en base a la información recopilada durante cierto tiempo. Si además se incluye la interconexión con redes sociales la potencia del servicio proporcionado se multiplica aún más.
+
+Estas últimas aplicaciones pueden dar al desrarrollo realizado una continuidad real, aportando un valor añadido diferente del hecho de contar vehículos o identificar tendencias en una red de carreteras. Por su escalabilidad podría ser una herramienta interesante para muchas empresas que tienen la necesidad de contar con información significativa para el estudio de la afluencia de los clientes a sus negocios.
+
+¡Seguimos!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Sistema%20de%20recopilaci%C3%B3n%20de%20informaci%C3%B3n...%20en%20tiempo%20real][Dejar comentario]].
+

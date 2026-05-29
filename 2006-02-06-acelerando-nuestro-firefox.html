@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Hace tiempo, un mes y medio más o menos, leí esto . Y justo tras finalizar de leerlo configuré mi Firefox para que volara ... y voló. Ahora lo comparto con todos vosotros, y no lo he hecho antes porque creía que el truco no podía estar exento de cierta inestabilidad (que hiciera apagarse el navegador, etc.). Tras este periodo de pruebas no ha ocurrido nada, así que a disfrutar. Método para acelerar a nuestro querido amigo : 0.- Pulsa ctrl-t y abre una nueva pestaña. 1.- Teclea en la barra de direcciones: about:config (pulsa intro)">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Acelerando nuestro firefox</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">06 feb. 2006</div><h1 class="post-title"><a href="https://godest.vivencias.net/2006-02-06-acelerando-nuestro-firefox.html">Acelerando nuestro firefox</a></h1>
+<p>
+Hace tiempo, un mes y medio más o menos, leí <a href="http://digg.com/news/technology/Make_Firefox_Start_Faster_">esto</a>. Y justo tras finalizar de leerlo configuré mi <b>Firefox</b> para que volara&#x2026; y voló.
+</p>
+
+<p>
+Ahora lo comparto con todos vosotros, y no lo he hecho antes porque creía que el truco no podía estar exento de cierta inestabilidad (que hiciera apagarse el navegador, etc.). Tras este periodo de pruebas no ha ocurrido nada, así que a disfrutar.
+</p>
+
+<p>
+Método para acelerar a nuestro querido amigo:
+</p>
+
+<p>
+0.- Pulsa ctrl-t y abre una nueva pestaña.
+</p>
+
+<p>
+1.- Teclea en la barra de direcciones: about:config (pulsa intro)
+</p>
+
+<p>
+2.- Aparece una tabla con cuatro columnas: Preference Name, Status, Type y Value. En la primera de ellas busca los siguientes nombres:
+</p>
+
+<blockquote>
+<ul class="org-ul">
+<li>network.http.pipelining (en la columna "value" aparecerá "false", pulsa dos veces con el ratón sobre él para que cambie a "true")</li>
+<li>network.http.proxy.pipelining (haz lo mismo)</li>
+<li>network.http.pipelining.maxrequests (en la columna "value" aparecerá "4", pulsa dos veces y pon "30")</li>
+</ul>
+</blockquote>
+
+<p>
+3.- Ahora viene algo más difícil, vamos a añadir una línea a la tabla de valores. En un lugar en blanco, en el fondo de la tabla, alejado de cualquier "letra existente", pulsa con el botón derecho del ratón, del menú desplegable selecciona "New-&gt; Integer". En el cuadro de diálogo que te solicita un "Name" pon nglayout.initialpaint.delay (pulsa intro), aparecerá un nuevo cuatro que te solicita un "Value", pon 0 (cero) (pulsa intro). Observa que aparece una nueva fila con lo que acabas de introducir.
+</p>
+
+<p>
+4.- Cierra la pestaña. Apaga el navegador&#x2026; y vuélvelo a abrir para que coja los cambios.
+</p>
+
+<p>
+5.- VUEEEEEEEEEELA vuela vuela vuela<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Acelerando%20nuestro%20firefox">Dejar comentario</a>.
+</p>
+<div id="outline-container-orgf7eecce" class="outline-2">
+<h2 id="orgf7eecce">Comentarios</h2>
+<div class="outline-text-2" id="text-orgf7eecce">
+</div>
+<div id="outline-container-org0984e83" class="outline-3">
+<h3 id="org0984e83">Dicho y hecho (jibseijo 09/03/2006 - 17:19)</h3>
+<div class="outline-text-3" id="text-org0984e83">
+<p>
+Qué chulada, esto funciona de verdad!! Creo que es lo que por fin hará que deje de usar Explorer de una vez por todas, que cuesta tanto dejarlo después de estar tan acostumbrado&#x2026;
+</p>
+
+<p>
+Muy útil el consejo, Godo :)
+</p>
+<hr>
+<p>
+Dime cuánto tiempo queda,
+qué hago, aparte del vago,
+finjo estar de acuerdo,
+es un milagro que siga estando cuerdo
+</p>
+</div>
+</div>
+<div id="outline-container-org2718b55" class="outline-3">
+<h3 id="org2718b55">No imaginaba&#x2026; (Godo 11/03/2006 - 22:30)</h3>
+<div class="outline-text-3" id="text-org2718b55">
+<p>
+&#x2026;que costaba más dejar el "explorer" que, a algunos, el tabaco. ;-)
+</p>
+
+<p>
+Y no imaginaba que tú aún seguías utilizándolo. Un amante de la libertad y de lo alternativo, ¿cómo sobrevive sin ser un aliado de este "zorro de fuego"?
+</p>
+
+<p>
+Ahora tendré que descubrir que aún sigues con Windows&#x2026; y tú ahí, tan pancho, escuchando al Joaqui :-D
+</p>
+
+<p>
+En fin&#x2026; me alegro de que te haya gustado.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#+title: Diffuse
+#+date: <2015-05-29 18:17>
+#+author: Godofredo Fdez.
+#+description: Un programa, con versiones tanto para GNU/Linux como para Windows, que permite comparar de forma visual dos ficheros de texto, resaltando las diferencias entre…
+#+filetags: 
+#+options: _:nil
+#+nid: 528
+
+Un programa, con versiones tanto para GNU/Linux como para Windows, que permite comparar de forma visual dos ficheros de texto, resaltando las diferencias entre ellos.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Diffuse][Dejar comentario]].
+

@@ -1,0 +1,102 @@
+#+title: Ratón y teclado inalámbricos Logitech en GNU/Linux
+#+date: <2007-06-02 22:03>
+#+author: Godofredo Fdez.
+#+description: Espero que este pequeño script os sirva a todos aquellos que utilizáis un ratón Logitech en vuestra máquina donde, obviamente, tendréis instalado un sistema…
+#+filetags: Configuraciones GNU/Linux Hardware
+#+options: _:nil
+#+nid: 238
+
+Espero que este pequeño script os sirva a todos aquellos que utilizáis un ratón [[http://www.logitech.com/es-es/home][Logitech]] en vuestra máquina donde, obviamente, tendréis instalado un sistema GNU/Linux (a todas luces [[http://www.debian.org][Debian]], supongo ;-) ).
+
+El script está construido en [[http://es.wikipedia.org/wiki/PERL][Perl]], además hace falta instalar el siguiente módulo: "apt-get install libmime-lite-perl". Bajo mi punto de vista, como administrador de redes y sistemas, uno de los lenguajes que más "herramientas" pone a nuestra disposición: aquí vemos como construimos y enviamos un correo electrónico (*gracias, Miguel Ángel*, por compartir tus conocimientos y ensanchar así los míos) si se cumple una determinada condición: critical = pilas prácticamente sin carga.
+
+Utilizamos la salida del programa *lmctl*, el cual podéis encontrar [[http://www.bedroomlan.org/projects/lmctl][aquí]] (existe [[http://www.bedroomlan.org/~alexios/files/SOFTWARE/lmctl/lmctl_0.3.2_i386.deb][paquete para Debian]]). Este programa es el que en realidad consulta el estado de la batería (pilas) del ratón. El script lo utiliza para crear un fichero de texto en /tmp/salida.txt, que luego analiza, línea a línea, buscando la palabra "critical". Como hemos dicho antes, esta palabra aparece como indicador del estado si las pilas están prácticamente agotadas. Cuando así sea, enviamos un correo electrónico avisando de tal hecho.
+
+#+begin_example
+[15:54:59(godo@surco)~]> more .kde/Autostart/pilas_raton.pl
+#!/usr/bin/perl
+#
+# Script que ejecuta el comando 'lmctl -i' para
+# conocer el estado de la bateria del ratón
+
+use MIME::Lite;
+
+#print "\nComprobando batería del ratón...\n\n";
+
+$patron="critical"; # Patron a buscar
+#print "\n$patron";
+
+# Ejecutamos el comando
+system("/usr/bin/lmctl -i > /tmp/salida.txt"); 
+
+open SALIDA, "< /tmp/salida.txt";
+
+# Comenzamos la busqueda
+
+while($linea=<SALIDA>)
+{
+  if($linea=~/$patron/)
+    {
+      # Creamos el correo a enviar
+      $msg = MIME::Lite->new(
+        From    => 'raton@bateria.org',
+        To      => 'usuario@dominio.es',
+        Bcc     => 'usu@dominio.net',
+        Subject => 'Cambia las pilas - CRITICAL',
+        Type    => 'multipart/mixed');
+
+      $msg->attach(
+        Type    => 'TEXT',
+        Data    => 'Batería demasiado baja.');
+
+      $msg->send('smtp', '127.0.0.1');
+    }
+}
+
+close SALIDA;
+#Para eliminar el fichero creado 
+#descomentar la siguiente línea
+#system("rm /tmp/salida.txt");
+
+[15:55:16(godo@surco)~]>
+#+end_example
+
+¡OJO! Tenéis que particularizar los campos *To* y *Bcc* del correo añadiendo vuestra dirección donde queráis recibirlo. Además tendréis que modificar el servidor de envío de dicho correo: *smtp*. Observad que yo utilizo mi propia máquina como servidor de correo saliente: 127.0.0.1. Es recomendable que modifiquéis también el *From*, utilizando una dirección válida para evitar los filtros *antispam*.
+
+Ya sólo nos queda añadir una tarea a nuestro [[http://es.wikipedia.org/wiki/Cron_%28unix%29][cron]]. Para ello ejecutamos desde nuestro usuario: "crontab -e", y añadimos al fichero editado lo siguiente:
+
+#+begin_example
+# Para ejecutar el script que monitoriza las pilas del raton logitech
+45 14 * * *  /home/godo/.kde/Autostart/pilas_raton.pl
+#+end_example
+
+Con esto conseguimos que todos los días a las 14:45 se ejecute nuestro script. Guardado, en mi caso, en "/home/godo/.kde/Autostart/".
+
+Desde que recibáis el primer correo electrónico tenéis en torno a semana y media para cambiar las pilas. Claro, esto depende del uso que hagáis de ellas. En mi caso: 5 días x 8 horas (aproximadamente ;-)).
+
+Todos estos esfuerzos debidos a la falta de drivers, y de compromiso, que algunos fabricantes siguen mostrando con el mundo GNU/Linux. Bien es cierto que cada vez son más los que colaboran... pero aún hay mucha tela que cortar.
+
+Quizá, alguno de vosotros lo hayáis resuelto de otra manera. Si es así, me gustaría que la compartierais con los demás dejando un comentario.
+
+En fin, un divertimento del que se puede aprender mucho: las maravillas del Perl. Otro día os contaré lo que me ha ayudado en la realización de algunas tareas.
+
+Y amaréis al +camello+ [[http://es.wikipedia.org/wiki/O'Reilly_&_Associates][dromedario]] (En 1991 se publicó [[http://oreilly.com/catalog/9780596000271/index.html][Programming Perl]] y se convirtió en la referencia de facto del lenguaje --WikiPedia).
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Rat%C3%B3n%20y%20teclado%20inal%C3%A1mbricos%20Logitech%20en%20GNU%2FLinux][Dejar comentario]].
+
+** Comentarios
+
+*** Excelente Articulo (Martin 11/05/2012 - 15:23)
+Godo, gracias por compartir. Lo voy a estar utilizando y si consigo mejorarlo y añadirle alguna aplicacion, me comunico contigo y te lo envio.
+
+Mil Gracias!
+
+*** Gracias a ti, Martín (Godo 11/05/2012 - 16:33)
+Por escribir en este rinconcito.
+
+¡Qué friki llegué a ser, Dios mío! Ahora ya no tengo tiempo de enredar en estas cosas... pero me siguen gustando mucho. Así que, si consigues mejorarlo y lo cuelgas por aquí te estaré muy agradecido.
+
+Porque, parece que no, pero que se te acaben las pilas de golpe y pillarte sin pilas de repuesto es molesto, eh! ;-)
+
+Saludos.

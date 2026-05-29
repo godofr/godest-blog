@@ -1,0 +1,27 @@
+#+title: Drupal y su módulo "Captcha"
+#+date: <2007-10-12 13:47>
+#+author: Godofredo Fdez.
+#+description: Varias veces hemos tratado aquí el tema del spam en los blogs. Ya lo anunciábamos en este breve artículo allá por el mes de diciembre del año 2004, e intentamos solucionarlo haciendo uso del módulo spam que nos ofrecía nuestro CMS . Lo instalé respetando la configuración por defecto, con las únicas modificaciones de "no publicar lo presuntamente spam" y "avisar al administrador de la detección del mismo".
+#+filetags: Bitácoras Seguridad
+#+options: _:nil
+#+nid: 256
+
+Varias veces hemos tratado aquí el tema del spam en los blogs. Ya lo anunciábamos en [[../node/14][este breve artículo]] allá por el mes de diciembre del año 2004, e intentamos solucionarlo haciendo uso del [[http://drupal.org/project/spam][módulo spam]] que nos ofrecía nuestro [[http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenido][CMS]]. Lo instalé respetando la configuración por defecto, con las únicas modificaciones de "no publicar lo presuntamente spam" y "avisar al administrador de la detección del mismo". Ésta última hizo que me dieran "un toque" desde mi [[../node/178][servicio de hosting]] porque el volumen de spam provocaba un elevado consumo de procesamiento en el servidor, que se multiplicaba con el envío de los correos correspondientes. Así, tuve que desactivarla y regularmente entrar como administrador a las páginas del módulo, donde comprobaba falsos positivos y borraba manualmente todo lo demás ([[../node/18][aquí]] podéis encontrar la entrada que en su día elaboré con más detalle). Jamás me ha dado un falso positivo y rara vez se ha colado algún comentario que fuera spam (esto lo conseguí reduciendo el número de URL que se permitían en el mismo para ser considerado "maligno").
+
+Posteriormente, el spam comenzó a atacar [[../node/51][vía "trackbacks"]] (tecnología que incorporan casi todos los gestores de contenidos para informar desde ellos a otros "colegas" que has escrito algo relacionado/inspirado con el tema que ellos también tratan). Tanto fue así que llegó el día en el que este tipo de spam superó con creces, según los logs de "esta mi bitácora", a los intentos de spam vía comentarios. Además, nunca recibí un trackback de un blog "amigo" (he de tener pocos :?), así que, como dirían en mi pueblo, tiré por la calle del medio y desactivé dicha funcionalidad: me duele mucho el consumo de ancho de banda y procesamiento sin sentido.
+
+Y desde aquí, a mi pensamiento no le costó mucho saltar a lo siguiente: ¿porqué filtrar los comentarios una vez que se producen y ya han consumido recursos? ¿No será mejor no dejar que se introduzcan en la base de datos del blog? La respuesta a esta pregunta llegó hace mucho tiempo: [[http://drupal.org/project/captcha][captcha]]. Consiste, básicamente, en hacerle un examen al que envía el formulario web para intentar detectar si es un humano o es una máquina (como en [[http://es.wikipedia.org/wiki/Blade_Runner][Blade Runner]]). Una de las técnicas más utilizadas es la de mostrar una imagen con letras "distorsionadas", y solicitar la introducción de dichos símbolos en un campo más del formulario web para que éste sea validado, cosa que ocurre si, lógicamente, coincide lo tecleado con lo mostrado en la imagen.
+
+Nuestro módulo captcha está aún en versiones inmaduras: "5.x-3.0-rc3", es por ello, y por algunas pruebas que hice con versiones anteriores cuyo resultado no fue el esperado, por lo que no me había decidido a utilizarlo. Sin embargo, hace una semana probé esta Release Candidate 3. Aunque tiene la posibilidad de funcionar como hemos descrito arriba, utilizando imágenes, y realizando preguntas sobre palabras existentes en frases de texto (ambas opciones disponibles en el propio módulo), preferí quedarme con su funcionalidad básica: realiza una pregunta matemática del estilo, ¿cuál es el resultado de la siguiente suma: 3+4?, y comprueba si el resultado introducido es correcto, validando así el formulario.
+
+Por ahora está funcionando muy bien, ni un sólo comentario spam recibido desde entonces (ni un solo log en la base de datos). No obstante, creo que es fácil preparar un script que analice, y pase, este tipo de pruebas...
+
+Ya veremos cuanto tardan. Entonces, evolucionaremos a [[http://drupal.org/project/captcha_pack][otras pruebas más complejas]](*).
+
+Como siempre, felices experiencias.
+
+(*) Ver también [[http://drupal.org/project/riddler][riddler]] y [[http://drupal.org/project/recaptcha][reCaptcha]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Drupal%20y%20su%20m%C3%B3dulo%20%22Captcha%22][Dejar comentario]].
+

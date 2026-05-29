@@ -1,0 +1,100 @@
+#+title: Tu fisio en el trabajo
+#+date: <2006-04-02 20:42>
+#+author: Godofredo Fdez.
+#+description: Todos los que trabajamos con ordenadores pasamos muchas horas adoptando las mismas posturas. Esto hace que los músculos se resientan. ¿Quién no ha salido del trabajo con un pequeño dolor en la muñeca de mantener horas y horas agarrado el ratón? Mi punto débil son las cervicales, acumulan mucha tensión y me provocan fuertes dolores de espalda y cabeza.
+#+filetags: Software
+#+options: _:nil
+#+nid: 119
+
+#+begin_export html
+<a href="http://www.workrave.org/" target="_blank"><img src="/static/img/workrave.png" class="image image-preview " width="200" height="40" border="0" align="right" hspace="10" vspace="10" alt="workrave.org"/></a>
+#+end_export
+Todos los que trabajamos con ordenadores pasamos muchas horas adoptando las mismas posturas. Esto hace que los músculos se resientan. ¿Quién no ha salido del trabajo con un pequeño dolor en la muñeca de mantener horas y horas agarrado el ratón? Mi punto débil son las cervicales, acumulan mucha tensión y me provocan fuertes dolores de espalda y cabeza.
+
+Hace tiempo descubrí este programa: [[http://www.workrave.org/][workrave]], que nos va dando consejos cada ciertos intervalos de tiempo para evitar mantener siempre la misma postura, y para evitar realizar sobreesfuerzos musculares por repetición. En aquel momento solía utilizar con frecuencia el S.O. Windows, y la versión que descubrí de este programa fue la existente para ese sistema operativo.
+
+Ahora que "sólo" trabajo en [[http://www.debian.org][GNU/Linux Debian]] he descubierto que ese programa está disponible en esta distribución.
+
+#+BEGIN_EXAMPLE
+  [20:30:38(godo@olivo)/home/godo]> apt-cache show workrave
+
+  Package: workrave
+
+  Priority: optional
+
+  Section: gnome
+
+  Installed-Size: 2128
+
+  Maintainer: Michael Piefel 
+  Architecture: i386
+
+  Version: 1.8.2-1
+
+  Depends: libart-2.0-2 (>= 2.3.16), ...
+
+  Filename: pool/main/w/workrave/workrave_1.8.2-1_i386.deb
+
+  Size: 806456
+
+  MD5sum: 8f05b3210df2981a90faa211db67ff6b
+
+  Description: RSI prevention tool
+
+   Workrave is a program that assists in the recovery and prevention of
+
+   Repetitive Strain Injury (RSI). The program frequently alerts you to
+
+   take micro-pauses, rest breaks and restricts you to your daily limit.
+
+   .
+
+   It includes a system tray applet that works with Gnome 2.2 and KDE
+
+   3.1 and has network capabilities to monitor your activity even if
+
+   switching back and forth between different computers is part of your
+
+   job.
+
+   .
+
+   Workrave offers many more configuration options than other similar
+
+   tools.
+
+   .
+
+   More information about this program can be obtained from
+
+   http://www.workrave.org/
+
+  Tag: hardware::input, interface::x11, role::sw:utility, suite::gnome,
+
+   uitoolkit::gtk, use::monitor, x11::applet
+#+END_EXAMPLE
+
+A sufrir un poquito menos (gracias al [[http://www.gnu.org/philosophy/free-sw.html][software libre]]).
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Tu%20fisio%20en%20el%20trabajo][Dejar comentario]].
+
+** Comentarios
+
+*** QuiroExpo (Miguel Angel 03/04/2006 - 13:23)
+Yo también sufro, como casi todos, de algunos problemas posturales. A principios de año fui a unas cuantas sesiones de quiromasaje.
+
+Es una chica argentina, Adriana, que tiene la consulta cerca de Ciudad Expo. La verdad es que está muy bien y es bastante terapeútico.
+
+Yo creo que funciona mejor que el software que has recomendado. Este también es libre, aunque no gratis, claro.
+
+*** Pues, por ahí van los tiros (Godo 05/04/2006 - 09:20)
+Llevo tiempo planteándome encontrar algún gabinete, clínica o como tengan a bien ser llamados, para ir a alguna sesión de vez en cuando. Hay muchas, pero busco una que cumpla el siguiente requisito: que esté cerca de mi trabajo o cerca de mi casa. Para evitar desplazamientos, atascos, pérdidas de tiempo, agobios...
+
+Tendré que buscar en páginas amarillas filtrando por código postal (búsqueda avanzada), y arriesgarme a falta de un buen consejo de alguien que conozca alguna que satisfazga dicho requisito.
+
+Si no la encuentro, utilizaré tu recomendación. Aunque desplazarse hasta Ciudad Expo puede suponer tanto estrés como el que te quite Adriana :-)
+
+Gracias, Miguel.
+
+Salud.

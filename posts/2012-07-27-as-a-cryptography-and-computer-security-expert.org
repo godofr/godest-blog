@@ -1,0 +1,13 @@
+#+title: As a cryptography and computer security expert...
+#+date: <2012-07-27 12:48>
+#+author: Godofredo Fdez.
+#+description: As a cryptography and computer security expert, I have never understood the current fuss about the open source software movement. In the cryptography world, we…
+#+filetags: 
+#+options: _:nil
+#+nid: 484
+
+As a cryptography and computer security expert, I have never understood the current fuss about the open source software movement. In the cryptography world, we consider open source necessary for good security; we have for decades. Public security is always more secure than proprietary security. It's true for cryptographic algorithms, security protocols, and security source code. For us, open source isn't just a business model; it's smart engineering practice.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=As%20a%20cryptography%20and%20computer%20security%20expert...][Dejar comentario]].
+

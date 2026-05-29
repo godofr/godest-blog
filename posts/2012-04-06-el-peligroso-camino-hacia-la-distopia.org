@@ -1,0 +1,33 @@
+#+title: El peligroso camino hacia la distopía
+#+date: <2012-04-06 12:14>
+#+author: Godofredo Fdez.
+#+description: Creo que a nadie se le escapa que vivimos tiempos difíciles. El recorte de libertades individuales, justificadas por toneladas de miedos: el terrorismo…
+#+filetags: Activismo Pensamiento Seguridad
+#+options: _:nil
+#+nid: 457
+
+#+begin_export html
+<img src="/static/img/el-gran-hermano-te-vigila.png" alt="El Gran Hermano te vigila" title="El Gran Hermano te vigila"  class="image image-preview " width="210" height="290" border="0" align="right" hspace="10" vspace="10" />
+#+end_export
+Creo que a nadie se le escapa que vivimos tiempos difíciles. El recorte de libertades individuales, justificadas por toneladas de miedos: el terrorismo internacional, los mercados, las hordas de hackers que acechan cada paso que damos en Internet, etc., y que constituyen la versión del infierno moderno, está provocando la parálisis pertinente en la población, lo que permite a sus gobiernos recorrer peligrosos caminos que nos conducen hacia sociedades cada vez más parecidas a las [[http://es.wikipedia.org/wiki/Distop%C3%ADa][distópicas]] descritas en: [[http://es.wikipedia.org/wiki/Un_mundo_feliz][Un mundo feliz]], [[http://es.wikipedia.org/wiki/1984_(novela)][1984]], ambos libros de obligada lectura, o en [[http://es.wikipedia.org/wiki/V_de_Vendetta_(pel%C3%ADcula)][V de Vendetta]], de obligado visionado.
+
+En los últimos días hemos podido [[http://www.abc.es/20120402/tecnologia/abci-reino-unido-control-internet-201204021354.html][leer en la prensa]] palabras como estas: "la nueva legislación requerirá de una orden de búsqueda para que el servicio secreto pueda acceder al contenido de las llamadas o los emails. Sin embargo, *no habrá necesidad de que medie un juez para que soliciten un rastreo exhaustivo de la actividad de un usuario*. De esta forma, los servicios secretos podrán saber en todo momento con quién se comunican los ciudadanos".
+
+Párrafos inmersos en artículos que hacen referencia a los intentos legislativos del gobierno británico para controlar las comunicaciones del que por allí pase: "todos los datos de las cuentas personales de Internet o de los móviles podrían ser monitorizados, según la legislación". Y [[http://www.avaaz.org/en/stop_cispa/?cl=1704990036&v=13515][en EE.UU. ya van por el tercer intento]].
+
+Aunque parece que [[http://www.abc.es/20120403/internacional/abci-rebelion-cameron-comunicaciones-201204031308.html][está encontrando cierta resistencia en su propio parlamento]], intentos así hacen que mi preocupación aumente: *¿qué estamos haciendo mal las personas que constituimos las generaciones que toman decisiones de gobierno? ¿de qué tenemos tanto miedo? ¿por qué se nos olvida tan pronto lo ocurrido en regímenes políticos que mutilaron las libertades básicas de los individuos?*
+
+Y es que este tipo de decisiones, en mi opinión, siempre acaban siendo malutilizadas contra el débil o en beneficio propio de la clase dirigente (véase también "[[http://es.wikipedia.org/wiki/La_vida_de_los_otros][La vida de los otros]]"). Siempre he pensado que quien de verdad quiere burlar la ley se dota de elementos que así se lo permiten. En el caso que nos ocupa todo pasa por cifrar la información con algoritmos y claves lo suficientemente fuertes, utilizar cauces de intercambio diferentes a los masivos (comunicaciones cifradas hacia algún servidor dedicado, también cifrado, escondido bajo alguna IP pública). Técnicas que dificultarían sumamente la interceptación de sus comunicaciones y que reducirían la efectividad de este tipo de medidas a sólo aquellos que no las utilizan: el ciudadano normal y corriente, una vez más.
+
+*Existe, a mi juicio, una delgada línea roja que nunca ha de ser traspasada si no queremos vernos inmersos en un estado absolutista: el acceso a información privada sólo ha de ser posible previa orden judicial*. Quiero pensar que en las sociedades en las que vivimos actualmente, caracterizadas por un sistema garantista de libertades individuales, todos partimos siendo inocentes hasta que se demuestra lo contrario. Por tanto, hasta que no haya indicios fundados de que podemos ser "peligrosos" para la sociedad el poder no debe espiarme, y si cree necesitarlo ha de estar autorizado por un juez. Reparto de poderes que evita los abusos de la concentración. *Ha costado mucho conseguir esto para que nos lo comencemos a cargar en varios plumazos*.
+
+Como dije en uno de los debates que surgieron en el último [[http://www.si-class.org/][curso de seguridad de la información]] que impartí: todo es posible y todo depende de una decisión política si el pueblo no expresa lo contrario (y a veces, en mis horas bajas, sospecho que incluso expresándolo). Así de fácil. Así de débil.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=El%20peligroso%20camino%20hacia%20la%20distop%C3%ADa][Dejar comentario]].
+
+** Comentarios
+
+*** Añado una referencia (Godesa 13/04/2012 - 19:35)
+Si quisieras darle una oportunidad, te ayudaría en las argumentaciones y debates La Naranja Mecánica, bien en su versión novela, bien en su versión película... sobre todo en los puntos que conciernen a la manipulación ejercida por los Estados y a quién tiene la autoridad final para decidir qué es lo bueno y qué es lo malo.
+Por otro lado, yo añadiría un factor más, que afortunadamente en los últimos tiempos ha entrado en declive como quedó patente con la primavera árabe, la spanish revolution y todo lo que continúa aún. Este factor ha sido la desidia que campaba entre los ciudadanos, que en parte contribuyó al abuso descarado por parte de los mandatarios y que ahora uno tras otro está siendo puesto al descubierto.

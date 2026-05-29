@@ -1,0 +1,23 @@
+#+title: Mantenimiento con "System Rescue CD" [Arrancado VMware desde el CD o imagen ISO]
+#+date: <2010-02-14 21:38>
+#+author: Godofredo Fdez.
+#+description: Para arrancar una máquina VMware desde el CD (imagen ISO montada como tal), justo cuando comienza a arrancar el sistema hay que pulsar con el ratón en la…
+#+filetags: 
+#+options: _:nil
+#+nid: 349
+
+Para arrancar una máquina VMware desde el CD (imagen ISO montada como tal), justo cuando comienza a arrancar el sistema hay que pulsar con el ratón en la ventana para que capture el foco *e instantáneamente pulsar la tecla Esc*, que hará que se muestre un menú con los dispositivos disponibles para arrancar. Basta con seleccionar el número correspondiente al CD.
+
+Así sueles probar las ISO y los Antivirus que vienen con "[[https://www.system-rescue-cd.org/][System Rescue CD]]".
+
+Respecto a utilizar herramientas antimalware, estas estuvieron hace tiempo incluidas en "System Rescue CD", pero ahora ya no lo están. Es necesario, y quizá incluso mejor, utilizar herramientas similares propias de los fabricantes. Aquí puedes encontrar un listado con algunas de ellas:
+https://www.techradar.com/best/best-antivirus-rescue-disk
+
+*Echa un vistazo también a estas soluciones alternativas*:
+http://www.linuxandubuntu.com/home/top-5-linux-system-rescue-cds
+
+Salud!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Mantenimiento%20con%20%22System%20Rescue%20CD%22%20%5BArrancado%20VMware%20desde%20el%20CD%20o%20imagen%20ISO%5D][Dejar comentario]].
+

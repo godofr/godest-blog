@@ -1,0 +1,46 @@
+#+title: ¿Te vas a perder el próximo @H4ckM33ts?
+#+date: <2015-06-29 16:13>
+#+author: Godofredo Fdez.
+#+description: Yo no lo haría. Este blog sigue teniendo un marcado carácter personal, como ya describíamos aquí , básicamente escribo de aquello que me interesa, sin ataduras…
+#+filetags: Seguridad
+#+options: _:nil
+#+nid: 533
+
+Yo no lo haría.
+
+Este blog sigue teniendo un marcado carácter personal, como ya describíamos [[http://godest.vivencias.net/content/blog-personal-o-blog-tem%C3%A1tico][aquí]], básicamente escribo de aquello que me interesa, sin ataduras profesionales ni temáticas. Es algo que cultivo por devoción y quiero que me siga suponiendo un ensanchamiento de mi libertad, por eso no me impongo ni las restricciones que antes comentaba, ni ritmo de publicación... cuando creo que tengo algo que contar, me siento, respiro, muchas veces me acompaño de música, infusión o café, y escribo.
+
+Hasta ahora creo que no he “promocionado” ningún evento, exceptuando aquellos en los que intervengo como ponente. Y no lo he hecho porque cada vez me es más difícil encontrar eventos, ponencias, presentaciones, charlas, conferencias..., llamadles como queráis, que merezcan la pena. Por lo general, en este tipo de cosas sólo encuentras lugares comunes y variaciones “planas” sobre los mismos temas.
+
+Yo suelo hacer un ejercicio siempre que asisto a un evento: intento encontrar dos o tres herramientas/ideas/enfoques que me sean útiles, no espero mucho más, de hecho, en la duración que suelen tener no se debería pretender conseguir mucho más. Y compruebo habitualmente que estoy bastante solo, o somos pocos los que así pensamos, pues sigo encontrando “presentaciones” llenas de conceptos, datos, tablas, texto y más texto... en fin, abrumadoras, totum-revolutum, que tras finalizar no te dejan prácticamente nada, las olvidas como olvidaste a quien saludaste ayer en el ascensor.
+
+Obviamente, por coherencia, cuando planteo una ponencia sólo aspiro a transmitir tres ideas fundamentales, lo demás podría considerarse “fuego de artificio” para mantener la atención, el ritmo, relajar a la audiencia, tensionarla...
+
+#+begin_export html
+<a href="/static/img/hackmeets.jpg" rel="lightbox"><img align="middle" alt="hackmeets" border="0" class="image image-preview " height="437" width="595"  src="/static/img/hackmeets.jpg" title="hackmeets" hspace="10" vspace="10"  /></a>
+#+end_export
+
+Esta semana he asistido a uno de esos eventos que de verdad merecen la pena: [[http://hackmeets.com/][HackMeets]]. Tanto la forma como el contenido son muy buenos. Organizados e impartidos por profesionales de [[https://www.elevenpaths.com/][Eleven Paths]] y [[http://www.movistar.es/grandes-empresas/][Telefónica Grandes Empresas]], en ellos no se realiza la típica presentación “vende productos/servicios” sino unos *talleres teórico/prácticos equiparables a las mejores jornadas de formación que suelen impartirse a nivel profesional*.
+
+Es muy difícil describir el *nivel de las ponencias* pues se debe a un difícil equilibrio entre el que las imparte y quien las recibe ;-), me atrevería a decir que están destinadas a un público técnico, con un nivel medio en programación/sistemas/comunicaciones/seguridad, pero no homogéneo: puedes saber mucho de una cosa y poco de otra. Lo mejor es que en cada una de ellas obtienes algo interesante, si conoces el tema seguro que profundizas en los detalles, y si no, te traes algunos “conceptos fuerza”, claves, que fundamentan la materia tratada. Lograr esto es muy complicado, y en gran parte creo que sólo está al alcance de grandes expertos en la materia que además atesoran ciertas dotes de comunicación. Por tanto, los ponentes, magníficos.
+
+Si has llegado hasta aquí leyendo seguro que quieres asistir a un “HackMeet” :-D, qué tienes que hacer:
+
+- Vigila [[http://hackmeets.com/#work][la web]] y el [[https://twitter.com/h4ckm33ts][Twitter]] para localizar el próximo que te venga bien.
+- Si tienes un comercial de Telefónica que te atiende es muy probable que recibas una invitación. Si consigues una tu presencia está garantizada.
+- En todo caso, regístrate en el formulario habilitado en la web para cada uno de los eventos programados.
+- Espera confirmación de asistencia (a veces hay problemas de aforo).
+
+En unos días intentaré publicar otro artículo describiendo cada uno de los talleres a los que asistí, con alguna curiosidad y sin llegar a hacer un [[https://es.wikipedia.org/wiki/Spoiler][spoiler]].
+
+Salud.
+
+#+begin_example
+
+P.D.: ahora puedes suscribirte a mi blog para que te lleguen los artículos puntualmente a tu correo: pulsa en la palabra "email" que está en el apartado "Suscribir" de la columna derecha y sigue el proceso: 1) introduce tu correo y resuelve el captcha, 2) pulsa sobre el enlace de validación/activación que vas a recibir en la dirección de email introducida.
+
+#+end_example
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=%C2%BFTe%20vas%20a%20perder%20el%20pr%C3%B3ximo%20%40H4ckM33ts%3F][Dejar comentario]].
+

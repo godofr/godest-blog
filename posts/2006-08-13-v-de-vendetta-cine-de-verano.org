@@ -1,0 +1,22 @@
+#+title: V de Vendetta - Cine de Verano
+#+date: <2006-08-13 20:55>
+#+author: Pili Cantautora
+#+description: Descripción: V de Vendetta en el Cine de Verano de la Diputación de Sevilla. Días 16 y 17 a las 22:15. Entrada: 3€. Patio de la sede de la Diputación (Avda.…
+#+filetags: 
+#+options: _:nil
+#+nid: 159
+
+Descripción:
+V de Vendetta en el Cine de Verano de la Diputación de Sevilla.
+Días 16 y 17 a las 22:15. Entrada: 3€.
+Patio de la sede de la Diputación (Avda. Menéndez y Pelayo, 32), Sevilla
+--------------------------------------------------------------------------
+Había que avisar al menos de cuando echaban V, no?
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+Os recomiendo la experiencia de este cine de verano, tiene su encanto... está guay eso de poder pedirte allí algo para cenar mientras ves la peli.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=V%20de%20Vendetta%20-%20Cine%20de%20Verano][Dejar comentario]].
+

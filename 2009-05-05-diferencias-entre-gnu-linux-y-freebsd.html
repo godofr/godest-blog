@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Actualizado: 2009-05-05 Inspirado en esta pregunta que se hizo en barrapunto, he decidido abrir este post para comentar las principales diferencias entre…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Diferencias entre GNU/Linux y FreeBSD</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">05 may. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-05-05-diferencias-entre-gnu-linux-y-freebsd.html">Diferencias entre GNU/Linux y FreeBSD</a></h1>
+<p>
+<b>Actualizado: 2009-05-05</b>
+</p>
+
+<p>
+Inspirado en <a href="http://softlibre.barrapunto.com/comments.pl?sid=80860&amp;cid=1143993">esta pregunta</a> que se hizo en barrapunto, he decidido abrir este post para comentar las principales diferencias entre GNU/Linux y FreeBSD. Además, incorporaré tras estos primeros párrafos cuatro apartados: ventajas comunes, desventajas comunes, ventajas de GNU/Linux y ventajas de FreeBSD (las ventajas de uno son respecto al otro, por lo que no merece la pena añadir los apartados desventajas individuales: son las complementarias, ¿sí? :-)). Así, intentaré mantener este post vivo a lo largo del tiempo, indicando al comienzo del mismo la fecha de la última edición.
+</p>
+
+<p>
+Pasamos a continuación a describir las diferencias generales y los principales conceptos implicados.
+</p>
+
+<p>
+Básicamente las diferencias se encuentran en la capa del kernel, ese gran desconocido para la mayoría de los usuarios: todo el mundo ha oído hablar de él pero nadie lo ha visto, ¿será mentira? ;-).
+</p>
+
+<p>
+Sin ánimo de extenderme mucho, y sin querer entrar en batallas dialécticas de límites y funciones que nos lleven a una clase magistral, el kernel es el encargado de gestionar los recursos de la máquina: la memoria, la velocidad del procesador (véase la regulación que se hace en modo ahorro de energía de los portátiles ;-)), las comunicaciones con los periféricos, el espacio de disco, etc. Los "puristas" suelen llamar Sistema Operativo al kernel y poco más, al resto les llaman aplicaciones, que se ejecutan sobre el Kernel. También hay algunas diferencias en los niveles de seguridad implementados <b><b>de serie</b></b> tanto en la ejecución de procesos como en los accesos a ficheros, permisos de usuario, etc.
+</p>
+
+<p>
+Pues, así, podríamos decir que la diferencia entre FreeBSD y GNU/Linux está en el kernel, sobre éste ambos suelen correr el mismo conjunto de aplicaciones: encontramos servicios (apache, exim, etc.) y entornos de trabajo (gnome, kde, etc.), aplicaciones de grabación y reproducción multimedia, gráficas, etc. Puede ser que alguna aplicación no esté disponible para uno y sí para el otro, pero básicamente, un usuario final no "debería notar" grandes diferencias en esto. Sí que puede haberlas en temas de rendimiento, soporte de dispositivos, etc., pero creo que en temas de rendimiento, aún habiéndolas, son tan mínimamente apreciables para un usuario final que no deberían ser suficientes para basar una decisión. Sí que lo serán los dispositivos soportados: es triste gastarte la pasta en algo que luego no puedes utilizar.
+</p>
+
+<p>
+En fin, en esto del software libre lo bonito es precisamente eso: la libertad. Uno es libre de probar, aprender&#x2026; y quedarse con lo que más le guste y cómodo se halle.
+</p>
+
+<p>
+En mi caso particular: no me iré de GNU/Debian nunca (mientras sigan manteniendo el nivel de calidad con la que vienen trabajando todos estos años) y he comenzado a explorar FreeBSD por motivos de trabajo y aprendizaje.
+</p>
+
+<p>
+<b>Ventajas comunes</b> - Son software libre.
+</p>
+<ul class="org-ul">
+<li>Son gratuitos.</li>
+<li>Están exentos de ser infectados por los virus más extendidos (hay quién piensa que por cualquier tipo de virus, a mi me parece excesivo y matizable. Para saber más lee <a href="file:///d:/node/287">esto</a>).</li>
+</ul>
+
+<p>
+<b>Desventajas comunes</b> - Suelen reconocer menos hardware que windows. Los fabricantes no suelen facilitar la labor de desarrollo de drivers. Hay que asegurarse de que nuestros dispositivos están soportados.
+</p>
+<ul class="org-ul">
+<li>Tienen muchos menos juegos que windows }:).</li>
+</ul>
+
+<p>
+<b>Ventajas GNU/Linux</b> - El proceso de instalación se parece cada vez más al de windows. El usuario menos avanzado es capaz de llevarlo a cabo en las distribuciones más comunes: ubuntu, debian, etc.
+</p>
+<ul class="org-ul">
+<li>Hoy por hoy soporta más software de virtualización, por ejemplo: Virtualbox (bueno, bonito, barato y fácil).</li>
+</ul>
+
+<p>
+<b>Ventajas FreeBSD</b> - "Las estoy investigando" :-?.
+</p>
+
+<p>
+<b>Y tú, ¿compartes alguna?</b> Si te animas deja un comentario para luego consolidarlo en el cuerpo del post.
+</p>
+
+<p>
+Salud.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Diferencias%20entre%20GNU%2FLinux%20y%20FreeBSD">Dejar comentario</a>.
+</p>
+<div id="outline-container-org5f91bee" class="outline-2">
+<h2 id="org5f91bee">Comentarios</h2>
+<div class="outline-text-2" id="text-org5f91bee">
+</div>
+<div id="outline-container-orgc14f294" class="outline-3">
+<h3 id="orgc14f294">Pura presentación para (Ramiro 11/07/2010 - 18:29)</h3>
+<div class="outline-text-3" id="text-orgc14f294">
+<p>
+Pura presentación para decir lo mismo que NADA.
+</p>
+
+<p>
+un -6 te pongo y mas vale que estudies para la próxima -__-
+</p>
+</div>
+</div>
+<div id="outline-container-orgb3b40c8" class="outline-3">
+<h3 id="orgb3b40c8">Gracias, llevas razón&#x2026; (Godofredo Fdez. 14/07/2010 - 00:46)</h3>
+<div class="outline-text-3" id="text-orgb3b40c8">
+<p>
+&#x2026;la verdad es que el proyecto donde iba a utilizar FreeBSD se frenó en seco, y finalmente todo acabó con una pequeña prueba de instalación&#x2026; y un uso escaso.
+</p>
+
+<p>
+Sensaciones contradictorias: me gustó el reconocimiento de hardware y la documentación para que lo poco que no funcionó a la primera lo hiciera a la segunda, y sin mucho esfuerzo. No me gustó el "sistema de gestión de paquetes", lo vi muy cutre al lado de apt. También me gustó mucho la configuración de seguridad y el rendimiento.
+</p>
+
+<p>
+Si tuviera que concluir (aceptando la poca dedicación y por tanto la gran distancia a una opinión de valor): como sistema operativo de servidor de propósito específico (comunicaciones, relay de correo, vpn, etc.) me parece genial, como sistema operativo de batalla diaria (escritorio) me parece difícil, mejor dicho: tedioso, de mantener y escalar.
+</p>
+
+<p>
+Sin fanatismos, ¡eh!
+</p>
+
+<p>
+Por cierto, tú tampoco has demostrado haber estudiado mucho, ¿no? ;-)
+</p>
+
+<p>
+Salud y gracias nuevamente.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-freebsd.html">FreeBSD</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

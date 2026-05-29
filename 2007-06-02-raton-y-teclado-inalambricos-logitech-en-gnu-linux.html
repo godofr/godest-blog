@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Espero que este pequeño script os sirva a todos aquellos que utilizáis un ratón Logitech en vuestra máquina donde, obviamente, tendréis instalado un sistema…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Ratón y teclado inalámbricos Logitech en GNU/Linux</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">02 jun. 2007</div><h1 class="post-title"><a href="https://godest.vivencias.net/2007-06-02-raton-y-teclado-inalambricos-logitech-en-gnu-linux.html">Ratón y teclado inalámbricos Logitech en GNU/Linux</a></h1>
+<p>
+Espero que este pequeño script os sirva a todos aquellos que utilizáis un ratón <a href="http://www.logitech.com/es-es/home">Logitech</a> en vuestra máquina donde, obviamente, tendréis instalado un sistema GNU/Linux (a todas luces <a href="http://www.debian.org">Debian</a>, supongo ;-) ).
+</p>
+
+<p>
+El script está construido en <a href="http://es.wikipedia.org/wiki/PERL">Perl</a>, además hace falta instalar el siguiente módulo: "apt-get install libmime-lite-perl". Bajo mi punto de vista, como administrador de redes y sistemas, uno de los lenguajes que más "herramientas" pone a nuestra disposición: aquí vemos como construimos y enviamos un correo electrónico (<b>gracias, Miguel Ángel</b>, por compartir tus conocimientos y ensanchar así los míos) si se cumple una determinada condición: critical = pilas prácticamente sin carga.
+</p>
+
+<p>
+Utilizamos la salida del programa <b>lmctl</b>, el cual podéis encontrar <a href="http://www.bedroomlan.org/projects/lmctl">aquí</a> (existe <a href="http://www.bedroomlan.org/~alexios/files/SOFTWARE/lmctl/lmctl_0.3.2_i386.deb">paquete para Debian</a>). Este programa es el que en realidad consulta el estado de la batería (pilas) del ratón. El script lo utiliza para crear un fichero de texto en /tmp/salida.txt, que luego analiza, línea a línea, buscando la palabra "critical". Como hemos dicho antes, esta palabra aparece como indicador del estado si las pilas están prácticamente agotadas. Cuando así sea, enviamos un correo electrónico avisando de tal hecho.
+</p>
+
+<pre class="example" id="orgbaa2102">
+[15:54:59(godo@surco)~]&gt; more .kde/Autostart/pilas_raton.pl
+#!/usr/bin/perl
+#
+# Script que ejecuta el comando 'lmctl -i' para
+# conocer el estado de la bateria del ratón
+
+use MIME::Lite;
+
+#print "\nComprobando batería del ratón...\n\n";
+
+$patron="critical"; # Patron a buscar
+#print "\n$patron";
+
+# Ejecutamos el comando
+system("/usr/bin/lmctl -i &gt; /tmp/salida.txt"); 
+
+open SALIDA, "&lt; /tmp/salida.txt";
+
+# Comenzamos la busqueda
+
+while($linea=&lt;SALIDA&gt;)
+{
+  if($linea=~/$patron/)
+    {
+      # Creamos el correo a enviar
+      $msg = MIME::Lite-&gt;new(
+        From    =&gt; 'raton@bateria.org',
+        To      =&gt; 'usuario@dominio.es',
+        Bcc     =&gt; 'usu@dominio.net',
+        Subject =&gt; 'Cambia las pilas - CRITICAL',
+        Type    =&gt; 'multipart/mixed');
+
+      $msg-&gt;attach(
+        Type    =&gt; 'TEXT',
+        Data    =&gt; 'Batería demasiado baja.');
+
+      $msg-&gt;send('smtp', '127.0.0.1');
+    }
+}
+
+close SALIDA;
+#Para eliminar el fichero creado 
+#descomentar la siguiente línea
+#system("rm /tmp/salida.txt");
+
+[15:55:16(godo@surco)~]&gt;
+</pre>
+
+<p>
+¡OJO! Tenéis que particularizar los campos <b>To</b> y <b>Bcc</b> del correo añadiendo vuestra dirección donde queráis recibirlo. Además tendréis que modificar el servidor de envío de dicho correo: <b>smtp</b>. Observad que yo utilizo mi propia máquina como servidor de correo saliente: 127.0.0.1. Es recomendable que modifiquéis también el <b>From</b>, utilizando una dirección válida para evitar los filtros <b>antispam</b>.
+</p>
+
+<p>
+Ya sólo nos queda añadir una tarea a nuestro <a href="http://es.wikipedia.org/wiki/Cron_%28unix%29">cron</a>. Para ello ejecutamos desde nuestro usuario: "crontab -e", y añadimos al fichero editado lo siguiente:
+</p>
+
+<pre class="example" id="orgce33a38">
+# Para ejecutar el script que monitoriza las pilas del raton logitech
+45 14 * * *  /home/godo/.kde/Autostart/pilas_raton.pl
+</pre>
+
+<p>
+Con esto conseguimos que todos los días a las 14:45 se ejecute nuestro script. Guardado, en mi caso, en "<i>home/godo</i>.kde/Autostart/".
+</p>
+
+<p>
+Desde que recibáis el primer correo electrónico tenéis en torno a semana y media para cambiar las pilas. Claro, esto depende del uso que hagáis de ellas. En mi caso: 5 días x 8 horas (aproximadamente ;-)).
+</p>
+
+<p>
+Todos estos esfuerzos debidos a la falta de drivers, y de compromiso, que algunos fabricantes siguen mostrando con el mundo GNU/Linux. Bien es cierto que cada vez son más los que colaboran&#x2026; pero aún hay mucha tela que cortar.
+</p>
+
+<p>
+Quizá, alguno de vosotros lo hayáis resuelto de otra manera. Si es así, me gustaría que la compartierais con los demás dejando un comentario.
+</p>
+
+<p>
+En fin, un divertimento del que se puede aprender mucho: las maravillas del Perl. Otro día os contaré lo que me ha ayudado en la realización de algunas tareas.
+</p>
+
+<p>
+Y amaréis al <del>camello</del> <a href="http://es.wikipedia.org/wiki/O'Reilly_&amp;_Associates">dromedario</a> (En 1991 se publicó <a href="http://oreilly.com/catalog/9780596000271/index.html">Programming Perl</a> y se convirtió en la referencia de facto del lenguaje &#x2013;WikiPedia).
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Rat%C3%B3n%20y%20teclado%20inal%C3%A1mbricos%20Logitech%20en%20GNU%2FLinux">Dejar comentario</a>.
+</p>
+<div id="outline-container-org966a35c" class="outline-2">
+<h2 id="org966a35c">Comentarios</h2>
+<div class="outline-text-2" id="text-org966a35c">
+</div>
+<div id="outline-container-orgf8569d8" class="outline-3">
+<h3 id="orgf8569d8">Excelente Articulo (Martin 11/05/2012 - 15:23)</h3>
+<div class="outline-text-3" id="text-orgf8569d8">
+<p>
+Godo, gracias por compartir. Lo voy a estar utilizando y si consigo mejorarlo y añadirle alguna aplicacion, me comunico contigo y te lo envio.
+</p>
+
+<p>
+Mil Gracias!
+</p>
+</div>
+</div>
+<div id="outline-container-org7b991ad" class="outline-3">
+<h3 id="org7b991ad">Gracias a ti, Martín (Godo 11/05/2012 - 16:33)</h3>
+<div class="outline-text-3" id="text-org7b991ad">
+<p>
+Por escribir en este rinconcito.
+</p>
+
+<p>
+¡Qué friki llegué a ser, Dios mío! Ahora ya no tengo tiempo de enredar en estas cosas&#x2026; pero me siguen gustando mucho. Así que, si consigues mejorarlo y lo cuelgas por aquí te estaré muy agradecido.
+</p>
+
+<p>
+Porque, parece que no, pero que se te acaben las pilas de golpe y pillarte sin pilas de repuesto es molesto, eh! ;-)
+</p>
+
+<p>
+Saludos.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-hardware.html">Hardware</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

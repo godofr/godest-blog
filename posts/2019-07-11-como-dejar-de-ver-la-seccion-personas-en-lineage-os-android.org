@@ -1,0 +1,27 @@
+#+title: Cómo dejar de ver la sección "Personas" en Lineage OS (Android)
+#+date: <2019-07-11 13:58>
+#+author: Godofredo Fdez.
+#+description: Llevaba un tiempo que, al buscar un contacto en Android, obtenía información del contacto buscado y también una sección "Personas" en la que aparecían,…
+#+filetags: Configuraciones
+#+options: _:nil
+#+nid: 571
+
+Llevaba un tiempo que, al buscar un contacto en Android, obtenía información del contacto buscado y también una sección "Personas" en la que aparecían, siempre, supuestos "contactos alemanes" que no tenían nada que ver conmigo. Mira:
+
+#+begin_export html
+<img src="/static/img/Sección-personas-búsqueda-contactos-Android.jpg" width="306" height="543" alt="" />
+#+end_export
+
+Después de pelearme un rato con Google, haciendo búsquedas que me indicaran de dónde podrían venir esos "supuestos contactos" que aparecían en dicha sección, he sido capaz de encontrarlo por mí mismo, con esa extraña mezcla de intuición y suerte.
+
+Está todo explicado en el pdf que cierra este artículo. Si a ti también te ocurre, y estás cansado de que sea así, abre dicho pdf y sigue los pasos indicados.
+
+Yo estoy usando "[[https://lineageos.org/][Lineage OS]]" (sobre el que escribiré un artículo pronto), si tú estás utilizando la versión de Android que venía (o se actualiza automáticamente) en tu teléfono, por favor, déjame un comentario para que sepa que también ocurre en otros teléfonos con otras versiones del sistema operativo.
+
+¡Gracias!
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Quitar sección personas de la búsqueda telefónica en Android.pdf][Quitar sección personas de la búsqueda telefónica en Android.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=C%C3%B3mo%20dejar%20de%20ver%20la%20secci%C3%B3n%20%22Personas%22%20en%20Lineage%20OS%20%28Android%29][Dejar comentario]].
+

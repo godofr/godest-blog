@@ -1,0 +1,54 @@
+#+title: Otro reto completado: mi primer sudoku
+#+date: <2005-09-23 18:09>
+#+author: Godofredo Fdez.
+#+description: Este es el primer sudoku que intenté, y completé, el 15 de septiembre de 2005. Una mañana de vacaciones, cuando uno tiene tiempo para perderlo, y para…
+#+filetags: GNU/Linux Juegos/Deportes Software
+#+options: _:nil
+#+nid: 49
+
+#+begin_export html
+<a href="/?q=node/48" target="_self"><img width="180" height="180" border="0" align="right" src="/static/img/prisudoku.png"></a>
+#+end_export
+Este es el primer [[http://es.wikipedia.org/wiki/Sudoku][sudoku]] que intenté, y completé, el 15 de septiembre de 2005. Una mañana de vacaciones, cuando uno tiene tiempo para perderlo, y para ejercitar la mente -dicen-, dediqué casi 3 horas al dichoso jueguecito (menos mal que el nivel era, según indicaba, fácil). Varias veces pensé en mandarlo más allá de lo que no se encuentra, pero uno tiene este defecto: cuando se pica... se pica.
+
+Ahora he encontrado varios juegos para linux: [[http://www.madoverlord.com/projects/sudoku.t][Sudoku Susser]], [[http://sourceforge.net/project/screenshots.php?group_id=142841][Gnome Sudoku]] y [[http://ksudoku.sourceforge.net/index.php][ksudoku]] (este último basado en las librerías de kde: ksudoku depende de kdelibs4 (>= 4:3.4.1-1)). Estos resuelven en 4 centésimas de segundo (0.04 s.) lo que yo hice en casi 3 horas. Y eso en mi máquina: un AMD Duron a 900 MHz (¿cuánto tardarán en un pentium 4 a 3.8 GHz.?). ¡El poder de los algoritmos y la electrónica!
+
+A mi favor he de decir que no había leído nada de algorítmica aplicable (como dirían otros: me hice a mi mismo ;-)) y que el día siguiente completé uno de nivel complicado (supuestamente hay tres niveles: fácil, intermedio, complicado) en tan solo 1 h. y 30 min. (¡viva viva! :-D).
+
+En fin, chicos, no creo que vuelva a hacer ningún otro, no está la cosa como para invertir trocitos de día en estos quehaceres... que también relajan porque, sin más remedio, evaden.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Otro%20reto%20completado%3A%20mi%20primer%20sudoku][Dejar comentario]].
+
+** Comentarios
+
+*** Sudoku, vaya inventito (El hombre de la ruta 13/02/2006 - 21:52)
+Enviado por el hombre de la ruta (no verificado) el Mar, 25/10/2005 - 12:34
+
+Veo que has caido en las redes de este diabólico juego, capaz de como tu dices evadirte, pero también de llevarte a tirarte de los pelos. Además es una buena manera de aprender a tener paciencia (que como dice el refrán es la madre de toda la ciencia). Sé que está muy de moda en Londres (no me pregunteis cómo, porque uno tiene sus contactos) y que por aquí va cogiendo fuerza.
+
+Alguno de ellos he hecho yo también, la mayoría de ellos por Internet, donde hay algunas páginas donde te ofrecen gran cantidad de 'partidas' con diferentes niveles de dificultad, además de 'facilidades' (comprobar si hasta ahora tienes la partida bien, decirte las posibilidades para cada casilla, etc.) para aliviar la presión y los cabreos que te puede provocar el juego. Si estais interesados puedo buscar en casa la URL y así os ahorrais unas pelillas en el kiosko.
+
+En fin, despacito y buena letra y a disfrutar!\\
+
+*** Una página interesante (Juan Fernando 13/02/2006 - 21:53)
+Creo oportuno advertir de la siguiente página: [[http://juegosdeingenio.org/][www.juegosdeingenio.org]]
+
+Para perderse en ella...
+
+*** Te agradezco la "advertencia" (Godo 13/02/2006 - 21:58)
+(Enviado por Godo el Jue, 05/01/2006 - 21:52)
+
+Le echaré un vistazo más detenidamente durante ¿estos días?
+
+Me alegra ver que te vas animando a frecuentar y a comentar en este artilugio web.
+
+Recuerdos.
+
+P.D.: He editado tu comentario para añadir la función de "enlace" a la página sugerida. Lo digo por si notas cierta manipulación ;-)
+
+*** Enviado por el hombr (jaimedionne 26/08/2011 - 01:37)
+Enviado por el hombre de la ruta (no verificado) el Mar, 25/10/2005 - 12:34
+Veo que has caído en las redes de este diabólico juego, capaz de como tu dices evadirte, pero también de llevarte a tirarte de los pelos. Además es una buena manera de aprender a tener paciencia (que como dice el refrán es la madre de toda la ciencia). Sé que está muy de moda en Londres (no me preguntéis cómo, porque uno tiene sus contactos) y que por aquí va cogiendo fuerza.
+Alguno de ellos he hecho yo también, la mayoría de ellos por Internet, donde hay algunas páginas donde te ofrecen gran cantidad de 'partidas' con diferentes niveles de dificultad, además de 'facilidades' (comprobar si hasta ahora tienes la partida bien, decirte las posibilidades para cada casilla, etc.) para aliviar la presión y los cabreos que te puede provocar el juego. Si estáis interesados puedo buscar en casa la URL y así os ahorráis unas pelillas en el kiosko.
+En fin, despacito y buena letra y a disfrutar!\\

@@ -1,0 +1,35 @@
+#+title: Curso de Experto Universitario Seguridad en Tecnologías de la Información y las Comunicaciones (I Edición)
+#+date: <2013-01-12 20:28>
+#+author: Godofredo Fdez.
+#+description: Desde el Departamento de Ingeniería Telemática de la Escuela Técnica Superior de Ingenieros de la Universidad de Sevilla se ha organizado esta primera edición…
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 508
+
+#+begin_export html
+<a href="/static/img/2013-SeguridadTIC.jpg"  rel="lightbox"><img src="/static/img/2013-SeguridadTIC.jpg" alt="2013-SeguridadTIC" title="2013-SeguridadTIC"  class="image image-preview " width="630" height="473" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+Desde el Departamento de Ingeniería Telemática de la Escuela Técnica Superior de Ingenieros de la Universidad de Sevilla se ha organizado esta primera edición del curso de referencia. Disponéis de toda la información sobre el mismo en [[http://www.cfp.us.es/web/ficha_avanzada.asp?id_titulo=3217&tipo=EU&basica][este enlace]]. El departamento también dispone de [[http://trajano.us.es/seguridadtic/][una página web con información detallada]]. Participo impartiendo clases teóricas y prácticas en el segundo módulo del curso, titulado: "Seguridad en Redes de Datos". En el que se tratarán los siguientes contenidos:
+
+#+BEGIN_QUOTE
+  - Introducción a las Redes
+  - Seguridad Básica en Switches (VLAN, DHCP, 802.1x), Routers (ACL, IPS/IDS) y firewall (configuraciones, DMZ).
+  - Acceso Remoto (IPSec, SSL)
+  - Seguridad 802.11
+  - Sistemas de gestión de Incidentes en Red
+#+END_QUOTE
+
+Agrupados en las siguientes asignaturas:
+
+#+BEGIN_QUOTE
+  Seguridad Básica en Redes LAN y WIFI (3 créditos)
+  Seguridad Perimetral de Redes IP (2 créditos)
+  Sistemas de Gestión de Incidentes en Red (1 crédito)
+#+END_QUOTE
+
+Si os resulta interesante, allí nos vemos.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Curso%20de%20Experto%20Universitario%20Seguridad%20en%20Tecnolog%C3%ADas%20de%20la%20Informaci%C3%B3n%20y%20las%20Comunicaciones%20%28I%20Edici%C3%B3n%29][Dejar comentario]].
+

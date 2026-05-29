@@ -1,0 +1,35 @@
+#+title: Defendiéndonos de lo desconocido (I)
+#+date: <2013-03-03 20:44>
+#+author: Godofredo Fdez.
+#+description: El 25 de junio del año pasado, 2012, escribía este artículo en el blog/portal de seguridad " Seguridad para Todos (SXato2) ". Lo recupero aquí porque vendrán…
+#+filetags: Seguridad Software
+#+options: _:nil
+#+nid: 501
+
+El 25 de junio del año pasado, 2012, escribía este artículo en el blog/portal de seguridad "[[http://www.seguridadparatodos.es/][Seguridad para Todos (SXato2)]]". Lo recupero aquí porque vendrán más partes en el futuro y porque deseo compartirlo con los lectores de este blog.
+
+Aprovecho para aconsejaros la lectura habitual de [[http://www.seguridadparatodos.es/][Seguridad para Todos (SXato2)]]. Es un buen hábito para mantenerse al día ;-).
+
+- - -
+
+Por definición, un zero-day es una vulnerabilidad existente en el sistema para la cual no existe contramedida ni temporal (inhibición por alguna técnica como podría ser la detección de un antivirus evitando que actúe) ni definitiva (existencia de parche que corrige la vulnerabilidad y deja de ser explotable para siempre). Por tanto, la existencia de un zero-day es una de las preocupaciones mayores de cualquier administrador de sistemas: ¿qué puede hacer para prevenir amenazas que intentan explotar este tipo de vulnerabilidades?
+
+En la siguiente figura he intentado plasmar los diferentes periodos en los que podríamos dividir el tiempo de vida de una vulnerabilidad, desde que se descubre hasta que deja de ser explotable (si se toman las medidas oportunas, tema que daría para otro artículo).
+
+#+begin_export html
+<a href="/static/img/zero-day-concepto.png"  rel="lightbox"><img src="/static/img/zero-day-concepto.png" alt="zero-day-concepto" title="zero-day-concepto"  class="image image-preview " width="640" height="225" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+El primer periodo lo he denominado investigación: intenta reflejar el tiempo invertido para hallar en el software un “agujero” explotable (vulnerabilidad). Aprovecho para informar a los lectores que existe un mercado en el que se compran y se venden vulnerabilidades, tanto por las empresas que ofrecen productos que las “mitigan” como por el cibercrimen que las utiliza para lograr sus objetivos.
+
+El segundo periodo, *para mí el más crítico, el verdaderamente desafiante y trascendental, como se ha podido leer estos días acerca de las [[http://unaaldia.hispasec.com/2012/05/theflame-reflexiones-sobre-otra.html][nuevas armas para la ciberguerra]]*, es aquel en el que la vulnerabilidad sólo es conocida por su descubridor y aquellos que han pagado lo suficiente para tener acceso a ella. Es, literalmente, como tener un espía en tu ejército o un traidor como escolta de tu emperador: una orden y estás muerto. Por eso he elegido la “zona roja”. Se comprueba cada vez más a menudo que este periodo está siendo ampliamente explotado, anchamente extendido y tremendamente cotizado.
+
+Existe un gran debate sobre las formas en las que se debe “hacer pública” una vulnerabilidad. No voy a profundizar en él ahora. Simplemente indicar que si la vulnerabilidad se hace pública en el mismo momento en el que es comunicada al desarrollador del software para que la corrija, se produce un zero-day: el desarrollador ha contado con cero días para poder investigar la solución, elaborar un parche, probarlo y distribuirlo. Sin embargo, *a mi juicio, esta situación no es tan grave como la previamente descrita: todos conocemos la existencia de la vulnerabilidad y, si bien no existe aún una solución definitiva, es posible establecer líneas de defensa que imposibiliten que sea explotada*.
+
+Como veis el tema da mucho juego y ha de ser considerado en [[http://www.aunclicdelastic.com/seguridad-logica/la-gestion-de-la-seguridad-y-el-miedo/][nuestra estrategia de seguridad]]. De hecho creo que es el pilar que fundamenta toda la industria de seguridad actual. Es necesario conocer este ciclo para ir haciéndonos preguntas, reflexionando sobre posibles respuestas y, así, ir construyendo nuestras diferentes líneas de defensa. Si existen.
+
+He dejado varias preguntas en el aire que retomaré en sucesivas entregas de esta serie. Ahora, me encantaría contar con tus reflexiones.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Defendi%C3%A9ndonos%20de%20lo%20desconocido%20%28I%29][Dejar comentario]].
+

@@ -1,0 +1,13 @@
+#+title: Gparted en D610
+#+date: <2009-04-08 23:28>
+#+author: Godofredo Fdez.
+#+description: Captura de gparted tras haber finalizado de redimensionar el disco duro para hacerle hueco a la instalación de FreeBSD. Más información aquí .
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 307
+
+Captura de gparted tras haber finalizado de redimensionar el disco duro para hacerle hueco a la instalación de FreeBSD. Más información [[/node/306][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Gparted%20en%20D610][Dejar comentario]].
+

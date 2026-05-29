@@ -1,0 +1,128 @@
+#+title: Xperia Neo y Android 4.0 Ice Cream Sandwich
+#+date: <2012-06-30 21:18>
+#+author: Godofredo Fdez.
+#+description: Llevo varios días observando que, al conectar mi móvil al ordenador, el software Sony PC Companion me propone una actualización. Veámosla a través de las…
+#+filetags: Seguridad Software
+#+options: _:nil
+#+nid: 477
+
+Llevo varios días observando que, al conectar mi móvil al ordenador, el software Sony PC Companion me propone una actualización. Veámosla a través de las capturas de pantalla realizadas (pulsando sobre ellas con el botón derecho pueden abrirse en una pestaña nueva para que su lectura resulte más fácil).
+
+En la siguiente figura podéis apreciar el modelo de mi móvil, Sony Ericsson Xperia Neo (MT15), y la nueva versión de software disponible:
+#+begin_export html
+<img src="/static/img/xperia-neo-1.png" alt="Python" title="Python"  class="image image-preview " width="520" height="365" border="0" align="middle" hspace="10" vspace="10" />
+#+end_export
+En esta otra se nos avisa de que el proceso de actualización puede tardar un poco y, lo que es más importante, de la versión actual:
+#+begin_export html
+<img src="/static/img/xperia-neo-2.png" alt="Xperia" title="Xperia"  class="image image-preview " width="520" height="381" border="0" align="middle" hspace="10" vspace="10" />
+#+end_export
+Y es aquí cuando se nos informa que, junto con la actualización de software de Sony, se nos actualizará nuestro Android a la versión 4.0 Ice Cream Sandwich. Muy bien. ¡Estamos abiertos a descubrir un nuevo mundo de posibilidades! ;-)
+#+begin_export html
+<img src="/static/img/xperia-neo-3.png" alt="Xperia" title="Xperia"  class="image image-preview " width="520" height="382" border="0" align="middle" hspace="10" vspace="10" />
+#+end_export
+Pero si le damos al enlace "Más información sobre Android 4.0" y leemos lo que aparece los pelos se nos empiezan a poner de punta.
+#+begin_export html
+<img src="/static/img/xperia-neo-4.png" alt="Xperia" title="Xperia"  class="image image-preview " width="520" height="386" border="0" align="middle" hspace="10" vspace="10" />
+#+end_export
+Ahora resulta que:
+1.- Los requisitos de hardware son superiores para esta versión de Android y *el smartphone puede sufrir una pérdida de rendimiento*. Pues vamos bien: si actualmente ya no es la alegría de la fiesta, conmutar de una aplicación a otra ya le cuesta y arrancar algunas ni te digo...
+2.- *Y esto sí que es limitante*: si los resultados no son los esperados, *¡No podré regresar a mi actual versión!*. Virgencita, virgencita que me quede como estoy.
+
+Ante este panorama decido buscar información por Internet y preguntar en mi Twitter. Y tanto las páginas que encuentro como las opiniones recibidas son, al menos, preocupantes:
+* Sólo mi amigo @RG_Web_Designer me informa de estar satisfecho con los resultados conseguidos.
+* Mi amigo @jaimefdml me informa de que el resultado tras actualizar un Samsung es muy inestable: "a veces se me apaga solo y hay apps que petan".
+* Mi amigo @RafSegGir me aconseja que: "Haz copia d seguridad,pro metele mejor una ROM cocinada creo q t dará mejor resultado", y encuentra estas tres razones para actualizar: "1.t quita la morrallada preinstalda del operador 2.Mejora el rendimiento notablemente 3.Eres root".
+* A su vez, mi amigo @ecastifor me ayuda a distinguir entre los conceptos ROM stock y ROM cocinada: "las rom stock son las de fabrica. Antes de poner una cocinada es necesario tener acceso root en ellas".
+* Finalmente, de nuevo mi amigo @jaimefdml me indica un posible proceso a seguir: "Sería: Rooteo->I'm the fuckin' lord->Cambio ROM, Kernel o lo que quiera->Me he divertido. Ahora a trastear +"
+
+Tras leer los consejos recibidos, *comento algunas cosas que no se alinean mucho con mi forma de pensar*. Podríamos considerarlas como premisas:
+1.- No me gusta "rootear" el teléfono por cuestiones de seguridad. Si aplicaciones "piratas" pueden robarnos datos de nuestro teléfono ejecutando éste un entorno no root, es decir, corriendo las aplicaciones en el espacio de usuario, ¿qué no serían capaces de hacer si tienen acceso a todo el sistema? Porque si lo has rooteado entiendo que el usuario que ejecuta todo el software es root, por eso tienes acceso a zonas a las que no llegas si no eres root. Mi dispositivo actualmente no está rooteado. Por tanto, sólo rootearé el smartphone temporalmente para intentar hacer aquello que no pueda de otro modo, intentando reponer el estado "no root" tan pronto como sea posible.
+2.- No me gusta instalar nada de fuentes no oficiales por cuestiones de seguridad. Lo minimizo mucho en mi ordenador y no lo hago nunca en mi smartphone. Es deformación profesional: he visto tantas capacidades ocultas en el software "pirata" que usarlo me crea una gran desconfianza. Por tanto, no iré hacia lo cocinado al no ser que sea necesario pasar por una situación temporal y obligada para intentar restaurar un "estado fiable" del dispositivo.
+
+*Y así, llego a mis conclusiones*:
+1.- Lo primero que me gustaría hacer es una "copia de seguridad" del "estado/software" actual para poder volver a él en caso de necesidad. Pero el software PC Companion no ofrece esta posibilidad. Y el proceso de actualización tampoco. *¿Cómo lo hago?*. Primer frente abierto.
+2.- Una vez realizada la copia de seguridad actualizaré a Android 4.0 ICS. Probaré el teléfono y veré cómo va.
+3.- Si tras la actualización el móvil es más usable que actualmente permaneceré en ella. Si no, volveré a la actual configuración restaurando la "copia de seguridad" realizada en el paso 1.- Claro, aquí vuelvo a encontrarme el mismo frente abierto: *¿Cómo restauro la copia de seguridad?*
+
+*Quedan dos preguntas que responder*:
+1.- ¿Conocéis algún sitio donde pueda documentarme y obtener la herramienta necesaria para llevar a cabo ese proceso de backup/restauración?
+2.- Quizá necesite ser root para hacer algunas cosas, ¿es posible rootear y des-rootear?
+
+*Supongo que un posible camino sería*:
+1.- ¿Ser root?
+2.- Obtener una copia de seguridad del "sistema actual".
+3.- Actualizar a la nueva versión
+3.1.- Tras actualizar ya no eres root. Ok.
+4.- Probar la versión:
+4.1.- Si todo va bien, nos quedamos aquí. ¡Objetivo logrado!
+4.2.- Si no me gusta: volver a ser root, restaurar copia de seguridad, ¿des-rootear?
+
+*Por favor, todos los que me podáis ayudar sobre cualquier aspecto planteado dejadme un comentario*.
+
+Muchas gracias por todo.
+
+P.D.: este sitio web hace uso de dos herramientas para evitar spam a través de comentarios: un captcha de imagen y un módulo de detección de spam. Si vuestro comentario no aparece de forma inmediata no os preocupéis, queda en una cola de "posible spam" cuya publicación yo autorizaré manualmente en cuanto pueda.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Xperia%20Neo%20y%20Android%204.0%20Ice%20Cream%20Sandwich][Dejar comentario]].
+
+** Comentarios
+
+*** Bueno, voy a ir respondiendo (EmuAGR 02/07/2012 - 22:38)
+Bueno, voy a ir respondiendo todas las dudas que tienes según buenamente pueda.
+
+En general rootearlo permite hacer lo que quieras con el teléfono, entre ellas liberarlo y acceder a funciones avanzadas. No es un riesgo de seguridad porque cuando una aplicación pide permisos elevados se pregunta al usuario qué hacer. Es posible des-rootear pero lo veo una estupidez.
+
+Lo de fuentes no oficiales, referido a la ROM (en apps es otro tema), no hay nada que temer porque las cocinadas son ampliamente probadas por todo tipo de personas antes de sacar una versión estable. Suelen dar más rendimiento porque no traen tanta basura del fabricante/operador.
+
+Las copias de seguridad (en Samsung al menos) se hacen mediante una aplicación de arranque llamada ClockWorkMod que reemplaza el menú Recovery original del teléfono. Una vez instalado se puede copiar o restaurar el teléfono incluso aunque algo saliera mal.
+
+Y bueno, la documentación como ya te dije en HTCMania o XDA Developers. Hay manuales paso a paso donde se explica todo y es prácticamente imposible romper un dispositivo Android por software.
+
+No le tengas miedo a trastear, esa es precisamente la esencia de Android.
+
+*** Xperia Neo AND ICS  (Nacho R.R. 02/07/2012 - 22:42)
+Hola Godo,
+
+Ahora mismo estoy ocupado, después a ver si puedo darte mi punto de vista trás cacharrear un poco con mi Samsung Galaxy S plus.
+
+Te recomiendo MUCHO esta web (en español), de las muchas que hay por ahí es la que he encontrado con más material y apoyo por parte de los usuario:
+http://www.htcmania.com/forumdisplay.php?f=426
+
+Aunque creo que la más interesante es http://forum.xda-developers.com/ , de ahí sale la "comida" casi siempre xD
+
+Ya me cuentas! Saludos ;)
+
+Nacho R.R.
+
+*** Actualización a ICS realizada (Godo 22/07/2012 - 22:32)
+Hola.
+
+Antes que nada me gustaría dar las gracias a todos los que me habéis ayudado tanto por Twitter como por aquí. Vuestros comentarios me han sido muy útiles.
+
+Hoy he dedicado un buen rato a informarme de todo lo que hay al respecto. Me he encontrado con *una gran limitación*: mi versión de Android 2.3.4 sobre firmware 4.0.2.A.0.62 en un Xperia Neo MT15 no es "rooteable" "tal cual".
+
+Me explico: para conseguir ser root tenía dos elecciones:
+1.- Hacer un "downgrade" de firmware a la versión terminada en .42 que, hasta donde he investigado, tenía que conseguir en lugares de descarga no oficial.
+2.- Hacer un "upgrade" a la ICS (cosa que pretendía pero haciendo antes un backup de lo que tenía).
+
+Dado que no era posible hacer backup de la versión actual sin ser root me he decidido a actualizar asumiendo las consecuencias. Bueno, al menos había aprendido que si algo iba mal y la nueva versión no me acaba convenciendo, existían caminos "alternativos" para llegar a la situación actual.
+
+*De momento todo va bien* y sigo en el "roadmap" oficial: sin ser root y sin instalar nada de orígenes desconocidos.
+
+Si, conforme vayan pasando los días, hubiera novedades de suficiente entidad para darlas a conocer, tanto a favor como en contra, seguiré completando este post con comentarios.
+
+Gracias a todos los que habéis compartido o os animéis a compartir.
+
+*** como va con el android 4 (lycanx7 26/07/2012 - 04:43)
+yo tmabien quisiera actualizar el android 4, tnego el mismo movil, mas que todo por he leido en unforo que con la version de stock de androdi 4 se puede hacer correr linux debian, pero que tal como va con el resto de los probramas y principalmente como va CON EL CONSUMO DE BATERIA?
+
+*** En general creo que va mejor (Godo 26/07/2012 - 19:10)
+Pues eso, como digo más arriba actualicé a la versión oficial ofrecida por el Sony PC Companion y todo va muy bien, tanto el resto de programas como la batería. Esta última creo que dura prácticamente igual que antes, no soy capaz de percibir en ese sentido ni mayor ni menor duración significativa.
+
+Lo único que he notado es que la luz de "notificaciones" parpadea sólo al recibir algo nuevo (un correo, un Whatsapp...) pero no permanece parpadeando como lo hacía antes. No he tenido tiempo de investigar si es posible configurarla ¿?
+
+Ya me contarás como te va a ti si te animas.
+
+*** Es mejor instalar el ultimo android (Anonymous 08/04/2013 - 14:11)
+Yo tenia el Xperia mini hd, y tiene el mismo hardware que el neo, lo unico q le diferencia es que el mio tenia 5 megapixeles en la camara, y el neo tiene 8. Actualice el android 2 al 4. Note que se puso lento pero con un programa de liberacion de ram se puso rapido mi celular, la apariencia es la mejor. Yo me quedo con lo ultimo.

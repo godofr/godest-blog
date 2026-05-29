@@ -1,0 +1,13 @@
+#+title: Seguridad TIC - Modelo de Negocio - Portada
+#+date: <2015-06-08 16:41>
+#+author: Godofredo Fdez.
+#+description: Este es el título de mi ponencia de seguridad en la Escuela Superior de Ingenieros de la Universidad de Sevilla. Se imparte el martes, 9 de junio de 2015.
+#+filetags: 
+#+options: _:nil
+#+nid: 530
+
+Este es el título de mi ponencia de seguridad en la Escuela Superior de Ingenieros de la Universidad de Sevilla. Se imparte el martes, 9 de junio de 2015.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20TIC%20-%20Modelo%20de%20Negocio%20-%20Portada][Dejar comentario]].
+

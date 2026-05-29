@@ -1,0 +1,263 @@
+#+title: Patentes de Software: a un paso de su aprobación
+#+date: <2005-07-03 20:32>
+#+author: Godofredo Fdez.
+#+description: Hoy tengo que seguir luchando, y para ello aprovecho el buen hacer de otras muchas personas. A continuación podéis leer el mail que hemos recibido todos los socios de hispalinux. En él podéis descubrir los distintos posicionamientos políticos que se están manteniendo. También en barrapunto . En fin... Hola a todos, este documento es la rueda de prensa oficial que el PP Europeo dio ayer en el plenario del Parlamento Europeo. El testimonio del EPP empieza en el minuto 4 y al principio se dice que la votación de las
+#+filetags: GNU/Linux I+D+i Pensamiento Software
+#+options: _:nil
+#+nid: 20
+
+Hoy tengo que seguir luchando, y para ello aprovecho el buen hacer de otras muchas personas. A continuación podéis leer el mail que hemos recibido todos los socios de hispalinux. En él podéis descubrir los distintos posicionamientos políticos que se están manteniendo.
+
+También en [[http://barrapunto.com/article.pl?sid=05/07/02/2322214][barrapunto]].
+
+En fin...
+
+#+BEGIN_EXAMPLE
+   
+
+  Hola a todos,
+
+  este documento es la rueda de prensa oficial que el PP Europeo dio
+
+  ayer en el plenario del Parlamento Europeo. El testimonio del EPP
+
+  empieza en el minuto 4 y al principio se dice que la votación de las
+
+  patentes de software será el miércoles:
+
+  http://media.ffii.org/bxl050701/pressconf.mp3
+
+  En inglés, dice básicamente lo siguiente:
+
+  1) Apoyan la posición del JURI (el texto del Consejo maquillado).
+
+  2) Apoyan una nueva enmienda sobre operatibilidad (la que quiere IBM).
+
+  3) (Implícito) Rechazan las "21 ENMIENDAS DE CONSENSO" apoyadas por
+
+  europarlamentarios de todos los grupos.
+
+  4) No lo dice pero tenemos constancia escrita: dan libertad de voto en
+
+  la enmienda de las 21 que corrige el artículo 5.2 (famoso "unless").
+
+  Obviamente esto es absolutamente insuficiente porque deja artículos
+
+  tan nefastos como el 4 sin tocar y permite la total y absoluta
+
+  patentabilidad del software indiscriminadamente.
+
+  La posición del PPE español coincide según nuestra información con
+
+  esa que menciona el portavoz del PPE, salvo que ellos apoyan la enmienda
+
+  al artículo 5.2 en la que el EPP dicen dar liberdad de voto.
+
+  Esta posición del PPE español no cambia mucho con respecto a lo que
+
+  se escucha en la charla que dio el que los representó en la Conferencia
+
+  para pro-patentes que organizó la CompTIA a mediados de junio en Madrid
+
+  y que ha llegado a nuestras manos recientemente (alrededor del minuto 20
+
+  habla un asistente del eurodiputado López-Istúriz, que es al que
+
+  oficialmente le toda definir la posición del EPP español; escuchadlo
+
+  porque la grabación habla por sí misma -después habla el ayudante del
+
+  Ministro Montilla para el tema defendiendo una posición que coincide con
+
+  la del PSE español, así como la de verdes, IU y PNV -no así CiU-):
+
+  http://media.ffii.org/spanish/comptiahack.mp3
+
+  Si sale adelante la actual esa postura como la oficial del EPP
+
+  español es muy probable que sean los responsables, con sus 24 votos, de
+
+  que en toda Europa existan patentes de software a partir de este
+
+  miércoles, fecha de la votación del Parlamento en Estrasburgo.
+
+  Esto significará el hundimiento a medio plazo de prácticamente toda
+
+  la industria del software autóctona europea (PYMEs casi exclusivamente),
+
+  el encarecimiento del precio de los servicios de las TIC para el
+
+  consumidor, y la perpetuación del monopolio de las grandes
+
+  multinacionales norteamericanas de software en sus respectivos sectores.
+
+  Esto propiciará fácilmente, por ende, censuras en la libertad de
+
+  expresión en Europa de manos de quienes monopolizan las tecnología de
+
+  comunicación y expresión.
+
+  Es imprescindible que todo el mundo en España conozca esta situación
+
+  y presione al PP (y también a CiU que mantiene una postura semejante)
+
+  para que aisle a sus miembros pro-patentes y que sus votos no sean
+
+  contrarios a los intereses de la industria española. El tratar la no
+
+  patentabilidad del software como un tema de interés nacional, es la
+
+  postura que han tomado prácticamente todos los partidos de los países
+
+  del este de Europa, así como parece ser que también Italia y Portugal
+
+  (ésta última con 0 patentes de "CII" registradas en la OEP). Hay también
+
+  bastantes diputados alemanes que están en contra de la línea oficial de
+
+  su partido que está siendo agresivamente liderada por un abogado
+
+  eurodiputado alemán, Lehne, que trabaja para el bufete Taylor-Wesling
+
+  (una abogacía de patentes alemana).
+
+  Es también de notar que curiosamente coinciden la mayoría de los más
+
+  activos eurodiputados propatentes en la junta directiva de una fundación
+
+  financiada por las grandes empresas de software y tecnología mundiales:
+
+  la European Internet Foundation.
+
+  http://www.eifonline.org/Default.aspx?tabid=293
+
+  (de esa lista de políticos, sólamente de Kauppi tenemos constancia de
+
+  que no está haciendo lobby a favor de la patentabilidad del software o
+
+  del software disfrazado de ese parainvento que es la "invención
+
+  implementada en ordenador". Es notable la presencia de Pilar del
+
+  Castillo, ex-ministra del PP, y tenemos constancia de que su discurso
+
+  coincide con el del resto de esa junta directiva excepto Kauppi.)
+
+  La alternativa a esta posición absolutamente propatentes defendida
+
+  por la parte del JURI español y por el abogado de patentes Lehne, la más
+
+  radical del Parlamento, son las "21 ENMIENDAS DE CONSENSO" que defienden
+
+  todos aquellos eurodiputados de todos los grupos del espectro político y
+
+  países que están verdaderamente en contra de la patentabilidad del
+
+  software sin medias tintas interesadas. Esas enmiendas imprescindibles
+
+  con unos mínimos comentarios por parte de la FFII son éstas:
+
+  http://www.ffii.org/~rizox/21CompromiseAmendmentsALL_en-corrected.pdf
+
+  Ayer mismo se les entregó una copia física de este documento a cada
+
+  uno de los eurodiputados del Parlamento, por lo que debe ser conocido
+
+  por todos.
+
+  Quiero dejar constancia que un equipo de empresarios y académicos
+
+  informáticos españoles representando directamente a la mayoría del
+
+  sector informático español, junto a un empresario alemán representando a
+
+  varias medianas multinacionales europeas con intereses en la industria
+
+  española y que totalizan más de 5000 empleados, hemos mantenido
+
+  reuniones con al menos: 3 eurodiputados y 2 asistentes de la comisión de
+
+  industria del EPP español, 2 asistentes de la comisión jurídica del EPP
+
+  español y 2 asistentes de la comisión de economía del EPP español. En
+
+  esas reuniones hemos dejado claras nuestras máximas preocupaciones por
+
+  el futuro que le esperaría a la industria informática española en caso
+
+  de existir las patentes de software (también llamadas en la interesada
+
+  jerga de los abogados de patentes "computer implemente inventions"). Es
+
+  de nuestro entendimiento que estos eurodiputados y asistentes han
+
+  entendido el problema.
+
+  Os ruego que todos los potenciales damnificados, muchos de ellos
+
+  votantes del PP (empresariado, por ejemplo), levantéis vuestra voz e
+
+  informéis a los eurodiputados del PP de lo incorrecto de la postura
+
+  supuestamente oficial que les llega de manos de un político, Lehne, con
+
+  intereses particulares en el tema
+
+  ( http://wiki.ffii.org/KlausHeinerLehneEn
+
+  http://www.heise.de/newsticker/meldung/60988 )
+
+  Esta es la lista de teléfonos y faxes del Parlamento Europeo, para
+
+  aquellos empresarios que deseen expresar su pesar por el gran daño que
+
+  sufriría su empresa con el texto "legislativo" salido del JURI y de la
+
+  Posición del Consejo "ratificada por meras razones de trámite" pese a su
+
+  manifiesta incorrección reglamentaria
+
+  ( http://wiki.ffii.org/LtrFfiiCons050308En ):
+
+  http://www.ffii.org/~rizox/meplist.html
+
+  Hay que añadir +33 3 88 1xxxxx para Estrasburgo y  +32 2 28xxxx para
+
+  Bruselas.
+
+  Y esto es una explicación muy sencilla de cómo deben votar para
+
+  evitar las patentes de software en Europa:
+
+  http://europarl.ffii.org/amendments.en.html
+
+  Por favor, aunque este correo está dirigido a vosotros concretamente,
+
+  no dudéis en pasar los hechos que estoy desvelando a quien consideréis
+
+  necesario. Las opiniones que pueda haber emitido en este correo son mías
+
+  y no tiene por qué coincidir con las de la FFII.
+
+  Saludos, y máxima presión para evitar lo peor,
+
+       Alberto.
+
+  PD: en esta página podréis ver el nuevo "banner" para la votación y
+
+  dónde enlaza, junto con un modelo de carta en inglés para los
+
+  eurodiputados: http://swpat.ffii.org/letters/meps0503/index.en.html
+
+  _______________________________________________
+
+  Socios-anuncios mailing list
+
+  Socios-anuncios@listas.hispalinux.es
+
+  https://listas.hispalinux.es/mailman/listinfo/socios-anuncios
+#+END_EXAMPLE
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Patentes%20de%20Software%3A%20a%20un%20paso%20de%20su%20aprobaci%C3%B3n][Dejar comentario]].
+

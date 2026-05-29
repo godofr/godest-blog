@@ -1,0 +1,48 @@
+#+title: Banda Sinfónica Municipal de Sevilla
+#+date: <2007-09-30 13:38>
+#+author: Godofredo Fdez.
+#+description: Título: Compositores Europeos actuales Lugar: Teatro Hogar Virgen de los Reyes . Director: José Salazar Rodríguez. 1ª Parte ----------------- 1. Dakota (*) -- J. de Haan 1. The Great Spirit 2. Buffalo Hunting 3. Smoking the Pipe 4. the Ghost Dance 5. Pilgrims at Wounded Knee
+#+filetags: 
+#+options: _:nil
+#+nid: 253
+
+Título: Compositores Europeos actuales Lugar: [[http://callejero.paginasamarillas.es/flash/mapa.asp?ciudad=SEVILLA&x=-893&y=2837&l1=41009,%20SEVILLA&l2=Calle%20Fray%20Isidoro%20de%20Sevilla,%205&t_act=&radio=1000&Ops=Vacio&idCalle=1124&localidadgis=SEVILLA&idioma=spa&site=callejero][Teatro Hogar Virgen de los Reyes]]. Director: José Salazar Rodríguez. 1ª Parte
+-----------------
+
+#+BEGIN_QUOTE
+  1. Dakota (*) -- J. de Haan
+
+  #+BEGIN_QUOTE
+    1. The Great Spirit
+    2. Buffalo Hunting
+    3. Smoking the Pipe
+    4. the Ghost Dance
+    5. Pilgrims at Wounded Knee
+  #+END_QUOTE
+
+  2. Concerto D'amore (*) -- J. de Haan
+  3. Free World Fantasy (*) -- J. de Haan
+#+END_QUOTE
+
+2ª Parte
+-----------------
+
+#+BEGIN_QUOTE
+  1. Los Ríos (Impresiones Rítmicas) -- A. Malando-Arr. K. Vlak
+
+  #+BEGIN_QUOTE
+    1. Río Negro
+    2. Orinoco
+    3. Chubut
+  #+END_QUOTE
+
+  2. Vodeville Suite (*) -- P. Scheefer
+  3. Xilofonía (*) (^) -- R. Bodingbauer
+#+END_QUOTE
+
+(*) Primera vez por la Banda Sinfónica Municipal de Sevilla.
+(^) Solista: Baldomero Llorens Esteve.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Banda%20Sinf%C3%B3nica%20Municipal%20de%20Sevilla][Dejar comentario]].
+

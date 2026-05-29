@@ -1,0 +1,13 @@
+#+title: Emblema hacker
+#+date: <2005-12-11 21:26>
+#+author: Godofredo Fdez.
+#+description: Este es el emblema propuesto , y aceptado, por una amplia comunidad de hackers, que no crackers. Por favor, no sigas confundiéndolos: NO ES LO MISMO HACKER que…
+#+filetags: Logos
+#+options: _:nil
+#+nid: 88
+
+Este es el [[http://www.catb.org/hacker-emblem/][emblema propuesto]], y aceptado, por una amplia comunidad de hackers, que no crackers. Por favor, no sigas confundiéndolos: NO ES LO MISMO [[http://es.wikipedia.org/wiki/Hacker][HACKER]] que [[http://es.wikipedia.org/wiki/Cracker][cracker]] ([[http://www.microsiervos.com/archivo/internet/hacker-cracker.html][Hacker != cracker]]).
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Emblema%20hacker][Dejar comentario]].
+

@@ -1,94 +1,81 @@
 #+title: Actualizando el firmware del “EMTEC Movie Cube Q800”
 #+date: <2016-08-11 00:16>
-#+description: 
+#+author: Godofredo Fdez.
+#+description: Hace ya unos cuantos años, probablemente rondando los 10, compramos un “disco duro multimedia” de los que servían para dos cosas: 1. Hacer de decodificador de…
 #+filetags: Hardware
-
+#+options: _:nil
+#+nid: 552
 
 Hace ya unos cuantos años, probablemente rondando los 10, compramos un “disco duro multimedia” de los que servían para dos cosas:
 
-1. Hacer de decodificador de la TDT.
-2. Al incorporar un disco duro interno (en este caso de 500GB), reproducir contenido multimedia previamente grabado en el mismo. 
+#+BEGIN_QUOTE
+  1. Hacer de decodificador de la TDT.
+  2. Al incorporar un disco duro interno (en este caso de 500GB), reproducir contenido multimedia previamente grabado en el mismo.
+#+END_QUOTE
 
-#+begin_export html
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="640" height="480" border="0" align="center" hspace="10" vspace="10" src="/static/2016/movie_cube_q800.png"
- alt="Movie Cube Q800 panel trasero" />
-</figure>
-#+end_export
+   #+begin_export html
+   <img src="/static/img/movie cube q800.png" class="image image-preview " width="640" height="323" border="0" align="center" hspace="10" vspace="10" alt="Movie Cube Q800 panel trasero"/>
+   #+end_export
+*Problema* Sin embargo, hace unos meses comenzó a tener este problema: al arrancar, la luz azul del panel frontal parpadea incesantemente y es imposible ver en el televisor la pantalla del menú, o bien porque se muestra una en negro todo el rato o bien, como nos ha pasado a nosotros, porque aparece la pantalla del menú dos segundos y desaparece mostrándose una en negro... al tiempo vuelve a repetirse ese aparecer/desaparecer... y así.
 
-*Problema*
-Sin embargo, hace unos meses comenzó a tener este problema: al arrancar, la luz azul del panel frontal parpadea incesantemente y es imposible ver en el televisor la pantalla del menú, o bien porque se muestra una en negro todo el rato o bien, como nos ha pasado a nosotros, porque aparece la pantalla del menú dos segundos y desaparece mostrándose una en negro... al tiempo vuelve a repetirse ese aparecer/desaparecer... y así.
+*Solución* Tras echar un rato esta tarde de [[https://www.google.es/search?q=emtec+movie+cube+no+muestra+men%C3%BA&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=cJ6rV533EIPY8gfH9ofgAw#q=emtec+movie+cube+no+muestra+men%C3%BA+luz+azul+parpadea][búsqueda en Google]] y lectura de foros, he encontrado la solución leyendo [[http://www.mundodvd.com/emtec-movie-cube-q800-55009/54/#post2514752][éste]] hilo bastante extenso. Y aunque distintos usuarios daban diferentes respuestas, a mí la que me ha servido es la que consistía en actualizar el firmware. Sin embargo, el fabricante ya ha descatalogado estos productos y los ha retirado de su página web, por lo que no era capaz de conseguirlo. Aunque le he escrito un [[https://twitter.com/godofdez/status/763437745519853568][tweet]], de momento no he recibido respuesta. Pero, ¡oh casualidades de la vida!, justo cuando iba a desistir, me voy a la última página del citado foro y [[http://www.mundodvd.com/emtec-movie-cube-q800-55009/56/#post3843378][encuentro un post]] de otro sufridor que acababa de recorrer, hace tan solo unos días, el camino que yo intentaba, y en este caso ya había recibido el firmware del servicio técnico, dejando un enlace para su descarga. He descargado los archivos. He comprobado que tenían buena pinta, parecían ser los correctos (comparándolos con algunas capturas que había visto antes y lo que decían muchos usuarios que contenían), y me he arriesgado a actualizar siguiendo el procedimiento: Con el dispositivo conectado al televisor y seleccionando “su canal” para ver lo que va saliendo (barra de progreso), y con el pendrive insertado (con sus archivos correspondientes -- yo he utilizado la versión *Firmware release 924 for model V6.1.1262 (only)* porque mi dispositivo es muy antiguo y sospechaba que la V6.1, ¡y no la V6.2!, era la que le venía bien. No obstante, por lo que he leído si no hubiera sido así se hubiera quejado y no habría permitido la actualización. Así que todo es probar):
 
-*Solución*
-Tras echar un rato esta tarde de [[https://www.google.es/search?q=emtec+movie+cube+no+muestra+men%C3%BA&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&ei=cJ6rV533EIPY8gfH9ofgAw#q=emtec+movie+cube+no+muestra+men%C3%BA+luz+azul+parpadea][búsqueda en Google]] y lectura de foros, he encontrado la solución leyendo [[http://www.mundodvd.com/emtec-movie-cube-q800-55009/54/#post2514752][éste]] hilo bastante extenso. Y aunque distintos usuarios daban diferentes respuestas, a mí la que me ha servido es la que consistía en actualizar el firmware. Sin embargo, el fabricante ya ha descatalogado estos productos y los ha retirado de su página web, por lo que no era capaz de conseguirlo. Aunque le he escrito un [[https://twitter.com/godofdez/status/763437745519853568][tweet]], de momento no he recibido respuesta.
+#+BEGIN_QUOTE
+  1º Desconectas la corriente separando la toma del aparato.
+  2º Mantienes sin soltar el botón frontal de encendido (el negro que hay en el panel donde se enciende la luz azul y la roja).
+  3º Sin soltar, cuentas hasta diez y le conectas la clavija de la alimentación.
+  4º Sin soltar, cuentas hasta diez y aprietas el interruptor rojo de la parte trasera.
+  5º Sin soltar, esperas que se encienda la luz roja (la que normalmente se pone cuando grababas) o, si estás mirando la pantalla del televisor verás que aparece una barra verde de progreso de la actualización sobre un fondo azul... *ahora ya puedes soltar*.
+  6º Esperas entre unos cinco y diez minutos y... ¡listo! El mismo se apaga y se enciende, llegando a mostrar el menú de configuración inicial si todo ha ido bien.
+#+END_QUOTE
 
-Pero, ¡oh casualidades de la vida!, justo cuando iba a desistir, me voy a la última página del citado foro y [[http://www.mundodvd.com/emtec-movie-cube-q800-55009/56/#post3843378][encuentro un post]] de otro sufridor que acababa de recorrer, hace tan solo unos días, el camino que yo intentaba, y en este caso ya había recibido el firmware del servicio técnico, dejando un enlace para su descarga.
-
-He descargado los archivos. He comprobado que tenían buena pinta, parecían ser los correctos (comparándolos con algunas capturas que había visto antes y lo que decían muchos usuarios que contenían), y me he arriesgado a actualizar siguiendo el procedimiento:
-
-Con el dispositivo conectado al televisor y seleccionando “su canal” para ver lo que va saliendo (barra de progreso), y con el pendrive insertado con sus archivos correspondientes (yo he utilizado la versión *Firmware release 924 for model V6.1.1262 (only)* porque mi dispositivo es muy antiguo y sospechaba que la V6.1, ¡y no la V6.2!, era la que le venía bien. No obstante, por lo que he leído si no hubiera sido así se hubiera quejado y no habría permitido la actualización. Así que todo es probar):
-
-1. Desconectas la corriente separando la toma del aparato.
-2. Mantienes sin soltar el botón frontal de encendido (el negro que hay en el panel donde se enciende la luz azul y la roja).
-3. Sin soltar, cuentas hasta diez y le conectas la clavija de la alimentación.
-4. Sin soltar, cuentas hasta diez y aprietas el interruptor rojo de la parte trasera.
-5. Sin soltar, esperas que se encienda la luz roja (la que normalmente se pone cuando grababas) o, si estás mirando la pantalla del televisor verás que aparece una barra verde de progreso de la actualización sobre un fondo azul… *ahora ya puedes soltar*.
-6. Esperas entre unos cinco y diez minutos y… ¡listo! El mismo se apaga y se enciende, llegando a mostrar el menú de configuración inicial si todo ha ido bien.
- 
 Esta es la pinta que tiene el nuevo interfaz:
-
 #+begin_export html
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="640" height="480" border="0" align="center" hspace="10" vspace="10" src="/static/2016/movie_cube_q800_interfaz.png"
- alt="Movie Cube Q800 primer menú tras actualizar firmware" />
-</figure>
+<img src="/static/img/movie cube q800 interfaz.png" class="image image-preview " width="640" height="372" border="0" align="center" hspace="10" vspace="10" alt="Movie Cube Q800 primer menú tras actualizar firmware"/>
 #+end_export
 
-*Y aquí debajo podéis encontrar el .7z con el firmware*.
+#+BEGIN_QUOTE
+  Y aquí debajo podéis encontrar el .7z con el firmware.
+#+END_QUOTE
 
-Espero que os sea útil. Y agradezco comentarios contándome vuestra experiencia.
+Espero que os sea útil. Y agradezco comentarios contándome vuestra experiencia. P.D.: el firmware que yo he utilizado es el que aparece en el primer archivo adjunto a continuciaón (Q800 Firmwares.7z), un lector - ver comentarios - ha utilizado otro firmware que le ha funcionado y amablemente lo ha compartido, lo añado también como fichero adjunto directamente descargable (firmware_release_751_for_model_V6.2.1262_only.zip), pero ¡OJO! yo aún no he llegado a probarlo.
 
-P.D.: el firmware que yo he utilizado es el que aparece en el primer archivo adjunto a continuciaón (=Q800 Firmwares.7z=), un lector - ver comentarios - ha utilizado otro firmware que le ha funcionado y amablemente lo ha compartido, lo añado también como fichero adjunto directamente descargable (=firmware_release_751_for_model_V6.2.1262_only.zip=), pero ¡OJO! yo aún no he llegado a probarlo.
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Q800 Firmwares.7z][Q800 Firmwares.7z]]
+- [[https://godest.vivencias.net/static/files/firmware_release_751_for_model_V6.2.1262_only.zip][firmware\_release\_751\_for\_model\_V6.2.1262\_only.zip]]
+- [[https://godest.vivencias.net/static/files/EMTEC Movie Cube Q800 - DVB-T - Activar Samba - NAS.mp4][EMTEC Movie Cube Q800 - DVB-T - Activar Samba - NAS.mp4]]
 
-*Archivos que pueden ser descargados:*
-1. [[https://godest.vivencias.net/static/2016/Q800_Firmwares.7z][Firmware para Movie Cube Q800]]
-2. [[https://godest.vivencias.net/static/2016/firmware_release_751_for_model_V6.2.1262_only.zip][=firmware_release_751_for_model_V6.2.1262_only.zip=]]
-3. [[https://godest.vivencias.net/static/2016/EMTEC_Movie_Cube_Q800_DVB-T_Activar_Samba_NAS.mp4][Vídeo que muestra como utilizarlo con funciones de NAS]]
-
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Actualizando_el_firmware_del_EMTEC_Movie_Cube_Q800][Dejar comentario]].
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Actualizando%20el%20firmware%20del%20%E2%80%9CEMTEC%20Movie%20Cube%20Q800%E2%80%9D][Dejar comentario]].
 
 ** Comentarios
-*** Anonimo (no verificado Jue, 10/08/2017 - 19:12)
+
+*** Sé que es tarde pero.... (Anonimo 10/08/2017 - 19:12)
 Sé que es tarde pero....
 Agradezco mucho estas explicaciones, son muy claras y faciles de seguir. Además el archivo adjunto.... de 10. Me fue útil en su día, pero ya no me funciona, no entiendo por que jejeje me parece que me he cargado el cacharro.
 
 Muchisimas gracias de todas maneras,
 un saludo !
 
-*** Godofredo Fdez. (Vie, 11/08/2017 - 11:15)
-Aunque sea tarde...
+*** Aunque sea tarde... (Godofredo Fdez. 11/08/2017 - 11:15)
 Agradezco tu respuesta. Siempre es agradable ver que lo que uno comparte le sirve a otro.
 
 Yo no he tenido que repetir el procedimiento desde que lo hice, bien es verdad que el disco prácticamente ya no se usa, pues pasó a "alimentar" un televisor secundario que se pone poco. Respecto a por qué no te funciona, lo único que se me ocurre decirte, como ya señalo en el artículo, es que pongas especial cuidado en la versión de firmware que llevas al USB, a ver si te has despistado y estás probando con una que no sea compatible.
 
 Muchas gracias por participar en este rincón.
 
-*** Anonimo (no verificado Vie, 11/08/2017 - 11:40)
-Probé con otra versión
+*** Probé con otra versión (Anonimo 11/08/2017 - 11:40)
 Probé con otra versión descargada en otra página, y esa versión sí me funciono. No entiendo qué ha podido ocurrir, dejo aquí el link por si quieres añadirlo a tu entrada, o por si a alguno le sirve en algún momento (quizás a estas alturas no le interese a nadie XD):
 
 https://es.driverscollection.com/?file_cid=41066559006b0ab131d0ec323a5
 
 Un saludo!
 
-*** Godofredo Fdez. (Vie, 11/08/2017 - 11:59)
-Gracias por compartir
+*** Gracias por compartir (Godofredo Fdez. 11/08/2017 - 11:59)
 Muchísimas gracias por compartirlo. Ya lo he agregado como fichero directamente descargable desde este página (tras el otro que ya había). Me alegro de que te haya funcionado. Esperemos que le sirva a algún que otro lector más que aterrice por aquí.
 
 Saludos.
 
-*** Diego (no verificado Jue, 03/05/2018 - 12:54)
-Al final, parece que también lo he conseguido...
+*** Al final, parece que también lo he conseguido... (Diego 03/05/2018 - 12:54)
 Pues sí, tras leer vuestro artículo y alguna cosa más que encontré por ahí (como por ejemplo, que el disco duro está cerca de la placa base y se recalienta), conseguí arreglar el dichoso problema:
 - extrayendo el disco duro del Cube
 - desconectando y volviendo a conectar el conector de corriente interior (el que va a la placa base) y todos los conectores interiores que pude (sin forzarlos)
@@ -97,43 +84,35 @@ Pues sí, tras leer vuestro artículo y alguna cosa más que encontré por ahí 
 
 Tras finalizar la actualización (por fin) el Cube volvió a funcionar. Sin haber hecho los pasos previos, lo había intentado varias veces simplemente con la actualización y no conseguía arreglar el problema, así que creo que lo de la temperatura también tiene algo de influencia (lo del resto de conectores -desconectarlos y volverlos a conectar-, lo dudo, pero lo indico por si las moscas)...
 
-*** Godofredo Fdez. (Jue, 03/05/2018 - 17:43)
-Gracias por este nuevo comentario...
+*** Gracias por este nuevo comentario... (Godofredo Fdez. 03/05/2018 - 17:43)
 ...que aporta el factor "calentamiento" como otro motivo con fuerte probabilidad de incidir en el comportamiento. Estoy de acuerdo con todas las apreciaciones que compartes con nosotros.
 
 Saludos y larga vida al Cube ;-)
 
-*** Javier (no verificado Sáb, 11/04/2020 - 02:13)
+*** Buenas noches, (Javier 11/04/2020 - 02:13)
 Buenas noches,
 Esta noche he instalado el firmware después de estar más de cinco años con el Movie Cube parado y he de decir que tras varios intentos con la versión firmware para movie cube Q800 (6.2) sin ningún resultado, copié en el pendrive la firmware_release_751_for_model_V6.2.1262_only.zip y ha funcionado a la perfección. La verdad que pensaba que ya no podría usarlo en la tele y me he llevado una gran sorpresa. Es cierto que los canales no se sintonizan en HD, pero no pasa nada.
 Muchas gracias
 
-*** Godofredo Fdez. (Lun, 06/09/2021 - 08:43)
-Uso del firmware_release_751 con éxito
-Gracias por tu comentario. Seguro que ayuda a otros lectores.
-Saludos.
-
-*** pablo (no verificado Dom, 12/04/2020 - 11:04)
-Gracias
+*** Gracias (pablo 12/04/2020 - 11:04)
 He rescatado mi movie cube de su letargo yo tambien y solo deciros para el que le pueda interesar que con la version .906 de la descarga si que me permite utilizarlo como NAS, no asi con la .924; solo lo comento por si a alguien le pasa como a mi .
 Os adjunto un link interesante
 http://alpc360.blogspot.com/2009/11/emtec-movie-cube-q-800-con-tdt-activar.html
 
-*** Nekosidad (no verificado Mar, 01/06/2021 - 10:23)
-Ahre
+*** Ahre (Nekosidad 01/06/2021 - 10:23)
 Es posible hacerlo reproducir MP4? Porque yo tenia pensado llenarlo de anime a buena calidad, pero todo lo que le meto me dice formato incorrecto. Lo unico que he conseguido para hacerlo reproducir es convertir con el atube catcher a mpg y me ocupa 300mb un video de 5 minutos a calidad mierdera, asi que.... COMO PUEDO HACER QUE LEA VIDEOS MP4 sin convertirlos?
 
-*** Godofredo Fdez. (Lun, 06/09/2021 - 08:55)
-...ya no lo tengo en casa. Se lo di a un familiar y lo usa fundamentalmente para ver la TDT en una tele antigua.
-
-Respecto a convertir vídeos de un formato a otro, aquí puedes encontrar un artículo con el que yo pasaba vídeos a formato .avi (partiendo de .mkv), que sí que me leía.
-
-https://godest.vivencias.net/2019-07-15-como-convertir-un-mkv-a-avi.html
-
-A ver si te sirve, tras hacer algunas pruebas, para encontrar una solución.
+*** Uso del firmware_release_751 con éxito (Godofredo Fdez. 06/09/2021 - 08:43)
+Gracias por tu comentario. Seguro que ayuda a otros lectores.
 Saludos.
 
-*** Godofredo Fdez. (Lun, 06/09/2021 - 08:48)
-Uso del firmware .906 como NAS
+*** Uso del firmware .906 como NAS (Godofredo Fdez. 06/09/2021 - 08:48)
 Gracias por tu comentario. Así todos vamos aprendiendo: muy interesante el enlace que nos compartes.
+Saludos.
+
+*** No sé cómo hacer que lea vídeos MP4 (Godofredo Fdez. 06/09/2021 - 08:55)
+...ya no lo tengo en casa. Se lo di a un familiar y lo usa fundamentalmente para ver la TDT en una tele antigua.
+Respecto a convertir vídeos de un formato a otro, aquí puedes encontrar un artículo con el que yo pasaba vídeos a formato .avi (partiendo de .mkv), que sí que me leía.
+https://godest.vivencias.net/content/c%C3%B3mo-convertir-un-mkv-avi
+A ver si te sirve, tras hacer algunas pruebas, para encontrar una solución.
 Saludos.

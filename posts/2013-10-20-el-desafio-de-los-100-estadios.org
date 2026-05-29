@@ -1,0 +1,85 @@
+#+title: El desafío de los 100 estadios
+#+date: <2013-10-20 20:04>
+#+author: Godofredo Fdez.
+#+description: (Este artículo es continuación de este otro: &quot; &iquest;Por qué corro? &quot;). Mi objetivo de largo plazo para este año era (y sigue siendo) correr una…
+#+filetags: Juegos/Deportes
+#+options: _:nil
+#+nid: 515
+
+(Este artículo es continuación de este otro: "[[http://godest.vivencias.net/content/%C2%BFpor-qu%C3%A9-corro][¿Por qué corro?]]").
+
+Mi objetivo de largo plazo para este año era (y sigue siendo) correr una media maratón (estoy intentando que sea la de [[http://www.mediamaratonlospalacios.com/][Los Palacios el 15 de diciembre]]) para eso he tenido que entrenar mucho. Mi objetivo a corto era crear un hábito de entrenamiento y creo que lo he conseguido, son ya casi 18 meses saliendo de forma más o menos regular. Hoy me enfrentaba al objetivo a medio plazo: hacer una carrera de distancia intermedia a un ritmo medianamente decente (atención a las conclusiones del final).
+
+Así lucía esta mañana minutos antes de las 10:00, hora de comienzo de la prueba: “[[http://100estadios.com/][El desafío de los 100 estadios]]”.
+
+#+begin_export html
+<a href="/static/img/20131020-100estadios-01.jpg" rel="lightbox"><img align="middle" alt="20131020-100estadios-01" border="0" class="image image-preview " height="349" hspace="10" src="/static/img/20131020-100estadios-01.jpg" title="20131020-100estadios-01" vspace="10" width="640" /></a>
+#+end_export
+
+Estaba estrenando el fantástico regalo de mi cumpleaños: maravillosas sensaciones las que me han transmitido las prendas, una delicia correr con ellas (¡muchas gracias, compañeros!).
+
+También me ha gustado mucho el dorsal que la suerte me ha deparado: 255, esa máscara con todos los bits a 1 o esa dirección de broadcast ;-)
+
+Y así, con estos indicadores, he conseguido acabarla:
+
+#+begin_export html
+<a href="/static/img/20131020-100estadios-02.png" rel="lightbox"><img align="middle" alt="20131020-100estadios-02" border="0" class="image image-preview " height="735" hspace="10" src="/static/img/20131020-100estadios-02.png" title="20131020-100estadios-02" vspace="10" width="640" /></a>
+#+end_export
+
+Sensaciones y conclusiones:
+
+·         Nada más salir mi corazón ya iba a 160 pulsaciones por minuto. Muy extraño porque habitualmente soy capaz de correr varios kilómetros alrededor de las 140. ¿Nervios?
+
+·         Me he sentido con mucha fuerza, con ganas que he tenido que retener, durante los 9 kilómetros iniciales, mis piernas querían ir más rápido de lo que iba pero he sido capaz de contenerme y creo que he hecho bien. Aquí no sabía si iba a ser capaz de acabar (mi distancia máxima más reciente era de unos 12Km)...
+
+·         ...entre el kilómetro 9 y el 13,5 he comenzado a sentir mucho calor. El sol picaba y creo que eso también nos desgasta. Yo suelo llevar bien el calor por lo que estaba preocupado pero no mucho. Durante estos kilómetros aún no sabía si iba a acabar o no: tengo miedo al desfallecimiento inoportuno que suele llegar sobre el 80% de la carrera, independientemente de la distancia (para que os deis cuenta de lo que “manda la mente”).
+
+·         Durante los entrenamientos no acostumbro a beber, y creo, muy probablemente esté equivocado, que el agua de los avituallamientos me provoca un punto de pérdida de ritmo y otro de extraña sensación en el estómago que me acaba afectando negativamente.
+
+·         Entre los kilómetros 14 y el 15 decidí cambiar el ritmo, me seguía notando bien y aquí ya sí sabía que iba a llegar. Subí a unas 170 pulsaciones por minuto. Es curioso porque aunque comencé casi con 160 ppm he sido capaz de mantenerlas ahí, en 160, casi todo el recorrido.
+
+·         Sufrí bastante en los 700 metros últimos. Creo que a consecuencia del cambio de ritmo y del sol, pero he llegado bien, muy cansado, pero sin entrar en “ratamode” (mi amigo Carlos denomina así a ese modo en el que uno desconecta todo lo que no sirve --las miradas exploratorias, el oído, el mantenimiento postural...-  y se enfoca sólo en dar un paso tras otro para intentar llegar).
+
+·         *He entrado de los últimos*, probablemente el 5º por la cola. Aun así *he conseguido mi mayor victoria: superarme*. La gente que va a estas cosas acaba haciendo un ritmo inferior a los 6 minutos por kilómetro. Yo aún no estoy ahí.
+
+Y hoy dormiré otra vez con la conciencia tranquila y con el vaso de autoconfianza un poco más lleno.
+
+ACTUALIZADO 21-10-2013: Adjunto pdf con clasificación general masculina. Al final quedé el 13 por la cola. ¡Buen número!
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/100_estadios_carrera_a_pie_general_mas.pdf][100\_estadios\_carrera\_a\_pie\_general\_mas.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=El%20desaf%C3%ADo%20de%20los%20100%20estadios][Dejar comentario]].
+
+** Comentarios
+
+*** Iba a decir "máquinaaa", pero (Juan Fernando 21/10/2013 - 17:03)
+Iba a decir "máquinaaa", pero tu enfoque es humano, no maquinal. Así que "humanoo".
+
+*** Gracias, Juanfer. No te (Godofredo Fdez. 21/10/2013 - 21:48)
+Gracias, Juanfer. No te puedes imaginar lo que se disfruta antes, durante y después de la carrera. Correr es un ejercicio que, aunque parezca en compañía, uno hace solo. Vas disfrutando del entorno que te rodea, ayer eran caminos de tierra, frutales, huertas... vas observando a los demás, al público que aplaude (yo intento siempre devolver el aplauso y la gente se ríe ;-) ), las fachadas de las casas, el sol, el cielo... y vas pensando en casi todo: acuden a ti pensamientos de la niñez, de ayer, te emocionas y tienes ganas de llorar... otras veces sonríes.
+
+Creo que se podría resumir en que te das tiempo para encontrarte contigo mismo. Y eso siempre es bueno.
+
+Gracias por tus palabras, sabes que aprecio ese piropo: humano.
+
+*** ¡Muy grande Godo! Me ha (Nacho P. 22/10/2013 - 00:50)
+¡Muy grande Godo! Me ha gustado el detalle del 255, pero más me ha gustado la conlusión final. Todos ( o casi todos) alguna vez nos hemos superado, y esa sensación es indescriptible. ¡Me alegro mucho!
+
+A mí me gustaría correr mucho más. Espero que tus conclusiones puedan servirme como 'chispa' para que coja el hábito.
+
+Un saludo,
+
+Nacho.
+
+*** Gracias, Nacho.
+Justo cuando (Godofredo Fdez. 22/10/2013 - 08:52)
+Gracias, Nacho.
+
+Justo cuando me entregaron el dorsal esbozé una sonrisa porque esos dos pensamientos me vinieron a la cabeza... tenía que recogerlos en la crónica ;-)
+
+Superarse a uno mismo es el secreto para seguir ilusionantemente vivo. Esto se va aprendiendo poco a poco. Nuestra carrera ayuda.
+
+Me alegraría mucho que te sirviera de "chispa"...
+
+¡Nos vemos!

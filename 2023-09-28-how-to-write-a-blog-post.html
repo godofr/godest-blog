@@ -42,7 +42,7 @@
   </div>
 </div></div>
 <div id="content">
-<div class="post-date">28 sep 2023</div><h1 class="post-title"><a href="https://godest.vivencias.net/2023-09-28-how-to-write-a-blog-post.html">How to write a blog post</a></h1>
+<div class="post-date">28 sep. 2023</div><h1 class="post-title"><a href="https://godest.vivencias.net/2023-09-28-how-to-write-a-blog-post.html">How to write a blog post</a></h1>
 <p>
 Step cero: lee esto &#x2013;&gt; <a href="https://github.com/bastibe/org-static-blog">https://github.com/bastibe/org-static-blog</a>
 </p>
@@ -62,7 +62,7 @@ Step Three: Execute <code>M-x org-static-blog-publish</code> and upload to your 
 </p>
 <div class="org-src-container">
 <pre class="src src-sh">;; Para asegurar un tema claro en emacs, y que, segun la IA, htmlize genere buen coloreado sobre fondo blanco
-(load-theme <span style="color: #008000;">'leuven t)  ; Reemplaza '</span>leuven<span style="color: #008000;">' con el nombre de tu tema</span>
+(load-theme 'leuven t)  ; Reemplaza 'leuven' con el nombre de tu tema
 </pre>
 </div>
 
@@ -108,9 +108,9 @@ Para utilizar <b>estilos de letra</b> haz esto:
 Para <b>citar texto</b> en recuadro con fondo gris:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_quote</span>
-No le llamamos Godo porque tenga unos kilos de m&#225;s o una <span style="color: #008000;">'r'</span> de menos, no...
-<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_quote</span>
+<pre class="src src-sh">#+begin_quote
+No le llamamos Godo porque tenga unos kilos de más o una 'r' de menos, no...
+#+end_quote
 </pre>
 </div>
 
@@ -138,11 +138,11 @@ $ find . -type f ! -name "2025-01-26-buscar-en-godest.org" -exec touch {} \;
 Para <b>insertar una imagen al lado derecho del texto</b> lo haces así:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_export html</span>
-&lt;figure <span style="color: #BA36A5;">style</span>=<span style="color: #008000;">"float:right"</span>&gt;
-&lt;img <span style="color: #BA36A5;">width</span>=<span style="color: #008000;">"55"</span> <span style="color: #BA36A5;">height</span>=<span style="color: #008000;">"55"</span> <span style="color: #BA36A5;">border</span>=<span style="color: #008000;">"0"</span> <span style="color: #BA36A5;">align</span>=<span style="color: #008000;">"right"</span> <span style="color: #BA36A5;">hspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">vspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">src</span>=<span style="color: #008000;">"/static/2005/glider.png"</span> <span style="color: #BA36A5;">alt</span>=<span style="color: #008000;">"glider"</span> /&gt;
+<pre class="src src-sh">#+begin_export html
+&lt;figure style="float:right"&gt;
+&lt;img width="55" height="55" border="0" align="right" hspace="10" vspace="10" src="/static/2005/glider.png" alt="glider" /&gt;
 &lt;/figure&gt;
-<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_export</span>
+#+end_export
 </pre>
 </div>
 
@@ -150,12 +150,12 @@ Para <b>insertar una imagen al lado derecho del texto</b> lo haces así:
 Para <b>insertar una imagen centrada en el texto</b> lo haces así:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh"><span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+begin_export html</span>
-&lt;figure <span style="color: #BA36A5;">style</span>=<span style="color: #008000;">"display: block; margin: 0 auto; text-align: center;"</span>&gt;
-&lt;img <span style="color: #BA36A5;">width</span>=<span style="color: #008000;">"640"</span> <span style="color: #BA36A5;">height</span>=<span style="color: #008000;">"480"</span> <span style="color: #BA36A5;">border</span>=<span style="color: #008000;">"0"</span> <span style="color: #BA36A5;">align</span>=<span style="color: #008000;">"center"</span> <span style="color: #BA36A5;">hspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">vspace</span>=<span style="color: #008000;">"10"</span> <span style="color: #BA36A5;">src</span>=<span style="color: #008000;">"/static/2015/la-seguridad-total-no-existe.jpg"</span>
- <span style="color: #BA36A5;">alt</span>=<span style="color: #008000;">"La seguridad total NO EXISTE"</span> /&gt;
+<pre class="src src-sh">#+begin_export html
+&lt;figure style="display: block; margin: 0 auto; text-align: center;"&gt;
+&lt;img width="640" height="480" border="0" align="center" hspace="10" vspace="10" src="/static/2015/la-seguridad-total-no-existe.jpg"
+ alt="La seguridad total NO EXISTE" /&gt;
 &lt;/figure&gt;
-<span style="color: #8D8D84;">#</span><span style="color: #8D8D84; font-style: italic;">+end_export</span>
+#+end_export
 </pre>
 </div>
 

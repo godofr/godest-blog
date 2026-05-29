@@ -1,0 +1,15 @@
+#+title: Evitar confirmación de borrado en Windows 7
+#+date: <2015-09-03 12:51>
+#+author: Godofredo Fdez.
+#+description: Tan fácil como desmarcar la opción "Mostrar cuadro de diálogo para confirmar eliminación". Vais con el ratón a la papelera, botón derecho sobre esta,…
+#+filetags: 
+#+options: _:nil
+#+nid: 537
+
+Tan fácil como desmarcar la opción "Mostrar cuadro de diálogo para confirmar eliminación".
+
+Vais con el ratón a la papelera, botón derecho sobre esta, propiedades y...
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Evitar%20confirmaci%C3%B3n%20de%20borrado%20en%20Windows%207][Dejar comentario]].
+

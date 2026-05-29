@@ -1,0 +1,18 @@
+#+title: Gestión de la seguridad: alineamiento con el negocio
+#+date: <2015-11-26 20:17>
+#+author: Godofredo Fdez.
+#+description: Suelo resumir las razones de gestión de la seguridad en estas tres: 1) Cumplimiento legal. 2) Alineamiento con el negocio. 3) Por principio de acción/reacción…
+#+filetags: 
+#+options: _:nil
+#+nid: 543
+
+Suelo resumir las razones de gestión de la seguridad en estas tres:
+1) Cumplimiento legal.
+2) Alineamiento con el negocio.
+3) Por principio de acción/reacción ante una amenaza creciente.
+
+Si quieres saber más puedes seguir leyendo [[http://godest.vivencias.net/content/%C2%BFpor-qu%C3%A9-gestionamos-la-seguridad][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Gesti%C3%B3n%20de%20la%20seguridad%3A%20alineamiento%20con%20el%20negocio][Dejar comentario]].
+

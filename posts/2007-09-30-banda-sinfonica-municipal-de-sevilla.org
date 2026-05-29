@@ -1,0 +1,30 @@
+#+title: Banda Sinfónica Municipal de Sevilla
+#+date: <2007-09-30 13:18>
+#+author: Godofredo Fdez.
+#+description: Lugar: Teatro Hogar Virgen de los Reyes . Director: José Salazar Rodríguez. 1ª Parte ----------------- 1. Un día en Viena (Obertura) -- F. von Suppé. 2. Bolero -- M. Ravel. 2ª Parte ----------------- 1. Festive Overture (*) -- D. Shostakovitz
+#+filetags: 
+#+options: _:nil
+#+nid: 252
+
+Lugar: [[http://callejero.paginasamarillas.es/flash/mapa.asp?ciudad=SEVILLA&x=-893&y=2837&l1=41009,%20SEVILLA&l2=Calle%20Fray%20Isidoro%20de%20Sevilla,%205&t_act=&radio=1000&Ops=Vacio&idCalle=1124&localidadgis=SEVILLA&idioma=spa&site=callejero][Teatro Hogar Virgen de los Reyes]]. Director: José Salazar Rodríguez. 1ª Parte
+-----------------
+
+#+BEGIN_QUOTE
+  1. Un día en Viena (Obertura) -- F. von Suppé.
+  2. Bolero -- M. Ravel.
+#+END_QUOTE
+
+2ª Parte
+-----------------
+
+#+BEGIN_QUOTE
+  1. Festive Overture (*) -- D. Shostakovitz
+  2. En las Estepas del Asia Central -- A. Borodin
+  3. El Príncipe Igor (Danzas Guerreras) -- A. Borodin
+#+END_QUOTE
+
+(*) Primera Vez por la Banda Sinfónica Municipal de Sevilla
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Banda%20Sinf%C3%B3nica%20Municipal%20de%20Sevilla][Dejar comentario]].
+

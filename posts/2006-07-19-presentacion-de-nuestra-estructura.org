@@ -1,0 +1,71 @@
+#+title: Presentación de nuestra estructura
+#+date: <2006-07-19 20:00>
+#+author: Godofredo Fdez.
+#+description: ¿Qué es este sitio web? Un weblog , también conocido como blog o bitácora (listado de sucesos), es un sitio web periódicamente actualizado que recopila…
+#+filetags: 
+#+options: _:nil
+#+nid: 154
+
+¿Qué es este sitio web?
+
+Un [[http://es.wikipedia.org/wiki/Weblog][weblog]], también conocido como blog o bitácora (listado de sucesos), es un sitio web periódicamente actualizado que recopila cronológicamente textos o artículos de uno o varios autores donde el más reciente aparece primero, con un uso o temática en particular.
+
+¿Cómo llegar hasta aquí?
+
+Si es la primera vez que llegas, y lo has hecho a través de buscadores como google, yahoo, etc., o desde cualquier otro sitio, puedes añadir este enlace a los "bookmarks" o favoritos de tu navegador:
+
+#+BEGIN_QUOTE
+  [[http://godest.vivencias.net][godest.vivencias.net]].
+#+END_QUOTE
+
+¿Cómo se estructura?
+
+La estructura física de la página es la siguiente:
+
+El fondo, en azul claro que se va degradando a blanco, permanece fijo. En la parte superior se muestran consignas aleatorias que invitan a la actuación en defensa de causas justas.
+
+A continuación aparece una fila en azul más oscuro, a modo de cabecera, donde aparece el nombre de la página “*GodEst*”, a la izquierda, el lema del sitio en azul clarito que pasa casi desapercibido y, en una fila debajo destacada, una serie de entradas del menú principal. Pulsando sobre la palabra “GodEst” siempre iremos a la página principal, o de inicio, de la bitácora. Los enlaces en color blanco, y con tamaño normal de letra, nos conducen a las principales secciones de esta bitácora:
+
+#+BEGIN_QUOTE
+  Archivo: nos lleva a una página donde aparece todo el contenido del sitio y es navegable por fechas: año, mes y día.
+
+  Buscar: formulario que nos permite buscar contenido en este blog. Construido con tecnología de google es muy potente. También podemos buscar en la web, basta con seleccionar esa opción.
+
+  Contactar: muestra una página con los datos de contacto (mail, id jabber) del responsable de la página.
+
+  Entrar: muestra un formulario donde se nos solicita nuestro nombre de usuario y nuestra contraseña. Estos datos son elegidos cuando nos registramos en este lugar, nos identifican, y nos permiten entrar para añadir diferente tipo de contenido. Todos los usuarios registrados, o que quieran registrarse, han de pulsar en esta opción para acceder. El registro permite añadir contenido en el Foro y comentarios nominativos.
+
+  Eventos: nos muestra una página donde aparece un calendario con los diferentes acontecimientos “planificados” por los miembros que han ido registrándose en esta bitácora/comunidad.
+
+  Foro (desde ti): todos los usuarios registrados, pulsando sobre este enlace una vez realizado el proceso de entrada a la bitácora (opción “Entrar” descrita anteriormente) pueden añadir entradas en el foro que hay disponible. Esta sección del sitio web está dedicada a todos los usuarios registrados para que opinen de cualquier tema que les parezca interesante y deseen compartir con los demás.
+
+  Mapa del sitio: en él encontraras las distintas secciones, y los artículos más actuales de cada sección, que componen este sitio web.
+
+  Presentación: un enlace a esta página que estás leyendo.
+#+END_QUOTE
+
+Justo después aparece la zona de contenidos.
+
+Esta *zona de contenidos* está estructurada en dos columnas separadas por una pequeña sombrita.
+
+La *columna central* es la columna PRINCIPAL. En ella aparecen todos los artículos que hemos ido escribiendo de forma cronológica inversa, es decir, primero los más recientes. Con una excepción: esta columna comienza siempre con una cita aleatoria. Le sigue un extracto del artículo más reciente, después el siguiente menos reciente, es decir, el penúltimo que ha sido escrito, etc. Pulsando en los títulos de los artículos procedemos a leerlos de manera completa, desplegamos todo su contenido. Al final de cada extracto también aparecen una serie de enlaces: “Añadir nuevo comentario”, nos permite agregar un comentario a dicho artículo, ”número de comentarios”, si los hubiera, y “leer más” que nos permite leer el artículo completo, como si pulsamos en su título. Por defecto, en la página principal sólo se muestran 10 extractos de artículos, pero si nos desplazamos hasta el final de la misma podemos pasar a la siguiente página, pulsando el número 2, con otros 10 extractos de artículos, etc.
+
+La columna derecha muestra otra serie de bloques de información: una imagen aleatoria que pulsándola nos llevará a una página con una breve descripción de la misma, una taxonomía de contenidos que muestra las diferentes categorías y palabras clave que los clasifica, etc. Otros dos bloques de información muy útiles son los que mestran los comentarios más recientemente publicados y el contenido más popular.
+
+Al final aparece un pié de página con algo de publicidad vía google y con un par de iconos que muestran donde está alojado este sitio web y que herramienta se utiliza para su gestión/mantenimiento. Y alguna recomendación de cosas que pruebo y me gustan.
+
+Para desde cualquier sección volver hasta la página principal basta con pulsar sobre la palabra “GodEst” que se muestra en la franja superior de la página.
+
+Te aconsejo que siempre que vayas a dejar algún tipo de contenido (comentarios, entradas en el foro, etc.) en este sitio web, entres (opción “Entrar” en los enlaces de la cabecera) con tu usuario y contraseña, así quedará reflejada en la información el autor del mismo, y el resto de lectores podremos identificarte. Claro, esto si tienes usuario registrado, si no, por favor, déjanos tu nombre... no nos gusta hablar con desconocidos ;-).
+
+¿Por dónde sigo leyendo? o ¿de qué va la cosa?
+
+Puedes continuar leyendo [[/node/5][esto]] :-D.
+
+Espero que este resumen te haya sido útil, y que favorezca tu navegación/participación en nuestras diferentes secciones.
+
+Salud e inquietudes.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Presentaci%C3%B3n%20de%20nuestra%20estructura][Dejar comentario]].
+

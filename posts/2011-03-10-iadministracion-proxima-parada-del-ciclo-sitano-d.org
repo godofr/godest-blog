@@ -1,0 +1,17 @@
+#+title: iAdministración, próxima parada del Ciclo @sitano +d 
+#+date: <2011-03-10 16:37>
+#+author: Godofredo Fdez.
+#+description: Es para mi un placer anunciar a los lectores de este blog las jornadas de iAdministración que está organizando el Colegio Oficial de Ingenieros de…
+#+filetags: LinkedIn Seguridad_de_la_información
+#+options: _:nil
+#+nid: 400
+
+Es para mi un placer anunciar a los lectores de este blog las jornadas de iAdministración que está organizando el Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta. En esta participo en una mesa redonda en la que debatiré con excelentes profesionales sobre el Esquema Nacional de Seguridad.
+
+Por si os interesa, tenéis más información y el programa de la jornada [[http://www.coitaoc.org/index.php?option=com_content&task=view&id=1789&Itemid=115][aquí]].
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/programa_iadministracion_detalle_web.pdf][programa\_iadministracion\_detalle\_web.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=iAdministraci%C3%B3n%2C%20pr%C3%B3xima%20parada%20del%20Ciclo%20%40sitano%20%2Bd%20][Dejar comentario]].
+

@@ -1,0 +1,23 @@
+#+title: Reencuentro de Seguimiento
+#+date: <2007-02-27 13:59>
+#+author: Pili Cantautora
+#+description: Descripción: Avenida de la Palmera, 19. Sevilla. ------------------------------------------------------- Lo que hablamos chicos: nuestro primer hito de…
+#+filetags: 
+#+options: _:nil
+#+nid: 205
+
+Descripción:
+Avenida de la Palmera, 19. Sevilla.
+-------------------------------------------------------
+Lo que hablamos chicos: nuestro primer hito de seguimiento oficial
+#+begin_export html
+<img src="/static/img/smileys/smile.png" title="Smiling" alt="Smiling" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Reencuentro%20de%20Seguimiento][Dejar comentario]].
+
+** Comentarios
+
+*** ¡¡¡Qué bien!!! (elradioplanner 05/03/2007 - 15:49)
+¡¡¡Qué bien!!! ¡¡¡Qué bien!!! Con convocatoria oficial y todo!!!!

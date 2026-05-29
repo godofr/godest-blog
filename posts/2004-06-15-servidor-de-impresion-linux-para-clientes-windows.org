@@ -1,0 +1,84 @@
+#+title: Servidor de impresión Linux para clientes Windows
+#+date: <2004-06-15 18:51>
+#+author: Godofredo Fdez.
+#+description: Para imprimir en la impresora configurada en la máquina linux, utilizando para ello "cups" (la impresora ha de estar correctamente configurada en "cups", si no…
+#+filetags: GNU/Linux
+#+options: _:nil
+#+nid: 10
+
+Para imprimir en la impresora configurada en la máquina linux, utilizando para ello "cups" (la impresora ha de estar correctamente configurada en "cups", si no lo está, es decir, si áun no has conseguido imprimir desde Linux, no sigas leyendo este documento) has de hacer lo siguiente:
+
+1.- Tener los apartados correspondientes a la impresora en /etc/samba/smb.conf, copiado a continuación, ¿completito? ;-), por comodidad:
+
+#+begin_example
+
+******************** smb.conf ********************
+
+[(godo) /etc/samba]> more smb.conf
+# Samba config file created using SWAT
+# from localhost (127.0.0.1)
+# Date: 2002/12/15 12:51:48
+
+# Global parameters
+[global]
+        workgroup = ACEITE
+        netbios name = ALPECHIN
+        server string = %h server (Samba %v)
+        security = SHARE
+        encrypt passwords = Yes
+        passwd program = /usr/bin/passwd %u
+        passwd chat = *Enter\snew\sUNIX\spassword:* %n\n *Retype\snew\sUNIX\spassword:* %n\n .
+        syslog = 0
+        max log size = 1000
+        socket options = IPTOS_LOWDELAY TCP_NODELAY SO_SNDBUF=4096 SO_RCVBUF=4096
+        dns proxy = No
+        invalid users = root
+        hosts allow = 172.31.0.2
+
+#Para compartir la impresora con cups
+        load printers = Yes
+        printing = cups
+        printcap name = cups
+
+[printers]
+        comment = Todas las impresoras
+        path = /var/spool/samba
+        browseable = No
+        public = Yes
+        create mask = 0700
+        guest ok = Yes
+        writeable = No
+        printable = Yes
+        print command = lpr-cups -P 0
+        lpq command = lpstat -o 0
+        lprm command = cancel 0-%j
+
+[Linux-godo]
+        path = /home/godo
+        read only = No
+
+[Linux-GFR]
+        path = /home/godo/gfr
+        read only = No
+
+[Lin-Usuarios]
+        path = /mnt/usuarios
+        read only = No
+
+********************************************************************
+
+#+end_example
+
+2.- Haber creado como root el directorio: /var/spool/samba con permisos =chmod 777=.
+
+3.- Instalar en la máquina Windows la impresora utilizando el CD-ROM que esta trae consigo. Pulsas sobre la opción "instalar drivers" - "Avanzado" - "Impresora en red" y, automáticamente, aparece la impresora \\alpechin\stcolor400 definida en "cups". Le das a continuar... y todo se instala correctamente. Aunque al final el programa de instalación parece quedarse colgado e incluso escupe un mensajito de los típicos "La aplicación debe ser cerrada y..." ¡OJO: esto último (lo del cuelgue) no tiene porqué pasarte a ti ;-), de hecho es mejor si no te pasa, porque vamos, pasar "pa na" es tontería.
+
+4.- Rearrancas la máquina windows (creo que no es necesario) y... ¡LISTO! a imprimir como un loco por tu "epson" (en tu caso por la impresora que toque, yo de momento le hago publicidad a "epson" sin que me paguen -en fin, almas caritativas que hay en la vida-).
+
+Y esto es todo.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Servidor%20de%20impresi%C3%B3n%20Linux%20para%20clientes%20Windows][Dejar comentario]].
+

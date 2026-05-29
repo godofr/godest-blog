@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Inspirado en este artículo: https://github.com/addy-dclxvi/i3-starterpack (gracias a tu alma generosa por compartir). Yo lo tengo todo en MEGA, así lo comparto…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Configurando i3 window manager en Debian/Raspbian</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">18 ene. 2020</div><h1 class="post-title"><a href="https://godest.vivencias.net/2020-01-18-configurando-i3-window-manager-en-debian-raspbian.html">Configurando i3 window manager en Debian/Raspbian</a></h1>
+<p>
+Inspirado en este artículo:
+<a href="https://github.com/addy-dclxvi/i3-starterpack">https://github.com/addy-dclxvi/i3-starterpack</a> (gracias a tu alma generosa por compartir).
+</p>
+
+<p>
+Yo lo tengo todo en MEGA, así lo comparto entre la Raspberry y mi portátil con Debian, además de facilitarme las copias de seguridad (cosa que explicaré en otro artículo). Por tanto, lo que hago para crear la estructura de archivos y directorios implicados es utilizar enlaces simbólicos a los mismos.
+</p>
+
+<p>
+[09:15:55(godo@surco)~]&gt; ln -s MEGA/Raspberry3Bplus/puntoconfig/fonts .fonts
+[09:16:19(godo@surco)~]&gt; ln -s MEGA/Raspberry3Bplus/puntoconfig/urxvt .urxvt
+[09:16:35(godo@surco)~]&gt; ln -s MEGA/Raspberry3Bplus/puntoconfig/Xresources .Xresources
+[09:17:25(godo@surco)~]&gt; ln -s MEGA/Raspberry3Bplus/puntoconfig/xsettingsd .xsettingsd
+</p>
+
+<p>
+Los otros archivos y directorios implicados están situados en este directorio:
+</p>
+
+<p>
+[09:17:49(godo@surco)~]&gt; lla .config
+lrwxrwxrwx 1 godo godo 22 ene 18 08:53 .config -&gt; MEGA/surco/puntoconfig
+</p>
+
+<p>
+Y en concreto son estos:
+[09:25:15(godo@surco)~/.config]&gt; lla
+total 24
+drwxr-xr-x 5 godo godo 4096 ene 18 08:56 .
+drwxr-xr-x 6 godo godo 4096 ene 18 08:56 ..
+-rwxr-xr-x 1 godo godo 1227 ene 18 08:56 compton.conf
+drwxr-xr-x 2 godo godo 4096 ene 18 08:56 dunst
+drwxr-xr-x 2 godo godo 4096 ene 18 08:56 i3
+drwxr-xr-x 2 godo godo 4096 ene 18 08:56 i3status<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Configurando%20i3%20window%20manager%20en%20Debian%2FRaspbian">Dejar comentario</a>.
+</p>
+<div class="taglist"></div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

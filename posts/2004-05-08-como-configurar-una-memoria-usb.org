@@ -1,51 +1,43 @@
 #+title: Como configurar una memoria USB
 #+date: <2004-05-08 20:46>
-#+description: 
-#+filetags: GNU/LINUX
+#+author: Godofredo Fdez.
+#+description: Has de dar soporte en el kernel a los siguientes módulos: sd_mod usb-storage Has de añadir a "/etc/fstab" la siguiente línea: /dev/sda1 /mnt/usbflash vfat user,noauto,umask=0 0 0" Para usar el dispositivo el superusuario "root" ha de cargar el módulo que lo gestiona: "modprobe usb-storage". Cualquier usuario lo puede montar con: "mount /mnt/usbflash". Una vez montado se utiliza como si de un disquete se tratara.
+#+filetags: GNU/Linux
+#+options: _:nil
+#+nid: 6
 
 Has de dar soporte en el kernel a los siguientes módulos:
-- =sd_mod=
-- usb-storage
+
+- sd_mod <-- seleccionando: "scsi support"--"scsi disk support (módulo)"
+- usb-storage <-- seleccionando: "usb support"--"usb mass storage support (módulo)"
 
 Has de añadir a "/etc/fstab" la siguiente línea:
-#+begin_src sh
-/dev/sda1 /mnt/usbflash vfat user,noauto,umask=0 0 0
-#+end_src
 
-Para usar el dispositivo el superusuario *root* ha de cargar el módulo que lo gestiona: 
-#+begin_src sh
-modprobe usb-storage
-#+end_src
+- /dev/sda1 /mnt/usbflash vfat user,noauto,umask=0 0 0"
 
-Cualquier usuario lo puede montar con: 
-#+begin_src sh
-mount /mnt/usbflash
-#+end_src
+Para usar el dispositivo el superusuario "root" ha de cargar el módulo que lo gestiona: "modprobe usb-storage".
 
+Cualquier usuario lo puede montar con: "mount /mnt/usbflash".
 Una vez montado se utiliza como si de un disquete se tratara.
 
-*¡OJO! Para evitar daños antes de desconectarlo has de hacer:* 
-#+begin_src sh
-umount /mnt/usbflash 
-#+end_src
+¡OJO! Para evitar daños antes de desconectarlo has de hacer: "umount /mnt/usbflash". Al finalizar con este comando te aseguras que el dispositivo no está en uso, pudiéndolo desconectar de forma segura.\\
 
-Al finalizar con este comando te aseguras que el dispositivo no está en uso, pudiéndolo desconectar de forma segura.
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Como%20configurar%20una%20memoria%20USB][Dejar comentario]].
 
 ** Comentarios
-*** Anonymous (no verificado Mar, 07/12/2004 - 15:10)
+
+*** debianhead (Anónimo 07/12/2004 - 15:10)
 Hola, pues muy bueno tu blog, en especial este tutor, porfin pude bajar mis fotos de la camara :)
 
-Muchas gracias y felicidades.
+muchas gracias y felicidades.
 
-*** Godofredo Fdez. (Jue, 23/12/2004 - 15:17)
-...de nada.
-
+*** ...de nada. (Anónimo 23/12/2004 - 15:17)
 Bueno, lo tengo algo abandonado por la "exigida" dedicación a otros quehaceres. Pero este tipo de comentarios me sirven de aliento para seguir con él y me hacen plantearme el dedicar unos 15min. al día para ir modelando nuevos contenidos.
 
 Gracias a ti.
 
-*** drimakus (Lun, 07/02/2005 - 15:28)
-Sincronización en la grabación de datos
+*** Sincronización en la grabación de datos (Anónimo 07/02/2005 - 15:28)
 Yo utilizo la opción "sync" de mount para montar mi memoria USB:
 
 user,sync,noauto...
@@ -56,22 +48,18 @@ Con esta opción habilitada, por otro lado, uno va viendo, al hacer la transfere
 
 Se consigue que no sea tan crítico extraer la memoria USB sin haberla desmontado, por lo menos en cuanto a la integridad de la información almacenada. Aunque también aconsejo realizar el desmontado siempre antes de extraer la memoria.
 
-*** Godofredo Fdez. (Mar, 08/02/2005 - 12:38)
-Muchas gracias
-
+*** Muchas gracias (Anónimo 08/02/2005 - 12:38)
 ...por compartir este detalle CON importancia ;-) ... y por animarte a ser uno de nosotros.
 
 Bienvenido.
 
-*** Anonymous (no verificado Mar, 02/10/2007 - 20:21)
-duda
+*** duda (Anonymous 02/10/2007 - 20:21)
 HOLA QUE TAL A TODOS.
 TENGO UN PROBLEMA Y NO SE COMO RESOLVERLO, BUENO SE TRATA DE LA COMPU, LO QUE PASA QUE TENGO LA MEMORIA USB, Y LA COMPU TIENE LA ENTRADA PERO NO LA RECONOCE COMO CONFIGURO LA COMPU PARA QUE LEA LA MEMORIA?
 ESTA ES LANIXY TENIA WINDOWS MILLENIUM Y LE CAMBIE A WINDOWS XP, NO SE SI ESO AFECTA.
 BUENO GRACIAS Y ESPERO SU PRONTA RESPUESTA.
 
-*** Godofredo Fdez. (Vie, 05/10/2007 - 18:51)
-USB en Windows XP
+*** USB en Windows XP (Godo 05/10/2007 - 18:51)
 Hola. Es muy extraño lo que te está pasando. El Windows XP es uno de los sistemas operativos mejores de Microsoft (para mi gusto incluso mejor que Windows Vista, incluso), y suele traer ya implementados los controladores de los puertos USB. Si tienes Internet te aconsejo que hagas lo siguiente:
 
 - Conéctate a Internet.
@@ -87,16 +75,17 @@ Tras realizar estos pasos estoy casi seguro de que Windows XP detectará la memo
 - Menú herramientas ---> WindowsUpdate.
 - Instala todas las actualizaciones disponibles.
 
-Y como última opción, ¡Pásate a GNU/Linux!
+Y como última opción, ¡Pásate a [[http://www.debian.org/][GNU/Linux]]!
 
-¡Suerte!
+¡Suerte!\\
 
-*** Anonymous (no verificado Mié, 11/03/2009 - 14:20)
-pregunta
+*** pregunta (Anonymous 11/03/2009 - 14:20)
 hola lo que pasa es que tengo una usb y cuando le meto los archivos quedan defectuosos
 
-*** Godofredo Fdez. (Mié, 11/03/2009 - 17:50)
-Desconectar hardware con seguridad
+*** S.O.S (Anonymous 11/03/2009 - 14:30)
+porfa alguien que me ayude con mi usb
+
+*** Desconectar hardware con seguridad (Godo 11/03/2009 - 17:50)
 Me da la impresión de que utilizas Windows y no estás "desconectando el hardware con seguridad" y no dejas tiempo para que se copien tus archivos. Has de buscar en la barra de inicio del windows, al lado derecho, cerca del reloj, un icono con una flechita verde, pulsar con el ratón y elegir "desconectar hardware con seguridad".
 
 Si utilizas GNU/Linux puedes ver que aparece un icono en el escritorio (depende de la distribución que uses), pulsas sobre él con el botón derecho del ratón y le das a la opción de desmontar.
@@ -107,8 +96,7 @@ Gracias.
 
 Salud.
 
-*** carlos fernando (no verificado Jue, 26/03/2009 - 20:25)
-sobre desconectar USB forma segura
+*** sobre desconectar USB forma segura (carlos fernando 26/03/2009 - 20:25)
 hola en mi laptop tuve un problema en el lado derecho de mi pantalla y no puedo ver la parte donde se ubica el icono con una flechita verde, se que se puede colocar en el escritorio como un icono u otro programa, quisiera saber si alguien sabe como hacerlo o donde ubicarlo para ponerlo en mi escritorio, y poder desconectar mi memoria USB, gracias.
 escribanme aqui
 
@@ -118,10 +106,5 @@ carlos fernando
 avisenme por fa para poder ingresar de nuevo aqui
 si encuentro la solucion para ponerla tambien, gracias
 
-*** Anonymous (no verificado Mié, 11/03/2009 - 14:30)
-S.O.S
-porfa alguien que me ayude con mi usb
-
-*** Marriola (no verificado Lun, 27/07/2009 - 04:28)
-Memorias USB desinstaladas
+*** Memorias USB desinstaladas (Marriola 27/07/2009 - 04:28)
 Los moscas IT de mi trabajo desinstalaron en masa el acceso a las memorias USB, quiero volver a utilizarlos, como lo hago por favor?. Uso Windows XP. Gracias anticipadas

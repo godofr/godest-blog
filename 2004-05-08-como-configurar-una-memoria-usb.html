@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Has de dar soporte en el kernel a los siguientes módulos: sd_mod usb-storage Has de añadir a "/etc/fstab" la siguiente línea: /dev/sda1 /mnt/usbflash vfat user,noauto,umask=0 0 0" Para usar el dispositivo el superusuario "root" ha de cargar el módulo que lo gestiona: "modprobe usb-storage". Cualquier usuario lo puede montar con: "mount /mnt/usbflash". Una vez montado se utiliza como si de un disquete se tratara.">
 <link rel="alternate"
       type="application/rss+xml"
       href="https://godest.vivencias.net/rss.xml"
@@ -41,79 +42,60 @@
   </div>
 </div></div>
 <div id="content">
-<div class="post-date">08 may 2004</div><h1 class="post-title"><a href="https://godest.vivencias.net/2004-05-08-como-configurar-una-memoria-usb.html">Como configurar una memoria USB</a></h1>
+<div class="post-date">08 may. 2004</div><h1 class="post-title"><a href="https://godest.vivencias.net/2004-05-08-como-configurar-una-memoria-usb.html">Como configurar una memoria USB</a></h1>
 <p>
 Has de dar soporte en el kernel a los siguientes módulos:
 </p>
+
 <ul class="org-ul">
-<li><code>sd_mod</code></li>
-<li>usb-storage</li>
+<li>sd<sub>mod</sub> &lt;&#x2013; seleccionando: "scsi support"&#x2013;"scsi disk support (módulo)"</li>
+<li>usb-storage &lt;&#x2013; seleccionando: "usb support"&#x2013;"usb mass storage support (módulo)"</li>
 </ul>
 
 <p>
 Has de añadir a "/etc/fstab" la siguiente línea:
 </p>
-<div class="org-src-container">
-<pre class="src src-sh">/dev/sda1 /mnt/usbflash vfat user,noauto,<span style="color: #BA36A5;">umask</span>=0 0 0
-</pre>
-</div>
+
+<ul class="org-ul">
+<li>/dev/sda1 /mnt/usbflash vfat user,noauto,umask=0 0 0"</li>
+</ul>
 
 <p>
-Para usar el dispositivo el superusuario <b>root</b> ha de cargar el módulo que lo gestiona: 
+Para usar el dispositivo el superusuario "root" ha de cargar el módulo que lo gestiona: "modprobe usb-storage".
 </p>
-<div class="org-src-container">
-<pre class="src src-sh">modprobe usb-storage
-</pre>
-</div>
 
 <p>
-Cualquier usuario lo puede montar con: 
-</p>
-<div class="org-src-container">
-<pre class="src src-sh">mount /mnt/usbflash
-</pre>
-</div>
-
-<p>
+Cualquier usuario lo puede montar con: "mount /mnt/usbflash".
 Una vez montado se utiliza como si de un disquete se tratara.
 </p>
 
 <p>
-<b>¡OJO! Para evitar daños antes de desconectarlo has de hacer:</b> 
+¡OJO! Para evitar daños antes de desconectarlo has de hacer: "umount /mnt/usbflash". Al finalizar con este comando te aseguras que el dispositivo no está en uso, pudiéndolo desconectar de forma segura.<br>
 </p>
-<div class="org-src-container">
-<pre class="src src-sh">umount /mnt/usbflash 
-</pre>
-</div>
+
 
 <p>
-Al finalizar con este comando te aseguras que el dispositivo no está en uso, pudiéndolo desconectar de forma segura.
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Como%20configurar%20una%20memoria%20USB">Dejar comentario</a>.
 </p>
-
-<div id="outline-container-org11cfb58" class="outline-2">
-<h2 id="org11cfb58">Comentarios</h2>
-<div class="outline-text-2" id="text-org11cfb58">
+<div id="outline-container-org1d5d1e9" class="outline-2">
+<h2 id="org1d5d1e9">Comentarios</h2>
+<div class="outline-text-2" id="text-org1d5d1e9">
 </div>
-<div id="outline-container-orgea6b877" class="outline-3">
-<h3 id="orgea6b877">Anonymous (no verificado Mar, 07/12/2004 - 15:10)</h3>
-<div class="outline-text-3" id="text-orgea6b877">
+<div id="outline-container-orgace8321" class="outline-3">
+<h3 id="orgace8321">debianhead (Anónimo 07/12/2004 - 15:10)</h3>
+<div class="outline-text-3" id="text-orgace8321">
 <p>
 Hola, pues muy bueno tu blog, en especial este tutor, porfin pude bajar mis fotos de la camara :)
 </p>
 
 <p>
-Muchas gracias y felicidades.
+muchas gracias y felicidades.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgf5e7c6d" class="outline-3">
-<h3 id="orgf5e7c6d">Godofredo Fdez. (Jue, 23/12/2004 - 15:17)</h3>
-<div class="outline-text-3" id="text-orgf5e7c6d">
-<p>
-&#x2026;de nada.
-</p>
-
+<div id="outline-container-org49ed2e1" class="outline-3">
+<h3 id="org49ed2e1">&#x2026;de nada. (Anónimo 23/12/2004 - 15:17)</h3>
+<div class="outline-text-3" id="text-org49ed2e1">
 <p>
 Bueno, lo tengo algo abandonado por la "exigida" dedicación a otros quehaceres. Pero este tipo de comentarios me sirven de aliento para seguir con él y me hacen plantearme el dedicar unos 15min. al día para ir modelando nuevos contenidos.
 </p>
@@ -123,12 +105,10 @@ Gracias a ti.
 </p>
 </div>
 </div>
-
-<div id="outline-container-org1009e69" class="outline-3">
-<h3 id="org1009e69">drimakus (Lun, 07/02/2005 - 15:28)</h3>
-<div class="outline-text-3" id="text-org1009e69">
+<div id="outline-container-orgcb757e5" class="outline-3">
+<h3 id="orgcb757e5">Sincronización en la grabación de datos (Anónimo 07/02/2005 - 15:28)</h3>
+<div class="outline-text-3" id="text-orgcb757e5">
 <p>
-Sincronización en la grabación de datos
 Yo utilizo la opción "sync" de mount para montar mi memoria USB:
 </p>
 
@@ -149,14 +129,9 @@ Se consigue que no sea tan crítico extraer la memoria USB sin haberla desmontad
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgcd68462" class="outline-3">
-<h3 id="orgcd68462">Godofredo Fdez. (Mar, 08/02/2005 - 12:38)</h3>
-<div class="outline-text-3" id="text-orgcd68462">
-<p>
-Muchas gracias
-</p>
-
+<div id="outline-container-orge58fa43" class="outline-3">
+<h3 id="orge58fa43">Muchas gracias (Anónimo 08/02/2005 - 12:38)</h3>
+<div class="outline-text-3" id="text-orge58fa43">
 <p>
 &#x2026;por compartir este detalle CON importancia ;-) &#x2026; y por animarte a ser uno de nosotros.
 </p>
@@ -166,12 +141,10 @@ Bienvenido.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgba9da96" class="outline-3">
-<h3 id="orgba9da96">Anonymous (no verificado Mar, 02/10/2007 - 20:21)</h3>
-<div class="outline-text-3" id="text-orgba9da96">
+<div id="outline-container-orgebed1e7" class="outline-3">
+<h3 id="orgebed1e7">duda (Anonymous 02/10/2007 - 20:21)</h3>
+<div class="outline-text-3" id="text-orgebed1e7">
 <p>
-duda
 HOLA QUE TAL A TODOS.
 TENGO UN PROBLEMA Y NO SE COMO RESOLVERLO, BUENO SE TRATA DE LA COMPU, LO QUE PASA QUE TENGO LA MEMORIA USB, Y LA COMPU TIENE LA ENTRADA PERO NO LA RECONOCE COMO CONFIGURO LA COMPU PARA QUE LEA LA MEMORIA?
 ESTA ES LANIXY TENIA WINDOWS MILLENIUM Y LE CAMBIE A WINDOWS XP, NO SE SI ESO AFECTA.
@@ -179,12 +152,10 @@ BUENO GRACIAS Y ESPERO SU PRONTA RESPUESTA.
 </p>
 </div>
 </div>
-
-<div id="outline-container-org0dbac8a" class="outline-3">
-<h3 id="org0dbac8a">Godofredo Fdez. (Vie, 05/10/2007 - 18:51)</h3>
-<div class="outline-text-3" id="text-org0dbac8a">
+<div id="outline-container-orgba0904f" class="outline-3">
+<h3 id="orgba0904f">USB en Windows XP (Godo 05/10/2007 - 18:51)</h3>
+<div class="outline-text-3" id="text-orgba0904f">
 <p>
-USB en Windows XP
 Hola. Es muy extraño lo que te está pasando. El Windows XP es uno de los sistemas operativos mejores de Microsoft (para mi gusto incluso mejor que Windows Vista, incluso), y suele traer ya implementados los controladores de los puertos USB. Si tienes Internet te aconsejo que hagas lo siguiente:
 </p>
 
@@ -208,30 +179,34 @@ Tras realizar estos pasos estoy casi seguro de que Windows XP detectará la memo
 </ul>
 
 <p>
-Y como última opción, ¡Pásate a GNU/Linux!
+Y como última opción, ¡Pásate a <a href="http://www.debian.org/">GNU/Linux</a>!
 </p>
 
 <p>
-¡Suerte!
+¡Suerte!<br>
 </p>
 </div>
 </div>
-
-<div id="outline-container-org979ef61" class="outline-3">
-<h3 id="org979ef61">Anonymous (no verificado Mié, 11/03/2009 - 14:20)</h3>
-<div class="outline-text-3" id="text-org979ef61">
+<div id="outline-container-org3a72314" class="outline-3">
+<h3 id="org3a72314">pregunta (Anonymous 11/03/2009 - 14:20)</h3>
+<div class="outline-text-3" id="text-org3a72314">
 <p>
-pregunta
 hola lo que pasa es que tengo una usb y cuando le meto los archivos quedan defectuosos
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgbd90eca" class="outline-3">
-<h3 id="orgbd90eca">Godofredo Fdez. (Mié, 11/03/2009 - 17:50)</h3>
-<div class="outline-text-3" id="text-orgbd90eca">
+<div id="outline-container-org6d09f5f" class="outline-3">
+<h3 id="org6d09f5f">S.O.S (Anonymous 11/03/2009 - 14:30)</h3>
+<div class="outline-text-3" id="text-org6d09f5f">
 <p>
-Desconectar hardware con seguridad
+porfa alguien que me ayude con mi usb
+</p>
+</div>
+</div>
+<div id="outline-container-org948f13b" class="outline-3">
+<h3 id="org948f13b">Desconectar hardware con seguridad (Godo 11/03/2009 - 17:50)</h3>
+<div class="outline-text-3" id="text-org948f13b">
+<p>
 Me da la impresión de que utilizas Windows y no estás "desconectando el hardware con seguridad" y no dejas tiempo para que se copien tus archivos. Has de buscar en la barra de inicio del windows, al lado derecho, cerca del reloj, un icono con una flechita verde, pulsar con el ratón y elegir "desconectar hardware con seguridad".
 </p>
 
@@ -252,12 +227,10 @@ Salud.
 </p>
 </div>
 </div>
-
-<div id="outline-container-org1f3d283" class="outline-3">
-<h3 id="org1f3d283">carlos fernando (no verificado Jue, 26/03/2009 - 20:25)</h3>
-<div class="outline-text-3" id="text-org1f3d283">
+<div id="outline-container-org14c1081" class="outline-3">
+<h3 id="org14c1081">sobre desconectar USB forma segura (carlos fernando 26/03/2009 - 20:25)</h3>
+<div class="outline-text-3" id="text-org14c1081">
 <p>
-sobre desconectar USB forma segura
 hola en mi laptop tuve un problema en el lado derecho de mi pantalla y no puedo ver la parte donde se ubica el icono con una flechita verde, se que se puede colocar en el escritorio como un icono u otro programa, quisiera saber si alguien sabe como hacerlo o donde ubicarlo para ponerlo en mi escritorio, y poder desconectar mi memoria USB, gracias.
 escribanme aqui
 </p>
@@ -273,28 +246,16 @@ si encuentro la solucion para ponerla tambien, gracias
 </p>
 </div>
 </div>
-
-<div id="outline-container-org6fe799b" class="outline-3">
-<h3 id="org6fe799b">Anonymous (no verificado Mié, 11/03/2009 - 14:30)</h3>
-<div class="outline-text-3" id="text-org6fe799b">
+<div id="outline-container-orge874fd2" class="outline-3">
+<h3 id="orge874fd2">Memorias USB desinstaladas (Marriola 27/07/2009 - 04:28)</h3>
+<div class="outline-text-3" id="text-orge874fd2">
 <p>
-S.O.S
-porfa alguien que me ayude con mi usb
-</p>
-</div>
-</div>
-
-<div id="outline-container-orga3fd6a9" class="outline-3">
-<h3 id="orga3fd6a9">Marriola (no verificado Lun, 27/07/2009 - 04:28)</h3>
-<div class="outline-text-3" id="text-orga3fd6a9">
-<p>
-Memorias USB desinstaladas
 Los moscas IT de mi trabajo desinstalaron en masa el acceso a las memorias USB, quiero volver a utilizarlos, como lo hago por favor?. Uso Windows XP. Gracias anticipadas
 </p>
 </div>
 </div>
 </div>
-<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/LINUX</a> </div></div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
 <div id="postamble" class="status"><div id="pie-de-pagina">
 <div id="archive">
   <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>

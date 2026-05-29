@@ -1,0 +1,21 @@
+#+title: José Antonio Delgado y Alfonso Moreno en Sevilla
+#+date: <2007-05-13 16:25>
+#+author: Pili Cantautora
+#+description: Descripción: Magia y Música. C/ Virgen de las Montañas, 18. ----------------------------------------------------------- Fin de semana movidito musicalmente en…
+#+filetags: 
+#+options: _:nil
+#+nid: 230
+
+Descripción:
+Magia y Música.
+C/ Virgen de las Montañas, 18.
+-----------------------------------------------------------
+Fin de semana movidito musicalmente en Sevilla, sin duda merece la pena hacer doblete
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+No os los podéis perder en directo, son realmente increíbles. Además, no tenemos muchas oportunidades de poder disfrutar de ellos en Sevilla.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Jos%C3%A9%20Antonio%20Delgado%20y%20Alfonso%20Moreno%20en%20Sevilla][Dejar comentario]].
+

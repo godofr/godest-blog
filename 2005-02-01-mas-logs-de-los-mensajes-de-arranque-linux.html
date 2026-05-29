@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="A todos los que nos hemos decidido a profundizar en el apasionante mundo del sistema operativo Linux, nos ha sido necesario, alguna vez, "monitorizar" los…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Más "logs" de los mensajes de arranque (Linux)</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">01 feb. 2005</div><h1 class="post-title"><a href="https://godest.vivencias.net/2005-02-01-mas-logs-de-los-mensajes-de-arranque-linux.html">Más "logs" de los mensajes de arranque (Linux)</a></h1>
+<p>
+A todos los que nos hemos decidido a profundizar en el apasionante mundo del sistema operativo Linux, nos ha sido necesario, alguna vez, "monitorizar" los mensajes que el sistema está arrojando mientras arranca.
+</p>
+
+<p>
+La primera forma de hacerlo, que suele aparecer en casi todos los manuales para "principiantes", ha sido utilizando el comando "dmesg" (tanto como usuario como root). Posteriormente hemos aprendido que, mientras que arranca el sistema, podemos pulsar la tecla "Bloq Despl" de la parte superior derecha de nuestros teclados, y lograr así una pausa del "desplazamiento de nuestra pantalla" (también conocido como "scroll"), y movernos a su través utilizando las combinaciones: "Mayúsculas + Re Pág" (arriba) y "Mayúsculas + Av Pág" (abajo).
+</p>
+
+<p>
+Existe una tercera forma de conseguir más mensajes de "log" (de rastro, o traza) que tanto el kernel como otros procesos del sistema van generando durante el arranque.
+</p>
+
+<p>
+Es fácil:
+</p>
+
+<p>
+Has de adaptar el contenido del siguiente archivo tal y como se muestra:
+</p>
+
+<pre class="example" id="orga9a45a8">
+[13:51:59(root@capacho) /var/log]#more /etc/default/bootlogd
+
+# Run bootlogd at startup ?
+
+BOOTLOGD_ENABLE=Yes
+</pre>
+
+<p>
+Tras el siguiente encendido de nuestra máquina (y, obviamente, todos los que realices en el futuro) tendrás en el fichero /var/log/boot toda la información que complementa a la obtenida con el comando "dmesg". Ambas corresponden, como hemos comentado anteriormente, a la generada por el kernel, y los diferentes procesos, a lo largo del arranque del sistema.
+</p>
+
+<p>
+Ejemplo:
+</p>
+
+<pre class="example" id="orgf296293">
+[13:53:19(root@capacho) /var/log]#more boot
+
+Tue Feb  1 09:55:46 2005: bootlogd.
+
+Tue Feb  1 09:55:46 2005: Activating swap.
+
+Tue Feb  1 09:55:46 2005: Checking root file system...
+
+Tue Feb  1 09:55:46 2005: fsck 1.35 (28-Feb-2004)
+
+Tue Feb  1 09:55:46 2005: /: clean, 150543/622592 files, 908933/1245037 blocks
+
+Tue Feb  1 09:55:46 2005: mount: wrong fs type, bad option, bad superblock on tmp fs,
+
+Tue Feb  1 09:55:46 2005:        or too many mounted file systems
+
+Tue Feb  1 08:55:47 2005: System time was Tue Feb  1 07:55:47 UTC 2005.
+
+Tue Feb  1 08:55:47 2005: Setting the System Clock using the Hardware Clock as reference...
+
+Tue Feb  1 08:55:49 2005: System Clock set.System local time is Tue Feb 1 8:55:49 CET 2005.
+
+Tue Feb  1 08:55:49 2005: Cleaning up ifupdown...done.
+
+Tue Feb  1 08:55:49 2005: Calculating module dependencies... done.
+
+... (cortamos aquí la salida por comodidad ;-)  )
+</pre>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=M%C3%A1s%20%22logs%22%20de%20los%20mensajes%20de%20arranque%20%28Linux%29">Dejar comentario</a>.
+</p>
+<div id="outline-container-org8ed30f5" class="outline-2">
+<h2 id="org8ed30f5">Comentarios</h2>
+<div class="outline-text-2" id="text-org8ed30f5">
+</div>
+<div id="outline-container-org5fa65de" class="outline-3">
+<h3 id="org5fa65de">log arranque (gavsys 26/08/2009 - 20:26)</h3>
+<div class="outline-text-3" id="text-org5fa65de">
+<p>
+Gracias por el post. En linux todos los dias se aprende algo.
+Salu2.<br>
+</p>
+</div>
+</div>
+<div id="outline-container-org6f43a5a" class="outline-3">
+<h3 id="org6f43a5a">Excelente dato, se agradece. (alejo 23/08/2011 - 00:21)</h3>
+<div class="outline-text-3" id="text-org6f43a5a">
+<p>
+Excelente dato, se agradece.
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

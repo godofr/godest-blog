@@ -1,0 +1,13 @@
+#+title: Mundo Linux nº 98
+#+date: <2007-10-07 17:28>
+#+author: Godofredo Fdez.
+#+description: Aquí podéis observar la captura de la portada número 98 de la revista "Mundo Linux", dedicada a difundir la técnica de este maravilloso sistema operativo. En…
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 254
+
+Aquí podéis observar la captura de la portada número 98 de la revista "Mundo Linux", dedicada a difundir la técnica de este maravilloso sistema operativo. En este número he publicado la [[../node/255][2ª parte]] ([[../node/212][la primera]] se encuentra en "Mundo Linux nº 95") del artículo sobre nuestro querido CMS Drupal.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Mundo%20Linux%20n%C2%BA%2098][Dejar comentario]].
+

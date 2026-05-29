@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Mi tarjeta WiFI es la siguiente: Intel PRO/Wireless 2200BG . El driver utilizado soporta también los siguientes modelos: Intel PRO/Wireless 2200BG/2225BG/2915ABG IEEE 802.11 driver Ha sido tan fácil como mirar esta página, iwi , del manual (man man) de FreeBSD y seguir los pasos que indica, que son: 1) Editar el archivo: /boot/loader.conf y añadir las líneas que aparecen a continuación bajo #WiFI Config">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>FreeBSD 7.1 - Activando el WiFI</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">10 abr. 2009</div><h1 class="post-title"><a href="https://godest.vivencias.net/2009-04-10-freebsd-7-1-activando-el-wifi.html">FreeBSD 7.1 - Activando el WiFI</a></h1>
+<p>
+Mi tarjeta WiFI es la siguiente: <b>Intel PRO/Wireless 2200BG</b>. El driver utilizado soporta también los siguientes modelos:
+</p>
+
+<pre class="example" id="orge1646a1">
+Intel PRO/Wireless 2200BG/2225BG/2915ABG IEEE 802.11 driver
+</pre>
+
+<p>
+Ha sido tan fácil como mirar esta página, <a href="http://www.freebsd.org/cgi/man.cgi?query=iwi&amp;apropos=0&amp;sektion=4&amp;manpath=FreeBSD+7.1-RELEASE&amp;format=html">iwi</a>, del manual (man man) de FreeBSD y seguir los pasos que indica, que son:
+</p>
+
+<ol class="org-ol">
+<li>Editar el archivo: <i>boot/loader.conf y añadir las líneas que aparecen a continuación bajo /#WiFI Config</i></li>
+</ol>
+
+<pre class="example" id="orgefdb188">
+
+cueva# more /boot/loader.conf
+#sound driver
+snd_ich_load="YES"
+
+#WiFI Config
+legal.intel_iwi.license_ack=1
+if_iwi_load="YES"
+wlan_load="YES"
+firmware_load="YES"
+iwi_bss_load="YES"
+iwi_ibss_load="YES"
+iwi_monitor_load="YES"
+
+cueva#
+
+</pre>
+
+<ol class="org-ol">
+<li>Rearrancar. Este paso quizá no sea necesario, quiero imaginar que hay una forma de cargar dinámicamente módulos en el kernel, al igual que ocurre en GNU/Linux, pero como soy novato en este mundo FreeBSD no se aún como hacerlo. Si alguien que lea esto me lo quiere indicar en un comentario se lo agradezco de antemano.</li>
+
+<li>Configurar el WiFI para que se una al punto de acceso. Yo lo tengo protegido (por decir algo) con WEP (la clave que aparece es falsa ;-)). He creado un archivo, wireless.txt, donde he grabado las dos líneas necesarias, la primera es para configurar la red en el interfaz WiFI, la segunda para añadir la ruta por defecto:</li>
+</ol>
+
+<pre class="example" id="org3058b4a">
+
+cueva# more wireless.txt
+
+ifconfig iwi0 inet 192.168.5.44 netmask 0xffffff00 ssid GodoNet wepmode on wepkey 0x52c262f52bd643de22d84f770f weptxkey 1
+
+route add default 192.168.5.1
+
+cueva#
+
+</pre>
+
+<ol class="org-ol">
+<li>Editar el archivo /etc/resolv.conf añadiendo los DNS de nuestro proveedor de la conexión a Internet. Yo de momento utilizo mi propio punto de acceso que a su vez recibe los DNS de forma dinámica cuando arranca:</li>
+</ol>
+
+<pre class="example" id="orgff0491e">
+
+cueva# more /etc/resolv.conf
+domain  lynxecosystems.com
+nameserver      192.168.5.1
+cueva#
+
+</pre>
+
+<p>
+Y así&#x2026;
+</p>
+
+<pre class="example" id="orge451afc">
+
+cueva# ping www.freebsd.org
+PING www.freebsd.org (69.147.83.33): 56 data bytes
+64 bytes from 69.147.83.33: icmp_seq=0 ttl=50 time=226.819 ms
+64 bytes from 69.147.83.33: icmp_seq=1 ttl=51 time=225.362 ms
+64 bytes from 69.147.83.33: icmp_seq=2 ttl=51 time=225.894 ms
+^C
+--- www.freebsd.org ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 225.362/226.025/226.819/0.602 ms
+cueva#                                                           
+
+</pre>
+
+<p>
+¡Maravilloso!
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=FreeBSD%207.1%20-%20Activando%20el%20WiFI">Dejar comentario</a>.
+</p>
+<div id="outline-container-org2d1752e" class="outline-2">
+<h2 id="org2d1752e">Comentarios</h2>
+<div class="outline-text-2" id="text-org2d1752e">
+</div>
+<div id="outline-container-orgbb7456e" class="outline-3">
+<h3 id="orgbb7456e">Gracias hermano, excelente (Nitrox 04/05/2009 - 00:35)</h3>
+<div class="outline-text-3" id="text-orgbb7456e">
+<p>
+Gracias hermano, excelente post.
+</p>
+</div>
+</div>
+<div id="outline-container-org083d59f" class="outline-3">
+<h3 id="org083d59f">tu cargas kon:</h3>
+<div class="outline-text-3" id="text-org083d59f">
+<p>
+tu cargas kon:
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-freebsd.html">FreeBSD</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

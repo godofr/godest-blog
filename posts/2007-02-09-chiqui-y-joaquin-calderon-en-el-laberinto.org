@@ -1,0 +1,20 @@
+#+title: Chiqui y Joaquín Calderón en el Laberinto
+#+date: <2007-02-09 13:58>
+#+author: Pili Cantautora
+#+description: Descripción: El Laberinto. C/ Regina, 20. Sevilla. Entrada: 2€ (aún por confirmar) ------------------------------------------------------- Todo un evento, el…
+#+filetags: 
+#+options: _:nil
+#+nid: 201
+
+Descripción:
+El Laberinto. C/ Regina, 20. Sevilla.
+Entrada: 2€ (aún por confirmar)
+-------------------------------------------------------
+Todo un evento, el 50% de los hermanos Calderón en concierto. Para no perdérselo. Otro aliciente más: a Joaquín le han traído los Reyes un aparatillo musical la mar de curioso, con el que hace auténticas virguerías... y hasta aquí puedo leer
+#+begin_export html
+<img src="/static/img/smileys/smile.png" title="Smiling" alt="Smiling" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Chiqui%20y%20Joaqu%C3%ADn%20Calder%C3%B3n%20en%20el%20Laberinto][Dejar comentario]].
+

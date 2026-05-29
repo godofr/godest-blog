@@ -1,0 +1,15 @@
+#+title: Rescatándome del spam
+#+date: <2016-03-17 21:51>
+#+author: Godofredo Fdez.
+#+description: A continuación podéis observar cómo se le dice a Outlook que un determinado correo no es spam. Hemos de buscarlo en la carpeta de dicho nombre y haciendo click…
+#+filetags: 
+#+options: _:nil
+#+nid: 548
+
+A continuación podéis observar cómo se le dice a Outlook que un determinado correo no es spam. Hemos de buscarlo en la carpeta de dicho nombre y haciendo click con el botón derecho sobre él llegamos a poder seleccionar lo que se muestra en la figura que sigue.
+
+Aquí, en concreto, le decimos que los mails recibidos del dominio @vivencias.net no son spam. Pero también podríamos seleccionar un único remitente, por ejemplo: fulanito @ vivencias.net, justo con la opción siguiente a la resaltada en azul.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Rescat%C3%A1ndome%20del%20spam][Dejar comentario]].
+

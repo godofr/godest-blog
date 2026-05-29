@@ -1,0 +1,49 @@
+#+title: Lanzamiento de Debian 7.0 "Wheezy" 
+#+date: <2013-05-05 18:45>
+#+author: Godofredo Fdez.
+#+description: ¡Enhorabuena a la comunidad Debian! Este fin de semana se ha producido el lanzamiento de la última versión de Debian: 7.0 "Wheezy" . Y he aprovechado para…
+#+filetags: GNU/Linux
+#+options: _:nil
+#+nid: 507
+
+¡Enhorabuena a la comunidad Debian!
+
+Este fin de semana se ha producido el lanzamiento de la última versión de [[http://www.debian.org/News/2013/20130504.es.html][Debian: 7.0 "Wheezy"]]. Y he aprovechado para reanimar mi viejo portátil [[http://www.notebookcheck.org/Analisis-del-portatil-Dell-Latitude-D430.8773.0.html][DELL Latitude D430]] (un Core2 Duo de 64bits, con 2GB de RAM y con 6 ó 7 años encima). No he tenido ningún problema con la detección del hardware exceptuando la tarjeta WiFi, que fue correctamente detectada por el instalador, avisándome de que debía instalar el firmware específico de la misma: firmware-b43-installer, que no venía en la imagen ISO utilizada. Cosa que realicé después, cuando finalizó la instalación, conectándome al router por el puerto ethernet y ejecutando:
+
+#+begin_example
+
+apt-get install  firmware-b43-installer
+
+#+end_example
+
+El magnífico gestor de paquetes de Debian (siempre he pensado que es uno de los puntos fuertes de esta distribución GNU/Linux y, por tanto, de sus derivadas) se encargó de todo, resolvió todas las dependencias, instaló los paquetes necesarios y hasta se conectó a la web de Broadcom Corporation para bajarse el último firmware disponible. Justo en ese momento, sin reinicios, el interfaz WiFi se activó, detectó las redes disponibles y... ¡listo!
+
+Como ya he explicado en otros artículos de este blog, llegué a Debian tras haber probado otras distribuciones y jamás me he planteado cambiar desde entonces: su producto es impecable y [[http://www.debian.org/social_contract.es.html][su "filosofía" es la mía]]. A familiares y amigos con un perfil menos técnico les recomiendo [[http://www.ubuntu.com/][Ubuntu]], que mantiene muchas de las buenas cualidades de Debian y está algo más dulcificada en, al menos, el proceso de instalación: relaja más las restricciones entre el software totalmente libre y el que no -cosa que Debian trata con mucho escrúpulo-, y evita así poner en aprietos, como el que he comentado en el primer párrafo, a usuarios menos duchos.
+
+Antiguamente utilizaba el escritorio [[http://www.kde.org/][KDE]], pero llevo ya tiempo utilizando [[http://www.xfce.org/][XFCE]]. Siempre me ha gustado disponer de un entorno lo más simple posible: no quiero filigranas de efectos gráficos que llegan a marear, degradados de colores, transparencias, programitas corriendo y lanzándote mensajitos, etc., porque creo que no ayudan a nada, distraen y sólo ralentizan la máquina. Así, he partido de [[http://cdimage.debian.org/debian-cd/7.0.0/amd64/bt-cd/debian-7.0.0-amd64-xfce-CD-1.iso.torrent][este disco de instalación específico para el entorno XFCE]] *y procesador de 64bits*, lo he grabado en un USB desde otro ordenador con Windows utilizando [[http://www.linuxliveusb.com/][LiLi]], y he comenzado la instalación desde cero, particionando y formateando... sin problemas.
+
+*Debian trae todo lo que necesito para trabajar*:
+Para programar: gcc, gdb, emacs, python, php...
+Para “vivir” en Internet: iceweasel (versión renombrada de Firefox) y google chrome ([[http://godest.vivencias.net/content/instalando-google-chrome-en-debian-gnulinux][aquí explico como instalarlo]]) con los que tengo acceso a todos los servicios que suelo utilizar.
+Para escribir, llevar mi pequeña contabilidad, hacer alguna presentación, leer documentos descargados, algún retoque fotográfico/montaje de imágenes... tareas de “oficina” en general: libreoffice, epdfview, gimp.
+Administración, redes y seguridad: todo lo que sea necesario, baste mencionar que [[http://www.kali.org/][Kali Linux]], distribución heredera de backtrack, especializada para la realización de test de penetración, está basada en Debian, con lo que es fácil encontrar herramientas/paquetes.
+El cliente de dropbox funciona perfectamente.
+
+Y lo mejor de todo: ¡el portátil va como un tiro!
+
+Me quedan las siguientes tareas pendientes y *agradezco sugerencias*:
+1.- PRIORITARIO - Realizar backups de la/s partición/es ext4 de forma incremental a ser posible. Por si ocurre alguna “tragedia” poder restaurar todo el sistema. En su día utilicé “partimage”, pero no se si sigue siendo la mejor opción. Me gustaría tenerlo en ejecución en background, o programar alguna tarea, de tal manera que cada cierto tiempo, supongamos que un mes, el sólo se ejecute y haga el backup incremental de la partición.
+
+2.- UNA DUDA - ¿Qué software de virtualización tiene mejor rendimiento para virtualizar sobre él un Windows XP? Yo creo que [[http://wiki.debian.org/VMware][VMware-Player]] es la mejor opción, pero...
+
+3.- SIN IMPORTANCIA - Descubrir un reproductor de música simple, al estilo de [[http://www.foobar2000.org/][“foobar2000”]] (o incluso más simple aún) que es el que suelo utilizar cuando trabajo en Windows. Básicamente lo que busco es poder asociar un directorio donde se encuentra toda la música (en subdirectorios por autor) al programa, como si de un repositorio se tratara, que éste autorefresque los cambios y me deje reproducir en un par de clicks una determinada carpeta. Es muy importante que sea pequeño en ocupación de disco, no quiero cosas espectaculares que aconsejan reproducciones, etc., estilo Amarok, rythmbox (creo) y similares. Algo pequeñito y útil.
+
+4.- CREATIVO - cualquier otra cosa que se os ocurra: aconsejarme probar un determinado programa, dejar de utilizar uno porque otro lo supera... servicios y opciones útiles.
+
+¡Animaros a disfrutar de Debian!
+
+Os espero para compartir ;-)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Lanzamiento%20de%20Debian%207.0%20%22Wheezy%22%20][Dejar comentario]].
+

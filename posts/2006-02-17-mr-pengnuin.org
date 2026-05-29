@@ -1,0 +1,13 @@
+#+title: Mr PenGNUin
+#+date: <2006-02-17 11:37>
+#+author: Godofredo Fdez.
+#+description: Hoy, leyendo las noticias habituales he encontrado esta imagen que creo que simboliza los pilares del Software Libre . Una fusión "casi perfecta" del mundo GNU…
+#+filetags: Mascotas
+#+options: _:nil
+#+nid: 102
+
+Hoy, leyendo las noticias habituales he encontrado esta imagen que creo que simboliza los pilares del [[http://es.wikipedia.org/wiki/Software_libre][Software Libre]]. Una fusión "casi perfecta" del mundo [[http://es.wikipedia.org/wiki/GNU][GNU]] y el kernel [[http://es.wikipedia.org/wiki/Linux][Linux]] ;-) Para más información/diferencias consultad [[file:33][esto]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Mr%20PenGNUin][Dejar comentario]].
+

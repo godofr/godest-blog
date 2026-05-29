@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Amanecía un sábado tranquilo. Con expectación, preparaba minuciosamente el nuevo hardware que, dentro de poco, extendería los dominios de Debian un poquito más. Encendí el portátil, le dí la bienvenida a casa y lo tranquilicé: estaba seguro de que se lo devolvería a sus dueños en mejores condiciones de las que había llegado a mis manos. ;-) Procedí a arrancarlo desde un CD donde, previamente, había tostado la versión más reciente de GParted LiveCD , maravillosa herramienta gráfica que os recomiendo tener siempre a mano para trabajar con particiones: crear, redimensionar, etc. Obviamente es " Software Libre ".">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Debian conquista el portátil Fujitsu Siemens AMILO Pi 1536</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">27 ene. 2007</div><h1 class="post-title"><a href="https://godest.vivencias.net/2007-01-27-debian-conquista-el-portatil-fujitsu-siemens-amilo-pi-1536.html">Debian conquista el portátil Fujitsu Siemens AMILO Pi 1536</a></h1>
+<a href="http://godest.vivencias.net/node/196" target="top"><img width="250" height="188" border="0" align="right" hspace="10" vspace="10" src="/static/img/etch-luna.jpg"></a>
+<p>
+Amanecía un sábado tranquilo. Con expectación, preparaba minuciosamente el nuevo hardware que, dentro de poco, extendería los dominios de Debian un poquito más. Encendí el portátil, le dí la bienvenida a casa y lo tranquilicé: estaba seguro de que se lo devolvería a sus dueños en mejores condiciones de las que había llegado a mis manos. ;-)
+</p>
+
+<p>
+Procedí a arrancarlo desde un CD donde, previamente, había tostado la versión más reciente de <a href="http://gparted.sourceforge.net/livecd.php">GParted LiveCD</a>, maravillosa herramienta gráfica que os recomiendo tener siempre a mano para trabajar con particiones: crear, redimensionar, etc. Obviamente es "<a href="http://es.wikipedia.org/wiki/Software_Libre">Software Libre</a>".
+</p>
+
+<p>
+Confiné al omnipresente "Windows XP Home" a un reducido espacio de 20 GB, y creé otras dos particiones: 40 GB para fat32 (zona de intercambio de ficheros para Windows y GNU/Linux, ya que este sistema de ficheros es reconocido sin problemas por ambos Sistemas Operativos) y 20 GB para Debian Etch.
+</p>
+
+<p>
+Grabé los cambios&#x2026; y comprobé que todo había quedado como quería.
+</p>
+
+<p>
+Arranqué desde el CD de Debian Etch de instalación por red, concretamente <a href="http://cdimage.debian.org/cdimage/etch_di_rc1/i386/iso-cd/debian-testing-i386-netinst.iso">éste (RC1)</a>. Sí, aún está en fase de pruebas (testing), pero funcionó correctamente.
+</p>
+
+<p>
+Seguí todo el proceso, bien guiado en cada fase por los menús que se iban sucediendo en correcto Español. Terminé eligiendo una "instalación para PC de escritorio" y no tuve ningún problema. Tras 3 horas, aproximadamente, había terminado (tened en cuenta que todo el software fue descargado de Internet por una conexión ADSL de 1 Mbps.).
+</p>
+
+<p>
+Volví a arrancar y ¡ahí estaba <a href="http://es.wikipedia.org/wiki/Grub">grub</a>! Mostrándome un menú de selección del S.O. que deseara utilizar. Seleccioné la opción predeterminada: Debian GNU/Linux, y observé detenidamente todo el proceso. Pude ver como el kernel iba detectando todo el hardware, incluida la tarjeta gráfica, el sonido, etc. Y lleno de ilusión desemboqué en una fantástica pantalla de bienvenida, antesala de la pantalla capturada que ilustra este artículo, en la cual podemos ver un magnífico entorno gráfico: <a href="http://www.gnome.org/">GNome</a> (aunque yo utilizo habitualmente este otro: <a href="http://www.kde.org/">KDE</a>). Jugué un poco con él&#x2026; y detecté que no se podía hacer uso de la tarjeta de red inalámbrica. Único problema que solucioné fácilmente como os indico a continuación.
+</p>
+
+<p>
+Comprobé con el siguiente comando que la tarjeta sí que estaba siendo detectada por el kernel Linux:
+</p>
+
+<pre class="example" id="org13a5c6c">
+luna:/home/eulalia# lspci
+
+00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS/940GML and 945GT Express Memory Controller Hub (rev 03)
+
+00:01.0 PCI bridge: Intel Corporation Mobile 945GM/PM/GMS/940GML and 945GT Express PCI Express Root Port (rev 03)
+
+00:1b.0 Audio device: Intel Corporation 82801G (ICH7 Family) High Definition Audio Controller (rev 02)
+
+00:1c.0 PCI bridge: Intel Corporation 82801G (ICH7 Family) PCI Express Port 1 (rev 02)
+
+00:1c.2 PCI bridge: Intel Corporation 82801G (ICH7 Family) PCI Express Port 3 (rev 02)
+
+00:1d.0 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI #1 (rev 02)
+
+00:1d.1 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI #2 (rev 02)
+
+00:1d.2 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI #3 (rev 02)
+
+00:1d.3 USB Controller: Intel Corporation 82801G (ICH7 Family) USB UHCI #4 (rev 02)
+
+00:1d.7 USB Controller: Intel Corporation 82801G (ICH7 Family) USB2 EHCI Controller (rev 02)
+
+00:1e.0 PCI bridge: Intel Corporation 82801 Mobile PCI Bridge (rev e2)
+
+00:1f.0 ISA bridge: Intel Corporation 82801GBM (ICH7-M) LPC Interface Bridge (rev 02)
+
+00:1f.1 IDE interface: Intel Corporation 82801G (ICH7 Family) IDE Controller (rev 02)
+
+00:1f.2 SATA controller: Intel Corporation 82801GBM/GHM (ICH7 Family) Serial ATA Storage Controller AHCI (rev 02)
+
+00:1f.3 SMBus: Intel Corporation 82801G (ICH7 Family) SMBus Controller (rev 02)
+
+01:00.0 VGA compatible controller: ATI Technologies Inc Radeon Mobility X1400
+
+04:00.0 Network controller: Intel Corporation PRO/Wireless 3945ABG Network Connection (rev 02)
+
+05:04.0 FireWire (IEEE 1394): Texas Instruments TSB43AB22/A IEEE-1394a-2000 Controller (PHY/Link)
+
+05:05.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL-8169 Gigabit Ethernet (rev 10)
+
+luna:/home/eulalia# 
+</pre>
+
+<p>
+Busqué en los repositorios de Debian, desde mi ordenador de sobremesa y haciendo uso de apt-cache, algo que tuviera que ver con: "Intel Corporation PRO/Wireless 3945ABG".
+</p>
+
+<pre class="example" id="org2aba991">
+[20:24:19(godo@surco)~]&gt; apt-cache search 3945
+</pre>
+
+<p>
+Y obtuve, entre otras cosas, los paquetes necesarios que tenía que instalar para reconocer dicho hardware, que son:
+</p>
+
+<pre class="example" id="orgea82277">
+firmware-ipw3945 - Binary firmware for IPW3945
+
+ipw3945d - Binary userspace regulatory daemon for Intel PRO/Wireless 3945ABG cards
+
+ipw3945-modules-2.6.18-3-686 - Intel PRO/Wireless 3945ABG (ipw3945) driver modules for Linux 2.6.18 on PPro/Celeron/PII/PIII/P4
+</pre>
+
+<p>
+El último lo elegí tras comprobar la versión del kernel que había sido instalada en el portátil (tened cuidado porque ha de coincidir la versión del paquete de "módulos" que soportan la tarjeta wireless con la versión del kernel que tengáis):
+</p>
+
+<pre class="example" id="org31ec63b">
+luna:/home/eulalia# uname -a
+
+Linux luna 2.6.18-3-686 #1 SMP Mon Dec 4 16:41:14 UTC 2006 i686 GNU/Linux
+</pre>
+
+<p>
+Tras investigar un poquito, descubrí que estos paquetes no habían sido instalados por defecto debido a que el instalador de Debian es muy escrupuloso: sólo había incluido en las fuentes de los repositorios la parte "main" de los mismos, y no las partes "contrib" y "non-fre", estando en esta última ubicados los paquetes anteriores, necesarios para el soporte de la tarjeta de red inalámbrica.
+</p>
+
+<p>
+Tuve que editar el fichero "sources.list" y dejarlo de la siguiente forma:
+</p>
+
+<pre class="example" id="org0df94b8">
+luna:/home/eulalia# more /etc/apt/sources.list
+
+#
+
+# deb cdrom:[Debian GNU/Linux testing _Etch_ - Official Snapshot i386 Binary-1 (20061111)]/ etch main
+
+deb http://ftp.debian.nl/debian/ etch main contrib non-free
+
+#deb-src http://ftp.debian.nl/debian/ etch main
+
+deb http://security.debian.org/ etch/updates main contrib non-free
+
+#deb-src http://security.debian.org/ etch/updates main
+
+luna:/home/eulalia#
+</pre>
+
+<p>
+Finalmente, bastó con ejecutar lo siguiente para que la tarjeta fuera reconocida:
+</p>
+
+<pre class="example" id="org42212cd">
+luna:/home/eulalia# apt-get update
+
+luna:/home/eulalia# apt-get install firmware-ipw3945 ipw3945d ipw3945-modules-2.6.18-3-686
+</pre>
+
+<p>
+Ya sólo faltaba configurarla con el uso de la aplicación: <a href="http://www.gnome.org/projects/NetworkManager/">Network Manager</a>.
+</p>
+
+<p>
+Hoy, el universo Debian es un poquito más grande.
+</p>
+
+<p>
+Ánimo, <a href="http://www.debian.org">entrad en él</a>.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Debian%20conquista%20el%20port%C3%A1til%20Fujitsu%20Siemens%20AMILO%20Pi%201536">Dejar comentario</a>.
+</p>
+<div id="outline-container-org9ba1787" class="outline-2">
+<h2 id="org9ba1787">Comentarios</h2>
+<div class="outline-text-2" id="text-org9ba1787">
+</div>
+<div id="outline-container-orgde4a119" class="outline-3">
+<h3 id="orgde4a119">Efectivamente, en un día (Dueños del portatil 28/01/2007 - 12:35)</h3>
+<div class="outline-text-3" id="text-orgde4a119">
+<p>
+Efectivamente, en un día nuestro portatil cambió. Ahora tenemos dos entornos de trabajo y cada vez que encendemos el ordenador trabajamos un poco con el nuevo, hay que acostumbrarse. Bueno, agradecemos el cambio, que como bien dice el autor, lo puede considerar una conquista, ya que por nosotros mismos no lo hubiésemos hecho.
+</p>
+
+<p>
+Esperamos que sea para bien
+</p>
+
+<p>
+Gracias
+</p>
+</div>
+</div>
+<div id="outline-container-orgd613112" class="outline-3">
+<h3 id="orgd613112">Bonitas explicaciones, pero (Squil 18/03/2007 - 21:03)</h3>
+<div class="outline-text-3" id="text-orgd613112">
+<p>
+Bonitas explicaciones, pero yo por mi parte no me he quedado conforme con la instalación de debian en mi portátil&#x2026; parece ser que debian no trae el cpufreq activado en el kernel por lo cual el procesador no baja de frecuencia así que está siempre al máximo consumiendo la batería en un rato&#x2026; Ahora me queda conseguir solucionar el problema que tengo ahora que es que falla la compilación del kernel&#x2026; así que supongo que tendré que volverme a kubuntu como siempre :( porque aunque tiene fallos al menos no me tiene al máximo el procesador&#x2026; y por cierto en kubuntu el control del procesador si viene puesto por defecto.
+</p>
+</div>
+</div>
+<div id="outline-container-orgefc74fb" class="outline-3">
+<h3 id="orgefc74fb">Me extraña mucho&#x2026; (Godo 24/03/2007 - 18:13)</h3>
+<div class="outline-text-3" id="text-orgefc74fb">
+<p>
+&#x2026;que el kernel de Debian no venga compilado con esa facilidad. Otra cosa es que necesites instalar algún paquete adicional, como es el caso de "cpufreqd" y "cpufrequtils":
+</p>
+
+<pre class="example" id="org8436bc6">
+[18:08:19(godo@surco)~]&gt; apt-cache search cpufreq
+
+collectd - statistics collection daemon
+
+cpudyn - CPU dynamic frequency control for processors with scaling
+
+cpufreqd - fully configurable daemon for dynamic frequency and voltage scaling
+
+cpufrequtils - utilities to deal with the cpufreq Linux kernel feature
+
+libcpufreq-dev - development files to deal with the cpufreq Linux kernel feature
+
+libcpufreq0 - shared library to deal with the cpufreq Linux kernel feature
+
+xfce4-cpufreq-plugin - cpufreq information plugin for the Xfce4 panel
+
+gnome-applets - Various applets for GNOME 2 panel - binary files
+
+powernowd - control cpu speed and voltage using 2.6 kernel interface
+
+powersaved - power management daemon
+
+[18:08:24(godo@surco)~]&gt;
+</pre>
+
+<p>
+He de reconocer que, hasta ahora, no me había preocupado por esto que cuentas. Suelo utilizar el portátil casi todo el tiempo conectado a la red eléctrica ;-). No obstante, investigaré un poco y contaré aquí lo aprendido. Igualmente, te agradecería que si hallas la solución la compartas.
+</p>
+
+<p>
+Muchas gracias por tu comentario.
+</p>
+
+<p>
+Salud.<br>
+</p>
+</div>
+</div>
+<div id="outline-container-org4cdf449" class="outline-3">
+<h3 id="org4cdf449">Muy buen artículo. Cuando (jflombera 28/03/2007 - 06:10)</h3>
+<div class="outline-text-3" id="text-org4cdf449">
+<p>
+Muy buen artículo. Cuando se plantean las cosas de esa manera todo parece fácil y las personas que aún no han probado el mundo Debian ( y Linux en general) les de ganas de hacerlo.
+</p>
+
+<p>
+Solo tengo una sugerencia. Sería mejor que la partición de fat32 la hubieras creado de tipo NTFS y la hubieras administrado desde Linux con el controlador ntfs-3g que soporta la escritura de NTFS, yo lo uso actualmente y hasta el momento ha funcionado muy bien sin ningún problema.
+</p>
+
+<p>
+Un saludo.
+</p>
+</div>
+</div>
+<div id="outline-container-org6cd88ea" class="outline-3">
+<h3 id="org6cd88ea">Sobre ntfs-3g (Godo 28/03/2007 - 10:57)</h3>
+<div class="outline-text-3" id="text-org6cd88ea">
+<p>
+Muchas gracias&#x2026; me alegro mucho de que te haya gustado.
+</p>
+
+<p>
+La verdad es que cuando uno lee la descripción que aún aparece de este paquete en los repositorios Debian, acaba sintiendo algo de vértigo:
+</p>
+
+<pre class="example" id="org6f6494d">
+[10:24:03(godo@surco)~]&gt; apt-cache show ntfs-3g
+
+...
+
+The driver currently is in BETA status: before release of this software we
+
+ haven't experienced any driver crashes or data loss during our heavy quality
+
+ testing, however we are aware of some minor issues which will be resolved
+
+ in the near future.
+
+...
+</pre>
+
+<p>
+Aunque comentarios como el tuyo vayan haciendo crecer la confianza sobre el mismo. He de reconocer que en este tipo de cosas, y más tratándose de un equipo que no era mío, decido asumir riesgo cero.
+</p>
+
+<p>
+Seguiremos compartiendo nuestras experiencias.
+</p>
+
+<p>
+Una nueva cosa que conocer&#x2026; ¡el mundo es ancho!
+</p>
+</div>
+</div>
+<div id="outline-container-org8332fa8" class="outline-3">
+<h3 id="org8332fa8">pues&#x2026; (Squil 01/04/2007 - 21:22)</h3>
+<div class="outline-text-3" id="text-org8332fa8">
+<p>
+Si que instale las diferentes aplicaciones incluso probe alguna otra como el powersave o algo asi que utiliza ubuntu&#x2026; pero el problema esta en que esos programas no pueden hacer nada ya que no existe nada que puedan controlar&#x2026; (ya desinstale debian si no te contaba que es lo que falta) por eso me figuro que el problema venga de la compilacion del kernel que al no tener compilado lo adecuado para el cpufreq no genera los "dispositivos" que necesita el programa, pero no lo puedo asegurar&#x2026;
+</p>
+
+<p>
+Yo tambien suelo tener casi siempre el portatil enchufao a la corriente pero vista la temperatura que coge el portatil por funcionar al maximo de revoluciones es mucho mejor hacerle que siempre regule las revoluciones asi ademas consigo que baje el ruido que provoca&#x2026;
+</p>
+</div>
+</div>
+<div id="outline-container-orgd0dddc8" class="outline-3">
+<h3 id="orgd0dddc8">amilo pi1536 (Eva 13/04/2007 - 03:46)</h3>
+<div class="outline-text-3" id="text-orgd0dddc8">
+<p>
+Se me estropeó windows y no encuentro el disco con windows de siemens que tiene los drivers del sata, un windows normal no lo acepta y estoy harta, ¿crees que podría instalar sin problemas linux siguiendo tus instrucciones? A mí todos esos códigos me suenan a chino&#x2026;
+</p>
+</div>
+</div>
+<div id="outline-container-orgc50704a" class="outline-3">
+<h3 id="orgc50704a">quizá, mejor Ubuntu (Godo 15/04/2007 - 13:39)</h3>
+<div class="outline-text-3" id="text-orgc50704a">
+<p>
+Hola Eva.
+</p>
+
+<p>
+Por tu comentario deduzco que no estás muy ducha en "operar" un sistema GNU/Linux. Aunque el artículo está descrito con suficiente nivel de detalle, reconozco que meterse a editar ficheros de configuración puede ser algo duro para un neófito en Debian. Es por ello por lo que te aconsejo que intentes instalar la última versión disponible de Ubuntu, puedes obtener más información sobre ella <a href="http://www.ubuntu.com/business/desktop/overview">aquí</a>. La página te explica las características fundamentales de esta distribución, al final aparecen enlaces para: seguir viendo más características, descargar el CD de instalación de la última versión estable (Ubuntu 6.10 desktop), o incluso solicitar que te los envíen a casa gratuitamente.
+</p>
+
+<p>
+Ya me contarás si la opción aconsejada te ha sido útil.
+</p>
+
+<p>
+Salud.
+</p>
+</div>
+</div>
+<div id="outline-container-org0cf6441" class="outline-3">
+<h3 id="org0cf6441">cd original del amilo pi1536 (magl 23/04/2007 - 15:18)</h3>
+<div class="outline-text-3" id="text-org0cf6441">
+<p>
+Hola Eva, tengo el mismo problema que tú. Necesito una copia de ese CD original como sea.
+He conseguido descargarme los drivers SATA necesarios para que el ordenaror reconozca el disco duro, pero solo hay 2 formas de incorporarlos:
+1.- con una unidad de discos de 3,5 con puerto USB. Al empezar a instalar el sistema operativo pulsas F6 cuando te lo indique y descargará los drivers que previmanete hemos grabado en el discket.
+2.- Grabando los drivers en el mismo cd que el sistema operativo (se puede hacer con algunos programas, p.e:nLite).
+En el 1º caso necesito una disquetera para estos discos, que no tengo.
+El segundo caso: no consegúí que funcionara.
+</p>
+
+<p>
+Tendré que descartar avería de mi disco duro WD1200&#x2026; (es el que trae el amilo pi1536). Por si acaso he encargato otro.
+</p>
+
+<p>
+Por favor, si encuentras ese cd o alquien que lo tenga, contacta conmigo. (veterheliomar@yahoo.es)
+</p>
+
+<p>
+Miguel Ángel<br>
+</p>
+</div>
+</div>
+<div id="outline-container-org3336a36" class="outline-3">
+<h3 id="org3336a36">Debian Lenny ha conquistado un portáil Toshiba Satellite A100-99 (lenny 25/04/2007 - 01:14)</h3>
+<div class="outline-text-3" id="text-org3336a36">
+<p>
+La instalación de Debian te deja un sistema bastante usable. En concreto a mi me reconoció todo excepto la Intel Corporation PRO/Wireless 3945ABG Network Connection&#x2026;pero con un simple apt install &#x2026;. instalé los módulos, el firmware y el demonio (como tu bien explicas en tu artículo) y asunto arreglado :)
+</p>
+
+<p>
+Ejecutando un simple <b>iwconfig</b> puedo saber si todo a ido sobre ruedas&#x2026;y efectivamente me dice que la conexión wireless se asoma por eth2, ahora solo queda probarla&#x2026;
+La utilidad de gnome: <b>Network Administration Tool</b> me reconoce los puntos de acceso inalámbricos cercanos.Simplemente queda conectarme a uno y listo.
+</p>
+
+<p>
+Una pregunta Godo ¿Para cuando algo sobre Network Manager?. A ver si me convences para no utilizar la anterior herramienta&#x2026;:)
+</p>
+
+<p>
+Enhorabuena por tu artículo
+</p>
+</div>
+</div>
+<div id="outline-container-org704f24e" class="outline-3">
+<h3 id="org704f24e">Gracias por apostar por Debian (Godo 26/04/2007 - 20:46)</h3>
+<div class="outline-text-3" id="text-org704f24e">
+<p>
+Hola.
+</p>
+
+<p>
+Me alegro mucho de que hayas apostado por Debian GNU/Linux. Estoy seguro de que no te arrepentirás. No sé si ya lo habré dejado escrito por aquí alguna vez, pero yo he dado muchos tumbos entre diferentes distribuciones hasta que arribé a este puerto, me atrapa especialmente su estabilidad y la maravillosa gestión de paquetes con "apt".
+</p>
+
+<p>
+Respecto a "<a href="http://www.gnome.org/projects/NetworkManager/">Network Manager</a>" he de decirte que no lo he probado demasiado, sólo cuando instalé el portátil objeto de este artículo. Yo aposté en su día por <a href="http://kde.org/">KDE</a>, por lo que en todo caso utilizaría <a href="http://kde-apps.org/content/show.php?content=46395">Knetworkmanager</a>. No obstante, he de decirte que no me gusta ninguno, quizá por ello soy algo más "hack": lo hago <a href="http://godest.vivencias.net/node/151">a pelo</a>.
+</p>
+
+<p>
+Muchísimas gracias.
+</p>
+
+<p>
+Nos seguimos leyendo. Espero ;-)
+</p>
+</div>
+</div>
+<div id="outline-container-orge8a9386" class="outline-3">
+<h3 id="orge8a9386">Y el microfono? (pedro 24/06/2007 - 11:04)</h3>
+<div class="outline-text-3" id="text-orge8a9386">
+<p>
+Muy interesante tu articulo, y explicas todo con mucha facilida. Te cuento que tengo la misma Pc-Laptop que tu y he hecho todo lo que explicas en tu pagina y solo tengo ahora un problema y seguro que tambien muchos lo tendran y se trata del microfono. No me funciona desde hace meses. Tendras algúna idea del porque. Te funcionan a tí el microfono.
+Los detalles no creo que sean necesarios ya que poseo la misma Laptop que tu. Espero que puedas ayudarme, porque tengo tiempo con ese problema y es lo unico que me mantiene a usar el xp aparte. Gracias.
+Linux-Debian por un mundo libre
+</p>
+</div>
+</div>
+<div id="outline-container-orgd3933da" class="outline-3">
+<h3 id="orgd3933da">Conquista y reconquista (elradioplanner 13/09/2007 - 09:38)</h3>
+<div class="outline-text-3" id="text-orgd3933da">
+<p>
+Pues sí, en un arrebato debianesco, se ha conquistado para la causa también un Toshiba Satellite del año la polka (no tengo el modelo aquí porque he cedido la maquinita). En principio no ha dado ningún problema, va todo bastante bien&#x2026; y como diría un ingeniero ;-) si todo va bastante bien es que aún le faltan funcionalidades, de manera que en breve le volveré a meter mano para añadirle cosillas que lo hagan más versátil. Además será una especie de experimento, porque lo está usando mi suegro, que desde luego no es ningún experto en el tema&#x2026; Y seguramente también acabarán jugando con él mis primillas&#x2026; ¿Estará Debian hecho a prueba de niños?
+</p>
+
+<p>
+Y, por otro lado, Debian ha logrado dos reconquistas. Ayer actualicé el que tenía en mi portátil, un Dell Inspiron 9400. Aquí me sigo peleando con el tema de la tarjeta gráfica: Con el driver "estándar" autodetectado funciona, pero desde luego no con todas sus posibilidades. Y también ayer, reinstalé el de mi PC de casa&#x2026; como la seda, lo reconoció todo de forma automática, y funciona de maravilla.
+</p>
+
+<p>
+¡¡¡Saludillos!!!
+</p>
+</div>
+</div>
+<div id="outline-container-org683698b" class="outline-3">
+<h3 id="org683698b">Sobre el sonido en el amilo (Godo 07/10/2007 - 18:55)</h3>
+<div class="outline-text-3" id="text-org683698b">
+<p>
+Hola.
+</p>
+
+<p>
+Siento mucho no haberte podido responder antes. La verdad es que recuerdo que me ocurrió exactamente igual que a ti: al principio no me funcionaba el sonido. Yo comprobé que no era capaz de reproducir ni mp3 ni CD de música. El micrófono en sí no lo probé.
+</p>
+
+<p>
+Como verás hablo en pasado porque el laptop no es mío sino de unos conocidos, me lo dejaron un fin de semana y&#x2026; ahora no puedo hacer pruebas porque ya no lo tengo.
+</p>
+
+<p>
+Lo que sí puedo aconsejarte es que pruebes a abrir el mezclador de gnome (yo utilizo kde, pero supongo que no será difícil abrir el dispositivo mezclador en gnome -si algún lector, usuario de gnome, puede ayudar a nuestro amigo que, por favor, deje un comentario tras este-, si te aparece un altavoz en la "bandeja del sistema" suele bastar con hacer click con el botón derecho sobre él y elegir "abrir dispositivo de mezclas"). Una vez abierto el mezclador comprueba que no tienes en "mute" (en silencio == desactivado) los diferentes dispositivos de sonido, ¡Y entre ellos el micrófono!
+</p>
+
+<p>
+Si necesitas más ayuda, házmelo saber. Intentaré hacer todo lo que pueda.
+</p>
+
+<p>
+Sigue apostando por un mundo un poco más libre.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfd1f02b" class="outline-3">
+<h3 id="orgfd1f02b">Lo que me acabas de (pedro 21/10/2007 - 11:49)</h3>
+<div class="outline-text-3" id="text-orgfd1f02b">
+<p>
+Lo que me acabas de escribir ya lo he intentado desde hace tiempo, y la verdad el sonido me funciona a la perfección.Y con el microfono lo intente todo, ( mezclador de gnome) tambien desde el terminal el alsamixer. He instalado programas como audacity,,, pero nada,, ademas ahora probe el nuevo Ubuntu 7.10, y ahora tengo "Ext Mic y Int Mic".
+En Alsa Mixer tengo HDA Intel y en OSS Mixer tengo Raeltek ALC880.
+En debian Etch, tenia como motorola ( y en windows motorola figura en mi computadora como modem. Yo creo que en Ubuntu tengo un problema de compatibilidad entre la tarjeta de sonido y el modem. ( pero no se como solucionarlo) ademas en ubuntu desaparecio el motorola. Tengo los ultimos drivers Alsa compilados e instalados.
+De antemano ya me acostumbre al problema, y tengo 10 gigas para windows, que lo uso solo para conversar por Skype (que pena). Pero si conoces alguna solucion,me alegraras de verdad el día. gracias
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+#+title: A modo de solidaridad
+#+date: <2006-11-01 19:05>
+#+author: Godofredo Fdez.
+#+description: A modo de altavoz, que expanda entre la sociedad la necesidad de una educación de calidad sincera, que se preocupe por formar a personas cada vez más libres, más buenas y más justas... es por ello por lo que escribo este artículo. Con él pretendo difundir el esfuerzo que está llevando a cabo el filósofo y educador, José Antonio Marina , en un espacio abierto donde todo aquel que se pregunte: " ¿Qué puedo hacer yo? ", encontrará los caminos posibles que, una vez recorridos, lo situarán más cerca de la respuesta. Ese espacio abierto lo podemos encontrar aquí: Movilización Educativa . Os aconsejo que entréis en él utilizando el navegador " Internet Explorer " ya que con el resto la usabilidad de la página se ve reducida sustancialmente. Habrá que decirle al webmaster que hay unos estándares más allá de Microsoft. Es una pena que no seamos conscientes del daño que produce no cumplirlos.
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 176
+
+A modo de altavoz, que expanda entre la sociedad la necesidad de una educación de calidad sincera, que se preocupe por formar a personas cada vez más libres, más buenas y más justas... es por ello por lo que escribo este artículo. Con él pretendo difundir el esfuerzo que está llevando a cabo el filósofo y educador, [[http://joseantoniomarina.net/][José Antonio Marina]], en un espacio abierto donde todo aquel que se pregunte: "/¿Qué puedo hacer yo?/", encontrará los caminos posibles que, una vez recorridos, lo situarán más cerca de la respuesta.
+
+Ese espacio abierto lo podemos encontrar aquí: *[[http://www.movilizacioneducativa.net/][Movilización Educativa]]*. Os aconsejo que entréis en él utilizando el navegador "[[http://es.wikipedia.org/wiki/Internet_Explorer][Internet Explorer]]" ya que con el resto la [[http://es.wikipedia.org/wiki/Usabilidad][usabilidad]] de la página se ve reducida sustancialmente. Habrá que decirle al webmaster que hay unos estándares más allá de Microsoft. Es una pena que no seamos conscientes del daño que produce no cumplirlos.
+
+Os dejo, como despedida, este puñado de frases del citado filósofo:
+
+#+BEGIN_EXAMPLE
+  "Queremos celebrar la libertad que debemos tener para beber en la calle"
+                            --Convocatoria de un "macrobotellón" en Huelva
+
+  En la convocatoria que comento se hace una curiosa definición de 
+
+  "Botellonología: Ciencia que se basa en las relaciones sociales durante los 
+
+  fines de semana en la calle, no precisamente bebiendo". A continuación anima 
+
+  a luchar por los derechos. He dedicado muchas horas a estudiar la historia de los 
+
+  derechos, y el tema me interesa. ¿Hay un derecho a divertirse? No lo creo. En 
+
+  todo caso hay un derecho a que mi comportamiento en el espacio público no sea 
+
+  impedido sin causa justificada. ¿La hay en este caso? Los convocantes no lo 
+
+  creen, pero piden "más vigilancia, porque si no la hay las peleas sí que hacen 
+
+  daño. Este es el problema, y no el botellón". Es decir, los jóvenes botelloneros 
+
+  piden a la policía que les proteja de sí mismos. La Ordenanza cívica de Barcelona 
+
+  prohíbe la bebida especialmente cuando "el consumo se pueda hacer de forma 
+
+  masiva por los ciudadanos o invita a la aglomeración de estos". Es decir, en 
+
+  este fenómeno social se manifiestan dos problemas: el alcohol y la aglomeración. 
+
+  Ambos parecen provocar alteraciones del orden público. Hay un tercer elemento. 
+
+  ¿Qué sucede con los derechos de los vecinos que soportan el botellón? Problemas 
+
+  como éste deben ser tratados rigurosa y sistemáticamente en la nueva asignatura 
+
+  de Educación para la Ciudadanía. ¿Cómo es posible que alguien pueda 
+
+  oponerse a ella?
+
+  José Antonio Marina (filósofo)
+#+END_EXAMPLE
+
+Eso mismo me pregunto yo. Y aún más, ¿Cómo no es materia troncal en los diferentes cursos recorridos por todos los jóvenes cuando aún tienen la oportunidad de moldear su carácter?
+
+Libertad, igualdad y fraternidad.
+
+Y educación que nos lleve a ello. Que no se nos olvide.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=A%20modo%20de%20solidaridad][Dejar comentario]].
+

@@ -1,0 +1,15 @@
+#+title: Seguridad de la Información. Una oportunidad laboral.
+#+date: <2011-02-27 14:05>
+#+author: Godofredo Fdez.
+#+description: En esta conferencia se explorará el estado actual de la seguridad de la información en diferentes contextos (organizaciones públicas, privadas y a nivel…
+#+filetags: Seguridad_de_la_información
+#+options: _:nil
+#+nid: 399
+
+En esta conferencia se explorará el estado actual de la seguridad de la información en diferentes contextos (organizaciones públicas, privadas y a nivel personal). Se abordará la problemática asociada, los conceptos sobre los que se fundamenta y las principales técnicas de ataque y defensa. Concluiremos presentando las líneas de investigación actuales así como las oportunidades laborales que brinda a aquel que se especialice en ella.
+
+Más información aquí: [[http://imaginatica.org][Imaginática 2011]]
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20de%20la%20Informaci%C3%B3n.%20Una%20oportunidad%20laboral.][Dejar comentario]].
+

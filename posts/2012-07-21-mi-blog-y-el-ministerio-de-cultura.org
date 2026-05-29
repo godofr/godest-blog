@@ -1,0 +1,57 @@
+#+title: Mi blog y el Ministerio de Cultura
+#+date: <2012-07-21 14:01>
+#+author: Godofredo Fdez.
+#+description: Hace unos días un lector de este blog, cuyo nombre omito por delicadeza, me hizo llegar estas imágenes. La primera de ellas la obtuvo al intentar leer el…
+#+filetags: Bitácoras Seguridad
+#+options: _:nil
+#+nid: 481
+
+Hace unos días un lector de este blog, cuyo nombre omito por delicadeza, me hizo llegar estas imágenes. La primera de ellas la obtuvo al intentar leer el artículo titulado: "[[/content/la-gesti%C3%B3n-de-la-seguridad-y-el-miedo][La gestión de la seguridad... y el miedo]]" (pulsando sobre la imagen podéis verla con mayor resolución):
+#+begin_export html
+<a href="/static/img/filtro-optenet-godest-01.png"  rel="lightbox"><img src="/static/img/filtro-optenet-godest-01.png" alt="filtro-optenet-godest-01" title="filtro-optenet-godest-01"  class="image image-preview " width="520" height="409" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+Como podéis ver, este lector estaba accediendo desde el *Ministerio de Cultura*, sin embargo su navegador le informaba de: "Acceso bloqueado". Incluso detallaba la página en concreto que había sido bloqueada y el porqué: "pertenece a una categoría no permitida".
+
+Podría ser que ese artículo en concreto contuviera algo que fuera necesario "bloquear", así que mi lector probó con la URL general de este blog... y:
+
+#+begin_export html
+<a href="/static/img/filtro-optenet-godest-02.png"  rel="lightbox"><img src="/static/img/filtro-optenet-godest-02.png" alt="filtro-optenet-godest-01" title="filtro-optenet-godest-01"  class="image image-preview " width="520" height="411" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+En un principio tanto él como yo creímos que el "Acceso bloqueado" habría sido provocado porque en este blog se pueden encontrar algunos artículos críticos con la Ley Sinde-Wert y, en general, con la intromisión excesiva de los poderes políticos en la gestión/evolución de la red. Pero no, hubiera quedado romántico pero he de reconocer que *la razón principal es mucho más terrenal y ajena al Ministerio de Cultura*. Es simplemente por esto:
+
+#+begin_export html
+<a href="/static/img/filtro-optenet-godest-03.png"  rel="lightbox"><img src="/static/img/filtro-optenet-godest-03.png" alt="filtro-optenet-godest-01" title="filtro-optenet-godest-01"  class="image image-preview " width="520" height="33" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+Efectivamente, ese extracto de URL muestra que los dispositivos utilizados por el Ministerio para implementar el *filtrado de contenidos* tienen clasificado este sitio web en la categoría "pornografía".
+
+Y efectivamente, en este blog hay demasiados desnudos de conciencia, pensamiento e incluso alma. De hecho, creo que los únicos que deben faltar son esos desnudos que suelen considerarse pornografía. A no ser que algún "malo" haya pirateado el servidor (contratado en Dreamhost) y esté sirviendo ese tipo de contenido desde la URL asociada al dominio vivencias.net. Tendré que dedicar un ratito de auditoría.
+
+Si alguien de [[http://www.optenet.com/es/][OPTENET]] lee esto y puede [[/contact][informarme del porqué de la categorización]] se lo agradecería. Y si considera que ha sido un error... ¡Sáqueme de la categoría, please! :-)
+
+Las soluciones de filtrado de contenidos se están implantando cada vez más en el mundo empresarial. Se alambra Internet para permitir campar a los usuarios sólo por terrenos autorizados. La tecnología hermana que se utiliza para el hogar, muy recomendable cuando hay menores que utilizan solos el ordenador (cosa que no debería ser), es conocida como "control parental". Además del filtrado puro y duro se incorporan otras funciones en ambas: límites de acceso por horario, informes de navegación personalizados por usuario, tiempo que el usuario destina a navegar por sitios "de ocio" (redes sociales, etc.)...
+
+En fin, tened cuidado con lo que hacéis en el trabajo: "[[/content/el-gran-hermano-te-vigila][el gran hermano os vigila]]".
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Mi%20blog%20y%20el%20Ministerio%20de%20Cultura][Dejar comentario]].
+
+** Comentarios
+
+*** Felicidades Godo. Ya eres un (Guillermo 22/07/2012 - 23:32)
+Felicidades Godo. Ya eres un peligro público reconocido.
+
+*** Es que si uno se lo propone (Godo 23/07/2012 - 08:48)
+Es que si uno se lo propone no lo acaba consiguiendo ;-)
+
+Contrastando la opinión de OPTENET con la de BLUECOAT (otra gran marca de solucioens de filtrado web entre otras), mirando aquí:
+
+http://sitereview.bluecoat.com/sitereview.jsp (Gracias, Paco)
+
+Parece que este blog no tiene problemas: "Esta página está categorizada actualmente como Blogs/Páginas personales (Blogs/Personal Pages)".
+
+Bueno, creo que se debe simplemente a un error de clasificación. Me gustaría conocer que "regla" es la que salta y por qué. También investigaré el hosting por si me hubieran colado algo aprovechando algún bug sin parchear.
+
+Seguiré informando.

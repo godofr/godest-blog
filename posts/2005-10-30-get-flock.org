@@ -1,0 +1,13 @@
+#+title: Get flock
+#+date: <2005-10-30 17:40>
+#+author: Godofredo Fdez.
+#+description: Pues eso, una imagen del nuevo navegador multiusos: flock .
+#+filetags: Logos
+#+options: _:nil
+#+nid: 74
+
+Pues eso, una imagen del nuevo navegador multiusos: [[http://www.flock.com/developer/][flock]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Get%20flock][Dejar comentario]].
+

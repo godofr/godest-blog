@@ -1,39 +1,32 @@
 #+title: De nuevo, CCNA
 #+date: <2013-10-15 21:58>
-#+description: 
-#+filetags: Aprendizaje Redes
+#+author: Godofredo Fdez.
+#+description: Hace un mes, aproximadamente, mi gerente (gracias) me ofreció la oportunidad de asistir a un curso de preparación del Cisco Certified Network Associate (CCNA)…
+#+filetags: LinkedIn
+#+options: _:nil
+#+nid: 513
 
 Hace un mes, aproximadamente, mi gerente (gracias) me ofreció la oportunidad de asistir a un curso de preparación del [[http://www.cisco.com/web/learning/certifications/associate/ccna/index.html][Cisco Certified Network Associate (CCNA)]] que incluía la “obligación” de realizar el examen final, obteniendo si se aprobaba la certificación correspondiente. Ya me certifiqué por primera vez en 2003, cuando sí que estaba muy metido en el mundo de la configuración de dispositivos CISCO, pero luego dejé vencer dicha certificación, “un mucho” por los inescrutables caminos del destino y “un poco” porque siempre he creído que subirse al tren sin parada de las certificaciones resulta cansino y acaba considerándose un cúmulo de medallitas con más valor simbólico que real. En fin, la verdad es que me apetecía el reto, al que ya llevaba tiempo dándole alguna que otra vuelta, no tanto por los beneficios que implica la certificación respecto al reconocimiento de tu saber por el “mundo exterior” sino por lo que me suponía de desafío, de ponerme a prueba de algo que dominé bastante y que con el paso del tiempo, quizá, se hubiera ajado. Así que enfoqué la oportunidad con un doble objetivo: demostrarme a mí mismo que sigo siendo capaz (la verdadera satisfacción, cuando se descubre, no es tanto la que te proporciona el cómo te ven sino el cómo te ves) y actualizar conocimientos (sospechaba que había nuevas cosillas de moda). Y aquí está mi certificación (aún no tengo el diploma pero sí una captura de pantalla de los sistemas de información de CISCO):
 
 #+begin_export html
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="640" height="349" border="0" align="center" hspace="10" vspace="10" src="/static/2013/20131014-resultado-CCNA.png"
- alt="20131014-resultado-CCNA" />
-</figure>
+<a href="/static/img/20131014-resultado-CCNA.png" rel="lightbox"><img align="middle" alt="20131014-resultado-CCNA" border="0" class="image image-preview " height="349" hspace="10" src="/static/img/20131014-resultado-CCNA.png" title="20131014-resultado-CCNA" vspace="10" width="640" /></a>
 #+end_export
 
 Respecto a los contenidos me han sorprendido los siguientes puntos:
 
-- Se sigue manteniendo bastante peso de Frame-Relay, HDLC y PPP ¿? No sé en otros países pero en España la WAN hace tiempo que dejó de ser eso. Vestigios quedan pero… 
-- Muy agradablemente se incorpora un bloque destinado a cubrir las diferentes medidas de seguridad tanto referentes a la gestión del propio dispositivo como al tráfico que lo atraviesa: a nivel 2 (viendo los mecanismos disponibles en switches) y a nivel 3/4 (en routers). ¡Bien! Me ha gustado. 
-- Otro bloque nuevo es el que trata de IPv6. También lo he visto muy útil y apropiado. ¡Ojalá que más pronto que tarde las Telco tiren de este protocolo para adelante! Prometedor en muchos sentidos. ¿El futuro? ¿Acabará como IPv5 ;-)? 
-- Los contenidos con más peso siguen siendo los clásicos: modelos de referencia OSI y TCP/IP, VLANs, las diferentes modalidades de Spanning-Tree, trunking, subnetting y protocolos de routing: RIP, OSPF e EIGRP. 
-- Y una última parte dedicada a los protocolos de “gestión”: SNMP, Syslog y NetFlow; a los que no les concedí mucha importancia y de los que me sorprendieron varias cuestiones en el examen ¡cachis!
+#+BEGIN_QUOTE
+  - Se sigue manteniendo bastante peso de Frame-Relay, HDLC y PPP ¿? No sé en otros países pero en España la WAN hace tiempo que dejó de ser eso. Vestigios quedan pero... - Muy agradablemente se incorpora un bloque destinado a cubrir las diferentes medidas de seguridad tanto referente a la gestión del propio dispositivo como al tráfico que lo atraviesa: a nivel 2 (viendo los mecanismos disponibles en switches) y a nivel 3/4 (en routers). ¡Bien! Me ha gustado. - Otro bloque nuevo es el que trata de IPv6. También lo he visto muy útil y apropiado. ¡Ojalá que más pronto que tarde las Telco tiren de este protocolo para adelante! Prometedor en muchos sentidos. ¿El futuro? ¿Acabará como IPv5 ;-)? - Los contenidos con más peso siguen siendo los clásicos: modelos de referencia OSI y TCP/IP, VLANs, las diferentes modalidades de Spanning-Tree, trunking, subnetting y protocolos de routing: RIP, OSPF e EIGRP. - Y una última parte dedicada a los protocolos de “gestión”: SNMP, Syslog y NetFlow; a los que no les concedí mucha importancia y de los que me sorprendieron varias cuestiones en el examen ¡cachis!
+#+END_QUOTE
 
-Una miniaventura con la que he comprobado mi estado de forma respecto al [[http://en.wikipedia.org/wiki/Internetworking][internetworking]] (que sigue siendo bueno, creo), he actualizado conocimientos y he reforzado la seguridad en mí mismo en [[http://www.fundeu.es/consulta/esta-area-29/][esta área]] de conocimiento que tanto amo. 
+Una miniaventura con la que he comprobado mi estado de forma respecto al [[http://en.wikipedia.org/wiki/Internetworking][internetworking]] (que sigue siendo bueno, creo), he actualizado conocimientos y he reforzado la seguridad en mí mismo en [[http://www.fundeu.es/consulta/esta-area-29/][esta área]] de conocimiento que tanto amo. Ha merecido la pena.
 
-Ha merecido la pena.
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=De_nuevo_CCNA][Dejar comentario]].
-
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=De%20nuevo%2C%20CCNA][Dejar comentario]].
 
 ** Comentarios
-*** Fatima (no verificado Lun, 03/10/2016 - 10:45)
-Enhorabuena.
 
+*** enhorabuena (Fatima 03/10/2016 - 10:45)
 Felicidades, eres una fiera. Ahora a compartir tus conocimientos con los demás :-)
 
-*** Godofredo Fdez. (Lun, 03/10/2016 - 17:54)
-Gracias.
-
+*** Gracias! (Godofredo Fdez. 03/10/2016 - 17:54)
 Es para mí un placer siempre compartir lo que voy aprendiendo. Este blog nació como consecuencia de eso. A veces con más esfuerzo y otras con menos, siempre intento ir dejando aquí algunas reflexiones propias que ayuden a los demás. Gracias por seguir por aquí.

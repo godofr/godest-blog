@@ -1,0 +1,18 @@
+#+title: Search page on Godest
+#+date: <2011-12-30 18:58>
+#+author: godest
+#+description: You can find content on this site (default) or on the Internet (to select "web"). The engine used is google. --> Web GodEst When you press the "Search button"…
+#+filetags: 
+#+options: _:nil
+#+nid: 446
+
+You can find content on this site (default) or on the Internet (to select "web"). The engine used is google.
+
+*Web*
+*GodEst*
+
+When you press the "Search button" a new tab will be opened on your browser with the results.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Search%20page%20on%20Godest][Dejar comentario]].
+

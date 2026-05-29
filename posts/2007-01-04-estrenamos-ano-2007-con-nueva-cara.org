@@ -1,0 +1,74 @@
+#+title: Estrenamos año 2007 con nueva cara
+#+date: <2007-01-04 00:19>
+#+author: Godofredo Fdez.
+#+description: Como ya habrán notado los asiduos de este rincón, esta Navidad hemos rediseñado la apariencia del mismo (gracias "req·"). Los principios que hemos tenido en cuenta han sido los siguientes: - Obtener un fondo blanco, diáfano, que facilitara la lectura y que ayudara a transmitir una sensación de mayor claridad, más orden, obteniendo a su vez un mayor contraste con todos los contenidos. - Hemos simplificado la paleta de colores, sólo dos: negro y "rojo tinto" que, a nuestro entender, transmite elegancia, nobleza, y ¿pasión? - Hemos suprimido la columna izquierda que albergaba contenidos, contribuyendo así a crear la sensación de mayor amplitud descrita anteriormente.
+#+filetags: Bitácoras
+#+options: _:nil
+#+nid: 186
+
+Como ya habrán notado los asiduos de este rincón, esta Navidad hemos rediseñado la apariencia del mismo (gracias "req·"). Los principios que hemos tenido en cuenta han sido los siguientes:
+
+- Obtener un fondo blanco, diáfano, que facilitara la lectura y que ayudara a transmitir una sensación de mayor claridad, más orden, obteniendo a su vez un mayor contraste con todos los contenidos.
+- Hemos simplificado la paleta de colores, sólo dos: negro y "rojo tinto" que, a nuestro entender, transmite elegancia, nobleza, y ¿pasión?
+- Hemos suprimido la columna izquierda que albergaba contenidos, contribuyendo así a crear la sensación de mayor amplitud descrita anteriormente.
+- Establecemos el nivel de importancia de los textos simplemente utilizando diferentes tamaños de letra. Así, los títulos son mayores y están en negrita, el texto de los artículos aparece a un tamaño "normal", y el resto de información: autor, fecha, etc. pasa a un segundo plano con un menor tamaño y con tinta gris. Resalta la clasificación del texto según la taxonomía, función clave en los sistemas de gestión de contenidos.
+- Incorporamos "dinamismo" a la frase inicial recogida en la "pastilla" roja que sirve de cabecera a la columna principal: ahora es aleatoria. Finalizamos dicha columna con otra "pastilla" roja que nos informa del lugar, fecha y hora de generación de la página web. Creo que esto ayuda a situar la fuente de contenidos en un determinado "meridiano" del planeta.
+- Desaparecen los títulos de aquellos bloques de la columna de la izquierda cuyo contenido es autodescriptivo (otra medida para ganar espacio).
+- Insertamos la barra de búsqueda en el título principal de la página, el cual, sin ser cambiado demasiado, resalta ahora más que antes, sobre todo: GodEst, que hace caja con el resto de contenido, siendo el único texto que se sitúa a la izquierda del todo, captando nuestra atención.
+- Y algunas cosillas más: justificación del texto de los artículos a ambos lados (sensación de orden), y algunos detalles técnicos realizados en php simplificando las plantillas que generan todo esto.
+
+Ahora que se tiende a utilizar "[[file:node/179][agregadores de feeds]]", ¿merece la pena seguir cuidando la estética de una página web?
+
+En fin, ¿qué os parece?
+
+Tendiendo hacia el [[http://es.wikipedia.org/wiki/Minimalismo][minimalismo]]: renovarse o morir.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Estrenamos%20a%C3%B1o%202007%20con%20nueva%20cara][Dejar comentario]].
+
+** Comentarios
+
+*** Mejor ahora (Juan Lupión 04/01/2007 - 07:27)
+Mucho mejor ahora que antes.
+
+Yo creo que sí es importante cuidar la apariencia de la web, aunque sólo sea por demostrar algo de cariño ala que se supone que es la casa en la web de uno. Y si bien ahora ya sigo todso mis blogs por agregador, cuando quiero poner un comentario me gusta estar en un sitio que no me echa para atrás :)\\
+
+*** Eres uno de los pocos... (Godo 04/01/2007 - 23:56)
+Gracias, Juan.
+
+Eres uno de los pocos allegados a los que les han gustado los cambios, por ahora hay un empate técnico (que dirían las encuestas) no reflejado aquí porque cuesta más trabajo opinar mal ;-)
+
+Todos lo hacemos frecuentemente: preferimos guardar silencio antes que soltar una opinión que pueda disgustar, y nos aceleramos para soltar las que resultan agradables. La piedad.
+
+Me queda el consuelo de pensar que lo que se escribe está lleno de sinceridad.
+
+P.D.: veo que sigues sobrerailes, lo cuál no me resultaría extraño sino fuera porque deseo que comiences... }:)
+
+*** Desde la distancia (la cama colindante 06/01/2007 - 03:59)
+Desde la distancia tripartida y fuertemente condicionado he decir que a mi personalmente me parece un cambio bastante bueno teniendo en cuenta los criterios utilizados para la renovación de la página (ni un profesional hubiera sido capaz de exponerlos de manera tan brillante). Te felicito "oh my god" y te emplazo para futuros debates; siempre es un placer entre tanta tensión.
+"Cuando se obvian los matices todo se convierte en algo vulgar".
+Un abrazo.
+
+*** Mi humilde opinión (fsanchez 09/01/2007 - 11:33)
+Hola,
+Me parece que el cambio ha tenido su parte positiva y su parte negativa.
+En cuanto a la positiva, decir que el sitio ha ganado en elegancia y estilo e incluso en alegría. Todo lo que comentas de parece conseguido con los cambios que has hecho. Sin embargo, también encuentro una parte negativa. Por una parte con los cambios has conseguido que sea más difícil de leer pues todo aparece con un tamaño mucho más pequeño. No sé si será problema mío o igual que el fondo blanco resalta más el tamaño de la letra. Por último y sobre todo, se ha perdido el estilo que llevabas desde el primer momento, tus colores. Reconozco que al momento de abrir la página miré dos veces a ver si me había equivocado y había entrado en un sitio web de Red Hat o en una página de Apache. Bueno para gustos los colores, nunca mejor dicho, ¿no?.
+De cualquier forma reconozco y alabo tu esfuerzo.
+Saludos.
+
+*** Tamaño más pequeño (Godo 12/01/2007 - 07:28)
+Hola amigo.
+
+Gracias por tu comentario.
+
+Respecto a lo del tamaño, no he tocado nada del estilo de las distintas fuentes, excepto la de los comentarios, que para distinguirlas de la "historia" principal las he bajado al 95% de la misma, es decir, son un 5% más pequeñas. He probado con distintos navegadores en distintos sistemas operativos, y no aprecio una diferencia tan sustancial que las haga difícil de leer. El tipo de letra utilizado es "Verdana" y en algunas distribuciones de GNU/Linux quizá no venga instalada por defecto. En Debian basta hacer un:
+
+#+BEGIN_EXAMPLE
+  apt-get install msttcorefonts
+#+END_EXAMPLE
+
+Por otra parte, deduzco que lo que tampoco te ha gustado ha sido el cambio de colores. Ya sabes que nunca he sido muy fiel a ningún partido, perdón ;-), equipo, por lo que no me importa mucho cambiar de colores. Lo necesitaba: el azul y el gris hacían que me sintiera apagado, con el cambio me siento más vivo.
+
+Salud.
+
+P.D.: ¿Alguien más no ve bien las fuentes? Si es así, por favor, decídmelo para que intente arreglarlo.\\

@@ -1,0 +1,97 @@
+#+title: Microsoft, el IRPF ... y ¡GNU/Linux?
+#+date: <2006-06-10 19:52>
+#+author: Godofredo Fdez.
+#+description: Esta semana he vivido un acontecimiento que, mezclado con algunos de los artículos que estaba leyendo sobre: males y remedios de la antigua "sociedad de la información" (y actual "sociedad del conocimiento") en España, me han hecho pensar y escribir este artículo de denuncia. Una calurosa tarde me llama un amigo por teléfono para comentarme lo que le había ocurrido en su Windows XP: "...me aparecen extraños cartelitos diciéndome que la copia no es original, acompañados de temporizadores que evitan que los cierre hasta que no expiran, y me invitan a poner remedio a esta situación "legalizando" el producto. ¡Alucinante! ¿no?". Bueno, supongo que habrá tantos alucinados en este impaís como copias ilegales. El porcentaje ha de estar rondando el 100%.
+#+filetags: GNU/Linux Pensamiento Seguridad Software
+#+options: _:nil
+#+nid: 144
+
+Esta semana he vivido un acontecimiento que, mezclado con algunos de los artículos que estaba leyendo sobre: males y remedios de la antigua "sociedad de la información" (y actual "sociedad del conocimiento") en España, me han hecho pensar y escribir este artículo de denuncia.
+
+Una calurosa tarde me llama un amigo por teléfono para comentarme lo que le había ocurrido en su Windows XP: "...me aparecen extraños cartelitos diciéndome que la copia no es original, acompañados de temporizadores que evitan que los cierre hasta que no expiran, y me invitan a poner remedio a esta situación "legalizando" el producto. ¡Alucinante! ¿no?". Bueno, supongo que habrá tantos alucinados en este impaís como copias ilegales. El porcentaje ha de estar rondando el 100%.
+
+No había visto nada de eso. Uno lleva trabajando en Debian GNU/Linux alrededor de 4 años a tiempo completo, y casi 10 de forma esporádica (en casa, fundamentalmente). Pero sigue la pista a lo que va ocurriendo en el mundo Windows obligado por amigos y clientes. No dudé en hacer un par de búsquedas en google, y no tardé en encontrar la descripción del problema y [[http://www.google.es/search?sourceid=navclient-ff&ie=UTF-8&rls=GGGL,GGGL:2005-09,GGGL:es&q=windowsupdate+crack][su solución]] (arrancas en "modo a prueba de fallos", abres una consola "inicio-ejecutar-cmd", te vas al directorio "c:\windows\system32" y eliminas los archivos "WgaTray.exe y WgaLogon.dll". Por miedo a acciones legales aclaro: no estoy desvelando como se piratea un producto sino como evitar que aparezcan unos molestos cartelitos. Evidentemente existen otras soluciones: trabajar con productos legales). En fin, una tontería más para ir aclimatando el entorno: Microsoft sabe como evitar, creo, que se pirateen sus copias. Al menos saben hacer cosas que sean más sofisticadas que lo que han hecho, pero, ¿hasta donde está interesada en ello? Porque no me puedo creer que la solución a un problema tan grave sea tan sencilla, y no me puedo creer que hayan creído que nunca se conocería.
+
+Aprovechando la situación, intento crear iglesia y le suelto a mi amigo:
+
+- Ya tienes un motivo más para cambiarte a Debian, ¿me paso por tu casa, me invitas a un cerveza, y te lo voy instalando?
+- ¿Y cuando termines con la instalación de Debian, me instalas el programa "PADRE", y me echas una mano a hacer la declaración?
+- pues... va a ser que no.
+
+Nuestra querida [[http://www.agenciatributaria.es/AEAT.internet/Inicio.shtml][Agencia Tributaria]], que ha mejorado mucho en los últimos años, aún sigue sin poner a disposición de los ciudadanos el programa de ayuda sobre el sistema operativo GNU/Linux. ¿Cuánto tiempo más van a seguir así? ¿Existe algún movimiento de presión en este sentido? ¿Algún grupo parlamentario a "instado al gobierno" a emprender el camino, o ni siquiera se lo están planteando?
+
+Y cerrando la disertación: de los miles de millones destinados a "disminuir la brecha digital" que nos separa de los paises más desarrollados, ¿cuántos harían falta para desarrollar el programa "PADRE" para S.O. GNU/Linux? ¿Es ético ayudar a los ciudadanos obligándoles a adquirir un producto que enriquece a una empresa privada cuando existen iniciativas libres (y gratis) que servirían para lo mismo? ¿No es contradictorio tanto apoyo de gobiernos autonómicos a iniciativas de software libre con este tipo de situaciones?
+
+Cualquier información al respecto será bienvenida. Y si conocéis alguna iniciativa en marcha (recogida de firmas, etc.), indicádmela, por favor.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Microsoft%2C%20el%20IRPF%20...%20y%20%C2%A1GNU%2FLinux%3F][Dejar comentario]].
+
+** Comentarios
+
+*** Cliente Citrix para hacer la declaración en Linux (drimakus 12/06/2006 - 12:43)
+Buenas, Maestro!
+
+La agencia tributaria podría alegar en su defensa que dispone de una herramienta para que los usuarios de Linux puedan realizar la declaración. Es un servidor de aplicaciones Citrix Metaframe de esos, o algo así, ¿no?
+
+Lo he estado probando y la verdad es que con las líneas ADSL que hay hoy en día, no va del todo mal. Pero no deja de ser un trato discriminatorio, ¿qué les cuesta portar el programa PADRE a Linux? O por lo menos que la versión Citrix permita importar los datos fiscales, algo que si es posible con el programa PADRE.
+
+NO A LA DISCRIMINACIÓN POR RAZÓN DE SISTEMA OPERATIVO NI DE NAVEGADOR. VIVA DEBIAN, VIVA FIREFOX!!
+
+Hablando de firefox, ¿habéis visto la cantidad de motores de búsqueda que se pueden configurar en el campo de búsqueda? Me parece que en la versión española viene el buscón del DRAE por defecto (aunque el que aparece seleccionado es el de Google). Hay unos diccionarios de inglés muy buenos de Cambridge Dictionary para ver las definiciones de las palabras inglesas en inglés. Yo he empezado a utilizar el Cambridge Dictionary Advanced.
+
+Para el que no lo sepa, en el campo de búsqueda de Firefox -que aparece arriba a la derecha- viene seleccionado Google por defecto. Si pinchamos en el icono de Google nos saldrá un menú en el que podemos elegir dónde queremos realizar la búsqueda o si queremos añadir algún buscador -que enlaza con una página que nos permite ir al sitio "mozdev.org - mycroft":
+
+Tomado de la página "http://mycroft.mozdev.org":
+
+"What is Mycroft? What is a Search plugin?
+
+The Mycroft project provides a collection of search plugins (7841 at the last count) for browsers using Apple's Sherlock standard including [Firefox Icon] Mozilla Firefox and [Mozilla Icon] Mozilla Suite. The name Mycroft refers to Mycroft Holmes, the brother of Sherlock Holmes in the novels of Arthur Conan Doyle - Mycroft plugins are based on the Sherlock standard.
+
+A search plugin allows you to access a search engine right from your browser. In Mozilla Firefox, you use the search box on the toolbar. In Mozilla (Seamonkey) you can access plugins via the Sidebar or the Location Bar."
+
+*** Como no había bastante, parió la abuela (Godo 12/06/2006 - 22:16)
+Jose, ¿no crees tú que si ya da miedo instalarse GNU/Linux da mucho más utilizar un cliente Citrix para...? Yo es lo primero que escucho, ¿dónde está disponible? ¿existe un apt-get...? ¿descargas algo de la [[http://www.agenciatributaria.es/AEAT.internet/Inicio.shtml][aeat]] y te lo instalas (si los instalables para Win. ya dan problemas con los componentes que necesita además cada versión del S.O., no me quiero imaginar lo que puede suponer la instalación del cliente Citrix)? Y sí, si luego no te permite incorporar los datos fiscales sigue siendo "medianamente" válido.
+
+Esperemos que alguna asociación comience alguna campaña de presión... el primero que se entere que informe, por favor. Se me ocurre tratar el tema con la gente de [[http://hispalinux.es][hispalinux]] (soy socio desde hace tiempo), a ver que pasa.
+
+Respecto a lo de los motores de búsqueda del firefox, muchas gracias por informar. Yo ya había agregado unos pocos, el que más utilizo es el de la [[http://www.wikipedia.org/][wikipedia]] y el del diccionario inglés<->español, [[http://mycroft.mozdev.org/download.html?name=wordreference&submitform=Find+search+plugins][wordreference]].
+
+Nos leemos, amigo. Gracias por divulgar tu conocimiento.
+
+*** Programas de ayuda en línea de la AEAT (drimakus 14/06/2006 - 09:11)
+Por si algún linuxero quiere probar a hacer la declaración del IRPF por medio del cliente Citrix:
+
+En la página de la Agencia Tributaria, www.aeat.es, podréis ver en el menú de la izquierda la opción "Descarga Programas". Esta opción nos lleva a un nuevo menú en el que aparece como primera alternativa "Programas de ayuda en línea", que nos presenta un tercer menú cuyo primer enlace es "Portal de Programas de Ayuda".
+
+(Para dar el siguiente paso desde Windows con Firefox, he tenido que utilizar la extensión "User Agent Switcher" y configurar una identificación cuya plataforma no fuera Win32: mi Firefox se ha identificado como 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.4)' y he conseguido acceder al Portal de Programas de Ayuda).
+
+Este "Portal" contiene instrucciones para conseguir hacer funcionar la aplicación Citrix. El punto 3 dispone de un enlace para descargar el plugin del cliente Citrix. No obstante, conviene leer los problemas conocidos: al menos a mí me ha ocurrido el problema descrito en el punto 4.2 y he instalado el cliente que se puede descargar desde allí.
+
+Conviene instalar el cliente Citrix en el sitio definido por defecto. Si no se debe definir la variable de entorno ICAROOT. Comprobad una vez instalado si vuestro navegador "ve" el plugin "Citrix ICA Client" o algo "asín".
+
+Quizá probando esta aplicación podremos hacernos una idea de cuánto esfuerzo le ha dedicado la Agencia: según ese esfuerzo estarán más o menos dispuestos a cambiar de estrategia. Y según el éxito que esté teniendo. ¿Cuánta gente la usa?
+
+Saludos.\\
+
+*** Esto piensan en el Ministerio de Fomento (Adrián 20/06/2006 - 19:30)
+http://weblog.topopardo.com/others/respuesta_montilla_quoteada.pdf
+
+Sé que debería referenciar el sitio, pero no recuerdo la página principal. Es de un tipo que le escribió al Ministro de Fomento y eso le han contestado (está comentado por él). La verdad es que es bastante FUD la respuesta que le dan. Creo que lo vi en barrapunto, así que lo mismo ya lo has leído.
+
+Yo escribí al Congreso por el motivo de las videoconsolas con software privativo que les habían puesto a los señores diputados, pero ni puto caso.
+
+También le escribí al señor Chávez (señor Presidente de la Junta de Andalucía) porque no tuve testosterona suficiente para hacer la preinscripción por Internet bajo GNU/Linux, ni con Konqueror, ni con Firefox, ni mucho menos con lynx ni w3m. Les decía que tanto bombo como se habían dado copiando la idea extremeña y sacando Guadalinex, para luego tener que hacer la preinscripción con IE sí o sí, y que si hay estándares *ES PARA ALGO*. Me contestó un señor de la Consejería de Innovación dándome las gracias por preocuparme e informar de ello, y que intentarían arreglarlo para este año. Ya veré si es verdad. Creo que también me soltó el típico rollo de "Qué ha hecho mi gobierno para con el software libre/open source". Se ve que en la Junta son más considerados.
+
+Debería estar estudiando Cálculo, así que ya me despido.
+
+¡Saludos!
+
+*** Sí, Adrián, tienes razón... (Godo 23/06/2006 - 15:13)
+...en tus comentarios y en tus acciones. Creo que Internet facilita, además de la pedofilia (el 99% de las referencias a LA RED en los noticiarios son en sentido negativo :-( ), el contacto directo con los estamentos de poder político, entre otros. Y creo que ese contacto puede, y debería, ser utilizado para lograr que las acciones políticas se acercaran, y se dedicaran más a satisfacer las necesidades REALES de la gente. Creo que si todos mostráramos nuestras preocupaciones en los buzones de correo de los distintos despachos oficiales, PERO SOBRE TODO SI CONSIGUIÉRAMOS ORGANIZARNOS y trasladar, de vez en cuando, alguna protesta desde LA RED A LA CALLE, otro tipo de sociedad sería posible.
+
+Internet puede ser un medio, bastante potente, para aunar voluntades.
+
+Pero igualmente pienso que no es lo suficientemente fuerte para librar la lucha, al menos por ahora. Quizá algún día la gente con responsabilidades lea sus mensajes, discrimine, y se ponga en marcha para lograr alcanzar alguno de los objetivos planteados.
+
+¡Movilización!\\

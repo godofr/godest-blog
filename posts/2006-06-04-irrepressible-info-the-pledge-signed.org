@@ -1,0 +1,13 @@
+#+title: irrepressible.info - the pledge signed
+#+date: <2006-06-04 19:23>
+#+author: Godofredo Fdez.
+#+description: Amnistía Internacional inicia una campaña a favor de la libertad de expresión e información en Internet. Este es mi compromiso, mi apoyo, firmado.
+#+filetags: Capturas
+#+options: _:nil
+#+nid: 142
+
+[[http://www.amnesty.org/][Amnistía Internacional]] inicia una [[http://irrepressible.info/][campaña]] a favor de la libertad de expresión e información en Internet. Este es mi compromiso, mi apoyo, firmado.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=irrepressible.info%20-%20the%20pledge%20signed][Dejar comentario]].
+

@@ -1,66 +1,69 @@
 #+title: Bloqueando las llamadas de spam automáticamente en Android
 #+date: <2022-05-14 13:18>
-#+description: 
+#+author: Godofredo Fdez.
+#+description: Hace tiempo que no publicaba nada nuevo, no porque no tenga cosas que contar sino, más bien, porque no soy capaz de encontrar el tiempo y la calma necesaria…
 #+filetags: Configuraciones Seguridad
+#+options: _:nil
+#+nid: 579
 
+Hace tiempo que no publicaba nada nuevo, no porque no tenga cosas que contar sino, más bien, porque no soy capaz de encontrar el tiempo y la calma necesaria para hacerlo. Hoy comparto un tema que he descubierto recientemente.
 
-Hace tiempo que no publicaba nada nuevo, no porque no tenga cosas que contar sino, más bien, porque no soy capaz de encontrar el tiempo y la calma necesaria para hacerlo. Hoy comparto un tema que he descubierto recientemente. 
-
-Seguro que has comprobado que la app del teléfono Android que tienes, *cuando recibes una llamada te indica si puede considerarse spam*, es decir, una llamada no deseada que suele corresponderse con la que realiza alguien desde el otro lado del teléfono para venderte algo, con la habilidad de hacerlo siempre en la hora más inoportuna. Posteriormente, estas llamadas también aparecen en el listado de llamadas recientes identificadas como spam. 
+Seguro que has comprobado que la app del teléfono Android que tienes, *cuando recibes una llamada te indica si puede considerarse spam*, es decir, una llamada no deseada que suele corresponderse con la que realiza alguien desde el otro lado del teléfono para venderte algo, con la habilidad de hacerlo siempre en la hora más inoportuna. Posteriormente, estas llamadas también aparecen en el listado de llamadas recientes identificadas como spam.
 
 Pues bien, *hace poco descubrí como bloquear estas llamadas*. Bloquear significa que las llamadas llegan al teléfono pero este ni te suena ni te deja aviso de llamada perdida, aunque luego, cuando miras en el historial, allí están.
 
 *Veamos cómo hacerlo* (comprobado que funciona en teléfonos con versiones de Android 9 y superiores):
 
-#1# Pulsamos sobre la app del teléfono, esta:
+1) Pulsamos sobre la app del teléfono, esta:
 #+begin_export html
-<img src="/static/2022/01-bloqueando-llamadas-spam-Android.png"  border="0" align="center" hspace="10" vspace="10" width="" height="" alt="" />
+<img src="/static/img/01-bloqueando-llamadas-spam-Android.png" width="" height="" alt="" />
 #+end_export
 
-#2# Pulsamos sobre los tres puntitos que hay al final de la barra de búsqueda:
+2) Pulsamos sobre los tres puntitos que hay al final de la barra de búsqueda:
+   #+begin_export html
+   <img src="/static/img/02-bloqueando-llamadas-spam-Android.png" width="" height="" alt="" />
+   #+end_export
+
+3) En el menú que aparece, pulsamos sobre "Ajustes":
 #+begin_export html
-<img src="/static/2022/02-bloqueando-llamadas-spam-Android.png"  border="0" align="center" hspace="10" vspace="10" width="" height="" alt="" />
+<img src="/static/img/03-bloqueando-llamadas-spam-Android.png" width="" height="" alt="" />
 #+end_export
 
-#3# En el menú que aparece, pulsamos sobre "Ajustes":
+4) En la pantalla a la que llegamos pulsamos sobre "Identificación de llamada y spam":
 #+begin_export html
-<img src="/static/2022/03-bloqueando-llamadas-spam-Android.png"  border="0" align="center" hspace="10" vspace="10" width="" height="" alt="" />
+<img src="/static/img/04-bloqueando-llamadas-spam-Android.png" width="" height="" alt="" />
 #+end_export
 
-#4# En la pantalla a la que llegamos pulsamos sobre "Identificación de llamada y spam":
+5) Y ahora, en el último paso, activamos la opción "Filtrar llamadas de spam" así:
 #+begin_export html
-<img src="/static/2022/04-bloqueando-llamadas-spam-Android.png"  border="0" align="center" hspace="10" vspace="10" width="" height="" alt="" />
+<img src="/static/img/05-bloqueando-llamadas-spam-Android_0.png" width="" height="" alt="" />
 #+end_export
 
-#5# Y ahora, en el último paso, activamos la opción "Filtrar llamadas de spam" así:
+A partir de este momento las llamadas que "Android" ya reconozca como "spam" te llegarán al teléfono pero ni te sonará ni te dejará aviso de llamada perdida, aunque, como decíamos antes, si entras en el listado de llamadas recientes sí las verás. En la siguiente imagen puedes ver como las veo yo en mi Motorola y un amigo en su Samsung:
 #+begin_export html
-<img src="/static/2022/05-bloqueando-llamadas-spam-Android.png"  border="0" align="center" hspace="10" vspace="10" width="" height="" alt="" />
+<img src="/static/img/07-bloqueando-llamadas-spam-Android.png" width="" height="" alt="" />
 #+end_export
 
-A partir de este momento las llamadas que "Android" ya reconozca como "spam" te llegarán al teléfono pero ni te sonará ni te dejará aviso de llamada perdida, aunque, como decíamos antes, si entras en el listado de llamadas recientes sí las verás. En la siguiente imagen puedes ver como las veo yo en mi Motorola (izquierda) y un amigo en su Samsung (derecha):
+*Si quieres ayudar "al sistema Android" a identificar llamadas de spam que aún no son reconocidas*, haz esto: en el listado de llamadas recientes, pulsa y mantén un momentito pulsado la llamada que has recibido, cuando se despliegue el siguiente menú de opciones, pulsa sobre "Bloquear/Marcar como spam".
 #+begin_export html
-<img src="/static/2022/07-bloqueando-llamadas-spam-Android.png"  border="0" align="center" hspace="10" vspace="10" width="" height="" alt="" />
+<img src="/static/img/06-bloqueando-llamadas-spam-Android.png" width="" height="" alt="" />
 #+end_export
 
-*Si quieres ayudar "al sistema Android" a identificar llamadas de spam que aún no son reconocidas*, haz esto: en el listado de llamadas recientes, pulsa y mantén un momentito pulsado la llamada que has recibido, cuando se despliegue el siguiente menú de opciones, pulsa sobre "Bloquear/Marcar como spam". 
-#+begin_export html
-<img src="/static/2022/06-bloqueando-llamadas-spam-Android.png"  border="0" align="center" hspace="10" vspace="10" width="" height="" alt="" />
-#+end_export
+Mediante inteligencia colectiva, si todos lo vamos haciendo, Android irá aprendiendo qué números son los molestos y acabará identificando su llamada como spam. Y con la configuración vista arriba, nosotros estaremos protegidos de las infinitas molestias que nos ocasionan.
 
-Mediante inteligencia colectiva, si todos lo vamos haciendo, Android irá aprendiendo qué números son los molestos y acabará identificando su llamada como spam. Y con la configuración vista arriba, nosotros estaremos protegidos de las infinitas molestias que nos ocasionan. 
+¡Por un mundo más humano! ¡Por un mundo con menos ruido!\\
 
-¡Por un mundo más humano! ¡Por un mundo con menos ruido!
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Bloqueando_las_llamadas_de_spam_automaticamente_en_android][Dejar comentario]].
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Bloqueando%20las%20llamadas%20de%20spam%20autom%C3%A1ticamente%20en%20Android][Dejar comentario]].
 
 ** Comentarios
-*** Felicitaciones (Rogelio G (no verificado) Sáb, 14/05/2022 - 13:42)
+
+*** Felicitaciones  (Rogelio G 14/05/2022 - 13:42)
 He seguido paso a paso las indicaciones y en mi Samsung S9 con versión 10 de Android funciona perfectamente...
 
 Un gran paso hacia la tranquilidad.
 
 Muchas gracias.
 
-*** Muchas gracias a ti, amigo (Godofredo Fdez. Sáb, 14/05/2022 - 13:44)
+*** Muchas gracias a ti, amigo, (Godofredo Fdez. 14/05/2022 - 13:44)
 Muchas gracias a ti, amigo, por compartirlo ;-)
-

@@ -1,0 +1,26 @@
+#+title: Colaborando con el blog del COITAOC
+#+date: <2009-11-13 20:19>
+#+author: Godofredo Fdez.
+#+description: Hoy viernes, 13 de noviembre de 2009, inicio una nueva colaboración con el blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y…
+#+filetags: COITAOC LinkedIn Seguridad
+#+options: _:nil
+#+nid: 341
+
+Hoy viernes, 13 de noviembre de 2009, inicio una nueva colaboración con el [[http://blog.coitaoc.org/][blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta]]. Intentaré ir recogiendo aquí también las entradas que publico allí, a modo de backup, ya que de la seguridad de la información se trata ;-).
+
+Os dejo a continuación la que ha servido para inaugurar la colaboración.
+
+Quiero comenzar este primer artículo sobre seguridad de la información dándole las gracias al departamento técnico del [[http://coitaoc.org/][COITAOC]] por invitarme a colaborar en esta nueva y emocionante aventura, que nos permite compartir nuestros conocimientos sobre distintas temáticas desde una óptica tan personal como la que brinda un blog: sus artículos y sus comentarios. En los años que llevo trabajando en diferentes proyectos relacionados con las TIC he desarrollado un punto de vista no dogmático, y aquí, en esta sección, asumiré el riesgo de transitar por la delgada línea que separa lo generalmente aceptado y lo individualmente cuestionado.
+¿Cuál es la situación actual del tema que nos ocupa? ¿Cómo hemos llegado hasta aquí? Cuando hace doce años comencé a trabajar en el mundo de las redes de datos de grandes organizaciones, tanto públicas como privadas, se utilizaba el término seguridad para referirnos a los controles físicos, a los registros de entrada que teníamos que superar para acceder a los edificios y además, en algunos lugares de seguridad excepcional, para controlar el acceso al centro de proceso de datos. Algunas de estas organizaciones ya se habían conectado a Internet, las universidades por ejemplo, otras, más centradas en hacer negocio, estaban planteándoselo y no tardarían en dar el salto. La seguridad comenzaba a evolucionar desde esos controles físicos hasta otros controles lógicos que, desde el exterior, tenían que ser superados para lograr el acceso a los sistemas de información. Comenzaba a protegerse los sistemas: en esa época bastaba con cerrar puertos implementando algunos centenares de listas de control de acceso en los encaminadores (routers). Bien es verdad que ya se llevaban utilizando antivirus algunos años, y algunos usuarios, los que tenían la suerte de poder trabajar con sistemas operativos de verdad, podían tener sus propias credenciales de acceso a su sesión de trabajo. Los que tuvimos la ocasión de poder contrastar esto que veíamos en los sistemas profesionales con el juguetito que teníamos en casa (¿recordáis cuando en un Windows 9X bastaba con pulsar “cancelar” para saltarnos la pantalla de inicio que nos desafiaba con “usuario” y “contraseña”? Ahora podemos sonreír) creíamos estar descubriendo esos otros mundos de ciencia-ficción que nos mostraban algunas películas (quizá esto fuera lo que nos hizo darle una oportunidad a GNU/Linux). Hoy en día, esta idea de protección lógica de los sistemas de información comienza a darse por obvia, y la preocupación se traslada a la propia información en sí, a esos documentos, bases de datos, correos electrónicos... datos, en definitiva, que fluyen y se dispersan por toda la organización y que un día, sin saber como, aparecen tirados en un cubo de basura (como algún caso de expedientes médicos) o en los discos duros de miles de usuarios porque se han compartido, supongamos que involuntariamente, por redes P2P (como le ocurrió a algún sindicato).
+
+Analizaremos en esta sección desde el enfoque estratégico de la seguridad de la información hasta el enfoque operativo de ésta, desde la política de seguridad de una organización hasta las buenas prácticas que ha de implantar entre sus empleados, desde el conjunto de leyes que han elaborado las administraciones para asegurarnos nuestros derechos hasta las normas aprobadas por organismos internacionales que nos trasladan qué y cómo debemos hacer las cosas para no caer en los errores en los que cayeron otros, y garantizar la eficacia de las medidas adoptadas. Revisaremos el impacto tanto económico como operativo en las organizaciones, en su negocio, y llegaremos a conclusiones que no distan mucho de la clásica idea: en el equilibrio está la virtud, decían.
+
+¿Y qué más? Pues presentaremos algunas tendencias en los productos, en los proyectos, en los servicios, en su despliegue. Y no me gustaría olvidar algunos consejos para nuestro propio día a día, algunas curiosidades y cosillas interesantes que voy encontrando por La Red (si aún tenéis ganas de seguir leyendo podéis echar un vistazo a [[http://crypto.stanford.edu/PwdHash/][esto]]).
+
+Bromeando con algunos colegas suelo decir que quizá se olvidaron de contarnos la octava capa del [[http://es.wikipedia.org/wiki/Modelo_osi][modelo OSI]]. Y tú, ¿qué piensas?
+
+¡Que sea por mucho tiempo y disfrutemos con ello!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Colaborando%20con%20el%20blog%20del%20COITAOC][Dejar comentario]].
+

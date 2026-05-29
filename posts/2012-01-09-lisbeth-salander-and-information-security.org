@@ -1,0 +1,35 @@
+#+title: Lisbeth Salander and Information Security
+#+date: <2012-01-09 09:09>
+#+author: Godofredo Fdez.
+#+description: I wrote about the book "The girl who played with fire" on this blog some days ago. Today I would like to write about the information security aspects that…
+#+filetags: Libros Seguridad
+#+options: _:nil
+#+nid: 450
+
+I wrote about the book "The girl who played with fire" on this blog some days ago. Today I would like to write about the information security aspects that appear in the novel.
+
+Once again, the author is very well informed about the subject. Lisbeth has developed her own trojan (software that is intended to perform, simultaneously, a desirable (expected) effect and a covert (unexpected) effect) called "Asphyxia 1.3". You can read this direct description:
+
+She fished out a CD from the inside pocket of her jacket and pushed it into the hard drive, then started a programme called Asphyxia 1.3. She had written it herself, and its only function was to upgrade Internet Explorer on Armansky's computer to a more modern version. The procedure took about five minutes.
+When she was done, she ejected the CD and rebooted the computer with the new version of Internet Explorer. The programme looked and behaved exactly like the original version, but it was a tiny bit larger and a microsecond slower. All installations were identical to the original, including the install date. There would be no trace of the new file.
+She typed in an FTP address for a server in Holland and got a command screen. She clicked copy, wrote the name Armansky/MiltSec and clicked OK. The computer instantly began copying Armansky's hard drive to the server in Holland. A clock indicated that the process would take thirty-four minutes.
+
+This software continues synchronizing every file modification that happen on the local hard disk with the copy that has been done on the "cloud". This activity is done without the user knowledge. The software permits the session hijacking and avoids tracking the IP address (as happens when "hackers" use emails, p2p and so on to get information).
+
+He opened the document properties and saw that the text had been created not fifteen minutes before. Then he smiled. The document showed Mikael Blomkvist as its author. She had created the document in his computer with his own licenced Word programme. That was better than email and did not leave an IP address that could be traced, even though Blomkvist was sure that Salander in any case would be impossible to trace through the Internet. And it proved beyond all doubt that Salander had done a hostile takeover---her term---of his computer.
+
+But following paragraph is the one I like best:
+
+- How'd you do that?
+- Four computers in his household. Can you
+imagine?---they have no firewall. Security zero.
+All I had to do was plug in the cable and upload.
+My expenses are 6,000 kronor. Can you handle it?
+...
+Within an hour she had read all the reports that Inspector Bublanski had sent to Ekström. Salander suspected that, technically, reports like these were not allowed to leave police headquarters. It proved once again the theory that no security system is a match for a stupid employee. Through Ekström's computer she gleaned several important pieces of information.
+
+This is one of the biggest security hole that all organizations in the world has. That is why it is considered the Achilles' heel of their security systems, where many technologies are working together without getting relevant results. It also highlight the weakest link in the security chain: the human factor and his training.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Lisbeth%20Salander%20and%20Information%20Security][Dejar comentario]].
+

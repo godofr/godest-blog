@@ -1,0 +1,13 @@
+#+title: FreeBSD Logo
+#+date: <2009-04-08 23:35>
+#+author: Godofredo Fdez.
+#+description: Logo oficial de FreeBSD. Podéis encontrar más aquí . Para conocer un poco más a FreeBSD os recomiendo la lectura de su artículo en Wikipedia .
+#+filetags: Logos
+#+options: _:nil
+#+nid: 308
+
+Logo oficial de FreeBSD. Podéis encontrar más [[http://www.freebsd.org/logo.html][aquí]]. Para conocer un poco más a FreeBSD os recomiendo la lectura de [[http://es.wikipedia.org/wiki/FreeBSD][su artículo en Wikipedia]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=FreeBSD%20Logo][Dejar comentario]].
+

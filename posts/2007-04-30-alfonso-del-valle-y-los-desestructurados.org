@@ -1,0 +1,20 @@
+#+title: Alfonso del Valle y los Desestructurados
+#+date: <2007-04-30 12:48>
+#+author: Pili Cantautora
+#+description: Descripción: El Laberinto. C/ Regina, 20. Sevilla. Entrada: 2€ ------------------------------------------ Alfonso del Valle y los Desestructurados al 50%,…
+#+filetags: 
+#+options: _:nil
+#+nid: 227
+
+Descripción:
+El Laberinto. C/ Regina, 20. Sevilla.
+Entrada: 2€
+------------------------------------------
+Alfonso del Valle y los Desestructurados al 50%, ¡todo un evento que no nos podemos perder!
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Alfonso%20del%20Valle%20y%20los%20Desestructurados][Dejar comentario]].
+

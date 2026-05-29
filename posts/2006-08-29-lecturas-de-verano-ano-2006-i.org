@@ -1,0 +1,57 @@
+#+title: Lecturas de verano - Año 2006 (I)
+#+date: <2006-08-29 22:33>
+#+author: Godofredo Fdez.
+#+description: Tras haber echado a la caldera suficiente madera técnica a lo largo de este año, sólo quedaba hallar el combustible apropiado para que, todo junto, fuera capaz de mantenerse ardiendo durante todo este nuevo curso escolar (en algunos países incluso fiscal) que emprenderemos dentro de poco, y así empujar esta nave (la mía) como si de una máquina de vapor se tratara. Durante el año, aunque lo intento, cada vez es más difícil acabarse un libro distinto a "DESconfigurando QoS en Routers CISCO", "Enseñando C sin esfuerzo" y "Estándar IEEE 802.16", es decir, la faceta cientificotecnológica alcanza un peso del 90% de mis lecturas, dejando el 10% restante para la de alguna que otra bitácora, prensa dominical, y a los pequeños periodos previos al sueño dedicados al libro de cabecera que, a poco que sea ligeramente extenso, alcanza el dudoso honor de ser el primero que finalizo en el periodo veraniego.
+#+filetags: Libros Pensamiento
+#+options: _:nil
+#+nid: 162
+
+Tras haber echado a la caldera suficiente madera técnica a lo largo de este año, sólo quedaba hallar el combustible apropiado para que, todo junto, fuera capaz de mantenerse ardiendo durante todo este nuevo curso escolar (en algunos países incluso fiscal) que emprenderemos dentro de poco, y así empujar esta nave (la mía) como si de una máquina de vapor se tratara.
+
+Durante el año, aunque lo intento, cada vez es más difícil acabarse un libro distinto a "DESconfigurando QoS en Routers CISCO", "Enseñando C sin esfuerzo" y "Estándar IEEE 802.16", es decir, la faceta cientificotecnológica alcanza un peso del 90% de mis lecturas, dejando el 10% restante para la de alguna que otra bitácora, prensa dominical, y a los pequeños periodos previos al sueño dedicados al libro de cabecera que, a poco que sea ligeramente extenso, alcanza el dudoso honor de ser el primero que finalizo en el periodo veraniego.
+
+En fin, estas son las lecturas que me han entretenido este verano:
+
+*El vuelo de la inteligencia* (José A. Marina)
+
+Libro publicado por el autor en el año 2000, y que yo he adquirido en su edición de bolsillo (editorial [[http://www.megustaleer.com/sello/NB/debolsillo][DEBOLS!LLO]]) este año.
+
+Es un libro pequeño: escrito con letras grandes y renglones a doble espacio, se lee fácil.
+
+*El tema*: el autor emprende un viaje partiendo de la definición, o el descubrimiento, de la *inteligencia resuelta*, que significa dos cosas: "/inventar soluciones y marchar con decisión/", continúa estudiando la estrecha relación existente entre ésta y el lenguaje, y acaba abordando un proyecto de inteligencia. En palabras del autor:
+
+#+BEGIN_EXAMPLE
+  Le recuerdo que estamos elaborando un proyecto de inteligencia. Para que sea aceptable
+
+  tiene que ampliar nuestras posibilidades vitales, nuestra habilidad para resolver
+
+  problemas y nuestras opciones para ser feliz.
+#+END_EXAMPLE
+
+Me ha gustado mucho la defensa apasionada del "disfrutar aprendiendo" y de la necesidad de hacerlo. La siguiente, entre comillas, es una cita recogida por el autor y perteneciente a Erich Fromm (un famoso psiquiatra):
+
+#+BEGIN_EXAMPLE
+  "Si hay jefes e instituciones que quieren dominar al hombre, su arma ideológica más 
+
+  eficaz será convencerle de que no puede confiar en su propia voluntad y entendimiento". 
+
+  El automenosprecio es el comienzo de la sumisión.
+#+END_EXAMPLE
+
+J.A. Marina acaba recogiendo en su proyecto de inteligencia aquellos problemas más internos del ser humano, los que tienen que ver con el corazón: el amor, el miedo, la tristeza, etc. y aquellos que plantea la vida en sociedad, realizando una apuesta: su conocimiento en profundidad, su disección, nos puede ayudar a racionalizarlos y resolverlos.
+
+En fin, un librito lleno de optimismo y que ha de ser trabajado para que acabe calando en uno. Candidato pues a ser libro de cabecera durante el año.
+
+Hay una cosa que no me ha gustado mucho. No sé si por idea del autor (creo que no) o de la editorial, el libro viene subrayado y con marcas en los márgenes. Lo típico que se hace cuando trabajamos uno. Lo presentan así: "/...esto es lo que se hace cuando se lee a fondo un texto que se ama: marcar y subrayar para recordar lo esencial de lo esencial, lo cual permite otra lectura (rápida) de estas palabras/". Obviamente estoy de acuerdo con esto. Pero no lo estoy con lo que sigue: "/Nos hemos anticipado a tu propio subrayado para facilitarte las cosas aún más y para no dejar ninguna excusa para la indiferencia ante palabras sabias como las que aquí encontrarás/".
+
+Este fue otro de los motivos por el que acabé comprándolo en este formato: quería constatar que el subrayado que hace "otro" es muy diferente del que yo hubiera hecho. Ojo, no diferente sino *muy diferente*. El subrayado es algo muy personal, refleja los sentimientos y las claves que uno necesita para comprender y resaltar/activar su propia lectura/recuerdo...
+
+Mañana más. Quedan aún:
+
+*dos estrelles nel firmamentu infinitu* (Rubén Sánchez Antuña) *La lucha por la dignidad* (J.A. Marina y María de la Válgoma) *Seda* (Alessandro Baricco)
+
+Seguid leyendo.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Lecturas%20de%20verano%20-%20A%C3%B1o%202006%20%28I%29][Dejar comentario]].
+

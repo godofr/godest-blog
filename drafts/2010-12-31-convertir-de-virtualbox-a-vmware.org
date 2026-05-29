@@ -1,0 +1,18 @@
+#+title: Convertir de Virtualbox a VMware
+#+date: <2010-12-31 21:00>
+#+author: Godofredo Fdez.
+#+description: Leído aquí: http://www.xgrr.de/wordpress/2008/02/25/convert-virtualbox-vdi-to-vmware-vmdk
+#+filetags: 
+#+options: _:nil
+#+nid: 394
+
+Leído aquí:
+
+http://www.xgrr.de/wordpress/2008/02/25/convert-virtualbox-vdi-to-vmware-vmdk
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/qemu-img.7z][qemu-img.7z]]
+- [[https://godest.vivencias.net/static/files/xgrr.de – the whole not the half _ Convert Virtualbox .pdf][xgrr.de – the whole not the half _ Convert Virtualbox .pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Convertir%20de%20Virtualbox%20a%20VMware][Dejar comentario]].
+

@@ -1,0 +1,42 @@
+#+title: Una contra el mundo o "La chica que soñaba con una cerilla y un bidón de gasolina"
+#+date: <2011-12-29 21:54>
+#+author: Godofredo Fdez.
+#+description: Siempre me han llamado la atención este tipo de historias. Tiran de mí con tanta fuerza que no puedo escapar. Supongo que se debe a ese idealismo que se niega a desaparecer por más que me de de bruces contra la dura realidad. Ese que la propia Lisbeth Salander refleja en este pensamiento sobre Mikael Blomkvist: "un salvador del mundo que pensaba que podría cambiarlo todo con un libro".
+#+filetags: Libros Seguridad
+#+options: _:nil
+#+nid: 443
+
+Siempre me han llamado la atención este tipo de historias. Tiran de mí con tanta fuerza que no puedo escapar. Supongo que se debe a ese idealismo que se niega a desaparecer por más que me de de bruces contra la dura realidad. Ese que la propia Lisbeth Salander refleja en este pensamiento sobre Mikael Blomkvist: "un salvador del mundo que pensaba que podría cambiarlo todo con un libro".
+
+La Navidad pasada leí "[[http://www.serielarsson.com/libro.php][Los hombres que no amaban a las mujeres]]" por curiosidad. Esta he leído "[[file:www.serielarsson.com/chica_sonaba_cerilla.php][La chica que soñaba con una cerilla y un bidón de gasolina]]" por necesidad.
+
+Para acompañar a este sueño he elegido "Blackbird", tema recogido en el álbum "Light and Shades" de mi admirado [[http://es.wikipedia.org/wiki/Mike_Oldfield][Mike Oldfield]].
+
+Es difícil escribir sobre un libro sin revelar nada que pueda destrozar su lectura, pero en este caso creo que la tarea puede ser más fácil: hay infinidad de detalles secundarios que permiten una segunda lectura más centrada en el "[[/node/90][perfil hacker]]" de la protagonista y en las prácticas, habituales o no, de la *seguridad informática*.
+
+Comparativamente, la trama de este segundo volumen de la trilogía es tan fantástica como la del primero (el tercero aún no lo he leído, probablemente lo haga la próxima Navidad): asesinatos, servicios secretos, investigaciones policiales y periodísticas, análisis psicológicos y nuestra peculiar protagonista, Lisbeth Salander, metidos en una coctelera, suavemente agitados y puestos a danzar cada uno con su propia música, con su propio registro. Estos son los ingredientes que aseguran el no poder parar de leer. Sin embargo el final me parece... una total ida de pinza (para no ser más concreto).
+
+*La documentación tecnológica es muy buena*.
+
+El *hardware* utilizado deja claro las preferencias por el mundo Apple. Lisbeth utiliza un [[http://en.wikipedia.org/wiki/PowerBook_G4][PowerBook G4 de titanio]] conpantalla de 17 pulgadas (un pequeño tironcito de orejas para el escritor o el traductor - no se quién es el responsable - por esta frase: "doscientos gigabytes de memoria y mil megabytes de memoria RAM". Supongo que la primera "memoria" es el "disco duro". Además, el modelo está ligeramente "desajustado" respecto al catálogo oficial, pero existió), cada uno de los periodistas también coquetean con sus Apples. Sólo aparece un cutre Windows 95 en un concesionario de alquiler de vehículos con un disco duro de 280MB (¡qué tiempos!).
+
+El *software* recogido va desde el Excel y el Word como simples herramientas ofimáticas hasta el del PGP para el cifrado de la información, pasando por el ICQ como software de mensajería instantánea. Sin descuidar las *copias de seguridad cifradas en la red (primeros pasos del cloud computing ;-) )* y la destrucción segura de los archivos eliminados (con un software denominado "Burn" del cuál no he sido capaz de encontrar ninguna información en Google. Todo lo asociado a ese nombre describe funcionalidades típicas de software de grabación y no de "borrado seguro").
+
+Pero no solo de tecnología vive el hombre. Guiños constantes a las matemáticas (Arithmetica de Diofanto, Teorema de Fermat e incluso una supuesta "biblia" escrita sobre la materia en 1999 en la Universidad de Harvard por el Dr. L. C. Parnault, de 1200 páginas "que recoge desde los antiguos griegos hasta los intentos actuales por dominar la "astronomía esférica"". [[http://harvardpress.typepad.com/hup_publicity/2009/02/dimensions-in-mathematics-a-phantom-a-chimera.html][Y que no existe]]), a la música ("No woman, no cry" de Bob Marley; "Maria" de Blondie; "Putting out fire" de David Bowie...) e *incluso al amor*:
+
+No estaba enamorado de ella -eran más o menos tan incompatibles como podrían serlo dos personas cualesquiera- pero la quería mucho y echaba de menos a esa maldita y complicada mujer. Había creído que la amistad era mutua. En resumen, se sentía como un idiota.
+
+Un libro lleno de verdades...
+
+...¿O no?
+
+Tú, ¿qué piensas?
+
+P.D.: Respecto a cómo el libro recoge distintas facetas de la *seguridad* escribiré un artículo específico. Observo que este está quedando algo extenso.
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/Lisbeth Salander debe vivir · ELPAÍS.pdf][Lisbeth Salander debe vivir · ELPAÍS.pdf]]
+- [[https://godest.vivencias.net/static/files/Dimensions in Mathematics - a phantom, a chimera - Harvard University Press Blog.pdf][Dimensions in Mathematics - a phantom, a chimera - Harvard University Press Blog.pdf]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Una%20contra%20el%20mundo%20o%20%22La%20chica%20que%20so%C3%B1aba%20con%20una%20cerilla%20y%20un%20bid%C3%B3n%20de%20gasolina%22][Dejar comentario]].
+

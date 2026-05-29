@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="En una de mis últimas instalaciones de la distribución Debian GNU/Linux comprobé que el entorno gráfico instalado por defecto es Gnome . Aproveché y estuve trasteando un poquito por los menús, opciones, etc., intentando ver lo amigable que podía resultar para un principiante en este mundillo GNU/Linux. Le puse cierto interés porque es el entorno elegido por la distribución guadalinex , y por tanto, estimo que en poco tiempo me lo iré encontrando en toda la geografía Andaluza/Extremeña.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Actualizaciones Automáticas en Debian GNU/Linux con KDE</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">26 feb. 2007</div><h1 class="post-title"><a href="https://godest.vivencias.net/2007-02-26-actualizaciones-automaticas-en-debian-gnu-linux-con-kde.html">Actualizaciones Automáticas en Debian GNU/Linux con KDE</a></h1>
+<p>
+En una de mis últimas instalaciones de la distribución <a href="http://www.debian.org">Debian GNU/Linux</a> comprobé que el entorno gráfico instalado por defecto es <a href="http://www.gnome.org">Gnome</a>. Aproveché y estuve trasteando un poquito por los menús, opciones, etc., intentando ver lo amigable que podía resultar para un principiante en este mundillo GNU/Linux. Le puse cierto interés porque es el entorno elegido por la distribución <a href="http://www.guadalinex.org">guadalinex</a>, y por tanto, estimo que en poco tiempo me lo iré encontrando en toda la geografía Andaluza/Extremeña.
+</p>
+
+<p>
+Hubo una característica que me llamó especialmente la atención, y es de la que me ocupo en este artículo. Al poquito tiempo de arrancar con el sistema recién instalado, y cuando estaba jugueteando con él, surgió un “globito de notificación” de la bandeja del sistema en el que se me informaba de la disponibilidad de actualizaciones para el mismo.
+</p>
+
+<p>
+Recuerdo que hice “click” sobre dicha notificación, y se me abrió una ventana de diálogo en la que se informaba con mayor detalle de los paquetes cuyas últimas versiones se iban a instalar. He de reconocer que en este momento estaba un poco alucinado pues creía que el desorden del mundo “windows” estaba aterrizando en GNU/Linux: “¿Cómo un usuario normal puede hacer estas cosas? ¡Bueno, bueno&#x2026; lo que me quedaba que ver!”
+</p>
+
+<p>
+Sin embargo, cuando pulsé sobre aceptar comprobé que la máquina te solicitaba la clave de root para realizar dichas tareas de mantenimiento&#x2026; ¡no todo estaba perdido!
+</p>
+
+<p>
+Uno, que tiene el vicio de utilizar <a href="http://www.kde.org/">KDE</a>, se quedó un poquito picado con esta funcionalidad existente e integrada en el entorno Gnome. Y me puse a investigar a ver como podía conseguirlo en KDE.
+</p>
+
+<p>
+Descubrí un conjunto de aplicaciones que, bajo el nombre de <a href="http://web.mornfall.net/adept.html">adept</a>, se podían utilizar para realizar la gestión de paquetes en el entorno KDE. Y más concretamente, adept<sub>notifier</sub>, que sirve para mostrar el globito de notificación.
+</p>
+
+<p>
+Por tanto, lo primero que tenéis que instalar es “adept”:
+</p>
+
+<p>
+apt-get install adept
+</p>
+
+<p>
+Tras instalarlo debéis ejecutarlo en segundo plano y dejarlo corriendo:
+</p>
+
+<p>
+[10:45:27(godo@olivo)/home/godo]&gt; adept<sub>notifier</sub> &amp;
+</p>
+
+<p>
+[10:45:27(godo@olivo)/home/godo]&gt; ps | grep adept
+godo 3940 0.1 2.8 29356 14424 ? S 09:06 0:06 adept<sub>notifier</sub>
+</p>
+
+<p>
+Ahora faltaba programar la comprobación de las actualizaciones para que estas fueran automáticas y ocurrieran siempre al inicio del sistema.
+</p>
+
+<p>
+Elaboré el siguiente script que situé en <i>etc/init.d</i> y que llamé apt-get-update:
+</p>
+
+<p>
+[18:50:28(root@olivo)/home/godo]&gt; more /etc/init.d/apt-get-update
+#!/bin/sh
+</p>
+
+<p>
+################################################
+</p>
+
+<p>
+################################################
+</p>
+
+<p>
+/bin/ping -c 3 -W 1 131.111.8.35
+</p>
+
+<p>
+echo "Actualizando los paquetes disponibles en los repositorios&#x2026;"
+echo ""
+</p>
+
+<p>
+/usr/bin/apt-get update &gt; /tmp/apt \
+&amp;&amp; \
+/usr/bin/apt-get -dy upgrade &gt;&gt; /tmp/apt &amp;
+</p>
+
+<p>
+El script utiliza la herramienta apt para actualizar (apt-get update) y descargar (apt-get -dy upgrade) los distintos paquetes disponibles.
+</p>
+
+<p>
+Sólo queda crear un enlace simbólico en el nivel de arranque habitual de nuestra distribución, en Debian es el 2 (/etc/rc2.d):
+</p>
+
+<p>
+[19:06:08(root@olivo)/etc/rc2.d]&gt; update-rc.d apt-get-update start 98 2 .
+Adding system startup for /etc/init.d/apt-get-update &#x2026;
+/etc/rc2.d/S98apt-get-update -&gt; ../init.d/apt-get-update
+</p>
+
+<p>
+¿Qué hemos conseguido?
+</p>
+<div id="outline-container-org28cc6a4" class="outline-2">
+<h2 id="org28cc6a4">Actualizar la lista de paquetes disponibles (apt-get update), dejando rastro en /tmp/apt.</h2>
+</div>
+<div id="outline-container-orgf994013" class="outline-2">
+<h2 id="orgf994013">Tener una pequeña aplicación que nos informa gráficamente si existen actualizaciones para los paquetes que tenemos instalados (adept<sub>notifier</sub>).</h2>
+</div>
+<div id="outline-container-org287d297" class="outline-2">
+<h2 id="org287d297">Descargar, si los hay, los paquetes necesarios y dejarlos en nuestra máquina preparados para llevar a cabo la actualización. Seguimos dejando rastro de esta tarea en /tmp/apt.</h2>
+<div class="outline-text-2" id="text-org287d297">
+<p>
+Este último paso se podría haber automatizado también, pero prefiero llevarlo a cabo de forma supervisada.
+</p>
+
+<p>
+Cuando nuestro globito nos informe de que existen actualizaciones, y veamos en nuestro monitor de red (apt-get install wmnd) que ha cesado el tráfico de descarga, todas ellas estarán esperando a que, como root, ejecutemos nuestro apt-get upgrade y veamos como se desarrolla la cosa.
+</p>
+
+<p>
+Espero que os sea útil.
+</p>
+
+<p>
+Y que os ahorre tiempo.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Actualizaciones%20Autom%C3%A1ticas%20en%20Debian%20GNU%2FLinux%20con%20KDE">Dejar comentario</a>.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

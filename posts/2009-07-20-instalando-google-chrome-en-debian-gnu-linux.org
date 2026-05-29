@@ -1,0 +1,233 @@
+#+title: Instalando Google Chrome en Debian GNU/Linux
+#+date: <2009-07-20 22:16>
+#+author: Godofredo Fdez.
+#+description: Actualizado el 07-05-2013: instalación de la versión estable de Chrome y de la versión del plugin de flash que "mejor" funciona (que no es la última…
+#+filetags: GNU/Linux Software
+#+options: _:nil
+#+nid: 333
+
+*Actualizado el 07-05-2013: instalación de la versión estable de Chrome y de la versión del plugin de flash que "mejor" funciona (que no es la última disponible). Ver final del artículo.* Actualizado el 08-12-2009: lanzamiento de Google Chrome Beta. Ver final del artículo.
+Actualizado el 08-08-2009. Ver final del artículo.
+
+- - -
+
+#+begin_export html
+<a href="/static/img/20090720-escritorio.jpg" target="_self"><img src="/static/img/20090720-escritorio.preview.jpg" alt="Google Chrome en Debian GNU/Linux"  class="image image-preview " width="300" height="225" border="0" align="right" hspace="10" vspace="10" /></a>
+#+end_export
+Aunque la versión del navegador es inestable aún, y tiene varios aspectos importantes que resolver: no funciona el plugin de flash, ni es posible imprimir, ni soporta corrección ortográfica en los formularios... sí que es una gozada experimentar la velocidad de carga de las páginas webs. Además, una vez incorporado en nuestro amado *sources.list* (/etc/apt/sources.list) iremos actualizándolo de forma automática a las versiones más maduras conforme éstas vayan estando disponibles.
+
+Google Chrome para GNU/Linux está basado en un proyecto Open-Source: [[http://dev.chromium.org/][Chromium]].
+
+Lo primero que hay que hacer, como root, es añadir las siguientes líneas al archivo mencionado:
+
+#+begin_example
+
+# GOOGLE CHROME
+deb http://dl.google.com/linux/deb/ stable main
+
+#+end_example
+
+A continuación descargamos la clave pública con la que comprobaremos la integridad del software descargado (lo que sigue se teclea todo en una línea, pulsamos intro después del guión que aparece tras la palabra "add". Observamos que el resultado de la ejecución del par de comandos es "OK"):
+
+#+begin_example
+
+alpechin:/home/godo# wget -q -O - http://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+OK                                                                                                      
+alpechin:/home/godo#
+
+#+end_example
+
+Lo siguiente: actualizamos el índice de fuentes de software disponibles:
+
+#+begin_example
+
+alpechin:/home/godo# apt-get update                                                                     
+Obj http://security.debian.org lenny/updates Release.gpg                                                
+Ign http://security.debian.org lenny/updates/main Translation-es                                                                      
+Obj http://mirror.switch.ch testing Release.gpg                                                                                       
+Obj http://mirror.switch.ch testing/main Translation-es                                                                               
+Obj http://security.debian.org lenny/updates Release                                                                                  
+Des:1 http://dl.google.com stable Release.gpg [191B]                                                                                  
+Ign http://dl.google.com stable/main Translation-es                                                                                   
+Ign http://mirror.switch.ch testing/contrib Translation-es                                                                            
+Ign http://mirror.switch.ch testing/non-free Translation-es                                                                           
+Obj http://mirror.switch.ch testing Release                                                                                           
+Des:2 http://dl.google.com stable Release [1308B]                                                                                     
+Ign http://security.debian.org lenny/updates/main Packages/DiffIndex                                                                  
+Obj http://download.virtualbox.org lenny Release.gpg                                                                                  
+Ign http://download.virtualbox.org lenny/non-free Translation-es                                                                      
+Ign http://security.debian.org lenny/updates/main Sources/DiffIndex                                                                   
+Obj http://mirror.switch.ch testing/main Packages/DiffIndex                                                                           
+Obj http://security.debian.org lenny/updates/main Packages                                                                            
+Obj http://download.virtualbox.org lenny Release                                                                                      
+Ign http://dl.google.com stable/main Packages/DiffIndex                                                                               
+Obj http://security.debian.org lenny/updates/main Sources                                                                             
+Des:3 http://dl.google.com stable/main Packages [622B]                                                                                
+Obj http://mirror.switch.ch testing/contrib Packages/DiffIndex                                                                        
+Obj http://mirror.switch.ch testing/non-free Packages/DiffIndex                                                                       
+Ign http://download.virtualbox.org lenny/non-free Packages/DiffIndex                                                                  
+Obj http://download.virtualbox.org lenny/non-free Packages                                                                            
+Descargados 2121B en 1s (1090B/s)                                                                                                     
+Leyendo lista de paquetes... Hecho 
+
+#+end_example
+
+Y por último, instalamos el paquete correspondiente al navegador Google Chrome:
+
+#+begin_example
+
+alpechin:/home/godo# apt-get install google-chrome-unstable
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias
+Leyendo la información de estado... Hecho
+Se instalarán los siguientes paquetes NUEVOS:
+  google-chrome-unstable
+0 actualizados, 1 se instalarán, 0 para eliminar y 0 no actualizados.
+Necesito descargar 9524kB de archivos.
+Se utilizarán 32,3MB de espacio de disco adicional después de esta operación.
+Des:1 http://dl.google.com stable/main google-chrome-unstable 3.0.194.3-r20926 [9524kB]
+Descargados 9524kB en 19s (495kB/s)
+Seleccionando el paquete google-chrome-unstable previamente no seleccionado.
+(Leyendo la base de datos ...  00%
+102805 ficheros y directorios instalados actualmente.)
+Desempaquetando google-chrome-unstable (de .../google-chrome-unstable_3.0.194.3-r20926_i386.deb) ...
+Configurando google-chrome-unstable (3.0.194.3-r20926) ...
+Procesando disparadores para menu ...
+alpechin:/home/godo#
+
+#+end_example
+
+Eliminamos los paquetes de instalación:
+
+#+begin_example
+
+alpechin:/home/godo# apt-get clean
+alpechin:/home/godo# exit
+
+#+end_example
+
+Y disfrutamos con su ejecución:
+
+#+begin_example
+
+[22:16:20(godo@alpechin)~]> google-chrome &
+
+#+end_example
+
+*Actualización: 08-08-2009.* Tras la instalación de google-chrome, he observado que éste inserta su propio archivo sources.list en el directorio /etc/apt/sources.list.d/ como comprobamos a continuación:
+
+#+begin_example
+
+[09:52:40(root@surco)/etc/apt]> cd sources.list.d/
+[09:52:51(root@surco)/etc/apt/sources.list.d]> more google-chrome.list
+deb http://dl.google.com/linux/deb/ stable main
+[09:52:55(root@surco)/etc/apt/sources.list.d]> 
+
+#+end_example
+
+A partir de este momento podemos comentar la línea que insertamos para realizar la primera instalación en nuestro fichero /etc/apt/sources.list (añadimos # al comienzo de la misma). *Fin de la actualización: 08-08-2009.*
+
+*Actualización: 08-12-2009.* Ahora ya no es necesario instalar:
+
+#+begin_example
+
+alpechin:/home/godo# apt-get install google-chrome-unstable
+
+#+end_example
+
+sino:
+
+#+begin_example
+
+alpechin:/home/godo# apt-get install google-chrome-beta
+
+#+end_example
+
+Si teníamos instalada la versión unstable, al instalar la beta se desintalará. *Fin de la actualización: 08-12-2009.*
+
+*Actualización: 07-05-2013.* Recuerdo cómo añadir el lugar desde donde descargar el navegador:
+Como root has de hacer esto:
+
+#+begin_example
+
+alpechin:/home/godo# cd /etc/apt/sources.list.d
+alpechin:/home/godo# nano google-chrome.list
+
+#+end_example
+
+Y añadimos la siguiente línea en el fichero de texto que estamos editando:
+
+#+begin_example
+
+deb http://dl.google.com/linux/chrome/deb/ stable main
+
+#+end_example
+
+Guardamos con Ctrl+X y desde la línea de comandos instalamos la versión estable:
+
+#+begin_example
+
+alpechin:/home/godo# apt-get update
+alpechin:/home/godo# apt-get install google-chrome-stable
+
+#+end_example
+
+Otra cosa que he descubierto es que la versión 11.7 del plugin de flash-player que ya trae incorporada el navegador no reproduce bien los vídeos de flash: se entrecorta mucho el sonido. Para arreglar esto he ido al repositorio de Ubuntu (os recuerdo que muchos paquetes de Ubuntu son compatibles con Debian):
+
+http://archive.canonical.com/ubuntu/pool/partner/a/adobe-flashplugin/
+
+He descargado el paquete: adobe-flashplugin_11.2.202.280-0quantal1_amd64.deb (versión para ordenadores de 64bits).
+
+Y lo he instalado así:
+
+#+begin_example
+
+alpechin:/home/godo# cd Descargas
+alpechin:/home/godo/Descargas# dpkg -i adobe-flashplugin_11.2.202.280-0quantal1_amd64.deb 
+
+#+end_example
+
+Al finalizar la instalación he agregado un enlace simbólico en el siguiente directorio:
+
+#+begin_example
+
+alpechin:/opt/google/chrome# ln -s /etc/alternatives/mozilla-flashplugin mozilla-flashplugin
+
+#+end_example
+
+¡OJO! mozilla-flashplugin se escribe todo junto.
+
+Ahora cerramos el navegador Chrome y lo volvemos a abrir. Escribimos en la barra de direcciones: about:plugins. Pulsamos sobre la palabra "Detalles" situada en la parte superior derecha de la página. Buscamos en el listado que aparece los plugins agrupados bajo el título "Adobe Flash Player". Inhabilitamos el que tiene como descripción "Shockwave Flash 11.7 r700", dejando habilitado únicamente el de versión "11.2 r202". Cerramos y abrimos el navegador.
+
+¡A disfrutar! *Fin de la actualización: 07-05-2013.*
+
+Salud... y felices travesías por las procelosas, y aún libres, aguas de Internet.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Instalando%20Google%20Chrome%20en%20Debian%20GNU%2FLinux][Dejar comentario]].
+
+** Comentarios
+
+*** ¡Gracias por el tutorial! ((intento de) teleco 12/08/2009 - 20:41)
+Gracias Godo por el "tutorial". Ya te comento desde Chrome bajo Ubuntu ^^
+
+Enhorabuena por este blog que tienes, me parece realmente interesante y es fijo en mis feeds.
+
+Un saludo.
+
+--
+Un alumno que no tuvo la suerte de tenerte como profe (por estar en la clase de al lado)
+
+PD: ¿Podrías habilitar la lectura completa de tus posts en los feeds o es una medida de protección ante los malignos bots de internet? :)
+
+*** Muchas gracias a ti... (Godo 13/08/2009 - 23:37)
+...por dejarme este comentario tan agradable y alabador, y por agregarme a tus feeds. Espero no defraudarte.
+
+Respecto a lo de tenerme como profe, supongo que habrá quien piense lo contrario ;-)
+
+Y respecto a la lectura completa de los feeds, decidí hacerlo tal y como está para "obligar" a visitar la página si el extracto del artículo que llega por ellos resulta interesante. ¿Por qué? Personalmente aprendo mucho visitando las páginas de los demás: cuestiones de diseño web, enlaces interesantes en los bloques laterales, etc., por lo que estimo que es importante, de vez en cuando, darse una vueltecica por el sitio original.
+
+Salud.
+
+*** Gracias (Anonymous 03/10/2009 - 15:31)
+Gracias por la informacion, alfin veo que alguien no confunde "Chromium" con Google Chrome y coloca la informacion Objetiva y correcta, ya que los demas , solo copiaron y pegaron que "Chromium" es "Google Chrome" lo cual no es cierto, pero si es verdad que el "Google Chrome" esta basado en Chromium de eso no hay duda, pero a la final, Google Agrega unos parches y a la final aunque no lo paresca algo funciona distinto que el Chromium\\

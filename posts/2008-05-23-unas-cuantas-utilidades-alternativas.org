@@ -1,0 +1,72 @@
+#+title: Unas cuantas utilidades alternativas
+#+date: <2008-05-23 21:29>
+#+author: Godofredo Fdez.
+#+description: Versión original de este artículo creada: 2004-04-09 13:33:00 +0200 Actualizado: 2010-12-17 21:23:31 +0200. En este artículo encontraréis algunos programitas que me hacen más fácil mi trabajo diario. ¡Son gratis (freeware para los ingleses -y para los buscadores-)! O, alguno de ellos, software libre , lo que es ¡Mejor todavía!
+#+filetags: Software
+#+options: _:nil
+#+nid: 3
+
+Versión original de este artículo creada: 2004-04-09 13:33:00 +0200 *Actualizado: 2010-12-17 21:23:31 +0200.*
+
+En este artículo encontraréis algunos programitas que me hacen más fácil mi trabajo diario. ¡Son gratis (freeware para los ingleses -y para los buscadores-)! O, alguno de ellos, [[http://es.wikipedia.org/wiki/Software_libre][software libre]], lo que es ¡Mejor todavía!
+
+Evidentemente ninguno ha sido "construido" por mí, porque... ¿para qué voy a perder el tiempo programando unas herramientas que seguro serían peores que estas, si sus queridos autores me dejan que las use? No es cuestión de volver a inventar la rueda, ¿no? ;-)
+
+Aquí van clasificados por áreas:
+
+*/Comunicaciones/*
+
+El mejor programa de comunicaciones para sustituir el hiperterminal y el telnet de Windows, el que hace todo lo que estás pensando:[[http://home.wxs.nl/~ruurdb/][ IVT]]. ¡Gracias Ruurd! ¡Eres un fenómeno! (y un buen profesor de inglés ;-) ).
+
+Otro programita de comunicaciones, muy bueno, permite además SSH:[[http://www.chiark.greenend.org.uk/~sgtatham/putty/][ PuTTY]]. Existe versión tanto para Windows como para Linux (en [[http://www.debian.org][Debian]] existe un paquete: apt-get install putty putty-tools).
+
+*/WEB y Correo Electrónico/*
+
+Si quieres experimentar una navegación rápida y segura, utiliza este navegador: [[http://www.mozilla.org/en-US/firefox/new/][Firefox]]. Una de las grandes instituciones del software libre para toda la comunidad de usuarios de Internet. En Debian basta con hacer: apt-get install iceweasel.
+
+Si no quieres contribuir a la propagación de virus, utiliza este programa para tu correo electrónico, tiene su propia libreta de direcciones y los virus suelen estar preparados para utilizar las libretas de direcciones del Outlook. En fin, a mi me gusta y lo utilizo desde "ni se sabe" (nunca he tenido problemas, o nunca los he conocido, y ya sabés: "ojos que no ven... ¡topetazo que te pegas!"):[[http://www.mozillamessaging.com/thunderbird/][ Thunderbird]]. Existe versión tanto para Windows como para Linux (en Debian hay un paquete: apt-get install mozilla-thunderbird, o lo que sería más correcto: apt-get install icedove).
+
+*/Utilidades/*
+
+Una excelente barra de tareas para Windows con muchas posibilidades:[[http://powerpro.webeddie.com/][ PowerPro]].
+
+Un sustituto para el "típico", y a mi gusto limitado, explorador de Windows:[[http://zabkat.com/x2lite.htm][ xplorer2]]. Su antecesor:[[http://www.netez.com/2xExplorer/][ 2xExplorer]], que tanto nos gustó, ya ha sido superado.
+
+A los que nos solemos mover por Sistemas Operativos tipo Unix, y utilizamos la potencia del ratón para copiar y pegar texto, enfocar, etc., esta utilidad os vendrá muy bien cuando tengáis que trabajar en un Windows: [[http://godest.vivencias.net/files/TXMouse.exe][TXMouse]]. Es maravilloso trabajar en una ventana que tiene el foco del ratón pero sigue permaneciendo en segundo plano, sin ocultar a la que está delante mostrándote, por ejemplo, los datos que has de ir copiando en la de trabajo (creo que es más difícil describir este fenómeno que utilizarlo). Cuando os acostumbréis lo echaréis de menos.
+
+Y para los que no nos gusta que el fondo de los nombres de los iconos del escritorio de Windows "parcheé" la imagen que tenemos instalada, esta otra utilidad hará bien el trabajo: [[http://godest.vivencias.net/files/trtext.exe][trtext]].
+
+Yo suelo tener un enlace simbólico a estos dos, TXMouse y trtext, en el menú inicio para que los cargue Windows justo al arrancar.
+
+Para capturar áreas de la pantalla, sin que esta tenga que ser capturada completamente, existe esta herramienta construida en java (tendréis que instalar la última versión de la [[http://www.java.com/es/download/][máquina virtual Java]] para vuestro sistema): [[http://capturedit.sourceforge.net/][capturedit]].
+
+Esta otra utilidad: [[http://www.disc-tools.com/download/daemon][Daemon Tools]], nos permitirá simular una unidad óptica, CD/DVD, en nuestros sistemas windows, la cual puede ser utilizada para acceder a los archivos imagen de CD/DVD (iso, nrg, cue...) sin tener que tostarlos sobre un determinado soporte. Esto nos permitirá probar si una imagen, por ejemplo de una distribución linux descargada, arranca dentro de una [[http://es.wikipedia.org/wiki/M%C3%A1quina_virtual][máquina vitual]], probarla y, en definitiva, utilizarla sin malgastar CD o DVD.
+
+Y hablando de máquinas virtuales, mi último descubrimiento que viene respaldado con [[http://es.wikipedia.org/wiki/Licencia_p%C3%BAblica_general_de_GNU][licencia GPL]] se llama: [[https://www.virtualbox.org/][VirtualBox]]. Un genial software generador de máquinas virtuales multiplataforma. Y digo genial porque su facilidad de uso y su rendimiento son realmente sorprendentes.¡Pruébalo! Para programar tareas con más flexibilidad que el "programador de tareas" de windows te permite utiliza esta maravilla [[http://www.kalab.com/freeware/pycron/pycron.htm][pycron]]. Toda la potencia del cron de Unix - GNU/Linux en Win32.
+
+*/Editores para programadores/*
+
+Una herramienta imprescindible para el programador (coloreado de sintaxis incluido): [[http://notepad-plus-plus.org][notepad++]] (anteriormente comentábamos aquí este editor: [[http://www.crimsoneditor.com][ Crimson Editor]], ya discontinuado).
+
+Yo utilizo el anterior cuando me veo obligado a trabajar en entornos Windows, cuando estoy delante de mi Debian GNU/Linux uso mucho el [[http://quanta.kdewebdev.org/][  Quanta]] en entorno gráfico para programación WEB; y el [[http://www.vim.org/][  VIM]] en consola. De este último hay también versión para Windows, y de los dos hay paquetes disponibles en Debian.
+
+*/Antivirus/*
+
+Basta hacer una búsqueda en google con las siguientes palabras: "antivirus gratuito" para que aparezcan varios. Yo he utilizado, y utilizo en mi ordenador personal (la licencia no permite usarlo para fines comerciales) este: [[http://free.avg.com/us-en/download][AVG antivirus]].
+
+*/Temas/*
+
+El tema que más me ha gustado para cambiar la apariencia a mi WinXP es este:[[http://www.winosx.com][ WinOSX]]. La apariencia "[[http://es.wikipedia.org/wiki/Mac_OS_X_v10.4][del tigre]]" en vuestro escritorio. El desarrollo del mismo está parado desde 2006, pero a mi me va muy bien. Otro sitio para conseguir lo mismo, aún activo, es: [[http://osx.portraitofakite.com/][este]].
+
+Y tú, ¿tienes algo que compartir? ¿Alguna utilidad que mejore las comentadas o que te facilite la vida? Si es así, por favor, deja tu comentario.\\
+
+** Archivos adjuntos
+- [[https://godest.vivencias.net/static/files/TXMouse.exe][TXMouse.exe]]
+- [[https://godest.vivencias.net/static/files/trtext.exe][trtext.exe]]
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Unas%20cuantas%20utilidades%20alternativas][Dejar comentario]].
+
+** Comentarios
+
+*** My favorite editor is (Stas 10/10/2024 - 10:12)
+My favorite editor is Codelobster - https://codelobster.com

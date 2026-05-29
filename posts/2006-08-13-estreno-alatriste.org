@@ -1,0 +1,21 @@
+#+title: Estreno Alatriste
+#+date: <2006-08-13 20:48>
+#+author: Pili Cantautora
+#+description: Descripción: Estreno de Alatriste, película basada en "Las aventuras del capitán Alatriste", de Arturo Pérez-Reverte (www.alatristelapelicula.com) ------------------------------------------------------------------------------ Parece mentira que ya lo tengamos aquí, ¡el tiempo pasa volando! Espero que nos juntemos para verla, y si caen también un frijolito y unos caharritos, mejor que mejor Por cierto, por lo que he podido leer por ahí, para que la película no os destroce la historia, es mejor ir con los 5 libros leídos...
+#+filetags: 
+#+options: _:nil
+#+nid: 158
+
+Descripción:
+Estreno de Alatriste, película basada en "Las aventuras del capitán Alatriste", de Arturo Pérez-Reverte (www.alatristelapelicula.com)
+------------------------------------------------------------------------------
+Parece mentira que ya lo tengamos aquí, ¡el tiempo pasa volando! Espero que nos juntemos para verla, y si caen también un frijolito y unos caharritos, mejor que mejor
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+Por cierto, por lo que he podido leer por ahí, para que la película no os destroce la historia, es mejor ir con los 5 libros leídos...
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Estreno%20Alatriste][Dejar comentario]].
+

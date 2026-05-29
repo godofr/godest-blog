@@ -1,17 +1,22 @@
 #+title: Eligiendo el sistema operativo que Grub arranca por defecto
 #+date: <2019-06-02 00:55>
-#+description: 
+#+author: Godofredo Fdez.
+#+description: Hola. Este artículo es un resumen de las indicaciones "que funcionan" (lo he probado) recogidas en este hilo de la comunidad de Ubuntu:…
 #+filetags: Configuraciones GNU/Linux
+#+options: _:nil
+#+nid: 568
 
 Hola.
 
-Este artículo es un resumen de las indicaciones "que funcionan" (lo he probado) recogidas en este hilo de la comunidad de Ubuntu: 
+Este artículo es un resumen de las indicaciones "que funcionan" (lo he probado) recogidas en este hilo de la comunidad de Ubuntu:
 https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader
 
 Así, procedemos de esta forma:
 
-#1# Listamos el número y detalle de los sistemas que ha detectado Grub en nuestro equipo:
-#+begin_src sh :results output
+1. Listamos el número y detalle de los sistemas que ha detectado Grub en nuestro equipo:
+
+#+begin_example
+
 godo@TuChi:~$ fgrep menuentry /boot/grub/grub.cfg
 if [ x"${feature_menuentry_id}" = xy ]; then
   menuentry_id_option="--id"
@@ -24,37 +29,46 @@ submenu 'Opciones avanzadas para Debian GNU/Linux' $menuentry_id_option 'gnulinu
 menuentry 'Windows 10 (en /dev/sda1)' --class windows --class os $menuentry_id_option 'osprober-chain-01D317734DAEB710' {
 menuentry 'Windows 10 (en /dev/sdc1)' --class windows --class os $menuentry_id_option 'osprober-chain-01D163EEA0DA4380' {
 godo@TuChi:~$ 
-#+end_src
 
-#2# Podemos observar, después de la palabra clave "menuentry", el nombre de las "entradas del menú de arranque que muestra Grub" entre comillas simples, por ejemplo: 'Windows 10 (en /dev/sdc1)'.
+#+end_example
 
-#3# Editamos el fichero: /etc/default/grub, así:
-#+begin_src sh :results output
+2. Podemos observar, después de la palabra clave "menuentry", el nombre de las "entradas del menú de arranque que muestra Grub" entre comillas simples, por ejemplo: 'Windows 10 (en /dev/sdc1)'.
+
+3. Editamos el fichero: /etc/default/grub, así:
+
+#+begin_example
+
 root@TuChi:/etc/default# nano grub 
-#+end_src
+
+#+end_example
 
 Podemos ver cómo queda:
-#+begin_src sh :results output
+
+#+begin_example
+
 root@TuChi:/etc/default# more grub 
 # If you change this file, run 'update-grub' afterwards to update
 # /boot/grub/grub.cfg.
 # For full documentation of the options in this file, see:
 #   info -f grub -n 'Simple configuration'
+
 GRUB_DEFAULT=0
 #GRUB_DEFAULT="Windows 10 (en /dev/sdc1)"
-#+end_src
 
-#4# La opción 
-#+begin_src sh :results output
-"GRUB_DEFAULT=0" 
-#+end_src
-controla la entrada por defecto que va a ser arrancada. Aquí, donde lo vemos igualado a "cero", significa que arrancará la primera entrada que haya en el menú de arranque, en mi caso, 'Debian GNU/Linux, con Linux 4.9.0-9-amd64'. Si queremos que arranque otra, podemos indicarle el nombre de la entrada deseada, según lo hemos visto antes aparecer tras la palabra "menuentry", *pero utilizando comillas dobles*. Por ejemplo, así:
-#+begin_src sh :results output
+#+end_example
+
+4. La opción "GRUB_DEFAULT=0" controla la entrada por defecto que va a ser arrancada. Aquí, donde lo vemos igualado a "cero", significa que arrancará la primera entrada que haya en el menú de arranque, en mi caso, 'Debian GNU/Linux, con Linux 4.9.0-9-amd64'. Si queremos que arranque otra, podemos indicarle el nombre de la entrada deseada, según lo hemos visto antes aparecer tras la palabra "menuentry", *pero utilizando comillas dobles*. Por ejemplo, así:
+
+#+begin_example
+
 GRUB_DEFAULT="Windows 10 (en /dev/sdc1)"
-#+end_src
 
-#5# *No olvidar nunca esto para actualizar el "verdadero" cargador de arranque de nuestra máquina*:
-#+begin_src sh :results output
+#+end_example
+
+5. *No olvidar nunca esto para actualizar el "verdadero" cargador de arranque de nuestra máquina*:
+
+#+begin_example
+
 root@TuChi:/etc/default# update-grub
 Generando un fichero de configuración de grub...
 Found background image: /usr/share/images/desktop-base/desktop-grub.png
@@ -64,8 +78,11 @@ Encontrado Windows 10 en /dev/sda1
 Encontrado Windows 10 en /dev/sdc1
 hecho
 root@TuChi:/etc/default#
-#+end_src
+
+#+end_example
 
 Y eso es todo.
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Eligiendo_el_sistema_operativo_que_grub_arranca_por_defecto][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Eligiendo%20el%20sistema%20operativo%20que%20Grub%20arranca%20por%20defecto][Dejar comentario]].
+

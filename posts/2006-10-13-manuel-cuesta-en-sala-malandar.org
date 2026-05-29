@@ -1,0 +1,19 @@
+#+title: Manuel Cuesta en Sala Malandar
+#+date: <2006-10-13 08:45>
+#+author: Pili Cantautora
+#+description: Descripción: Sala Malandar. Calle Torneo. Antigua Sala Weekend. Sevilla. ------------------------------------------------------ Mariquilla, éste va decicado a…
+#+filetags: 
+#+options: _:nil
+#+nid: 174
+
+Descripción:
+Sala Malandar. Calle Torneo. Antigua Sala Weekend. Sevilla.
+------------------------------------------------------
+Mariquilla, éste va decicado a tí
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Manuel%20Cuesta%20en%20Sala%20Malandar][Dejar comentario]].
+

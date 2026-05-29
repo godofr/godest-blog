@@ -1,0 +1,13 @@
+#+title: Contenidos del CCDA 200-310
+#+date: <2016-09-30 19:20>
+#+author: godest
+#+description: Aquí os dejo una captura de los contenidos que se incluyen en la guía oficial de preparación del CCDA (septiembre de 2016), de la marca de agua que acompaña a…
+#+filetags: 
+#+options: _:nil
+#+nid: 554
+
+Aquí os dejo una captura de los contenidos que se incluyen en la guía oficial de preparación del CCDA (septiembre de 2016), de la marca de agua que acompaña a todo el material solicitado a CISCO Press y de mi superación del examen (30-09-2016).
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Contenidos%20del%20CCDA%20200-310][Dejar comentario]].
+

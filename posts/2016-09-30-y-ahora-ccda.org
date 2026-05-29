@@ -1,59 +1,47 @@
 #+title: Y ahora, CCDA
 #+date: <2016-09-30 19:34>
-#+description: 
-#+filetags: Aprendizaje Redes
+#+author: Godofredo Fdez.
+#+description: El próximo 8 de octubre me cumplía (espero que ya no) la certificación que obtuve hace casi tres años, CCNA Routing and Switching , y de la que ya os hablé en…
+#+filetags: LinkedIn
+#+options: _:nil
+#+nid: 555
 
-El próximo 8 de octubre me cumplía (espero que ya no) la certificación que obtuve hace casi tres años, [[http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html][CCNA Routing and Switching]], y de la que ya os hablé en su día [[https://godest.vivencias.net/2013-10-15-de-nuevo-ccna.html][aquí]]. Así que, encontrando el apoyo de mi jefe y de mi gerente (muchas gracias), estos movieron los hilos para conseguir que pudiera presentarme a un nuevo examen. Ahora quedaba elegir cuál, y preparármelo por mi cuenta.
+El próximo 8 de octubre me cumplía (espero que ya no) la certificación que obtuve hace casi tres años, [[http://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html][CCNA Routing and Switching]], y de la que ya os hablé en su día [[http://godest.vivencias.net/content/de-nuevo-ccna][aquí]]. Así que, encontrando el apoyo de mi jefe y de mi gerente (muchas gracias), estos movieron los hilos para conseguir que pudiera presentarme a un nuevo examen. Ahora quedaba elegir cuál, y preparármelo por mi cuenta.
 
-Teniendo que hacer este nuevo esfuerzo, pensé que lo mejor sería optar a una nueva certificación que me sirviera, a su vez, para recertificar la que ya tenía y para aprender/afianzar otros conceptos. Y, [[https://learningnetwork.cisco.com/thread/99471][si no me equivoqué mirando diversas fuentes de información]], *obtener el CCDA serviría para conseguir el objetivo*.
+Teniendo que hacer este nuevo esfuerzo, pensé que lo mejor sería optar a una nueva certificación que me sirviera, a su vez, para recertificar la que ya tenía y para aprender/afianzar otros conceptos. Y, [[https://learningnetwork.cisco.com/thread/99471][si no me equivoqué mirando diversas fuentes de información]], obtener el CCDA serviría para conseguir el objetivo.
 
 Así que me puse manos a la obra. Solicité el material a [[http://www.ciscopress.com/][CISCO Press]] el 27 de agosto. Os recomiendo que elijáis esta edición: “[[http://www.ciscopress.com/store/ccda-200-310-official-cert-guide-9781587144547][CCDA 200-310 Official Cert Guide Premium Edition and Practice Test]]” pues además del libro físico, que merece la pena tenerlo siempre, viene acompañada de las versiones del libro electrónico, tanto en formato epub como mobi y del pdf. También incorpora *el software de simulación de tests* (recoge las cuestiones de todos los capítulos y viene muy bien para repasar) y exámenes que, con el correspondiente código de activación, os permite registraros y descargar las preguntas directamente desde Pearson (editorial en la que CISCO delega todo el proceso del examen). Todo el material está “firmado” con una marca de agua (como podéis ver en la siguiente imagen) que dificulta su “compartición/pirateo” (¡Cómo se lo curran!). Y La verdad es que tanto el contenido (de todo) como los materiales (del libro físico) son muy buenos, *y la inversión merece mucho la pena*.
-
 #+begin_export html
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="390" height="127" border="0" align="center" hspace="10" vspace="10" src="/static/2016/20160930-ccda-marca-de-agua.jpg"
- alt="CCDA marca de agua" />
-</figure>
+<img src="/static/img/20160930-ccda-marca-de-agua.jpg" width="390" height="127" alt="" />
 #+end_export
-
 A modo de diario, que no suelo escribir pero siempre ha sido una de esas pretensiones que uno tiene y nunca acaba de cuajar, mi mes de septiembre no ha sido el más apropiado para preparar una “empresa” de esta magnitud (cuanto más estudiaba más consciente era): desde el punto de vista profesional la carga de trabajo ha tenido varios picos bastante desbordantes; y desde el punto de vista personal los cambios en la rutina ocasionados por diversos factores, y algún que otro imprevisto, incluyendo la visita de ese inoportuno virus de 24 horas, han hecho que mis periodos de estudio hayan sido muy duros de conseguir, excesivamente cortos y sin continuidad.
 
 Sin embargo, creo que he podido sobreponerme a todo esto porque la motivación era máxima. Y era máxima porque había algunos temas que me apetecía mucho abordar, por ejemplo:
-- De la parte II “LAN and WAN Design” me llamaba mucho la atención la parte dedicada al *Data Center Design*.
-- De la parte III “The Internet Protocol and Routing Protocols”, que reconozco que es la que más me gusta (soy muy de redes puras ;-) ), los capítulos 9, *Internet Protocol Version 6 Design*, y 11, *OSPF, BGP, Route Manipulation and IP Multicast*.
-- Y ya de la parte IV, “Security, Convergence, Network Management”, me atraía mucho profundizar en la visión de CISCO tanto de la gestión de la seguridad, capítulo 12, *Managing Security*, como de sus soluciones propias en este ámbito, capítulo 13, *Security Solutions*.
+- De la parte II “LAN and WAN Design” me llamaba mucho la atención la parte dedicada al “*Data Center Design*”.
+- De la parte III “The Internet Protocol and Routing Protocols”, que reconozco que es la que más me gusta (soy muy de redes puras ;-) ), los capítulos 9, “*Internet Protocol Version 6 Design*”, y 11, “*OSPF, BGP, Route Manipulation and IP Multicast*”.
+- Y ya de la parte IV, “Security, Convergence, Network Management”, me atraía mucho profundizar en la visión de CISCO tanto de la gestión de la seguridad, capítulo 12, “*Managing Security*”, como de sus soluciones propias en este ámbito, capítulo 13, “*Security Solutions*”.
 
 Total, unas 700 páginas entre teoría, escenarios y cuestiones que había que digerir. Y repartidas así:
-
 #+begin_export html
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="557" height="737" border="0" align="center" hspace="10" vspace="10" src="/static/2016/20160930-tabla-de-contenidos.jpg"
- alt="Tabla de contenidos" />
-</figure>
+<img src="/static/img/20160930-tabla-de-contenidos.jpg" width="557" height="737" alt="" />
 #+end_export
-
 Hoy a las 11:30 llegaba la hora de demostrar si la digestión había sido buena y el alimento me había hecho crecer. El examen me ha parecido excesivamente mal balanceado: mucha carga de los primeros capítulos (parte I y II) y poca de cosas que considero cada vez más interesantes para el futuro, como: data center, IPv6, routing avanzado (OSPF, BGP) y soluciones de seguridad.
 
-En fin, con mucho sudor, *Status: Pass*.
-
+En fin, con mucho sudor, “*Status: Pass*”.
 #+begin_export html
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="640" height="297" border="0" align="center" hspace="10" vspace="10" src="/static/2016/20160930-CCDA-Pass.jpg"
- alt="CCDA Pass" />
-</figure>
+<img src="/static/img/20160930-CCDA-Pass.jpg" width="640" height="297" alt="" />
 #+end_export
-
 ¡Que te vaya bonito, septiembre de 2016!
 
 Y que la salud nos acompañe muchos septiembres más.
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Y_ahora_CCDA][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Y%20ahora%2C%20CCDA][Dejar comentario]].
 
 ** Comentarios
-*** Juan Fernando (no verificado Mar, 04/10/2016 - 13:01)
+
+*** ¡Enhorabuena! (Juan Fernando 04/10/2016 - 13:01)
 ¡Enhorabuena!
 
-*** Godofredo Fdez. (Mar, 04/10/2016 - 14:38)
-¡Gracias, amigo!
-
+*** Gracias, amigo! (Godofredo Fdez. 04/10/2016 - 14:38)
 ...sigamos creciendo ;-)

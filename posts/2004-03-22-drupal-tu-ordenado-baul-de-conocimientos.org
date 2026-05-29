@@ -1,11 +1,14 @@
 #+title: Drupal: tu ordenado baúl de conocimientos
 #+date: <2004-03-22 23:20>
-#+description: 
-#+filetags: blog
+#+author: Godofredo Fdez.
+#+description: Quiero dedicar esta historia a describir las dos grandes piedras en las que se fundamenta esta bitácora. La primera de estas piedras es la que ha puesto a mi disposición bitácoras.com . Gracias al espacio de disco prestado en su servidor de forma desinteresada, a las herramientas tecnológicas de las que está dotado el mismo ( php y servidor mysql ), a las herramientas administrativas que han puesto a mi disposición y, sobre todo, a su amable atención y dedicación, esta pequeña isla en Internet ofrecía un hábitat propicio para mi alojamiento.
+#+filetags: Bitácoras
+#+options: _:nil
+#+nid: 2
 
 Quiero dedicar esta historia a describir las dos grandes piedras en las que se fundamenta esta bitácora.
 
-La primera de estas piedras es la que ha puesto a mi disposición [[http://bitacoras.com/][bitácoras.com]]. Gracias al espacio de disco prestado en su servidor de forma desinteresada, a las herramientas tecnológicas de las que está dotado el mismo ([[http://www.php.net/][php]] y servidor [[http://www.mysql.com/][mysql]]), a las herramientas administrativas que han puesto a mi disposición y, sobre todo, a su amable atención y dedicación, esta pequeña isla en Internet ofrecía un hábitat propicio para mi alojamiento.
+La primera de estas piedras es la que ha puesto a mi disposición [[http://bitacoras.com/][bitácoras.com]]. Gracias al espacio de disco prestado en su servidor de forma desinteresada, a las herramientas tecnológicas de las que está dotado el mismo ([[http://www.php.net][php]] y servidor [[http://www.mysql.com][mysql]]), a las herramientas administrativas que han puesto a mi disposición y, sobre todo, a su amable atención y dedicación, esta pequeña isla en Internet ofrecía un hábitat propicio para mi alojamiento.
 
 La segunda de las piedras en la que se fundamenta esta bitácora es el "gestor de conocimiento" llamado: [[http://drupal.org/][Drupal]].
 
@@ -17,11 +20,11 @@ Pensaba entrar en detalle en la descripción de cada una de estas funcionalidade
 
 Sitios web basados en Drupal son:
 
- - [[http://www.badopi.org/][Badopi]]
- - [[http://www.debianplanet.org/][Debian Planet]]
- - [[http://www.jabberes.org/][JabberES]]
- - [[http://www.linuxjournal.com/][Linux Gazette]]
- - [[http://tkabber.jabber.ru/][TKabber]]
+- [[http://www.badopi.org/][Badopi]]
+- [[http://www.debianplanet.org/][Debian Planet]]
+- [[http://www.jabberes.org/][JabberES]]
+- [[http://www.linuxjournal.com][Linux Gazette]]
+- [[http://tkabber.jabber.ru/][TKabber]]
 
 En un futuro cercano intentaré publicar: "Como instalar una bitácora en Linux (Debian)", "Como instalar una bitácora en Windows (2000 ó XP)", "Drupal: entrando en detalle".
 
@@ -29,4 +32,6 @@ Esperando que este apunte os haya sido útil...
 
 Salud.
 
-[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Drupal__tu_ordenado_baul_de_conocimientos][Dejar comentario]].
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Drupal%3A%20tu%20ordenado%20ba%C3%BAl%20de%20conocimientos][Dejar comentario]].
+

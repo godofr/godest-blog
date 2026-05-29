@@ -1,0 +1,32 @@
+#+title: Seguridad de la información en los hogares
+#+date: <2010-03-01 12:31>
+#+author: Godofredo Fdez.
+#+description: A continuación os dejo el artículo número 4 que, continuando mi línea de colaboración, he publicado en el blog del Colegio Oficial de Ingenieros de…
+#+filetags: COITAOC LinkedIn Seguridad
+#+options: _:nil
+#+nid: 350
+
+A continuación os dejo el artículo número 4 que, continuando mi línea de colaboración, he publicado en el [[http://blog.coitaoc.org/][blog del Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta]]. Divulgad que algo queda ;-).
+
+Quiero aprovechar el artículo de este mes de febrero para divulgar el estudio que, de forma trimestral e ininterrumpida desde 2004, elabora el *Instituto Nacional de Tecnologías de la Comunicación (INTECO)* sobre la seguridad de la información y la e-confianza de los hogares españoles. Sirva también este artículo para invitaros a todos los que aún no conozcáis este Instituto Nacional a [[http://www.inteco.es/Presentacion/][visitar su web]] y, en especial, a consultar su sección de [[http://www.inteco.es/Seguridad/][Seguridad]], la cual contiene mucha información útil para todos los usuarios de las TICs preocupados por mantener a salvo su información. Aprovechad, asimismo, para recomendadlo a vuestros familiares y amigos pues está realizando una gran labor divulgativa que, como a continuación veremos, es cada día más necesaria.
+El [[http://www.inteco.es/Seguridad/Observatorio/Estudios/Informe_hogares_3T09][Estudio sobre la seguridad de la información y la e-confianza de los hogares españoles]] pretende actuar como un termómetro que indica la evolución de una serie de indicadores que, como su nombre sugiere, presentan información sobre el uso y costumbres de los usuarios de las TICs.
+
+La información aparece clasificada en una serie de apartados: medidas y hábitos de seguridad, incidencias de seguridad, seguridad y fraude on-line, seguridad de las comunicaciones móviles e inalámbricas de los hogares, consecuencias de las incidencias de seguridad y reacción de los usuarios ante ellas y e-confianza de los hogares españoles.
+
+No me extenderé mucho en comentar cada uno de ellos pues tenéis disponibles tanto un “resumen ejecutivo” como una “reseña” algo más extensa, que acompañan al propio estudio. Sí que aprovecharé para dar mi opinión (de esto va el blog, ¿no?) sobre aquellos aspectos que considero más significativos.
+
+Me parece muy acertado distinguir entre “medidas de seguridad automatizables” (programas antivirus, cortafuegos, anti-“todo”, actualizaciones, etc.) y “medidas de seguridad *no* automatizables” (copias de seguridad, partición del disco duro, utilización habitual de usuario con permisos reducidos, cifrado de documentos o datos, etc.), pues nos permite detectar el gran escalón que aún existe entre la adopción de unas y otras. El uso de las automatizables está enmarcado entre el 64% y el 91%, exceptuando herramientas más actuales como el anti-fraude (34%) y alertando sobre el poco uso (38%) de herramientas ya clásicas para la protección de menores basadas en control parental. Por el contrario, el uso de medidas no automatizables se sitúa entre el 50% y el 78%, destacando el porcentaje de usuarios que se preocupa por salvaguardar su información, sólo el 60%, y el escaso uso que se realiza de métodos/herramientas de cifrado de la información cuando esta se transmite o se almacena: DNI electrónico y certificados digitales en torno al 23% y cifrado de documentos alrededor del 18%. Todo esto me hace pensar que sigue existiendo una gran confusión entre la preocupación por la conservación del sistema y no por la conservación de la información que de verdad nos interesa. Se sigue olvidando que todas las herramientas automatizables no son más que barreras para frenar un posible desastre que conlleve pérdida de información, ¿qué pasa si alguna de ellas falla? Hecho que suele ocurrir.
+
+La “intención declarada de uso de medidas de seguridad automatizables y no automatizables en los próximos 3 meses” no deja de subrayar el hecho resaltado en el párrafo anterior: la adopción de hábitos correctos sigue muy por detrás de la adopción de barreras “protectoras”. Sin embargo, la adopción masiva de estas últimas provoca una falsa sensación de seguridad que queda destruida cuando se acaba sufriendo un incidente grave.
+
+Por último, también me ha llamado mucho la atención los motivos por los que no se utilizan estas medidas de seguridad (tanto automatizables como no). Fijaos que la mayoría de respuestas se encuadran en la columna “No conoce”. Sin embargo, esto contrasta con el conjunto de “Medidas demandadas a la administración”: las medidas agrupadas bajo el bloque de “sensibilización” acaparan el 10% aproximadamente de las demandas frente a las de “respuesta técnica” que acaparan el 33%. Otra vez clamando a papá Estado que nos resuelva los problemas en lugar de que nos ayude a que seamos capaces de resolverlos por nosotros mismos, o incluso a lo que es aún mejor: evitarlos.
+
+Y todo esto cuando en el mes de septiembre, el cual supuso un mínimo histórico, el 56,2% de los ordenadores seguían comprometidos. Permitidme poner esto en contexto: tu microempresa (las medidas de seguridad en las “microempresas” suelen ser similares a las adoptadas en los “hogares”) y la de tu amigo: una de las dos está infectada, una de las dos está perdiendo información o siendo utilizada para realizar “cyberdelitos”... ¡escalofriante!
+
+En fin, que parece que seguimos confiados en que más valen que nos curen en lugar de que nos ayuden a no enfermar, ignorando que la cura suele llegar demasiado tarde: cuando la pérdida de información ya se ha producido.
+
+Resguárdense.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad%20de%20la%20informaci%C3%B3n%20en%20los%20hogares][Dejar comentario]].
+

@@ -1,0 +1,38 @@
+#+title: Servicios de suscripción web o "feeds RSS"
+#+date: <2006-11-24 00:26>
+#+author: Godofredo Fdez.
+#+description: Quizá casi todos vosotros sepáis lo que significa el título de este artículo, pero he creído conveniente dedicarle unas palabras para intentar ayudar a no perder el tren de la "revolución Internet" a aquellos que estén algo más rezagados. Los que utilicen los navegadores Firefox u Opera lo tendrán más fácil para comenzar a situarse pues, desde hace algún tiempo ya, habrán observado al final de la barra de direcciones, o en la barra de estado al pie del navegador, este símbolo: (Ahora estandarizado ).
+#+filetags: Bitácoras Software
+#+options: _:nil
+#+nid: 179
+
+Quizá casi todos vosotros sepáis lo que significa el título de este artículo, pero he creído conveniente dedicarle unas palabras para intentar ayudar a no perder el tren de la "revolución Internet" a aquellos que estén algo más rezagados.
+
+Los que utilicen los navegadores [[http://pagead2.googlesyndication.com/pagead/iclk?sa=l&num=0&client=ca-ref-pub-2656644998558722&adurl=http://services.google.com/toolbar/firefox%3Fhl%3Des%26ai%3DBf-UYBClmRfulLI_cwQHKjJ2fCdGe8hf98ZOXAsWNtwEAEAEgpferBECkFUiiOVDyzK-n-v____8BYNW114LsCKABtZXI_QOyARRnb2Rlc3Qudml2ZW5jaWFzLm5ldMgBAtoBKmh0dHA6Ly9nb2Rlc3Qudml2ZW5jaWFzLm5ldC9ub2RlL2FkZC9zdG9yeYACAZUCGUkwCqgDAw&ai=BwFaDBClmRfulLI_cwQHKjJ2fCdGe8hf98ZOXAsWNtwEAEAEgpferBECkFUiiOVCx9Jz6_P____8BYNW114LsCKABtZXI_QOyARRnb2Rlc3Qudml2ZW5jaWFzLm5ldMgBAtoBKmh0dHA6Ly9nb2Rlc3Qudml2ZW5jaWFzLm5ldC9ub2RlL2FkZC9zdG9yeYACAZUCGUkwCqgDAw][Firefox]] u [[http://my.opera.com/USERNAME/affiliate/][Opera]] lo tendrán más fácil para comenzar a situarse pues, desde hace algún tiempo ya, habrán observado al final de la barra de direcciones, o en la barra de estado al pie del navegador, este símbolo: 
+#+begin_export html
+<a href="http://godest.vivencias.net/rss.xml"><img src="/static/img/feed-icon-14x14.png"></a>
+#+end_export
+ (Ahora [[http://feedicons.com/][estandarizado]]).
+
+Cuando aparece dicho símbolo tanto en los campos mencionados del navegador, como en algún lugar de la página web que estamos visitando, somos informados de que hay disponible un servicio de suscripción (o "feed"). Esto quiere decir que la tecnología con la que está construida dicha página web, brinda a los visitantes la posibilidad de mantenerse al día respecto a las publicaciones o actualizaciones de dicha página. Detrás del símbolo se esconde una dirección web que conduce a un archivo de tipo "xml" (el formato de este archivo "xml" está estandarizado también, el más utilizado es [[http://es.wikipedia.org/wiki/Rss][RSS 2.0]]), como por ejemplo en nuestro caso: http://godest.vivencias.net/rss.xml. Ese archivo es autogenerado por el sistema de administración de páginas web cada vez que uno de los autores del sitio actualiza el mismo con nuevo contenido.
+
+Hemos explicado como se genera dicha información pero, ¿cómo pueden los usuarios asiduos a nuestro rincón de Internet recibir dichas actualizaciones? Es fácil. Hoy en día los navegadores, como hemos dicho al principio, ya soportan esta tecnología, pinchando sobre el icono obtenemos una página (una pestaña nueva en el navegador, o una ventana emergente) donde se nos brinda la posibilidad de agregar dicha "suscripción" a nuestros favoritos (o bookmarks), naciendo así el concepto de "live bookmark", ya que esa entrada será una carpetita donde, automáticamente, irán apareciendo los titulares nuevos de dicho sitio web al que nos estamos suscribiendo.
+
+Además de poder suscribirnos con los navegadores, existen diversos programas clientes (como si se tratara de clientes de correo como el outlook, el eudora, etc.) que se conectan a estos servicios de suscripciones ofrecidos por los sitios web, y sirven como "agregadores de noticias", de tal forma que al arrancarlos tenemos todas las novedades en nuestro "buzón de feeds".
+
+Algunos de estos programas para GNU/Linux son:
+* [[http://docs.kde.org/development/en/kdenetwork/knewsticker/index.html][KNewsTicker]]. Un pequeño panel que se integra en cualquiera de las barras de KDE por donde van desfilando una tras otra las noticias.
+* [[http://userbase.kde.org/Akregatorindex.php][Akregator]]. Una aplicación para KDE, al estilo de Kmail, donde podemos organizar las distintas fuentes de noticias por categorias, marcar las leídas y no leídas, etc.
+* [[http://liferea.sourceforge.net/es/][Liferea]]. Una aplicación para GNOME.
+
+Un cliente muy recomendable para empezar con esto en Windows es: [[http://rssfacil.net/][RSSFácil]], que ya trae preconfigurados 100 blogs en español (por desgracia, éste no está ;-)). Otro, un poquito más logrado, con una versión de pruebas y otra de pago es: [[http://www.newsgator.com/NGOLProduct.aspx?ProdId=FeedDemon][FeedDemon]]. Y recordad que también podéis utilizar los navegadores: [[http://pagead2.googlesyndication.com/pagead/iclk?sa=l&num=0&client=ca-ref-pub-2656644998558722&adurl=http://services.google.com/toolbar/firefox%3Fhl%3Des%26ai%3DBf-UYBClmRfulLI_cwQHKjJ2fCdGe8hf98ZOXAsWNtwEAEAEgpferBECkFUiiOVDyzK-n-v____8BYNW114LsCKABtZXI_QOyARRnb2Rlc3Qudml2ZW5jaWFzLm5ldMgBAtoBKmh0dHA6Ly9nb2Rlc3Qudml2ZW5jaWFzLm5ldC9ub2RlL2FkZC9zdG9yeYACAZUCGUkwCqgDAw&ai=BwFaDBClmRfulLI_cwQHKjJ2fCdGe8hf98ZOXAsWNtwEAEAEgpferBECkFUiiOVCx9Jz6_P____8BYNW114LsCKABtZXI_QOyARRnb2Rlc3Qudml2ZW5jaWFzLm5ldMgBAtoBKmh0dHA6Ly9nb2Rlc3Qudml2ZW5jaWFzLm5ldC9ub2RlL2FkZC9zdG9yeYACAZUCGUkwCqgDAw][Firefox]] y [[http://my.opera.com/USERNAME/affiliate/][Opera]].
+
+Espero que esto os sirva para seguir ampliando vuestro conocimiento... y compartiéndolo.
+
+¡Ah! ...[[http://godest.vivencias.net/rss.xml][suscríbete]].
+
+*Actualización (24-11-2006)*: Yo, aunque comencé utilizando Akregator y KNewsTicker, ahora utilizo [[http://www.google.com/reader][Google Reader]], más que nada porque me permite seguir las noticias que me interesan desde cualquier ordenador, teniendo siempre marcadas las que me parecen importantes, las que ya he leído, etc. Hay otros servicios de agregadores web, por ejemplo: [[http://www.bloglines.com/?Lang=spanish][Bloglines]], y [[http://technorati.com/][Technorati]], pero yo utilizo Google Reader porque ya tenía una cuenta en GMail y con el mismo usuario y contraseña se puede hacer uso de este otro servicio, y sobre todo porque es bastante rápido en la interacción.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Servicios%20de%20suscripci%C3%B3n%20web%20o%20%22feeds%20RSS%22][Dejar comentario]].
+

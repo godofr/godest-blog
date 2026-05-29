@@ -1,0 +1,53 @@
+#+title: Redes de mensajería instantanea...
+#+date: <2005-08-23 23:15>
+#+author: Godofredo Fdez.
+#+description: ...o messenger (microsoft messenger o MSN messenger) para los neófitos, aunque ese sea el nombre de una herramienta (cliente, programa) que permite usar una de estas redes (conjunto de "tecnologías" que sirven para ponernos en contacto con) para charlar con tus conocidos. Concretamente en el caso de utilizar la aplicación "el messenger", como se conoce popularmente, estás utilizando la red de microsoft. Y esto será así hasta que decidan cobrar, porque es algo privado con uso, de momento, público. Una vez más la inspiración de esta historia comienza en esta otra . Uno de mis sitios de referencia para seguir aprendiendo: Yogur Griego .
+#+filetags: GNU/Linux Software
+#+options: _:nil
+#+nid: 46
+
+...o messenger (microsoft messenger o MSN messenger) para los neófitos, aunque ese sea el nombre de una herramienta (cliente, programa) que permite usar una de estas redes (conjunto de "tecnologías" que sirven para ponernos en contacto con) para charlar con tus conocidos. Concretamente en el caso de utilizar la aplicación "el messenger", como se conoce popularmente, estás utilizando la red de microsoft. Y esto será así hasta que decidan cobrar, porque es algo privado con uso, de momento, público.
+
+Una vez más la inspiración de esta historia comienza [[http://hronia.blogalia.com/historias/32458][en esta otra]]. Uno de mis sitios de referencia para seguir aprendiendo: [[http://hronia.blogalia.com/][Yogur Griego]].
+
+Aquí van mis comentarios: yo hace tiempo que uso jabber. Y otra vez me ocurría lo mismo que al amigo [[http://hronia.blogalia.com/][Epaminondas Pantulis]], todos mis contactos estaban en MSN (cuando digo todos quiero decir casi todos ;-) ). Comencé mi experiencia [[http://www.jabber.org/][jabber]] en "bulmalug.net" porque tenían un "transporte" a la red MSN pero dejaron de mantenerlo, no sé por qué pero me lo imagino, después me pase a "amessage.info" que tenían otro "transporte" a MSN, y también dejaron de mantenerlo. Esta vez publicaron una noticia que decía algo así como que era ilegal y tenían miedo de que les metieran mano.
+
+Ahora tengo dos cuentas jabber y, probablemente -es una opción-, vaya en busca de la tercera en esos sitios que sugiere Epaminondas con pasarela (¿hasta cuando?)... tampoco sé cómo destruir las que ya tengo.
+
+Visto lo visto, no tendría ningún contacto de MSN sino utilizara "aMSN" en mi Debian GNU/Linux.
+
+Por otro lado, el cliente "Psi", que es el que utilizo, te permite estar conectado a varias cuentas jabber a la vez. Esto es bueno porque así puedes dar una para tus amigos, otra para tu trabajo, etc. y decidir según el día y la hora cual activas.
+
+En fin... ¿no es algo caótico todo esto? Al final la gente acaba cansándose, y van cayendo por el camino.
+
+Disfruta de tu iChat multiprotocolo amigo Epaminondas... quizá este sea el camino: el multiprotocolo -es otra opción-. Un cliente que soporte varias redes de mensajería, así en un sólo programa tienes todos tus contactos independientemente de la red que utilicen. E independientemente de que decidan o no mantener los transportes entre ellas (por lo menos hemos eliminado un punto de fallo) los que mantienen los servidores. Todo lo cual también es bueno para ir evangelizando, y animando, a tus contactos que se mantienen en MSN a pasar de una red privada a una red pública. Creo que algo de esto hace el [[http://www.pidgin.im/about.php][gaim]], pero a mi nunca me ha funcionado bien... me casca al poco de estar ejecutándose. No sé. Habrá que seguir investigando.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Redes%20de%20mensajer%C3%ADa%20instantanea...][Dejar comentario]].
+
+** Comentarios
+
+*** Multiprotocolo: ¿en el cliente o en el servidor? (Epaminondas Pantulis 24/08/2005 - 07:35)
+De acuerdo en que el camino para nosotros los evangelizadores tecnológicos (vulgo friquis) es el chat multiprotocolo, pero me gustaría hacer un comentario adicional: la diferencia entre usar Jabber o no es que en Jabber quien es multiprotocolo no es la aplicación del cliente, sino el servidor.
+
+De nada sirve usar un cliente como Trillian, Gaim o Exodus para usar protocolos propietarios como MSN o Yahoo: tu software puede ser libre, pero tú no lo eres porque el protocolo es propietario. Lo importante es que todos tengamos cuentas Jabber y poco a poco (esperemos que con la ayudita de San Google) podamos migrar al mundo libre no sólo las apliacciones sino los protocolos.
+
+*** Apostando por el multiprotocolo en el server (Anónimo 24/08/2005 - 09:07)
+Yo también estoy totalmente de acuerdo con tu comentario adicional: es mucho más "higiénico" que en el periodo transitorio de coexistencia de redes (que será permanente :-() los evangelizadores tengamos cuentas en servidores multiprotocolo, al menos así no contamos en los servidores de las otras redes, y podamos ir animando al cambio.
+
+El problema es que yo siento que aún así, mientras que hagamos uso de los "transportes", tampoco soy libre.
+
+Y me es difícil sopesar cuándo lo soy menos: si en servidores o en clientes multiprotocolo (es lo que quise describir con -es una opción- y -es otra opción-).
+
+Muchas gracias por tu aclaración.
+
+*** Google Talk (Godo 25/08/2005 - 08:41)
+Como apuntaban los rumores: ¡google apuesta por jabber!
+
+Increible pero cierto. No hay mayor estrategia fundamentada en uso de software libre que la emprendida por esta empresa. Google compite directamente con otros gigantes de Internet. Muchos estudios apuntan a que el reparto del pastel se encuentra entre estos tres: Microsoft, Yahoo y Google (sin afinar posiciones ni porcentajes de "mercado"). Es evidente que alguno de ellos llega tarde a servicios que otros llevan ofertando desde hace tiempo. He aquí la estrategia de google: en lugar de desarrollar desde cero un nuevo servicio de mesajería instantanea cogen un "servicio" abierto (libre) y lo integran en su plataforma... el tiempo dará y quitará razones respecto al modelo de negocio basado en software libre. Esto sólo es un apunte. Esperemos que, al igual que se lucra (directa o indirectamente) aprovechando el trabajo de la "comunidad" también aporte a esta.
+
+Como casi siempre: mis fuentes de la noticia son [[http://barrapunto.com/article.pl?sid=05/08/24/0658222][esta]] y [[http://hronia.blogalia.com/historias/32465][esta]].
+
+Venga chicos... ¿quién de vosotros aún no tiene una cuenta en [[http://gmail.google.com][gmail]]? ...pues todos vuestros contactos (los de vuestra libreta de direcciones en gmail) ya están listos para charlar en vuestro [[http://www.google.com/talk/][google talk]].

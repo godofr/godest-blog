@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="En este nuevo número de Mundo Linux (nº 98) he publicado la segunda parte del artículo que, sobre nuestro querido sistema de gestión de contenidos (CMS -…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Construyendo nuestra propia bitácora con Drupal - 2ª Parte </title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">07 oct. 2007</div><h1 class="post-title"><a href="https://godest.vivencias.net/2007-10-07-construyendo-nuestra-propia-bitacora-con-drupal-2-parte.html">Construyendo nuestra propia bitácora con Drupal - 2ª Parte </a></h1>
+<a href="http://digital.revistasprofesionales.com:8080/View_Ctrl/ml.jsp" target="_self"><img width="170" height="227" border="0" align="right" hspace="10" vspace="10" src="/static/img/ml98.jpg"></a>
+<p>
+En este nuevo número de Mundo Linux (nº 98) he publicado la segunda parte del artículo que, sobre nuestro querido sistema de gestión de contenidos (CMS - Content Management System) Drupal, publiqué en "Mundo Linux 95" (más información <a href="../node/212">aquí</a>). Os dejo a continuación la introducción al artículo actual: <b>Introducción.</b> <i>En este punto nos vamos a centrar en la descripción de cada una de las funcionalidades de administración y configuración que nos brinda nuestro gestor de contenidos. Concretamente, nos estamos refiriendo a cada una de las opciones del menú de administración, el cual está disponible para cada uno de los usuarios que poseen dichos permisos. Recordad que nuestro usuario administrador era: "godest".</i> <i>Tras acceder a nuestro sitio web con el usuario administrador del mismo, podemos observar en el menú situado a la izquierda sobre fondo gris, todas las opciones del submenú "administer" En el artículo anterior veíamos como crear un nuevo usuario a través del submenú "user". Y como asignarle permisos apropiados para permitirle realizar ciertas tareas y prohibirle otras: submenú "access control". En los puntos siguientes vamos a ir viendo cada una de las opciones restantes y, en la medida de lo posible, observaremos los efectos de las mismas en nuestro blog.</i> Y a continuación describimos con detalle cada uno de los siguientes puntos:
+</p>
+
+<blockquote>
+<ul class="org-ul">
+<li>block</li>
+<li>categories</li>
+<li>comments</li>
+<li>content</li>
+<li>input formats</li>
+<li>logs</li>
+<li>modules (añadir nuevas funcionalidades)</li>
+<li>settings</li>
+<li>themes</li>
+</ul>
+</blockquote>
+
+<p>
+Así como los pasos necesarios para actualizar a la siguiente versión de Drupal. Os recomiendo que acudáis rápido a los kioscos si estáis pensando en tener vuestro propio "blog" en Internet, optando por saborear vuestros propios errores y aciertos en lo que a administración de sistemas se refiere frente a los <a href="http://www.lacoctelera.com/">preparados</a>(<b>) que ya existen por ahí. A la espera de que os resulte útil&#x2026; &#x2026;salud. (</b>) Guiño a mi querido <a href="http://pantulis.lacoctelera.net/">maestro</a>, cuyos "post", que necesito, tanto echo de menos. <b>Actualizado el 10 de abril de 2011</b> P.D.: podéis conseguir el artículo en pdf <a href="file:///d:/files/Admon_Drupalv5_ML98.pdf">aquí</a>.
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Construyendo%20nuestra%20propia%20bit%C3%A1cora%20con%20Drupal%20-%202%C2%AA%20Parte%20">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-bitácoras.html">Bitácoras</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-publicaciones.html">Publicaciones</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

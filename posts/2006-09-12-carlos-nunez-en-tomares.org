@@ -1,0 +1,24 @@
+#+title: Carlos Nuñez en Tomares
+#+date: <2006-09-12 17:09>
+#+author: Pili Cantautora
+#+description: Descripción: Jornadas "Tomares, Espacio para el Encuentro" Hacienda Santa Ana - Ayuntamiento de Tomares. C/ De la Fuente, 10. Tomares. Teléfono: 954.15.91.20 / 954.15.92.10. Precio entrada: 5€. Horario Taquilla: todos los días de 10 a 14:00 y de 19:00 a 21:30. --------------------------------------------------------------------------- Parece ser que mi estancia en mi nueva empresa está dando ya sus frutos musicales También actúan Carmen París el jueves 21 y Kepa Junkera el 22, mismo sitio, misma hora. Casi con total seguridad, no faltaremos el sábado 23!
+#+filetags: 
+#+options: _:nil
+#+nid: 165
+
+Descripción:
+Jornadas "Tomares, Espacio para el Encuentro"
+Hacienda Santa Ana - Ayuntamiento de Tomares.
+C/ De la Fuente, 10. Tomares. Teléfono: 954.15.91.20 / 954.15.92.10.
+Precio entrada: 5€. Horario Taquilla: todos los días de 10 a 14:00 y de 19:00 a 21:30.
+---------------------------------------------------------------------------
+Parece ser que mi estancia en mi nueva empresa está dando ya sus frutos musicales
+#+begin_export html
+<img src="/static/img/smileys/smile.png" title="Smiling" alt="Smiling" />
+#+end_export
+También actúan Carmen París el jueves 21 y Kepa Junkera el 22, mismo sitio, misma hora.
+Casi con total seguridad, no faltaremos el sábado 23!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Carlos%20Nu%C3%B1ez%20en%20Tomares][Dejar comentario]].
+

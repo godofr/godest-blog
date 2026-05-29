@@ -1,0 +1,15 @@
+#+title: Sombra y Luz
+#+date: <2010-10-12 18:30>
+#+author: Godofredo Fdez.
+#+description: Portada del disco " Sombra y Luz " publicado por " Triana " el año 1979. Podéis escuchar un tema contenido en él aquí . Más información sobre Triana en…
+#+filetags: Personajes
+#+options: _:nil
+#+nid: 370
+
+Portada del disco "*Sombra y Luz*" publicado por "*Triana*" el año 1979. Podéis escuchar un tema contenido en él [[/node/367][aquí]].
+
+Más información sobre *Triana* en [[http://es.wikipedia.org/wiki/Triana_%28banda%29][wikipedia]] y en la página de [[http://www.margencero.com/TRIANA/][P. Martínez]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Sombra%20y%20Luz][Dejar comentario]].
+

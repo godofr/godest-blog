@@ -1,0 +1,27 @@
+#+title: Este soy yo... y mis circunstancias
+#+date: <2004-08-18 14:24>
+#+author: Godofredo Fdez.
+#+description: Pues ya ves, este es mi, "nuestro" (no te enfades ;-) ), rincón en internet. Hasta él he llegado con el ánimo de compartir todo aquello que tengo y que merece la pena ser compartido (que tampoco es mucho: de momento unas cuantas palabras y poco más). De mi intimidad no voy a hablar mucho (para no cansar -y porque tampoco me dedico a desnudarme en cualquier sitio- ...aunque toda persona tiene un precio :-) ). Sólo un par de datos (porque tendrán que ver con los temas que vaya dejando en este rincón): soy Ingeniero de Telecomunicación (gracias a lo cual -y al estar colegiado más bien- dispongo de este cachito de espacio en "La Red" ) e intento no ser "integrista" que tan de moda está ahora: unos con las religiones, otros con el fútbol, con los partidos políticos, los nacionalismos... en fin. ¿Por qué tanta gana de distinguirse? ¿Por qué ese ánimo por "dividirse" en lugar de "integrarse"? Vaya, ironías del lenguaje, parece que "integrismo" significa justo lo contrario de lo que lógicamente debería significar ¿Por qué es esto así D. Lázaro Carreter ? (este nombre -siempre con el permiso no solicitado de su dueño- lo he puesto para "incordiar" a los buscadores: cuando alguien busque en google "Lázaro Carreter" seguro que aparece esta página, en donde, seguro, no encontrará lo que está buscando ;-) ).
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 13
+
+Pues ya ves, este es mi, "nuestro" (no te enfades ;-) ), rincón en internet. Hasta él he llegado con el ánimo de compartir todo aquello que tengo y que merece la pena ser compartido (que tampoco es mucho: de momento unas cuantas palabras y poco más).
+
+De mi intimidad no voy a hablar mucho (para no cansar -y porque tampoco me dedico a desnudarme en cualquier sitio- ...aunque toda persona tiene un precio :-) ). Sólo un par de datos (porque tendrán que ver con los temas que vaya dejando en este rincón): soy [[http://www.coit.es][Ingeniero de Telecomunicación]] (gracias a lo cual -y al estar colegiado más bien- dispongo de este cachito de espacio en [[http://www.ietf.org/]["La Red"]]) e intento no ser "integrista" que tan de moda está ahora: unos con las religiones, otros con el fútbol, con los partidos políticos, los nacionalismos... en fin. ¿Por qué tanta gana de distinguirse? ¿Por qué ese ánimo por "dividirse" en lugar de "integrarse"? Vaya, ironías del lenguaje, parece que "integrismo" significa justo lo contrario de lo que lógicamente debería significar ¿Por qué es esto así [[http://www.el-castellano.com/carreter.html][D. Lázaro Carreter]]? (este nombre -siempre con el permiso no solicitado de su dueño- lo he puesto para "incordiar" a los buscadores: cuando alguien busque en [[http://www.google.com][google]] "Lázaro Carreter" seguro que aparece esta página, en donde, seguro, no encontrará lo que está buscando ;-) ).
+
+Bueno, un dato más (pero ya el último): intento no perder el sentido del humor. Así que si notas algo extraño mientras lees: sonríe (pero no te preguntes por qué, es tontería).
+
+Bueno, dejemosnos de paranoias (según el [[http://buscon.rae.es/diccionario/drae.htm][D.R.A.E.]]: /Perturbación mental fijada en una idea o en un orden de ideas./) y pasemos ya a relatar de que va esta página: mi intención es, como he dicho, compartir información sobre aquellas cosas que me interesan. ¿Y cuales son? Pues son muchas, pero para no agobiar sólo pondré unas pocas:
+
+- Las "TIC" (no sé si debería llevar una "s" pequeñita resaltando el plural del acrónimo), es decir, las /Tecnologías de la Informática y Comunicaciones/ (por algo me "intensifiqué" en [[http://trajano.us.es/][/Telemática/]]).
+- El [[http://www.fsf.org/home.es.html][software libre]], con especial dedicación a [[http://www.linux.org/][/GNU/Linux/]] y dentro de este a [[http://www.debian.org/index.es.html][/Debian/]] (la distribución que utilizo). Pero sin olvidarme de aquel software que la gente desarrolla por internet y, sin ánimo de lucro, comparte con los demás, y que también existe para "el temido y ampliamente desplegado (incluso en mi trabajo está :-) ) [[http://www.microsoft.com/Spain/Windows/Default.asp][/Windows/]]".
+- ...y poco más (aunque espero que algún día tenga tiempo para contribuir a la expansión del punto anterior).
+
+Es todo un placer para mí el que hayas llegado leyendo hasta este punto :-). Sin más, recibe un cordial saludo de un servidor (¿de red?).
+
+P.D.: Evidentemente este sitio está en construcción. De hecho, creo que siempre lo estará ;-) (lo cual sería bueno porque indicaría que sigo vivo, y mientras hay vida hay esperanza. Dicen.)
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Este%20soy%20yo...%20y%20mis%20circunstancias][Dejar comentario]].
+

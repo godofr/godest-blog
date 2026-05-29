@@ -1,0 +1,72 @@
+#+title: Media maratón Sevilla-Los Palacios 2013
+#+date: <2013-12-15 20:45>
+#+author: Godofredo Fdez.
+#+description: Esta mañana ha amanecido un magnífico día, más de primavera que de finales de otoño: el cielo completamente azul, el sol reinando allí arriba, elevando la…
+#+filetags: Juegos/Deportes
+#+options: _:nil
+#+nid: 519
+
+Esta mañana ha amanecido un magnífico día, más de primavera que de finales de otoño: el cielo completamente azul, el sol reinando allí arriba, elevando la temperatura hasta rondar los 15º, y, de vez en cuando, una ligera brisa que se agradecía bastante. Unas condiciones ideales.
+
+A las 10:30 me encontraba con mis compañeros en la línea de salida, donde hemos aprovechado para inmortalizar el momento. Así lucíamos de izquierda a derecha: *Carlos, Kader, Nuria y yo*.
+
+#+begin_export html
+<a href="/static/img/20131215--01--grupo-en-salida.jpg" rel="lightbox"><img align="middle" alt="20131215--01--grupo-en-salida" border="0" class="image image-preview " height="360" hspace="10" src="/static/img/20131215--01--grupo-en-salida.jpg" title="20131215--01--grupo-en-salida" vspace="10" width="640" /></a>
+#+end_export
+
+A las 11:00 tomábamos la salida y ya ahí mi corazón latía a 160 pulsaciones por minuto (¿?). [[/content/el-desaf%C3%ADo-de-los-100-estadios][Ya me había pasado otra vez]], por lo que no me preocupé en exceso. "El jefe" me cantaba al oído mientras iba devorando kilómetros que, a su vez, quedaban milimétricamente registrados en mi [[http://runkeeper.com/][RunKeeper]].
+
+Comenzamos con buen ritmo, como se puede apreciar en esta captura del perfil de la prueba, pero he acabado pidiendo la hora. Gracias, *Kader*, por intentar llevarme hasta el grupo, pero no podía... ¡gripado total! :-(
+
+#+begin_export html
+<a href="/static/img/20131215--03--media-sevilla-palacios-perfil_y_ritmo.png" rel="lightbox"><img align="middle" alt="20131215--03--media-sevilla-palacios-perfil_y_ritmo" border="0" class="image image-preview " height="522" hspace="10" src="/static/img/20131215--03--media-sevilla-palacios-perfil_y_ritmo.png" title="20131215--03--media-sevilla-palacios-perfil_y_ritmo" vspace="10" width="374" /></a>
+#+end_export
+
+No obstante, me quedo con buen sabor de boca. ¡Lo he logrado! Mi primera media maratón ha sido completada hoy: 15 de diciembre de 2013. Y este era otro de los objetivos que me propuse conseguir este año. Así que aquí queda inmortalizado:
+
+#+begin_export html
+<a href="/static/img/20131215--02--media-sevilla-palacios-runkeeper.png" rel="lightbox"><img align="middle" alt="20131215--02--media-sevilla-palacios-runkeeper" border="0" class="image image-preview " height="738" hspace="10" src="/static/img/20131215--02--media-sevilla-palacios-runkeeper.png" title="20131215--02--media-sevilla-palacios-runkeeper" vspace="10" width="640" /></a>
+#+end_export
+
+Estoy feliz, aunque tengo una pequeña espina clavada por no haber podido entrar en línea de meta junto al resto de mis compañeros. A pesar de ello, cuando uno piensa en cómo ha sufrido los últimos kilómetros, cómo ha tenido que regular su propio ritmo para no *explotar* pero sin tener que llegar a parar, ha apretado los dientes y ha seguido para adelante, paso a paso, hasta la línea de meta, no le queda más que saborear la satisfacción del logro conseguido.
+
+Detallo a continuación algunos puntos, donde creo que han podido "esconderse" las debilidades, para ver si la siguiente vez los mejoro:
+
+- Hasta el kilómetro 10 iba muy bien, con sensaciones muy buenas y sin casi sentir cansancio. He bebido poca agua en los dos puntos de avituallamiento, en el 4,5 y en el 7,0. Más o menos media botella cada vez. Me sigue costando mucho beber mientras corro. Pierdo el ritmo de la respiración y después de cada bocanada siento que estoy mucho más cansado que antes de darla... no sé. Esto lo tengo que mejorar. Tendré que entrenar portando una botellita e ir acostumbrándome a beber.
+
+- En el kilómetro 10,5, aproximadamente, me tomé un gel. Ya no he tomado nada más hasta la línea de meta. Según mi compañero *Carlos* debía haber tomado el primer gel sobre el kilómetro 7 y después el segundo sobre el 14. La siguiente vez lo haré así.
+
+- Hasta el kilómetro 15 ó 16 seguía yendo bien, pero fue llegar al 18 y el motor se me paró. Coincidió con la última cuesta pronunciada, la subí más o menos bien, ya sufriendo (las pulsaciones iban a casi 180 y empezaba a preocuparme) pero sin presentir lo que me iba a pasar después...
+
+- ...ya en el pueblo la "pájara" vino a por mí, y me llevó en sus brazos hasta el final. ¡Cachis! Las pulsaciones me subieron a 186 y el aviso del pulsómetro hizo su aparición. Nunca he llegado a ese tope desde que estoy corriendo. Los últimos dos kilómetros los he tenido que hacer prácticamente andando, sin llegar a andar pero a un "trote cochinero" bastante renqueante, intentando bajar las pulsaciones todo lo posible. Se aprecia claramente "mi rotura" en el perfil de la etapa que he puesto antes (observa la línea azul del ritmo).
+
+En fin, lo que más me intriga es esto: si cuando salgo a entrenar parto de 140 pulsaciones cuando voy a un ritmo de alrededor de 6,20 minutos por kilómetro, ¿por qué cuando voy a una prueba parto de 160 y *agoto mi margen*? Lo único que se me ocurre es que sean los nervios y la intriga de si voy a llegar o no. Supongo que es lo que tiene la primera vez que te enfrentas a esas distancias... ¿A alguien se le ocurre otra explicación? ¿Es normal? ¿Tiene importancia? ¿Qué puedo hacer?
+
+Lo dicho: quedémonos con lo bueno y las ganas de seguir creciendo...
+
+*¡Objetivo conseguido!*
+
+Aquí mi diploma: :-)
+
+#+begin_export html
+<a href="/static/img/20131215--04--media-maraton-sevilla-los-palacios.jpg" rel="lightbox"><img align="middle" alt="20131215--04--media-maraton-sevilla-los-palacios" border="0" class="image image-preview " height="439" hspace="10" src="/static/img/20131215--04--media-maraton-sevilla-los-palacios.jpg" title="20131215--04--media-maraton-sevilla-los-palacios" vspace="10" width="640" /></a>
+#+end_export
+
+Un abrazo, compañeros.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Media%20marat%C3%B3n%20Sevilla-Los%20Palacios%202013][Dejar comentario]].
+
+** Comentarios
+
+*** Obras son amores... (Rafa 16/12/2013 - 23:40)
+Pues eso, apreciado y admirado amigo. Estas pruebas te ayudan a conocerte mejor...es sorprendente ver como en determinados momentos, el poder de la mente, sobre lo que de forma automática te pide el cuerpo (básicamente parar o simplemente abandonar), es capaz de ayudar. Por eso creo que, más que el mérito del esfuerzo físico que supone terminar la prueba (que obviamente lo tiene), lo verdaderamente enriquecedor es que has sabido sobreponerte con voluntad a la tan temida "pájara"...espero que sea el comienzo de un largo periplo, en el que a buen seguro, y conociéndote, te superarás y llegarás donde te propongas...un abrazo y me alegro mucho de tu logro personal.
+
+*** Alentador comentario, Rafa (Godofredo Fdez. 18/12/2013 - 18:25)
+Y muchísimas gracias.
+
+Como tú bien apuntas, y aunque no me extendí mucho en el artículo, creo que he aprendido mucho de esto: no sólo de la parte más técnica que ya voy vigilando e iré entrenando para mejorar, sino de la parte psicológica: la lucha interior que has de librar o te mata o te hace fuerte. Cuando ves a mucha gente andando para llegar a la meta un diablillo, subido en tu hombro, no para de decirte: "¡párate ya! Venga tío, no te destroces, ...¡al carajo!". Sin embargo, el ángel bueno te dice: "no lo escuches, cierra los ojos y concéntrate, has entrenado, piensa en todo lo que llevas, venga, hombre, venga...". A veces tienes ganas de reír, otras de llorar... pero lo que de verdad importa es la constancia y seguir ahí. Esto ha de estar cercano al autoconocimiento oriental, ¿no?
+
+Gracias por tu confianza, por compartir tus palabras y por ese aliento que me empuja a seguir creciendo.
+
+Un abrazo.

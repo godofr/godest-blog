@@ -1,0 +1,27 @@
+#+title: Seguridad. El camino hacia la especialización
+#+date: <2012-10-30 22:04>
+#+author: Godofredo Fdez.
+#+description: Hasta hace aproximadamente un año era difícil encontrar en Andalucía cualquier tipo de enseñanza organizada alrededor de la “seguridad de la información”,…
+#+filetags: LinkedIn Seguridad
+#+options: _:nil
+#+nid: 495
+
+Hasta hace aproximadamente un año era difícil encontrar en Andalucía cualquier tipo de enseñanza organizada alrededor de la “seguridad de la información”, concepto muy amplio que incluye no sólo la seguridad “informática”, aunque la mayoría de nosotros comenzamos viéndola sólo así, sino todo lo que gira alrededor de la gestión de los riesgos a los que está expuesta la información en una organización principalmente, pues también incluye aspectos más relacionados con la información personal y con la gestión que de ésta hacemos los propios individuos tanto en nuestra faceta profesional como en la personal.
+
+Como decía, hasta hace un año aproximadamente era habitual encontrar diversos Masters y cursos de especialización en Madrid, hervidero de oportunidades del que todavía estamos lejos; pero en Andalucía, si se recorrían los diferentes planes de estudios de enseñanzas oficiales y los cursos ofertados por entidades formativas no se encontraba nada.
+
+Hoy, según me cuentan mis amigos, ya se ven algunos temas específicos en asignaturas que están siendo impartidas en diferentes carreras de universidades andaluzas, y tanto la [[http://www.esi.us.es/][Escuela Técnica Superior de Ingenieros de la Universidad de Sevilla]] como el [[http://coitaoc.org/][Colegio Oficial de Ingenieros de Telecomunicación de Andalucía Occidental y Ceuta]] (en adelante COITAOC) han hecho grandes esfuerzos para cubrir las necesidades formativas en esta área de conocimiento.
+
+En el [[http://trajano.us.es/][Departamento de Ingeniería Telemática]], al que contribuyo en pequeña medida como profesor asociado, nos propusimos lanzar una [[http://www.us.es/estudios/grados/plan_199/asignatura_1990041][asignatura de seguridad]] que nacerá en el segundo cuatrimestre de este curso 2012-2013. La asignatura forma parte de la especialidad de Telemática y cubrirá los aspectos fundamentales: cifrado, seguridad en redes, seguridad en aplicaciones, gestión de incidentes y muy brevemente la normativa básica de referencia. Lo que suficientemente podemos abarcar en unas 45 horas de clases presenciales, pero lo bastante para transmitir al alumno de 3º de grado una visión amplia de la disciplina que le permita decidir si sigue especializándose o no, a su criterio y con su conocimiento.
+
+Con contenido muy similar al cubierto por la asignatura de seguridad descrita en el párrafo anterior, el COITAOC editó un curso en marzo de 2012, [[http://www.si-class.org/][y lo volverá a reeditar a finales de este mes de noviembre]], dirigido a aquellos profesionales y alumnos que por una u otra causa no han podido o podrán cursar la asignatura descrita (según me informan alumnos que pertenecen al plan antiguo, no podrán matricularse en la asignatura ni siquiera como libre configuración por ser de un plan diferente).
+
+Finalmente, la ETSI ha puesto en marcha un [[http://trajano.us.es/seguridadtic][curso de experto universitario titulado: seguridad en tecnologías de la información y las comunicaciones.]] cuyo periodo de inscripción está actualmente abierto (expira a finales de noviembre). Dirigido, en mi opinión, a todo aquel que quiere especializarse en dicha materia. Obviamente, este curso, que cuenta con unas 300 horas de dedicación, aumenta tanto la anchura como la profundidad de los conocimientos transmitidos, y situará al alumno en una posición muy distinguida y valorada actualmente.
+
+La oferta está ahí. Cada uno tiene que hacer su propia reflexión y tomar la decisión que mejor se adapte a sus circunstancias. Quizá, a mi modo de ver, para todo aquel que “desconoce la seguridad” el itinerario lógico puede ser: cursar la asignatura (o el curso ofertado por el COITAOC) donde se obtendrá la primera visión global de la disciplina y después, tras meditar si ese es su mundo o no, elegir el curso de experto para especializarse. Sin embargo, soy consciente de la existencia de perfiles que a través de muchas horas de dedicación y esfuerzo, profesional o estudiantil, han realizado un proceso de autoformación que les posibilita acceder directamente al curso de experto.
+
+Reflexionad y animaos a descubrir un mundo de vértigo... donde casi nada resulta ser lo que parece, sobre todo, desde aquel caballo de Troya.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Seguridad.%20El%20camino%20hacia%20la%20especializaci%C3%B3n][Dejar comentario]].
+

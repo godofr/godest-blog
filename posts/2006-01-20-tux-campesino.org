@@ -1,0 +1,23 @@
+#+title: Tux Campesino
+#+date: <2006-01-20 09:48>
+#+author: Godofredo Fdez.
+#+description: Hola hermano, Hemos estado Armando y yo buscando un programa de software libre y hemos encontrado este muñequito linux que te enviamos para tu bitácora. je,…
+#+filetags: Mascotas
+#+options: _:nil
+#+nid: 97
+
+#+BEGIN_EXAMPLE
+  Hola hermano,
+
+  Hemos estado Armando y yo buscando un programa de software libre y hemos
+
+  encontrado este muñequito linux que te enviamos para tu bitácora. je, je.
+
+  Aunque no hemos conseguido bajarnos el programa (inexpertos en la materia).
+
+  Bueno un beso y nos vemos esta noche.
+#+END_EXAMPLE
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Tux%20Campesino][Dejar comentario]].
+

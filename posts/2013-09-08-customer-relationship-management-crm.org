@@ -1,0 +1,33 @@
+#+title: Customer Relationship Management (CRM)
+#+date: <2013-09-08 11:27>
+#+author: Godofredo Fdez.
+#+description: En los tiempos actuales no es extraño ver florecer y languidecer compañías a ritmos vertiginosos. Ejemplos no nos faltan, sobre todo en el sector tecnológico:…
+#+filetags: Proyectos_Fin_de_Carrera
+#+options: _:nil
+#+nid: 511
+
+En los tiempos actuales no es extraño ver florecer y languidecer compañías a ritmos vertiginosos. Ejemplos no nos faltan, sobre todo en el sector tecnológico: [[http://www.enriquedans.com/2012/07/la-dura-caida-de-nokia.html][Nokia]] y [[http://blogs.elconfidencial.com/economia/valor-anadido/2013-09-06/adios-blackberry-adios-apple-se-cobra-otra-victima_25310/][BlackBerry]] son sólo dos de los últimos “en caer”. Cuando un determinado mercado se satura de productos hay, acudiendo a [[http://ricoverimarketing.es.tripod.com/RicoveriMarketing/id20.html][las estrategias competitivas de Porter]], básicamente tres formas de juego: o eres el líder en costes totales bajos, e inundas el mercado de productos que hacen lo que tienen que hacer (sin filigranas) a un pvp competitivo, o te diferencias de estos apostando por la I+D+i, el diseño, la atención al cliente, etc., lo que te lleva a incurrir en mayores costes pero éstos pueden ser absorbidos por la demanda del producto a través de un pvp más elevado, o te especializas en un determinado nicho.
+
+No voy a analizar al detalle cada uno de los errores que han ido cometiendo grandes compañías, líderes en sus respectivos sectores, que los han conducido a desaparecer o están a punto de hacerlo. Ya os he dejado algunos enlaces en el párrafo anterior a artículos que creo que se aproximan bastante bien a la problemática. Y os animo a jugar a olfatear quién será el siguiente, porque algunos compran papeletas todos los días.
+
+Sin embargo, sí quería destacar aquí la necesidad de competir con eficiencia (con costes bajos) en mercados saturados, que en la actualidad son prácticamente todos los habituales: alimentación, telecomunicaciones, textil, etc. Y quería hacerlo mostrando mi firme convicción de que la empresa que apueste por optimizar sus sistemas de información como base (“core”) de soporte al negocio, aquella que opte por implementar los flujos de trabajo sobre sistemas que permitan seguir las oportunidades desde su nacimiento hasta su fin, que agilice y aporte calidad tanto en la gestión (altas, modificaciones, bajas, seguimiento de: ofertas, proyectos, consultas, etc.) como en la documentación asociada a cada una de las fases por las que pasa el ciclo de vida de la oportunidad, obtendrá, de partida, una gran ventaja competitiva frente al resto. Pues cada vez es más difícil diferenciarse en las funcionalidades de los productos/servicios ofrecidos, y hay que buscar las eficiencias dentro de la propia organización.
+
+Por eso decidí dirigir el proyecto que me presentó [[http://es.linkedin.com/pub/daniel-valdera-carrasco/66/70/60a][Daniel]], cuyo extracto ejecutivo os dejo a continuación.
+
+El objetivo del proyecto es la realización de un estudio sobre el estado del arte de los sistemas de “Gestión de las Relaciones con los Clientes”, conocidos por sus siglas en inglés CRM (Customer Relationship Management).
+
+Se ha presentado su planteamiento estratégico: para qué son útiles estos sistemas y por qué las empresas deciden implantarlos, y se han analizado las diferentes soluciones de software CRM existentes en el mercado. Más concretamente se han tratado temas como qué es un sistema de CRM, qué persigue, tipos de sistemas de CRM, etc., proporcionando una panorámica general que permite obtener un criterio fundamentado a la hora de seleccionar y prescribir este tipo de soluciones.
+
+Tras la comentada panorámica del CRM se ha llevado a cabo la exploración y el análisis de funcionalidades de un software concreto de CRM de código abierto, SugarCRM, ilustrando en un caso práctico gran parte de las mismas. Se han estudiado a fondo las versiones y licencias así como la arquitectura del sistema, los módulos básicos con los que SugarCRM cuenta para gestión del ciclo de vida de la oportunidad y los plugins externos instalables que proporcionan un valor adicional a la herramienta.
+
+En el caso práctico se ha reflejado cronológicamente la gestión del ciclo de vida de la oportunidad, desde que se lanza una “Campaña de Marketing” para atraer clientes hasta una gestión eficaz del servicio posventa, pasando por todo el proceso de gestión de dicho ciclo de vida, mostrando las diferentes herramientas de colaboración que nos brinda el sistema para trabajar y la gestión de proyectos derivados.
+
+Se concluye que SugarCRM ayuda a las organizaciones a crear la base para establecer una serie de procesos comerciales internos que aumentan la eficacia de su acercamiento al mercado, mejora el proceso de venta, aumenta la satisfacción del cliente y proporciona una visión completa de los resultados de la empresa. Por otro lado, se observa que SugarCRM es una solución escalable y adaptable al ofrecer capacidades de personalización a medida desde el interfaz del usuario de manera sencilla. Y por último, se destaca que es posible conseguir funcionalidades similares a las que ofrece la versión Professional en sistemas basados en la versión Community Edition, desarrollando módulos personalizados e instalando módulos externos proporcionados por la comunidad de usuarios y desarrolladores.
+
+Si estáis pensando montar un negocio, cualquiera, o si podéis influir en vuestra organización para que apuesten por sistemas de información integrales (que ayuden a gestionar el ciclo de vida de la oportunidad desde su nacimiento hasta su final), no lo dudéis. Vuestra apuesta de hoy será parte de la fidelización de vuestros clientes mañana, produciéndose el mágico cierre del círculo.
+
+Y eso es lo que todos queremos.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Customer%20Relationship%20Management%20%28CRM%29][Dejar comentario]].
+

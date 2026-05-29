@@ -1,0 +1,15 @@
+#+title: knoppix, tu live cd basado en Debian
+#+date: <2006-04-07 21:03>
+#+author: Godofredo Fdez.
+#+description: Aquí podéis encontrar un Live CD basado en Debian GNU/Linux que os puede ayudar a dar vuestros primeros pasos en este sistema operativo (GNU/Linux) y en esta…
+#+filetags: Logos
+#+options: _:nil
+#+nid: 121
+
+[[http://www.knopper.net/knoppix/index-en.html][Aquí]] podéis encontrar un Live CD basado en [[http://www.debian.org][Debian GNU/Linux]] que os puede ayudar a dar vuestros primeros pasos en este sistema operativo (GNU/Linux) y en esta excelente distribución (Debian).
+
+Información relacionada con *"Programando en C con KNOPPIX"* [[/node/122][aquí]].\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=knoppix%2C%20tu%20live%20cd%20basado%20en%20Debian][Dejar comentario]].
+

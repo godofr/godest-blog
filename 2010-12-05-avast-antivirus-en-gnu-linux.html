@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Desde hace tiempo todo lo que descargo de Internet lo hago en una máquina GNU/Linux. La resistencia de este sistema operativo, hoy por hoy, frente a virus es mucho mayor que la de un windows. Así, descargar en un GNU/Linux e intentar chequear lo descargado sobre este sistema, antes de sacarlo a una "caja windows", es bastante saludable.">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Avast antivirus en GNU/Linux</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">05 dic. 2010</div><h1 class="post-title"><a href="https://godest.vivencias.net/2010-12-05-avast-antivirus-en-gnu-linux.html">Avast antivirus en GNU/Linux</a></h1>
+<p>
+Desde hace tiempo todo lo que descargo de Internet lo hago en una máquina GNU/Linux. La resistencia de este sistema operativo, hoy por hoy, frente a virus es mucho mayor que la de un windows. Así, descargar en un GNU/Linux e intentar chequear lo descargado sobre este sistema, antes de sacarlo a una "caja windows", es bastante saludable.
+</p>
+
+<p>
+Basta una <a href="http://www.google.es/search?q=free+antivirus+for+linux&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:es-ES:official&amp;client=firefox-a">búsqueda en google</a> para encontrar varios antivirus gratuitos para GNU/Linux. Yo me he inclinado por <a href="http://www.avast.com/linux-home-edition#tab1">Avast</a>, pues su uso es bastante simple y no carga ningún demonio en la máquina, por lo que no hace que esta vaya más lenta. Esto nos obliga a hacer "escaneos" bajo demanda pues no hay módulo residente. Es justo lo que necesitaba&#x2026;
+</p>
+
+<p>
+Y lo simple si funciona, dos veces bueno. }:)
+</p>
+
+<p>
+Descargar versión desde aquí:
+</p>
+
+<pre class="example" id="orga9bccca">
+
+[19:26:47(godo@surco)~/temp]&gt; wget http://files.avast.com/files/linux/avast4workstation_1.3.0-2_i386.deb
+--2010-12-05 19:46:52--  http://files.avast.com/files/linux/avast4workstation_1.3.0-2_i386.deb
+Resolviendo files.avast.com... 67.228.147.162, 74.55.40.226, 74.55.48.42, ...
+Connecting to files.avast.com|67.228.147.162|:80... conectado.
+Petición HTTP enviada, esperando respuesta... 302 Found
+Localización: http://download834.avast.com/files/linux/avast4workstation_1.3.0-2_i386.deb [siguiendo]
+--2010-12-05 19:46:52--  http://download834.avast.com/files/linux/avast4workstation_1.3.0-2_i386.deb
+Resolviendo download834.avast.com... 174.120.185.10
+Connecting to download834.avast.com|174.120.185.10|:80... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 29093380 (28M) [text/plain]
+Saving to: `avast4workstation_1.3.0-2_i386.deb'
+
+100%[===============================================================================================================================&gt;] 29.093.380   543K/s   in 51s
+
+2010-12-05 19:47:44 (553 KB/s) - `avast4workstation_1.3.0-2_i386.deb' saved [29093380/29093380]
+
+[19:27:44(godo@surco)~/temp]&gt;
+
+</pre>
+
+<p>
+Actuando como "root", instalar así:
+</p>
+
+<pre class="example" id="orgd93ea6f">
+
+[19:34:11(root@surco)~]&gt; dpkg -i avast4workstation_1.3.0-2_i386.deb
+
+</pre>
+
+<p>
+Al finalizar la instalación os pedirá que vayáis a una URL de avast y os registréis, gratuitamente, para obtener una licencia, la cual tenéis que teclear.
+</p>
+
+<p>
+Comandos disponibles:
+</p>
+
+<pre class="example" id="org7bea883">
+
+[19:39:35(root@surco)/home/godo/temp]&gt; avast
+avast         avastgui      avast-update
+
+</pre>
+
+<p>
+Scripts útiles para ser ejecutados al inicio:
+Actualización:
+</p>
+
+<pre class="example" id="orga977258">
+
+[19:42:50(godo@surco)~/bin]&gt; more avast-get-update
+#!/bin/bash
+
+# Hacemos ping a una dirección IP pública
+# security.debian.org
+/bin/ping -c 5 -W 1 212.211.132.32
+
+# Informamos y ejecutamos "apt-get update"
+echo "Actualizando las firmas de virus... " &gt; /tmp/avast-update
+/bin/date &gt;&gt; /tmp/avast-update
+/usr/bin/avast-update &amp;&amp; /usr/bin/avast -V &gt;&gt; /tmp/avast-update
+echo "Fin de la actualizacion" &gt;&gt; /tmp/avast-update
+/bin/date &gt;&gt; /tmp/avast-update
+
+#
+# FIN del script.
+#
+[19:42:55(godo@surco)~/bin]&gt;
+
+</pre>
+
+<p>
+Escaneo de un directorio:
+</p>
+
+<pre class="example" id="orge41fdef">
+
+[19:42:48(godo@surco)~/bin]&gt; more avast-scan
+#!/bin/bash
+
+# Esperamos 5 minutos -&gt; 5 * 60 = 300
+ping -c 300 127.0.0.1
+
+# Escaneamos el directorio de descargas
+echo "Escaneando directorio de descargas " &gt; /tmp/avast-scan.txt
+/bin/date &gt;&gt; /tmp/avast-scan.txt
+/usr/bin/avast -a -r /tmp/avast-scan.txt /mnt/vm/aa-almacen/*
+echo "Enviando mail..."
+/usr/bin/mail -s "Escaneo antivirus del directorio de descargas" g...@gmail.com m...@gmail.com  &lt; /tmp/avast-scan
+.txt
+echo "Mail enviado."
+
+#
+# FIN del script.
+#
+
+</pre>
+
+<p>
+Y eso es todo. A disfrutar de un mundo un poco más ¿seguro? ;-)
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Avast%20antivirus%20en%20GNU%2FLinux">Dejar comentario</a>.
+</p>
+<div id="outline-container-org952e60c" class="outline-2">
+<h2 id="org952e60c">Comentarios</h2>
+<div class="outline-text-2" id="text-org952e60c">
+</div>
+<div id="outline-container-org394275e" class="outline-3">
+<h3 id="org394275e">can not initialize avast! engine (Godo 16/01/2011 - 14:04)</h3>
+<div class="outline-text-3" id="text-org394275e">
+<p>
+Tras la última actualización avast lanza este mensaje al intentar ejecutarlo:
+</p>
+
+<pre class="example" id="org75b6517">
+avast: can not initialize avast! engine: Argumento inválido
+</pre>
+
+<p>
+La solución para la sesión actual es hacer esto como root:
+</p>
+
+<pre class="example" id="orgcbbf0e1">
+sysctl -w kernel.shmmax=128000000
+</pre>
+
+<p>
+Y la definitiva es agregar esta línea al fichero /etc/sysctl.conf
+</p>
+
+<pre class="example" id="orgeb5eabe">
+kernel.shmmax=128000000
+</pre>
+</div>
+</div>
+<div id="outline-container-org4e2d3c9" class="outline-3">
+<h3 id="org4e2d3c9">Gracias por tu post me fue de (DanySam 27/09/2011 - 03:19)</h3>
+<div class="outline-text-3" id="text-org4e2d3c9">
+<p>
+Gracias por tu post me fue de mucha ayuda
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-linkedin.html">LinkedIn</a> <a href="https://godest.vivencias.net/tag-seguridad.html">Seguridad</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+#+title: De la lucha cotidiana y sus frutos
+#+date: <2013-04-04 19:53>
+#+author: Godofredo Fdez.
+#+description: Nunca he participado en la “Gala de Ingenieros” que se celebra en la ETSI de Sevilla anualmente, ni como alumno ni como profesor. No sé exactamente cómo…
+#+filetags: Pensamiento
+#+options: _:nil
+#+nid: 502
+
+Nunca he participado en la “Gala de Ingenieros” que se celebra en la ETSI de Sevilla anualmente, ni como alumno ni como profesor. No sé exactamente cómo funciona, ni cuáles son los premios. He oído algo de un Oscar negro que se le da al profesor más votado, supongo, para obtener dicho premio negativo, y he visto un Oscar dorado que, razonando a la inversa, creo que recibirá el profesor más positivamente votado.
+
+Soy consciente de que ambos premios tienen una importancia relativa que nunca he sabido muy bien cómo explicar, y creo que lo sigo sin saber hacer. Lo intentaré a continuación.
+
+Vivir, o actuar, pensando sólo en los premios que puedas recibir me parece tan frívolo como inútil, puesto que conceder tanta importancia a un premio lo vaciaría de valor: significaría que lo que de verdad tiene sentido para el premiado es dicho galardón y no la labor que realiza. Sin embargo, adoptar la postura opuesta me parece una actitud tan vanidosa como impostora: vanidosa porque proyecta una imagen del premiado por encima de la de quienes lo premian, e impostora porque creo que a todos nos gusta que nos reconozcan nuestro trabajo. Probablemente la verdad, como en tantas otras ocasiones, esté en un punto equidistante de ambos extremos.
+
+Anteayer, 2 de abril de 2013, se celebró la “Gala de Ingenieros” y, aunque había recibido un mensaje que me decía algo así: ”...has recibido bastantes votos de los alumnos y puede que te "toque" algo”, no pude asistir, aunque estuve a punto. Lo hubiera hecho si hubiese podido estimar sobre qué hora sería la entrega, pues, junto a un poco de miedo escénico ;-), tenía varias cosas ya en la agenda y una de ellas se había convertido en urgente.
+
+Y así, aun esperando que me “tocara algo”, me sentí fuertemente sorprendido cuando recibí las siguientes menciones en mi Twitter:
+
+#+begin_export html
+<a href="/static/img/20130404--Gala_Ingenieros.png"  rel="lightbox"><img src="/static/img/20130404--Gala_Ingenieros.png" alt="20130404--Gala_Ingenieros" title="20130404--Gala_Ingenieros"  class="image image-preview " width="542" height="369" border="0" align="middle" hspace="10" vspace="10" /></a>
+#+end_export
+
+¡MUCHAS GRACIAS A TODOS!
+
+Si hubiera subido al atril habría pronunciado unas palabras parecidas a estas:
+
+Me gusta pensar cada mañana, cuando amanece un nuevo día, que he de esforzarme todo lo que esté en mi mano para no actuar de forma mediocre. Intento ser lo más escrupuloso posible con el trabajo que me toca realizar. Le pongo toda la ilusión que puedo, cosa fácil si el trabajo me gusta y muy difícil cuando me toca hacer cosas que siento que me deconstruyen, pero aun así, siempre intento actuar con la máxima profesionalidad posible. No siempre consigo cada uno de estos propósitos, estoy seguro. Pero imaginaros entonces si no me lo propusiera.
+
+Me gusta ponerme objetivos difíciles pero alcanzables, y luchar por conseguirlos. La vida cobra más sentido, llegando a interiorizar que sólo así merece la pena ser vivida. También me derrumbo a veces, pero creo que soy capaz de acortar el tiempo de recuperación porque, precisamente, vuelvo a visualizar mis objetivos.
+
+E intento actuar siempre con humildad. Poniéndome en la piel del otro. Sintiendo el estruendo de sus fracasos y la fuerza de sus ilusiones, imaginándome cuando llora y cuando ríe. Siendo consciente de la trascendencia que impregna todas las vidas. Sabiendo que todos tenemos nuestras virtudes y nuestros defectos... e intento actuar así incluso con el que no lo hace conmigo. Seguro que tampoco lo consigo muchas veces. Disculpadme.
+
+Muchas gracias a todos y...
+
+¡NO PERDÁIS NUNCA LA ILUSIÓN!
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=De%20la%20lucha%20cotidiana%20y%20sus%20frutos][Dejar comentario]].
+
+** Comentarios
+
+*** ¡Buenas! Magnífica (Álvaro G.R. 12/04/2013 - 05:31)
+¡Buenas! Magnífica entrada.
+
+La he visto con un poco de retraso, pero es ahora cuando me he acordado. No ibas muy desencaminado en cuanto al reparto de óscars de la Gala, que van como siguen:
+-Negro al profesor que reciba más votos negativos.
+-Dorado al profesor de titulación más votado.
+-Blanco al profesor absolutamente más votado.
+
+La verdad es que como alumno dentro de la "maquinaria" de la Gala, es siempre una satisfacción que se llene el salón de actos de la ETSI, más aún siendo el más grande de la Universidad de Sevilla. Y bueno, siempre se echa un poco en falta a los protagonistas ausentes al recoger su premio...
+
+Pero bueno, al menos nos has dejado sin la incertidumbre del discursillo, muy acertado. La verdad es que hacer que los alumnos tengan interés por una asignatura de la cual normalmente no tienen conocimientos previos tiene mucho mérito. ¡Y hacerlos unos "punteros" en la programación básica en cuatro meses todavía más!
+
+Sin más, darte mi más sincera enhorabuena. ¡A seguir por este buen camino! :)
+
+Un abrazo.
+
+*** Gracias por estar  (Godofredo Fdez. 15/04/2013 - 20:18)
+Y por aclararme un poco cómo funciona la elección de los Oscars. Como digo en el artículo me hubiera gustado estar, creo que acumular esa vivencia hubiera sido positivo para mí. Bueno, seguiremos esforzándonos a ver si algún otro año se brinda de nuevo la oportunidad. Es difícil pero entonces... ¡intentaré que no se escape!
+
+Respecto a lo que apuntas sobre despertar el interés, es siempre mi gran objetivo: creo que la motivación es lo que conduce a elevar las posibilidades del éxito, es decir, no lo es todo pero sí mucho. Siempre intento transmitir la pare útil de las cosas, aportar diferentes respuestas al "¿para qué?", que es una de las preguntas estratégicas más importantes. Mantener la motivación de los alumnos en una asignatura como "programación en C", donde casi ninguno de ellos tiene experiencia, y lograr transmitirles los fundamentos sobre los que ir construyendo el esquema conceptual de dicho lenguaje, con la cantidad de excepciones y casuísticas que tiene, es complejo. Pero bueno, la experiencia y el diálogo con vosotros me va ayudando a detectar aquellas zonas que resultan más complicadas, por qué suelen confundir o malentenderse... y de un año para otro voy intentando arrojar luz desde diferentes puntos de vista, hasta que las sombras dejan de serlo.
+
+Gracias por compartir tus opiniones conmigo. Siempre aprendo algo.
+
+Salud.

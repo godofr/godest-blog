@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Lo que sigue ha sido extraído de esta URL: https://wiki.debian.org/GmailAndExim4 He decidido recoger aquí solamente aquello que yo he llevado a cabo a modo de…">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://godest.vivencias.net/rss.xml"
+      title="RSS feed for https://godest.vivencias.net/">
+<title>Configurando exim4 para envío de correo a través de un smarthost (gmail)</title>
+<meta name="author" content="GodEst">
+<meta name="referrer" content="no-referrer">
+<link href= "https://godest.vivencias.net/static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://godest.vivencias.net/static/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="static/favicon-152.png">
+<link rel="msapplication-TitleImage" href="static/favicon-144.png">
+<link rel="msapplication-TitleColor" href="#0141ff">
+<script src="https://godest.vivencias.net/static/katex.min.js"></script>
+<script src="https://godest.vivencias.net/static/auto-render.min.js"></script>
+<script src="https://godest.vivencias.net/static/lightbox.js"></script>
+<link rel="stylesheet" href="https://godest.vivencias.net/static/katex.min.css">
+<script>document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body); });</script>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <div id="site-name">
+    <a href="https://godest.vivencias.net">G o d E s t</a>
+  </div>
+  <div id="site-slogan">
+    "our dreams of freedom have changed the world everybody lives in"
+  </div>
+  <div class="sitelinks">
+    <ul id="main-menu-links" class="links clearfix">
+      <li class="menu-1 first"><a href="/tags.html" title="Archivados">Archivados</a></li>
+      <li class="menu-2"><a href="/2025-01-26-buscar-en-godest.html" title="Buscar contenido en este sitio">Buscar</a></li>
+      <li class="menu-3"><a href="/2025-01-26-contactar.html" title="Contactar">Contactar</a></li>
+      <li class="menu-4"><a href="/2015-10-27-colaboracion-en-charla-ponencia-mesa-redonda.html" title="Divulgación">Divulgación</a></li>
+      <li class="menu-5"><a href="/2005-12-11-soy-un-hacker.html" title="Libertad">Libertad</a></li>
+      <li class="menu-6 last"><a href="/archive.html" title="Para ver todos los post en formato blog: más reciente primero.">Ver todos</a></li>
+    </ul>
+  </div>
+</div></div>
+<div id="content">
+<div class="post-date">14 ene. 2014</div><h1 class="post-title"><a href="https://godest.vivencias.net/2014-01-14-configurando-exim4-para-envio-de-correo-a-traves-de-un-smarthost-gmail.html">Configurando exim4 para envío de correo a través de un smarthost (gmail)</a></h1>
+<p>
+Lo que sigue ha sido extraído de esta URL:
+<a href="https://wiki.debian.org/GmailAndExim4">https://wiki.debian.org/GmailAndExim4</a> He decidido recoger aquí solamente aquello que yo he llevado a cabo a modo de resumen. Quizá algún día tenga que replicarlo en alguna otra máquina y ya no sea capaz de encontrar dicha información. Obviamente, todo lo que sigue hay que hacerlo como root. 1) Reconfiguramos Exim.
+</p>
+
+<p>
+#+BEGIN<sub>QUOTE</sub>
+</p>
+<pre class="example" id="orgf697a2b">
+
+# dpkg-reconfigure exim4-config
+
+</pre>
+
+<pre class="example" id="org2ba795f">
+
+*.google.com:nuestrousuario@gmail.com:nuestracontraseña
+
+</pre>
+
+<pre class="example" id="org616b974">
+
+# chown root:Debian-exim /etc/exim4/passwd.client
+# chmod 640 /etc/exim4/passwd.client
+
+</pre>
+
+<ol class="org-ol">
+<li>Finalmente ejecutamos:</li>
+</ol>
+
+<pre class="example" id="orgfe1dfe6">
+
+# update-exim4.conf
+# invoke-rc.d exim4 restart
+# exim4 -qff
+
+</pre>
+
+<ol class="org-ol">
+<li>Y hacemos una prueba para ver que funciona:</li>
+</ol>
+
+<pre class="example" id="org4a56ea3">
+
+[21:16:47(root@debian)/etc/exim4]# mail -s "Prueba de envío" noexiste@vivencias.net
+Enviando con exim a través de gmail como smarthost. Ctrl-D Ctrl-D
+Cc: 
+
+</pre>
+
+<p>
+Si al intentar enviar un mail desde la línea de comandos, te aparece este error: "bash: mail: no se encontró la orden", instala este paquete: "apt-get install mailutils". 5) Comprobando en los logs que llega y, obviamente, viéndolo en nuestra bandeja de entrada de gmail.
+</p>
+
+<pre class="example" id="org9600c23">
+
+2014-01-14 21:17:16 1W3AQG-0003OJ-H9 &lt;= root@localhost U=root P=local S=352
+2014-01-14 21:17:16 1W3AQG-0003OJ-H9 gmail-smtp-msa.l.google.com [2a00:1450:400c:c05::6d] Network is unreachable
+2014-01-14 21:17:18 1W3AQG-0003OJ-H9 =&gt; noexiste@vivencias.net R=smarthost T=remote_smtp_smarthost H=gmail-smtp-msa.l.google.com [173.194.67.108] X=TLS1.2:RSA_ARCFOUR_SHA1:128 DN="C=US,ST=California,L=Mountain View,O=Google Inc,CN=smtp.gmail.com"
+2014-01-14 21:17:18 1W3AQG-0003OJ-H9 Completed
+
+</pre>
+
+<p>
+Y esto es todo. P.D.: Por último, es muy útil la redirección de correo que se puede realizar entre usuarios en un sistema Unix o GNU/Linux. Existe el archivo "/etc/aliases" donde se nombra, en cada una de sus líneas, primero el usuario al que va dirigido el correo y, separado por dos puntos y un espacio, el usuario que en realidad lo va a recibir, es decir, a quien se redirige el correo del primero. Aquí un ejemplo (todas las líneas menos las dos últimas "vienen de serie"):
+</p>
+
+<pre class="example" id="orga69ef98">
+
+[18:03:26(godo@surco)~]&gt; sudo more /etc/aliases
+[sudo] password for godo:
+# /etc/aliases
+mailer-daemon: postmaster
+postmaster: root
+nobody: root
+hostmaster: root
+usenet: root
+news: root
+webmaster: root
+www: root
+ftp: root
+abuse: root
+noc: root
+security: root
+clamav: root
+root: godo
+godo: noexiste@vivencias.net
+
+</pre>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Configurando%20exim4%20para%20env%C3%ADo%20de%20correo%20a%20trav%C3%A9s%20de%20un%20smarthost%20%28gmail%29">Dejar comentario</a>.
+</p>
+<div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-configuraciones.html">Configuraciones</a> <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> </div></div>
+<div id="postamble" class="status"><div id="pie-de-pagina">
+<div id="archive">
+  <a href="https://godest.vivencias.net/archive.html">Ver todos los post >>></a>
+</div>
+<div id="feed">
+ <a href="https://godest.vivencias.net/rss.xml" class="feed-icon" title="Subscribe to ">
+   <img src="https://godest.vivencias.net/static/feed.png" width="16" height="16" alt="Subscribe to " />
+ </a>
+</div>
+</div></div>
+</body>
+</html>

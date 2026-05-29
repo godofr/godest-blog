@@ -1,0 +1,32 @@
+#+title: Utilización de listas en Twitter
+#+date: <2011-12-18 15:24>
+#+author: Godofredo Fdez.
+#+description: En mi proceso de aclimatación a Twitter emprendido este verano pasado y que aún continúa, descubrí casi desde el comienzo y ha ido cobrando cada vez más valor el "concepto de lista". Basándome en mi experiencia afirmo que gestionar Twitter con ellas no sólo es posible sino la única forma eficiente de hacerlo. Si aún no lo haces y continúas leyendo me lo agradecerás ;-).
+#+filetags: Bitácoras LinkedIn
+#+options: _:nil
+#+nid: 442
+
+En mi proceso de aclimatación a Twitter emprendido este verano pasado y que aún continúa, descubrí casi desde el comienzo y ha ido cobrando cada vez más valor el "concepto de lista". Basándome en mi experiencia afirmo que gestionar Twitter con ellas no sólo es posible sino la única forma eficiente de hacerlo. Si aún no lo haces y continúas leyendo me lo agradecerás ;-).
+
+Las listas sirven para clasificar en ellas a usuarios, de tal forma que visitando dicha lista obtienes un "timeline" con sólo los tweets de los usuarios que has agregado. La lista puede ser pública, cualquiera que visite tu perfil puede verla, o privada, sólo tú la ves. Y a la lista puedes agregar usuarios que sigues o que no (útil para seguir a gente, grupos, empresas, etc., que no quieres que aparezcan en "siguiendo", es decir, consigues seguir de forma anónima tanto para el que "es seguido" como para los que "consultan a quién sigues").
+
+Añadir a alguien a una lista es muy fácil: *visitas su perfil* y a la derecha del botón "seguir|siguiendo" encontrarás un icono con una "silueta foto carnet y una flechita", pulsas en él y verás que una opción es: "Añadir a la lista". La seleccionas. Esperas y...
+
+Por ejemplo, si creas una lista de "mejoresAmigos", la mantienes privada (por aquello de no herir susceptibilidades) y a ella agregas sólo a tus "tres mejores amigos" que ya estás siguiendo, cuando la visites verás sólo sus tweets. ¿Qué ventaja aporta esto? Los tweets de tus amigos aparecerán en tu timeline (porque los sigues) pero se perderán entre otros muchos si no estás todo el día con el ojo puesto en él. Ahora ya no tienes que estar buscándolos entre infinitos tweets que pueblan tu "timeline" y puedes estar al día de lo que expresan simplemente visitando tu lista.
+
+*Mi consejo*: crea tres listas, por ejemplo: A, B y C. Agrega en A a aquellos de los que no quieres perderte ni un tweet. Agrega en B a aquellos interesantes pero que no lo son tanto, y en C a los menos interesantes aún. El resto, los no agregados, sólo aparecerán y se perderán en tu "timeline". Has de ser muy estricto con la clasificación, sólo así te será útil. Mantén el número de agregados en A (recuerda que son muy importantes para ti) relativamente bajo. B será un poco mayor y C aún más. Observa que estamos intentando modelar "aquellos círculos que establecemos en la vida real" (las comillas quieren expresar que no ha de ser exactamente así sino que esa es la idea). Visita la lista A siempre que puedas, B de vez en cuando y C casi nunca (cuando has visitado A y B y no tienes mejor cosa que hacer). Cuando estés muy agobiado, y el tiempo se te quede corto, acabarás mirando sólo la lista A. Lo digo por experiencia. Pero estarás “conservando lo importante”.
+
+El párrafo anterior es simplemente un ejemplo, tu número de listas puede ser mayor o menor, pueden ser temáticas, de nivel de "relación" (familia, amigos, compañerosDeTrabajo), mezcla de ambas, etc.
+
+¡No olvides seleccionar oportunamente si la lista quieres que sea *pública o privada*!
+
+Y déjame un comentario contándome tu experiencia :-) Seguro que entre todos aprendemos más.\\
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Utilizaci%C3%B3n%20de%20listas%20en%20Twitter][Dejar comentario]].
+
+** Comentarios
+
+*** Ya sabes que no termino de (Godesa 29/12/2011 - 14:02)
+Ya sabes que no termino de engancharme al twitter y entiendo que esta gestión que sugieres es útil cuando tengas tal número de personas/asociaciones/etc que seguir que sea ingobernable. Para cuando yo me encuentre por esos derroteros, seguiré tu consejo, que me parece muy meditado y mejor explicado.
+Besos

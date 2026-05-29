@@ -1,0 +1,124 @@
+#+title: Montar particiones NTFS en GNU/Linux
+#+date: <2009-06-03 23:00>
+#+author: Godofredo Fdez.
+#+description: Muchas veces nos es necesario compartir información, datos, entre los sistemas operativos Windows y GNU/Linux. Antiguamente la mejor forma de hacerlo era utilizar una partición de tipo fat que era fácilmente manejable, en modo lectura y escritura, por ambos sistemas operativos. Hoy en día los discos duros son muy grandes, por tanto, las particiones también son mayores y no es raro trabajar con algunos ficheros de unos cuantos gigabytes (GB) de información.
+#+filetags: Configuraciones GNU/Linux
+#+options: _:nil
+#+nid: 324
+
+Muchas veces nos es necesario compartir información, datos, entre los sistemas operativos Windows y GNU/Linux. Antiguamente la mejor forma de hacerlo era utilizar una partición de tipo [[http://es.wikipedia.org/wiki/Fat][fat]] que era fácilmente manejable, en modo lectura y escritura, por ambos sistemas operativos. Hoy en día los discos duros son muy grandes, por tanto, las particiones también son mayores y no es raro trabajar con algunos ficheros de unos cuantos gigabytes (GB) de información. En estos casos, las particiones de tipo fat32, las más evolucionadas de la familia, sólo nos permitirán trabajar con ficheros menores de 4GB, sin embargo, si utilizamos una partición de tipo [[http://es.wikipedia.org/wiki/NTFS][NTFS]] podremos utilizar ficheros de hasta 16TB, una cantidad nada despreciable... de momento.
+Parece lógico que es mejor optar por una partición de intercambio entre ambos sistemas operativos de tipo NTFS. Sin embargo, hasta hace unos años la escritura desde GNU/Linux en particiones NTFS no estaba soportada pero, gracias al proyecto [[http://ntfs-3g.org/][ntfs-3g]], podemos disponer de un driver que realiza bien este trabajo (The latest stable version is 2009.4.4, released on April 2, 2009).
+
+¿Cómo he configurado mi sistema para que funcione?
+
+1.- He editado el archivo /etc/fstab y he añadido la siguiente línea:
+
+#+begin_example
+
+/dev/sda5   /mnt/interc   ntfs-3g   rw,user,noexec,noauto,uid=1000,gid=1000    0   0
+
+#+end_example
+
+2.- Como root, he creado el grupo "ntfsuser" y he añadido mi usuario a él:
+
+#+begin_example
+
+alpechin:/home/godo# groupadd ntfsuser
+alpechin:/home/godo# gpasswd -a godo ntfsuser
+Adding user godo to group ntfsuser
+
+#+end_example
+
+3.- He creado un punto de montaje en /mnt
+
+#+begin_example
+
+[23:14:27(godo@alpechin)~]> ls -l /mnt
+total 4
+drwxr-xr-x 2 godo ntfsuser 4096 jun  3 22:29 interc
+[23:14:32(godo@alpechin)~]>
+
+#+end_example
+
+4.- Como root, he cambiado el grupo y los permisos de la herramienta "ntfs-3g":
+
+#+begin_example
+
+alpechin:/home/godo# ls -l /usr/bin/ntfs-3g
+-rwxr-xr-x 1 root root 32540 may  1 01:01 /usr/bin/ntfs-3g
+alpechin:/home/godo# chown root.ntfsuser $(which ntfs-3g)
+alpechin:/home/godo# ls -l /usr/bin/ntfs-3g
+-rwxr-xr-x 1 root ntfsuser 32540 may  1 01:01 /usr/bin/ntfs-3g
+alpechin:/home/godo# chmod 4750 $(which ntfs-3g)
+alpechin:/home/godo# ls -l /usr/bin/ntfs-3g
+-rwsr-x--- 1 root ntfsuser 32540 may  1 01:01 /usr/bin/ntfs-3g
+alpechin:/home/godo#
+
+#+end_example
+
+5.- Como root, he añadido mi usuario al grupo "disk" (has de cerrar tu sesión y entrar de nuevo para que este cambio tenga efecto):
+
+#+begin_example
+
+alpechin:/home/godo# adduser godo disk
+[22:54:29(godo@alpechin)~]> id
+grupos=6[disk],...,1001[ntfsuser]
+[22:54:30(godo@alpechin)~]>
+
+#+end_example
+
+6.- Y he comprobado que todo funciona (fíjate en la orden "touch adios" que me permite crear un fichero adios en la partición NTFS con la que venimos trabajando):
+
+#+begin_example
+
+[22:55:03(godo@alpechin)~]> mount /mnt/interc/
+[22:55:06(godo@alpechin)~]> l /mnt
+total 4,0K
+drwxrwxrwx 1 godo godo 4,0K jun  3 22:53 interc
+[22:55:10(godo@alpechin)~]> l /mnt/interc/
+total 173M
+-rwxrwxrwx 2 godo godo  21M may 31 17:10 boot.img.gz
+-rwxrwxrwx 2 godo godo 153M may 31 17:11 debian-testing-i386-netinst.iso
+-rwxrwxrwx 1 godo godo    8 jun  3 22:53 hola
+-rwxrwxrwx 2 godo godo 1,1K may 31 17:10 inst-debian-from-usb.txt
+drwxrwxrwx 1 godo godo    0 may 31 14:31 RECYCLER
+drwxrwxrwx 1 godo godo    0 may 31 19:06 System Volume Information
+drwxrwxrwx 1 godo godo 4,0K may 31 17:02 Utilidades
+[22:55:16(godo@alpechin)~]> touch /mnt/interc/adios
+[22:55:27(godo@alpechin)~]> l /mnt/interc/
+total 173M
+-rwxrwxrwx 1 godo godo    0 jun  3 22:55 adios
+-rwxrwxrwx 2 godo godo  21M may 31 17:10 boot.img.gz
+-rwxrwxrwx 2 godo godo 153M may 31 17:11 debian-testing-i386-netinst.iso
+-rwxrwxrwx 1 godo godo    8 jun  3 22:53 hola
+-rwxrwxrwx 2 godo godo 1,1K may 31 17:10 inst-debian-from-usb.txt
+drwxrwxrwx 1 godo godo    0 may 31 14:31 RECYCLER
+drwxrwxrwx 1 godo godo    0 may 31 19:06 System Volume Information
+drwxrwxrwx 1 godo godo 4,0K may 31 17:02 Utilidades
+[22:55:29(godo@alpechin)~]>
+
+#+end_example
+
+Ya tengo una partición común para ubicar los datos con los que trabajo tanto en GNU/Linux como en Windows... aumentando mi productividad 8-).
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Montar%20particiones%20NTFS%20en%20GNU%2FLinux][Dejar comentario]].
+
+** Comentarios
+
+*** Gracias
+** NTFS: así se abren (Anonymous 01/06/2014 - 18:33)
+Gracias
+
+** NTFS: así se abren los ficheros de texto automáticamente en editor en vez de tratar de ejecutarse **
+
+Si tienes archivos de texto en una partición NTFS probablemente al seleccionarlos y pulsar el Enter o hacer doble clic sobre ellos quieras que se abra el editor de texto que uses. Pero puede pasar que el gestor de ficheros te diga que es ejecutable y te pregunte si quieres ejecutarlo o bien ejecutarlo en un terminal (sin darte la opción de ver su contenido -p.e. en Leafpad no se ofrece mientras que en Nautilus sí, incluso se puede hacer de forma automática con la opción de Preferencias correspondiente-).
+
+La solución es fácil: tienes que editar /etc/fstab (como root) y añadir a las opciones de la entrada de ntfs noexec (con una coma por delante).
+
+Fuente: http://www.lawebdelprogramador.com/foros/Linux/1377473-NTFS_asi_se_abren_los_ficheros_de_texto_automaticamente_en_editor_en_vez_de_tratar_de_ejecutarse.html
+
+Saludos
+
+*** Gracias por el comentario. (Godofredo Fdez. 02/06/2014 - 08:58)
+Gracias por el comentario.

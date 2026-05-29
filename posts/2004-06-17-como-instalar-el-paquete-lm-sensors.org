@@ -1,0 +1,98 @@
+#+title: Como instalar el paquete lm-sensors
+#+date: <2004-06-17 21:47>
+#+author: Godofredo Fdez.
+#+description: En kernels 2.4 Este paquete de utilidades sirve para monitorizar algunos de los sensores que actualmente incorporan las placas madre. En mi caso puedo monitorizar la temperatura de la CPU, la del ¿Sistema? y la velocidad de giro (rpm) del ventilador de la CPU (y algunas otras cosas más que no me interesan tanto). Paquetes Debian necesarios (en otras distribuciones pueden variar): libsensors1 lm-sensors lm-sensors-source wmsensormon xsensors
+#+filetags: GNU/Linux
+#+options: _:nil
+#+nid: 11
+
+*** En kernels 2.4
+
+Este paquete de utilidades sirve para monitorizar algunos de los sensores que actualmente incorporan las placas madre. En mi caso puedo monitorizar la temperatura de la CPU, la del ¿Sistema? y la velocidad de giro (rpm) del ventilador de la CPU (y algunas otras cosas
+más que no me interesan tanto).
+
+Paquetes Debian necesarios (en otras distribuciones pueden variar):
+
+1. libsensors1
+2. lm-sensors
+3. lm-sensors-source
+4. wmsensormon
+5. xsensors
+
+Una vez instalados dichos paquetes, has de descomprimir el paquete /usr/src/lm-sensors.tar.gz, apareciéndote el directorio: /usr/src/modules/lm-sensors.
+Situados en el directorio anterior, como root, hacemos lo siguiete:
+
+1. =make=
+2. =make install=
+
+--------------
+
+Lo que sigue *sólo hay que hacerlo una vez* ya que permanece en archivos de configuración del sistema aunque el kernel sea recompilado:
+
+- =depmod -a=
+- añadir la línea =/usr/local/lib= al archivo /etc/ld.so.conf
+- =ldconfig=
+- crear los ficheros de dispositivo: =/usr/src/modules/lm-sensors/prog/mkdev/mkdev.sh=
+- detectar tu hardware: =/usr/src/modules/lm-sensors/prog/detect/sensors-detect=
+- añadir los módulos detectados a /etc/modules
+- ir cargando cada uno de los módulos detectados con: =modprobe nombre_modulo=
+- ejecutar el comando: =sensors -s=
+- consultar los sensores con: =sensors=
+
+--------------
+
+*** En kernels 2.6
+
+*Requisitos previos*: los paquetes que actualmente tengo instalados (estoy utilizando Debian Sarge) son los siguientes:
+
+#+BEGIN_EXAMPLE
+  ii  ksensors       0.7.2-16       lm-sensors frontend for KDE
+
+  ii  libsensors3    2.8.6-13       Library to read temperature/voltage/fan sens
+
+  ii  lm-sensors     2.8.6-13       Utilities to read temperature/voltage/fan se
+#+END_EXAMPLE
+
+El primero de ellos es el programa de KDE que me permite tener la
+información obtenida de los sensores en la bandeja del sistema.
+Hay mucho software libre que sirve para mostrar dicha información,
+utiliza el que más te guste.
+
+En estos kernels se están incorporando poco a poco el soporte de distintos
+chipsets. Los que hay en mi placa base ya están soportados, y para compilar un
+kernel que los utilice hago lo siguiente:
+
+Selecciono en el panel de la izquierda (yo utilizo make xconfig): Device Drivers --> I2C support. Y en las opciones posibles en el panel de la derecha selecciono:
+
+- I2C support: cableado en el kernel (una marca "v" en su casilla).
+- I2C Device Interface: como módulo (un punto "." en su casilla).
+- I2C Hardware Bus support: módulos: ISA Bus support y VIA82C596/82C686/823X
+- Hardware Sensors Chip support: módulos: National semiconductor LM80 y VIA686A
+- Other I2C Chip support: módulo: EEPROM reader
+
+Todo lo que no menciono está deseleccionado.
+
+Claro, por eso
+esto sólo da soporte a mi actual máquina, si el día de mañana cambiara tendría
+que averiguar previamente los chipsets de los que dispondría, lo cual se hace con el comando sensors-detect.
+
+Tras guardar la configuración y compilar el kernel has de tener soporte de los citados dispositivos.
+
+--------------
+
+*** Configuración y arranque automático
+
+Te aconsejo que eches un vistazo, para fijar los valores máximos y mínimos de tus "dispositivos" que están siendo monitorizados por
+los sensores, al fichero /etc/sensors.conf.
+
+Igualmente te aconsejo que crees un enlace simbólico en el nivel de ejecución apropiado de tu sistema linux (en mi caso /etc/rc2.d/S89sensors) que apunte a un script situado en /etc/init.d/sensors.sh que ejecute el comando =sensors -s= cada vez
+que inicie el sistema, fijando así los valores máximos y mínimos de los dispositivos a monitorizar según lo configurado en el fichero
+/etc/sensors.conf.
+
+Y esto es todo.
+
+Salud.
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Como%20instalar%20el%20paquete%20lm-sensors][Dejar comentario]].
+

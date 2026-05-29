@@ -1,0 +1,34 @@
+===========================================================================================
+== http://linux-tipps.blogspot.com/2008/08/standbysuspend-to-ram-with-dbus-in-kde.html   ==
+===========================================================================================
+
+Standby/Suspend to Ram with Dbus and HAL in KDE 4/GNOME/XFCE
+  Tuesday, August 05, 2008
+
+I was trying to work out how to issue the standby command over dbus so that I can send my computer to standby with just a single click from a desktop icon. It turns out at least ksmserver can't receive such a command as there isn't even a type for it in kworkspace:
+
+http://api.kde.org/4.x-api/kdebase-workspace-apidocs/libs/kworkspace/html/kworkspace_8h-source.html
+
+00049 enum ShutdownType {
+00053 ShutdownTypeDefault = -1,
+00057 ShutdownTypeNone = 0,
+00061 ShutdownTypeReboot = 1,
+00065 ShutdownTypeHalt = 2
+00066 };
+
+So the best I could come up with was this to shut down the system(If anyone has seen suspend anywhere in KDE dbus, please comment!):
+
+dbus-send --session --dest=org.kde.ksmserver --type=method_call \
+--print-reply /KSMServer org.kde.KSMServerInterface.logout int32:-1 int32:2 int32:2
+
+But then I found out you can use hal directly and finally I had my script working for immediate suspend:
+
+dbus-send --system --dest=org.freedesktop.Hal --type=method_call \
+--print-reply /org/freedesktop/Hal/devices/computer \ org.freedesktop.Hal.Device.SystemPowerManagement.Suspend int32:0
+
+This should work in any desktop environment. You can replace the 0 after "int32:" with the number of seconds to delay the Suspend. And you can also use it for hibernation:
+
+dbus-send --system --dest=org.freedesktop.Hal --type=method_call \
+--print-reply /org/freedesktop/Hal/devices/computer \ org.freedesktop.Hal.Device.SystemPowerManagement.Hibernate
+
+Now we can enjoy suspend with a single click. Just put it into a shell script and link that to your desktop.

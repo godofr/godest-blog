@@ -1,0 +1,39 @@
+#+title: Cenita Navideña
+#+date: <2006-12-12 16:31>
+#+author: Pili Cantautora
+#+description: Descripción: Reserva ya hecha, confirmao que es las 21:30. ---------------------------------------------- Nuestra chachi cena también merecía su huequito en…
+#+filetags: 
+#+options: _:nil
+#+nid: 184
+
+Descripción:
+Reserva ya hecha, confirmao que es las 21:30.
+----------------------------------------------
+Nuestra chachi cena también merecía su huequito en nuestro calendario de eventos
+#+begin_export html
+<img src="/static/img/smileys/wink.png" title="Eye-wink" alt="Eye-wink" />
+#+end_export
+Es una pena que no pueda alargarse demasiado por aquello del día después, pero al menos así coincidimos todos
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Cenita%20Navide%C3%B1a][Dejar comentario]].
+
+** Comentarios
+
+*** Feliz Navidad! (Pili Cantautora 22/12/2006 - 08:45)
+Pues ya pasó la cenita navideña, y como siempre que quedamos, se me hizo muy, muy cortita... Lo único que siento de estos casi 4 meses que llevo en mi nuevo trabajo es no veros ya todos los días, lo que acaba provocándome cierta extrañeza, a la que no acabo de acostumbrarme, cada vez que nos vemos...
+
+La verdad es que ahora mismo no me puedo quejar, estoy muy contenta, y vuelvo a sentir que trabajo muy agustito, ojalá que eso siga siendo así en el 2007 :)
+
+Un beso muy, muy fuerte, y que disfrutéis mucho de estos diitas de descanso, y familia
+
+*** Y... ¡Próspero año nuevo! (Godo 05/01/2007 - 00:08)
+Siento mucho no haber estado a la altura de las circunstancias en la cena :-(. La verdad es que tenía un malestar acumulado que me hacía no poder ni con mi alma. Sin embargo aguanté, lo poco que lo hice, como un machote rodeado de los buenos colegas. Ya vomité :sick: como un acabado cuando llegué a casa.
+
+Creo que era agotamiento físico que desencadenaba dolores de espalda y de cabeza.
+
+En fin, que la semanita que me he tirado de vacaciones me ha venido que ni "pintá".
+
+Espero veros a todos de nuevo en, quizá, un próximo concierto de Alfonso...
+
+Salud y deseos.

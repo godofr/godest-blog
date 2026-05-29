@@ -1,0 +1,15 @@
+#+title: Hackmeets Logo
+#+date: <2015-06-29 16:11>
+#+author: Godofredo Fdez.
+#+description: Logo de HackMeets: talleres de Hacking y Seguridad. Si quieres saber más, pulsa aquí .
+#+filetags: 
+#+options: _:nil
+#+nid: 532
+
+Logo de HackMeets: talleres de Hacking y Seguridad.
+
+Si quieres saber más, pulsa [[http://godest.vivencias.net/content/%C2%BFte-vas-perder-el-pr%C3%B3ximo-h4ckm33ts][aquí]].
+
+
+[[https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&entry.55081144=Hackmeets%20Logo][Dejar comentario]].
+

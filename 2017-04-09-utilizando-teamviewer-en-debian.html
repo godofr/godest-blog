@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="En este artículo vamos a ver como instalar Teamviewer en una máquina con arquitectura de 64 bits, corriendo la última versión estable de Debian para dicha…">
 <link rel="alternate"
       type="application/rss+xml"
       href="https://godest.vivencias.net/rss.xml"
@@ -41,7 +42,7 @@
   </div>
 </div></div>
 <div id="content">
-<div class="post-date">09 abr 2017</div><h1 class="post-title"><a href="https://godest.vivencias.net/2017-04-09-utilizando-teamviewer-en-debian.html">Utilizando Teamviewer en Debian</a></h1>
+<div class="post-date">09 abr. 2017</div><h1 class="post-title"><a href="https://godest.vivencias.net/2017-04-09-utilizando-teamviewer-en-debian.html">Utilizando Teamviewer en Debian</a></h1>
 <p>
 En este artículo vamos a ver como instalar Teamviewer en una máquina con arquitectura de 64 bits, corriendo la última versión estable de Debian para dicha arquitectura.
 </p>
@@ -55,51 +56,99 @@ Se descarga el paquete .deb desde aquí:
 Una vez descargado, como el paquete es único para ambas arquitecturas: 32 y 64 bits, lo que equivale a decir que está compilado contra librerías de 32 bits; si tenemos un Debian de 64 bits instalado en nuestra máquina, como es mi caso, hemos de añadir la arquitectura de 32 bits para que el gestor de paquetes sea consciente de que es necesario instalar dependencias de dicha arquitectura. Lo hacemos, una vez convertidos en root, así:
 </p>
 
-<div class="org-src-container">
-<pre class="src src-sh">[11:38:07(godo@debian)~]&gt; sudo su
+<p>
+[11:38:07(godo@debian)~]&gt; sudo su
 [sudo] password for godo:
 [11:38:25(root@debian)/home/godo]#
 [11:38:26(root@debian)/home/godo]#
-[11:38:26(root@debian)/home/godo]# dpkg --add-architecture i386
-</pre>
-</div>
+[11:38:26(root@debian)/home/godo]# <b>dpkg &#x2013;add-architecture i386</b>
+</p>
 
 <p>
 Ahora, actualizamos nuestro árbol de dependencias (observad como en las líneas de acceso a los repositorios aparece ya la arquitectura i386 -32 bits- además de la amd64 -64 bits-):
 </p>
-<div class="org-src-container">
-<pre class="src src-sh">[11:38:40(root@debian)/home/godo]# apt-get update
-Ign http://dl.google.com stable InRelease
-Obj http://security.debian.org jessie/updates InRelease
-Obj http://dl.google.com stable Release.gpg
-Ign http://ftp.debian.org jessie InRelease
-Obj http://dl.google.com stable Release
-Obj http://ftp.debian.org jessie Release.gpg
-Obj http://security.debian.org jessie/updates/main Sources
-Obj http://ftp.debian.org jessie Release
-...
-Obj http://httpredir.debian.org jessie/main Translation-es
-Obj http://httpredir.debian.org jessie/main Translation-en
-Obj http://httpredir.debian.org jessie/non-free Translation-en
+
+<p>
+[11:38:40(root@debian)/home/godo]# apt-get update
+Ign <a href="http://dl.google.com">http://dl.google.com</a> stable InRelease
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates InRelease
+Obj <a href="http://dl.google.com">http://dl.google.com</a> stable Release.gpg
+Ign <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie InRelease
+Obj <a href="http://dl.google.com">http://dl.google.com</a> stable Release
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie Release.gpg
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/main Sources
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie Release
+Obj <a href="http://dl.google.com">http://dl.google.com</a> stable/main amd64 Packages
+Ign <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie InRelease
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/contrib Sources
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/main amd64 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/non-free Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates InRelease
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/contrib amd64 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/main amd64 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie Release.gpg
+Des:1 <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/main i386 Packages [6.779 kB]
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/contrib amd64 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/non-free amd64 Packages
+Des:2 <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/main i386 Packages [365 kB]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/main Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/contrib Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/non-free Sources
+Ign <a href="http://dl.google.com">http://dl.google.com</a> stable/main Translation-es<sub>ES</sub>
+Des:3 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/main amd64 Packages/DiffIndex [7.408 B]
+Ign <a href="http://dl.google.com">http://dl.google.com</a> stable/main Translation-es
+Ign <a href="http://dl.google.com">http://dl.google.com</a> stable/main Translation-en
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/contrib amd64 Packages
+Des:4 <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/contrib i386 Packages [2.526 B]
+Des:5 <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/non-free i386 Packages [14 B]
+Des:6 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/non-free amd64 Packages/DiffIndex [736 B]
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/contrib Translation-en
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/main Translation-en
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/non-free Translation-en
+Des:7 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/contrib i386 Packages [32 B]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/contrib Translation-en
+Des:8 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/main Translation-en/DiffIndex [2.704 B]
+Des:9 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/non-free Translation-en/DiffIndex [736 B]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie Release
+Des:10 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/main i386 Packages [15,9 kB]
+Des:11 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/non-free i386 Packages [516 B]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/contrib Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/non-free Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main amd64 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/contrib amd64 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/non-free amd64 Packages
+Des:12 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main i386 Packages [6.779 kB]
+Des:13 <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/contrib i386 Packages [49,5 kB]
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/contrib Translation-en
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/main Translation-es
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/main Translation-en
+Des:14 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/contrib i386 Packages [49,5 kB]
+Des:15 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/non-free i386 Packages [80,4 kB]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/contrib Translation-en
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main Translation-es
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main Translation-en
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/non-free Translation-en
 Descargados 14,1 MB en 30s (460 kB/s)
-Leyendo lista de paquetes... Hecho
-</pre>
-</div>
+Leyendo lista de paquetes&#x2026; Hecho
+</p>
 
 <p>
 Y procedemos a instalar "manualmente" el paquete descargado:
 </p>
 
-<div class="org-src-container">
-<pre class="src src-sh">[11:40:57(root@debian)/home/godo]# cd Descargas/
-[11:41:25(root@debian)/home/godo/Descargas]# dpkg -i teamviewer_12.0.71510_i386.deb
+<p>
+[11:40:57(root@debian)/home/godo]# cd Descargas/
+[11:41:25(root@debian)/home/godo/Descargas]# <b>dpkg -i</b> teamviewer<sub>12.0.71510</sub><sub>i386.deb</sub>
+</p>
 
+<p>
 Seleccionando el paquete teamviewer previamente no seleccionado.
-(Leyendo la base de datos ... 122791 ficheros o directorios instalados actualmente.)
-Preparando para desempaquetar teamviewer_12.0.71510_i386.deb ...
-Desempaquetando teamviewer (12.0.71510) ...
-dpkg: problemas de dependencias impiden la configuraci&#243;n de teamviewer:
-teamviewer depende de libc6 (&gt;= 2.11)<span style="color: #006FE0;">.</span>
+(Leyendo la base de datos &#x2026; 122791 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar teamviewer<sub>12.0.71510</sub><sub>i386.deb</sub> &#x2026;
+Desempaquetando teamviewer (12.0.71510) &#x2026;
+dpkg: problemas de dependencias impiden la configuración de teamviewer:
+teamviewer depende de libc6 (&gt;= 2.11).
 teamviewer depende de libgcc1.
 teamviewer depende de libasound2.
 teamviewer depende de libdbus-1-3.
@@ -116,29 +165,28 @@ teamviewer depende de libxrandr2.
 teamviewer depende de libxrender1.
 teamviewer depende de libxtst6.
 teamviewer depende de zlib1g.
+</p>
 
-dpkg: error al procesar el paquete teamviewer (--install):
+<p>
+dpkg: error al procesar el paquete teamviewer (&#x2013;install):
 problemas de dependencias - se deja sin configurar
-Procesando disparadores para mime-support (3.58) ...
-Procesando disparadores para desktop-file-utils (0.22-1) ...
-Procesando disparadores para hicolor-icon-theme (0.13-1) ...
+Procesando disparadores para mime-support (3.58) &#x2026;
+Procesando disparadores para desktop-file-utils (0.22-1) &#x2026;
+Procesando disparadores para hicolor-icon-theme (0.13-1) &#x2026;
 Se encontraron errores al procesar:
 teamviewer
-</pre>
-</div>
-
+</p>
 
 <p>
 Como podemos observar, la supuesta instalación de teamviewer termina arrojando una serie de errores de dependencias. Esto es porque hemos utilizado "dpkg" en crudo para instalarlo y, así, no se resuelven dichas dependencias durante la instalación. Basta con ejecutar el siguiente comando para que se instalen y todo quede configurado:
 </p>
 
-<div class="org-src-container">
-<pre class="src src-sh">[11:41:54(root@debian)/home/godo/Descargas]# apt-get -f install
-Leyendo lista de paquetes... Hecho
-Creando &#225;rbol de dependencias
-Leyendo la informaci&#243;n de estado... Hecho
-Corrigiendo dependencias... Listo
-Se instalar&#225;n los siguientes paquetes extras:
+<p>
+[11:41:54(root@debian)/home/godo/Descargas]# <b>apt-get -f install</b> Leyendo lista de paquetes&#x2026; Hecho
+Creando árbol de dependencias
+Leyendo la información de estado&#x2026; Hecho
+Corrigiendo dependencias&#x2026; Listo
+Se instalarán los siguientes paquetes extras:
 gcc-4.9-base:i386 libasound2:i386 libc6:i386 libc6-i686:i386 libdbus-1-3:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386
 libgcc1:i386 libice6:i386 libjpeg62-turbo:i386 libpng12-0:i386 libsm6:i386 libuuid1:i386 libx11-6:i386 libxau6:i386 libxcb1:i386
 libxdamage1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386
@@ -147,77 +195,170 @@ Paquetes sugeridos:
 libasound2-plugins:i386 glibc-doc:i386 locales:i386
 Paquetes recomendados:
 uuid-runtime:i386
-Se instalar&#225;n los siguientes paquetes NUEVOS:
+Se instalarán los siguientes paquetes NUEVOS:
 gcc-4.9-base:i386 libasound2:i386 libc6:i386 libc6-i686:i386 libdbus-1-3:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386
 libgcc1:i386 libice6:i386 libjpeg62-turbo:i386 libpng12-0:i386 libsm6:i386 libuuid1:i386 libx11-6:i386 libxau6:i386 libxcb1:i386
 libxdamage1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386
 libxtst6:i386 uuid-runtime zlib1g:i386
-0 actualizados, 28 nuevos se instalar&#225;n, 0 para eliminar y 0 no actualizados.
+0 actualizados, 28 nuevos se instalarán, 0 para eliminar y 0 no actualizados.
 1 no instalados del todo o eliminados.
 Se necesita descargar 8.592 kB de archivos.
-Se utilizar&#225;n 19,9 MB de espacio de disco adicional despu&#233;s de esta operaci&#243;n.
-&#191;Desea continuar? [S/n]
-Des:1 http://httpredir.debian.org/debian/ jessie/main gcc-4.9-base i386 4.9.2-10 [160 kB]
-Des:2 http://httpredir.debian.org/debian/ jessie/main libgcc1 i386 1:4.9.2-10 [48,1 kB]
-Des:3 http://httpredir.debian.org/debian/ jessie/main libc6 i386 2.19-18+deb8u7 [3.982 kB]
-Des:4 http://httpredir.debian.org/debian/ jessie/main libasound2 i386 1.0.28-1 [390 kB]
-Des:5 http://httpredir.debian.org/debian/ jessie/main libdbus-1-3 i386 1.8.22-0+deb8u1 [182 kB]
-Des:6 http://httpredir.debian.org/debian/ jessie/main libexpat1 i386 2.1.0-6+deb8u3 [84,1 kB]
-Des:7 http://httpredir.debian.org/debian/ jessie/main zlib1g i386 1:1.2.8.dfsg-2+b1 [89,4 kB]
-Des:8 http://httpredir.debian.org/debian/ jessie/main libpng12-0 i386 1.2.50-2+deb8u3 [179 kB]
-Des:9 http://httpredir.debian.org/debian/ jessie/main libfreetype6 i386 2.5.2-3+deb8u1 [480 kB]
-Des:10 http://httpredir.debian.org/debian/ jessie/main libfontconfig1 i386 2.11.0-6.3+deb8u1 [338 kB]
-Des:11 http://httpredir.debian.org/debian/ jessie/main libjpeg62-turbo i386 1:1.3.1-12 [123 kB]
-Des:12 http://httpredir.debian.org/debian/ jessie/main libice6 i386 2:1.0.9-1+b1 [61,1 kB]
-Des:13 http://httpredir.debian.org/debian/ jessie/main libuuid1 i386 2.25.2-6 [65,9 kB]
-Des:14 http://httpredir.debian.org/debian/ jessie/main libsm6 i386 2:1.2.2-1+b1 [33,7 kB]
-Des:15 http://httpredir.debian.org/debian/ jessie/main libxau6 i386 1:1.0.8-1 [20,9 kB]
-Des:16 http://httpredir.debian.org/debian/ jessie/main libxdmcp6 i386 1:1.1.1-1+b1 [25,1 kB]
-Des:17 http://httpredir.debian.org/debian/ jessie/main libxcb1 i386 1.10-3+b1 [48,2 kB]
-Des:18 http://httpredir.debian.org/debian/ jessie/main libx11-6 i386 2:1.6.2-3 [750 kB]
-Des:19 http://httpredir.debian.org/debian/ jessie/main libxfixes3 i386 1:5.0.1-2+b2 [21,6 kB]
-Des:20 http://httpredir.debian.org/debian/ jessie/main libxdamage1 i386 1:1.1.4-2+b1 [14,8 kB]
-Des:21 http://httpredir.debian.org/debian/ jessie/main libxext6 i386 2:1.3.3-1 [54,9 kB]
-Des:22 http://httpredir.debian.org/debian/ jessie/main libxinerama1 i386 2:1.1.3-1+b1 [17,1 kB]
-Des:23 http://httpredir.debian.org/debian/ jessie/main libxrender1 i386 1:0.9.8-1+b1 [32,1 kB]
-Des:24 http://httpredir.debian.org/debian/ jessie/main libxrandr2 i386 2:1.4.2-1+b1 [36,8 kB]
-Des:25 http://httpredir.debian.org/debian/ jessie/main libxi6 i386 2:1.7.4-1+b2 [81,8 kB]
-Des:26 http://httpredir.debian.org/debian/ jessie/main libxtst6 i386 2:1.2.2-1+b1 [27,7 kB]
-Des:27 http://httpredir.debian.org/debian/ jessie/main uuid-runtime amd64 2.25.2-6 [74,3 kB]
-Des:28 http://httpredir.debian.org/debian/ jessie/main libc6-i686 i386 2.19-18+deb8u7 [1.172 kB]
+Se utilizarán 19,9 MB de espacio de disco adicional después de esta operación.
+¿Desea continuar? [S/n]
+Des:1 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main gcc-4.9-base i386 4.9.2-10 [160 kB]
+Des:2 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libgcc1 i386 1:4.9.2-10 [48,1 kB]
+Des:3 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libc6 i386 2.19-18+deb8u7 [3.982 kB]
+Des:4 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libasound2 i386 1.0.28-1 [390 kB]
+Des:5 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libdbus-1-3 i386 1.8.22-0+deb8u1 [182 kB]
+Des:6 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libexpat1 i386 2.1.0-6+deb8u3 [84,1 kB]
+Des:7 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main zlib1g i386 1:1.2.8.dfsg-2+b1 [89,4 kB]
+Des:8 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libpng12-0 i386 1.2.50-2+deb8u3 [179 kB]
+Des:9 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libfreetype6 i386 2.5.2-3+deb8u1 [480 kB]
+Des:10 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libfontconfig1 i386 2.11.0-6.3+deb8u1 [338 kB]
+Des:11 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libjpeg62-turbo i386 1:1.3.1-12 [123 kB]
+Des:12 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libice6 i386 2:1.0.9-1+b1 [61,1 kB]
+Des:13 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libuuid1 i386 2.25.2-6 [65,9 kB]
+Des:14 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libsm6 i386 2:1.2.2-1+b1 [33,7 kB]
+Des:15 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxau6 i386 1:1.0.8-1 [20,9 kB]
+Des:16 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxdmcp6 i386 1:1.1.1-1+b1 [25,1 kB]
+Des:17 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxcb1 i386 1.10-3+b1 [48,2 kB]
+Des:18 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libx11-6 i386 2:1.6.2-3 [750 kB]
+Des:19 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxfixes3 i386 1:5.0.1-2+b2 [21,6 kB]
+Des:20 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxdamage1 i386 1:1.1.4-2+b1 [14,8 kB]
+Des:21 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxext6 i386 2:1.3.3-1 [54,9 kB]
+Des:22 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxinerama1 i386 2:1.1.3-1+b1 [17,1 kB]
+Des:23 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxrender1 i386 1:0.9.8-1+b1 [32,1 kB]
+Des:24 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxrandr2 i386 2:1.4.2-1+b1 [36,8 kB]
+Des:25 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxi6 i386 2:1.7.4-1+b2 [81,8 kB]
+Des:26 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libxtst6 i386 2:1.2.2-1+b1 [27,7 kB]
+Des:27 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main uuid-runtime amd64 2.25.2-6 [74,3 kB]
+Des:28 <a href="http://httpredir.debian.org/debian/">http://httpredir.debian.org/debian/</a> jessie/main libc6-i686 i386 2.19-18+deb8u7 [1.172 kB]
 Descargados 8.592 kB en 9s (940 kB/s)
-Preconfigurando paquetes ...
+Preconfigurando paquetes &#x2026;
 Seleccionando el paquete gcc-4.9-base:i386 previamente no seleccionado.
-(Leyendo la base de datos ... 123088 ficheros o directorios instalados actualmente.)
-Preparando para desempaquetar .../gcc-4.9-base_4.9.2-10_i386.deb ...
-Desempaquetando gcc-4.9-base:i386 (4.9.2-10) ...
+(Leyendo la base de datos &#x2026; 123088 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar &#x2026;/gcc-4.9-base<sub>4.9.2</sub>-10<sub>i386.deb</sub> &#x2026;
+Desempaquetando gcc-4.9-base:i386 (4.9.2-10) &#x2026;
 Seleccionando el paquete libgcc1:i386 previamente no seleccionado.
-Preparando para desempaquetar .../libgcc1_1%3a4.9.2-10_i386.deb ...
-Desempaquetando libgcc1:i386 (1:4.9.2-10) ...
-...
-Configurando libuuid1:i386 (2.25.2-6) ...
-Configurando libsm6:i386 (2:1.2.2-1+b1) ...
-Configurando libxau6:i386 (1:1.0.8-1) ...
-Configurando libxdmcp6:i386 (1:1.1.1-1+b1) ...
-Configurando libxcb1:i386 (1.10-3+b1) ...
-Configurando libx11-6:i386 (2:1.6.2-3) ...
-Configurando libxfixes3:i386 (1:5.0.1-2+b2) ...
-Configurando libxdamage1:i386 (1:1.1.4-2+b1) ...
-Configurando libxext6:i386 (2:1.3.3-1) ...
-Configurando libxinerama1:i386 (2:1.1.3-1+b1) ...
-Configurando libxrender1:i386 (1:0.9.8-1+b1) ...
-Configurando libxrandr2:i386 (2:1.4.2-1+b1) ...
-Configurando libxi6:i386 (2:1.7.4-1+b2) ...
-Configurando libxtst6:i386 (2:1.2.2-1+b1) ...
-Configurando teamviewer (12.0.71510) ...
-Configurando uuid-runtime (2.25.2-6) ...
-Configurando libc6-i686:i386 (2.19-18+deb8u7) ...
-Procesando disparadores para libc-bin (2.19-18+deb8u7) ...
-Procesando disparadores para systemd (215-17+deb8u6) ...
-[11:42:57(root@debian)/home/godo/Descargas]#
-</pre>
-</div>
+Preparando para desempaquetar &#x2026;/libgcc1<sub>1</sub>%3a4.9.2-10<sub>i386.deb</sub> &#x2026;
+Desempaquetando libgcc1:i386 (1:4.9.2-10) &#x2026;
+Seleccionando el paquete libc6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libc6<sub>2.19</sub>-18+deb8u7<sub>i386.deb</sub> &#x2026;
+Desempaquetando libc6:i386 (2.19-18+deb8u7) &#x2026;
+Seleccionando el paquete libasound2:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libasound2<sub>1.0.28</sub>-1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libasound2:i386 (1.0.28-1) &#x2026;
+Seleccionando el paquete libdbus-1-3:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libdbus-1-3<sub>1.8.22</sub>-0+deb8u1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libdbus-1-3:i386 (1.8.22-0+deb8u1) &#x2026;
+Seleccionando el paquete libexpat1:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libexpat1<sub>2.1.0</sub>-6+deb8u3<sub>i386.deb</sub> &#x2026;
+Desempaquetando libexpat1:i386 (2.1.0-6+deb8u3) &#x2026;
+Seleccionando el paquete zlib1g:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/zlib1g<sub>1</sub>%3a1.2.8.dfsg-2+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando zlib1g:i386 (1:1.2.8.dfsg-2+b1) &#x2026;
+Seleccionando el paquete libpng12-0:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libpng12-0<sub>1.2.50</sub>-2+deb8u3<sub>i386.deb</sub> &#x2026;
+Desempaquetando libpng12-0:i386 (1.2.50-2+deb8u3) &#x2026;
+Seleccionando el paquete libfreetype6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libfreetype6<sub>2.5.2</sub>-3+deb8u1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libfreetype6:i386 (2.5.2-3+deb8u1) &#x2026;
+Seleccionando el paquete libfontconfig1:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libfontconfig1<sub>2.11.0</sub>-6.3+deb8u1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libfontconfig1:i386 (2.11.0-6.3+deb8u1) &#x2026;
+Seleccionando el paquete libjpeg62-turbo:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libjpeg62-turbo<sub>1</sub>%3a1.3.1-12<sub>i386.deb</sub> &#x2026;
+Desempaquetando libjpeg62-turbo:i386 (1:1.3.1-12) &#x2026;
+Seleccionando el paquete libice6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libice6<sub>2</sub>%3a1.0.9-1+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libice6:i386 (2:1.0.9-1+b1) &#x2026;
+Seleccionando el paquete libuuid1:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libuuid1<sub>2.25.2</sub>-6<sub>i386.deb</sub> &#x2026;
+Desempaquetando libuuid1:i386 (2.25.2-6) &#x2026;
+Seleccionando el paquete libsm6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libsm6<sub>2</sub>%3a1.2.2-1+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libsm6:i386 (2:1.2.2-1+b1) &#x2026;
+Seleccionando el paquete libxau6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxau6<sub>1</sub>%3a1.0.8-1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxau6:i386 (1:1.0.8-1) &#x2026;
+Seleccionando el paquete libxdmcp6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxdmcp6<sub>1</sub>%3a1.1.1-1+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxdmcp6:i386 (1:1.1.1-1+b1) &#x2026;
+Seleccionando el paquete libxcb1:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxcb1<sub>1.10</sub>-3+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxcb1:i386 (1.10-3+b1) &#x2026;
+Seleccionando el paquete libx11-6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libx11-6<sub>2</sub>%3a1.6.2-3<sub>i386.deb</sub> &#x2026;
+Desempaquetando libx11-6:i386 (2:1.6.2-3) &#x2026;
+Seleccionando el paquete libxfixes3:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxfixes3<sub>1</sub>%3a5.0.1-2+b2<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxfixes3:i386 (1:5.0.1-2+b2) &#x2026;
+Seleccionando el paquete libxdamage1:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxdamage1<sub>1</sub>%3a1.1.4-2+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxdamage1:i386 (1:1.1.4-2+b1) &#x2026;
+Seleccionando el paquete libxext6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxext6<sub>2</sub>%3a1.3.3-1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxext6:i386 (2:1.3.3-1) &#x2026;
+Seleccionando el paquete libxinerama1:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxinerama1<sub>2</sub>%3a1.1.3-1+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxinerama1:i386 (2:1.1.3-1+b1) &#x2026;
+Seleccionando el paquete libxrender1:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxrender1<sub>1</sub>%3a0.9.8-1+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxrender1:i386 (1:0.9.8-1+b1) &#x2026;
+Seleccionando el paquete libxrandr2:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxrandr2<sub>2</sub>%3a1.4.2-1+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxrandr2:i386 (2:1.4.2-1+b1) &#x2026;
+Seleccionando el paquete libxi6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxi6<sub>2</sub>%3a1.7.4-1+b2<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxi6:i386 (2:1.7.4-1+b2) &#x2026;
+Seleccionando el paquete libxtst6:i386 previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/libxtst6<sub>2</sub>%3a1.2.2-1+b1<sub>i386.deb</sub> &#x2026;
+Desempaquetando libxtst6:i386 (2:1.2.2-1+b1) &#x2026;
+Seleccionando el paquete uuid-runtime previamente no seleccionado.
+Preparando para desempaquetar &#x2026;/uuid-runtime<sub>2.25.2</sub>-6<sub>amd64.deb</sub> &#x2026;
+Desempaquetando uuid-runtime (2.25.2-6) &#x2026;
+Procesando disparadores para systemd (215-17+deb8u6) &#x2026;
+Procesando disparadores para man-db (2.7.0.2-5) &#x2026;
+Configurando gcc-4.9-base:i386 (4.9.2-10) &#x2026;
+Configurando libgcc1:i386 (1:4.9.2-10) &#x2026;
+Configurando libc6:i386 (2.19-18+deb8u7) &#x2026;
+Procesando disparadores para libc-bin (2.19-18+deb8u7) &#x2026;
+Seleccionando el paquete libc6-i686:i386 previamente no seleccionado.
+(Leyendo la base de datos &#x2026; 123477 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar &#x2026;/libc6-i686<sub>2.19</sub>-18+deb8u7<sub>i386.deb</sub> &#x2026;
+Desempaquetando libc6-i686:i386 (2.19-18+deb8u7) &#x2026;
+Configurando libasound2:i386 (1.0.28-1) &#x2026;
+Configurando libdbus-1-3:i386 (1.8.22-0+deb8u1) &#x2026;
+Configurando libexpat1:i386 (2.1.0-6+deb8u3) &#x2026;
+Configurando zlib1g:i386 (1:1.2.8.dfsg-2+b1) &#x2026;
+Configurando libpng12-0:i386 (1.2.50-2+deb8u3) &#x2026;
+Configurando libfreetype6:i386 (2.5.2-3+deb8u1) &#x2026;
+Configurando libfontconfig1:i386 (2.11.0-6.3+deb8u1) &#x2026;
+Configurando libjpeg62-turbo:i386 (1:1.3.1-12) &#x2026;
+Configurando libice6:i386 (2:1.0.9-1+b1) &#x2026;
+Configurando libuuid1:i386 (2.25.2-6) &#x2026;
+Configurando libsm6:i386 (2:1.2.2-1+b1) &#x2026;
+Configurando libxau6:i386 (1:1.0.8-1) &#x2026;
+Configurando libxdmcp6:i386 (1:1.1.1-1+b1) &#x2026;
+Configurando libxcb1:i386 (1.10-3+b1) &#x2026;
+Configurando libx11-6:i386 (2:1.6.2-3) &#x2026;
+Configurando libxfixes3:i386 (1:5.0.1-2+b2) &#x2026;
+Configurando libxdamage1:i386 (1:1.1.4-2+b1) &#x2026;
+Configurando libxext6:i386 (2:1.3.3-1) &#x2026;
+Configurando libxinerama1:i386 (2:1.1.3-1+b1) &#x2026;
+Configurando libxrender1:i386 (1:0.9.8-1+b1) &#x2026;
+Configurando libxrandr2:i386 (2:1.4.2-1+b1) &#x2026;
+Configurando libxi6:i386 (2:1.7.4-1+b2) &#x2026;
+Configurando libxtst6:i386 (2:1.2.2-1+b1) &#x2026;
+</p>
 
+<p>
+<b>Configurando teamviewer (12.0.71510) &#x2026;</b> Configurando uuid-runtime (2.25.2-6) &#x2026;
+Configurando libc6-i686:i386 (2.19-18+deb8u7) &#x2026;
+Procesando disparadores para libc-bin (2.19-18+deb8u7) &#x2026;
+Procesando disparadores para systemd (215-17+deb8u6) &#x2026;
+[11:42:57(root@debian)/home/godo/Descargas]#
+</p>
 
 <p>
 Observar como en una de las últimas líneas aparece "Configurando teamviewer (12.0.71510) &#x2026;". Ahora sí, nuestro teamviewer está listo para usarse.
@@ -227,111 +368,95 @@ Observar como en una de las últimas líneas aparece "Configurando teamviewer (1
 A mí me gusta siempre terminar todas las instalaciones haciendo una comprobación y limpiando lo descargado:
 </p>
 
-<div class="org-src-container">
-<pre class="src src-sh">[11:43:00(root@debian)/home/godo/Descargas]#
-[11:43:00(root@debian)/home/godo/Descargas]# apt-get check
-Leyendo lista de paquetes... Hecho
-Creando &#225;rbol de dependencias
-Leyendo la informaci&#243;n de estado... Hecho
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-sh">[11:43:22(root@debian)/home/godo/Descargas]# apt-get update
-Ign http://dl.google.com stable InRelease
-Obj http://dl.google.com stable Release.gpg
-Obj http://security.debian.org jessie/updates InRelease
-Ign http://ftp.debian.org jessie InRelease
-Obj http://dl.google.com stable Release
-Obj http://ftp.debian.org jessie Release.gpg
-Ign http://httpredir.debian.org jessie InRelease
-Obj http://ftp.debian.org jessie Release
-Obj http://httpredir.debian.org jessie-updates InRelease
-Obj http://security.debian.org jessie/updates/main Sources
-Obj http://httpredir.debian.org jessie Release.gpg
-Obj http://dl.google.com stable/main amd64 Packages
-Obj http://security.debian.org jessie/updates/contrib Sources
-Obj http://security.debian.org jessie/updates/non-free Sources
-Obj http://security.debian.org jessie/updates/main amd64 Packages
-Obj http://ftp.debian.org jessie/main amd64 Packages
-Obj http://security.debian.org jessie/updates/contrib amd64 Packages
-Obj http://httpredir.debian.org jessie Release
-Obj http://ftp.debian.org jessie/contrib amd64 Packages
-Obj http://security.debian.org jessie/updates/non-free amd64 Packages
-Obj http://security.debian.org jessie/updates/main i386 Packages
-Obj http://ftp.debian.org jessie/main i386 Packages
-Obj http://security.debian.org jessie/updates/contrib i386 Packages
-Obj http://ftp.debian.org jessie/contrib i386 Packages
-Obj http://security.debian.org jessie/updates/non-free i386 Packages
-Obj http://ftp.debian.org jessie/contrib Translation-en
-Obj http://security.debian.org jessie/updates/contrib Translation-en
-Obj http://ftp.debian.org jessie/main Translation-es
-Obj http://security.debian.org jessie/updates/main Translation-en
-Obj http://ftp.debian.org jessie/main Translation-en
-Obj http://security.debian.org jessie/updates/non-free Translation-en
-Ign http://dl.google.com stable/main Translation-es_ES
-Obj http://httpredir.debian.org jessie-updates/main Sources
-Ign http://dl.google.com stable/main Translation-es
-Ign http://dl.google.com stable/main Translation-en
-Obj http://httpredir.debian.org jessie-updates/contrib Sources
-Obj http://httpredir.debian.org jessie-updates/non-free Sources
-Des:1 http://httpredir.debian.org jessie-updates/main amd64 Packages/DiffIndex [7.408 B]
-Obj http://httpredir.debian.org jessie-updates/contrib amd64 Packages
-Des:2 http://httpredir.debian.org jessie-updates/non-free amd64 Packages/DiffIndex [736 B]
-Des:3 http://httpredir.debian.org jessie-updates/main i386 Packages/DiffIndex [7.408 B]
-Obj http://httpredir.debian.org jessie-updates/contrib i386 Packages
-Des:4 http://httpredir.debian.org jessie-updates/non-free i386 Packages/DiffIndex [736 B]
-Obj http://httpredir.debian.org jessie-updates/contrib Translation-en
-Des:5 http://httpredir.debian.org jessie-updates/main Translation-en/DiffIndex [2.704 B]
-Des:6 http://httpredir.debian.org jessie-updates/non-free Translation-en/DiffIndex [736 B]
-Obj http://httpredir.debian.org jessie/main Sources
-Obj http://httpredir.debian.org jessie/contrib Sources
-Obj http://httpredir.debian.org jessie/non-free Sources
-Obj http://httpredir.debian.org jessie/main amd64 Packages
-Obj http://httpredir.debian.org jessie/contrib amd64 Packages
-Obj http://httpredir.debian.org jessie/non-free amd64 Packages
-Obj http://httpredir.debian.org jessie/main i386 Packages
-Obj http://httpredir.debian.org jessie/contrib i386 Packages
-Obj http://httpredir.debian.org jessie/non-free i386 Packages
-Obj http://httpredir.debian.org jessie/contrib Translation-en
-Obj http://httpredir.debian.org jessie/main Translation-es
-Obj http://httpredir.debian.org jessie/main Translation-en
-Obj http://httpredir.debian.org jessie/non-free Translation-en
+<p>
+[11:43:00(root@debian)/home/godo/Descargas]#
+[11:43:00(root@debian)/home/godo/Descargas]# <b>apt-get check</b> Leyendo lista de paquetes&#x2026; Hecho
+Creando árbol de dependencias
+Leyendo la información de estado&#x2026; Hecho
+[11:43:22(root@debian)/home/godo/Descargas]# <b>apt-get update</b> Ign <a href="http://dl.google.com">http://dl.google.com</a> stable InRelease
+Obj <a href="http://dl.google.com">http://dl.google.com</a> stable Release.gpg
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates InRelease
+Ign <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie InRelease
+Obj <a href="http://dl.google.com">http://dl.google.com</a> stable Release
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie Release.gpg
+Ign <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie InRelease
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie Release
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates InRelease
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/main Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie Release.gpg
+Obj <a href="http://dl.google.com">http://dl.google.com</a> stable/main amd64 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/contrib Sources
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/non-free Sources
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/main amd64 Packages
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/main amd64 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/contrib amd64 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie Release
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/contrib amd64 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/non-free amd64 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/main i386 Packages
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/main i386 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/contrib i386 Packages
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/contrib i386 Packages
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/non-free i386 Packages
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/contrib Translation-en
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/contrib Translation-en
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/main Translation-es
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/main Translation-en
+Obj <a href="http://ftp.debian.org">http://ftp.debian.org</a> jessie/main Translation-en
+Obj <a href="http://security.debian.org">http://security.debian.org</a> jessie/updates/non-free Translation-en
+Ign <a href="http://dl.google.com">http://dl.google.com</a> stable/main Translation-es<sub>ES</sub>
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/main Sources
+Ign <a href="http://dl.google.com">http://dl.google.com</a> stable/main Translation-es
+Ign <a href="http://dl.google.com">http://dl.google.com</a> stable/main Translation-en
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/contrib Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/non-free Sources
+Des:1 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/main amd64 Packages/DiffIndex [7.408 B]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/contrib amd64 Packages
+Des:2 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/non-free amd64 Packages/DiffIndex [736 B]
+Des:3 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/main i386 Packages/DiffIndex [7.408 B]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/contrib i386 Packages
+Des:4 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/non-free i386 Packages/DiffIndex [736 B]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/contrib Translation-en
+Des:5 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/main Translation-en/DiffIndex [2.704 B]
+Des:6 <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie-updates/non-free Translation-en/DiffIndex [736 B]
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/contrib Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/non-free Sources
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main amd64 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/contrib amd64 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/non-free amd64 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main i386 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/contrib i386 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/non-free i386 Packages
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/contrib Translation-en
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main Translation-es
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/main Translation-en
+Obj <a href="http://httpredir.debian.org">http://httpredir.debian.org</a> jessie/non-free Translation-en
 Descargados 19,7 kB en 13s (1.503 B/s)
-Leyendo lista de paquetes... Hecho
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-sh">[11:43:51(root@debian)/home/godo/Descargas]# apt-get upgrade
-Leyendo lista de paquetes... Hecho
-Creando &#225;rbol de dependencias
-Leyendo la informaci&#243;n de estado... Hecho
-Calculando la actualizaci&#243;n... Listo
-0 actualizados, 0 nuevos se instalar&#225;n, 0 para eliminar y 0 no actualizados.
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-sh">[11:43:57(root@debian)/home/godo/Descargas]# apt-get clean
-</pre>
-</div>
-
-<p>
-A continuación, os dejo una captura de mi escritorio mostrando a Teamviewer justo después de arrancarlo.
-</p>
-
-<figure style="display: block; margin: 0 auto; text-align: center;">
-<img width="640" height="471" border="0" align="center" hspace="10" vspace="10" src="/static/2017/teamviewer-en-debian.jpg"
- alt="Teamviewer en Debian" />
-</figure>
-
-<p>
-¡Espero que os sea útil!
+Leyendo lista de paquetes&#x2026; Hecho
+[11:43:51(root@debian)/home/godo/Descargas]# <b>apt-get upgrade</b> Leyendo lista de paquetes&#x2026; Hecho
+Creando árbol de dependencias
+Leyendo la información de estado&#x2026; Hecho
+Calculando la actualización&#x2026; Listo
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 0 no actualizados.
+[11:43:57(root@debian)/home/godo/Descargas]# <b>apt-get clean</b> [11:44:00(root@debian)/home/godo/Descargas]#
+[11:44:04(root@debian)/home/godo/Descargas]# exit
+exit
+[11:44:05(godo@debian)~]&gt;
+[11:44:06(godo@debian)~]&gt;
 </p>
 
 <p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Utilizando_Teamviewer_en_Debian">Dejar comentario</a>.
+A continuación, en el fichero adjunto, os dejo una captura de mi escritorio mostrando a Teamviewer justo después de arrancarlo.
+</p>
+
+<p>
+¡Espero que os sea útil!<br>
+</p>
+
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnXB3zyaNVYcb_2EoO8C5HRc6Emx-2rv2QS6OWNFz1yYSBQ/viewform?usp=pp_url&amp;entry.55081144=Utilizando%20Teamviewer%20en%20Debian">Dejar comentario</a>.
 </p>
 <div class="taglist"><a href="https://godest.vivencias.net/tags.html">Tags</a>: <a href="https://godest.vivencias.net/tag-gnu/linux.html">GNU/Linux</a> <a href="https://godest.vivencias.net/tag-software.html">Software</a> </div></div>
 <div id="postamble" class="status"><div id="pie-de-pagina">
