@@ -16,7 +16,7 @@ Quizá resulte un poco pesado insistiendo en la difundida idea de que, hoy en d�
 
 Si el supuesto virus ya está actuando así es porque ha pasado y pasa desapercibido a nuestro antivirus. Entonces, ¿qué podemos hacer para intentar detectarlo?
 
-Hace mucho tiempo que vigilo el tráfico que entra y sale de mi máquina. ¿Cómo? Hay varias utilidades, de pago ([[http://www.hageltech.com/dumeter/about][DuMeter]]) y gratuitas: [[http://metal-machine.de/readerror/netmeter-evo][NetMeter Evo 2.0.0]]. Yo utilizo esta última en todos mis ordenadores. Funcionando, y tras personalizar los colores de bajada en verde (transmite menos peligro y me gusta asociarlo al tráfico que llega al PC) y de subida en rojo (refleja el tráfico que parte del PC hacia la red, es decir, el que se mostraría si nos roban información), la pinta que tiene es esta:
+Hace mucho tiempo que vigilo el tráfico que entra y sale de mi máquina. ¿Cómo? Hay varias utilidades, de pago ([[http://www.hageltech.com/dumeter/about][DuMeter]]) y gratuitas: [[http://www.metal-machine.de/readerror/index.php?action=tpmod;dl=cat30][NetMeter Evo 2.0.0]]. Yo utilizo esta última en todos mis ordenadores. Funcionando, y tras personalizar los colores de bajada en verde (transmite menos peligro y me gusta asociarlo al tráfico que llega al PC) y de subida en rojo (refleja el tráfico que parte del PC hacia la red, es decir, el que se mostraría si nos roban información), la pinta que tiene es esta:
 
 #+begin_export html
 <a href="/static/img/netmeter01.jpg" rel="lightbox"><img align="middle" alt="NetMeter 2.0.0" border="0" class="image image-preview " height="191" width="254"  src="/static/img/netmeter01.jpg" title="NetMeter 2.0.0" hspace="10" vspace="10"  /></a>
