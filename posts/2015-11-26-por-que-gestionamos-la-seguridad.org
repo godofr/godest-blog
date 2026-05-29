@@ -12,19 +12,15 @@ Recorro despacio cada uno de los tres motivos que he encontrado (quizá con un p
 
 A mi entender, los tres motivos son estos:
 
-#+BEGIN_QUOTE
   1) *Por cumplimiento legal* (“Regulatory Compliance”). Existe, como en todos los ámbitos de la vida en sociedad, una serie de normativa (leyes, decretos, etc.) que estamos obligados a cumplir. Un ejemplo claro de este “capítulo” en España sería la [[http://www.agpd.es/portalwebAGPD/canaldocumentacion/legislacion/estatal/index-ides-idphp.php][LOPD]]. El fin último de ésta es proteger los datos de carácter personal, intentar controlar que se usen para el fin que se recabaron y respetar la voluntad de su propietario. ¿Qué pasa cuando las medidas de protección no han sido las correctas? Cosas y multas como [[http://www.audea.com/11811-sancionado-por-incumplir-la-lopd/][estas]].
 
   2) *Alineamiento con el negocio*. Para mí esta es la más grande y bonita razón, la que más me gusta destacar, la que me permite ver y transmitir la seguridad como una característica de las organizaciones que les acaba aportando valor. Gestionamos la seguridad lo mismo que gestionamos los RRHH o las compras, porque nos ayuda a controlar el gasto y la inversión, porque nos evita afrontar situaciones que pueden dañar nuestra imagen de marca, porque protege los esfuerzos realizados para avanzar en I+D+i, por ejemplo, y porque, al fin y al cabo, haciendo las cosas bien prestamos un servicio de mayor calidad, generamos más confianza y retenemos/ganamos clientes. Este párrafo está muy enfocado al negocio “privado”, pero es totalmente extrapolable a cualquier organización pública e incluso sin ánimo de lucro: sólo hay que adaptar apropiadamente el lenguaje para incidir en los mismos conceptos.
-#+END_QUOTE
 
    #+begin_export html
    <img align="middle" alt="Alineamiento con el negocio" border="0" class="image image-preview " width="640" height="478"  src="/static/img/alineamiento-con-el-negocio.png" title="Alineamiento con el negocio" hspace="10" vspace="10"  />
    #+end_export
 
-#+BEGIN_QUOTE
   3) Por último, y quizá este sea el eje más difundido, gestionamos la seguridad por el simple *principio de acción/reacción, aliñado con unas cuantas toneladas de miedo*, efectos paranormales y luces de psicodelia: la amenaza creciente. A ningún adulto se nos escapa que en el mundo existe mucho bien y mucho mal. Y, siendo el miedo una de las principales palancas que permiten controlar la voluntad de las personas, basta con largar todos los días unas cuantas decenas de noticias malas, con enfoque de sobreactuación, con muchas pantallas de fósforo verde en las que se descuelgan letras, manos con guante negro que emergen de ellas y virus que acaban contagiándose a los seres humanos (ah ¿no? Perdón, me he excedido en la retórica). Cosas que llevan haciendo la industria de la seguridad, los gobiernos y los serviles medios de comunicación ni se sabe el tiempo.
-#+END_QUOTE
 
 Sois libres de poner más o menos hincapié, o ponderar con mayor o menor peso, cada una de las razones expuestas. Y supongo que todos lo haremos según nuestra naturaleza, la presión que tengamos en nuestra organización, lo que nos haga sentirnos más cómodos en el discurso, etc., pero advertidos quedáis: según he comprobado y, lo que es más importante, han comprobado muchos de los buenos amigos que me rodean en el día a día, la tercera razón está tan manida/ajada/abusada que ya sólo provoca: hastío, inmovilismo y desinterés. Que hay que tenerla en cuenta, sí; pero que nos sirva como palanca para mover nuestro pequeño mundo (educación familiar), nuestra organización o la de nuestros clientes (educación profesional) o crear tendencias positivas en general, que permitan ir creciendo en el nivel de madurez con el que afrontamos el reto de la seguridad, está bastante en entredicho.
 
