@@ -4,7 +4,7 @@
 <title><![CDATA[GodEst.vivencias.net]]></title>
 <description><![CDATA[GodEst.vivencias.net]]></description>
 <link>https://godest.vivencias.net/</link>
-<lastBuildDate>Sat, 30 May 2026 09:02:05 +0200</lastBuildDate>
+<lastBuildDate>Sun, 31 May 2026 19:43:33 +0200</lastBuildDate>
 <item>
   <title><![CDATA[Para republicar todo el blog]]></title>
   <description><![CDATA[
@@ -103,57 +103,32 @@ Todos los campos son obligatorios.
   <title><![CDATA[Buscar en GodEst]]></title>
   <description><![CDATA[
 <p>
-&lt;br /&gt;
-&lt;p&gt;Puedes buscar contenido en este sitio (por defecto) o en toda la web (seleccionar "web"). El motor utilizado es el de Google.&lt;/p&gt;
+Puedes buscar contenido en este sitio (por defecto) o en toda la web (seleccionar "web"). El motor utilizado es el de Google.
 </p>
 
-<p>
-&lt;!&#x2013; SiteSearch Google &#x2013;&gt;
-            &lt;form method="get" action="<a href="http://www.google.es/custom">http://www.google.es/custom</a>" target="google<sub>window</sub>"&gt;
-</p>
+<form method="get" action="http://www.google.es/custom" target="google_window">
+  <input type="radio" name="sitesearch" value="" />
+  <font size="-1" color="#333"><b>Web</b></font>
+  <input type="radio" name="sitesearch" value="godest.vivencias.net" checked="checked" />
+  <font size="-1" color="#333"><b>GodEst</b></font>
+  <input type="hidden" name="domains" value="godest.vivencias.net" />
+  <input type="text" name="q" size="40" maxlength="255" value="" style="background-color:#EEE;" />
+  <input type="submit" name="sa" value="Buscar" />
+  <input type="hidden" name="client" value="pub-2656644998558722" />
+  <input type="hidden" name="forid" value="1" />
+  <input type="hidden" name="ie" value="ISO-8859-1" />
+  <input type="hidden" name="oe" value="ISO-8859-1" />
+  <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;" />
+  <input type="hidden" name="hl" value="es" />
+</form>
 
 <p>
-&lt;!&#x2013;
-    &lt;a href="<a href="http://www.google.com/">http://www.google.com/</a>"&gt;
-      &lt;img src="<img src="http://www.google.com/logos/Logo_25wht.gif" alt="Logo_25wht.gif">" border="0" alt="Google" align="middle"&gt;&lt;/img&gt;&lt;/a&gt;
-    &#x2013;&gt; 
-</p>
-
-<p>
-&lt;input type="radio" name="sitesearch" value=""&gt;&lt;/input&gt;
-&lt;font size="-1" color="#333"&gt;&lt;b&gt;Web&lt;/b&gt;&lt;/font&gt;
-</p>
-
-<p>
-&lt;input type="radio" name="sitesearch" value="godest.vivencias.net" checked="checked"&gt;&lt;/input&gt;
-&lt;font size="-1" color="#333"&gt;&lt;b&gt;GodEst&lt;/b&gt;&lt;/font&gt;
-</p>
-
-<p>
-&lt;input type="hidden" name="domains" value="godest.vivencias.net"&gt;&lt;/input&gt;
-&lt;input type="text" name="q" size="40" maxlength="255" value="" style="background-color:#EEE;"&gt;&lt;/input&gt;
-&lt;input type="submit" name="sa" value="Buscar"&gt;&lt;/input&gt;
-</p>
-
-<p>
-              &lt;input type="hidden" name="client" value="pub-2656644998558722"&gt;&lt;/input&gt;
-              &lt;input type="hidden" name="forid" value="1"&gt;&lt;/input&gt;
-              &lt;input type="hidden" name="ie" value="ISO-8859-1"&gt;&lt;/input&gt;
-              &lt;input type="hidden" name="oe" value="ISO-8859-1"&gt;&lt;/input&gt;
-              &lt;input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"&gt;&lt;/input&gt;
-	      &lt;input type="hidden" name="hl" value="es"&gt;&lt;/input&gt;
-            &lt;/form&gt;
-&lt;!&#x2013; SiteSearch Google &#x2013;&gt;
-</p>
-
-<p>
-&lt;br /&gt;
 Cuando presiones buscar se abrirá en tu navegador una nueva pestaña con los resultados encontrados.
 </p>
 <div class="taglist"></div>]]></description>
   <link>https://godest.vivencias.net/2025-01-26-buscar-en-godest.html</link>
   <guid>https://godest.vivencias.net/2025-01-26-buscar-en-godest.html</guid>
-  <pubDate>Sun, 26 Jan 2025 13:56:00 +0100</pubDate>
+  <pubDate>Sun, 26 Jan 2025 00:00:00 +0100</pubDate>
 </item>
 <item>
   <title><![CDATA[How to write a blog post]]></title>

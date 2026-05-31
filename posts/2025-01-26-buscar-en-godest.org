@@ -1,37 +1,27 @@
 #+title: Buscar en GodEst
-#+date: <2025-01-26 13:56>
-#+description: 
-#+filetags: 
+#+date: <2025-01-26>
+#+description: Buscar contenido en este sitio o en toda la web usando Google.
+#+filetags:
+#+options: _:nil
 
-<br />
-<p>Puedes buscar contenido en este sitio (por defecto) o en toda la web (seleccionar "web"). El motor utilizado es el de Google.</p>
+Puedes buscar contenido en este sitio (por defecto) o en toda la web (seleccionar "web"). El motor utilizado es el de Google.
 
-<!-- SiteSearch Google -->
-            <form method="get" action="http://www.google.es/custom" target="google_window">
-	      
-              <!--
-		  <a href="http://www.google.com/">
-		    <img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
-		  --> 
-	      
-              <input type="radio" name="sitesearch" value=""></input>
-              <font size="-1" color="#333"><b>Web</b></font>
-	      
-              <input type="radio" name="sitesearch" value="godest.vivencias.net" checked="checked"></input>
-              <font size="-1" color="#333"><b>GodEst</b></font>
-	      
-              <input type="hidden" name="domains" value="godest.vivencias.net"></input>
-              <input type="text" name="q" size="40" maxlength="255" value="" style="background-color:#EEE;"></input>
-              <input type="submit" name="sa" value="Buscar"></input>
-	      
-              <input type="hidden" name="client" value="pub-2656644998558722"></input>
-              <input type="hidden" name="forid" value="1"></input>
-              <input type="hidden" name="ie" value="ISO-8859-1"></input>
-              <input type="hidden" name="oe" value="ISO-8859-1"></input>
-              <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"></input>
-	      <input type="hidden" name="hl" value="es"></input>
-            </form>
-<!-- SiteSearch Google -->
+#+begin_export html
+<form method="get" action="http://www.google.es/custom" target="google_window">
+  <input type="radio" name="sitesearch" value="" />
+  <font size="-1" color="#333"><b>Web</b></font>
+  <input type="radio" name="sitesearch" value="godest.vivencias.net" checked="checked" />
+  <font size="-1" color="#333"><b>GodEst</b></font>
+  <input type="hidden" name="domains" value="godest.vivencias.net" />
+  <input type="text" name="q" size="40" maxlength="255" value="" style="background-color:#EEE;" />
+  <input type="submit" name="sa" value="Buscar" />
+  <input type="hidden" name="client" value="pub-2656644998558722" />
+  <input type="hidden" name="forid" value="1" />
+  <input type="hidden" name="ie" value="ISO-8859-1" />
+  <input type="hidden" name="oe" value="ISO-8859-1" />
+  <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;" />
+  <input type="hidden" name="hl" value="es" />
+</form>
+#+end_export
 
-<br />
 Cuando presiones buscar se abrirá en tu navegador una nueva pestaña con los resultados encontrados.
